@@ -1,3 +1,3 @@
-# Primercss.io
+# Primer.style
 
-Website for [Primer CSS](https://github.com/primer/primer-css).
+Temporary website for [Primer](http://primer.style).
