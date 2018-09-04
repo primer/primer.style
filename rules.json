@@ -1,0 +1,6 @@
+{
+  "rules": [
+    {"pathname": "/components/**", "dest": "primer-react.now.sh"},
+    {"dest": "primer.style"}
+  ]
+}
