@@ -9,10 +9,8 @@ import {
 import styled from 'react-emotion'
 
 const ButtonOutlineDark = styled(Link)`
-  color: ${props => props.theme.colors.black} !important;
-  border-color: ${props => props.theme.colors.black};
-  border-width: 1px;
-  border-style: solid;
+  color: ${props => props.theme.colors.blue[2]} !important;
+  background-color: ${props => props.theme.colors.black};
   padding: .75em 1.25em;
   font-size: ${props => props.theme.fontSizes[2]};
   border-radius: 6px;
@@ -20,8 +18,8 @@ const ButtonOutlineDark = styled(Link)`
   font-weight: 600;
   display: inline-block;
   &:hover {
-    color: ${props => props.theme.colors.blue[2]} !important;
-    background-color: ${props => props.theme.colors.black};
+    color: ${props => props.theme.colors.white} !important;
+    background-color: ${props => props.theme.colors.gray[9]};
     text-decoration: none;
   }
   ${space}
