@@ -1,5 +1,5 @@
 {
   "rules": [
-    {"pathname": "/components/**", "dest": "primer-react.now.sh"}
+    {"pathname": "/components/**", "dest": "primer-react-dev.now.sh"}
   ]
 }
