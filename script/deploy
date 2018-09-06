@@ -1,2 +1,4 @@
-#!/bin/sh
+#!/bin/bash
+set -e
+now alias
 now alias -r rules.json
