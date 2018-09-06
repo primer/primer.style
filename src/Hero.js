@@ -10,7 +10,7 @@ const Hero = props => (
       </Box>
       <Box my={[4,3,0]} width={[1, 1, 5/12]} pr={[0,3,5]} >
         <Heading color="blue.4" mb={1} fontSize={7} fontWeight='bold'>Primer</Heading>
-        <Text color="blue.2" is='p' fontSize={5}>Resources, tooling, and design guidelines for building interfaces with GitHub&#8217;s design system</Text>
+        <Text color="blue.2" is='p' fontSize={5}>Resources, tooling, and design guidelines for building interfaces with GitHub’s design system</Text>
       </Box>
     </Box>
   </Box>

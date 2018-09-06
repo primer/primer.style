@@ -13,7 +13,7 @@ const PrimerCSS = props => (
         <Text is='p' color="blue.2" mb={4} fontSize={3}>Styles can be mixed and matched to achieve many different layouts, independent of their location.</Text>
         <ButtonFill mr={2} href='https://styleguide.github.com/primer/'>Documentation</ButtonFill>
         <ButtonOutline href='https://github.com/primer/primer'>GitHub</ButtonOutline>
-        <Text is="p" fontSize={2} mt={4} color="blue.3" className="text-mono">npm i @primer/css</Text>
+        <Text is="p" fontSize={2} mt={4} color="blue.3" className="text-mono">npm i primer@latest</Text>
       </Box>
       <Box px={0,6,0} width={[1, 10/12, 6/12]} m='auto'>
       <Box p={[3, 3, 5]} bg="blue.8" borderRadius={6}>
@@ -29,25 +29,25 @@ const PrimerCSS = props => (
       <div className="d-flex flex-wrap gutter">
         <Box width={[1, 6/12, 6/12]} px={2}>
           <Box px={2}>
-            <Text is="p" fontSize={2} mt={4} color="blue.3" className="text-mono">@primer/css</Text>
+            <Text is="p" fontSize={2} mt={4} color="blue.3" className="text-mono">primer</Text>
             <Text is='p' color="blue.2" mb={4} fontSize={3}>This package includes all 30 Primer modules from the core, product, and marketing packages</Text>
           </Box>
         </Box>
         <Box width={[1, 6/12, 6/12]} px={2}>
           <Box px={2}>
-            <Text is="p" fontSize={2} mt={4} color="blue.3" className="text-mono">@primer/css-core</Text>
+            <Text is="p" fontSize={2} mt={4} color="blue.3" className="text-mono">primer-core</Text>
             <Text is='p' color="blue.2" mb={4} fontSize={3}>The core package contains modules that are shared between GitHub product and marketing websites</Text>
           </Box>
         </Box>
         <Box width={[1, 6/12, 6/12]} px={2}>
           <Box px={2}>
-            <Text is="p" fontSize={2} mt={4} color="blue.3" className="text-mono">@primer/css-product</Text>
+            <Text is="p" fontSize={2} mt={4} color="blue.3" className="text-mono">primer-product</Text>
             <Text is='p' color="blue.2" mb={4} fontSize={3}>The product package contains modules that are used on GitHub product websites</Text>
           </Box>
         </Box>
         <Box width={[1, 6/12, 6/12]} px={2}>
           <Box px={2}>
-            <Text is="p" fontSize={2} mt={4} color="blue.3" className="text-mono">@primer/css-marketing</Text>
+            <Text is="p" fontSize={2} mt={4} color="blue.3" className="text-mono">primer-marketing</Text>
             <Text is='p' color="blue.2" mb={4} fontSize={3}>The marketing package contains modules that are used on GitHub marketing websites</Text>
           </Box>
         </Box>

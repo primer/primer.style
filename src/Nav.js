@@ -26,13 +26,10 @@ const Nav = props => (
           href='https://github.com/primer/'
           title='Open-source'
         />
-        <NavLink
-        href='/team'
-        title='Team'
-        />
       </Box>
     </div>
   </Box>
+
 )
 
 export default Nav
