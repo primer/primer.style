@@ -6,14 +6,14 @@ import Octicon, {MarkGithub} from '@githubprimer/octicons-react'
 
 const Nav = props => (
   <Box bg='gray.9' py={3} className="box-shadow-large">
-    <div className='d-flex flex-items-center flex-wrap flex-md-nowrap p-responsive'>
-      <LinkLight nounderline pl={2} href='/'>
+    <div className='d-flex flex-items-center flex-wrap flex-sm-nowrap p-responsive'>
+      <LinkLight nounderline pl={3} href='/'>
         <Box color='blue.2' className="d-flex flex-items-center">
           <Octicon color="blue.2" icon={MarkGithub} ariaLabel="GitHub Primer home" size='medium' />
           <Text mx={3} color="blue.2" fontSize="2" lineHeight="condensed" >Primer</Text>
         </Box>
       </LinkLight>
-      <Box pr={[4, 2]} className='flex-auto text-right'>
+      <Box mt={[3, 0]} className='flex-auto text-left, text-md-right'>
         <NavLink
         href='https://styleguide.github.com/primer/'
         title='Style guide'
@@ -29,7 +29,6 @@ const Nav = props => (
       </Box>
     </div>
   </Box>
-
 )
 
 export default Nav
