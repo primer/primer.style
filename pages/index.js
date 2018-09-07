@@ -18,15 +18,15 @@ export default () =>
   <BoxPro bg='black'>
     <Nav />
     <Hero />
-    <Divider my={6} />
+    <Divider my={[5,6]} />
     <HiringPromo />
-    <Divider my={6} />
+    <Divider my={[5,6]} />
     <PrimerCSS />
-    <Divider my={6} />
+    <Divider my={[5,6]} />
     <PrimerReact />
-    <Divider my={6} />
+    <Divider my={[5,6]} />
     <AtomPlugins />
-    <Divider my={6} />
+    <Divider my={[5,6]} />
     <OcticonsPromo />
     <OpenSource />
   </BoxPro>
