@@ -10,23 +10,22 @@ import LinkLight from './LinkLight'
 
 
 const OcticonsPromo = props => (
-  <Box pb={4}>
-    <Box align="center" mb={5} className='container-xl p-responsive mx-auto'>
+  <Box pb={4} px={4}>
+    <Box align="center" mb={5} className='container-xl mx-auto'>
       <Box mt={[4,3,0]} width={[1, 1, 6/12]} >
-        <Link href="" className="no-underline"><Heading lineHeight="1.25" color="blue.4" mb={2} fontSize={7} fontWeight='bold'>Octicons</Heading></Link>
-        <Text is='p' color="blue.1" mb={3} fontSize={5}>Your project. GitHub&#8217;s icons.</Text>
-
-        <Text is="p" fontSize={2} color="blue.3" className="text-mono">v8.1.0</Text>
+        <Link href="http://octicons.github.com/" className="no-underline"><Heading lineHeight="1.25" color="blue.4" mb={2} fontSize={7} fontWeight='bold'>Octicons</Heading></Link>
+        <Text is='p' color="blue.1" mb={[2,3]} fontSize={[4,5]}>Your project. GitHub&#8217;s icons.</Text>
+        <Text fontSize={2} color="blue.3" className="text-mono">v8.1.0</Text>
       </Box>
-      <Box px={[0, 0, 3, 5]} pb={4}>
+      <Box className="container-lg">
         <OcticonsImage />
       </Box>
     </Box>
 
-    <Box className="container-xl p-responsive mx-auto" color="blue.2">
-      <FlexContainer alignItems="center" className="gutter-lg-spacious flex-wrap">
+    <Box className="container-xl mx-auto" color="blue.2">
+      <FlexContainer mx={-4} className="flex-wrap">
 
-        <FlexContainer width={[1, 1, 4/12]} px={[0, 2, 2, 4]} mb={[3, 4, 4, 0]}>
+        <FlexContainer width={[1, 1, 4/12]} px={4} mb={[3, 4, 4, 0]}>
           <FlexItem color="blue.3">
             <Octicon className="mr-3" icon={FileCode} size='40' verticalAlign="top"/>
           </FlexItem>
@@ -38,7 +37,7 @@ const OcticonsPromo = props => (
           </FlexItem>
         </FlexContainer>
 
-        <FlexContainer width={[1, 1, 4/12]} px={[0, 2, 2, 4]} mb={[3, 4, 4, 0]}>
+        <FlexContainer width={[1, 1, 4/12]} px={4} mb={[3, 4, 4, 0]}>
           <FlexItem color="blue.3">
             <Octicon className="mr-3" icon={Ruby} size='40' verticalAlign="top"/>
           </FlexItem>
@@ -50,7 +49,7 @@ const OcticonsPromo = props => (
           </FlexItem>
         </FlexContainer>
 
-        <FlexContainer width={[1, 1, 4/12]} px={[0, 2, 2, 4]} mb={[3, 4, 4, 0]}>
+        <FlexContainer width={[1, 1, 4/12]} px={4} mb={[3, 4, 4, 0]}>
           <FlexItem color="blue.3">
             <Octicon className="mr-3" icon={Paintcan} size='40' verticalAlign="top"/>
           </FlexItem>
