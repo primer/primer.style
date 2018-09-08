@@ -15,7 +15,7 @@ const PrimerCSS = props => (
         </Box>
       </Box>
       <Box my={[4,3,0]} width={[1, 1, 6/12]} px={4}>
-        <Heading lineHeight="1.25" color="blue.4" mb={3} fontSize={5} fontWeight='bold'>Highly resuable, flexbile styles</Heading>
+        <Heading lineHeight="1.25" color="blue.4" mb={3} fontSize={5} fontWeight='bold'>Highly reusable, flexible styles</Heading>
         <Text is='p' color="blue.2" mb={4} fontSize={3}>Styles can be mixed and matched to achieve many different layouts, independent of their location.</Text>
         <ButtonFill mr={2} href='https://styleguide.github.com/primer/'>Documentation</ButtonFill>
         <ButtonOutline href='https://github.com/primer/primer'>GitHub</ButtonOutline>
