@@ -11,13 +11,13 @@ const OpenSource = props => (
     <Box mx={-4} className="d-flex flex-wrap">
       <Box mb={[5,5,0]} width={[1, 1, 6/12]} px={4} >
         <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight='bold'>Open source</Heading>
-        <Text is='p' color="black" mb={4} fontSize={3}>Primer is open sourced on GitHub. Contributions and feedback are welcome!</Text>
+        <Text is='p' color="black" mb={4} fontSize={4}>Primer is open-sourced on GitHub. Contributions and feedback are welcome!</Text>
         <ButtonFillDark mr={2} href='https://github.com/primer'>
         <Octicon color="blue.2" icon={MarkGithub} size='20' verticalAlign="text-bottom" className="mr-2"/>Contribute on GitHub</ButtonFillDark>
       </Box>
-      <Box width={[1, 1, 6/12]} px={4} >
+      <Box width={[1, 1, 6/12]} px={4}>
         <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight='bold'>Keep in touch</Heading>
-        <LinkDark fontSize={2} mb={2} className="d-block" href="https://twitter.com/githubprimer">Follow us on twitter</LinkDark>
+        <LinkDark pt={1} fontSize={2} mb={2} className="d-block" href="https://twitter.com/githubprimer">Follow us on twitter</LinkDark>
         <LinkDark fontSize={2} mb={2} className="d-block" href="https://spectrum.chat/primer">Chat to us in Spectrum</LinkDark>
         <LinkDark fontSize={2} mb={2} className="d-block" href="https://github.com/primer/primer/issues/new/choose">Share feedback on GitHub</LinkDark>
       </Box>
