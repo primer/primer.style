@@ -11,7 +11,7 @@ import LinkLight from './LinkLight'
 const Package = ({children, icon, href, title, ...rest}) => (
   <FlexContainer width={[1, 1, 1/3]} px={4} mb={[3, 4, 4, 0]} {...rest}>
     <FlexItem color="blue.3">
-      <Box width={56}>
+      <Box width={44}>
         <Octicon className="mr-3" icon={icon} height={40} verticalAlign="top"/>
       </Box>
     </FlexItem>
