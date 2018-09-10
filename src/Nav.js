@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import NavLink from './NavLink'
 import {Box, Text, Link} from 'primer-react'
 import LinkLight from './LinkLight'
