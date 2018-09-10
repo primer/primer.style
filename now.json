@@ -1,3 +1,6 @@
 {
-  "alias": "primer.style"
+  "alias": "primer.style",
+  "static": {
+    "public": "docs"
+  }
 }
