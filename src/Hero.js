@@ -1,6 +1,6 @@
 import React from 'react'
 import {Box, Heading, Text, Link} from 'primer-react'
-import HeroImage from './HeroImage'
+import HeroImage from './svg/Hero.svg'
 
 const Hero = props => (
   <Box pt={[4,2,0]} px={4}>

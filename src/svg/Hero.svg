@@ -1,7 +1,3 @@
-import React from 'react'
-
-const HeroImage = (props) => (
-
 <svg width="100%" viewBox="0 0 392 290" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="266" height="226" transform="translate(126 48)" fill="#044289"/>
 <path d="M255.933 118.391C283.924 186.839 188.987 246.337 141.422 234.486C93.8574 222.635 37.0907 204.006 6.55458 128.127C-23.9815 52.2467 58.296 -42.8958 127.002 21.0402C195.709 84.9762 227.941 49.9424 255.933 118.391Z" transform="translate(0 25)" fill="#0366D6"/>
@@ -75,6 +71,3 @@ const HeroImage = (props) => (
 <circle cx="2" cy="2" r="2" transform="translate(80 205)" fill="#79B8FF"/>
 </svg>
 
-)
-
-export default HeroImage
