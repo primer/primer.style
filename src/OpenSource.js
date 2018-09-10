@@ -21,7 +21,7 @@ const OpenSource = props => (
         <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight='bold'>Keep in touch</Heading>
         <LinkDark pt={1} fontSize={2} mb={3} className="d-block" href="https://twitter.com/githubprimer">
           <Octicon color="blue.2" icon={TwitterIcon} size={20} verticalAlign="top" className="mr-2"/>
-        Follow us on twitter</LinkDark>
+        Follow us on Twitter</LinkDark>
         <LinkDark fontSize={2} mb={3} className="d-block" href="https://spectrum.chat/primer">
         <Octicon color="blue.2" icon={SpectrumIcon} size={20} verticalAlign="top" className="mr-2"/>
         Chat with us in Spectrum</LinkDark>
