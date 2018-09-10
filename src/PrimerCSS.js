@@ -15,7 +15,7 @@ const PrimerCSS = props => (
         </Box>
       </Box>
       <Box my={[4,3,0]} width={[1, 1, 6/12]} px={4}>
-        <Heading lineHeight="1.25" color="blue.4" mb={3} fontSize={5} fontWeight='bold'>Highly resuable, flexbile styles</Heading>
+        <Heading lineHeight="1.25" color="blue.4" mb={3} fontSize={5} fontWeight='bold'>Highly reusable, flexible styles</Heading>
         <Text is='p' color="blue.2" mb={4} fontSize={3}>Styles can be mixed and matched to achieve many different layouts, independent of their location.</Text>
         <ButtonFill mr={2} href='https://styleguide.github.com/primer/'>Documentation</ButtonFill>
         <ButtonOutline href='https://github.com/primer/primer'>GitHub</ButtonOutline>
@@ -25,7 +25,7 @@ const PrimerCSS = props => (
   </Box>
   <Box mt={[2, 4]} px={4} className="container-xl">
     <Box>
-      <Text is="p" fontSize={5} color="blue.2" pb={2} >Install only the packages you need.</Text>
+      <Text is="p" fontSize={5} color="blue.2" pb={2} lineHeight={1.25}>Install only the packages you need.</Text>
     </Box>
     <Box mx={-4} className="d-flex flex-wrap flex-items-center">
       <Box width={[1, 6/12, 6/12]} px={4}>
