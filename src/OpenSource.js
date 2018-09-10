@@ -18,7 +18,7 @@ const OpenSource = props => (
       <Box width={[1, 1, 6/12]} px={4}>
         <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight='bold'>Keep in touch</Heading>
         <LinkDark pt={1} fontSize={2} mb={2} className="d-block" href="https://twitter.com/githubprimer">Follow us on twitter</LinkDark>
-        <LinkDark fontSize={2} mb={2} className="d-block" href="https://spectrum.chat/primer">Chat to us in Spectrum</LinkDark>
+        <LinkDark fontSize={2} mb={2} className="d-block" href="https://spectrum.chat/primer">Chat with us in Spectrum</LinkDark>
         <LinkDark fontSize={2} mb={2} className="d-block" href="https://github.com/primer/primer/issues/new/choose">Share feedback on GitHub</LinkDark>
       </Box>
       </Box>
