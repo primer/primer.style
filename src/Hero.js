@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import {Box, Heading, Text, Link} from 'primer-react'
 import HeroImage from './HeroImage'
 import LinkLight from './LinkLight'

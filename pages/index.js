@@ -12,8 +12,7 @@ import OcticonsPromo from '../src/OcticonsPromo'
 import OpenSource from '../src/OpenSource'
 import PrimerReact from '../src/PrimerReact'
 
-export default () =>
-<React.Fragment>
+export default () => (
   <BoxPro bg='black'>
     <Nav />
     <Hero />
@@ -29,4 +28,4 @@ export default () =>
     <OcticonsPromo />
     <OpenSource />
   </BoxPro>
-</React.Fragment>
+)

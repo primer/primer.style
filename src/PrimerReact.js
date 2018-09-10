@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import {Box, Heading, Text, Link, FlexContainer} from 'primer-react'
 import ButtonFill from './ButtonFill'
 import ButtonOutline from './ButtonOutline'

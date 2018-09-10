@@ -5,11 +5,9 @@ import theme from '../src/theme.js'
 
 const Page = props => (
   <ThemeProvider theme={theme}>
-    <React.Fragment>
-      <BoxPro bg='black' color='blue.2'>
-        {props.children}
-      </BoxPro>
-    </React.Fragment>
+    <BoxPro bg='black' color='blue.2'>
+      {props.children}
+    </BoxPro>
   </ThemeProvider>
 )
 
