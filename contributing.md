@@ -10,7 +10,9 @@ This site is built with [Primer React components][components] and [x0].
 To start up your local dev environment, run:
 
 1. `npm install` to install all the Node dependencies
-2. `npm start` to start the server
+2. `npm run dev` to start the dev server
+3. `npm run build` to build the static site
+4. `npm start` to serve the static site
 
 
 ## Deployment
