@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import LinkLight from './LinkLight'
 
 const NavLink = props => (
