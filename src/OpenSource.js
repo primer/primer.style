@@ -2,6 +2,8 @@ import React from 'react'
 import {Box, Heading, Text, Link, FlexContainer} from 'primer-react'
 import ButtonFillDark from './ButtonFillDark'
 import Octicon, {Octoface, MarkGithub} from '@githubprimer/octicons-react'
+import TwitterIcon from './TwitterIcon'
+import SpectrumIcon from './SpectrumIcon'
 
 import LinkDark from './LinkDark'
 
@@ -17,16 +19,23 @@ const OpenSource = props => (
       </Box>
       <Box width={[1, 1, 6/12]} px={4}>
         <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight='bold'>Keep in touch</Heading>
-        <LinkDark pt={1} fontSize={2} mb={2} className="d-block" href="https://twitter.com/githubprimer">Follow us on twitter</LinkDark>
-        <LinkDark fontSize={2} mb={2} className="d-block" href="https://spectrum.chat/primer">Chat with us in Spectrum</LinkDark>
-        <LinkDark fontSize={2} mb={2} className="d-block" href="https://github.com/primer/primer/issues/new/choose">Share feedback on GitHub</LinkDark>
+        <LinkDark pt={1} fontSize={2} mb={3} className="d-block" href="https://twitter.com/githubprimer">
+          <Octicon color="blue.2" icon={TwitterIcon} size={20} verticalAlign="top" className="mr-2"/>
+        Follow us on twitter</LinkDark>
+        <LinkDark fontSize={2} mb={3} className="d-block" href="https://spectrum.chat/primer">
+        <Octicon color="blue.2" icon={SpectrumIcon} size={20} verticalAlign="top" className="mr-2"/>
+        Chat with us in Spectrum</LinkDark>
+        <LinkDark fontSize={2} mb={3} className="d-block" href="https://github.com/primer/primer/issues/new/choose">
+          <Octicon color="blue.2" icon={Octoface} size={20} verticalAlign="text-top" className="mr-2"/>
+          Share feedback on GitHub
+        </LinkDark>
       </Box>
       </Box>
     </Box>
     <Box color="black" className="container-xl p-responsive mx-auto">
       <Box mt={6} pt={4} borderTop={2} borderColor="black">
-        <Text is="p">Copyright GitHub 2018. Available for use under the <LinkDark className="d-inline" fontWeight="bold" href="https://github.com/primer/primer/blob/master/LICENSE">MIT license</LinkDark>.</Text>
         <Text is="p">Created and maintained by GitHub&#8217;s <LinkDark fontWeight="bold" href="https://github.com/orgs/primer/teams/ds-core/members">Design Systems team</LinkDark>.</Text>
+        <Text is="p">Copyright GitHub 2018.</Text>
       </Box>
     </Box>
 
