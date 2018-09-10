@@ -13,7 +13,7 @@ const Hero = props => (
           </Box>
         </Box>
         <Box px={4} my={[4,3,0]} width={[1, 1, 6/12, 7/12]}>
-          <Heading color="blue.4" mb={3} fontSize={[48, 56, 84]} fontWeight='bold'>Primer</Heading>
+          <Heading color="blue.4" mb={2} fontSize={[48, 56, 84]} fontWeight='bold'>Primer</Heading>
           <Text color="blue.2" fontSize={[4,5,5,7]} lineHeight={1.25}>Resources, tooling, and design guidelines for building interfaces with GitHub’s design system</Text>
           <Text is="p" color="blue.3" mt={4} className="text-mono">
           <LinkLight fontSize={[0,1,2]}
