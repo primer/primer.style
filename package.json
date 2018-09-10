@@ -5,8 +5,9 @@
   "description": "GitHub Primer open-source projects website",
   "main": "/pages/index.js",
   "scripts": {
-    "start": "x0 pages -op 8888",
-    "build": "x0 build pages --out-dir docs --static"
+    "dev": "x0 pages -op 8888",
+    "build": "x0 build pages --out-dir docs --static",
+    "start": "serve"
   },
   "repository": {
     "type": "git",
@@ -26,9 +27,7 @@
   },
   "homepage": "https://github.com/primer/primer.style#readme",
   "dependencies": {
-    "@compositor/x0": "^6.0.5",
     "@githubprimer/octicons-react": "^8.0.0",
-    "babel-plugin-emotion": "^9.2.6",
     "classnames": "^2.2.6",
     "emotion": "^9.2.6",
     "emotion-theming": "^9.2.6",
@@ -37,5 +36,10 @@
     "primer-react": "^2.0.0-beta",
     "react-emotion": "^9.2.6",
     "styled-system": "^2.3.6"
+  },
+  "devDependencies": {
+    "@compositor/x0": "^6.0.5",
+    "babel-plugin-emotion": "^9.2.6",
+    "serve": "^10.0.0"
   }
 }
