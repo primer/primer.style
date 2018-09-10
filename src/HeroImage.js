@@ -1,7 +1,7 @@
 import React from 'react'
 
 const HeroImage = (props) => (
-  <svg width="100%" viewBox="0 0 233 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="100%" viewBox="-20 0 253 190" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M45 167C49 167 49 175 53 175C57 175 57 167 61 167C65 167 65 175 69 175C73 175 73 167 77 167C81 167 81 175 85 175" stroke="#005CC5" stroke-linecap="round" stroke-linejoin="round"/>
   <circle cx="132.877" cy="14.3161" r="1.47946" fill="#005CC5"/>
   <circle cx="147.67" cy="14.3161" r="1.47946" fill="#005CC5"/>
