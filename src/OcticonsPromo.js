@@ -8,6 +8,19 @@ import OcticonsImage from './OcticonsImage'
 import Octicon, {FileCode, Ruby, Paintcan} from '@githubprimer/octicons-react'
 import LinkLight from './LinkLight'
 
+const Package = ({children, icon, href, title, ...rest}) => (
+  <FlexContainer width={[1, 1, 1/3]} px={4} mb={[3, 4, 4, 0]} {...rest}>
+    <FlexItem color="blue.3">
+      <Box width={56}>
+        <Octicon className="mr-3" icon={icon} height={40} verticalAlign="top"/>
+      </Box>
+    </FlexItem>
+    <FlexItem px={2}>
+      <Text is="p" fontSize={2}>{children}</Text>
+      <LinkLight className="d-inline-block" href={href}>{title} →</LinkLight>
+    </FlexItem>
+  </FlexContainer>
+)
 
 const OcticonsPromo = props => (
   <Box pb={4} px={4}>
@@ -25,41 +38,17 @@ const OcticonsPromo = props => (
     <Box className="container-xl mx-auto" color="blue.2">
       <FlexContainer mx={-4} className="flex-wrap">
 
-        <FlexContainer width={[1, 1, 4/12]} px={4} mb={[3, 4, 4, 0]}>
-          <FlexItem color="blue.3">
-            <Octicon className="mr-3" icon={FileCode} size='40' verticalAlign="top"/>
-          </FlexItem>
-          <FlexItem px={2}>
-            <Text is="p" fontSize={2}>
-              Install the node.js or react.js package via npm to use with your JavaScript project
-            </Text>
-            <LinkLight className="d-inline-block" href="https://github.com/primer/octicons/#ruby">JavaScript docs →</LinkLight>
-          </FlexItem>
-        </FlexContainer>
+        <Package icon={FileCode} href="https://github.com/primer/octicons/#ruby" title="JavaScript docs">
+          Install the node.js or react.js package via npm to use with your JavaScript project
+        </Package>
 
-        <FlexContainer width={[1, 1, 4/12]} px={4} mb={[3, 4, 4, 0]}>
-          <FlexItem color="blue.3">
-            <Octicon className="mr-3" icon={Ruby} size='40' verticalAlign="top"/>
-          </FlexItem>
-          <FlexItem px={2}>
-            <Text is="p" fontSize={2}>
-              Install the Ruby gem, Rails helper, or Jekyll plugin to use in your project
-            </Text>
-            <LinkLight className="d-inline-block" href="https://github.com/primer/octicons/#javascript">Ruby docs →</LinkLight>
-          </FlexItem>
-        </FlexContainer>
+        <Package icon={Ruby} href="https://github.com/primer/octicons/#javascript" title="Ruby docs">
+          Install the Ruby gem, Rails helper, or Jekyll plugin to use in your project
+        </Package>
 
-        <FlexContainer width={[1, 1, 4/12]} px={4} mb={[3, 4, 4, 0]}>
-          <FlexItem color="blue.3">
-            <Octicon className="mr-3" icon={Paintcan} size='40' verticalAlign="top"/>
-          </FlexItem>
-          <FlexItem px={2}>
-            <Text is="p" fontSize={2}>
-              Use SVG&#8217;s or Figma components in your design projects
-            </Text>
-            <LinkLight className="d-inline-block" href="https://www.figma.com/file/FP7lqd1V00LUaT5zvdklkkZr/Octicons/duplicate">Open in Figma →</LinkLight>
-          </FlexItem>
-        </FlexContainer>
+        <Package icon={Paintcan} href="https://www.figma.com/file/FP7lqd1V00LUaT5zvdklkkZr/Octicons/duplicate" title="Open in Figma">
+          Use SVG&#8217;s or Figma components in your design projects
+        </Package>
 
       </FlexContainer>
     </Box>
