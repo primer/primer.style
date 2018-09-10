@@ -13,7 +13,7 @@ const OpenSource = props => (
         <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight='bold'>Open source</Heading>
         <Text is='p' color="black" mb={4} fontSize={4}>Primer is open-sourced on GitHub. Contributions and feedback are welcome!</Text>
         <ButtonFillDark mr={2} href='https://github.com/primer'>
-        <Octicon color="blue.2" icon={MarkGithub} size='20' verticalAlign="text-bottom" className="mr-2"/>Contribute on GitHub</ButtonFillDark>
+        <Octicon color="blue.2" icon={MarkGithub} size={20} verticalAlign="text-bottom" className="mr-2"/>Contribute on GitHub</ButtonFillDark>
       </Box>
       <Box width={[1, 1, 6/12]} px={4}>
         <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight='bold'>Keep in touch</Heading>
