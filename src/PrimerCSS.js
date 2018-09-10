@@ -25,7 +25,7 @@ const PrimerCSS = props => (
   </Box>
   <Box mt={[2, 4]} px={4} className="container-xl">
     <Box>
-      <Text is="p" fontSize={5} color="blue.2" pb={2} >Install only the packages you need.</Text>
+      <Text is="p" fontSize={5} color="blue.2" pb={2} lineHeight={1.25}>Install only the packages you need.</Text>
     </Box>
     <Box mx={-4} className="d-flex flex-wrap flex-items-center">
       <Box width={[1, 6/12, 6/12]} px={4}>
