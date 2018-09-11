@@ -12,6 +12,13 @@ module.exports = ({
   <meta name='viewport' content='width=device-width,initial-scale=1' />
   <link rel='stylesheet' href='https://unpkg.com/primer/build/build.css' />
   <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="favicon.png">
+  <meta name="og:title" content="Primer">
+  <meta name="og:description" content="The design system that powers GitHub">
+  <meta name="og:image" content="https://user-images.githubusercontent.com/334891/45336457-b47efe00-b551-11e8-9644-398f29eceb92.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@githubprimer">
   <title>${title}</title>
   ${css}
 </head>
