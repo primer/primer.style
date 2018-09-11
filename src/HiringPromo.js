@@ -1,6 +1,6 @@
 import React from 'react'
 import {Box, Heading, Text, Link} from 'primer-react'
-import AtomImage from './AtomImage'
+import AtomImage from './svg/Atom.svg'
 import ButtonFill from './ButtonFill'
 import ButtonPromo from './ButtonPromo'
 import LinkLight from './LinkLight'

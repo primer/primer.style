@@ -1,10 +1,10 @@
 import React from 'react'
 import {Box, Heading, Text, Link, FlexContainer, FlexItem} from 'primer-react'
+import Octicon, {Package} from '@githubprimer/octicons-react'
 import Image from './Image'
-import CssImage from './CssImage'
+import CssImage from './svg/Css.svg'
 import ButtonFill from './ButtonFill'
 import ButtonOutline from './ButtonOutline'
-import Octicon, {Package} from '@githubprimer/octicons-react'
 
 
 const PrimerCSS = props => (
