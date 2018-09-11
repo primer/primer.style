@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 now
-now alias
+now alias primer.style
 now alias -r rules.json
