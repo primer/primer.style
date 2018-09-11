@@ -5,17 +5,17 @@
 <h3 align="center">Primer.style</h3>
 
 <p align="center">
-<a href="https://spectrum.chat/primer">Community</a>
+<a href="https://styleguide.github.com/primer">Styleguide</a>
     ·
-    <a href="https://styleguide.github.com/primer">Styleguide</a>
+    <a href="https://github.com/primer">Primer org</a>
     ·
-    <a href="https://github.com/primer/primer">Primer CSS repo</a>
+    <a href="https://spectrum.chat/primer">Community</a>
 
-<p align="center">Primer is GitHub's design system. The <a href="https://primer.style/">primer.style</a> website will, overtime, be the hub from which all Primer web properties are linked from.
+<p align="center">Primer is GitHub's design system.<br /> The <a href="https://primer.style/">primer.style</a> website will, overtime, be the hub from which all Primer web properties are linked from.
   
   ---
   
-#### Up-coming work
+#### Up-coming work & contributing
   
 We're working on updating our websites, domains, and npm package names so that it will be easier in future to find all things Primer. We welcome feedback and contributions at any time. Please check existing issues and pull requests before contributing, and please communicate via an issue first if you intend to make large-scale changes. See [contributing](CONTRIBUTING.md) for more info.
 
