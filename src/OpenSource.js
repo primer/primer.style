@@ -34,7 +34,7 @@ const OpenSource = props => (
     </Box>
     <Box color="black" className="container-xl p-responsive mx-auto">
       <Box mt={6} py={4} borderTop={2} borderColor="black">
-        <Text is="span">Created and maintained by GitHub&#8217;s</Text> <LinkDark fontWeight="bold" href="https://github.com/orgs/primer/teams/ds-core/members">Design Systems team</LinkDark><Text>.</Text>
+        <Text pr={1} is="span">Created and maintained by GitHub&#8217;s</Text><LinkDark fontWeight="bold" href="https://github.com/orgs/primer/teams/ds-core/members">Design Systems team</LinkDark><Text>.</Text>
         <Text is="p">Copyright GitHub 2018.</Text>
       </Box>
     </Box>
