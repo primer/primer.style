@@ -1,5 +1,8 @@
 #!/bin/bash
 set -e
+deployment=primer-style.now.sh
+domain=primer.style
 now
-now alias primer-style.now.sh
-now alias primer.style -r rules.json
+now alias $deployment
+now scale $deployment 1
+now alias $domain -r rules.json
