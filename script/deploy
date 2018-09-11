@@ -1,4 +1,5 @@
 #!/bin/bash
 set -e
+now
 now alias
 now alias -r rules.json

@@ -10,7 +10,9 @@ This site is built with [Primer React components][components] and [x0].
 To start up your local dev environment, run:
 
 1. `npm install` to install all the Node dependencies
-2. `npm start` to start the server
+2. `npm run dev` to start the dev server
+3. `npm run build` to build the static site
+4. `npm start` to serve the static site
 
 
 ## Deployment
@@ -21,7 +23,7 @@ This site is deployed on [Now] and mapped to the `primer.style` domain. With the
     * All pull requests are automatically deployed by the [Now GitHub app].
     * You don't have to be a member of the the Primer team to deploy this site to Now! (You just won't be able to alias your deployment to `primer.style`.)
 
-2. `now alias` to alias the most recent deployment to `primer.style`.
+2. `now alias primer.style` to alias the most recent deployment to the [primer.style] domain. (Note: the Now app is named `primer-style` to avoid ambiguity.)
 
 3. `now alias -r rules.json` to update any [path aliases](#path-aliases) configured in `rules.json`.
 
@@ -37,4 +39,5 @@ Because of the way that Now's path alias feature works, separate apps need to be
 [Now GitHub app]: https://github.com/apps/now
 [components]: https://primer.style/components/
 [path alias]: https://zeit.co/docs/features/path-aliases
+[primer.style]: https://primer.style/
 [x0]: https://github.com/c8r/x0
