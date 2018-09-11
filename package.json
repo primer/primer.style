@@ -2,8 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "x0 pages -op 8888",
-    "build": "x0 build pages --out-dir docs --static",
-    "start": "serve"
+    "build": "x0 build pages --out-dir docs --static"
   },
   "x0": {
     "title": "GitHub Primer open-source projects",
@@ -22,7 +21,6 @@
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-emotion": "^9.2.6",
-    "serve": "^10.0.0",
     "styled-system": "^2.3.6"
   }
 }
