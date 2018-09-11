@@ -1,13 +1,10 @@
 {
   "private": true,
-  "description": "GitHub Primer open-source projects website",
   "scripts": {
     "dev": "x0 pages -op 8888",
     "build": "x0 build pages --out-dir docs --static",
     "start": "serve"
   },
-  "author": "GitHub Design Systems",
-  "license": "MIT",
   "x0": {
     "title": "GitHub Primer open-source projects",
     "template": "./src/template.js"
