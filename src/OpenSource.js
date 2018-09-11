@@ -8,7 +8,7 @@ import SpectrumIcon from './SpectrumIcon'
 import LinkDark from './LinkDark'
 
 const OpenSource = props => (
-  <Box bg="blue.2" py={6} px={3} mt={6}>
+  <Box bg="blue.2" pt={6} px={3} mt={6}>
     <Box className='container-xl p-responsive mx-auto'>
     <Box mx={-4} className="d-flex flex-wrap">
       <Box mb={[5,5,0]} width={[1, 1, 6/12]} px={4} >
@@ -33,7 +33,7 @@ const OpenSource = props => (
       </Box>
     </Box>
     <Box color="black" className="container-xl p-responsive mx-auto">
-      <Box mt={6} pt={4} borderTop={2} borderColor="black">
+      <Box mt={6} py={4} borderTop={2} borderColor="black">
         <Text is="span">Created and maintained by GitHub&#8217;s</Text> <LinkDark fontWeight="bold" href="https://github.com/orgs/primer/teams/ds-core/members">Design Systems team</LinkDark><Text>.</Text>
         <Text is="p">Copyright GitHub 2018.</Text>
       </Box>
