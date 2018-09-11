@@ -22,7 +22,7 @@ export default () => (
     <PrimerCSS />
       <Divider my={[5,6]} />
     <PrimerReact />
-      <Divider mt={[5,6]} />
+      <Divider my={[5,6]} />
     <AtomPlugins />
       <Divider my={[5,6]} />
     <OcticonsPromo />

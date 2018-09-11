@@ -1,7 +1,4 @@
 {
-  "alias": "primer.style",
-  "static": {
-    "public": "docs",
-    "trailingSlash": true
-  }
+  "name": "primer-style",
+  "alias": "primer.style"
 }
