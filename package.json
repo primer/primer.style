@@ -1,7 +1,7 @@
 {
   "name": "primer.style",
   "version": "1.0.0",
-  "private": "true",
+  "private": true,
   "description": "GitHub Primer open-source projects website",
   "main": "/pages/index.js",
   "scripts": {
