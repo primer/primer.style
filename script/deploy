@@ -4,5 +4,5 @@ deployment=primer-style.now.sh
 domain=primer.style
 now
 now alias $deployment
-now scale $deployment 1
+now scale $deployment sfo 1
 now alias $domain -r rules.json
