@@ -11,7 +11,7 @@
     ·
     <a href="https://spectrum.chat/primer">Community</a>
 
-<p align="center">Primer is GitHub's design system.<br /> The <a href="https://primer.style/">primer.style</a> website will, overtime, be the hub from which all Primer web properties are linked from.
+<p align="center">Primer is GitHub's design system.<br /> The <a href="https://primer.style/">primer.style</a> website will, over time, be the hub from which all Primer web properties are linked from.
   
   ---
   
