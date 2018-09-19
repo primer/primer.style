@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Block, Heading, Text} from 'primer-react'
+import {Box, Block, Heading, Text} from '@primer/components'
 import Octicon, {iconsByName} from '@githubprimer/octicons-react'
 import BoxPro from '../src/BoxPro'
 import Nav from '../src/Nav'
