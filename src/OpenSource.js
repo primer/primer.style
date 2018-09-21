@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Heading, Text, Link, FlexContainer} from 'primer-react'
+import {Box, Heading, Text, Link, FlexContainer} from '@primer/components'
 import ButtonFillDark from './ButtonFillDark'
 import Octicon, {Octoface, MarkGithub} from '@githubprimer/octicons-react'
 import TwitterIcon from './TwitterIcon'

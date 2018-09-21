@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Heading, Text, Link} from 'primer-react'
+import {Box, Heading, Text, Link} from '@primer/components'
 import AtomImage from './AtomImage'
 import ButtonFill from './ButtonFill'
 import ButtonOutline from './ButtonOutline'

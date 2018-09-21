@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Heading, Text, Link, FlexContainer, FlexItem} from 'primer-react'
+import {Box, Heading, Text, Link, FlexContainer, FlexItem} from '@primer/components'
 import Image from './Image'
 import CssImage from './CssImage'
 import ButtonFill from './ButtonFill'

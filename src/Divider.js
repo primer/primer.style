@@ -1,4 +1,4 @@
-import {Box} from 'primer-react'
+import {Box} from '@primer/components'
 import {
   color
 } from 'styled-system'
