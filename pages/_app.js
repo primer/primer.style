@@ -1,13 +1,13 @@
 import React from 'react'
-import BoxPro from '../src/BoxPro'
+import {Box} from '@primer/components'
 import {ThemeProvider} from 'emotion-theming'
 import theme from '../src/theme.js'
 
 const Page = props => (
   <ThemeProvider theme={theme}>
-    <BoxPro bg='black' color='blue.2'>
+    <Box bg='black' color='blue.2'>
       {props.children}
-    </BoxPro>
+    </Box>
   </ThemeProvider>
 )
 
