@@ -3,7 +3,7 @@ import {Box, Heading, Text, Link, FlexContainer} from '@primer/components'
 import ButtonFill from './ButtonFill'
 import ButtonOutline from './ButtonOutline'
 import LinkLight from './LinkLight'
-import ReactIcon from './ReactIcon'
+import ReactIcon from './ReactIcon.svg'
 
 
 

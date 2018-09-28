@@ -1,6 +1,6 @@
 import React from 'react'
 import {Box, Heading, Text, Link} from '@primer/components'
-import HeroImage from './HeroImage'
+import HeroImage from './svg/Hero.svg'
 import LinkLight from './LinkLight'
 
 const Hero = props => (

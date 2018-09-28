@@ -12,6 +12,7 @@
   "dependencies": {
     "@compositor/x0": "^6.0.5",
     "@githubprimer/octicons-react": "^8.0.0",
+    "@svgr/webpack": "^2.3.0",
     "babel-plugin-emotion": "^9.2.6",
     "classnames": "^2.2.6",
     "emotion": "^9.2.6",

@@ -1,11 +1,11 @@
 import React from 'react'
 import {Box, Heading, Text, Link} from '@primer/components'
-import AtomImage from './AtomImage'
+import Octicon, {RadioTower} from '@githubprimer/octicons-react'
+import AtomImage from './svg/Atom.svg'
 import ButtonFill from './ButtonFill'
 import ButtonPromo from './ButtonPromo'
 import LinkLight from './LinkLight'
 import LinkPromo from './LinkPromo'
-import Octicon, {RadioTower} from '@githubprimer/octicons-react'
 
 
 
