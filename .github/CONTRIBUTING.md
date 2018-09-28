@@ -39,7 +39,7 @@ If you run into trouble, you can run the commands from that script one by one:
 Now's [path alias] feature allows us to serve multiple apps under a single domain (in this case, `primer.style`). As this site grows, we will split larger pages off into separate apps and manage their aliases in this repo's `rules.json`, then re-run `now alias -r rules.json` whenever those mappings change.
 
 #### Path alias tips and tricks
-Because of the way that Now's path alias feature works, separate apps need to be configured to serve all of their URLs under the same path as they're aliased to here. In other words, an app aliased to `/alias/**` will need to serve all of its content from `/alias/` rather than `/`. For Next.js apps, this means nesting all of your page content in `pages/<alias>/`. Serving static assets is trickier; you can see how we did it for [the components site][components] in [this pull request](https://github.com/primer/primer-react/pull/238).
+Because of the way that Now's path alias feature works, separate apps need to be configured to serve all of their URLs under the same path as they're aliased to here. In other words, an app aliased to `/alias/**` will need to serve all of its content from `/alias/` rather than `/`. For Next.js apps, this means nesting all of your page content in `pages/<alias>/`. Serving static assets is trickier; you can see how we did it for [the components site][components] in [this pull request](https://github.com/primer/components/pull/238).
 
 [components]: https://primer.style/components/
 [Now]: https://zeit.co/now
