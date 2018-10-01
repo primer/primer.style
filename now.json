@@ -1,3 +1,7 @@
 {
-  "name": "primer-style"
+  "name": "primer-style",
+  "alias": "primer.style",
+  "scale": {
+    "sfo": 1
+  }
 }
