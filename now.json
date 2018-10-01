@@ -2,6 +2,8 @@
   "name": "primer-style",
   "alias": "primer.style",
   "scale": {
-    "sfo": 1
+    "sfo": {
+      "min": 1
+    }
   }
 }
