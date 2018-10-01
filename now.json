@@ -3,7 +3,8 @@
   "alias": "primer.style",
   "scale": {
     "sfo": {
-      "min": 1
+      "min": 1,
+      "max": 1
     }
   }
 }
