@@ -1,7 +1,6 @@
 import React from 'react'
 import {Box, Heading, Text, Link} from '@primer/components'
 import HeroImage from './svg/Hero.svg'
-import LinkLight from './LinkLight'
 
 const Hero = props => (
   <Box pt={[4,2,3]}>
@@ -20,7 +19,7 @@ const Hero = props => (
               href='https://styleguide.github.com/primer/'>
               Style guide
             </Link> ・
-            <Link fontFamily="mono" color="blue.3" ml={2} fontSize={[0,1,2]}
+            <Link color="blue.3" fontFamily="mono" ml={2} fontSize={[0,1,2]}
               href='https://spectrum.chat/primer'>
               Community
             </Link> ・

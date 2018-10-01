@@ -7,13 +7,6 @@ import {
 } from 'styled-system'
 import styled from 'react-emotion'
 
-const LinkLight = styled(Link)`
-  color: ${props => props.theme.colors.blue[3]} !important;
-  ${fontSize}
-`
-
-LinkLight.defaultProps = {
-  color: 'blue.2'
-}
+const LinkLight = ({...rest}) => <Link color="blue.3" ...rest />
 
 export default LinkLight

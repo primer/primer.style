@@ -6,7 +6,6 @@ import ButtonFill from './ButtonFill'
 import ButtonOutline from './ButtonOutline'
 import OcticonsImage from './svg/Octicons.svg'
 import Octicon, {FileCode, Ruby, Paintcan} from '@githubprimer/octicons-react'
-import LinkLight from './LinkLight'
 
 const Package = ({children, icon, href, title, ...rest}) => (
   <FlexContainer width={[1, 1, 1/3]} px={4} mb={[3, 4, 4, 0]} {...rest}>
@@ -17,7 +16,7 @@ const Package = ({children, icon, href, title, ...rest}) => (
     </FlexItem>
     <FlexItem px={2}>
       <Text is="p" fontSize={2}>{children}</Text>
-      <LinkLight className="d-inline-block" href={href}>{title} →</LinkLight>
+      <Link color="blue.3" className="d-inline-block" href={href}>{title} →</Link>
     </FlexItem>
   </FlexContainer>
 )
