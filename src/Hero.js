@@ -15,20 +15,20 @@ const Hero = props => (
         <Box px={4} my={[4,3,0]} width={[1, 1, 6/12, 7/12]}>
           <Heading color="blue.4" mb={2} fontSize={[48, 56, 84]} fontWeight='bold'>Primer</Heading>
           <Text color="blue.2" fontSize={[4,5,5,7]} lineHeight={1.25}>Resources, tooling, and design guidelines for building interfaces with GitHub’s design system</Text>
-          <Text is="p" color="blue.3" mt={4} className="text-mono">
-          <LinkLight fontSize={[0,1,2]}
-            href='https://styleguide.github.com/primer/'>
-            Style guide
-          </LinkLight> ・
-          <LinkLight ml={2} fontSize={[0,1,2]}
-            href='https://spectrum.chat/primer'>
-            Community
-          </LinkLight> ・
-          <LinkLight ml={2} fontSize={[0,1,2]}
-            href='https://github.com/primer/'>
-            Open-source
-          </LinkLight>
-          </Text>
+          <Box mt={4}>
+            <Link color="blue.3" fontFamily="mono" fontSize={[0,1,2]}
+              href='https://styleguide.github.com/primer/'>
+              Style guide
+            </Link> ・
+            <Link fontFamily="mono" color="blue.3" ml={2} fontSize={[0,1,2]}
+              href='https://spectrum.chat/primer'>
+              Community
+            </Link> ・
+            <Link fontFamily="mono" color="blue.3" ml={2} fontSize={[0,1,2]}
+              href='https://github.com/primer/'>
+              Open-source
+            </Link>
+          </Box>
         </Box>
       </Box>
 
