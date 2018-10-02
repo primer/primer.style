@@ -5,7 +5,7 @@ import Octicon, {Octoface, MarkGithub} from '@githubprimer/octicons-react'
 import TwitterIcon from './TwitterIcon'
 import SpectrumIcon from './SpectrumIcon'
 
-import LinkDark from './LinkDark'
+import Link from './Link'
 
 const OpenSource = props => (
   <Box bg="blue.2" pt={6} px={3} mt={6}>
@@ -19,22 +19,22 @@ const OpenSource = props => (
       </Box>
       <Box width={[1, 1, 6/12]} px={4}>
         <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight='bold'>Keep in touch</Heading>
-        <LinkDark pt={1} fontSize={2} mb={3} className="d-block" href="https://twitter.com/githubprimer">
+        <Link color="black" hoverColor="gray.8" pt={1} fontSize={2} mb={3} className="d-block" href="https://twitter.com/githubprimer">
           <Octicon color="blue.2" icon={TwitterIcon} size={20} verticalAlign="top" className="mr-2"/>
-        Follow us on Twitter</LinkDark>
-        <LinkDark fontSize={2} mb={3} className="d-block" href="https://spectrum.chat/primer">
+        Follow us on Twitter</Link>
+        <Link color="black" hoverColor="gray.8" fontSize={2} mb={3} className="d-block" href="https://spectrum.chat/primer">
         <Octicon color="blue.2" icon={SpectrumIcon} size={20} verticalAlign="top" className="mr-2"/>
-        Chat with us in Spectrum</LinkDark>
-        <LinkDark fontSize={2} mb={3} className="d-block" href="https://github.com/primer/primer/issues/new/choose">
+        Chat with us in Spectrum</Link>
+        <Link color="black" hoverColor="gray.8" fontSize={2} mb={3} className="d-block" href="https://github.com/primer/primer/issues/new/choose">
           <Octicon color="blue.2" icon={Octoface} size={20} verticalAlign="text-top" className="mr-2"/>
           Share feedback on GitHub
-        </LinkDark>
+        </Link>
       </Box>
       </Box>
     </Box>
     <Box color="black" className="container-xl p-responsive mx-auto">
       <Box mt={6} py={4} borderTop={2} borderColor="black">
-        <Text pr={1} is="span">Created and maintained by GitHub&#8217;s</Text><LinkDark fontWeight="bold" href="https://github.com/primer/primer.style#team">Design Systems team</LinkDark><Text>.</Text>
+        <Text pr={1} is="span">Created and maintained by GitHub&#8217;s</Text><Link color="black" hoverColor="gray.8" fontWeight="bold" href="https://github.com/primer/primer.style#team">Design Systems team</Link><Text>.</Text>
         <Text is="p">Copyright GitHub 2018.</Text>
       </Box>
     </Box>
