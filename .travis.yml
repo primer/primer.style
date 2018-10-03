@@ -14,7 +14,7 @@ deploy:
   - on:
       all_branches: true
     provider: script
-    script: test -v NOW_TOKEN && script/deploy-preview --token="$NOW_TOKEN"
+    script: script/deploy-preview --token="$NOW_TOKEN"
 
 notifications:
   slack: github:4OisIoqZYyMlWcw3hFtZgbmh
