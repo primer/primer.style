@@ -24,5 +24,9 @@
     "react-emotion": "^9.2.6",
     "serve": "^10.0.0",
     "styled-system": "^2.3.6"
+  },
+  "devDependencies": {
+    "now": "^11.4.6",
+    "now-github-url": "^0.1.2"
   }
 }
