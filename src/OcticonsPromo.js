@@ -4,6 +4,9 @@ import OcticonsImage from './svg/Octicons.svg'
 import Octicon, {FileCode, Ruby, Paintcan} from '@githubprimer/octicons-react'
 import LinkLight from './LinkLight'
 
+import pkg from '../package.json'
+const octiconsVersion = pkg.dependencies['@githubprimer/octicons-react']
+
 export default function OcticonsPromo() {
   return (
     <Box pb={4} px={4}>
@@ -18,7 +21,7 @@ export default function OcticonsPromo() {
             Your project. GitHub&#8217;s icons.
           </Text>
           <Text fontSize={2} color="blue.3" fontFamily="mono">
-            v8.1.0
+            v{octiconsVersion}
           </Text>
         </Box>
         <Box className="container-lg">
