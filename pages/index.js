@@ -15,15 +15,15 @@ export default () => (
   <Box>
     <Nav />
     <Hero />
-      <Divider my={[5,6]} />
+      <Divider />
     <HiringPromo />
-      <Divider my={[5,6]} />
+      <Divider />
     <PrimerCSS />
-      <Divider my={[5,6]} />
+      <Divider />
     <PrimerReact />
-      <Divider my={[5,6]} />
+      <Divider />
     <AtomPlugins />
-      <Divider my={[5,6]} />
+      <Divider />
     <OcticonsPromo />
     <OpenSource />
   </Box>
