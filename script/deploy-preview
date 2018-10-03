@@ -1,9 +1,12 @@
 #!/bin/bash
 set -e
 branch="$TRAVIS_BRANCH"
-root="primer-style--${branch}.now.sh"
+root=$(now-github-url --ref="$TRAVIS_COMMIT")
+if [[ -z "$root" ]]; then
+    echo "No root deployment found for branch: '$branch'"
+    exit 1
+fi
 alias="primer-style-${branch}.now.sh"
 cat rules.json | perl -pi -e "s/primer-style\.now\.sh/${root}/g" > rules-preview.json
-now $*
 now $* alias $root
 now $* alias $alias -r rules-preview.json
