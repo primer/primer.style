@@ -2,9 +2,9 @@ language: node_js
 node_js:
   - 10
 
-before_install:
+before_script:
   - echo "TRAVIS_COMMIT: '$TRAVIS_COMMIT'"
-  - npx now-github-url --ref "$TRAVIS_COMMIT"
+  - now-github-url --ref "$TRAVIS_COMMIT"
 
 script:
   - echo npm run build
