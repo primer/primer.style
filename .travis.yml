@@ -5,5 +5,16 @@ node_js:
 script:
   - npm run build
 
+deploy:
+  - on:
+      branch: master
+    provider: script
+    script: script/deploy
+
 notifications:
   slack: github:4OisIoqZYyMlWcw3hFtZgbmh
+
+env:
+  global:
+    # NOW_TOKEN
+    secure: R6eC+4EOCoB+pizsBS11a6Nl1dvjUPkGdTIUb23qHgstBELjcINrT/3ItIT6gMhKm9sUdFZOcR+bwDqbtEvKSm/OFTb6vKByiaG9VVIeucwK3uu+G3zUFik3r6DH6Y/QwSIf+ThYZa5dOcsnhrj29dnPLVxFBpyNIdGuoTLwQ5itUFgDOHvkLRLYOpVorVlQLFqcwmiHSG3Zdr9kHztgFmJPE/xZ5PyeHi5zkgUc77j8H5gZbgfOOOqY6W3cSBpNIskfTQXMX+vNfTxThbsy+bbR7gwhYq9E9OtTn/FDbLg3Qgbc3ILept538qaD8E128m77VUHQ+mfU+Mj1vPQlzHvgWmwfbfU+txImNR6dLJnigwXOKv+zXsW0n9L/FPMW22gIA1oT/0W4XuDpzOOtvU6q/rJlTMpsbCR8xgw64dZPS8ealPw9Wd2OqglLVqiWc4l0Kh19LkCeVSVP459VWqsrigCm961X43yl2ScfPolbT4hwaIfX+0vwfe7pxO8W/Y+s2g1jSxeeeYp1458NEnVdUxBYXybPnb04a7OhRUu8PeUArHoJP03JyddNTsIOIBkO52DKZJ3tQ4mlOPGuGQg/TQUdiMPW8PwGQH66f7nkIhwboaj5vDqTOJLd8pLiB5XS1tAbhPh/PRadSqa23juKznY0Eoh+ZlTVkdJRz4c=
