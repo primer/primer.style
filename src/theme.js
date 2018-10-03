@@ -1,6 +1,9 @@
-import {theme} from '@primer/components'
+import primitives from 'primer-primitives'
 
-export default {
-  ...theme,
-  space: theme.space.map(n => n * 2)
+const theme = {
+  colors: primitives.colors,
+  fontSizes: primitives.fontSizes,
+  space: primitives.space.space
 }
+
+export default theme
