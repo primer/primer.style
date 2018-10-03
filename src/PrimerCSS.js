@@ -39,60 +39,42 @@ export default function PrimerCSS() {
           </Text>
         </Box>
         <Box mx={-4} className="d-flex flex-wrap flex-items-start">
-          <FlexContainer width={[1, 6 / 12, 6 / 12]} px={4} mb={[3, 4, 4, 0]}>
-            <FlexItem color="blue.3" mr={3}>
-              <Octicon icon={Package} height={40} verticalAlign="middle" />
-            </FlexItem>
-            <FlexItem>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
-                primer
-              </Text>
-              <Text is="p" color="blue.2" mb={4} fontSize={3}>
-                This package includes all 30 Primer modules from the core, product, and marketing packages
-              </Text>
-            </FlexItem>
-          </FlexContainer>
-          <FlexContainer width={[1, 6 / 12, 6 / 12]} px={4} mb={[3, 4, 4, 0]}>
-            <FlexItem color="blue.3" mr={3}>
-              <Octicon icon={Package} height={40} verticalAlign="middle" />
-            </FlexItem>
-            <FlexItem>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
-                primer-core
-              </Text>
-              <Text is="p" color="blue.2" mb={4} fontSize={3}>
-                The core package contains modules that are shared between GitHub product and marketing websites
-              </Text>
-            </FlexItem>
-          </FlexContainer>
-          <FlexContainer width={[1, 6 / 12, 6 / 12]} px={4} mb={[3, 4, 4, 0]} align="top">
-            <FlexItem color="blue.3" mr={3}>
-              <Octicon icon={Package} height={40} verticalAlign="middle" />
-            </FlexItem>
-            <FlexItem>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
-                primer-product
-              </Text>
-              <Text is="p" color="blue.2" mb={4} fontSize={3}>
-                The product package contains modules that are used on GitHub product websites
-              </Text>
-            </FlexItem>
-          </FlexContainer>
-          <FlexContainer width={[1, 6 / 12, 6 / 12]} px={4} mb={[3, 4, 4, 0]} align="top">
-            <FlexItem color="blue.3" mr={3}>
-              <Octicon icon={Package} height={40} verticalAlign="middle" />
-            </FlexItem>
-            <FlexItem>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
-                primer-marketing
-              </Text>
-              <Text is="p" color="blue.2" mb={4} fontSize={3}>
-                The marketing package contains modules that are used on GitHub marketing websites
-              </Text>
-            </FlexItem>
-          </FlexContainer>
+          {packages.map(pkg => (
+            <FlexContainer width={[1, 6 / 12, 6 / 12]} px={4} mb={[3, 4, 4, 0]}>
+              <FlexItem color="blue.3" mr={3}>
+                <Octicon icon={Package} height={40} verticalAlign="middle" />
+              </FlexItem>
+              <FlexItem>
+                <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
+                  {pkg.name}
+                </Text>
+                <Text is="p" color="blue.2" mb={4} fontSize={3}>
+                  {pkg.desc}
+                </Text>
+              </FlexItem>
+            </FlexContainer>
+          ))}
         </Box>
       </Box>
     </Box>
   )
 }
+
+const packages = [
+  {
+    name: 'primer',
+    desc: 'This package includes all 30 Primer modules from the core, product, and marketing packages'
+  },
+  {
+    name: 'primer-core',
+    desc: 'The core package contains modules that are shared between GitHub product and marketing websites'
+  },
+  {
+    name: 'primer-product',
+    desc: 'The product package contains modules that are used on GitHub product websites'
+  },
+  {
+    name: 'primer-marketing',
+    desc: 'The marketing package contains modules that are used on GitHub marketing websites'
+  }
+]
