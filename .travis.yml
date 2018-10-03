@@ -3,7 +3,7 @@ node_js:
   - 10
 
 before_script:
-  - echo "TRAVIS_COMMIT: '$TRAVIS_COMMIT'"
+  - echo 'TRAVIS_COMMIT:' "$TRAVIS_COMMIT"
   - now-github-url --ref "$TRAVIS_COMMIT"
 
 script:
