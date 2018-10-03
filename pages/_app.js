@@ -3,14 +3,14 @@ import {Box, BaseStyles} from '@primer/components'
 import {ThemeProvider} from 'emotion-theming'
 import theme from '../src/theme.js'
 
-const Page = props => (
-  <BaseStyles>
+export default function Page(props) {
+  return (
     <ThemeProvider theme={theme}>
-      <Box bg='black' color='blue.2'>
-        {props.children}
-      </Box>
+      <BaseStyles>
+        <Box bg="black" color="blue.2">
+          {props.children}
+        </Box>
+      </BaseStyles>
     </ThemeProvider>
-  </BaseStyles>
-)
-
-export default Page
+  )
+}
