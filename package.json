@@ -26,6 +26,7 @@
     "styled-system": "^2.3.6"
   },
   "devDependencies": {
+    "commit-status": "^4.3.0",
     "now": "^11.4.6",
     "now-github-url": "^0.1.2"
   }
