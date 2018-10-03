@@ -16,13 +16,10 @@ You must provide the command to call in the form:
 const [context, description, url, dash] = argv.splice(0, dashIndex + 1)
 const status = {context, description, url}
 const [cmd, ...args] = argv
-
-console.warn('status:', status)
-console.warn('command:', cmd, args)
-process.exit(0)
+const execOpts = {stdio: 'inherit', env: process.env}
 
 commitStatus.post({state: 'pending', ...status})
-  .then(() => execa(cmd, args, {stdio: 'inherit'})
+  .then(() => execa(cmd, args, execOpts)
     .catch(error => {
       process.exitCode = 1
       return commitStatus.post({state: 'error', ...status})
