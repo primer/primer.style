@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 branch="$TRAVIS_BRANCH"
-root="primer-style-$branch.now.sh"
-alias="$branch.primer-style.now.sh"
+root="primer-style--${branch}.now.sh"
+alias="primer-style-${branch}.now.sh"
 cat rules.json | perl -pi -e "s/primer-style\.now\.sh/${root}/g" > rules-preview.json
 now $*
 now $* alias $root
