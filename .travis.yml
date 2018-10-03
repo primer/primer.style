@@ -8,11 +8,12 @@ script:
 deploy:
   - on:
       branch: master
+      condition: -v NOW_TOKEN
     provider: script
     script: script/deploy --token="$NOW_TOKEN"
   - on:
       all_branches: true
-      condition: $TRAVIS_BRANCH != master
+      condition: -v NOW_TOKEN
     provider: script
     script: script/deploy-preview --token="$NOW_TOKEN"
 
