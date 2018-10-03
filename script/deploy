@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
-deployment=primer-style.now.sh
-domain=primer.style
-now
-now alias $deployment
-now scale $deployment sfo 1
-now alias $domain -r rules.json
+now $*
+# XXX this needs to match up with the last `dest` in rules.json
+now $* alias primer-style.now.sh
+now $* alias primer.style -r rules.json
