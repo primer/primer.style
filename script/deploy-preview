@@ -4,6 +4,7 @@ branch="$TRAVIS_BRANCH"
 root="primer-style-$branch.now.sh"
 alias="$branch.primer-style.now.sh"
 cat rules.json | perl -pi -e "s/primer-style\.now\.sh/${root}/g" > rules-preview.json
-now $*
-now $* alias $root
-now $* alias $alias -r rules-preview.json
+cat rules-preview.json
+echo now '[args]'
+echo now '[args]' alias $root
+echo now '[args]' alias $alias -r rules-preview.json
