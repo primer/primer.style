@@ -10,6 +10,11 @@ deploy:
       branch: master
     provider: script
     script: script/deploy --token="$NOW_TOKEN"
+  - on:
+      all_branches: true
+      condition: $TRAVIS_EVENT_TYPE = pull_request
+    provider: script
+    script: script/deploy-preview --token="$NOW_TOKEN"
 
 notifications:
   slack: github:4OisIoqZYyMlWcw3hFtZgbmh
