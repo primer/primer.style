@@ -5,6 +5,9 @@ node_js:
 script:
   - npm run build
 
+before_deploy:
+  - npm install -g now
+
 deploy:
   - on:
       branch: master
