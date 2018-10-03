@@ -8,5 +8,6 @@ if [[ -z "$root" ]]; then
 fi
 alias="primer-style-${branch}.now.sh"
 cat rules.json | perl -pi -e "s/primer-style\.now\.sh/${root}/g" > rules-preview.json
+echo "[preview] rules: $(cat rules-preview.json)"
 now $* alias $root
 now $* alias $alias -r rules-preview.json
