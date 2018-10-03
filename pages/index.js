@@ -1,6 +1,5 @@
 import React from 'react'
-import {Box, Block, Heading, Text} from '@primer/components'
-import Octicon, {iconsByName} from '@githubprimer/octicons-react'
+import {Box} from '@primer/components'
 import Nav from '../src/Nav'
 import Hero from '../src/Hero'
 import HiringPromo from '../src/HiringPromo'
@@ -11,20 +10,22 @@ import OcticonsPromo from '../src/OcticonsPromo'
 import OpenSource from '../src/OpenSource'
 import PrimerReact from '../src/PrimerReact'
 
-export default () => (
-  <Box>
-    <Nav />
-    <Hero />
+export default function Index() {
+  return (
+    <Box>
+      <Nav />
+      <Hero />
       <Divider />
-    <HiringPromo />
+      <HiringPromo />
       <Divider />
-    <PrimerCSS />
+      <PrimerCSS />
       <Divider />
-    <PrimerReact />
+      <PrimerReact />
       <Divider />
-    <AtomPlugins />
+      <AtomPlugins />
       <Divider />
-    <OcticonsPromo />
-    <OpenSource />
-  </Box>
-)
+      <OcticonsPromo />
+      <OpenSource />
+    </Box>
+  )
+}
