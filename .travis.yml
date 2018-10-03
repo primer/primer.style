@@ -13,7 +13,7 @@ deploy:
     script:
       - export DEPLOY_URL="https://$(jq -r .alias now.json)"
       - script/commit-status now/production "Production deployment" "$DEPLOY_URL" \
-          -- ./script/deploy --token="$NOW_TOKEN"
+          -- bash script/deploy --token="$NOW_TOKEN"
   - on:
       all_branches: true
       condition: $TRAVIS_BRANCH != master
@@ -21,7 +21,7 @@ deploy:
     script:
       - export DEPLOY_URL="https://primer-style-${TRAVIS_BRANCH}.now.sh"
       - script/commit-status now/preview "Preview deployment" "$DEPLOY_URL" \
-          -- ./script/deploy-preview --token="$NOW_TOKEN"
+          -- bash script/deploy-preview --token="$NOW_TOKEN"
     skip_cleanup: true
 
 notifications:
