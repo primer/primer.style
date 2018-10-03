@@ -3,7 +3,8 @@ node_js:
   - 10
 
 before_install:
-  - npx now-github-url --ref "$TRAVIS_BRANCH"
+  - echo "TRAVIS_COMMIT: '$TRAVIS_COMMIT'"
+  - npx now-github-url --ref "$TRAVIS_COMMIT"
 
 script:
   - echo npm run build
