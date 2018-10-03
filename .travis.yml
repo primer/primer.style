@@ -5,5 +5,11 @@ node_js:
 script:
   - npm run build
 
+deploy:
+  - on:
+      branch: master
+    provider: script
+    script: script/deploy --token="$NOW_TOKEN"
+
 notifications:
   slack: github:4OisIoqZYyMlWcw3hFtZgbmh
