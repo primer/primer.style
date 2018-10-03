@@ -7,7 +7,7 @@ if [[ -z "$root" ]]; then
     exit 1
 fi
 alias="primer-style-${branch}.now.sh"
-cat rules.json | perl -p -e "s/primer-style\.now\.sh/${root}/g" > rules-preview.json
+cat rules.json | jq -rM ".rules[-1].dest = '$root'" > rules-preview.json
 echo "[preview] rules: $(cat rules-preview.json)"
 now $* alias $root
 now $* alias $alias -r rules-preview.json
