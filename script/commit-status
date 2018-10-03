@@ -19,10 +19,13 @@ const [cmd, ...args] = argv
 const execOpts = {stdio: 'inherit', env: process.env}
 
 commitStatus.post({state: 'pending', ...status})
-  .then(() => execa(cmd, args, execOpts)
-    .catch(error => {
-      process.exitCode = 1
-      return commitStatus.post({state: 'error', ...status})
-        .then(() => { throw new Error(error) })
-    }))
+  .then(() => {
+    console.warn('running:', cmd, 'with:', args)
+    return execa(cmd, args, execOpts)
+      .catch(error => {
+        process.exitCode = 1
+        return commitStatus.post({state: 'error', ...status})
+          .then(() => { throw new Error(error) })
+      })
+  })
   .then(() => commitStatus.post({state: 'success', ...status}))
