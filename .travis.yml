@@ -2,12 +2,14 @@ language: node_js
 node_js:
   - 10
 
+before_install:
+  - npx now-github-url --ref "$TRAVIS_BRANCH"
+
 script:
-  - npm run build
+  - echo npm run build
 
 before_deploy:
-  - npm install -g now now-github-url
-  - echo "Now URL (branch): $(now-github-url --ref branch)" || exit 0
+  - npm install -g now
 
 deploy:
   - on:
