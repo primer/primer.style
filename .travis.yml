@@ -6,7 +6,8 @@ script:
   - npm run build
 
 before_deploy:
-  - npm install -g now
+  - npm install -g now now-github-url
+  - echo "Now URL: $(now-github-url)"
 
 deploy:
   - on:
