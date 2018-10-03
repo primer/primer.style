@@ -7,10 +7,7 @@ before_script:
   - now-github-url --ref "$TRAVIS_COMMIT"
 
 script:
-  - echo npm run build
-
-before_deploy:
-  - npm install -g now
+  - npm run build
 
 deploy:
   - on:
