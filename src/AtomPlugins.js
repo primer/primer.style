@@ -21,7 +21,7 @@ const AtomPlugins = () => (
           Install package
         </ButtonFill>
         <ButtonOutline href="https://atom.io/">Get Atom</ButtonOutline>
-        <Text is="p" fontSize={2} mt={4} color="blue.3" className="text-mono">
+        <Text is="p" fontSize={2} mt={4} color="blue.3" fontFamily="mono">
           apm install autocomplete-primer
         </Text>
       </Box>

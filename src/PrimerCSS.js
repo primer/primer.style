@@ -26,7 +26,7 @@ export default function PrimerCSS() {
               Documentation
             </ButtonFill>
             <ButtonOutline href="https://github.com/primer/primer">GitHub</ButtonOutline>
-            <Text is="p" fontSize={2} mt={4} color="blue.3" className="text-mono">
+            <Text is="p" fontSize={2} mt={4} color="blue.3" fontFamily="mono">
               npm i primer@latest
             </Text>
           </Box>
@@ -44,7 +44,7 @@ export default function PrimerCSS() {
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </FlexItem>
             <FlexItem>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} className="text-mono">
+              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
                 primer
               </Text>
               <Text is="p" color="blue.2" mb={4} fontSize={3}>
@@ -57,7 +57,7 @@ export default function PrimerCSS() {
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </FlexItem>
             <FlexItem>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} className="text-mono">
+              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
                 primer-core
               </Text>
               <Text is="p" color="blue.2" mb={4} fontSize={3}>
@@ -70,7 +70,7 @@ export default function PrimerCSS() {
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </FlexItem>
             <FlexItem>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} className="text-mono">
+              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
                 primer-product
               </Text>
               <Text is="p" color="blue.2" mb={4} fontSize={3}>
@@ -83,7 +83,7 @@ export default function PrimerCSS() {
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </FlexItem>
             <FlexItem>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} className="text-mono">
+              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
                 primer-marketing
               </Text>
               <Text is="p" color="blue.2" mb={4} fontSize={3}>
