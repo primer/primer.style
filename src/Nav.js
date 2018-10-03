@@ -15,8 +15,8 @@ const Nav = props => (
           </Box>
         </LinkLight>
       </FlexContainer>
-      <Link fontSize={2} px={3} color={'white'} href='/about'>About</Link>
-      <Link fontSize={2} pl={3} color={'white'} href='/news'>News</Link>
+      <Link fontSize={2} px={3} color={'white'} href='/meet-the-team'>Meet the team</Link>
+      <Link fontSize={2} pl={3} color={'white'} href='/whats-new'>What’s new</Link>
     </div>
   </Box>
 )
