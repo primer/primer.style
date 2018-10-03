@@ -11,22 +11,22 @@
     "template": "./src/template.js"
   },
   "dependencies": {
-    "@githubprimer/octicons-react": "^8.0.0",
-    "@primer/components": "^3.0.0-beta",
-    "emotion": "^9.2.6",
-    "emotion-theming": "^9.2.6",
-    "primer-primitives": "^1.0.2",
-    "react": "^16.5.0",
-    "react-dom": "^16.5.0",
-    "react-emotion": "^9.2.6",
-    "styled-system": "^2.3.6"
+    "@githubprimer/octicons-react": "8.1.0",
+    "@primer/components": "3.0.0-beta",
+    "emotion": "9.2.6",
+    "emotion-theming": "9.2.6",
+    "primer-primitives": "1.0.2",
+    "react": "16.5.0",
+    "react-dom": "16.5.0",
+    "react-emotion": "9.2.6",
+    "styled-system": "2.3.6"
   },
   "devDependencies": {
-    "@compositor/x0": "^6.0.5",
-    "@svgr/webpack": "^2.3.0",
-    "babel-plugin-emotion": "^9.2.6",
-    "eslint": "^5.6.1",
-    "eslint-plugin-github": "^1.4.0",
-    "serve": "^10.0.0"
+    "@compositor/x0": "6.0.5",
+    "@svgr/webpack": "2.3.0",
+    "babel-plugin-emotion": "9.2.6",
+    "eslint": "5.6.1",
+    "eslint-plugin-github": "1.4.0",
+    "serve": "10.0.0"
   }
 }
