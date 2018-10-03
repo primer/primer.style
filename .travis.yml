@@ -13,9 +13,9 @@ deploy:
     script: script/deploy --token="$NOW_TOKEN"
   - on:
       all_branches: true
-      condition: -v NOW_TOKEN
+      condition: TRAVIS_BRANCH != master
     provider: script
-    script: script/deploy-preview --token="$NOW_TOKEN"
+    script: test -v NOW_TOKEN && script/deploy-preview --token="$NOW_TOKEN"
 
 notifications:
   slack: github:4OisIoqZYyMlWcw3hFtZgbmh
@@ -23,4 +23,4 @@ notifications:
 env:
   global:
     # NOW_TOKEN
-    secure: R6eC+4EOCoB+pizsBS11a6Nl1dvjUPkGdTIUb23qHgstBELjcINrT/3ItIT6gMhKm9sUdFZOcR+bwDqbtEvKSm/OFTb6vKByiaG9VVIeucwK3uu+G3zUFik3r6DH6Y/QwSIf+ThYZa5dOcsnhrj29dnPLVxFBpyNIdGuoTLwQ5itUFgDOHvkLRLYOpVorVlQLFqcwmiHSG3Zdr9kHztgFmJPE/xZ5PyeHi5zkgUc77j8H5gZbgfOOOqY6W3cSBpNIskfTQXMX+vNfTxThbsy+bbR7gwhYq9E9OtTn/FDbLg3Qgbc3ILept538qaD8E128m77VUHQ+mfU+Mj1vPQlzHvgWmwfbfU+txImNR6dLJnigwXOKv+zXsW0n9L/FPMW22gIA1oT/0W4XuDpzOOtvU6q/rJlTMpsbCR8xgw64dZPS8ealPw9Wd2OqglLVqiWc4l0Kh19LkCeVSVP459VWqsrigCm961X43yl2ScfPolbT4hwaIfX+0vwfe7pxO8W/Y+s2g1jSxeeeYp1458NEnVdUxBYXybPnb04a7OhRUu8PeUArHoJP03JyddNTsIOIBkO52DKZJ3tQ4mlOPGuGQg/TQUdiMPW8PwGQH66f7nkIhwboaj5vDqTOJLd8pLiB5XS1tAbhPh/PRadSqa23juKznY0Eoh+ZlTVkdJRz4c=
+    secure: cKoKp6ZC4S9yR4n9gdPhv7IP79ey6GLagJzRJnM6ic+MvRHvGqfmVABHaF3O3TmCskOaLSKo0zxiqVe6WQxOsibDKRkcwiZVrnK2if1YA/ZQnA2TKzsGzHS1eEZ4jaOcZltyYcar55pYPhMPWlj7pOJtsNYKar/WV0dfrD2Dy9LFJSvOQ1M1LchpA+9o9uEVz8gtGeMD6X21Wko03x4xKQbDB6bpQFteXKN6UGSrGr2hya385pIOpbM1avMtlURgTXPUDGttV9jwkWOpelUiIv9qYmMK4nvbcQzmXAFxonmW4dn2NrgpUgV/sGIohLHFBDEm3ouBL75Ew0ocpSQjSswV4n6kstbaXyB2WAgIKlGOKpj3lyh6EF2vrAG07KwxghbYAloJjX/oJlf/+gTuE+H9B8WHwpisrPdLW/lvX/CnUGInCMelI413CC6e9Tq4OrDi9eWMzdfPZfS+LPvd2VEgP1eAO9UX6VbgCbRIfqkiII8j2FCUMTNUwHsqLgv9mXcpsAB+EeFfEZGLZuDW3D1Wt4T/f7xPUpnsfqmryeONtm6ZQ7bFnYGwd9ylGw3cvJI+ph64TiMt2D7wogeltLwYT4AWX9IKtlJJGdNdiV85sJ7lP1NC3LnloRlogmHhktqRmhtTJxBHdahgE3rrv1H6sGPjr2Pe28wqN8FuT5E=
