@@ -8,11 +8,15 @@ import teamContent from '../../src/team-content'
 export default () => (
   <Box>
     <Nav />
-    <Box p={4}>
+    <Box p={7}>
       <Text fontSize={5}>Meet the team</Text>
-      {teamContent.map((member) => {
+      {teamContent.map((member, i) => {
+        const isOdd = i % 2 === 0;
         return (
-          <MemberInfo member={member} />
+          <FlexContainer mb={12} justifyContent='flex-end' flexDirection={isOdd ? 'row-reverse' : 'row'}>
+            <MemberInfo member={member} />
+            <Box bg="blue.4" width="300" height="300" mr={isOdd ? 8 : 0} ml={isOdd ? 0 : 8}/>
+          </FlexContainer>
         )
       })}
     </Box>
