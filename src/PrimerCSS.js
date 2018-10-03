@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Heading, Text, FlexContainer, FlexItem} from '@primer/components'
+import {Box, Heading, Text, Link, FlexContainer, FlexItem} from '@primer/components'
 import Octicon, {Package} from '@githubprimer/octicons-react'
 import CssImage from './svg/Css.svg'
 import ButtonFill from './ButtonFill'
@@ -39,42 +39,40 @@ export default function PrimerCSS() {
           </Text>
         </Box>
         <Box mx={-4} className="d-flex flex-wrap flex-items-start">
-          {packages.map(pkg => (
-            <FlexContainer width={[1, 6 / 12, 6 / 12]} px={4} mb={[3, 4, 4, 0]}>
-              <FlexItem color="blue.3" mr={3}>
-                <Octicon icon={Package} height={40} verticalAlign="middle" />
-              </FlexItem>
-              <FlexItem>
-                <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
-                  {pkg.name}
-                </Text>
-                <Text is="p" color="blue.2" mb={4} fontSize={3}>
-                  {pkg.desc}
-                </Text>
-              </FlexItem>
-            </FlexContainer>
-          ))}
+          <PackageItem name="primer">
+            This package includes all 30 Primer modules from the core, product, and marketing packages
+          </PackageItem>
+          <PackageItem name="primer-core">
+            The core package contains modules that are shared between GitHub product and marketing websites
+          </PackageItem>
+          <PackageItem name="primer-product">
+            The product package contains modules that are used on GitHub product websites
+          </PackageItem>
+          <PackageItem name="primer-marketing">
+            The marketing package contains modules that are used on GitHub marketing websites
+          </PackageItem>
         </Box>
       </Box>
     </Box>
   )
 }
 
-const packages = [
-  {
-    name: 'primer',
-    desc: 'This package includes all 30 Primer modules from the core, product, and marketing packages'
-  },
-  {
-    name: 'primer-core',
-    desc: 'The core package contains modules that are shared between GitHub product and marketing websites'
-  },
-  {
-    name: 'primer-product',
-    desc: 'The product package contains modules that are used on GitHub product websites'
-  },
-  {
-    name: 'primer-marketing',
-    desc: 'The marketing package contains modules that are used on GitHub marketing websites'
-  }
-]
+function PackageItem({name, children, ...rest}) {
+  return (
+    <FlexContainer width={[1, 6 / 12, 6 / 12]} px={4} mb={[3, 4, 4, 0]} {...rest}>
+      <FlexItem color="blue.3" mr={3}>
+        <Octicon icon={Package} height={40} verticalAlign="middle" />
+      </FlexItem>
+      <FlexItem>
+        <Box my={1}>
+          <Link fontSize={2} color="blue.3" fontFamily="mono" href={`https://npm.im/${name}`}>
+            {name}
+          </Link>
+        </Box>
+        <Text is="p" color="blue.2" mb={4} fontSize={3}>
+          {children}
+        </Text>
+      </FlexItem>
+    </FlexContainer>
+  )
+}
