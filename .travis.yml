@@ -12,7 +12,7 @@ deploy:
     script: script/deploy --token="$NOW_TOKEN"
   - on:
       all_branches: true
-      condition: $TRAVIS_EVENT_TYPE = pull_request
+      condition: $TRAVIS_BRANCH != master
     provider: script
     script: script/deploy-preview --token="$NOW_TOKEN"
 
