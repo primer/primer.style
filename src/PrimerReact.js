@@ -17,7 +17,7 @@ export default function PrimerReact() {
         We&#8217;re building a React.js component library for Primer. Public beta coming soon!
       </Text>
       <LinkLight fontSize={2} href="https://primer.style/components">
-        View component library →
+        View the components →
       </LinkLight>
     </Box>
   )
