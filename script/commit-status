@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+const commitStatus = require('commit-status')
+const execa = require('execa')
+
+const argv = process.argv.slice(2)
+const dashIndex = argv.indexOf('--')
+if (dashIndex === -1 || argv.length < 5) {
+  console.error(`
+You must provide the command to call in the form:
+
+  ${process.argv[1]} context description url -- command
+`)
+  return process.exit(1)
+}
+
+const [context, description, url, dash] = argv.splice(0, dashIndex + 1)
+const status = {context, description, url}
+const [cmd, ...args] = argv
+const execOpts = {stdio: 'inherit', env: process.env}
+
+commitStatus.post({state: 'pending', ...status})
+  .then(() => {
+    console.warn('running:', cmd, 'with:', args)
+    return execa(cmd, args, execOpts)
+      .catch(error => {
+        process.exitCode = 1
+        return commitStatus.post({state: 'error', ...status})
+          .then(() => { throw new Error(error) })
+      })
+  })
+  .then(() => commitStatus.post({state: 'success', ...status}))
