@@ -12,7 +12,6 @@ export function initDraggables() {
     } else {
       // console.warn('[draggable] add:', el)
     }
-    el.removeAttribute(attr)
     draggables.push(new Draggable(el))
   }
 
@@ -73,11 +72,10 @@ export class Draggable {
     const {position, source, target} = this
     source.removeAttribute('transform')
     const rect = source.getBoundingClientRect()
-    const offset = getRelativeOffset(source)
     position.x = rect.x + window.scrollX
     position.y = rect.y + window.scrollY
-    target.style.setProperty('left', px(rect.left))
-    target.style.setProperty('top', px(rect.top))
+    target.style.setProperty('left', px(position.x))
+    target.style.setProperty('top', px(position.y))
     target.style.setProperty('width', px(rect.width))
     target.style.setProperty('height', px(rect.height))
   }
