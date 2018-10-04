@@ -5,8 +5,12 @@ import {ThemeProvider} from 'emotion-theming'
 import {initDraggables} from '../src/draggable'
 
 export default class Page extends React.Component {
+  componentDidMount() {
+    initDraggables()
+  }
+
   render() {
-    const {children, ...rest} = this.props
+    const {children} = this.props
     return (
       <BaseStyles>
         <ThemeProvider theme={theme}>
@@ -16,9 +20,5 @@ export default class Page extends React.Component {
         </ThemeProvider>
       </BaseStyles>
     )
-  }
-
-  componentDidMount() {
-    initDraggables()
   }
 }
