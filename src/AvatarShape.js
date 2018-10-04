@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from '@primer/components'
+import {Box} from '@primer/components'
 import styled from 'react-emotion'
 
 const Shape = styled((props) => {
@@ -37,7 +37,7 @@ const Image = styled('img')`
   left: 0;
 `
 
-const A = styled(Link)`
+const A = styled(Box)`
   position: relative;
   display: inline-block;
   overflow: hidden;
@@ -53,7 +53,9 @@ const A = styled(Link)`
     top: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom left, #032f62 0%, #ffab70 100%);
+    background: radial-gradient(circle, #ffab70, #032f62),
+      radial-gradient(circle, #85e89d, #e36209);
+    background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
     mix-blend-mode: multiply;
     opacity: 0;
     z-index: 3;
@@ -67,7 +69,7 @@ const A = styled(Link)`
 `
 
 const AvatarShape = props => (
-  <A href={props.href} {...props}>
+  <A {...props}>
     <Image src={props.src} />
     <Shape shape={props.shape} />
   </A>
