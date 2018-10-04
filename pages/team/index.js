@@ -9,10 +9,10 @@ import BackgroundImage from  '../../src/BackgroundImage'
 export default () => (
   <Box>
     <Nav />
-    <Box p={7} style={{overflow: 'hidden'}}>
+    <Box className='container-xl' p={3} pt={7} style={{overflow: 'hidden'}}>
       <FlexContainer justifyContent='space-between'>
         <Box maxWidth='550px'>
-          <Heading color='blue.4'>Meet the team</Heading>
+          <Heading fontSize={7} color='blue.4'>Meet the team</Heading>
           <Text fontSize={4} color='blue.2'>
             Get to know the team behind Primer; how we got into design systems and what we’re most looking forward to.
           </Text>
