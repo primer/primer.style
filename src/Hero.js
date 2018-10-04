@@ -1,7 +1,6 @@
 import React from 'react'
 import {Box, Heading, Text, Link, Absolute, Relative} from '@primer/components'
 import HeroImage from './svg/Hero.svg'
-import Brush from './svg/Brush.svg'
 import HeroOverlay from './svg/HeroOverlay.svg'
 import LinkLight from './LinkLight'
 
