@@ -3,6 +3,8 @@ import {Box, BaseStyles} from '@primer/components'
 import {ThemeProvider} from 'emotion-theming'
 import theme from '../src/theme.js'
 
+import '../src/behaviors'
+
 const Page = props => (
   <ThemeProvider theme={theme}>
     <BaseStyles>
