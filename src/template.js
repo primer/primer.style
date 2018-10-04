@@ -1,12 +1,5 @@
-module.exports = ({
-  html = '',
-  css = '',
-  scripts,
-  title = 'Primer open-source projects',
-  meta = [],
-  links = [],
-}) =>
-`<!DOCTYPE html>
+module.exports = ({html = '', css = '', scripts, title = 'Primer open-source projects'}) =>
+  `<!DOCTYPE html>
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126681523-1"></script>
@@ -36,6 +29,6 @@ module.exports = ({
   <meta name="twitter:site" content="@githubprimer">
   ${css}
 </head>
-<div id=root>${html}</div>
+<div id="root">${html}</div>
 ${scripts}
 `
