@@ -23,7 +23,6 @@
     "react-dom": "^16.5.0",
     "react-draggable": "^3.0.5",
     "react-emotion": "^9.2.6",
-    "selector-observer": "^2.1.3",
     "serve": "^10.0.0",
     "styled-system": "^2.3.6",
     "throttle-debounce": "^2.0.1"
