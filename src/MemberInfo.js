@@ -7,9 +7,11 @@ const MemberInfo = ({member}) => (
     <Text is="p" fontSize={4} mb={0} color="blue.4">
       <Text fontWeight="bold">{member.name}</Text>, {member.title}
     </Text>
-    <FlexContainer alignItems="center">
-      <Octicon size="24" className="mr-3" icon={MarkGithub}/>
-      <Link fontFamily="mono" color="blue.2" fontSize={3} href={`https://github.com/${member.github}`}>@{member.github}</Link>
+    <FlexContainer alignItems="center" mt={2}>
+      <Link fontFamily="mono" color="blue.3" hoverColor="blue.3" fontSize={3} href={`https://github.com/${member.github}`}>
+        <Octicon size="24" color='blue.3' className="mr-3" icon={MarkGithub}/>
+        @{member.github}
+      </Link>
     </FlexContainer>
     <Text is="p" fontSize={3} mt={4}>{member.bio}</Text>
   </Box>
