@@ -1,5 +1,5 @@
 <svg width="319" height="275" viewBox="0 0 319 275" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <clipPath id="clip-hexagon" clipPathUnits="objectBoundingBox" transform="scale(0.003134796 0.00358)">
+  <clipPath id="clip-hexagon">
     <path d="M237.421 1H81.5789L2 137.5L81.5789 274H237.421L317 137.5L237.421 1Z"/>
   </clipPath>
   <path d="M237.421 1H81.5789L2 137.5L81.5789 274H237.421L317 137.5L237.421 1Z" stroke="#2188FF" stroke-width="5" stroke-miterlimit="10"/>

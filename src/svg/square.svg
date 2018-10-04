@@ -1,5 +1,5 @@
 <svg width="271" height="266" viewBox="0 0 271 266" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <clipPath id="clip-square" clipPathUnits="objectBoundingBox" transform="scale(0.003690037 0.00369)">
+  <clipPath id="clip-square">
     <path d="M270 1H1V265H270V1Z"/>
   </clipPath>
   <path d="M270 1H1V265H270V1Z" stroke="#2188FF" stroke-width="5" stroke-miterlimit="10"/>

@@ -20,8 +20,6 @@ const Shape = styled(({className, shape}) => {
 })`
   position: relative;
   z-index: 2;
-  width: 100%;
-  height: auto;
 `
 
 const Image = styled('img')`
@@ -35,9 +33,6 @@ const Image = styled('img')`
   top: 0;
   left: 0;
 `
-// width: ${props => props.width};
-// height: ${props => props.height};
-
 const A = styled(Box)`
   position: relative;
   display: inline-block;
@@ -52,8 +47,10 @@ const A = styled(Box)`
     top: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle, #ffab70, #032f62);
-    background: conic-gradient(from 90deg, #005cc5, #b392f0, #f66a0a, #ffdf5d, #ffab70, #79b8ff, #2188ff);
+    background: radial-gradient(ellipse at top, #79b8ff, transparent),
+      radial-gradient(ellipse at bottom, #f66a0a, transparent),
+      linear-gradient(to right, #ffdf5d 50%, transparent 50%),
+      linear-gradient(to left, #2188ff 50%, transparent);
     mix-blend-mode: multiply;
     opacity: 0;
     z-index: 3;
