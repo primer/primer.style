@@ -1,24 +1,49 @@
 import React from 'react'
-import {FlexContainer, Box, Absolute} from '@primer/components'
+import {FlexContainer, Box, FlexItem, Absolute} from '@primer/components'
 import BackgroundImage from  './BackgroundImage'
 import MemberInfo from './MemberInfo'
+
+const oddLineStyles =
+  `&:after {
+    background-image: url('./line.svg');
+    background-size: 111px 557px;
+    background-repeat: no-repeat;
+    content: "";
+    height: 557px;
+    width: 111px;
+    position: absolute;
+    left: 300px;
+    margin-top: 80px;
+  }`
+
+const evenLineStyles =
+  `&:after {
+    background-image: url('./line.svg');
+    background-size: 111px 557px;
+    background-repeat: no-repeat;
+    content: "";
+    height: 557px;
+    width: 111px;
+    position: absolute;
+    left: -47px;
+    margin-top: 80px;
+    transform: scale(-1, 1);
+  }`
 
 const Odd = ({member, shape}) =>
   <FlexContainer mb={12} justifyContent='flex-end' flexDirection={'row-reverse'}>
     <MemberInfo member={member} />
-    <Box bg="red.2" width="300" height="300" mr={8} ml={0}>{shape}</Box>
-    <Absolute left='348px' mt='150px'>
-      <BackgroundImage width="156px" height="577px" position='absolute' backgroundImage='./line.svg' />
-    </Absolute>
+    <FlexItem flexShrink='0' style={{position: 'relative'}}>
+      <Box bg="red.2" width="300px" height="300px" css={oddLineStyles} mr={8} ml={0}>{shape}</Box>
+    </FlexItem>
   </FlexContainer>
 
 const Even = ({member, shape}) =>
   <FlexContainer mb={12} justifyContent='flex-end' flexDirection={'row'}>
     <MemberInfo member={member} />
-    <Box bg="red.2" width="300" height="300" mr={0} ml={8}>{shape}</Box>
-    <Absolute right='348px' mt='150px'>
-      <BackgroundImage width="156px" height="577px" style={{transform: 'scaleX(-1)'}} position='absolute' backgroundImage='./line.svg' />
-    </Absolute>
+    <FlexItem style={{position: 'relative'}} flexShrink='0'>
+      <Box bg="red.2" width="300" height="300" css={evenLineStyles} mr={0} ml={8}>{shape}</Box>
+    </FlexItem>
   </FlexContainer>
 
 const Member = ({member, isOdd, shape}) => isOdd ? <Odd member={member} shape={shape} /> : <Even member={member} shape={shape} />
