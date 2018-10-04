@@ -6,6 +6,18 @@ import Member from  '../../src/Member'
 import teamContent from '../../src/team-content'
 import BackgroundImage from  '../../src/BackgroundImage'
 
+const shapes = ['square', 'circle', 'hexigon', 'diamond']
+
+const getMemberContent = () => {
+  let shapeIndex = 0
+  return teamContent.map((member, i) => {
+    if (i === shapes.length) shapeIndex = 0
+    const element = <Member shape={shapes[shapeIndex]} isOdd={i % 2 === 0} member={member} />
+    shapeIndex++
+    return element
+  })
+}
+
 export default () => (
   <Box>
     <Nav />
@@ -23,9 +35,7 @@ export default () => (
           </FlexItem>
         </Relative>
       </FlexContainer>
-      {teamContent.map((member, i) => {
-        return <Member isOdd={i % 2 === 0} member={member} />
-      })}
+      {getMemberContent()}
     </Box>
   </Box>
 )
