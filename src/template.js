@@ -1,4 +1,4 @@
-module.exports = ({html = '', css = '', scripts, title = 'Primer open-source projects', meta = [], links = []}) =>
+module.exports = ({html = '', css = '', scripts, title}) =>
   `<!DOCTYPE html>
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -32,5 +32,4 @@ module.exports = ({html = '', css = '', scripts, title = 'Primer open-source pro
 <body>
   <div id="root" class="overflow-hidden">${html}</div>
   ${scripts}
-</body>
-`
+</body>`
