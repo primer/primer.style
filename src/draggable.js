@@ -32,7 +32,7 @@ export class Draggable {
     this.source = el
     this.target = cloneAndIsolate(el)
 
-    const {source, target} = this
+    const {target} = this
     target.style.setProperty('cursor', 'pointer')
     target.style.setProperty('position', 'absolute')
     document.body.appendChild(target)
@@ -101,7 +101,6 @@ function globalToLocal(global, context) {
 function cloneAndIsolate(el) {
   const rect = el.getBoundingClientRect()
   const owner = getOwner(el)
-  const outerRect = owner.getBoundingClientRect()
 
   const topLeft = globalToLocal({x: rect.left, y: rect.top}, el)
   const bottomRight = globalToLocal({x: rect.right, y: rect.bottom}, el)
