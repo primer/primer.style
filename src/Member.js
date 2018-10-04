@@ -1,6 +1,5 @@
 import React from 'react'
 import {FlexContainer, Box, FlexItem, Absolute} from '@primer/components'
-import BackgroundImage from  './BackgroundImage'
 import MemberInfo from './MemberInfo'
 
 const oddLineStyles =

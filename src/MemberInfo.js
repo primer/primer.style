@@ -2,7 +2,6 @@ import React from 'react'
 import {Text, FlexContainer, Link, Box} from '@primer/components'
 import Octicon, {MarkGithub} from '@githubprimer/octicons-react'
 import ReactMarkdown from 'react-markdown'
-import MemberMarkdown from './MemberMarkdown.mdx'
 
 const MemberInfo = ({member}) => (
   <Box maxWidth="600px">

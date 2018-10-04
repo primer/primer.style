@@ -31,7 +31,7 @@ export default () => (
         </Box>
         <Relative top='-100px'>
           <FlexItem flexShrink="0">
-            <BackgroundImage width='430px' height='340px' backgroundImage='./meet-the-team.svg'/>
+            <BackgroundImage width='430px' height='340px' backgroundImage={`url('./meet-the-team.svg')`}/>
           </FlexItem>
         </Relative>
       </FlexContainer>
