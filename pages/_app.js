@@ -6,13 +6,13 @@ import theme from '../src/theme.js'
 import '../src/behaviors'
 
 const Page = props => (
-  <ThemeProvider theme={theme}>
-    <BaseStyles>
+  <BaseStyles>
+    <ThemeProvider theme={theme}>
       <Box bg='black' color='blue.2'>
         {props.children}
       </Box>
-    </BaseStyles>
-  </ThemeProvider>
+    </ThemeProvider>
+  </BaseStyles>
 )
 
 export default Page
