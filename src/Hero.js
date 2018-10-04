@@ -4,28 +4,18 @@ import HeroImage from './svg/Hero.svg'
 import Brush from './svg/Brush.svg'
 import HeroOverlay from './svg/HeroOverlay.svg'
 import LinkLight from './LinkLight'
-import Draggable from 'react-draggable'
-
-function Overlay(props) {
-  return <Absolute width="100%" height="100%" top={0} left={0} {...props} />
-}
 
 const Hero = props => (
   <Box pt={[4,2,3]} id='hero'>
     <Box my={[3, 3, 6]} mx={'auto'} px={4} className='container-xl'>
       <Box className="d-flex flex-wrap flex-items-end flex-md-nowrap flex-md-row-reverse" mx={-4}>
         <Box px={4} width={[10/12, 8/12, 6/12, 5/12]} mx={'auto'}>
-          <Box mt={[2,3,5]} >
-            <Relative zIndex={0}>
+          <Box mt={[2,3,5]}>
+            <Relative>
               <HeroImage />
-              <Overlay>
-                <Draggable defaultPosition={{x: 185, y: 8}}>
-                  <Brush style={{cursor: 'pointer'}} />
-                </Draggable>
-              </Overlay>
-              <Overlay style={{pointerEvents: 'none'}} >
+              <Absolute top={0} left={0} width="100%" height="100%" zIndex={100} css={{pointerEvents: 'none'}}>
                 <HeroOverlay />
-              </Overlay>
+              </Absolute>
             </Relative>
           </Box>
         </Box>
