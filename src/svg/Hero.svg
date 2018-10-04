@@ -56,10 +56,10 @@
       <circle cx="98.9863" cy="53.9714" r="24" fill="#79B8FF" stroke="#79B8FF" stroke-width="2"/>
     </g>
   </g>
-  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="86" y="68" width="40" height="122">
+  <mask id="mask0" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="86" y="68" width="40" height="122">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M111.247 190C117.29 180.642 126 146.951 126 120.351C126 85.4048 112.136 68.0005 106 68.0005C99.8637 68.0005 86 85.4048 86 120.351C86 146.951 94.7101 180.642 100.753 190H111.247Z" fill="#005CC5"/>
   </mask>
-  <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="83" y="5" width="46" height="67">
+  <mask id="mask1" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="83" y="5" width="46" height="67">
     <path d="M128 48.0571C128 60.1758 118.15 70 106 70C93.8497 70 84 60.1758 84 48.0571C84 33.8857 105.083 16.9714 106 6C106.917 16.9714 128 34.3429 128 48.0571Z" fill="#C8E1FF" stroke="#C8E1FF" stroke-width="2"/>
   </mask>
 </svg>
