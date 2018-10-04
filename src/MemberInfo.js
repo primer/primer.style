@@ -1,6 +1,8 @@
 import React from 'react'
 import {Text, FlexContainer, Link, Box} from '@primer/components'
 import Octicon, {MarkGithub} from '@githubprimer/octicons-react'
+import ReactMarkdown from 'react-markdown'
+import MemberMarkdown from './MemberMarkdown.mdx'
 
 const MemberInfo = ({member}) => (
   <Box maxWidth="600px">
@@ -10,10 +12,18 @@ const MemberInfo = ({member}) => (
     <FlexContainer alignItems="center" mt={2}>
       <Link fontFamily="mono" color="blue.3" hoverColor="blue.3" fontSize={3} href={`https://github.com/${member.github}`}>
         <Octicon size="24" color='blue.3' className="mr-3" icon={MarkGithub}/>
-        @{member.github}
+        @{member.handle}
       </Link>
     </FlexContainer>
-    <Text is="p" fontSize={3} mt={4}>{member.bio}</Text>
+    <Box mt={4}>
+      <Text fontWeight="bold" mr={1} fontSize={3}>Favorite CSS feature:</Text><Text fontSize="3">{member.cssFeature}</Text>
+    </Box>
+    <Text fontWeight="bold" is="p" fontSize={3} mt={4}>What drew you into design systems?</Text>
+    <Text fontSize={3}><ReactMarkdown source={member.questionOne} /></Text>
+    <Text fontWeight="bold" is="p" fontSize={3} mt={4}>Who have you learned from or been inspired by?</Text>
+    <Text fontSize={3}><ReactMarkdown source={member.questionTwo} /></Text>
+    <Text fontWeight="bold" mr={1} fontSize={3} mt={4}>Favorite tools:</Text>
+    <Text fontSize={3}><ReactMarkdown source={member.favoriteTools} /></Text>
   </Box>
 )
 
