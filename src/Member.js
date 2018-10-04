@@ -30,7 +30,7 @@ const evenLineStyles =
   }`
 
 const Odd = ({member, shape}) =>
-  <FlexContainer mb={12} justifyContent='flex-end' flexDirection={'row-reverse'}>
+  <FlexContainer mb={12} justifyContent='flex-end' flexDirection={['column', 'column', 'row-reverse', 'row-reverse']}>
     <MemberInfo member={member} />
     <FlexItem flexShrink='0' style={{position: 'relative'}}>
       <Box bg="red.2" width="300px" height="300px" css={oddLineStyles} mr={8} ml={0}>{shape}</Box>
@@ -38,7 +38,7 @@ const Odd = ({member, shape}) =>
   </FlexContainer>
 
 const Even = ({member, shape}) =>
-  <FlexContainer mb={12} justifyContent='flex-end' flexDirection={'row'}>
+  <FlexContainer mb={12} justifyContent='flex-end' flexDirection={['column', 'column', 'row', 'row',]}>
     <MemberInfo member={member} />
     <FlexItem style={{position: 'relative'}} flexShrink='0'>
       <Box bg="red.2" width="300" height="300" css={evenLineStyles} mr={0} ml={8}>{shape}</Box>
