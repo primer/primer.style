@@ -1,6 +1,7 @@
 import React from 'react'
 import {Box} from '@primer/components'
 import styled from 'react-emotion'
+import PropTypes from 'prop-types'
 import Circle from './svg/circle.svg'
 import Hexagon from './svg/hexagon.svg'
 import Square from './svg/square.svg'
@@ -47,10 +48,10 @@ const A = styled(Box)`
     top: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(ellipse at top, #79b8ff, transparent),
-      radial-gradient(ellipse at bottom, #f66a0a, transparent),
-      linear-gradient(to right, #ffdf5d 50%, transparent 50%),
-      linear-gradient(to left, #2188ff 50%, transparent);
+    background: radial-gradient(ellipse at top, ${props => props.theme.colors.blue[3]}, transparent),
+      radial-gradient(ellipse at bottom, ${props => props.theme.colors.orange[6]}, transparent),
+      linear-gradient(to right, ${props => props.theme.colors.yellow[5]} 50%, transparent),
+      linear-gradient(to left, ${props => props.theme.colors.blue[4]} 50%, transparent);
     mix-blend-mode: multiply;
     opacity: 0;
     z-index: 3;
@@ -69,5 +70,9 @@ const AvatarShape = props => (
     <Shape shape={props.shape} />
   </A>
 )
+
+AvatarShape.propTypes = {
+  shape: PropTypes.oneOf(['hexagon', 'square', 'circle', 'diamond'])
+}
 
 export default AvatarShape
