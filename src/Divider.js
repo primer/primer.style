@@ -1,7 +1,5 @@
 import {Box} from '@primer/components'
-import {
-  color
-} from 'styled-system'
+import {color} from 'styled-system'
 import styled from 'react-emotion'
 
 const Divider = styled(Box)`

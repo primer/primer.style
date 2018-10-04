@@ -1,17 +1,13 @@
 // Extends Link from primer/components to make color primitives available, as well as fontSize and space which should be added in primer/components. Ideally I'd use defaultProps here but because we use !important on utilities the theme colors won't override. We could probably add a function to handle this.
 
 import {Link} from '@primer/components'
-import {
-  color,
-  fontSize,
-  space
-} from 'styled-system'
+import {color, fontSize, space} from 'styled-system'
 import styled from 'react-emotion'
 
 const ButtonOutlineDark = styled(Link)`
   color: ${props => props.theme.colors.blue[2]} !important;
   background-color: ${props => props.theme.colors.black};
-  padding: .75em 1.25em;
+  padding: 0.75em 1.25em;
   font-size: ${props => props.theme.fontSizes[2]};
   border-radius: 6px;
   font-size: 16px;
@@ -22,7 +18,7 @@ const ButtonOutlineDark = styled(Link)`
     background-color: ${props => props.theme.colors.gray[9]};
     text-decoration: none;
   }
-  ${space}
+  ${space};
 `
 
 export default ButtonOutlineDark

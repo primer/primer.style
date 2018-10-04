@@ -10,7 +10,7 @@ export default class Page extends React.Component {
     return (
       <BaseStyles>
         <ThemeProvider theme={theme}>
-          <Box bg='black' color='blue.2'>
+          <Box bg="black" color="blue.2">
             {children}
           </Box>
         </ThemeProvider>

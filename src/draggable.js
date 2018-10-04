@@ -15,11 +15,14 @@ export function initDraggables() {
     draggables.push(new Draggable(el))
   }
 
-  window.addEventListener('resize', throttle(30, false, () => {
-    for (const draggable of draggables) {
-      draggable.resize()
-    }
-  }))
+  window.addEventListener(
+    'resize',
+    throttle(30, false, () => {
+      for (const draggable of draggables) {
+        draggable.resize()
+      }
+    })
+  )
 
   return draggables
 }
@@ -63,7 +66,7 @@ export class Draggable {
     topLeft.x += offset.x
     topLeft.y += offset.y
 
-    source.setAttribute('transform', 'translate(' + [topLeft.x, topLeft.y] + ')')
+    source.setAttribute('transform', `translate(${[topLeft.x, topLeft.y]})`)
     target.style.setProperty('left', px(position.x))
     target.style.setProperty('top', px(position.y))
   }
@@ -103,19 +106,14 @@ function cloneAndIsolate(el) {
   const topLeft = globalToLocal({x: rect.left, y: rect.top}, el)
   const bottomRight = globalToLocal({x: rect.right, y: rect.bottom}, el)
 
-  const viewBox = [
-    topLeft.x,
-    topLeft.y,
-    bottomRight.x - topLeft.x,
-    bottomRight.y - topLeft.y
-  ]
+  const viewBox = [topLeft.x, topLeft.y, bottomRight.x - topLeft.x, bottomRight.y - topLeft.y]
 
   // cloning without (true) does a shallow clone: node + attributes,
   // no children
   const outer = owner.cloneNode()
   outer.removeAttribute('class')
   outer.setAttribute('width', rect.width)
-  outer.setAttribute('viewBox', viewBox.join(' '))
+  outer.setAttribute('viewbox', viewBox.join(' '))
   outer.appendChild(el.cloneNode(true))
   return outer
 }
@@ -134,5 +132,5 @@ function getRelativeOffset(el) {
 }
 
 function px(n) {
-  return n + 'px'
+  return `${n}px`
 }
