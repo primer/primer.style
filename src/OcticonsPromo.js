@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Heading, Text, Link, FlexContainer, FlexItem} from '@primer/components'
+import {Box, Heading, Text, Link, FlexContainer, FlexItem, Relative} from '@primer/components'
 import Image from './Image'
 import CssImage from './svg/Css.svg'
 import ButtonFill from './ButtonFill'
@@ -25,11 +25,11 @@ const Package = ({children, icon, href, title, ...rest}) => (
 const OcticonsPromo = props => (
   <Box pb={4} px={4}>
     <Box align="center" mb={5} className='container-xl mx-auto'>
-      <Box mt={[4,3,0]} width={[1, 1, 6/12]} >
+      <Relative zIndex={100} mt={[4,3,0]} width={[1, 1, 6/12]} >
         <Link href="http://octicons.github.com/" className="no-underline"><Heading lineHeight="1.25" color="blue.4" mb={2} fontSize={7} fontWeight='bold'>Octicons</Heading></Link>
         <Text is='p' color="blue.1" mb={[2,3]} fontSize={[4,5]}>Your project. GitHub&#8217;s icons.</Text>
         <Text fontSize={2} color="blue.3" className="text-mono">v8.1.0</Text>
-      </Box>
+      </Relative>
       <Box className="container-lg">
         <OcticonsImage />
       </Box>
