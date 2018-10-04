@@ -36,8 +36,8 @@ module.exports = ({
   <meta name="twitter:site" content="@githubprimer">
   ${css}
 </head>
-<body class="overflow-hidden">
-  <div id="root">${html}</div>
+<body>
+  <div id="root" class="overflow-hidden">${html}</div>
   ${scripts}
 </body>
 `
