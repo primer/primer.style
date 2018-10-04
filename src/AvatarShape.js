@@ -1,5 +1,6 @@
 import React from 'react'
 import {Box} from '@primer/components'
+import {themeGet} from 'styled-system'
 import styled from 'react-emotion'
 import PropTypes from 'prop-types'
 import Circle from './svg/circle.svg'
