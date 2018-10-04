@@ -3,7 +3,7 @@ import {Box, BaseStyles} from '@primer/components'
 import {ThemeProvider} from 'emotion-theming'
 import theme from '../src/theme.js'
 
-import {initDraggables} from '../src/behaviors'
+import {initDraggables} from '../src/draggable'
 
 export default class Page extends React.Component {
   render() {
