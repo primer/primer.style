@@ -48,10 +48,10 @@ const A = styled(Box)`
     top: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(ellipse at top left, ${props => props.theme.colors.blue[4]}, transparent),
-    radial-gradient(ellipse at bottom right, ${props => props.theme.colors.orange[4]}, transparent),
-    linear-gradient(to right, ${props => props.theme.colors.orange[5]} 50%, transparent),
-    linear-gradient(to left, ${props => props.theme.colors.blue[6]} 50%, transparent);
+    background: radial-gradient(ellipse at top left, ${themeGet('colors.blue.4')}, transparent),
+    radial-gradient(ellipse at bottom right, ${themeGet('colors.orange.4')}, transparent),
+    linear-gradient(to right, ${themeGet('colors.orange.5')} 50%, transparent),
+    linear-gradient(to left, ${themeGet('colors.blue.6')} 50%, transparent);
     mix-blend-mode: multiply;
     opacity: 0;
     z-index: 3;
