@@ -1,5 +1,4 @@
 import React from 'react'
-import Octicon from '@githubprimer/octicons-react'
 
 export default function SpectrumIcon() {
   return (
