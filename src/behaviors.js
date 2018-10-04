@@ -1,19 +1,20 @@
-import {observe} from 'selector-observer'
 import {throttle} from 'throttle-debounce'
 
-const draggables = window.DRAGGABLES || []
-
-// prevent re-running initialization in development mode (HMR)
-if (window.DRAGGABLES_LOADED) {
-  while (draggables.length) {
-    const draggable = draggables.shift()
-    draggable.remove()
-  }
-} else {
-  window.DRAGGABLES = draggables
-  window.DRAGGABLES_LOADED = true
-
+export function initDraggables() {
   const attr = 'data-draggable'
+  const draggables = []
+
+  for (const el of document.querySelectorAll(`[${attr}]`)) {
+    const index = draggables.findIndex(d => d.source === el)
+    if (index > -1) {
+      // console.warn('[draggable] already registered:', el, '@', index)
+      continue
+    } else {
+      // console.warn('[draggable] add:', el)
+    }
+    el.removeAttribute(attr)
+    draggables.push(new Draggable(el))
+  }
 
   window.addEventListener('resize', throttle(30, false, () => {
     for (const draggable of draggables) {
@@ -21,22 +22,10 @@ if (window.DRAGGABLES_LOADED) {
     }
   }))
 
-  observe(`svg[${attr}], svg [${attr}]`, {
-    add(el) {
-      const index = draggables.findIndex(d => d.source === el)
-      if (index > -1) {
-        // console.warn('[draggable] already registered:', el, '@', index)
-        return
-      } else {
-        // console.warn('[draggable] add:', el)
-      }
-      el.removeAttribute(attr)
-      draggables.push(new Draggable(el))
-    }
-  })
+  return draggables
 }
 
-class Draggable {
+export class Draggable {
   constructor(el) {
     this.source = el
     this.target = cloneAndIsolate(el)
