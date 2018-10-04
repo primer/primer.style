@@ -40,13 +40,13 @@ class Draggable {
   constructor(el) {
     this.source = el
     this.target = cloneAndIsolate(el)
-    this.position = {x: 0, y: 0}
 
     const {source, target} = this
     target.style.setProperty('cursor', 'pointer')
     target.style.setProperty('position', 'absolute')
     document.body.appendChild(target)
 
+    this.position = {x: 0, y: 0}
     this.resize()
 
     this.mouseMove = this.mouseMove.bind(this)
@@ -71,10 +71,9 @@ class Draggable {
 
     // add the relative offset of the source to its <svg> element
     // ...why? ¯\_(ツ)_/¯ I have no idea!
-    const rect = source.getBoundingClientRect()
-    const ownerRect = getOwner(source).getBoundingClientRect()
-    topLeft.x += rect.x - ownerRect.x
-    topLeft.y += rect.y - ownerRect.y
+    const offset = getRelativeOffset(source)
+    topLeft.x += offset.x
+    topLeft.y += offset.y
 
     source.setAttribute('transform', 'translate(' + [topLeft.x, topLeft.y] + ')')
     target.style.setProperty('left', px(position.x))
@@ -85,8 +84,9 @@ class Draggable {
     const {position, source, target} = this
     source.removeAttribute('transform')
     const rect = source.getBoundingClientRect()
-    position.x = rect.x
-    position.y = rect.y
+    const offset = getRelativeOffset(source)
+    position.x = rect.x + window.scrollX
+    position.y = rect.y + window.scrollY
     target.style.setProperty('left', px(rect.left))
     target.style.setProperty('top', px(rect.top))
     target.style.setProperty('width', px(rect.width))
@@ -135,6 +135,15 @@ function cloneAndIsolate(el) {
 
 function getOwner(el) {
   return el.matches('svg') ? el : el.ownerSVGElement
+}
+
+function getRelativeOffset(el) {
+  const rect = el.getBoundingClientRect()
+  const ownerRect = getOwner(el).getBoundingClientRect()
+  return {
+    x: rect.x - ownerRect.x,
+    y: rect.y - ownerRect.y
+  }
 }
 
 function px(n) {
