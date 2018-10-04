@@ -1,10 +1,10 @@
 import React from 'react'
-import {Box, Heading, Text, Link, FlexContainer, FlexItem} from 'primer-react'
+import {Box, Heading, Text, Link, FlexContainer, FlexItem} from '@primer/components'
 import Image from './Image'
-import CssImage from './CssImage'
+import CssImage from './svg/Css.svg'
 import ButtonFill from './ButtonFill'
 import ButtonOutline from './ButtonOutline'
-import OcticonsImage from './OcticonsImage'
+import OcticonsImage from './svg/Octicons.svg'
 import Octicon, {FileCode, Ruby, Paintcan} from '@githubprimer/octicons-react'
 import LinkLight from './LinkLight'
 

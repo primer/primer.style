@@ -11,16 +11,20 @@
   "dependencies": {
     "@compositor/x0": "^6.0.5",
     "@githubprimer/octicons-react": "^8.0.0",
+    "@primer/components": "^3.0.0-beta",
+    "@svgr/webpack": "^2.3.0",
     "babel-plugin-emotion": "^9.2.6",
     "classnames": "^2.2.6",
     "emotion": "^9.2.6",
     "emotion-theming": "^9.2.6",
-    "primer": "^10.8.1",
     "primer-primitives": "^1.0.2",
-    "primer-react": "^2.0.0-beta",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-emotion": "^9.2.6",
     "styled-system": "^2.3.6"
+  },
+  "devDependencies": {
+    "now": "^11.4.6",
+    "now-github-url": "^0.1.2"
   }
 }

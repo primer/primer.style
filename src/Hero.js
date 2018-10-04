@@ -1,6 +1,6 @@
 import React from 'react'
-import {Box, Heading, Text, Link} from 'primer-react'
-import HeroImage from './HeroImage'
+import {Box, Heading, Text, Link} from '@primer/components'
+import HeroImage from './svg/Hero.svg'
 import LinkLight from './LinkLight'
 
 const Hero = props => (
@@ -16,18 +16,18 @@ const Hero = props => (
           <Heading color="blue.4" mb={2} fontSize={[48, 56, 84]} fontWeight='bold'>Primer</Heading>
           <Text color="blue.2" fontSize={[4,5,5,7]} lineHeight={1.25}>Resources, tooling, and design guidelines for building interfaces with GitHub’s design system</Text>
           <Text is="p" color="blue.3" mt={4} className="text-mono">
-          <LinkLight fontSize={[0,1,2]}
-            href='https://styleguide.github.com/primer/'>
-            Style guide
-          </LinkLight> ・
-          <LinkLight ml={2} fontSize={[0,1,2]}
-            href='https://spectrum.chat/primer'>
-            Community
-          </LinkLight> ・
-          <LinkLight ml={2} fontSize={[0,1,2]}
-            href='https://github.com/primer/'>
-            Open-source
-          </LinkLight>
+            <LinkLight fontSize={[0,1,2]}
+              href='https://styleguide.github.com/primer/'>
+              Style guide
+            </LinkLight> ・
+            <LinkLight ml={2} fontSize={[0,1,2]}
+              href='https://spectrum.chat/primer'>
+              Community
+            </LinkLight> ・
+            <LinkLight ml={2} fontSize={[0,1,2]}
+              href='https://github.com/primer/'>
+              Open-source
+            </LinkLight>
           </Text>
         </Box>
       </Box>

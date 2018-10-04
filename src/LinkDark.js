@@ -1,6 +1,6 @@
-// Extends Link from primer-react to make color primitives available, as well as fontSize and space which should be added in primer-react. Ideally I'd use defaultProps here but because we use !important on utilities the theme colors won't override. We could probably add a function to handle this.
+// Extends Link from primer/components to make color primitives available. Ideally I'd use defaultProps here but because we use !important on utilities the theme colors won't override. We could probably add a function to handle this.
 
-import {Link} from 'primer-react'
+import {Link} from '@primer/components'
 import {
   color,
   fontSize,
@@ -13,8 +13,6 @@ const LinkDark = styled(Link)`
   &:hover {
     color: ${props => props.theme.colors.gray[8]};
   }
-  ${fontSize}
-  ${fontWeight}
 `
 
 export default LinkDark
