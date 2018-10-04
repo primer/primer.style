@@ -1,18 +1,18 @@
 import React from 'react'
-import {Box} from '@primer/components'
+import {Box, FlexContainer, FlexItem} from '@primer/components'
 
 const IndexGrid = ({children, ...rest}) => (
   <Box mx={'auto'} px={4} {...rest} className="container-xl">
-    <Box mx={-4} className="d-flex flex-wrap flex-items-center">
+    <FlexContainer {...rest} flexWrap="wrap" alignItems="center" mx={-4}>
       {children}
-    </Box>
+    </FlexContainer>
   </Box>
 )
 
 const Item = ({children, ...rest}) => (
-  <Box width={[1, 1, 6/12]} px={4} {...rest}>
+  <FlexItem width={[1, 1, 6/12]} px={4} {...rest}>
     {children}
-  </Box>
+  </FlexItem>
 )
 
 IndexGrid.Item = Item
