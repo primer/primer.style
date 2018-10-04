@@ -10,7 +10,6 @@ import LinkPromo from './LinkPromo'
 
 
 const HiringPromo = props => (
-
   <Box align="center" px={4} className="container-lg text-left text-md-center">
     <Heading fontSize={5}  mb={2} color="orange.3">
     <Octicon className="mr-3" icon={RadioTower} size={40} verticalAlign='top' />Join GitHub!</Heading>
@@ -18,7 +17,6 @@ const HiringPromo = props => (
     <LinkPromo fontSize={2} mr={4} href="https://github.com/about/careers">View all open positions</LinkPromo>
     <ButtonPromo href="https://boards.greenhouse.io/github/jobs/1306815">Apply →</ButtonPromo>
   </Box>
-
 )
 
 export default HiringPromo

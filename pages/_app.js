@@ -1,7 +1,6 @@
 import React from 'react'
-import {Box, BaseStyles} from '@primer/components'
+import {Box, BaseStyles, theme} from '@primer/components'
 import {ThemeProvider} from 'emotion-theming'
-import theme from '../src/theme.js'
 
 import {initDraggables} from '../src/draggable'
 
