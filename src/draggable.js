@@ -1,10 +1,10 @@
 import {throttle} from 'throttle-debounce'
 
 if (global.DRAGGABLES) {
-  removeAll(global.DRAGGABLES)
+  removeDraggables(global.DRAGGABLES)
 }
 
-const draggables = global.DRAGGABLES = []
+const draggables = (global.DRAGGABLES = [])
 
 const resizeAll = throttle(30, false, () => {
   for (const draggable of draggables) {
@@ -32,6 +32,7 @@ export function initDraggables() {
 
 export function removeDraggables(existing) {
   if (existing.length) {
+    // eslint-disable-next-line no-console
     console.warn(`removing ${existing.length} existing draggables...`)
     while (existing.length) {
       existing.shift().remove()
