@@ -10,7 +10,7 @@ const IndexGrid = ({children, ...rest}) => (
 )
 
 const Item = ({children, ...rest}) => (
-  <FlexItem width={[1, 1, 6/12]} px={4} {...rest}>
+  <FlexItem width={[1, 1, 6 / 12]} px={4} {...rest}>
     {children}
   </FlexItem>
 )
