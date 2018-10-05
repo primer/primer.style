@@ -34,7 +34,7 @@ const teamContent = [
   {
     name: 'Diana Mounter',
     handle: 'broccolini',
-    title: 'Design Systems Manager',
+    title: 'Design Operations Manager',
     cssFeature: 'text-decoration: underline wavy',
     questionOne:
       'I was drawn to design systems for many reasons—the opportunity to improve design and development workflow efficiency; the potential benefits well-design systems can bring to the user experience; I like to bring order to chaos and enjoy working at the intersection of design and code. I also love that there is still so much to learn in the field and really enjoy the passion of the community behind design systems.',
@@ -44,8 +44,8 @@ const teamContent = [
   },
   {
     name: 'Jon Rohan',
-    handle: 'Systems Designer',
-    github: 'jonrohan',
+    title: 'Systems Designer',
+    handle: 'jonrohan',
     cssFeature: `grid-template-areas: "header header header" "footer footer footer"`,
     questionOne: `I have had a facination with front end engineering and UI for all of my career. Early on at GitHub I recognized the need to organize our code into reusable components. When the team formalized I had to be involed.`,
     questionTwo: `Both past and present I have to acknowledge that Nicole Sullivan has been profoundly influential in the way I front-end and write CSS. When she introduced concepts of OOCSS it brought me from thinking very linearly about CSS to a whole new range of systems thinking.`,
