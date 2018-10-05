@@ -1,5 +1,4 @@
 import React from 'react'
-import NavLink from './NavLink'
 import {Box, FlexContainer, Text, Link} from '@primer/components'
 import LinkLight from './LinkLight'
 import Octicon, {MarkGithub} from '@githubprimer/octicons-react'

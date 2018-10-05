@@ -37,5 +37,5 @@ export default () => (
       </FlexContainer>
       {getMemberContent()}
     </Box>
-  </Box>
-)
+  )
+}

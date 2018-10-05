@@ -1,12 +1,5 @@
-module.exports = ({
-  html = '',
-  css = '',
-  scripts,
-  title = 'Primer open-source projects',
-  meta = [],
-  links = [],
-}) =>
-`<!DOCTYPE html>
+module.exports = ({html = '', css = '', scripts, title}) =>
+  `<!DOCTYPE html>
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126681523-1"></script>
@@ -39,5 +32,4 @@ module.exports = ({
 <body>
   <div id="root" class="overflow-hidden">${html}</div>
   ${scripts}
-</body>
-`
+</body>`
