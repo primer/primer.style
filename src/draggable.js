@@ -1,10 +1,10 @@
 import {throttle} from 'throttle-debounce'
 
-if (window.DRAGGABLES) {
-  removeAll(window.DRAGGABLES)
+if (global.DRAGGABLES) {
+  removeAll(global.DRAGGABLES)
 }
 
-const draggables = window.DRAGGABLES = []
+const draggables = global.DRAGGABLES = []
 
 const resizeAll = throttle(30, false, () => {
   for (const draggable of draggables) {
