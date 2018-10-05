@@ -5,20 +5,20 @@ import {ThemeProvider} from 'emotion-theming'
 import {initDraggables} from '../src/draggable'
 
 export default class Page extends React.Component {
+  componentDidMount() {
+    initDraggables()
+  }
+
   render() {
-    const {children, ...rest} = this.props
+    const {children} = this.props
     return (
       <BaseStyles>
         <ThemeProvider theme={theme}>
-          <Box bg='black' color='blue.2'>
+          <Box bg="black" color="blue.2">
             {children}
           </Box>
         </ThemeProvider>
       </BaseStyles>
     )
-  }
-
-  componentDidMount() {
-    initDraggables()
   }
 }

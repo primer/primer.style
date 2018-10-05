@@ -10,15 +10,13 @@ import Diamond from './svg/diamond.svg'
 
 const Shape = styled(({className, shape}) => {
   const shapes = {
-    'hexagon': Hexagon,
-    'circle': Circle,
-    'square': Square,
-    'diamond': Diamond
+    hexagon: Hexagon,
+    circle: Circle,
+    square: Square,
+    diamond: Diamond
   }
   const Tag = shapes[shape]
-  return (
-    <Tag className={className}/>
-  )
+  return <Tag className={className} />
 })`
   position: relative;
   z-index: 2;
