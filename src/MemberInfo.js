@@ -17,7 +17,7 @@ const MemberInfo = ({member}) => (
       <Text fontWeight="bold" mr={1} fontSize={3}>
         Favorite CSS feature:
       </Text>
-      <Text fontSize="3">{member.cssFeature}</Text>
+      <Text fontSize="3" fontFamily="mono">{member.cssFeature}</Text>
     </Box>
     <Text fontWeight="bold" is="p" fontSize={3} mt={4}>
       What drew you into design systems?
