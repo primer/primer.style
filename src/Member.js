@@ -3,7 +3,9 @@ import {FlexContainer, Box, FlexItem, Absolute} from '@primer/components'
 import MemberInfo from './MemberInfo'
 
 const oddLineStyles =
-  `&:after {
+  `
+  margin-right: 64px;
+  &:after {
     background-image: url('./line.svg');
     background-size: 111px 557px;
     background-repeat: no-repeat;
@@ -16,7 +18,9 @@ const oddLineStyles =
   }`
 
 const evenLineStyles =
-  `&:after {
+  `
+  margin-left: 64px;
+  &:after {
     background-image: url('./line.svg');
     background-size: 111px 557px;
     background-repeat: no-repeat;
@@ -29,22 +33,17 @@ const evenLineStyles =
     transform: scale(-1, 1);
   }`
 
-const Odd = ({member, shape}) =>
-  <FlexContainer mb={12} justifyContent='flex-end' flexDirection={['column', 'column', 'row-reverse', 'row-reverse']}>
+
+const direction = (isOdd) =>
+  isOdd ? ['column', 'column', 'row-reverse', 'row-reverse'] : ['column', 'column', 'row', 'row',]
+
+const Member = ({member, isOdd, shape}) =>
+  <FlexContainer mb={12} justifyContent='flex-end' flexDirection={direction(isOdd)}>
     <MemberInfo member={member} />
     <FlexItem flexShrink='0' style={{position: 'relative'}}>
-      <Box bg="red.2" width="300px" height="300px" css={oddLineStyles} mr={8} ml={0}>{shape}</Box>
+      <Box bg="red.2" width="300px" height="300px" css={isOdd ? oddLineStyles : evenLineStyles}>{shape}</Box>
     </FlexItem>
   </FlexContainer>
 
-const Even = ({member, shape}) =>
-  <FlexContainer mb={12} justifyContent='flex-end' flexDirection={['column', 'column', 'row', 'row',]}>
-    <MemberInfo member={member} />
-    <FlexItem style={{position: 'relative'}} flexShrink='0'>
-      <Box bg="red.2" width="300" height="300" css={evenLineStyles} mr={0} ml={8}>{shape}</Box>
-    </FlexItem>
-  </FlexContainer>
-
-const Member = ({member, isOdd, shape}) => isOdd ? <Odd member={member} shape={shape} /> : <Even member={member} shape={shape} />
 
 export default Member
