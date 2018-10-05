@@ -17,10 +17,10 @@ const Nav = props => (
           </RouterLink>
         </Box>
       </FlexContainer>
-      <Text is='div' fontSize={2} px={3} color='blue.2' hoverColor='blue.2'>
+      <Text is='div' fontSize={2} px={3} color='blue.2'>
         <RouterLink style={{color: 'inherit'}} to='/team'>Meet the team</RouterLink>
       </Text>
-      <Text is='div' fontSize={2} px={3} color='blue.2' hoverColor='blue.2'>
+      <Text is='div' fontSize={2} px={3} color='blue.2'>
         <RouterLink style={{color: 'inherit'}} to='/news'>What’s new</RouterLink>
       </Text>
 

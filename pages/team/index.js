@@ -6,7 +6,7 @@ import Member from  '../../src/Member'
 import teamContent from '../../src/team-content'
 import BackgroundImage from  '../../src/BackgroundImage'
 
-const shapes = ['square', 'circle', 'hexigon', 'diamond']
+const shapes = ['hexagon', 'square', 'circle', 'diamond']
 
 const getMemberContent = () => {
   let shapeIndex = 0
@@ -31,11 +31,11 @@ export default () => (
         </Box>
         <Relative top='-100px'>
           <FlexItem flexShrink="0">
-            <BackgroundImage width='430px' height='340px' backgroundImage={`url('./meet-the-team.svg')`}/>
+            <BackgroundImage width='430px' height='340px' backgroundImage={'./meet-the-team.svg'}/>
           </FlexItem>
         </Relative>
       </FlexContainer>
       {getMemberContent()}
     </Box>
-  )
-}
+  </Box>
+)

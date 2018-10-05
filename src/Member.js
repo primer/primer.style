@@ -1,6 +1,7 @@
 import React from 'react'
 import {FlexContainer, Box, FlexItem, Absolute} from '@primer/components'
 import MemberInfo from './MemberInfo'
+import AvatarShape from './AvatarShape'
 
 const oddLineStyles =
   `
@@ -13,7 +14,7 @@ const oddLineStyles =
     height: 557px;
     width: 111px;
     position: absolute;
-    left: 300px;
+    left: 287px;
     margin-top: 80px;
   }`
 
@@ -28,7 +29,7 @@ const evenLineStyles =
     height: 557px;
     width: 111px;
     position: absolute;
-    left: -47px;
+    left: -10px;
     margin-top: 80px;
     transform: scale(-1, 1);
   }`
@@ -41,7 +42,9 @@ const Member = ({member, isOdd, shape}) =>
   <FlexContainer mb={12} justifyContent='flex-end' flexDirection={direction(isOdd)}>
     <MemberInfo member={member} />
     <FlexItem flexShrink='0' style={{position: 'relative'}}>
-      <Box bg="red.2" width="300px" height="300px" css={isOdd ? oddLineStyles : evenLineStyles}>{shape}</Box>
+      <Box css={isOdd ? oddLineStyles : evenLineStyles}>
+        <AvatarShape shape={shape} src={member.avatar}/>
+      </Box>
     </FlexItem>
   </FlexContainer>
 
