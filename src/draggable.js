@@ -112,7 +112,7 @@ function cloneAndIsolate(el) {
   const outer = owner.cloneNode()
   outer.removeAttribute('class')
   outer.setAttribute('width', rect.width)
-  outer.setAttribute('viewbox', viewBox.join(' '))
+  outer.setAttribute('viewBox', viewBox.join(' '))
   outer.appendChild(el.cloneNode(true))
   return outer
 }
