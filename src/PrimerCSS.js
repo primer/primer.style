@@ -61,15 +61,13 @@ export default function PrimerCSS() {
       <Box px={4} className="container-xl">
         <Box mx={-4} className="d-flex flex-wrap flex-items-start">
           {packages.map(({name, description}) => (
-            <FlexContainer width={[1, 6 / 12, 6 / 12]} px={4} mb={[3, 4, 4, 0]}>
+            <FlexContainer key={name} width={[1, 6 / 12, 6 / 12]} px={4} mb={[3, 4, 4, 0]}>
               <FlexItem color="blue.3" mr={3}>
                 <Octicon icon={Package} height={40} verticalAlign="middle" />
               </FlexItem>
               <FlexItem>
                 <Text is="p" fontSize={2} mt={1} className="text-mono">
-                  <LinkLight href={`https://npm.im/${name}`}>
-                    {name}
-                  </LinkLight>
+                  <LinkLight href={`https://npm.im/${name}`}>{name}</LinkLight>
                 </Text>
                 <Text is="p" color="blue.2" mb={4} fontSize={3}>
                   {description}
