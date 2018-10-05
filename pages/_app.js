@@ -2,14 +2,23 @@ import React from 'react'
 import {Box, BaseStyles, theme} from '@primer/components'
 import {ThemeProvider} from 'emotion-theming'
 
-const Page = props => (
-  <BaseStyles>
-    <ThemeProvider theme={theme}>
-      <Box bg='black' color='blue.2'>
-        {props.children}
-      </Box>
-    </ThemeProvider>
-  </BaseStyles>
-)
+import {initDraggables} from '../src/draggable'
 
-export default Page
+export default class Page extends React.Component {
+  render() {
+    const {children, ...rest} = this.props
+    return (
+      <BaseStyles>
+        <ThemeProvider theme={theme}>
+          <Box bg='black' color='blue.2'>
+            {children}
+          </Box>
+        </ThemeProvider>
+      </BaseStyles>
+    )
+  }
+
+  componentDidMount() {
+    initDraggables()
+  }
+}
