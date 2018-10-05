@@ -11,7 +11,7 @@
     "template": "./src/template.js"
   },
   "dependencies": {
-    "@githubprimer/octicons-react": "8.0.0",
+    "@githubprimer/octicons-react": "8.1.0",
     "@primer/components": "3.0.1-beta",
     "emotion": "9.2.6",
     "emotion-theming": "9.2.6",
