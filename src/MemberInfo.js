@@ -7,10 +7,6 @@ import ReactMarkdown from 'react-markdown'
 injectGlobal`
   .markdown a {
     color: #79b8ff;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 `
 
