@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box, BaseStyles, theme} from '@primer/components'
 import {ThemeProvider} from 'emotion-theming'
-import { injectGlobal } from 'emotion'
+import {injectGlobal} from 'emotion'
 import {initDraggables} from '../src/draggable'
 
 injectGlobal`
