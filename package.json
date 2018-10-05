@@ -19,7 +19,8 @@
     "react": "16.5.0",
     "react-dom": "16.5.0",
     "react-emotion": "9.2.6",
-    "styled-system": "2.3.6"
+    "styled-system": "2.3.6",
+    "throttle-debounce": "2.0.1"
   },
   "devDependencies": {
     "@compositor/x0": "6.0.5",
