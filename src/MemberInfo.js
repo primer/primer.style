@@ -4,7 +4,7 @@ import Octicon, {MarkGithub} from '@githubprimer/octicons-react'
 import ReactMarkdown from 'react-markdown'
 
 const MemberInfo = ({member}) => (
-  <Box maxWidth="600px">
+  <Box maxWidth="600px" id={member.handle}>
     <Text is="p" fontSize={4} mb={0} color="blue.4">
       <Text fontWeight="bold">{member.name}</Text>, {member.title}
     </Text>
