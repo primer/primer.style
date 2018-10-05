@@ -9,7 +9,13 @@ const MemberInfo = ({member}) => (
       <Text fontWeight="bold">{member.name}</Text>, {member.title}
     </Text>
     <FlexContainer alignItems="center" mt={2}>
-      <Link fontFamily="mono" color="blue.3" hoverColor="blue.3" fontSize={3} href={`https://github.com/${member.github}`}>
+      <Link
+        fontFamily="mono"
+        color="blue.3"
+        hoverColor="blue.3"
+        fontSize={3}
+        href={`https://github.com/${member.github}`}
+      >
         <Octicon size="24" color="blue.3" className="mr-3" icon={MarkGithub} />@{member.handle}
       </Link>
     </FlexContainer>
@@ -17,7 +23,9 @@ const MemberInfo = ({member}) => (
       <Text fontWeight="bold" mr={1} fontSize={3}>
         Favorite CSS feature:
       </Text>
-      <Text fontSize="3" fontFamily="mono">{member.cssFeature}</Text>
+      <Text fontSize="3" fontFamily="mono">
+        {member.cssFeature}
+      </Text>
     </Box>
     <Text fontWeight="bold" is="p" fontSize={3} mt={4}>
       What drew you into design systems?
