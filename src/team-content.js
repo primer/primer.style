@@ -47,7 +47,7 @@ const teamContent = [
     title: 'Systems Designer',
     handle: 'jonrohan',
     cssFeature: `grid-template-areas: "header header header" "footer footer footer"`,
-    questionOne: `I have had a facination with front end engineering and UI for all of my career. Early on at GitHub I recognized the need to organize our code into reusable components. When the team formalized I had to be involved.`,
+    questionOne: `I have had a fascination with front end engineering and UI for all of my career. Early on at GitHub I recognized the need to organize our code into reusable components. When the team formalized I had to be involved.`,
     questionTwo: `Both past and present I have to acknowledge that Nicole Sullivan has been profoundly influential in the way I front-end and write CSS. When she introduced concepts of OOCSS it brought me from thinking very linearly about CSS to a whole new range of systems thinking.`,
     favoriteTools: `Atom, Bash/Shell, Figma, GitHub, iTerm, Javascript, MacBook Pro, Things`,
     avatar: 'https://user-images.githubusercontent.com/8960591/46552728-6dee9c00-c890-11e8-827f-89fa8a58441d.jpg'
