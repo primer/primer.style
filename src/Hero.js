@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Heading, Text, Link, Absolute, Relative} from '@primer/components'
+import {Box, Heading, Text, Absolute, Relative} from '@primer/components'
 import HeroImage from './svg/Hero.svg'
 import HeroOverlay from './svg/HeroOverlay.svg'
 import LinkLight from './LinkLight'
@@ -10,9 +10,12 @@ export default function Hero() {
       <Box my={[3, 3, 6]} mx="auto" px={4} className="container-xl">
         <Box className="d-flex flex-wrap flex-items-end flex-md-nowrap flex-md-row-reverse" mx={-4}>
           <Box px={4} width={[10 / 12, 8 / 12, 6 / 12, 5 / 12]} mx="auto">
-            <Box mt={[2, 3, 5]}>
+            <Relative mt={[2, 3, 5]}>
               <HeroImage />
-            </Box>
+              <Absolute top={0} left={0} width="100%" height="100%" zIndex={100} css={{pointerEvents: 'none'}}>
+                <HeroOverlay />
+              </Absolute>
+            </Relative>
           </Box>
           <Box px={4} my={[4, 3, 0]} width={[1, 1, 6 / 12, 7 / 12]}>
             <Heading color="blue.4" mb={2} fontSize={[48, 56, 84]} fontWeight="bold">
