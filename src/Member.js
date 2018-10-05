@@ -1,10 +1,9 @@
 import React from 'react'
-import {FlexContainer, Box, FlexItem, Absolute} from '@primer/components'
+import {FlexContainer, Box, FlexItem} from '@primer/components'
 import MemberInfo from './MemberInfo'
 import AvatarShape from './AvatarShape'
 
-const oddLineStyles =
-  `
+const oddLineStyles = `
   margin-right: 64px;
   &:after {
     background-image: url('./line.svg');
@@ -18,8 +17,7 @@ const oddLineStyles =
     margin-top: 80px;
   }`
 
-const evenLineStyles =
-  `
+const evenLineStyles = `
   margin-left: 64px;
   &:after {
     background-image: url('./line.svg');
@@ -34,19 +32,18 @@ const evenLineStyles =
     transform: scale(-1, 1);
   }`
 
+const direction = isOdd =>
+  isOdd ? ['column', 'column', 'row-reverse', 'row-reverse'] : ['column', 'column', 'row', 'row']
 
-const direction = (isOdd) =>
-  isOdd ? ['column', 'column', 'row-reverse', 'row-reverse'] : ['column', 'column', 'row', 'row',]
-
-const Member = ({member, isOdd, shape}) =>
-  <FlexContainer mb={12} justifyContent='flex-end' flexDirection={direction(isOdd)}>
+const Member = ({member, isOdd, shape}) => (
+  <FlexContainer mb={12} justifyContent="flex-end" flexDirection={direction(isOdd)}>
     <MemberInfo member={member} />
-    <FlexItem flexShrink='0' style={{position: 'relative'}}>
+    <FlexItem flexShrink="0" style={{position: 'relative'}}>
       <Box css={isOdd ? oddLineStyles : evenLineStyles}>
-        <AvatarShape shape={shape} src={member.avatar}/>
+        <AvatarShape shape={shape} src={member.avatar} />
       </Box>
     </FlexItem>
   </FlexContainer>
-
+)
 
 export default Member
