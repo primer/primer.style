@@ -1,10 +1,7 @@
 import React from 'react'
-import {Box, Heading, Text, Link} from '@primer/components'
+import {Box, Heading, Text} from '@primer/components'
 import Octicon, {RadioTower} from '@githubprimer/octicons-react'
-import AtomImage from './svg/Atom.svg'
-import ButtonFill from './ButtonFill'
 import ButtonPromo from './ButtonPromo'
-import LinkLight from './LinkLight'
 import LinkPromo from './LinkPromo'
 
 export default function HiringPromo() {
