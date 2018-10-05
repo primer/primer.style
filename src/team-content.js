@@ -25,12 +25,12 @@ const teamContent = [
   },
   {
     name: 'Shawn Allen',
-    handle: 'shawnbot',
     title: 'Systems Designer',
-    cssFeature: '',
-    questionOne: ``,
-    questionTwo: '',
-    favoriteTools: '',
+    handle: 'shawnbot',
+    cssFeature: 'box-sizing: border-box',
+    questionOne: `I worked in data visualization and map-making for most of my career, and solving design problems with data is my jam. To me there's something uniquely exciting about making a thing that can take complicated and/or unexpected input and, with no human intervention, reduce it to something visually comprehensible—and hopefully interesting!`,
+    questionTwo: `Anyone who has ever contributed to [A List Apart](http://alistapart.com/) or posted to the [webdesign-l](http://www.webdesign-l.com/) mailing list between 1999 and 2005. The [CSS Zen Garden](http://www.csszengarden.com/) was hugely inspirational for me, along with web standards pioneers like Eric Meyer, Mark Pilgrim, and Jeff Zeldman. [Jina](https://twitter.com/jina) is one of the hardest-working people in design systems, and her leadership in the community is a tremendous inspiration. I learned everything I know about SVG from [Sara Soueidan](https://twitter.com/SaraSoueidan), and everything I could _hope_ to know about CSS Grid from [Rachel Andrew](https://twitter.com/rachelandrew) and [Jen Simmons](https://twitter.com/jensimmons). If you want to learn about web components, follow [Monica Dinculescu](https://twitter.com/notwaldorf) and [Mu-An Chiou](https://twitter.com/muanchiou).`,
+    favoriteTools: 'Vim, Things, Chrome DevTools, curl',
     avatar: 'https://user-images.githubusercontent.com/8960591/46552708-5b746280-c890-11e8-90df-654d77ecbb89.jpg'
   },
   {
