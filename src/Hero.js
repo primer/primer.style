@@ -7,9 +7,9 @@ import IndexGrid from './IndexGrid'
 
 export default function Hero() {
   return (
-    <Box pt={[4, 2, 3]}>
-      <IndexGrid my={[3, 3, 6]} flexDirection={[`row`, `row`, `row-reverse`]} alignItems="end">
-        <FlexItem px={4} width={[10 / 12, 8 / 12, 6 / 12, 5 / 12]} mx={'auto'}>
+    <Box pt={[4, 2, 5]}>
+      <IndexGrid my={[6, 6, 12]} flexDirection={[`row`, `row`, `row-reverse`]} alignItems="end">
+        <FlexItem px={5} width={[10 / 12, 8 / 12, 6 / 12, 5 / 12]} mx={'auto'}>
           <Relative mt={[2, 3, 5]}>
             <HeroImage />
             <Absolute top={0} left={0} width="100%" height="100%" zIndex={100} css={{pointerEvents: 'none'}}>
@@ -17,14 +17,14 @@ export default function Hero() {
             </Absolute>
           </Relative>
         </FlexItem>
-        <FlexItem px={4} my={[4, 3, 0]} width={[1, 1, 6 / 12, 7 / 12]}>
+        <FlexItem px={5} my={[4, 3, 0]} width={[1, 1, 6 / 12, 7 / 12]}>
           <Heading color="blue.4" mb={2} fontSize={[48, 56, 84]} fontWeight="bold">
             Primer
           </Heading>
           <Text color="blue.2" fontSize={[4, 5, 5, 7]} lineHeight={1.25}>
             Resources, tooling, and design guidelines for building interfaces with GitHub’s design system
           </Text>
-          <Text is="p" color="blue.3" mt={4} className="text-mono">
+          <Text is="p" color="blue.3" mt={5} className="text-mono">
             <LinkLight fontSize={[0, 1, 2]} href="https://styleguide.github.com/primer/">
               Style guide
             </LinkLight>{' '}
