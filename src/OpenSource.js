@@ -1,6 +1,7 @@
 import React from 'react'
 import {Box, Heading, Text} from '@primer/components'
-import Octicon, {Octoface, MarkGithub} from '@githubprimer/octicons-react'
+import {Octoface, MarkGithub} from '@githubprimer/octicons-react'
+import Octicon from './Octicon'
 import ButtonFillDark from './ButtonFillDark'
 import TwitterIcon from './TwitterIcon'
 import SpectrumIcon from './SpectrumIcon'
@@ -19,7 +20,7 @@ export default function OpenSource() {
             Primer is open-sourced on GitHub. Contributions and feedback are welcome!
           </Text>
           <ButtonFillDark mr={2} href="https://github.com/primer">
-            <Octicon color="blue.2" icon={MarkGithub} size={20} verticalAlign="text-bottom" className="mr-2" />
+            <FooterOcticon color="inherit" icon={MarkGithub} verticalAlign="text-bottom" />
             Contribute on GitHub
           </ButtonFillDark>
         </IndexGrid.Item>
@@ -27,18 +28,18 @@ export default function OpenSource() {
           <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight="bold">
             Keep in touch
           </Heading>
-          <LinkDark pt={1} fontSize={2} mb={3} className="d-block" href="https://twitter.com/githubprimer">
-            <Octicon color="blue.2" icon={TwitterIcon} size={20} verticalAlign="top" className="mr-2" />
+          <FooterLink href="https://twitter.com/githubprimer">
+            <FooterOcticon icon={TwitterIcon} verticalAlign="top" />
             Follow us on Twitter
-          </LinkDark>
-          <LinkDark fontSize={2} mb={3} className="d-block" href="https://spectrum.chat/primer">
-            <Octicon color="blue.2" icon={SpectrumIcon} size={20} verticalAlign="top" className="mr-2" />
+          </FooterLink>
+          <FooterLink href="https://spectrum.chat/primer">
+            <FooterOcticon icon={SpectrumIcon} verticalAlign="top" />
             Chat with us in Spectrum
-          </LinkDark>
-          <LinkDark fontSize={2} mb={3} className="d-block" href="https://github.com/primer/primer/issues/new/choose">
-            <Octicon color="blue.2" icon={Octoface} size={20} verticalAlign="text-top" className="mr-2" />
+          </FooterLink>
+          <FooterLink href="https://github.com/primer/primer/issues/new/choose">
+            <FooterOcticon icon={Octoface} verticalAlign="text-top" />
             Share feedback on GitHub
-          </LinkDark>
+          </FooterLink>
         </IndexGrid.Item>
       </IndexGrid>
       <Box color="black" px={4} className="container-xl mx-auto">
@@ -55,4 +56,12 @@ export default function OpenSource() {
       </Box>
     </Box>
   )
+}
+
+function FooterOcticon(props) {
+  return <Octicon mr={2} color="black" size={20} {...props} />
+}
+
+function FooterLink(props) {
+  return <LinkDark fontSize={2} mb={3} css={{display: 'block'}} {...props} />
 }
