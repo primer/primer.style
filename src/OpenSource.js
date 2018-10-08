@@ -9,13 +9,13 @@ import LinkDark from './LinkDark'
 
 export default function OpenSource() {
   return (
-    <Box bg="blue.2" pt={6} mt={6}>
+    <Box bg="blue.2" pt={12} mt={6}>
       <IndexGrid>
-        <IndexGrid.Item mb={[5, 5, 0]}>
+        <IndexGrid.Item mb={[8, 8, 0]}>
           <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight="bold">
             Open source
           </Heading>
-          <Text is="p" color="black" mb={4} fontSize={4}>
+          <Text is="p" color="black" mb={5} fontSize={4}>
             Primer is open-sourced on GitHub. Contributions and feedback are welcome!
           </Text>
           <ButtonFillDark mr={2} href="https://github.com/primer">
@@ -41,8 +41,8 @@ export default function OpenSource() {
           </LinkDark>
         </IndexGrid.Item>
       </IndexGrid>
-      <Box color="black" px={4} className="container-xl mx-auto">
-        <Box mt={6} py={4} borderTop={2} borderColor="black">
+      <Box color="black" px={5} className="container-xl mx-auto">
+        <Box mt={12} py={5} borderTop={2} borderColor="black">
           <Text pr={1} is="span">
             Created and maintained by GitHub&#8217;s
           </Text>
