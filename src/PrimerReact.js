@@ -5,7 +5,7 @@ import ReactIcon from './ReactIcon.svg'
 
 export default function PrimerReact() {
   return (
-    <Box align="center" px={4} className="container-lg">
+    <Box align="center" px={5} className="container-lg">
       <ReactIcon />
       <Heading fontSize={5} mt={2} mb={2} color="blue.4">
         Primer React
