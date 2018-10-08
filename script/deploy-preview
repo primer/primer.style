@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-branch="$TRAVIS_BRANCH"
+branch="$(node -e "console.log('$TRAVIS_BRANCH'.replace(/[^-\w]+/g, '-'))")"
 root="$(now-github-url --ref="$TRAVIS_COMMIT")"
 if [[ -z "$root" ]]; then
     echo "No root deployment found for branch: '$branch'"
