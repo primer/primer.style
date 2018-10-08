@@ -5,8 +5,8 @@ import Octicon, {MarkGithub} from '@githubprimer/octicons-react'
 
 export default function Nav() {
   return (
-    <Box bg="gray.9" py={3}>
-      <div className="d-flex flex-items-center p-responsive">
+    <Box bg="gray.9" py={3} px={5}>
+      <div className="d-flex flex-items-center">
         <FlexContainer flex="auto">
           <LinkLight nounderline pr={2} href="/">
             <Box color="blue.2" className="d-flex flex-items-center">
