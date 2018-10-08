@@ -24,7 +24,7 @@ export default function Hero() {
           <Text color="blue.2" fontSize={[4, 5, 5, 7]} lineHeight={1.25}>
             Resources, tooling, and design guidelines for building interfaces with GitHub’s design system
           </Text>
-          <Text is="p" color="blue.3" mt={5} className="text-mono">
+          <Text fontFamily="mono" is="p" color="blue.3" mt={5}>
             <LinkLight fontSize={[0, 1, 2]} href="https://styleguide.github.com/primer/">
               Style guide
             </LinkLight>{' '}
