@@ -1,8 +1,19 @@
 import {throttle} from 'throttle-debounce'
 
+if (global.DRAGGABLES) {
+  removeDraggables(global.DRAGGABLES)
+}
+
+const draggables = (global.DRAGGABLES = [])
+
+const resizeAll = throttle(30, false, () => {
+  for (const draggable of draggables) {
+    draggable.resize()
+  }
+})
+
 export function initDraggables() {
   const attr = 'data-draggable'
-  const draggables = []
 
   for (const el of document.querySelectorAll(`[${attr}]`)) {
     const index = draggables.findIndex(d => d.source === el)
@@ -15,16 +26,19 @@ export function initDraggables() {
     draggables.push(new Draggable(el))
   }
 
-  window.addEventListener(
-    'resize',
-    throttle(30, false, () => {
-      for (const draggable of draggables) {
-        draggable.resize()
-      }
-    })
-  )
-
+  window.addEventListener('resize', resizeAll)
   return draggables
+}
+
+export function removeDraggables(existing) {
+  if (existing.length) {
+    // eslint-disable-next-line no-console
+    console.warn(`removing ${existing.length} existing draggables...`)
+    while (existing.length) {
+      existing.shift().remove()
+    }
+  }
+  window.removeEventListener('resize', resizeAll)
 }
 
 export class Draggable {
