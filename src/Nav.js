@@ -10,7 +10,7 @@ export default function Nav() {
         <FlexContainer flex="auto">
           <LinkLight nounderline pr={2} href="/">
             <Box color="blue.2" className="d-flex flex-items-center">
-              <Octicon color="blue.2" icon={MarkGithub} ariaLabel="GitHub Primer home" size="medium" />
+              <Octicon color="blue.2" icon={MarkGithub} ariaLabel="Primer home" size="medium" />
               <Text mx={3} color="blue.2" fontSize="2" lineHeight="condensed">
                 Primer
               </Text>
