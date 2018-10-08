@@ -32,7 +32,7 @@ export default function PrimerCSS() {
         </IndexGrid.Item>
       </IndexGrid>
       <IndexGrid>
-        <IndexGrid.Item mt={[3,2,2]} mb={5} pb={2}>
+        <IndexGrid.Item mt={[3, 2, 2]} mb={5} pb={2}>
           <Text fontSize={5} color="blue.2" lineHeight={1.25}>
             Install only the packages you need.
           </Text>

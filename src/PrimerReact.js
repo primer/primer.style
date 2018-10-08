@@ -7,7 +7,7 @@ export default function PrimerReact() {
   return (
     <Box align="center" px={5} className="container-lg">
       <ReactIcon />
-      <Heading fontSize={[4,5]} mt={2} mb={2} color="blue.4">
+      <Heading fontSize={[4, 5]} mt={2} mb={2} color="blue.4">
         Primer Components
         <Text fontSize={2} ml={1} className="v-align-text-top">
           BETA
