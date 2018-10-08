@@ -21,7 +21,9 @@ export default function AtomPlugins() {
         <ButtonFill my={[2, 0]} mr={2} href="https://atom.io/packages/autocomplete-primer">
           Install package
         </ButtonFill>
-        <ButtonOutline my={[2, 0]} href="https://atom.io/">Get Atom</ButtonOutline>
+        <ButtonOutline my={[2, 0]} href="https://atom.io/">
+          Get Atom
+        </ButtonOutline>
         <Text is="p" fontSize={2} mt={5} color="blue.3" className="text-mono">
           apm install autocomplete-primer
         </Text>

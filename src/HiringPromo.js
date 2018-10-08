@@ -18,7 +18,9 @@ export default function HiringPromo() {
       <LinkPromo my={[2, 0]} fontSize={2} mr={5} href="https://github.com/about/careers">
         View all open positions
       </LinkPromo>
-      <ButtonPromo block my={[2, 0]} href="https://boards.greenhouse.io/github/jobs/1306815">Apply →</ButtonPromo>
+      <ButtonPromo block my={[2, 0]} href="https://boards.greenhouse.io/github/jobs/1306815">
+        Apply →
+      </ButtonPromo>
     </Box>
   )
 }

@@ -25,7 +25,9 @@ export default function PrimerCSS() {
           <ButtonFill my={[2, 0]} mr={2} href="https://styleguide.github.com/primer/">
             Documentation
           </ButtonFill>
-          <ButtonOutline my={[2, 0]} href="https://github.com/primer/primer">GitHub</ButtonOutline>
+          <ButtonOutline my={[2, 0]} href="https://github.com/primer/primer">
+            GitHub
+          </ButtonOutline>
           <Text is="p" fontSize={2} mt={5} color="blue.3" className="text-mono">
             npm i primer@latest
           </Text>
