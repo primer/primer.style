@@ -8,7 +8,7 @@ import IndexGrid from './IndexGrid'
 export default function Hero() {
   return (
     <Box pt={[4, 2, 5]}>
-      <IndexGrid my={[6, 6, 12]} flexDirection={[`row`, `row`, `row-reverse`]} alignItems="end">
+      <IndexGrid my={[6, 6, 12]} flexDirection={['row', 'row', 'row-reverse']} alignItems="end">
         <FlexItem px={5} width={[10 / 12, 8 / 12, 8 / 12, 5 / 12]} mx={'auto'}>
           <Relative mt={[2, 3, 5]}>
             <HeroImage />
