@@ -11,7 +11,7 @@ export default function PrimerCSS() {
     <Box>
       <IndexGrid my={[0, 3, 8]}>
         <IndexGrid.Item>
-          <Box p={[3, 3, 8]} mb={[4, 4, 0]} bg="blue.8" borderRadius={6}>
+          <Box p={[3, 3, 5, 8]} mb={[5, 5, 5, 0]} bg="blue.8" borderRadius={6}>
             <CssImage />
           </Box>
         </IndexGrid.Item>
@@ -32,7 +32,7 @@ export default function PrimerCSS() {
         </IndexGrid.Item>
       </IndexGrid>
       <IndexGrid>
-        <IndexGrid.Item mt={[3,2]} mb={5} pb={2}>
+        <IndexGrid.Item mt={[3,2,2]} mb={5} pb={2}>
           <Text fontSize={5} color="blue.2" lineHeight={1.25}>
             Install only the packages you need.
           </Text>
