@@ -11,7 +11,7 @@ export default function HiringPromo() {
         <Octicon className="mr-3" icon={RadioTower} size={40} verticalAlign="top" />
         Join GitHub!
       </Heading>
-      <Text is="p" fontSize={3} mb={4} px={[0, 0, 5]} color="orange.1">
+      <Text is="p" fontSize={3} mb={5} px={[0, 0, 0, 5]} color="orange.1">
         GitHub is looking for a Web Designer to join the Site Design team. This role will work with other designers and
         engineers on non-product websites, such as event sites, annual reports, brand campaigns, and more.
       </Text>

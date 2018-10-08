@@ -8,7 +8,7 @@ export default function OcticonsPromo() {
   return (
     <Box pb={12} px={5}>
       <Box align="center" mb={8} className="container-xl mx-auto">
-        <Relative zIndex={100} mt={[4, 3, 0]} width={[1, 1, 6 / 12]}>
+        <Relative zIndex={100} mt={[4, 3, 0]} width={[1, 1, 1, 6/12]}>
           <Link href="http://octicons.github.com/" className="no-underline">
             <Heading lineHeight="1.25" color="blue.4" mb={2} fontSize={7} fontWeight="bold">
               Octicons
@@ -27,7 +27,7 @@ export default function OcticonsPromo() {
       </Box>
 
       <Box className="container-xl mx-auto" color="blue.2">
-        <FlexContainer mx={-5} className="flex-wrap">
+        <FlexContainer flexWrap="wrap" mx={-5}>
           <Package icon={FileCode} href="https://github.com/primer/octicons/#ruby" title="JavaScript docs">
             Install the node.js or react.js package via npm to use with your JavaScript project
           </Package>
@@ -51,7 +51,7 @@ export default function OcticonsPromo() {
 
 function Package({children, icon, href, title, ...rest}) {
   return (
-    <FlexContainer width={[1, 1, 1 / 3]} px={5} mb={[3, 4, 4, 0]} {...rest}>
+    <FlexContainer width={[1, 1, 1, 1/3]} px={5} mb={[4, 5, 5, 0]} {...rest}>
       <FlexItem color="blue.3">
         <Box width={44}>
           <Octicon className="mr-3" icon={icon} height={40} verticalAlign="top" />
