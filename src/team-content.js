@@ -1,12 +1,12 @@
 const teamContent = [
   {
     name: 'Emily Brick',
-    handle: 'emilybrick',
     title: 'Systems Designer',
-    cssFeature: '',
-    questionOne: ``,
-    questionTwo: '',
-    favoriteTools: '',
+    handle: 'emilybrick',
+    cssFeature: 'align-items: center;',
+    questionOne: `I was initially drawn to design systems while working on a small team, where we were stretched thin and struggling to keep the front-end and user experience afloat, recreating components and patterns by hand over and over again. We needed consistency, stability, a bridge between designers and developers, and a more efficient workflow. Once we put a design language and system in place, I was sold on the value. I find it fascinating how many approaches to design systems there are out there, and how different they can be depending on the individual product and teams’ needs.`,
+    questionTwo: `[Inge Druckrey](https://www.youtube.com/watch?v=ldSkPqZKBl0) and [Edward Tufte](https://www.edwardtufte.com/tufte/books_ei) inspired me to get into design, and introduced me to the world of typographic and informational systems (simultaneously). This talk by [Bret Victor](https://vimeo.com/36579366) helped me feel less alone when I was starting out in the industry; at a time when code and design weren't yet openly intertwined. I’m also inspired by the folks behind designbetter.co for making knowledge around design systems transparent and available to everyone.  Additionally, and there are too many people to name, people like Una Kravetz, Sarah Drasner, Tim Holman, and Val Head are always on my radar, keeping the internet weird and creative and continuously pushing the boundaries of what's possible.`,
+    favoriteTools: 'Atom, Figma, Bear, Dash, Slack',
     avatar: 'https://user-images.githubusercontent.com/8960591/46552659-37b11c80-c890-11e8-923d-02003bae7010.jpg'
   },
   {
