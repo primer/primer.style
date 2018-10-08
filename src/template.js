@@ -13,7 +13,8 @@ module.exports = ({html = '', css = '', scripts, title}) =>
 
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width,initial-scale=1' />
-  <link rel='stylesheet' href='https://unpkg.com/primer/build/build.css' />
+  <link rel='stylesheet' href='https://unpkg.com/primer-layout/build/build.css' />
+  <link rel='stylesheet' href='https://unpkg.com/primer-utilities/build/build.css' />
   <link rel="apple-touch-icon" href="https://user-images.githubusercontent.com/334891/45369221-63075b00-b5b3-11e8-8ac7-7e588fe4c905.png">
   <link rel="icon" href="https://user-images.githubusercontent.com/334891/45369187-51be4e80-b5b3-11e8-8066-b06025239a79.png">
 

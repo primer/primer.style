@@ -35,6 +35,7 @@ const Image = styled('img')`
 `
 const A = styled(Box)`
   position: relative;
+  z-index: 2;
   display: inline-block;
   overflow: hidden;
   -webkit-clip-path: url("#clip-${props => props.shape}");
