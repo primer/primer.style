@@ -23,11 +23,6 @@ const Nav = () => (
           Meet the team
         </RouterLink>
       </Text>
-      <Text is="div" fontSize={2} px={3} color="blue.2">
-        <RouterLink style={{color: 'inherit'}} to="/news">
-          What’s new
-        </RouterLink>
-      </Text>
     </div>
   </Box>
 )
