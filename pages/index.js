@@ -15,15 +15,15 @@ export default function Index() {
     <Box>
       <Nav />
       <Hero />
-      <Divider my={[5, 6]} />
+      <Divider my={[9, 12]} />
       <HiringPromo />
-      <Divider my={[5, 6]} />
+      <Divider my={[9, 12]} />
       <PrimerCSS />
-      <Divider my={[5, 6]} />
+      <Divider my={[9, 12]} />
       <PrimerReact />
-      <Divider my={[5, 6]} />
+      <Divider my={[9, 12]} />
       <AtomPlugins />
-      <Divider my={[5, 6]} />
+      <Divider my={[9, 12]} />
       <OcticonsPromo />
       <OpenSource />
     </Box>
