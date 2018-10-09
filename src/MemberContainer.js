@@ -9,7 +9,7 @@ const direction = isOdd =>
 const Member = ({member, isOdd, shape}) => (
   <FlexContainer mb={12} justifyContent="flex-end" alignItems={['center', 'center', 'center', 'initial', 'initial']} flexDirection={direction(isOdd)}>
     <MemberQuestions member={member} />
-    <FlexItem mb={[12, 12, 12, 0, 0]} flexShrink="0" style={{position: 'relative'}}>
+    <FlexItem mb={[6, 12, 12, 0, 0]} flexShrink="0" style={{position: 'relative'}}>
       <Box mr={isOdd ? [0, 0, 0, 12, 12] : 0} ml={isOdd ? 0 : [0, 0, 0, 12, 12]}>
         <AvatarShape shape={shape} src={member.avatar} />
       </Box>
