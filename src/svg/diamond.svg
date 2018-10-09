@@ -3,5 +3,5 @@
   <clipPath id="clip-diamond" clipPathUnits="objectBoundingBox">
     <polygon points="0.5 0, 0 0.5, 0.5 0.975, 0.99 0.5" />
   </clipPath>
-  <polygon points="174.5 3.5, 2.6 178.8, 174.5 346, 343 178.6"/>
+  <polygon points="174.5 3.5, 2.6 178.8, 174.5 345, 343 178.6"/>
 </svg>
