@@ -17,9 +17,16 @@ export default function Nav() {
             </Box>
           </RouterLink>
         </FlexContainer>
-        <Text is="div" fontSize={2} color="blue.2">
+        <Text is="div" px={3} fontSize={2} color="blue.2">
           <RouterLink style={{color: 'inherit'}} to="/team">
-            Meet the team
+            <Box display={['inline', 'none']}>Team</Box>
+            <Box display={['none', 'inline']}>Meet the team</Box>
+          </RouterLink>
+        </Text>
+        <Text is="div" pl={3} fontSize={2} color="blue.2">
+          <RouterLink style={{color: 'inherit'}} to="/news">
+            <Box display={['inline', 'none']}>News</Box>
+            <Box display={['none', 'inline']}>What’s new</Box>
           </RouterLink>
         </Text>
       </div>
