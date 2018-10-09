@@ -20,6 +20,11 @@ const Shape = styled(({className, shape}) => {
 })`
   position: relative;
   z-index: 2;
+  width: 100%;
+  height: auto;
+  stroke: ${themeGet('colors.blue.3')};
+  stroke-width: 4;
+  fill: none;
 `
 
 const Image = styled('img')`
