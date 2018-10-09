@@ -12,7 +12,7 @@ const evenLineStyles = `
   }`
 
 const direction = isOdd =>
-  isOdd ? ['column', 'column', 'row-reverse', 'row-reverse'] : ['column', 'column', 'row', 'row']
+  isOdd ? ['column-reverse', 'column-reverse', 'row-reverse', 'row-reverse'] : ['column-reverse', 'column-reverse', 'row', 'row']
 
 const Member = ({member, isOdd, shape}) => (
   <FlexContainer mb={12} justifyContent="flex-end" flexDirection={direction(isOdd)}>
