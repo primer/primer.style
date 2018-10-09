@@ -32,6 +32,16 @@ const teamContent = [
     avatar: 'https://user-images.githubusercontent.com/8960591/46552708-5b746280-c890-11e8-90df-654d77ecbb89.jpg'
   },
   {
+    name: 'Jon Rohan',
+    title: 'Systems Designer',
+    handle: 'jonrohan',
+    cssFeature: `grid-template-areas: "header header header" "footer footer footer"`,
+    questionOne: `I have had a fascination with front end engineering and UI for all of my career. Early on at GitHub I recognized the need to organize our code into reusable components. When the team formalized I had to be involved.`,
+    questionTwo: `Both past and present I have to acknowledge that Nicole Sullivan has been profoundly influential in the way I front-end and write CSS. When she introduced concepts of OOCSS it brought me from thinking very linearly about CSS to a whole new range of systems thinking.`,
+    favoriteTools: `Atom, Bash/Shell, Figma, GitHub, iTerm, Javascript, MacBook Pro, Things`,
+    avatar: 'https://user-images.githubusercontent.com/8960591/46552728-6dee9c00-c890-11e8-827f-89fa8a58441d.jpg'
+  },
+  {
     name: 'Diana Mounter',
     handle: 'broccolini',
     title: 'Design Operations Manager',
@@ -41,16 +51,6 @@ const teamContent = [
     questionTwo: `I don't have room on this webpage to list everyone! [SMACSS](https://smacss.com/), [The Art and Science of CSS](https://www.amazon.com/Science-Jonathan-Bolton-Cameron-Paperback/dp/B00ZVORUW6), and [Veerle Pieters](http://veerle.duoh.com/) were some early influences. [OOCSS](https://github.com/stubbornella/oocss/wiki) by Nicole Sullivan, [CSS Wizardary](https://csswizardry.com/), [Basscss](http://basscss.com/), [Tachyons](https://tachyons.io/), and [BEM](http://getbem.com/naming/) influenced my approach to CSS architecture. More recently I've been inspired by Rune Madsen's [Programming Design Systems](https://programmingdesignsystems.com), [Compositor](https://github.com/c8r), [Dan Abramov](https://twitter.com/dan_abramov), [Sebastian Markbage](https://youtu.be/4anAwXYqLG8), and so many design and code wonder women like [Many Kerr](https://twitter.com/mandy_kerr), [Marcy Sutton](https://twitter.com/marcysutton), [Lea Verou](https://twitter.com/LeaVerou), [Sarah Drasner](https://twitter.com/sarah_edo) and [Jina Anne](https://twitter.com/jina).`,
     favoriteTools: 'Hyper, Atom, Figma, MDN, and Quip',
     avatar: 'https://user-images.githubusercontent.com/8960591/46552654-32ec6880-c890-11e8-84a7-e4f8e109642f.jpg'
-  },
-  {
-    name: 'Jon Rohan',
-    title: 'Systems Designer',
-    handle: 'jonrohan',
-    cssFeature: `grid-template-areas: "header header header" "footer footer footer"`,
-    questionOne: `I have had a fascination with front end engineering and UI for all of my career. Early on at GitHub I recognized the need to organize our code into reusable components. When the team formalized I had to be involved.`,
-    questionTwo: `Both past and present I have to acknowledge that Nicole Sullivan has been profoundly influential in the way I front-end and write CSS. When she introduced concepts of OOCSS it brought me from thinking very linearly about CSS to a whole new range of systems thinking.`,
-    favoriteTools: `Atom, Bash/Shell, Figma, GitHub, iTerm, Javascript, MacBook Pro, Things`,
-    avatar: 'https://user-images.githubusercontent.com/8960591/46552728-6dee9c00-c890-11e8-827f-89fa8a58441d.jpg'
   }
 ]
 
