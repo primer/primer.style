@@ -2,5 +2,5 @@
   <clipPath id="clip-diamond">
     <path d="M347.849 174.985L174.924 1.62476L2.00001 174.984L174.925 348.344L347.849 174.985Z"/>
   </clipPath>
-  <path d="M347.849 174.985L174.924 1.62476L2.00001 174.984L174.925 348.344L347.849 174.985Z" stroke="#79b8ff" stroke-width="5" stroke-miterlimit="10"/>
+  <path d="M347.849 174.985L174.924 1.62476L2.00001 174.984L174.925 348.344L347.849 174.985Z" stroke="#79b8ff" stroke-width="3" stroke-miterlimit="10"/>
 </svg>
