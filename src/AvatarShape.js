@@ -24,7 +24,6 @@ const Shape = styled(({className, shape}) => {
 
 const Image = styled('img')`
   transition: transform 0.6s ease;
-  filter: grayscale(100%);
   object-fit: cover;
   width: 100%;
   height: 100%;
