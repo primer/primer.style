@@ -1,5 +1,5 @@
 import React from 'react'
-import {Text, FlexContainer, Link, Box} from '@primer/components'
+import {Text, Heading, FlexContainer, Link, Box} from '@primer/components'
 import Octicon, {MarkGithub} from '@githubprimer/octicons-react'
 import {injectGlobal} from 'emotion'
 import ReactMarkdown from 'react-markdown'
@@ -12,15 +12,15 @@ injectGlobal`
 
 const MemberInfo = ({member}) => (
   <Box maxWidth="600px" id={member.handle}>
-    <Text is="p" fontSize={4} mb={0} color="blue.4">
-      <Text fontWeight="bold">{member.name}</Text>, {member.title}
-    </Text>
+    <Heading fontSize={5} pb={3} lineHeight={1.25} color="blue.4">
+      {member.name}, {member.title}
+    </Heading>
     <FlexContainer alignItems="center" mt={2}>
       <Link
         fontFamily="mono"
         color="blue.3"
         hoverColor="blue.3"
-        fontSize={3}
+        fontSize={2}
         href={`https://github.com/${member.github}`}
       >
         <Octicon size="24" color="blue.3" className="mr-3" icon={MarkGithub} />@{member.handle}
@@ -30,7 +30,7 @@ const MemberInfo = ({member}) => (
       <Text fontWeight="bold" mr={1} fontSize={3}>
         Favorite CSS feature:
       </Text>
-      <Text fontSize="3" fontFamily="mono">
+      <Text color="blue.3" fontSize="2" fontFamily="mono">
         {member.cssFeature}
       </Text>
     </Box>
