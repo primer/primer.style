@@ -16,7 +16,7 @@ const oddDots = `
     top: -50px;
     transform: rotate(-45deg);
   }`
- const evenDots = `
+const evenDots = `
   &:after {
     background-image: url(./dots.svg);
     background-size: 270px 265px;
@@ -31,10 +31,17 @@ const oddDots = `
   }`
 
 const direction = isOdd =>
-  isOdd ? ['column-reverse', 'column-reverse', 'column-reverse', 'row-reverse', 'row-reverse'] : ['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']
+  isOdd
+    ? ['column-reverse', 'column-reverse', 'column-reverse', 'row-reverse', 'row-reverse']
+    : ['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']
 
 const Member = ({member, isOdd, shape}) => (
-  <FlexContainer mb={12} justifyContent="flex-end" alignItems={['center', 'center', 'center', 'initial', 'initial']} flexDirection={direction(isOdd)}>
+  <FlexContainer
+    mb={12}
+    justifyContent="flex-end"
+    alignItems={['center', 'center', 'center', 'initial', 'initial']}
+    flexDirection={direction(isOdd)}
+  >
     <MemberQuestions member={member} />
     <FlexItem mb={[6, 12, 12, 0, 0]} flexShrink="0" style={{position: 'relative'}}>
       <Box css={isOdd ? oddDots : evenDots} mr={isOdd ? [0, 0, 0, 12, 12] : 0} ml={isOdd ? 0 : [0, 0, 0, 12, 12]}>

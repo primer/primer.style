@@ -1,5 +1,5 @@
 import React from 'react'
-import {Text, Heading, FlexContainer, Link, Box} from '@primer/components'
+import {Text, Heading, Link, Box} from '@primer/components'
 import Octicon, {MarkGithub} from '@githubprimer/octicons-react'
 import {injectGlobal} from 'emotion'
 import ReactMarkdown from 'react-markdown'

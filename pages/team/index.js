@@ -3,7 +3,6 @@ import {Box, Text, Heading, FlexContainer, Relative, FlexItem} from '@primer/com
 import Nav from '../../src/Nav'
 import MemberContainer from '../../src/MemberContainer'
 import teamContent from '../../src/team-content'
-import BackgroundImage from '../../src/BackgroundImage'
 import MeetTheTeam from '../meet-the-team.svg'
 
 const shapes = ['hexagon', 'square', 'circle', 'diamond']
