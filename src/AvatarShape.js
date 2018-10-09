@@ -22,8 +22,6 @@ const Shape = styled(({className, shape}) => {
   z-index: 2;
   width: 100%;
   height: auto;
-  stroke: ${themeGet('colors.blue.3')};
-  stroke-width: 4;
   fill: none;
 `
 
@@ -36,12 +34,11 @@ const Image = styled('img')`
   top: 0;
   left: 0;
 `
+
 const A = styled(Box)`
   position: relative;
   z-index: 2;
   display: inline-block;
-  overflow: hidden;
-  -webkit-clip-path: url("#clip-${props => props.shape}");
   clip-path: url("#clip-${props => props.shape}");
   &:after {
     content: '';
@@ -64,11 +61,29 @@ const A = styled(Box)`
   }
 `
 
+const ShapeOutline = styled(Box)`
+  padding: 2px;
+  position: relative;
+  &:after {
+    content: '';
+    clip-path: url("#clip-${props => props.shape}");
+    background: ${themeGet('colors.blue.3')};
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+`
+
 const AvatarShape = props => (
-  <A className={props.className} shape={props.shape}>
-    <Image src={props.src} />
-    <Shape shape={props.shape} />
-  </A>
+  <ShapeOutline shape={props.shape}>
+    <A className={props.className} shape={props.shape}>
+      <Image src={props.src} />
+      <Shape shape={props.shape} />
+    </A>
+  </ShapeOutline>
 )
 
 AvatarShape.propTypes = {
