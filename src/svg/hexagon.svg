@@ -1,6 +1,7 @@
-<svg width="319" height="275" viewBox="0 0 319 275" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <clipPath id="clip-hexagon">
-    <path d="M237.421 1H81.5789L2 137.5L81.5789 274H237.421L317 137.5L237.421 1Z"/>
+<svg viewBox="0 0 319 275" version="1.1" xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+  <clipPath id="clip-hexagon" clipPathUnits="objectBoundingBox">
+    <polygon points="0.25 0, 0.75 0, 1 0.5, 0.75 0.98, 0.25 0.98, 0 0.5" />
   </clipPath>
-  <path d="M237.421 1H81.5789L2 137.5L81.5789 274H237.421L317 137.5L237.421 1Z" stroke="#2188FF" stroke-width="5" stroke-miterlimit="10"/>
+  <polygon points="80.75 2, 237.25 2, 316 140.5, 237.25 273, 80.75 273, 2 140.5" />
 </svg>

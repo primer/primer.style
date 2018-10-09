@@ -20,11 +20,14 @@ const Shape = styled(({className, shape}) => {
 })`
   position: relative;
   z-index: 2;
+  width: 100%;
+  height: auto;
+  stroke: ${themeGet('colors.blue.3')};
+  stroke-width: 4;
+  fill: none;
 `
 
 const Image = styled('img')`
-  transition: transform 0.6s ease;
-  filter: grayscale(100%);
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -42,7 +45,7 @@ const A = styled(Box)`
   clip-path: url("#clip-${props => props.shape}");
   &:after {
     content: '';
-    transition: opacity 0.6s ease;
+    transition: opacity 0.8s ease;
     position: absolute;
     left: 0;
     top: 0;
@@ -58,9 +61,6 @@ const A = styled(Box)`
   }
   &:hover:after {
     opacity: 1;
-  }
-  &:hover img {
-    transform: scale(1.1);
   }
 `
 
