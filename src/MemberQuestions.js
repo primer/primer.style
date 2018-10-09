@@ -15,17 +15,16 @@ const MemberInfo = ({member}) => (
     <Heading fontSize={5} pb={3} lineHeight={1.25} color="blue.4">
       {member.name}, {member.title}
     </Heading>
-    <FlexContainer alignItems="center" mt={2}>
-      <Link
-        fontFamily="mono"
-        color="blue.3"
-        hoverColor="blue.3"
-        fontSize={2}
-        href={`https://github.com/${member.github}`}
-      >
-        <Octicon size="24" color="blue.3" className="mr-3" icon={MarkGithub} />@{member.handle}
-      </Link>
-    </FlexContainer>
+    <Link
+      mt={2}
+      fontFamily="mono"
+      color="blue.3"
+      hoverColor="blue.3"
+      fontSize={2}
+      href={`https://github.com/${member.github}`}
+    >
+      <Octicon size="24" verticalAlign="middle" color="blue.3" className="mr-3" icon={MarkGithub} />@{member.handle}
+    </Link>
     <Text fontWeight="bold" is="div" fontSize={3} mt={3} mb={3}>
       What drew you into design systems?
     </Text>
