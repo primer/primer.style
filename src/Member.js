@@ -4,32 +4,11 @@ import MemberInfo from './MemberInfo'
 import AvatarShape from './AvatarShape'
 
 const oddLineStyles = `
-  margin-right: 64px;
-  &:after {
-    background-image: url('./line.svg');
-    background-size: 111px 557px;
-    background-repeat: no-repeat;
-    content: "";
-    height: 557px;
-    width: 111px;
-    position: absolute;
-    left: 287px;
-    margin-top: 80px;
+  margin-right: 128px;
   }`
 
 const evenLineStyles = `
-  margin-left: 64px;
-  &:after {
-    background-image: url('./line.svg');
-    background-size: 111px 557px;
-    background-repeat: no-repeat;
-    content: "";
-    height: 557px;
-    width: 111px;
-    position: absolute;
-    left: -10px;
-    margin-top: 80px;
-    transform: scale(-1, 1);
+  margin-left: 128px;
   }`
 
 const direction = isOdd =>
