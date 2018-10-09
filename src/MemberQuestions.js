@@ -26,14 +26,6 @@ const MemberInfo = ({member}) => (
         <Octicon size="24" color="blue.3" className="mr-3" icon={MarkGithub} />@{member.handle}
       </Link>
     </FlexContainer>
-    <Box mt={4}>
-      <Text fontWeight="bold" mr={1} fontSize={3}>
-        Favorite CSS feature:
-      </Text>
-      <Text color="blue.3" fontSize="2" fontFamily="mono">
-        {member.cssFeature}
-      </Text>
-    </Box>
     <Text fontWeight="bold" is="p" fontSize={3} mt={4}>
       What drew you into design systems?
     </Text>
