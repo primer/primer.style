@@ -26,20 +26,20 @@ const MemberInfo = ({member}) => (
         <Octicon size="24" color="blue.3" className="mr-3" icon={MarkGithub} />@{member.handle}
       </Link>
     </FlexContainer>
-    <Text fontWeight="bold" is="p" fontSize={3} mt={4}>
+    <Text fontWeight="bold" is="div" fontSize={3} mt={3} mb={3}>
       What drew you into design systems?
     </Text>
     <Text fontSize={3}>
       <ReactMarkdown className="markdown" source={member.questionOne} />
     </Text>
-    <Text fontWeight="bold" is="p" fontSize={3} mt={4}>
+    <Text fontWeight="bold" is="div" fontSize={3} mt={6} mb={3}>
       Who have you learned from or been inspired by?
     </Text>
     <Text fontSize={3}>
       <ReactMarkdown className="markdown" source={member.questionTwo} />
     </Text>
-    <Text fontWeight="bold" mr={1} fontSize={3} mt={4}>
-      Favorite tools:
+    <Text fontWeight="bold" mr={1} fontSize={3} mt={6}>
+      Favorite tools
     </Text>
     <Text fontSize={3}>
       <ReactMarkdown className="markdown" source={member.favoriteTools} />
