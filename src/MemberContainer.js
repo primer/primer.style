@@ -16,7 +16,7 @@ const oddDots = `
     left: 145px;
     transform: rotate(-180deg);
   }`
- const evenDots = `
+const evenDots = `
   &:after {
     background-image: url(./dots.svg);
     background-size: 168px 92px;
