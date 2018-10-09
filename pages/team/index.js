@@ -3,7 +3,7 @@ import {Box, Text, Heading, FlexContainer, Relative, FlexItem} from '@primer/com
 import Nav from '../../src/Nav'
 import MemberContainer from '../../src/MemberContainer'
 import teamContent from '../../src/team-content'
-import MeetTheTeam from '../meet-the-team.svg'
+import TeamImage from '../meet-the-team.svg'
 
 const shapes = ['hexagon', 'square', 'circle', 'diamond']
 
@@ -27,7 +27,7 @@ const TeamIndex = () => (
         mb={10}
         mx={-5}
       >
-        <Box width={[1, 1, 1, 6 / 12]} pt={[0, 8]} pb={[8, 12]} px={5}>
+        <Box width={[1, 1, 1, 6 / 12]} pt={[0,0,0, 8]} pb={[8, 8, 8, 12]} px={5}>
           <Heading fontSize={[5, 7]} color="blue.4" lineHeight={1} mb={3}>
             Meet the team
           </Heading>
@@ -37,8 +37,8 @@ const TeamIndex = () => (
           </Text>
         </Box>
         <Relative top="-100px">
-          <FlexItem width="430px" height="340px" flexShrink="0">
-            <MeetTheTeam />
+          <FlexItem width="430px" height="340px" flexShrink="0" ml={[0,0,5,0,0]}>
+            <TeamImage />
           </FlexItem>
         </Relative>
       </FlexContainer>
