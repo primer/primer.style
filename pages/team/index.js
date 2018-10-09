@@ -20,10 +20,10 @@ const getMemberContent = () => {
 const TeamIndex = () => (
   <Box>
     <Nav />
-    <Box className="container-xl" p={3} pt={7} style={{overflow: 'hidden'}}>
-      <FlexContainer justifyContent="space-between" flexDirection={['column', 'column', 'row', 'row']}>
-        <Box maxWidth="550px">
           <Heading fontSize={7} color="blue.4">
+    <Box className="container-xl" pt={7} px={5} style={{overflow: 'hidden'}}>
+      <FlexContainer justifyContent="space-between" flexDirection={['column', 'column', 'row', 'row']} mb={10} mx={-5}>
+        <Box width={[1, 1, 1, 6/12]} pt={8} pb={12} px={5}>
             Meet the team
           </Heading>
           <Text fontSize={4} color="blue.2">
