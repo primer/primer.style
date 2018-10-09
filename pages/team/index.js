@@ -4,6 +4,7 @@ import Nav from '../../src/Nav'
 import MemberContainer from '../../src/MemberContainer'
 import teamContent from '../../src/team-content'
 import BackgroundImage from '../../src/BackgroundImage'
+import MeetTheTeam from '../meet-the-team.svg'
 
 const shapes = ['hexagon', 'square', 'circle', 'diamond']
 
@@ -32,8 +33,8 @@ const TeamIndex = () => (
           </Text>
         </Box>
         <Relative top="-100px">
-          <FlexItem flexShrink="0">
-            <BackgroundImage width="430px" height="340px" backgroundImage={'./meet-the-team.svg'} />
+          <FlexItem width="430px" height="340px" flexShrink="0">
+            <MeetTheTeam />
           </FlexItem>
         </Relative>
       </FlexContainer>
