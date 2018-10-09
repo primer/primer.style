@@ -11,7 +11,7 @@ injectGlobal`
 `
 
 const MemberInfo = ({member}) => (
-  <Box maxWidth="600px" id={member.handle}>
+  <Box width={[1/2, 1, 1, 1/2]} id={member.handle}>
     <Heading fontSize={5} pb={3} lineHeight={1.25} color="blue.4">
       {member.name}, {member.title}
     </Heading>
