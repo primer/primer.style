@@ -25,7 +25,9 @@ const articleDate = date => {
   const dateNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
   const day = new Date(date)
   const now = new Date()
-  return `${dateNames[day.getMonth()]} ${day.getDate()}${ now.getFullYear() > day.getFullYear() ? `, ${day.getFullYear()}` : '' }`
+  return `${dateNames[day.getMonth()]} ${day.getDate()}${
+    now.getFullYear() > day.getFullYear() ? `, ${day.getFullYear()}` : ''
+  }`
 }
 
 const Article = ({article}) => {
@@ -40,7 +42,10 @@ const Article = ({article}) => {
         </Link>
         <Box>
           <Text fontFamily="mono" f={1} color="blue.3">
-            {articleDomain(article.url)} &middot; {articleDate(article.date)}
+            <Link color="blue.3" href={article.url}>
+              {articleDomain(article.url)}
+            </Link>{' '}
+            &middot; {articleDate(article.date)}
           </Text>
         </Box>
       </Box>
