@@ -5,29 +5,28 @@ import AvatarShape from './AvatarShape'
 
 const oddDots = `
   &:after {
-    background-image: url(./dots-2.svg);
-    background-size: 155px 280px;
+    background-image: url(./dots.svg);
+    background-size: 168px 92px;
     background-repeat: no-repeat;
     content: "";
-    height: 280px;
-    width: 155px;
+    height: 92px;
+    width: 168px;
     position: absolute;
-    right: 140px;
-    top: -50px;
-    transform: rotate(-45deg);
+    top: 220px;
+    left: 145px;
+    transform: rotate(-180deg);
   }`
-const evenDots = `
+ const evenDots = `
   &:after {
     background-image: url(./dots.svg);
-    background-size: 270px 265px;
+    background-size: 168px 92px;
     background-repeat: no-repeat;
     content: "";
-    height: 265px;
-    width: 270px;
+    height: 92px;
+    width: 168px;
     position: absolute;
-    left: 80px;
-    top: 50px;
-    transform: rotate(-5deg);
+    top: 234px;
+    left: 46px;
   }`
 
 const direction = isOdd =>
