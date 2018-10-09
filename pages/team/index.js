@@ -21,9 +21,14 @@ const TeamIndex = () => (
   <Box>
     <Nav />
     <Box className="container-xl" pt={7} px={5} style={{overflow: 'hidden'}}>
-      <FlexContainer justifyContent="space-between" flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']} mb={10} mx={-5}>
-        <Box width={[1, 1, 1, 6/12]} pt={[0, 8]} pb={[8, 12]} px={5}>
-          <Heading fontSize={[5,7]} color="blue.4" lineHeight={1} mb={3}>
+      <FlexContainer
+        justifyContent="space-between"
+        flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']}
+        mb={10}
+        mx={-5}
+      >
+        <Box width={[1, 1, 1, 6 / 12]} pt={[0, 8]} pb={[8, 12]} px={5}>
+          <Heading fontSize={[5, 7]} color="blue.4" lineHeight={1} mb={3}>
             Meet the team
           </Heading>
           <Text fontSize={4} color="blue.2" lineHeight={1.25}>
