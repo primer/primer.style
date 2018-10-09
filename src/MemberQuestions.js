@@ -38,11 +38,11 @@ const MemberInfo = ({member}) => (
     <Text fontSize={3}>
       <ReactMarkdown className="markdown" source={member.questionTwo} />
     </Text>
-    <Text fontWeight="bold" mr={1} fontSize={3} mt={6}>
+    <Text fontWeight="bold" is="div" mr={1} fontSize={3} mt={6} mb={3}>
       Favorite tools
     </Text>
     <Text fontSize={3}>
-      <ReactMarkdown className="markdown" source={member.favoriteTools} />
+      {member.favoriteTools}
     </Text>
   </Box>
 )
