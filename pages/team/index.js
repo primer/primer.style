@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box, Text, Heading, FlexContainer, Relative, FlexItem} from '@primer/components'
 import Nav from '../../src/Nav'
-import Member from '../../src/Member'
+import MemberContainer from '../../src/MemberContainer'
 import teamContent from '../../src/team-content'
 import BackgroundImage from '../../src/BackgroundImage'
 
@@ -11,7 +11,7 @@ const getMemberContent = () => {
   let shapeIndex = 0
   return teamContent.map((member, i) => {
     if (i === shapes.length) shapeIndex = 0
-    const element = <Member shape={shapes[shapeIndex]} isOdd={i % 2 === 0} member={member} />
+    const element = <MemberContainer shape={shapes[shapeIndex]} isOdd={i % 2 === 0} member={member} />
     shapeIndex++
     return element
   })

@@ -1,6 +1,6 @@
 import React from 'react'
 import {FlexContainer, Box, FlexItem} from '@primer/components'
-import MemberInfo from './MemberInfo'
+import MemberQuestions from './MemberQuestions'
 import AvatarShape from './AvatarShape'
 
 const oddLineStyles = `
@@ -16,7 +16,7 @@ const direction = isOdd =>
 
 const Member = ({member, isOdd, shape}) => (
   <FlexContainer mb={12} justifyContent="flex-end" flexDirection={direction(isOdd)}>
-    <MemberInfo member={member} />
+    <MemberQuestions member={member} />
     <FlexItem flexShrink="0" style={{position: 'relative'}}>
       <Box css={isOdd ? oddLineStyles : evenLineStyles}>
         <AvatarShape shape={shape} src={member.avatar} />
