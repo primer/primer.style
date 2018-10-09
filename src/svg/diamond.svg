@@ -1,6 +1,7 @@
-<svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <clipPath id="clip-diamond">
-    <path d="M347.849 174.985L174.924 1.62476L2.00001 174.984L174.925 348.344L347.849 174.985Z"/>
+<svg viewBox="0 0 350 350" version="1.1" xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+  <clipPath id="clip-diamond" clipPathUnits="objectBoundingBox">
+    <polygon points="0.5 0, 0 0.5, 0.5 0.975, 0.99 0.5" />
   </clipPath>
-  <path d="M347.849 174.985L174.924 1.62476L2.00001 174.984L174.925 348.344L347.849 174.985Z" stroke="#79b8ff" stroke-width="3" stroke-miterlimit="10"/>
+  <polygon points="174.5 3.5, 2.6 178.8, 174.5 346, 343 178.6"/>
 </svg>
