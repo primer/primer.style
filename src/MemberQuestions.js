@@ -24,7 +24,7 @@ const MemberInfo = ({member}) => (
       fontSize={2}
       href={`https://github.com/${member.github}`}
     >
-      <Octicon icon={MarkGithub} size="24" verticalAlign="middle" color="blue.3" mr={3} />@{member.handle}
+      <Octicon icon={MarkGithub} size={24} verticalAlign="middle" color="blue.3" mr={3} />@{member.handle}
     </Link>
     <Text fontFamily="mono" color="blue.4" is="div" fontSize={3} mt={7} mb={0}>
       What drew you into design systems?
