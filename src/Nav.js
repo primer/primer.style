@@ -7,7 +7,7 @@ import Octicon from './Octicon'
 export default function Nav() {
   return (
     <Box bg="gray.9" py={3} px={5}>
-      <div className="d-flex flex-items-center">
+      <FlexContainer alignItems="center">
         <FlexContainer flex="auto">
           <RouterLink style={{color: 'inherit'}} to="/">
             <Box color="blue.2" className="d-flex flex-items-center">
@@ -23,7 +23,7 @@ export default function Nav() {
             Meet the team
           </RouterLink>
         </Text>
-      </div>
+      </FlexContainer>
     </Box>
   )
 }
