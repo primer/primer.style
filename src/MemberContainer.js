@@ -47,7 +47,7 @@ const Member = ({member, isOdd, shape}) => (
     flexDirection={direction(isOdd)}
   >
     <MemberQuestions member={member} />
-    <FlexItem mb={[6, 8, 8, 0, 0]} flexShrink="0" style={{position: 'relative'}}>
+    <FlexItem mb={[6, 8, 8, 0, 0]} css={{flexShrink: 0}} style={{position: 'relative'}}>
       <Box mr={isOdd ? [0, 0, 0, 12, 12] : 0} ml={isOdd ? 0 : [0, 0, 12, 12, 12]}>
         <AvatarShape shape={shape} src={member.avatar} />
         <Dots shape={shape} />
