@@ -1,7 +1,8 @@
 import React from 'react'
 import {Box, Heading, Text, Link, FlexContainer, FlexItem, Relative} from '@primer/components'
+import {FileCode, Ruby, Paintcan} from '@githubprimer/octicons-react'
+import Octicon from './Octicon'
 import OcticonsImage from './svg/Octicons.svg'
-import Octicon, {FileCode, Ruby, Paintcan} from '@githubprimer/octicons-react'
 import LinkLight from './LinkLight'
 
 export default function OcticonsPromo() {
@@ -54,7 +55,7 @@ function Package({children, icon, href, title, ...rest}) {
     <FlexContainer width={[1, 1, 1, 1 / 3]} px={5} mb={[4, 5, 5, 0]} {...rest}>
       <FlexItem color="blue.3">
         <Box width={44}>
-          <Octicon className="mr-3" icon={icon} height={40} verticalAlign="top" />
+          <Octicon icon={icon} mr={3} height={40} verticalAlign="top" />
         </Box>
       </FlexItem>
       <FlexItem px={2}>
