@@ -7,7 +7,7 @@ import IndexGrid from './IndexGrid'
 
 export default function AtomPlugins() {
   return (
-    <IndexGrid my={[0, 3, 6]} flexDirection={[`row`, `row`, `row-reverse`]}>
+    <IndexGrid my={[0, 3, 6]} flexDirection={['row', 'row', 'row-reverse']}>
       <IndexGrid.Item mb={[5, 5, 5, 0]}>
         <AtomImage width="100%" height={null} />
       </IndexGrid.Item>
