@@ -11,9 +11,9 @@ export default function Hero() {
       <IndexGrid my={[6, 6, 12]} flexDirection={['row', 'row', 'row-reverse']} alignItems="end">
         <FlexItem px={5} width={[10 / 12, 8 / 12, 8 / 12, 5 / 12]} mx={'auto'}>
           <Relative mt={[2, 3, 5]}>
-            <HeroImage />
+            <HeroImage width="100%" />
             <Absolute top={0} left={0} width="100%" height="100%" zIndex={100} css={{pointerEvents: 'none'}}>
-              <HeroOverlay />
+              <HeroOverlay width="100%" />
             </Absolute>
           </Relative>
         </FlexItem>
