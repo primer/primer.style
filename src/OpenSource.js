@@ -42,7 +42,7 @@ export default function OpenSource() {
           </LinkDark>
         </IndexGrid.Item>
       </IndexGrid>
-      <Box color="black" px={5} className="container-xl mx-auto">
+      <Box color="black" px={5} mx="auto" className="container-xl">
         <Box mt={12} py={5} borderTop={2} borderColor="black">
           <Text pr={1} is="span">
             Created and maintained by GitHub&#8217;s
