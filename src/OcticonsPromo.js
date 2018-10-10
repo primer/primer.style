@@ -18,7 +18,7 @@ export default function OcticonsPromo() {
           <Text is="p" color="blue.1" mb={[2, 3]} fontSize={[4, 5]}>
             Your project. GitHub&#8217;s icons.
           </Text>
-          <Text fontSize={2} color="blue.3" className="text-mono">
+          <Text fontSize={2} color="blue.3" fontFamily="mono">
             v8.1.0
           </Text>
         </Relative>

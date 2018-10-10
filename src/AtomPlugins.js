@@ -24,7 +24,7 @@ export default function AtomPlugins() {
         <ButtonOutline my={[2, 0]} href="https://atom.io/">
           Get Atom
         </ButtonOutline>
-        <Text is="p" fontSize={2} mt={5} color="blue.3" className="text-mono">
+        <Text is="p" fontSize={2} mt={5} color="blue.3" fontFamily="mono">
           apm install autocomplete-primer
         </Text>
       </IndexGrid.Item>
