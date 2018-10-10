@@ -32,8 +32,7 @@ const TeamIndex = () => (
             Meet the team
           </Heading>
           <Text fontSize={4} color="blue.2" lineHeight={1.25}>
-            Get to know the team behind Primer; how we got into design systems and what we’re most looking forward to
-            Meet the GitHub Design Systems team
+            Get to know the team behind Primer; how we got into design systems and what we’re most looking forward to.
           </Text>
         </Box>
         <Relative top="-100px">
