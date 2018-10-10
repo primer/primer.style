@@ -10,7 +10,7 @@ export default function OcticonsPromo() {
     <Box pb={12} px={5}>
       <Box align="center" mb={8} mx="auto" className="container-xl">
         <Relative zIndex={100} mt={[4, 3, 0]} width={[1, 1, 1, 6 / 12]}>
-          <Link href="http://octicons.github.com/" className="no-underline">
+          <Link href="http://octicons.github.com/">
             <Heading lineHeight="1.25" color="blue.4" mb={2} fontSize={7} fontWeight="bold">
               Octicons
             </Heading>
