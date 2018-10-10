@@ -22,7 +22,7 @@ export default function OcticonsPromo() {
           </Text>
         </Relative>
         <Box className="container-lg">
-          <OcticonsImage width="100%" />
+          <OcticonsImage width="100%" height={null} />
         </Box>
       </Box>
 
