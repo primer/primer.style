@@ -62,7 +62,7 @@ function Package({children, icon, href, title, ...rest}) {
         <Text is="p" fontSize={2}>
           {children}
         </Text>
-        <LinkLight className="d-inline-block" href={href}>
+        <LinkLight display="inline-block" href={href}>
           {title} →
         </LinkLight>
       </FlexItem>
