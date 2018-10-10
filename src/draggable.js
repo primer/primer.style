@@ -9,8 +9,8 @@ const resizeAll = throttle(30, false, () => {
 })
 
 export function initDraggables() {
-  if (global.DRAGGABLES) {
-    removeDraggables(global.DRAGGABLES)
+  if (draggables) {
+    removeDraggables(draggables)
   }
 
   const attr = 'data-draggable'
@@ -33,15 +33,11 @@ export function initDraggables() {
   }
 }
 
-export function removeDraggables() {
-  const existing = global.DRAGGABLES
-  if (existing) {
-    while (existing.length) {
-      existing.shift().remove()
-    }
-    window.removeEventListener('resize', resizeAll)
-    global.DRAGGABLES = null
+export function removeDraggables(existing) {
+  while (existing.length) {
+    existing.shift().remove()
   }
+  window.removeEventListener('resize', resizeAll)
 }
 
 export class Draggable {
