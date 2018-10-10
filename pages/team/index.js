@@ -33,11 +33,16 @@ const TeamIndex = () => (
             Meet the team
           </Heading>
           <Text is="p" fontSize={3} color="blue.2">
-          The GitHub Design Systems team builds and maintains Primer—this includes our CSS framework, style guide documentation, Octicons, numerous tools and libraries that support design and front-end, and our up-coming React.js component library.
+            The GitHub Design Systems team builds and maintains Primer—this includes our CSS framework, style guide
+            documentation, Octicons, numerous tools and libraries that support design and front-end, and our up-coming
+            React.js component library.
           </Text>
 
           <Text fontSize={3} color="blue.2">
-          Our team officially formed in early 2016 with just two team members, and keeps on growing, with opportunities for apprenticeships and internships in the future. Keep an eye on the GitHub <LinkLight href="https://github.com/about/careers">careers page</LinkLight> if you’re interested in new openings on our team.
+            Our team officially formed in early 2016 with just two team members, and keeps on growing, with
+            opportunities for apprenticeships and internships in the future. Keep an eye on the GitHub{' '}
+            <LinkLight href="https://github.com/about/careers">careers page</LinkLight> if you’re interested in new
+            openings on our team.
           </Text>
         </Box>
         <Relative top="-100px">
