@@ -20,7 +20,7 @@ export default function OpenSource() {
             Primer is open-sourced on GitHub. Contributions and feedback are welcome!
           </Text>
           <ButtonFillDark mr={2} href="https://github.com/primer">
-            <Octicon icon={MarkGithub} color="blue.2" size={20} verticalAlign="text-bottom" mr={2} />
+            <Octicon icon={MarkGithub} size={20} verticalAlign="text-bottom" mr={2} />
             Contribute on GitHub
           </ButtonFillDark>
         </IndexGrid.Item>
@@ -28,16 +28,16 @@ export default function OpenSource() {
           <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight="bold">
             Keep in touch
           </Heading>
-          <LinkDark pt={1} fontSize={2} mb={3} className="d-block" href="https://twitter.com/githubprimer">
-            <Octicon icon={TwitterIcon} color="blue.2" size={20} verticalAlign="top" mr={2} />
+          <LinkDark pt={1} fontSize={2} mb={3} display="block" href="https://twitter.com/githubprimer">
+            <Octicon icon={TwitterIcon} size={20} verticalAlign="top" mr={2} />
             Follow us on Twitter
           </LinkDark>
-          <LinkDark fontSize={2} mb={3} className="d-block" href="https://spectrum.chat/primer">
-            <Octicon icon={SpectrumIcon} color="blue.2" size={20} verticalAlign="top" mr={2} />
+          <LinkDark fontSize={2} mb={3} display="block" href="https://spectrum.chat/primer">
+            <Octicon icon={SpectrumIcon} size={20} verticalAlign="top" mr={2} />
             Chat with us in Spectrum
           </LinkDark>
-          <LinkDark fontSize={2} mb={3} className="d-block" href="https://github.com/primer/primer/issues/new/choose">
-            <Octicon icon={Octoface} color="blue.2" size={20} verticalAlign="text-top" mr={2} />
+          <LinkDark fontSize={2} mb={3} display="block" href="https://github.com/primer/primer/issues/new/choose">
+            <Octicon icon={Octoface} size={20} verticalAlign="text-top" mr={2} />
             Share feedback on GitHub
           </LinkDark>
         </IndexGrid.Item>
