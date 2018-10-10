@@ -2,7 +2,7 @@ import React from 'react'
 import {FlexContainer, Box, FlexItem} from '@primer/components'
 import MemberQuestions from './MemberQuestions'
 import AvatarShape from './AvatarShape'
-import DotsSVG from  './svg/dots.svg'
+import DotsSVG from './svg/dots.svg'
 
 const oddDots = `
 {
