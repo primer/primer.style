@@ -12,7 +12,7 @@ const getMemberContent = () => {
   let shapeIndex = 0
   return teamContent.map((member, i) => {
     if (i === shapes.length) shapeIndex = 0
-    const element = <MemberContainer shape={shapes[shapeIndex]} isOdd={i % 2 === 0} member={member} />
+    const element = <MemberContainer key={member.name} shape={shapes[shapeIndex]} isOdd={i % 2 === 0} member={member} />
     shapeIndex++
     return element
   })
