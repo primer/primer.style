@@ -9,8 +9,8 @@ const oddDots = `
   height: 92px;
   width: 168px;
   position: absolute;
-  top: 220px;
-  left: 145px;
+  top: 210px;
+  left: 170px;
   transform: rotate(-180deg);
 }`
 const evenDots = `
@@ -18,8 +18,8 @@ const evenDots = `
   height: 92px;
   width: 168px;
   position: absolute;
-  top: 234px;
-  left: 46px;
+  top: 245px;
+  left: 75px;
 }`
 
 const direction = isOdd =>
