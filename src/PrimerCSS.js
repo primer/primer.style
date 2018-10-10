@@ -42,7 +42,7 @@ export default function PrimerCSS() {
         </IndexGrid.Item>
       </IndexGrid>
       <Box px={5} className="container-xl">
-        <Box mx={-5} className="d-flex flex-wrap flex-items-start">
+        <FlexContainer mx={-5} flexWrap="wrap" alignItems="start">
           <FlexContainer width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]}>
             <FlexItem color="blue.3" mr={3}>
               <Octicon icon={Package} height={40} verticalAlign="middle" />
@@ -95,7 +95,7 @@ export default function PrimerCSS() {
               </Text>
             </FlexItem>
           </FlexContainer>
-        </Box>
+        </FlexContainer>
       </Box>
     </Box>
   )
