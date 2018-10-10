@@ -40,7 +40,7 @@ const TeamIndex = () => (
 
           <Text fontSize={3} color="blue.2">
             Our team officially formed in early 2016 with just two team members, and keeps on growing, with
-            opportunities for apprenticeships and internships in the future. Keep an eye on the {'GitHub '}
+            opportunities for apprenticeships and internships in the future. Keep an eye on the GitHub&nbsp;
             <LinkLight href="https://github.com/about/careers">careers page</LinkLight> if you’re interested in new
             openings on our team.
           </Text>
