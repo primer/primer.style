@@ -11,8 +11,8 @@ export default function Nav() {
         <FlexContainer flex="auto">
           <RouterLink style={{color: 'inherit'}} to="/">
             <FlexContainer color="blue.2" alignItems="center">
-              <Octicon icon={MarkGithub} color="blue.2" ariaLabel="Primer home" size="medium" />
-              <Text mx={3} color="blue.2" fontSize="2" lineHeight="condensed">
+              <Octicon icon={MarkGithub} ariaLabel="Primer home" size="medium" />
+              <Text mx={3} fontSize="2" lineHeight="condensed">
                 Primer
               </Text>
             </FlexContainer>
