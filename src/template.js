@@ -1,12 +1,5 @@
-module.exports = ({
-  html = '',
-  css = '',
-  scripts,
-  title = 'Primer open-source projects',
-  meta = [],
-  links = [],
-}) =>
-`<!DOCTYPE html>
+module.exports = ({html = '', css = '', scripts, title}) =>
+  `<!DOCTYPE html>
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126681523-1"></script>
@@ -20,7 +13,8 @@ module.exports = ({
 
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width,initial-scale=1' />
-  <link rel='stylesheet' href='https://unpkg.com/primer/build/build.css' />
+  <link rel='stylesheet' href='https://unpkg.com/primer-layout/build/build.css' />
+  <link rel='stylesheet' href='https://unpkg.com/primer-utilities/build/build.css' />
   <link rel="apple-touch-icon" href="https://user-images.githubusercontent.com/334891/45369221-63075b00-b5b3-11e8-8ac7-7e588fe4c905.png">
   <link rel="icon" href="https://user-images.githubusercontent.com/334891/45369187-51be4e80-b5b3-11e8-8066-b06025239a79.png">
 
@@ -36,6 +30,7 @@ module.exports = ({
   <meta name="twitter:site" content="@githubprimer">
   ${css}
 </head>
-<div id=root>${html}</div>
-${scripts}
-`
+<body>
+  <div id="root" class="overflow-hidden">${html}</div>
+  ${scripts}
+</body>`

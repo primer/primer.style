@@ -1,20 +1,28 @@
 import React from 'react'
-import NavLink from './NavLink'
-import {Box, Text, Link} from '@primer/components'
-import LinkLight from './LinkLight'
+import {Box, FlexContainer, Text} from '@primer/components'
 import Octicon, {MarkGithub} from '@githubprimer/octicons-react'
+import {Link as RouterLink} from 'react-router-dom'
 
-const Nav = props => (
-  <Box bg='gray.9' py={3}>
-    <div className='d-flex flex-items-center p-responsive'>
-      <LinkLight nounderline pl={3} href='/'>
-        <Box color='blue.2' className="d-flex flex-items-center">
-          <Octicon color="blue.2" icon={MarkGithub} ariaLabel="GitHub Primer home" size='medium' />
-          <Text mx={3} color="blue.2" fontSize="2" lineHeight="condensed" >Primer</Text>
-        </Box>
-      </LinkLight>
-    </div>
-  </Box>
-)
-
-export default Nav
+export default function Nav() {
+  return (
+    <Box bg="gray.9" py={3} px={5}>
+      <div className="d-flex flex-items-center">
+        <FlexContainer flex="auto">
+          <RouterLink style={{color: 'inherit'}} to="/">
+            <Box color="blue.2" className="d-flex flex-items-center">
+              <Octicon color="blue.2" icon={MarkGithub} ariaLabel="Primer home" size="medium" />
+              <Text mx={3} color="blue.2" fontSize="2" lineHeight="condensed">
+                Primer
+              </Text>
+            </Box>
+          </RouterLink>
+        </FlexContainer>
+        <Text is="div" fontSize={2} color="blue.2">
+          <RouterLink style={{color: 'inherit'}} to="/team">
+            Meet the team
+          </RouterLink>
+        </Text>
+      </div>
+    </Box>
+  )
+}

@@ -1,16 +1,37 @@
 import React from 'react'
-import {Box, BaseStyles} from '@primer/components'
+import {Box, BaseStyles, theme} from '@primer/components'
 import {ThemeProvider} from 'emotion-theming'
-import theme from '../src/theme.js'
+import {injectGlobal} from 'emotion'
+import {initDraggables} from '../src/draggable'
 
-const Page = props => (
-  <BaseStyles>
-    <ThemeProvider theme={theme}>
-      <Box bg='black' color='blue.2'>
-        {props.children}
-      </Box>
-    </ThemeProvider>
-  </BaseStyles>
-)
+injectGlobal`
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`
 
-export default Page
+export default class Page extends React.Component {
+  componentDidMount() {
+    initDraggables()
+  }
+
+  componentDidUpdate() {
+    initDraggables()
+  }
+
+  render() {
+    const {children} = this.props
+    return (
+      <BaseStyles>
+        <ThemeProvider theme={theme}>
+          <Box bg="black" color="blue.2">
+            {children}
+          </Box>
+        </ThemeProvider>
+      </BaseStyles>
+    )
+  }
+}
