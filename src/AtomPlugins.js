@@ -9,7 +9,7 @@ export default function AtomPlugins() {
   return (
     <IndexGrid my={[0, 3, 6]} flexDirection={[`row`, `row`, `row-reverse`]}>
       <IndexGrid.Item mb={[5, 5, 5, 0]}>
-        <AtomImage />
+        <AtomImage width="100%" height={null} />
       </IndexGrid.Item>
       <IndexGrid.Item my={[4, 3, 0]}>
         <Heading color="blue.4" mb={3} pr={[0, 0, 0, 3]} fontSize={5} lineHeight="1.25" fontWeight="bold">
