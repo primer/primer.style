@@ -1,4 +1,4 @@
-<svg viewBox="0 0 350 350" version="1.1" xmlns="http://www.w3.org/2000/svg"
+<svg width="300px" viewBox="0 0 350 350" version="1.1" xmlns="http://www.w3.org/2000/svg"
  xmlns:xlink="http://www.w3.org/1999/xlink">
   <clipPath id="clip-diamond" clipPathUnits="objectBoundingBox">
     <polygon points="0.5 0, 0 0.5, 0.5 0.975, 0.99 0.5" />
