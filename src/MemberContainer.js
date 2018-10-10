@@ -5,36 +5,33 @@ import AvatarShape from './AvatarShape'
 import DotsSVG from './svg/dots.svg'
 
 const Dots = ({shape}) => {
-  let css = {
+  const css = {
     position: 'absolute',
     height: '92px',
     width: '168px'
   }
   switch (shape) {
     case 'hexagon':
-      css.top = '230px';
-      css.left = '130px';
-      css.transform = 'rotate(180deg)';
-      break;
+      css.top = '230px'
+      css.left = '130px'
+      css.transform = 'rotate(180deg)'
+      break
     case 'square':
-      css.top = '250px';
-      css.left = '75px';
-      break;
+      css.top = '250px'
+      css.left = '75px'
+      break
     case 'circle':
-      css.top = '236px';
-      css.left = '181px';
-      css.transform = 'rotate(180deg)';
-      break;
+      css.top = '236px'
+      css.left = '181px'
+      css.transform = 'rotate(180deg)'
+      break
     case 'diamond':
-      css.top = '245px';
-      css.left = '65px';
-      break;
+      css.top = '245px'
+      css.left = '65px'
+      break
     default:
-
   }
-  return (
-    <DotsSVG shape={shape} style={css} />
-  )
+  return <DotsSVG shape={shape} style={css} />
 }
 
 const direction = isOdd =>
