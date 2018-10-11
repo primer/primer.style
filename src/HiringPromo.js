@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Heading, Text} from '@primer/components'
+import {Heading, Text} from '@primer/components'
 import styled from 'react-emotion'
 import {textAlign} from 'styled-system'
 import Octicon from './Octicon'
