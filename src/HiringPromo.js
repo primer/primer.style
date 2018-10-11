@@ -8,11 +8,11 @@ import ButtonPromo from './ButtonPromo'
 import LinkPromo from './LinkPromo'
 
 // FIXME: when textAlign is added to LAYOUT props, we can remove this
-const AlignBox = styled(Box)(textAlign)
+const AlignText = styled(Text)(textAlign)
 
 export default function HiringPromo() {
   return (
-    <AlignBox px={5} textAlign={['left', 'left', 'center']} className="container-lg">
+    <AlignText is="div" px={5} textAlign={['left', 'left', 'center']} className="container-lg">
       <Heading fontSize={5} mb={2} color="orange.3">
         <Octicon icon={RadioTower} mr={3} size={40} verticalAlign="top" />
         Join GitHub!
@@ -27,6 +27,6 @@ export default function HiringPromo() {
       <ButtonPromo block my={[2, 0]} href="https://boards.greenhouse.io/github/jobs/1306815">
         Apply →
       </ButtonPromo>
-    </AlignBox>
+    </AlignText>
   )
 }
