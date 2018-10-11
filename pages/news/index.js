@@ -1,61 +1,9 @@
 import React from 'react'
-import {Box, Button, Text, Heading, FlexContainer, Relative, FlexItem} from '@primer/components'
+import {Box, Text, Heading, FlexContainer, Relative, FlexItem} from '@primer/components'
 import Nav from '../../src/Nav'
-import BackgroundImage from '../../src/BackgroundImage'
 import whatsNew from '../../src/whats-new'
-import Article, {iconForType} from '../../src/Article'
-import Octicon from '@githubprimer/octicons-react'
-
-class NewsList extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
-  setFilter(type) {
-    if (this.state.filter === type) {
-      this.setState({filter: null})
-    } else {
-      this.setState({filter: type})
-    }
-  }
-
-  render() {
-    const {filter} = this.state
-    let {items} = this.props
-
-    const types = items.reduce((types, {type}) => {
-      types.add(type)
-      return types
-    }, new Set())
-
-    if (filter) {
-      items = items.filter(item => item.type === filter)
-    }
-    return (
-      <Box>
-        <Box>
-        <Button onClick={e => this.setFilter(null)}>
-          All
-        </Button>
-          {[...types].sort().map(type => {
-            return (
-              <Button onClick={e => this.setFilter(type)} key={type}>
-                <Octicon icon={iconForType[type]} />
-                {type}
-              </Button>
-            )
-          })}
-        </Box>
-        <Box>
-          {items.sort((a, b) => new Date(b.date) - new Date(a.date)).map(article => {
-            return <Article {...article} key={article.url} />
-          })}
-        </Box>
-      </Box>
-    )
-  }
-}
+import NewsList from '../../src/NewsList'
+import TeamImage from '../meet-the-team.svg'
 
 const NewsIndex = () => {
   return (
@@ -73,7 +21,7 @@ const NewsIndex = () => {
           </Box>
           <Relative top="-100px">
             <FlexItem flexShrink="0">
-              <BackgroundImage width="430px" height="340px" backgroundImage={'./meet-the-team.svg'} />
+              <TeamImage />
             </FlexItem>
           </Relative>
         </FlexContainer>
