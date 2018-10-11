@@ -12,12 +12,6 @@ const IndexGrid = ({alignItems, children, flexWrap, ...rest}) => {
   )
 }
 
-const Item = ({children, ...rest}) => (
-  <FlexItem width={[1, 1, 1, 6 / 12]} px={5} {...rest}>
-    {children}
-  </FlexItem>
-)
-
-IndexGrid.Item = Item
+IndexGrid.Item = props => <FlexItem width={[1, 1, 1, 6 / 12]} px={5} {...props} />
 
 export default IndexGrid
