@@ -47,7 +47,13 @@ class NewsList extends React.Component {
           </FilterButton>
           {[...types].sort().map(type => {
             return (
-              <FilterButton mb={[3, 0]} mr={3} onClick={() => this.setFilter(type)} key={type} selected={filter === type}>
+              <FilterButton
+                mb={[3, 0]}
+                mr={3}
+                onClick={() => this.setFilter(type)}
+                key={type}
+                selected={filter === type}
+              >
                 <Box display="inline-block" mr={1}>
                   <Octicon icon={iconForType[type]} />
                 </Box>
