@@ -1,21 +1,16 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {Box, Link, Text, FlexContainer} from '@primer/components'
 import Octicon, {Note, Tag, LinkExternal, Megaphone, Broadcast} from '@githubprimer/octicons-react'
 
-const articleIcon = type => {
-  switch (type) {
-    case 'article':
-      return Note
-    case 'release':
-      return Tag
-    case 'podcast':
-      return Broadcast
-    case 'talk':
-      return Megaphone
-    default:
-      return LinkExternal
-  }
+export const iconForType = {
+  article: Note,
+  release: Tag,
+  podcast: Broadcast,
+  talk: Megaphone
 }
+
+const articleIcon = type => iconForType[type] || LinkExternal
 
 const articleDomain = url => {
   return url.substring(url.indexOf('//') + 2, url.indexOf('/', 9))
@@ -30,27 +25,34 @@ const articleDate = date => {
   }`
 }
 
-const Article = ({article}) => {
+const Article = ({url, title, date, type}) => {
   return (
     <FlexContainer mb={5} alignItems="start">
       <Box mr={3} pt={1}>
-        <Octicon icon={articleIcon(article.type)} size={32} />
+        <Octicon icon={articleIcon(type)} size={32} />
       </Box>
       <Box>
-        <Link href={article.url}>
-          <Text f={4}>{article.title}</Text>
+        <Link href={url}>
+          <Text f={4}>{title}</Text>
         </Link>
         <Box>
           <Text fontFamily="mono" f={1} color="blue.3">
-            <Link color="blue.3" href={article.url}>
-              {articleDomain(article.url)}
+            <Link color="blue.3" href={url}>
+              {articleDomain(url)}
             </Link>{' '}
-            &middot; {articleDate(article.date)}
+            &middot; {articleDate(date)}
           </Text>
         </Box>
       </Box>
     </FlexContainer>
   )
+}
+
+Article.propTypes = {
+  date: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.oneOf(Object.keys(iconForType)),
+  url: PropTypes.string
 }
 
 export default Article
