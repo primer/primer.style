@@ -17,6 +17,7 @@ const ButtonFill = styled(Link)`
   font-weight: 600;
   display: inline-block;
   &:hover {
+    border-color: ${themeGet('colors.blue.4')};
     background-color: ${themeGet('colors.blue.4')};
     text-decoration: none;
   }
