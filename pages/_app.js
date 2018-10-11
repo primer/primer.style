@@ -18,6 +18,10 @@ export default class Page extends React.Component {
     initDraggables()
   }
 
+  componentDidUpdate() {
+    initDraggables()
+  }
+
   render() {
     const {children} = this.props
     return (
