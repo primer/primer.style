@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Heading, Text, Link, FlexContainer, FlexItem, Relative} from '@primer/components'
+import {Box, Heading, Text, Link, Flex, Relative} from '@primer/components'
 import OcticonsImage from './svg/Octicons.svg'
 import Octicon, {FileCode, Ruby, Paintcan} from '@githubprimer/octicons-react'
 import LinkLight from './LinkLight'
@@ -27,12 +27,12 @@ export default function OcticonsPromo() {
       </Box>
 
       <Box className="container-xl mx-auto" color="blue.2">
-        <FlexContainer flexWrap="wrap" mx={-5}>
-          <Package icon={FileCode} href="https://github.com/primer/octicons/#ruby" title="JavaScript docs">
+        <Flex flexWrap="wrap" mx={-5}>
+          <Package icon={FileCode} href="https://github.com/primer/octicons/#javascript" title="JavaScript docs">
             Install the node.js or react.js package via npm to use with your JavaScript project
           </Package>
 
-          <Package icon={Ruby} href="https://github.com/primer/octicons/#javascript" title="Ruby docs">
+          <Package icon={Ruby} href="https://github.com/primer/octicons/#ruby" title="Ruby docs">
             Install the Ruby gem, Rails helper, or Jekyll plugin to use in your project
           </Package>
 
@@ -43,7 +43,7 @@ export default function OcticonsPromo() {
           >
             Use SVG&#8217;s or Figma components in your design projects
           </Package>
-        </FlexContainer>
+        </Flex>
       </Box>
     </Box>
   )
@@ -51,20 +51,20 @@ export default function OcticonsPromo() {
 
 function Package({children, icon, href, title, ...rest}) {
   return (
-    <FlexContainer width={[1, 1, 1, 1 / 3]} px={5} mb={[4, 5, 5, 0]} {...rest}>
-      <FlexItem color="blue.3">
+    <Flex width={[1, 1, 1, 1 / 3]} px={5} mb={[4, 5, 5, 0]} {...rest}>
+      <Flex.Item color="blue.3">
         <Box width={44}>
           <Octicon className="mr-3" icon={icon} height={40} verticalAlign="top" />
         </Box>
-      </FlexItem>
-      <FlexItem px={2}>
+      </Flex.Item>
+      <Flex.Item px={2}>
         <Text is="p" fontSize={2}>
           {children}
         </Text>
         <LinkLight className="d-inline-block" href={href}>
           {title} →
         </LinkLight>
-      </FlexItem>
-    </FlexContainer>
+      </Flex.Item>
+    </Flex>
   )
 }

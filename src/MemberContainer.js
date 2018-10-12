@@ -1,5 +1,5 @@
 import React from 'react'
-import {FlexContainer, Box, FlexItem} from '@primer/components'
+import {Flex, Box} from '@primer/components'
 import MemberQuestions from './MemberQuestions'
 import AvatarShape from './AvatarShape'
 import DotsSVG from './svg/dots.svg'
@@ -40,20 +40,20 @@ const direction = isOdd =>
     : ['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']
 
 const Member = ({member, isOdd, shape}) => (
-  <FlexContainer
+  <Flex
     mb={12}
     justifyContent="flex-end"
     alignItems={['center', 'center', 'center', 'initial', 'initial']}
     flexDirection={direction(isOdd)}
   >
     <MemberQuestions member={member} />
-    <FlexItem mb={[6, 8, 8, 0, 0]} css={{flexShrink: 0}} style={{position: 'relative'}}>
+    <Flex.Item mb={[6, 8, 8, 0, 0]} css={{flexShrink: 0}} style={{position: 'relative'}}>
       <Box mr={isOdd ? [0, 0, 0, 12, 12] : 0} ml={isOdd ? 0 : [0, 0, 12, 12, 12]}>
         <AvatarShape shape={shape} src={member.avatar} />
         <Dots shape={shape} />
       </Box>
-    </FlexItem>
-  </FlexContainer>
+    </Flex.Item>
+  </Flex>
 )
 
 export default Member
