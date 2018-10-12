@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, FlexContainer, Text} from '@primer/components'
+import {Box, Flex, Text} from '@primer/components'
 import {MarkGithub} from '@githubprimer/octicons-react'
 import {Link as RouterLink} from 'react-router-dom'
 import Octicon from './Octicon'
@@ -7,8 +7,8 @@ import Octicon from './Octicon'
 export default function Nav() {
   return (
     <Box bg="gray.9" py={3} px={5}>
-      <FlexContainer alignItems="center">
-        <FlexContainer flex="auto">
+      <Flex alignItems="center">
+        <Flex flex="auto">
           <RouterLink style={{color: 'inherit'}} to="/">
             <FlexContainer color="blue.2" alignItems="center">
               <Octicon icon={MarkGithub} ariaLabel="Primer home" size="medium" />
@@ -17,13 +17,13 @@ export default function Nav() {
               </Text>
             </FlexContainer>
           </RouterLink>
-        </FlexContainer>
+        </Flex>
         <Text is="div" fontSize={2} color="blue.2">
           <RouterLink style={{color: 'inherit'}} to="/team">
             Meet the team
           </RouterLink>
         </Text>
-      </FlexContainer>
+      </Flex>
     </Box>
   )
 }
