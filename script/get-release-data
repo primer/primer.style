@@ -1,0 +1,5 @@
+#!/bin/bash
+
+primer=$(npm view primer --json)
+
+echo $(jq "versions" $primer)

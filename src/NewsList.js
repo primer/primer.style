@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, FlexContainer, Relative} from '@primer/components'
+import {Link, Box, FlexContainer, Relative} from '@primer/components'
 import Article, {iconForType} from './Article'
 import ButtonOutline from './ButtonOutline'
 import ButtonFill from './ButtonFill'
@@ -8,7 +8,7 @@ import styled from 'react-emotion'
 
 const FilterButton = styled(props => {
   const Tag = props.selected ? ButtonFill : ButtonOutline
-  return <Tag {...props}>{props.children}</Tag>
+  return <Link {...props} color={props.selected ? "white" : "blue.3"} mr={3}>{props.children}</Link>
 })`
   cursor: pointer;
 `
@@ -40,7 +40,7 @@ class NewsList extends React.Component {
       items = items.filter(item => item.type === filter)
     }
     return (
-      <Relative css={{top: `-32px`}}>
+      <Box mt={[4, 0]}>
         <FlexContainer flexWrap="wrap" mb={[4, 7]}>
           <FilterButton mb={[3, 0]} mr={3} onClick={() => this.setFilter(null)} selected={filter === null}>
             All
@@ -67,7 +67,7 @@ class NewsList extends React.Component {
             return <Article {...article} key={article.url} />
           })}
         </Box>
-      </Relative>
+      </Box>
     )
   }
 }
