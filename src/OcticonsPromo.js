@@ -28,11 +28,11 @@ export default function OcticonsPromo() {
 
       <Box className="container-xl mx-auto" color="blue.2">
         <Flex flexWrap="wrap" mx={-5}>
-          <Package icon={FileCode} href="https://github.com/primer/octicons/#ruby" title="JavaScript docs">
+          <Package icon={FileCode} href="https://github.com/primer/octicons/#javascript" title="JavaScript docs">
             Install the node.js or react.js package via npm to use with your JavaScript project
           </Package>
 
-          <Package icon={Ruby} href="https://github.com/primer/octicons/#javascript" title="Ruby docs">
+          <Package icon={Ruby} href="https://github.com/primer/octicons/#ruby" title="Ruby docs">
             Install the Ruby gem, Rails helper, or Jekyll plugin to use in your project
           </Package>
 
