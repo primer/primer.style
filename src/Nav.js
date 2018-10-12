@@ -10,12 +10,12 @@ export default function Nav() {
       <Flex alignItems="center">
         <Flex flex="auto">
           <RouterLink style={{color: 'inherit'}} to="/">
-            <FlexContainer color="blue.2" alignItems="center">
+            <Flex color="blue.2" alignItems="center">
               <Octicon icon={MarkGithub} ariaLabel="Primer home" size="medium" />
               <Text mx={3} fontSize="2" lineHeight="condensed">
                 Primer
               </Text>
-            </FlexContainer>
+            </Flex>
           </RouterLink>
         </Flex>
         <Text is="div" fontSize={2} color="blue.2">
