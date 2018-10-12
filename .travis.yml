@@ -17,6 +17,3 @@ deploy:
     provider: script
     script: script/deploy-preview --token="$NOW_TOKEN"
     skip_cleanup: true
-
-notifications:
-  slack: github:4OisIoqZYyMlWcw3hFtZgbmh
