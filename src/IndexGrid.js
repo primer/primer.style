@@ -1,8 +1,15 @@
 import React from 'react'
 import {Box, FlexContainer, FlexItem} from '@primer/components'
 
-const IndexGrid = ({alignItems, children, flexWrap, ...rest}) => {
-  const flexProps = {alignItems, flexWrap}
+const IndexGrid = props => {
+  const {
+    alignItems,
+    children,
+    flexDirection,
+    flexWrap,
+    ...rest
+  } = props
+  const flexProps = {alignItems, flexDirection, flexWrap}
   return (
     <Box mx={'auto'} px={5} {...rest} className="container-xl">
       <FlexContainer {...flexProps} mx={-5}>
