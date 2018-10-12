@@ -17,7 +17,3 @@ deploy:
     provider: script
     script: script/deploy-preview --token="$NOW_TOKEN"
     skip_cleanup: true
-
-notifications:
-  slack:
-    secure: "DIuuatz0oC5TSzUgVm3VK0AmKyAuSpTGOiuyL9sZFoi5A9vXrrrotImCjyj6ebLpU3XocMdo+xFrSfm50DHO3w/gRg1tT7sme3TChZo5wlZcjRfPf+GVHuw47cK7kkZuEA8W17MxewunEKgd9ND4IalL2UcsAttvATOjLeVmCz2azAclYkBiC1K3lYiak5qEuszvAU3+XUzjPJf9xQseINyQN0CEvs39gIEPlgpEDixOmB/W2PLvAJodwPSmILwohOI1PAfgvbR9T8iYUthiHlBOEfpxoMyNPEVLzpvO/Ijr1G5BjXsAwuj4nJNdBm55zxcNzccru7M52kcVfDe5FXq41aZyf+gDritpldlZaw9laGi+LXXSmjZm+ai6hf6R6x0ALcWokPHQWfzoFfBRE2S1ZkysoZjBU0/rVxnsRiz3py1im/SKiyGQjYYKbSANA88MEPNIwb/yUXQTP9UaD5H9NnwAho03wSiSbasJAl8vcPxeYLfuVRL/ni0+eRs89d+eJm4G9JwcXjrQB1ykyuDUAByKmGkwq5f+fY0J1dIMxkUjvtBxtAiwpjKZrw6oIlEKv2U0kOLVGg+RcnBkOySFgfMdF4mB8CCbT0VlQSuXR3LxcUE3tA13OTdDWVwr9Z1z+wSHWz143Ij1b7evuYmhOIANz5p0IAG0Y05Bus4="
