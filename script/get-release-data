@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Doesn't work yet, I imagine we can run this and get the info then
+# put it in the data/releases.json file
 primer=$(npm view primer --json)
 
 echo $(jq "versions" $primer)

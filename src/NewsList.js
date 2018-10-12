@@ -57,7 +57,7 @@ class NewsList extends React.Component {
                 <Box display="inline-block" mr={1}>
                   <Octicon icon={iconForType[type]} />
                 </Box>
-                {`${type.charAt(0).toUpperCase()}${type.slice(1)}`}
+                {`${type.charAt(0).toUpperCase()}${type.slice(1)}`}s
               </FilterButton>
             )
           })}
