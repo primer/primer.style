@@ -21,7 +21,8 @@ const NewsIndex = () => {
               What’s new
             </Heading>
             <Text is="p" fontSize={3} color="blue.2">
-              Keep up to date with the latest articles, podcasts, releases and talks from the GitHub Design Systems team.
+              Keep up to date with the latest articles, podcasts, releases and talks from the GitHub Design Systems
+              team.
             </Text>
           </Box>
           <FlexItem width="435px" height="241px" pt={[0, 0, 0, 6]} css={{flexShrink: 0}} ml={[0, 0, 5, 0, 0]}>
