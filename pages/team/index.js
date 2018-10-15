@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Text, Heading, FlexContainer, Relative, FlexItem} from '@primer/components'
+import {Box, Text, Heading, Flex, Relative} from '@primer/components'
 import Nav from '../../src/Nav'
 import LinkLight from '../../src/LinkLight'
 import MemberContainer from '../../src/MemberContainer'
@@ -22,7 +22,7 @@ const TeamIndex = () => (
   <Box>
     <Nav />
     <Box className="container-xl" pt={7} px={5} style={{overflow: 'hidden'}}>
-      <FlexContainer
+      <Flex
         justifyContent="space-between"
         flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']}
         mb={10}
@@ -46,11 +46,11 @@ const TeamIndex = () => (
           </Text>
         </Box>
         <Relative top="-100px">
-          <FlexItem width="430px" height="340px" css={{flexShrink: 0}} ml={[0, 0, 5, 0, 0]}>
+          <Flex.Item width="430px" height="340px" css={{flexShrink: 0}} ml={[0, 0, 5, 0, 0]}>
             <TeamImage />
-          </FlexItem>
+          </Flex.Item>
         </Relative>
-      </FlexContainer>
+      </Flex>
       {getMemberContent()}
     </Box>
   </Box>
