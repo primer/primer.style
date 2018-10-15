@@ -7,14 +7,14 @@ import styled from 'react-emotion'
 
 const FilterButton = styled(props => {
   return (
-    <Link {...props} color={props.selected ? 'white' : 'blue.3'} mr={3}>
+    <Link {...props} color={props.selected ? 'blue.2' : 'blue.3'} mr={3}>
       {props.children}
     </Link>
   )
 })`
   cursor: pointer;
   &:hover {
-    color: ${props => themeGet(props.selected ? 'colors.white' : 'colors.blue.3')};
+    color: ${props => themeGet(props.selected ? 'colors.blue.2' : 'colors.blue.3')};
     text-decoration: ${props => (props.selected ? 'none' : 'underline')};
   }
 `
