@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Text, Heading, FlexContainer, FlexItem} from '@primer/components'
+import {Box, Text, Heading, Flex} from '@primer/components'
 import Nav from '../../src/Nav'
 import whatsNew from '../../src/whats-new'
 import NewsList from '../../src/NewsList'
@@ -10,7 +10,7 @@ const NewsIndex = () => {
     <Box>
       <Nav />
       <Box className="container-xl" pt={7} px={5} style={{overflow: 'hidden'}}>
-        <FlexContainer
+        <Flex
           justifyContent="space-between"
           flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']}
           mb={10}
@@ -25,10 +25,10 @@ const NewsIndex = () => {
               team.
             </Text>
           </Box>
-          <FlexItem width="435px" height="241px" pt={[0, 0, 0, 6]} css={{flexShrink: 0}} ml={[0, 0, 5, 0, 0]}>
+          <Flex.Item width="435px" height="241px" pt={[0, 0, 0, 6]} css={{flexShrink: 0}} ml={[0, 0, 5, 0, 0]}>
             <NewsImage />
-          </FlexItem>
-        </FlexContainer>
+          </Flex.Item>
+        </Flex>
         <NewsList items={whatsNew} />
       </Box>
     </Box>
