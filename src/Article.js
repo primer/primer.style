@@ -34,7 +34,7 @@ const Article = ({url, title, date, type}) => {
         </Text>
       </Link>
       <Box mb={3}>
-        <Text f={1} color="blue.1">
+        <Text fontSize={1} color="blue.1">
           <Link color="blue.1" href={url}>
             {articleDomain(url)}
           </Link>
