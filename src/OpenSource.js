@@ -10,7 +10,7 @@ import LinkDark from './LinkDark'
 export default function OpenSource() {
   return (
     <Box bg="blue.2" pt={12} mt={6}>
-      <IndexGrid>
+      <IndexGrid alignItems="start">
         <IndexGrid.Item mb={[8, 8, 8, 0]}>
           <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight="bold">
             Open source
