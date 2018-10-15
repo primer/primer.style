@@ -17,7 +17,7 @@ export default function Nav() {
             </Box>
           </RouterLink>
         </Flex>
-        <Text is="div" fontSize={2} color="blue.2">
+        <Text is="div" px={3} fontSize={2} color="blue.2">
           <RouterLink style={{color: 'inherit'}} to="/team">
             <Box display={['inline', 'none']}>Team</Box>
             <Box display={['none', 'inline']}>Meet the team</Box>
