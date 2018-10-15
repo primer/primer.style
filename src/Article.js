@@ -29,14 +29,16 @@ const Article = ({url, title, date, type}) => {
   return (
     <Box mb={7}>
       <Link href={url}>
-        <Text fontFamily="mono" fontSize={3}>{title}</Text>
+        <Text fontFamily="mono" fontSize={3}>
+          {title}
+        </Text>
       </Link>
       <Box mb={3}>
-        <Text fontFamily="mono" f={1} color="blue.1">
+        <Text f={1} color="blue.1">
           <Link color="blue.1" href={url}>
             {articleDomain(url)}
-          </Link>{' '}
-          &middot; {articleDate(date)}
+          </Link>
+          &nbsp;&middot; {articleDate(date)}
         </Text>
       </Box>
       <Box>

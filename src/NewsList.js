@@ -1,16 +1,22 @@
 import React from 'react'
-import {Link, Box, FlexContainer, Relative} from '@primer/components'
+import {themeGet} from 'styled-system'
+import {Link, Box, FlexContainer} from '@primer/components'
 import Article, {iconForType} from './Article'
-import ButtonOutline from './ButtonOutline'
-import ButtonFill from './ButtonFill'
 import Octicon from '@githubprimer/octicons-react'
 import styled from 'react-emotion'
 
 const FilterButton = styled(props => {
-  const Tag = props.selected ? ButtonFill : ButtonOutline
-  return <Link {...props} color={props.selected ? "white" : "blue.3"} mr={3}>{props.children}</Link>
+  return (
+    <Link {...props} color={props.selected ? 'white' : 'blue.3'} mr={3}>
+      {props.children}
+    </Link>
+  )
 })`
   cursor: pointer;
+  &:hover {
+    color: ${props => themeGet(props.selected ? 'colors.white' : 'colors.blue.3')};
+    text-decoration: ${props => (props.selected ? 'none' : 'underline')};
+  }
 `
 
 class NewsList extends React.Component {

@@ -1,6 +1,6 @@
 import releases from './data/releases'
 
-let whatsNew = [
+const whatsNew = [
   {
     type: 'talk',
     title: 'Design Systems and React @ Zeit',
@@ -51,7 +51,4 @@ let whatsNew = [
   }
 ]
 
-// Adding releases
-whatsNew = whatsNew.concat(releases)
-
-export default whatsNew
+export default whatsNew.concat(releases)
