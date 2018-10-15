@@ -1,6 +1,6 @@
 import React from 'react'
 import {themeGet} from 'styled-system'
-import {Link, Box, FlexContainer} from '@primer/components'
+import {Link, Box, Flex} from '@primer/components'
 import Article, {iconForType} from './Article'
 import Octicon from '@githubprimer/octicons-react'
 import styled from 'react-emotion'
@@ -47,7 +47,7 @@ class NewsList extends React.Component {
     }
     return (
       <Box mt={[4, 0]}>
-        <FlexContainer flexWrap="wrap" mb={[4, 7]}>
+        <Flex flexWrap="wrap" mb={[4, 7]}>
           <FilterButton mb={[3, 0]} mr={3} onClick={() => this.setFilter(null)} selected={filter === null}>
             All
           </FilterButton>
@@ -67,7 +67,7 @@ class NewsList extends React.Component {
               </FilterButton>
             )
           })}
-        </FlexContainer>
+        </Flex>
         <Box>
           {items.sort((a, b) => new Date(b.date) - new Date(a.date)).map(article => {
             return <Article {...article} key={article.url} />
