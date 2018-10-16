@@ -11,7 +11,7 @@ const whatsNew = [
   {
     type: 'talk',
     title: 'Details on <Details> @ Brooklyn JS',
-    description: 'Muan, from our Web Systems team, talks about the real details on <details>.',
+    description: 'Muan from our Web Systems team talks about the real details on <details>.',
     url: 'https://github.com/muan/details-on-details',
     date: '2018-07-19'
   },
@@ -42,7 +42,7 @@ const whatsNew = [
     type: 'article',
     title: 'Using Figma designs to build the Octicons icon library',
     description:
-      'Our friends at Figma announced their new Figma platform, and we’ve been really excited about its potential. We’ve immediately put the platform to use with Octicons, our SVG icon library',
+      'Recently our friends at Figma announced their new Figma platform, and we’ve been really excited about its potential. We’ve immediately put the platform to use with Octicons, our SVG icon library.',
     url: 'https://blog.github.com/2018-04-12-driving-changes-from-designs/',
     date: '2018-04-12'
   },
@@ -50,7 +50,7 @@ const whatsNew = [
     type: 'talk',
     title: 'Interaction of Color Systems @ CSSConf Australia',
     description:
-      'Color is the most relative medium in art. This fact makes working with color in design systems particularly challenging. Few people seem to want to claim to be an expert in color—perhaps because there’s an immensely deep amount to learn, or perhaps it’s because color is one of those things we hate to get wrong. Whatever the reason, color remains a contentious but often critical part of design.',
+      'Diana shares her journey on working with color in design systems—one of the most contentious and critical elements of design, and a particularly challenging part of a design system. We’ll take a look at the efforts required in updating large scale web applications like Github, challenges in programmatically generating colors, color accessibility, and testing the interaction of color with other parts of a design system.',
     url: 'https://youtube.com/watch?v=AbpS3Z3xXE0',
     date: '2018-04-10'
   },
