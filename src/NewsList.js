@@ -61,7 +61,7 @@ class NewsList extends React.Component {
                   key={type}
                   selected={filter === type}
                 >
-                  <Octicon icon={iconForType[type]} size={20} css={{marginRight: '4px'}} />
+                  <Octicon icon={iconForType[type]} size={20} css={{marginRight: '8px'}} />
                   {`${type.charAt(0).toUpperCase()}${type.slice(1)}`}s
                 </FilterButton>
               )

@@ -58,7 +58,7 @@ const whatsNew = [
     type: 'article',
     title: 'Shipping system fonts to GitHub.com',
     description:
-      'Instead of showing decades old fonts that don’t take advantage of newer, high DPI screens, or dynamic font rendering, we now try to serve the best font possible based on your operating system or device. Awesome! This posts explains why we made the change, how we coded and tested it, how we shipped the new fonts, and what we’ve done since initially making the move.',
+      'Instead of showing decades old fonts that don’t take advantage of newer, high DPI screens, or dynamic font rendering, we now try to serve the best font possible based on your operating system or device. This posts explains why we made the change, how we coded and tested it, how we shipped the new fonts, and what we’ve done since initially making the move.',
     url: 'http://markdotto.com/2018/02/07/github-system-fonts/',
     date: '2018-02-07'
   }
