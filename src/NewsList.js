@@ -1,6 +1,6 @@
 import React from 'react'
 import {themeGet} from 'styled-system'
-import {Link, Box, Flex, Text} from '@primer/components'
+import {Box, Flex, Text} from '@primer/components'
 import Article, {iconForType} from './Article'
 import Octicon from '@githubprimer/octicons-react'
 import styled from 'react-emotion'
@@ -61,7 +61,7 @@ class NewsList extends React.Component {
                   key={type}
                   selected={filter === type}
                 >
-                  <Octicon icon={iconForType[type]} size={20} css={{marginRight: '4px'}}/>
+                  <Octicon icon={iconForType[type]} size={20} css={{marginRight: '4px'}} />
                   {`${type.charAt(0).toUpperCase()}${type.slice(1)}`}s
                 </FilterButton>
               )
