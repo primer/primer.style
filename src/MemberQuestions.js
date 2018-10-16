@@ -21,7 +21,7 @@ const MemberInfo = ({member}) => (
       color="blue.3"
       hoverColor="blue.3"
       fontSize={2}
-      href={`https://github.com/${member.github}`}
+      href={`https://github.com/${member.handle}`}
     >
       <Octicon size="24" verticalAlign="middle" color="blue.3" className="mr-3" icon={MarkGithub} />@{member.handle}
     </Link>
