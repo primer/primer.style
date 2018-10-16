@@ -25,28 +25,26 @@ const articleDate = date => {
   }`
 }
 
-const Article = ({url, title, date, type}) => {
+const Article = ({url, title, description, date, type}) => {
   return (
-    <Box mb={7}>
+    <Box mb={7} width={[1, 1, 1, 7 / 12]}>
       <Link href={url}>
-        <Text fontFamily="mono" fontSize={3}>
+        <Text is="p" mb={0} color="blue.4" fontFamily="mono" fontSize={3}>
           {title}
         </Text>
       </Link>
       <Box mb={3}>
-        <Text fontSize={1} color="blue.1">
-          <Link color="blue.1" href={url}>
+        <Text fontSize={1} color="blue.3">
+          <Octicon icon={articleIcon(type)} size={16} css={{marginRight: '6px'}}/>
+          <Link color="blue.3" href={url}>
             {articleDomain(url)}
           </Link>
           &nbsp;&middot; {articleDate(date)}
         </Text>
       </Box>
-      <Box>
-        <Box display="inline-block" borderRadius="3" borderColor="blue.3" border="1" px={1} color="blue.3">
-          <Octicon icon={articleIcon(type)} size={16} />
-          <Text fontSize={1}>{` ${type.charAt(0).toUpperCase()}${type.slice(1)}`}</Text>
-        </Box>
-      </Box>
+      <Text is="p" mt={0} mb={1} color="blue.2" fontSize={2}>
+        {description}
+      </Text>
     </Box>
   )
 }

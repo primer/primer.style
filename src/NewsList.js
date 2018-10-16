@@ -1,15 +1,15 @@
 import React from 'react'
 import {themeGet} from 'styled-system'
-import {Link, Box, Flex} from '@primer/components'
+import {Link, Box, Flex, Text} from '@primer/components'
 import Article, {iconForType} from './Article'
 import Octicon from '@githubprimer/octicons-react'
 import styled from 'react-emotion'
 
 const FilterButton = styled(props => {
   return (
-    <Link {...props} color={props.selected ? 'blue.2' : 'blue.3'} mr={3}>
+    <Flex alignItems="center" is="a" {...props} color={props.selected ? 'blue.2' : 'blue.3'}>
       {props.children}
-    </Link>
+    </Flex>
   )
 })`
   cursor: pointer;
@@ -47,27 +47,27 @@ class NewsList extends React.Component {
     }
     return (
       <Box mt={[4, 0]}>
-        <Flex flexWrap="wrap" mb={[4, 7]}>
-          <FilterButton mb={[3, 0]} mr={3} onClick={() => this.setFilter(null)} selected={filter === null}>
-            All
-          </FilterButton>
-          {[...types].sort().map(type => {
-            return (
-              <FilterButton
-                mb={[3, 0]}
-                mr={3}
-                onClick={() => this.setFilter(type)}
-                key={type}
-                selected={filter === type}
-              >
-                <Box display="inline-block" mr={1}>
-                  <Octicon icon={iconForType[type]} />
-                </Box>
-                {`${type.charAt(0).toUpperCase()}${type.slice(1)}`}s
-              </FilterButton>
-            )
-          })}
-        </Flex>
+        <Text fontSize={3}>
+          <Flex flexWrap="wrap" mb={[6, 8]}>
+            <FilterButton mb={[3, 0]} mr={5} onClick={() => this.setFilter(null)} selected={filter === null}>
+              All
+            </FilterButton>
+            {[...types].sort().map(type => {
+              return (
+                <FilterButton
+                  mb={[3, 0]}
+                  mr={5}
+                  onClick={() => this.setFilter(type)}
+                  key={type}
+                  selected={filter === type}
+                >
+                  <Octicon icon={iconForType[type]} size={20} css={{marginRight: '4px'}}/>
+                  {`${type.charAt(0).toUpperCase()}${type.slice(1)}`}s
+                </FilterButton>
+              )
+            })}
+          </Flex>
+        </Text>
         <Box>
           {items.sort((a, b) => new Date(b.date) - new Date(a.date)).map(article => {
             return <Article {...article} key={article.url} />

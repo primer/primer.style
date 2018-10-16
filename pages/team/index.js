@@ -29,7 +29,7 @@ const TeamIndex = () => (
         mx={-5}
       >
         <Box width={[1, 1, 1, 7 / 12]} pt={[0, 0, 0, 8]} pb={[8, 8, 8, 12]} px={5}>
-          <Heading fontSize={[5, 7]} color="blue.4" lineHeight={1} mb={3}>
+          <Heading fontSize={[48, 56]} color="blue.4" lineHeight={1} mb={3}>
             Meet the team
           </Heading>
           <Text is="p" fontSize={3} color="blue.2">
