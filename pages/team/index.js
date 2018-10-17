@@ -29,7 +29,7 @@ const TeamIndex = () => (
         mx={-5}
       >
         <Box width={[1, 1, 1, 7 / 12]} pt={[0, 0, 0, 8]} pb={[8, 8, 8, 12]} px={5}>
-          <Heading fontSize={[48, 56]} color="blue.4" lineHeight={1} mb={3}>
+          <Heading fontSize={[48, 56]} color="blue.4" lineHeight={1} mb={3} mt={[4, 4, 4, 0]}>
             Meet the team
           </Heading>
           <Text is="p" fontSize={3} color="blue.2">
@@ -46,7 +46,7 @@ const TeamIndex = () => (
           </Text>
         </Box>
         <Relative>
-          <Flex.Item width="426px" height="309px" css={{flexShrink: 0}} ml={[0, 0, 5, 0, 0]}>
+          <Flex.Item width="426px" height="309px" css={{flexShrink: 0}} mx={[0, 0, 0, 5]} >
             <TeamImage />
           </Flex.Item>
         </Relative>
