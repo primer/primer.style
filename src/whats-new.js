@@ -11,7 +11,7 @@ const whatsNew = [
   {
     type: 'talk',
     title: 'Details on <Details> @ Brooklyn JS',
-    description: 'Muan from our Web Systems team talks about the real details on <details>.',
+    description: 'Mu-An from our Web Systems team talks about the real details on <details>.',
     url: 'https://github.com/muan/details-on-details',
     date: '2018-07-19'
   },

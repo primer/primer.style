@@ -4,7 +4,7 @@ import Nav from '../../src/Nav'
 import LinkLight from '../../src/LinkLight'
 import MemberContainer from '../../src/MemberContainer'
 import teamContent from '../../src/team-content'
-import TeamImage from '../meet-the-team.svg'
+import TeamImage from '../meet-the-team-2.svg'
 
 const shapes = ['hexagon', 'square', 'circle', 'diamond']
 
@@ -21,7 +21,7 @@ const getMemberContent = () => {
 const TeamIndex = () => (
   <Box>
     <Nav />
-    <Box className="container-xl" pt={7} px={5} style={{overflow: 'hidden'}}>
+    <Box className="container-xl" pt={9} px={5} style={{overflow: 'hidden'}}>
       <Flex
         justifyContent="space-between"
         flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']}
@@ -45,8 +45,8 @@ const TeamIndex = () => (
             openings on our team.
           </Text>
         </Box>
-        <Relative top="-100px">
-          <Flex.Item width="430px" height="340px" css={{flexShrink: 0}} ml={[0, 0, 5, 0, 0]}>
+        <Relative>
+          <Flex.Item width="426px" height="309px" css={{flexShrink: 0}} ml={[0, 0, 5, 0, 0]}>
             <TeamImage />
           </Flex.Item>
         </Relative>
