@@ -7,15 +7,15 @@ import {Link as RouterLink} from 'react-router-dom'
 export default function Nav() {
   return (
     <Box bg="gray.9" py={3} px={5}>
-      <div className="d-flex flex-items-center">
+      <Flex alignItems="center">
         <Flex flex="auto">
           <RouterLink style={{color: 'inherit'}} to="/">
-            <Box color="blue.2" className="d-flex flex-items-center">
-              <Octicon color="blue.2" icon={MarkGithub} ariaLabel="Primer home" size="medium" />
-              <Text mx={3} color="blue.2" fontSize="2" lineHeight="condensed">
+            <Flex color="blue.2" alignItems="center">
+              <Octicon icon={MarkGithub} ariaLabel="Primer home" size="medium" />
+              <Text mx={3} fontSize="2" lineHeight="condensed">
                 Primer
               </Text>
-            </Box>
+            </Flex>
           </RouterLink>
         </Flex>
         <Text is="div" px={3} fontSize={2} color="blue.2">
@@ -30,7 +30,7 @@ export default function Nav() {
             <Box display={['none', 'inline']}>What’s new</Box>
           </RouterLink>
         </Text>
-      </div>
+      </Flex>
     </Box>
   )
 }

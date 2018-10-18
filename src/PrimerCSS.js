@@ -1,6 +1,7 @@
 import React from 'react'
 import {Box, Heading, Text, Flex} from '@primer/components'
-import Octicon, {Package} from '@githubprimer/octicons-react'
+import {Package} from '@githubprimer/octicons-react'
+import Octicon from './Octicon'
 import CssImage from './svg/Css.svg'
 import IndexGrid from './IndexGrid'
 import ButtonFill from './ButtonFill'
@@ -28,7 +29,7 @@ export default function PrimerCSS() {
           <ButtonOutline my={[2, 0]} href="https://github.com/primer/primer">
             GitHub
           </ButtonOutline>
-          <Text is="p" fontSize={2} mt={5} color="blue.3" className="text-mono">
+          <Text is="p" fontSize={2} mt={5} color="blue.3" fontFamily="mono">
             npm i primer@latest
           </Text>
         </IndexGrid.Item>
@@ -41,13 +42,13 @@ export default function PrimerCSS() {
         </IndexGrid.Item>
       </IndexGrid>
       <Box px={5} className="container-xl">
-        <Box mx={-5} className="d-flex flex-wrap flex-items-start">
+        <Flex mx={-5} flexWrap="wrap" alignItems="start">
           <Flex width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]}>
             <Flex.Item color="blue.3" mr={3}>
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </Flex.Item>
             <Flex.Item>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} className="text-mono">
+              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
                 primer
               </Text>
               <Text is="p" color="blue.2" mb={5} fontSize={3}>
@@ -60,7 +61,7 @@ export default function PrimerCSS() {
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </Flex.Item>
             <Flex.Item>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} className="text-mono">
+              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
                 primer-core
               </Text>
               <Text is="p" color="blue.2" mb={5} fontSize={3}>
@@ -73,7 +74,7 @@ export default function PrimerCSS() {
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </Flex.Item>
             <Flex.Item>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} className="text-mono">
+              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
                 primer-product
               </Text>
               <Text is="p" color="blue.2" mb={5} fontSize={3}>
@@ -86,7 +87,7 @@ export default function PrimerCSS() {
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </Flex.Item>
             <Flex.Item>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} className="text-mono">
+              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
                 primer-marketing
               </Text>
               <Text is="p" color="blue.2" mb={5} fontSize={3}>
@@ -94,7 +95,7 @@ export default function PrimerCSS() {
               </Text>
             </Flex.Item>
           </Flex>
-        </Box>
+        </Flex>
       </Box>
     </Box>
   )

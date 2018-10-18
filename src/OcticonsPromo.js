@@ -1,15 +1,16 @@
 import React from 'react'
 import {Box, Heading, Text, Link, Flex, Relative} from '@primer/components'
+import {FileCode, Ruby, Paintcan} from '@githubprimer/octicons-react'
+import Octicon from './Octicon'
 import OcticonsImage from './svg/Octicons.svg'
-import Octicon, {FileCode, Ruby, Paintcan} from '@githubprimer/octicons-react'
 import LinkLight from './LinkLight'
 
 export default function OcticonsPromo() {
   return (
     <Box pb={12} px={5}>
-      <Box align="center" mb={8} className="container-xl mx-auto">
+      <Box align="center" mb={8} mx="auto" className="container-xl">
         <Relative zIndex={100} mt={[4, 3, 0]} width={[1, 1, 1, 6 / 12]}>
-          <Link href="http://octicons.github.com/" className="no-underline">
+          <Link href="http://octicons.github.com/">
             <Heading lineHeight="1.25" color="blue.4" mb={2} fontSize={7} fontWeight="bold">
               Octicons
             </Heading>
@@ -17,7 +18,7 @@ export default function OcticonsPromo() {
           <Text is="p" color="blue.1" mb={[2, 3]} fontSize={[4, 5]}>
             Your project. GitHub&#8217;s icons.
           </Text>
-          <Text fontSize={2} color="blue.3" className="text-mono">
+          <Text fontSize={2} color="blue.3" fontFamily="mono">
             v8.1.0
           </Text>
         </Relative>
@@ -26,7 +27,7 @@ export default function OcticonsPromo() {
         </Box>
       </Box>
 
-      <Box className="container-xl mx-auto" color="blue.2">
+      <Box mx="auto" className="container-xl" color="blue.2">
         <Flex flexWrap="wrap" mx={-5}>
           <Package icon={FileCode} href="https://github.com/primer/octicons/#javascript" title="JavaScript docs">
             Install the node.js or react.js package via npm to use with your JavaScript project
@@ -54,14 +55,14 @@ function Package({children, icon, href, title, ...rest}) {
     <Flex width={[1, 1, 1, 1 / 3]} px={5} mb={[4, 5, 5, 0]} {...rest}>
       <Flex.Item color="blue.3">
         <Box width={44}>
-          <Octicon className="mr-3" icon={icon} height={40} verticalAlign="top" />
+          <Octicon icon={icon} mr={3} height={40} verticalAlign="top" />
         </Box>
       </Flex.Item>
       <Flex.Item px={2}>
         <Text is="p" fontSize={2}>
           {children}
         </Text>
-        <LinkLight className="d-inline-block" href={href}>
+        <LinkLight display="inline-block" href={href}>
           {title} →
         </LinkLight>
       </Flex.Item>

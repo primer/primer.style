@@ -9,7 +9,7 @@ export default function PrimerReact() {
       <ReactIcon />
       <Heading fontSize={[4, 5]} mt={2} mb={2} color="blue.4">
         Primer Components
-        <Text fontSize={2} ml={1} className="v-align-text-top">
+        <Text fontSize={2} ml={1} css={{verticalAlign: 'text-top'}}>
           BETA
         </Text>
       </Heading>
