@@ -1,6 +1,7 @@
 import React from 'react'
 import {Box, Flex, Text} from '@primer/components'
-import Octicon, {MarkGithub} from '@githubprimer/octicons-react'
+import Octicon from './Octicon'
+import {MarkGithub} from '@githubprimer/octicons-react'
 import {Link as RouterLink} from 'react-router-dom'
 
 export default function Nav() {

@@ -48,11 +48,7 @@ class NewsList extends React.Component {
     return (
       <Box mt={[4, 0]}>
         <Text fontSize={3}>
-          <Flex
-            flexWrap="wrap"
-            mb={[6, 8]}
-            flexDirection={['column', 'column', 'row', 'row']}
-          >
+          <Flex flexWrap="wrap" mb={[6, 8]} flexDirection={['column', 'column', 'row', 'row']}>
             <FilterButton mb={[3, 3, 3, 0]} mr={5} onClick={() => this.setFilter(null)} selected={filter === null}>
               All
             </FilterButton>
