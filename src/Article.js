@@ -29,12 +29,12 @@ const Article = ({url, title, description, date, type}) => {
   return (
     <Box mb={7} width={[1, 1, 1, 7 / 12]}>
       <Link target="_blank" href={url}>
-        <Text is="p" mb={0} color="blue.4" fontFamily="mono" fontSize={3}>
+        <Text is="p" mb={1} color="blue.4" fontFamily="mono" fontSize={3} lineHeight={'1.25'}>
           {title}
         </Text>
       </Link>
       <Box mb={3}>
-        <Text fontSize={1} color="blue.3">
+        <Text fontSize={1} fontFamily="mono" color="blue.3">
           <Octicon icon={articleIcon(type)} size={16} css={{marginRight: '4px'}} />
           <Link color="blue.3" href={url}>
             {articleDomain(url)}

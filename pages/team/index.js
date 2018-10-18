@@ -46,8 +46,8 @@ const TeamIndex = () => (
           </Text>
         </Box>
         <Relative>
-          <Flex.Item width="426px" height="309px" css={{flexShrink: 0}} mx={[0, 0, 0, 5]}>
-            <TeamImage />
+          <Flex.Item css={{flexShrink: 0}} width={[10 / 12, 12 / 12]} mx={'auto'}>
+            <TeamImage width="100%" />
           </Flex.Item>
         </Relative>
       </Flex>

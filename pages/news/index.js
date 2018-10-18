@@ -13,7 +13,7 @@ const NewsIndex = () => {
         <Flex
           justifyContent="space-between"
           flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']}
-          mb={10}
+          mb={[0, 0, 10]}
           mx={-5}
         >
           <Box width={[1, 1, 1, 7 / 12]} pt={[0, 0, 0, 8]} pb={[3, 5, 5, 6]} px={5}>
