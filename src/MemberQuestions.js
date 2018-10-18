@@ -1,6 +1,7 @@
 import React from 'react'
 import {Text, Heading, Link, Box} from '@primer/components'
-import Octicon, {MarkGithub} from '@githubprimer/octicons-react'
+import Octicon from './Octicon'
+import {MarkGithub} from '@githubprimer/octicons-react'
 import {injectGlobal} from 'emotion'
 import ReactMarkdown from 'react-markdown'
 
@@ -23,7 +24,7 @@ const MemberInfo = ({member}) => (
       fontSize={2}
       href={`https://github.com/${member.handle}`}
     >
-      <Octicon size="24" verticalAlign="middle" color="blue.3" className="mr-3" icon={MarkGithub} />@{member.handle}
+      <Octicon icon={MarkGithub} size={24} verticalAlign="middle" color="blue.3" mr={3} />@{member.handle}
     </Link>
     <Text fontFamily="mono" color="blue.4" is="div" fontSize={3} mt={7} mb={0}>
       What drew you into design systems?

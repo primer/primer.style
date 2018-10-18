@@ -12,7 +12,7 @@ const getMemberContent = () => {
   let shapeIndex = 0
   return teamContent.map((member, i) => {
     if (i === shapes.length) shapeIndex = 0
-    const element = <MemberContainer shape={shapes[shapeIndex]} isOdd={i % 2 === 0} member={member} />
+    const element = <MemberContainer key={member.name} shape={shapes[shapeIndex]} isOdd={i % 2 === 0} member={member} />
     shapeIndex++
     return element
   })
@@ -21,7 +21,7 @@ const getMemberContent = () => {
 const TeamIndex = () => (
   <Box>
     <Nav />
-    <Box className="container-xl" pt={7} px={5} style={{overflow: 'hidden'}}>
+    <Box className="container-xl" pt={7} px={5} css={{overflow: 'hidden'}}>
       <Flex
         justifyContent="space-between"
         flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']}

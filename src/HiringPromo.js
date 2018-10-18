@@ -1,14 +1,15 @@
 import React from 'react'
-import {Box, Heading, Text} from '@primer/components'
-import Octicon, {RadioTower} from '@githubprimer/octicons-react'
+import {Heading, Text} from '@primer/components'
+import {RadioTower} from '@githubprimer/octicons-react'
+import Octicon from './Octicon'
 import ButtonPromo from './ButtonPromo'
 import LinkPromo from './LinkPromo'
 
 export default function HiringPromo() {
   return (
-    <Box align="center" px={5} className="container-lg text-left text-md-center">
+    <Text is="div" px={5} textAlign={['left', 'left', 'center']} className="container-lg">
       <Heading fontSize={5} mb={2} color="orange.3">
-        <Octicon className="mr-3" icon={RadioTower} size={40} verticalAlign="top" />
+        <Octicon icon={RadioTower} mr={3} size={40} verticalAlign="top" />
         Join GitHub!
       </Heading>
       <Text is="p" fontSize={3} mb={5} px={[0, 0, 0, 5]} color="orange.1">
@@ -21,6 +22,6 @@ export default function HiringPromo() {
       <ButtonPromo block my={[2, 0]} href="https://boards.greenhouse.io/github/jobs/1306815">
         Apply →
       </ButtonPromo>
-    </Box>
+    </Text>
   )
 }
