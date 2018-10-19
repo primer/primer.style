@@ -16,7 +16,7 @@ const NewsIndex = () => {
           mb={[0, 0, 10]}
           mx={-5}
         >
-          <Box width={[1, 1, 1, 7 / 12]} pt={[0, 0, 0, 8]} pb={[3, 5, 5, 6]} px={5}>
+          <Box width={[1, 1, 1, 7 / 12]} pt={[0, 0, 0, 8]} pb={[6, 5, 5, 6]} px={5}>
             <Heading fontSize={[48, 56]} color="blue.4" lineHeight={1} mb={3}>
               What’s new
             </Heading>

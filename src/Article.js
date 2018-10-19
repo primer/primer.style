@@ -28,7 +28,7 @@ const articleDate = date => {
 
 const Article = ({url, title, description, date, type}) => {
   return (
-    <Box mb={7} width={[1, 1, 1, 7 / 12]}>
+    <Box mb={8} width={[1, 1, 1, 7 / 12]}>
       <Link target="_blank" href={url}>
         <Heading fontSize={4} pb={1} lineHeight={1.25} color="blue.4">
           {title}

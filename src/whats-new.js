@@ -2,6 +2,14 @@ import releases from './data/releases'
 
 const whatsNew = [
   {
+    type: 'podcast',
+    title: 'React Podcast #25: Make Brilliant Messes',
+    description:
+      'Chantastic talks to Diana and Emily about the story of design at Github, what role React will play in future systems, and what community tools that make their job easier. They talk Rails, Lerna, monorepos, Figma, component APIs, and the importance of supporting your design system by supporting designers and engineers.',
+    url: 'https://reactpodcast.com/25',
+    date: '2018-10-18'
+  },
+  {
     type: 'talk',
     title: 'Design Systems and React @ Zeit',
     description: 'Using React to build design systems',
