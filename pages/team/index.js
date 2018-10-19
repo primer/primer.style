@@ -4,7 +4,7 @@ import Nav from '../../src/Nav'
 import LinkLight from '../../src/LinkLight'
 import MemberContainer from '../../src/MemberContainer'
 import teamContent from '../../src/team-content'
-import TeamImage from '../meet-the-team.svg'
+import TeamImage from '../team-illo.svg'
 
 const shapes = ['hexagon', 'square', 'circle', 'diamond']
 
@@ -45,9 +45,9 @@ const TeamIndex = () => (
             openings on our team.
           </Text>
         </Box>
-        <Relative>
-          <Flex.Item width="426px" height="309px" css={{flexShrink: 0}} mx={[0, 0, 0, 5]}>
-            <TeamImage />
+        <Relative width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx={'auto'} mb={[4, 4, 4, 0]}>
+          <Flex.Item px={5}>
+            <TeamImage width="100%" height={null} />
           </Flex.Item>
         </Relative>
       </Flex>

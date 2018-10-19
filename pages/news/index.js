@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Text, Heading, Flex} from '@primer/components'
+import {Box, Text, Heading, Flex, Relative} from '@primer/components'
 import Nav from '../../src/Nav'
 import whatsNew from '../../src/whats-new'
 import NewsList from '../../src/NewsList'
@@ -25,9 +25,12 @@ const NewsIndex = () => {
               team.
             </Text>
           </Box>
-          <Flex.Item width="435px" height="241px" pt={[0, 0, 0, 6]} mx={[0, 0, 0, 5]} css={{flexShrink: 0}}>
-            <NewsImage />
-          </Flex.Item>
+
+          <Relative width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx={'auto'} mb={[4, 4, 4, 0]}>
+            <Flex.Item px={5} css={{flexShrink: 0}}>
+              <NewsImage width="100%" height={null} />
+            </Flex.Item>
+          </Relative>
         </Flex>
         <NewsList items={whatsNew} />
       </Box>

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Box, Link, Text} from '@primer/components'
+import {Box, Link, Text, Heading} from '@primer/components'
 import Octicon from './Octicon'
 import {Note, Tag, LinkExternal, Megaphone, Broadcast} from '@githubprimer/octicons-react'
 
@@ -30,9 +30,9 @@ const Article = ({url, title, description, date, type}) => {
   return (
     <Box mb={7} width={[1, 1, 1, 7 / 12]}>
       <Link target="_blank" href={url}>
-        <Text is="p" mb={1} color="blue.4" fontFamily="mono" fontSize={3} lineHeight={'1.25'}>
+        <Heading fontSize={4} pb={1} lineHeight={1.25} color="blue.4">
           {title}
-        </Text>
+        </Heading>
       </Link>
       <Box mb={3}>
         <Text fontSize={1} fontFamily="mono" color="blue.3">
@@ -43,7 +43,7 @@ const Article = ({url, title, description, date, type}) => {
           &nbsp;&middot; {articleDate(date)}
         </Text>
       </Box>
-      <Text is="p" mt={0} mb={1} color="blue.2" fontSize={2}>
+      <Text is="p" mt={0} mb={1} color="blue.2" fontSize={3}>
         {description}
       </Text>
     </Box>
