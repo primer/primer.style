@@ -4,7 +4,7 @@ import {Link} from '@primer/components'
 import {space, themeGet} from 'styled-system'
 import styled from 'react-emotion'
 
-const ButtonOutlineDark = styled(Link)`
+const ButtonFillDark = styled(Link)`
   color: ${themeGet('colors.blue.2')} !important;
   background-color: ${themeGet('colors.black')};
   padding: 0.75em 1.25em;
@@ -21,4 +21,4 @@ const ButtonOutlineDark = styled(Link)`
   ${space};
 `
 
-export default ButtonOutlineDark
+export default ButtonFillDark
