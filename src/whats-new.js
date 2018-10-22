@@ -12,7 +12,7 @@ const whatsNew = [
   {
     type: 'talk',
     title: 'Design Systems and React @ Zeit',
-    description: 'Using React to build design systems',
+    description: 'Building design systems with React at GitHub',
     url: 'https://youtube.com/watch?v=N-5TNKJ7eB0&t=15m25s',
     date: '2018-08-12'
   },
