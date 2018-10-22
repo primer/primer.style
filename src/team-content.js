@@ -1,13 +1,14 @@
 const teamContent = [
 
   {name: 'Joshua Shao',
-  title: 'Design Systems Apprenticeship: UI Designer',
+  color: 'orange',
+  title: 'Design Systems Apprentice: UI Designer',
   handle: 'jhuashao',
   cssFeature: 'align-items: center;',
   questionOne: `Hello World!`,
   questionTwo: `Hello World, again!!`,
   favoriteTools: 'VScode, Figma, Adobe Creative Suite, Zero-Sugar Redbull',
-  avatar: ''},
+  avatar: 'https://user-images.githubusercontent.com/24916540/47322053-7b838000-d60b-11e8-8264-980da6a075ce.jpg'},
   
   {
     name: 'Emily Brick',

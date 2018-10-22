@@ -11,40 +11,46 @@ injectGlobal`
   }
 `
 
-const MemberInfo = ({member}) => (
-  <Box width={[1, 1, 1, 1 / 2]} id={member.handle}>
-    <Heading fontSize={5} pb={3} lineHeight={1.25} color="blue.4">
-      {member.name}, {member.title}
-    </Heading>
-    <Link
-      mt={2}
-      fontFamily="mono"
-      color="blue.3"
-      hoverColor="blue.3"
-      fontSize={2}
-      href={`https://github.com/${member.handle}`}
-    >
-      <Octicon icon={MarkGithub} size={24} verticalAlign="middle" color="blue.3" mr={3} />@{member.handle}
-    </Link>
-    <Text fontFamily="mono" color="blue.4" is="div" fontSize={3} mt={7} mb={0}>
-      What drew you into design systems?
-    </Text>
-    <Text fontSize={3}>
-      <ReactMarkdown className="markdown" source={member.questionOne} />
-    </Text>
-    <Text fontFamily="mono" color="blue.4" is="div" fontSize={3} mt={7} mb={0}>
-      Who have you learned from or been inspired by?
-    </Text>
-    <Text fontSize={3}>
-      <ReactMarkdown className="markdown" source={member.questionTwo} />
-    </Text>
-    <Text fontFamily="mono" color="blue.4" is="div" fontSize={3} mt={7} mb={0}>
-      Favorite tools
-    </Text>
-    <Text fontSize={3}>
-      <ReactMarkdown className="markdown" source={member.favoriteTools} />
-    </Text>
-  </Box>
-)
+const MemberInfo = ({member}) => {
+  const color = member.color || 'blue';
+
+  return(
+    <Box width={[1, 1, 1, 1 / 2]} id={member.handle}>
+      <Heading fontSize={5} pb={3} lineHeight={1.25} color={`${color}.4`}>
+        {member.name}, {member.title}
+      </Heading>
+      <Link
+        mt={2}
+        fontFamily="mono"
+        color={`${color}.3`}
+        hoverColor={`${color}.3`}
+        fontSize={2}
+        href={`https://github.com/${member.handle}`}
+      >
+        <Octicon icon={MarkGithub} size={24} verticalAlign="middle" color={`${color}.3`} mr={3} />@{member.handle}
+      </Link>
+      <Text fontFamily="mono" color={`${color}.4`} is="div" fontSize={3} mt={7} mb={0}>
+        What drew you into design systems?
+      </Text>
+      <Text color={`${color}.1`} fontSize={3}>
+        <ReactMarkdown className="markdown" source={member.questionOne} />
+      </Text>
+      <Text fontFamily="mono" color={`${color}.4`} is="div" fontSize={3} mt={7} mb={0}>
+        Who have you learned from or been inspired by?
+      </Text>
+      <Text color={`${color}.1`} fontSize={3}>
+        <ReactMarkdown className="markdown" source={member.questionTwo} />
+      </Text>
+      <Text fontFamily="mono" color={`${color}.4`} is="div" fontSize={3} mt={7} mb={0}>
+        Favorite tools
+      </Text>
+      <Text color={`${color}.1`} fontSize={3}>
+        <ReactMarkdown className="markdown" source={member.favoriteTools} />
+      </Text>
+    </Box>
+  )
+
+}
+
 
 export default MemberInfo
