@@ -40,7 +40,7 @@ const getTitle = (title, name, version) => {
 }
 
 const getDescription = (description) => {
-  const maxWords = 40
+  const maxWords = 30
   if (description) {
     const descriptionArray = description.split(' ')
     if (descriptionArray.length > maxWords) {
