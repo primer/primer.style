@@ -11,6 +11,12 @@ export const iconForType = {
   talk: Megaphone
 }
 
+const packageNames = {
+  "primer": "Primer",
+  "@primer/components": "Primer Components",
+  "octicons": "Octicons"
+}
+
 const articleIcon = type => iconForType[type] || LinkExternal
 
 const articleDomain = url => {
@@ -26,12 +32,31 @@ const articleDate = date => {
   }`
 }
 
-const Article = ({url, title, description, date, type}) => {
+const getTitle = (title, name, version) => {
+  if (name && version) {
+    return `${packageNames[name]} v${version}`
+  }
+  return title
+}
+
+const getDescription = (description) => {
+  const maxWords = 40
+  if (description) {
+    const descriptionArray = description.split(' ')
+    if (descriptionArray.length > maxWords) {
+      return `${descriptionArray.slice(0, maxWords).join(' ')}...`
+    } else {
+      return description
+    }
+  }
+}
+
+const Article = ({url, title, description, date, type, name, version}) => {
   return (
     <Box mb={8} width={[1, 1, 1, 7 / 12]}>
       <Link target="_blank" href={url}>
         <Heading fontSize={4} pb={1} lineHeight={1.25} color="blue.4">
-          {title}
+          {getTitle(title, name, version)}
         </Heading>
       </Link>
       <Box mb={3}>
@@ -44,13 +69,15 @@ const Article = ({url, title, description, date, type}) => {
         </Text>
       </Box>
       <Text is="p" mt={0} mb={1} color="blue.2" fontSize={3}>
-        {description}
+        {getDescription(description)}
       </Text>
     </Box>
   )
 }
 
 Article.propTypes = {
+  name: PropTypes.string,
+  version: PropTypes.string,
   date: PropTypes.string,
   title: PropTypes.string,
   type: PropTypes.oneOf(Object.keys(iconForType)),

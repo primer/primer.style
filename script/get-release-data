@@ -23,7 +23,7 @@ for p in "${packages[@]}"; do
     echo $time | egrep -q '(^201[0-7])' && continue
 
     version=$(echo $version | sed -e "s/\"//g")
-    release="{ \"type\": \"release\", \"title\": \"$p v$version\", \"url\": \"$repo/releases/tag/v$version\", \"date\": \"$time\" },"
+    release="{ \"type\": \"release\", \"title\": \"$p@$version\", \"name\": \"$p\", \"version\": \"$version\", \"url\": \"$repo/releases/tag/v$version\", \"date\": \"$time\" },"
     output="$output $release"
   done
 done
