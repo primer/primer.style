@@ -12,9 +12,9 @@ export const iconForType = {
 }
 
 const packageNames = {
-  "primer": "Primer",
-  "@primer/components": "Primer Components",
-  "octicons": "Octicons"
+  primer: 'Primer',
+  '@primer/components': 'Primer Components',
+  octicons: 'Octicons'
 }
 
 const articleIcon = type => iconForType[type] || LinkExternal
@@ -39,7 +39,7 @@ const getTitle = (title, name, version) => {
   return title
 }
 
-const getDescription = (description) => {
+const getDescription = description => {
   const maxWords = 30
   if (description) {
     const descriptionArray = description.split(' ')
@@ -76,12 +76,12 @@ const Article = ({url, title, description, date, type, name, version}) => {
 }
 
 Article.propTypes = {
-  name: PropTypes.string,
-  version: PropTypes.string,
   date: PropTypes.string,
+  name: PropTypes.string,
   title: PropTypes.string,
   type: PropTypes.oneOf(Object.keys(iconForType)),
-  url: PropTypes.string
+  url: PropTypes.string,
+  version: PropTypes.string
 }
 
 export default Article
