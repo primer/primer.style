@@ -11,10 +11,8 @@ injectGlobal`
   }
 `
 
-const MemberInfo = ({member}) => {
-  const color = member.color || 'blue';
-
-  return(
+const MemberInfo = ({member, color}) => {
+  return (
     <Box width={[1, 1, 1, 1 / 2]} id={member.handle}>
       <Heading fontSize={5} pb={3} lineHeight={1.25} color={`${color}.4`}>
         {member.name}, {member.title}
@@ -49,8 +47,10 @@ const MemberInfo = ({member}) => {
       </Text>
     </Box>
   )
-
 }
 
+MemberInfo.defaultProps = {
+  color: 'blue'
+}
 
 export default MemberInfo

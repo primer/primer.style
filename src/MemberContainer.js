@@ -39,21 +39,25 @@ const direction = isOdd =>
     ? ['column-reverse', 'column-reverse', 'column-reverse', 'row-reverse', 'row-reverse']
     : ['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']
 
-const Member = ({member, isOdd, shape}) => (
-  <Flex
-    mb={12}
-    justifyContent="flex-end"
-    alignItems={['center', 'center', 'center', 'initial', 'initial']}
-    flexDirection={direction(isOdd)}
-  >
-    <MemberQuestions member={member} />
-    <Flex.Item mb={[6, 8, 8, 0, 0]} css={{flexShrink: 0, position: 'relative'}}>
-      <Box mr={isOdd ? [0, 0, 0, 12, 12] : 0} ml={isOdd ? 0 : [0, 0, 12, 12, 12]}>
-        <AvatarShape shape={shape} src={member.avatar} />
-        <Dots shape={shape} />
-      </Box>
-    </Flex.Item>
-  </Flex>
-)
+const Member = ({member, isOdd, shape}) => {
+  const color = member.color || 'blue'
+  
+  return (
+    <Flex
+      mb={12}
+      justifyContent="flex-end"
+      alignItems={['center', 'center', 'center', 'initial', 'initial']}
+      flexDirection={direction(isOdd)}
+    >
+      <MemberQuestions member={member} color={color} />
+      <Flex.Item mb={[6, 8, 8, 0, 0]} css={{flexShrink: 0, position: 'relative'}}>
+        <Box mr={isOdd ? [0, 0, 0, 12, 12] : 0} ml={isOdd ? 0 : [0, 0, 12, 12, 12]}>
+          <AvatarShape shape={shape} src={member.avatar} bg={`${color}.4`} />
+          <Dots shape={shape} />
+        </Box>
+      </Flex.Item>
+    </Flex>
+  )
+}
 
 export default Member
