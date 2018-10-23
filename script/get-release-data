@@ -1,0 +1,31 @@
+#!/bin/bash
+
+packages=(
+  primer
+  octicons
+  @primer/components
+)
+
+output=""
+
+for p in "${packages[@]}"; do
+  package=$(npm view $p --json)
+  repo=$(echo $package | jq -c '.bugs.url' | sed -e "s/\/issues//g" | sed -e "s/\"//g")
+  versions=$(echo $package | jq -c '.time | keys[]')
+
+  for version in $versions; do
+    # Skip any non-major and minor releases
+    echo $version | egrep -q '(^"[0-9]+\.[0-9]+\.[0-9]+\-[^b]|^"[^0-9])' && continue
+
+    time=$(echo $package | jq -c ".time[$version]" | sed -e "s/\"//g")
+
+    # Only include releases this year
+    echo $time | egrep -q '(^201[0-7])' && continue
+
+    version=$(echo $version | sed -e "s/\"//g")
+    release="{ \"type\": \"release\", \"title\": \"$p@$version\", \"name\": \"$p\", \"version\": \"$version\", \"url\": \"$repo/releases/tag/v$version\", \"date\": \"$time\" },"
+    output="$output $release"
+  done
+done
+
+echo "[ $(echo $output | sed -e "s/,$//g") ]" > ./src/data/releases.json

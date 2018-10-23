@@ -4,7 +4,7 @@ import Nav from '../../src/Nav'
 import LinkLight from '../../src/LinkLight'
 import MemberContainer from '../../src/MemberContainer'
 import teamContent from '../../src/team-content'
-import TeamImage from '../meet-the-team.svg'
+import TeamImage from '../team-illo.svg'
 
 const shapes = ['hexagon', 'square', 'circle', 'diamond']
 
@@ -21,7 +21,7 @@ const getMemberContent = () => {
 const TeamIndex = () => (
   <Box>
     <Nav />
-    <Box className="container-xl" pt={7} px={5} css={{overflow: 'hidden'}}>
+    <Box className="container-xl" pt={8} px={5} css={{overflow: 'hidden'}}>
       <Flex
         justifyContent="space-between"
         flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']}
@@ -29,7 +29,7 @@ const TeamIndex = () => (
         mx={-5}
       >
         <Box width={[1, 1, 1, 7 / 12]} pt={[0, 0, 0, 8]} pb={[8, 8, 8, 12]} px={5}>
-          <Heading fontSize={[5, 7]} color="blue.4" lineHeight={1} mb={3}>
+          <Heading fontSize={[48, 56]} color="blue.4" lineHeight={1} mb={3} mt={[4, 4, 4, 0]}>
             Meet the team
           </Heading>
           <Text is="p" fontSize={3} color="blue.2">
@@ -45,9 +45,9 @@ const TeamIndex = () => (
             openings on our team.
           </Text>
         </Box>
-        <Relative top="-100px">
-          <Flex.Item width="430px" height="340px" css={{flexShrink: 0}} ml={[0, 0, 5, 0, 0]}>
-            <TeamImage />
+        <Relative width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx={'auto'} mb={[4, 4, 4, 0]}>
+          <Flex.Item px={5}>
+            <TeamImage width="100%" height={null} />
           </Flex.Item>
         </Relative>
       </Flex>

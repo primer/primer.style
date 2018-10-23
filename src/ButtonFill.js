@@ -6,6 +6,9 @@ import styled from 'react-emotion'
 
 const ButtonFill = styled(Link)`
   color: ${themeGet('colors.black')} !important;
+  border-color: ${themeGet('colors.blue.3')};
+  border-width: 1px;
+  border-style: solid;
   background-color: ${themeGet('colors.blue.3')};
   padding: 0.75em 1.25em;
   font-size: ${props => props.theme.fontSizes[2]};
@@ -14,6 +17,7 @@ const ButtonFill = styled(Link)`
   font-weight: 600;
   display: inline-block;
   &:hover {
+    border-color: ${themeGet('colors.blue.4')};
     background-color: ${themeGet('colors.blue.4')};
     text-decoration: none;
   }
