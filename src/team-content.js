@@ -5,8 +5,12 @@ const teamContent = [
   title: 'Design Systems Apprentice: UI Designer',
   handle: 'jhuashao',
   cssFeature: 'align-items: center;',
-  questionOne: `Hello World!`,
-  questionTwo: `Hello World, again!!`,
+  questionOne: `I first found out about design systems through my last internship, which was focused on building up a design system for the New York Times. I kept learning more and more about this emerging field, and really started to grow an affinity for it.
+
+  Design Systems seemed to blend all aspects of my interests: Product Design, Front-End Development, Graphic Design, Typography, Illustration, etc. I’m drawn to design systems as it’s a field that welcomes individuals who have too many interests to count, and find themselves at intersections of many different passions. `,
+  questionTwo: `I draw in a lot of inspiration from so many different facets of my life. I’m really fortunate to come from a diverse set of backgrounds to be able to see parallels that emerge from a variety of industries. 
+
+  The field of Graphic Design has a tremendous influence on me, and some of the designers and studios I’m inspired are: Natasha Jen, Barron Webster, Maxime Buschi, Michael Bieruit, Eric Hu, Micah Barrett, Draw Down Books, Wei Huang, Josh Schaub, Morcoskey, and David Rudnik. I’ve always been inspired by those who are experimenting at the intersection of design and technology: Tristan Harris, Brad Frost , Studio No Plans, Marie Otsuka, Ben Wilkins, Jon Gold, Bret Victor,  and Chris Novello. I also love typography, and have a lot of admiration for type-designers and foundries: Colophon Foundry, Kris Sowersby (Klim Type), Matthew Carter, Richard Lipton, Lucas Sharp, and James Edmondson (OHnotypeco). There’s so many more people that I’ve learned and drawn inspiration from to mention and praise, so feel free to reach out! I’d love to share and discuss. <3`,
   favoriteTools: 'VScode, Figma, Adobe Creative Suite, Zero-Sugar Redbull',
   avatar: 'https://user-images.githubusercontent.com/24916540/47322053-7b838000-d60b-11e8-8264-980da6a075ce.jpg'},
   

@@ -44,7 +44,7 @@ const direction = isOdd =>
 const Member = ({member, isOdd, shape, ...rest}) => {
   const colorName = member.color || 'blue'
   const color = themeGet(`colors.${colorName}.4`)(rest)
-  
+
   return (
     <Flex
       mb={12}
@@ -56,13 +56,13 @@ const Member = ({member, isOdd, shape, ...rest}) => {
       <Flex.Item mb={[6, 8, 8, 0, 0]} css={{flexShrink: 0, position: 'relative'}}>
         <Box mr={isOdd ? [0, 0, 0, 12, 12] : 0} ml={isOdd ? 0 : [0, 0, 12, 12, 12]}>
           <AvatarShape shape={shape} src={member.avatar} bg={color} />
-          <Dots shape={shape} color={color}/>
+          <Dots shape={shape} color={color} />
         </Box>
       </Flex.Item>
     </Flex>
   )
 }
 
-Member.defaultProps={theme}
+Member.defaultProps = {theme}
 
 export default Member
