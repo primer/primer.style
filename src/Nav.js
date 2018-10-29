@@ -1,8 +1,8 @@
 import React from 'react'
 import {Box, Flex, Text} from '@primer/components'
+import Octicon from './Octicon'
 import {MarkGithub} from '@githubprimer/octicons-react'
 import {Link as RouterLink} from 'react-router-dom'
-import Octicon from './Octicon'
 
 export default function Nav() {
   return (
@@ -18,9 +18,16 @@ export default function Nav() {
             </Flex>
           </RouterLink>
         </Flex>
-        <Text is="div" fontSize={2} color="blue.2">
+        <Text is="div" px={3} fontSize={2} color="blue.2">
           <RouterLink style={{color: 'inherit'}} to="/team">
-            Meet the team
+            <Box display={['inline', 'none']}>Team</Box>
+            <Box display={['none', 'inline']}>Meet the team</Box>
+          </RouterLink>
+        </Text>
+        <Text is="div" pl={3} fontSize={2} color="blue.2">
+          <RouterLink style={{color: 'inherit'}} to="/news">
+            <Box display={['inline', 'none']}>News</Box>
+            <Box display={['none', 'inline']}>What’s new</Box>
           </RouterLink>
         </Text>
       </Flex>
