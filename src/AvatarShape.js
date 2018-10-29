@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box} from '@primer/components'
+import {Box, Link} from '@primer/components'
 import {themeGet, bgColor} from 'styled-system'
 import styled from 'react-emotion'
 import PropTypes from 'prop-types'
@@ -61,10 +61,11 @@ const A = styled(Box)`
   }
 `
 
-const ShapeOutline = styled(Box)`
+const ShapeOutline = styled(Link)`
   padding: 2px;
   position: relative;
   background: transparent;
+  display: block;
   &:after {
     content: '';
     clip-path: url("#clip-${props => props.shape}");
@@ -79,7 +80,7 @@ const ShapeOutline = styled(Box)`
 `
 
 const AvatarShape = props => (
-  <ShapeOutline shape={props.shape} bg={props.bg}>
+  <ShapeOutline shape={props.shape} bg={props.bg} {...props}>
     <A className={props.className} shape={props.shape}>
       <Image src={props.src} />
       <Shape shape={props.shape} />
