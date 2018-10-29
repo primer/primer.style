@@ -1,5 +1,21 @@
 const teamContent = [
   {
+    name: 'Joshua Shao',
+    color: 'orange',
+    title: 'Design Systems Apprentice: UI Designer',
+    handle: 'jhuashao',
+    cssFeature: 'align-items: center;',
+    questionOne: `I first found out about design systems through my last internship, which was focused on building up a design system for the New York Times. I kept learning more and more about this emerging field, and really started to grow an affinity for it.
+
+  Design Systems seemed to blend all aspects of my interests: Product Design, Front-End Development, Graphic Design, Typography, Illustration, etc. I’m drawn to design systems as it’s a field that welcomes individuals who have too many interests to count, and find themselves at intersections of many different passions. `,
+    questionTwo: `I draw in a lot of inspiration from so many different facets of my life. I’m really fortunate to come from a diverse set of backgrounds to be able to see parallels that emerge from a variety of industries. 
+
+  The field of Graphic Design has a tremendous influence on me, and some of the designers and studios I’m inspired by are: [Natasha Jen](https://www.pentagram.com/about/natasha-jen), [Barron Webster](https://barronwebster.com/), [Maxime Buschi](https://www.youtube.com/watch?v=diBifN7qBgw), [Michael Bierut](https://www.pentagram.com/about/michael-bierut), [Eric Hu](http://erichu.info/), [Micah Barrett](http://micahbarrett.design/), [Draw Down Books](https://draw-down.com/), [Wei Huang](https://twitter.com/w__h_?lang=en), [Josh Schaub](http://joshschaub.ch/), [Morcoskey](https://morcoskey.com/), and [David Rudnik](https://davidrudnick.org/). I’ve always been inspired by those who are experimenting at the intersection of design and technology: [Tristan Harris](http://www.tristanharris.com/), [Brad Frost](http://bradfrost.com/), [Studio No-Plans](https://no-plans.com/), [Marie Otsuka](http://motsuka.com/), [Ben Wilkins](https://twitter.com/thatbenlifetho?lang=en), [Jon Gold](https://jon.gold/), [Bret Victor](http://worrydream.com/),  and [Chris Novello](http://chrisnovello.com/). I also love typography, and have a lot of admiration for type-designers and foundries: [Colophon Foundry](https://www.colophon-foundry.org/), [Kris Sowersby (Klim Type)](https://klim.co.nz/), [Matthew Carter](https://www.myfonts.com/person/Matthew_Carter/), [Richard Lipton](https://lipton.typenetwork.com/), [Lucas Sharp](http://lucassharp.com/), [Grilli Type](https://www.grillitype.com/), and [James Edmondson (OHnotypeco)](https://ohnotype.co/). There’s so many more people that I’ve learned and drawn inspiration from to mention and praise, so feel free to reach out! I’d love to share and discuss. <3`,
+    favoriteTools: 'VScode, Figma, Adobe Creative Suite, Zero-Sugar Redbull',
+    avatar: 'https://user-images.githubusercontent.com/24916540/47465791-490c8b00-d7a3-11e8-8dc8-9cc968a47b62.jpg'
+  },
+
+  {
     name: 'Emily Brick',
     title: 'Systems Designer',
     handle: 'emilybrick',
