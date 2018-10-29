@@ -7,9 +7,15 @@ import ReactMarkdown from 'react-markdown'
 
 injectGlobal`
   .markdown a {
-    color: #79b8ff;
+    color: #79b8ff
   }
 `
+
+// injectGlobal`
+//   .markdown a {
+//     color: ${colorName}
+//   }
+// `
 
 const MemberInfo = ({member, colorName}) => {
   return (
