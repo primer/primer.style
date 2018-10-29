@@ -14,7 +14,7 @@ export default function PrimerReact() {
         </Text>
       </Heading>
       <Text is="p" color="blue.2" mb={3} mx={[-2, 0]} fontSize={[2, 3]}>
-        We&#8217;re building a React.js component library for Primer. Public beta coming soon!
+        We&#8217;re building a React.js component library for Primer.
       </Text>
       <LinkLight fontSize={2} href="https://primer.style/components">
         View the component library →
