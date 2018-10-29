@@ -2,20 +2,16 @@ import React from 'react'
 import {Text, Heading, Link, Box} from '@primer/components'
 import Octicon from './Octicon'
 import {MarkGithub} from '@githubprimer/octicons-react'
-import {injectGlobal} from 'emotion'
 import ReactMarkdown from 'react-markdown'
 
-injectGlobal`
-  .markdown a {
-    color: #79b8ff
-  }
-`
-
-// injectGlobal`
-//   .markdown a {
-//     color: ${colorName}
-//   }
-// `
+const MemberMarkdown = ({source, colorName}) => {
+  const link = props => (
+    <Link color={`${colorName}.3`} {...props}>
+      {props.children}
+    </Link>
+  )
+  return <ReactMarkdown className="markdown" source={source} renderers={{link}} />
+}
 
 const MemberInfo = ({member, colorName}) => {
   return (
@@ -37,19 +33,19 @@ const MemberInfo = ({member, colorName}) => {
         What drew you into design systems?
       </Text>
       <Text color={`${colorName}.1`} fontSize={3}>
-        <ReactMarkdown className="markdown" source={member.questionOne} />
+        <MemberMarkdown source={member.questionOne} colorName={colorName} />
       </Text>
       <Text fontFamily="mono" color={`${colorName}.4`} is="div" fontSize={3} mt={7} mb={0}>
         Who have you learned from or been inspired by?
       </Text>
       <Text color={`${colorName}.1`} fontSize={3}>
-        <ReactMarkdown className="markdown" source={member.questionTwo} />
+        <MemberMarkdown source={member.questionTwo} colorName={colorName} />
       </Text>
       <Text fontFamily="mono" color={`${colorName}.4`} is="div" fontSize={3} mt={7} mb={0}>
         Favorite tools
       </Text>
       <Text color={`${colorName}.1`} fontSize={3}>
-        <ReactMarkdown className="markdown" source={member.favoriteTools} />
+        <MemberMarkdown source={member.favoriteTools} colorName={colorName} />
       </Text>
     </Box>
   )
