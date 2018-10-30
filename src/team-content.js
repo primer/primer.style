@@ -2,7 +2,7 @@ const teamContent = [
   {
     name: 'Joshua Shao',
     color: 'orange',
-    title: 'Design Systems Apprentice: UI Designer',
+    title: 'Apprentice UI Designer',
     handle: 'jhuashao',
     cssFeature: 'align-items: center;',
     questionOne: `I first found out about design systems through my last internship, which was focused on building up a design system for the New York Times. I kept learning more and more about this emerging field, and really started to grow an affinity for it.
