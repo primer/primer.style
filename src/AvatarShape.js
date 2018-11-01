@@ -1,6 +1,6 @@
 import React from 'react'
 import {Box} from '@primer/components'
-import {themeGet} from 'styled-system'
+import {themeGet, bgColor} from 'styled-system'
 import styled from 'react-emotion'
 import PropTypes from 'prop-types'
 import Circle from './svg/circle.svg'
@@ -64,10 +64,11 @@ const A = styled(Box)`
 const ShapeOutline = styled(Box)`
   padding: 2px;
   position: relative;
+  background: transparent;
   &:after {
     content: '';
     clip-path: url("#clip-${props => props.shape}");
-    background: ${themeGet('colors.blue.3')};
+    ${bgColor};
     position: absolute;
     top: 0;
     right: 0;
@@ -78,13 +79,17 @@ const ShapeOutline = styled(Box)`
 `
 
 const AvatarShape = props => (
-  <ShapeOutline shape={props.shape}>
+  <ShapeOutline shape={props.shape} bg={props.bg}>
     <A className={props.className} shape={props.shape}>
       <Image src={props.src} />
       <Shape shape={props.shape} />
     </A>
   </ShapeOutline>
 )
+
+AvatarShape.defaultProps = {
+  bg: 'blue.4'
+}
 
 AvatarShape.propTypes = {
   shape: PropTypes.oneOf(['hexagon', 'square', 'circle', 'diamond'])

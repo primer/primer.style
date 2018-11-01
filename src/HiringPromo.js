@@ -8,7 +8,7 @@ import LinkPromo from './LinkPromo'
 export default function HiringPromo() {
   return (
     <Text is="div" px={5} textAlign={['left', 'left', 'center']} className="container-lg">
-      <Heading fontSize={5} mb={2} color="orange.3">
+      <Heading fontSize={5} mb={2} color="orange.4">
         <Octicon icon={RadioTower} mr={3} size={40} verticalAlign="top" />
         Join GitHub!
       </Heading>

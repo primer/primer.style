@@ -1,14 +1,16 @@
 import React from 'react'
-import {Flex, Box} from '@primer/components'
+import {themeGet} from 'styled-system'
+import {Flex, Box, theme} from '@primer/components'
 import MemberQuestions from './MemberQuestions'
 import AvatarShape from './AvatarShape'
 import DotsSVG from './svg/dots.svg'
 
-const Dots = ({shape}) => {
+const Dots = ({shape, color}) => {
   const css = {
     position: 'absolute',
     height: '92px',
-    width: '168px'
+    width: '168px',
+    fill: color
   }
   switch (shape) {
     case 'hexagon':
@@ -39,21 +41,28 @@ const direction = isOdd =>
     ? ['column-reverse', 'column-reverse', 'column-reverse', 'row-reverse', 'row-reverse']
     : ['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']
 
-const Member = ({member, isOdd, shape}) => (
-  <Flex
-    mb={12}
-    justifyContent="flex-end"
-    alignItems={['center', 'center', 'center', 'initial', 'initial']}
-    flexDirection={direction(isOdd)}
-  >
-    <MemberQuestions member={member} />
-    <Flex.Item mb={[6, 8, 8, 0, 0]} css={{flexShrink: 0, position: 'relative'}}>
-      <Box mr={isOdd ? [0, 0, 0, 12, 12] : 0} ml={isOdd ? 0 : [0, 0, 12, 12, 12]}>
-        <AvatarShape shape={shape} src={member.avatar} />
-        <Dots shape={shape} />
-      </Box>
-    </Flex.Item>
-  </Flex>
-)
+const Member = ({member, isOdd, shape, ...rest}) => {
+  const colorName = member.color || 'blue'
+  const color = themeGet(`colors.${colorName}.4`)(rest)
+
+  return (
+    <Flex
+      mb={12}
+      justifyContent="flex-end"
+      alignItems={['center', 'center', 'center', 'initial', 'initial']}
+      flexDirection={direction(isOdd)}
+    >
+      <MemberQuestions member={member} colorName={colorName} />
+      <Flex.Item mb={[6, 8, 8, 0, 0]} css={{flexShrink: 0, position: 'relative'}}>
+        <Box mr={isOdd ? [0, 0, 0, 12, 12] : 0} ml={isOdd ? 0 : [0, 0, 12, 12, 12]}>
+          <AvatarShape shape={shape} src={member.avatar} bg={color} />
+          <Dots shape={shape} color={color} />
+        </Box>
+      </Flex.Item>
+    </Flex>
+  )
+}
+
+Member.defaultProps = {theme}
 
 export default Member
