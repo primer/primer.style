@@ -46,7 +46,7 @@ export class Draggable {
     this.target = cloneAndIsolate(el)
 
     const {target} = this
-    target.style.setProperty('cursor', 'pointer')
+    target.style.setProperty('cursor', 'grab')
     target.style.setProperty('position', 'absolute')
     document.body.appendChild(target)
 
@@ -58,9 +58,11 @@ export class Draggable {
       // prevent text selection
       downEvent.preventDefault()
       this.dragging = true
+      target.style.setProperty('cursor', 'grabbing')
       document.addEventListener('mousemove', this.mouseMove)
       window.addEventListener('mouseup', () => {
         this.dragging = false
+        target.style.setProperty('cursor', 'grab')
         document.removeEventListener('mousemove', this.mouseMove)
       })
     }
