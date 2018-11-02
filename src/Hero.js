@@ -1,7 +1,7 @@
 import React from 'react'
-import {Box, Flex, Relative} from '@primer/components'
 import ReactBodymovin from 'react-bodymovin'
 import TestAnimation from './TestAnimation.json'
+import {Box, Flex, Relative} from '@primer/components'
 import IndexGrid from './IndexGrid'
 
 const bodymovinOptions = {
