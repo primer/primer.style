@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Heading, Text, Flex, Absolute, Relative} from '@primer/components'
+import {Box, Flex, Relative} from '@primer/components'
 
 import ReactBodymovin from 'react-bodymovin'
 import TestAnimation from './TestAnimation.json'
