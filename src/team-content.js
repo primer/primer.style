@@ -14,7 +14,6 @@ const teamContent = [
     favoriteTools: 'VScode, Figma, Adobe Creative Suite, Zero-Sugar Redbull',
     avatar: 'https://user-images.githubusercontent.com/24916540/47465791-490c8b00-d7a3-11e8-8dc8-9cc968a47b62.jpg'
   },
-
   {
     name: 'Ash Guillaume',
     title: 'Graphic Designer',
@@ -27,7 +26,6 @@ const teamContent = [
     favoriteTools: 'Figma, Atom, Keynote, Bear Notes, Spark Mail, Spotify',
     avatar: 'https://user-images.githubusercontent.com/10384315/48450021-61941380-e759-11e8-90e0-7b41f6cbb6e8.jpg'
   },
-
   {
     name: 'Emily Brick',
     title: 'Systems Designer',
