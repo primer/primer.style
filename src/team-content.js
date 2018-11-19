@@ -28,7 +28,6 @@ const teamContent = [
     avatar: 'https://user-images.githubusercontent.com/10384315/48450021-61941380-e759-11e8-90e0-7b41f6cbb6e8.jpg'
   },
 
-
   {
     name: 'Emily Brick',
     title: 'Systems Designer',
