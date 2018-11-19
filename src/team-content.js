@@ -1,18 +1,5 @@
 const teamContent = [
   {
-    name: 'Ash Guillaume',
-    title: 'Graphic Designer',
-    handle: 'ashygee',
-    cssFeature: 'align-items: center;',
-    questionOne: `I came into design systems very organically. When I began my career in the agency world, I worked within constraints of branding and style guidelines of our various clients. At the time I didn't fully recognize these guidelines as what we now refer to as design systems. As my career continued to grow I noticed that I began to be far more interested in how various companies/brands packaged the many pieces that made up their brand and/or products. I love how design systems bring together all the pieces in order to unleash endless creativity but still maintain the necessary constraints.`,
-    questionTwo: `I get a lot of my inspiration from the community I've built via Dribbble. A few of my favorites are the dynamic duo that makes of [TheLittleLabs](https://www.thelittlelabs.com/), Camilo and Aradhana, the illustration work by [Enisaurus](https://www.enisaurus.com/), and [Kendrick Kidd](http://www.kendrickkidd.com/).
-
-  When I first started my career, [Frank Chimero](https://frankchimero.com/) was a huge inspiration. His book, [The Shape of Design](https://frankchimero.com/design/the-shape-of-design/), really helped to form my philosophy and approach to problems and how to cultivate a design process. Along with that but not design related, [Jason Fried](https://twitter.com/jasonfried) has been a great inspiration to how I approach work. His book (written alongside David Heinemeier Hansson) [Rework](https://basecamp.com/books/rework) still is the best, no nonsense, business book I've ever read.`,
-    favoriteTools: 'Figma, Atom, Keynote, Bear Notes, Spark Mail, Spotify',
-    avatar: 'https://user-images.githubusercontent.com/10384315/48450021-61941380-e759-11e8-90e0-7b41f6cbb6e8.jpg'
-  },
-
-  {
     name: 'Joshua Shao',
     color: 'orange',
     title: 'Apprentice UI Designer',
@@ -27,6 +14,20 @@ const teamContent = [
     favoriteTools: 'VScode, Figma, Adobe Creative Suite, Zero-Sugar Redbull',
     avatar: 'https://user-images.githubusercontent.com/24916540/47465791-490c8b00-d7a3-11e8-8dc8-9cc968a47b62.jpg'
   },
+
+  {
+    name: 'Ash Guillaume',
+    title: 'Graphic Designer',
+    handle: 'ashygee',
+    cssFeature: 'align-items: center;',
+    questionOne: `I came into design systems very organically. When I began my career in the agency world, I worked within constraints of branding and style guidelines of our various clients. At the time I didn't fully recognize these guidelines as what we now refer to as design systems. As my career continued to grow I noticed that I began to be far more interested in how various companies/brands packaged the many pieces that made up their brand and/or products. I love how design systems bring together all the pieces in order to unleash endless creativity but still maintain the necessary constraints.`,
+    questionTwo: `I get a lot of my inspiration from the community I've built via Dribbble. A few of my favorites are the dynamic duo that makes of [TheLittleLabs](https://www.thelittlelabs.com/), Camilo and Aradhana, the illustration work by [Enisaurus](https://www.enisaurus.com/), and [Kendrick Kidd](http://www.kendrickkidd.com/).
+
+  When I first started my career, [Frank Chimero](https://frankchimero.com/) was a huge inspiration. His book, [The Shape of Design](https://frankchimero.com/design/the-shape-of-design/), really helped to form my philosophy and approach to problems and how to cultivate a design process. Along with that but not design related, [Jason Fried](https://twitter.com/jasonfried) has been a great inspiration to how I approach work. His book (written alongside David Heinemeier Hansson) [Rework](https://basecamp.com/books/rework) still is the best, no nonsense, business book I've ever read.`,
+    favoriteTools: 'Figma, Atom, Keynote, Bear Notes, Spark Mail, Spotify',
+    avatar: 'https://user-images.githubusercontent.com/10384315/48450021-61941380-e759-11e8-90e0-7b41f6cbb6e8.jpg'
+  },
+
 
   {
     name: 'Emily Brick',
