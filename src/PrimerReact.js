@@ -17,8 +17,11 @@ export default function PrimerReact() {
         We&#8217;re building a React.js component library for Primer.
       </Text>
       <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
-        <Link mb={[2,0]} px={2} lineHeight="1" href="https://codesandbox.io/s/82w8yp5359">
-          <img alt="Check out Primer Components in CodeSandbox" src="https://codesandbox.io/static/img/play-codesandbox.svg"/>
+        <Link mb={[2, 0]} px={2} lineHeight="1" href="https://codesandbox.io/s/82w8yp5359">
+          <img
+            alt="Check out Primer Components in CodeSandbox"
+            src="https://codesandbox.io/static/img/play-codesandbox.svg"
+          />
         </Link>
         <LinkLight fontSize={2} px={2} href="https://primer.style/components">
           View the component library →
