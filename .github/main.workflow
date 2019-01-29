@@ -1,4 +1,4 @@
-workflow "New workflow" {
+workflow "Linting and Testing" {
   on = "push"
   resolves = "lint"
 }
