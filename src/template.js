@@ -23,7 +23,7 @@ module.exports = ({html = '', css = '', scripts, title}) =>
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://primer.style" />
   <meta property="og:description" content="The design system that powers GitHub" />
-  <meta property="og:image" content="https://user-images.githubusercontent.com/586552/47662657-bb011d80-db71-11e8-967e-6d7af28d25d4.png" />
+  <meta property="og:image" content="primer-style-og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="twitter:card" content="summary_large_image" />
