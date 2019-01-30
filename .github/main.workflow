@@ -23,7 +23,7 @@ action "build" {
   args = "run build"
 }
 
-action "now deploy" {
+action "deploy" {
   uses = "primer/deploy@master"
   secrets = ["GITHUB_TOKEN", "NOW_TOKEN"]
   needs = "build"
