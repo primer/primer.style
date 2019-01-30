@@ -1,4 +1,4 @@
-workflow "Linting and Testing" {
+workflow "Linting" {
   on = "push"
   resolves = "lint"
 }
