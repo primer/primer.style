@@ -24,7 +24,7 @@ action "build" {
 }
 
 action "deploy" {
-  uses = "primer/deploy@master"
+  uses = "primer/deploy@alias-rules"
   secrets = ["GITHUB_TOKEN", "NOW_TOKEN"]
   needs = "build"
 }
