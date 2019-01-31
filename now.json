@@ -1,5 +1,6 @@
 {
   "name": "primer-style",
+  "alias": "primer.style",
   "type": "static",
   "static": {
     "trailingSlash": true
