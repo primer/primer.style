@@ -1,4 +1,4 @@
-workflow "Primer.style Actions" {
+workflow "lint, build, deploy" {
   on = "push"
   resolves = [
     "lint",
