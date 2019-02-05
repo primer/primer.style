@@ -26,7 +26,8 @@ const teamContent = [
   When I first started my career, [Frank Chimero](https://frankchimero.com/) was a huge inspiration. His book, [The Shape of Design](https://frankchimero.com/design/the-shape-of-design/), really helped to form my philosophy and approach to problems and how to cultivate a design process. Along with that but not design related, [Jason Fried](https://twitter.com/jasonfried) has been a great inspiration to how I approach work. His book (written alongside David Heinemeier Hansson) [Rework](https://basecamp.com/books/rework) still is the best, no nonsense, business book I've ever read.`,
     favoriteTools: 'Figma, Atom, Keynote, Bear Notes, Spark Mail, Spotify',
     avatar: 'https://user-images.githubusercontent.com/10384315/48450021-61941380-e759-11e8-90e0-7b41f6cbb6e8.jpg',
-    gif: 'https://camo.githubusercontent.com/c325b2b42ec71db51a92d7cdb2a6684824bc0464/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f7854687557686f614e794e426a54474552612f67697068792e676966'
+    gif:
+      'https://camo.githubusercontent.com/c325b2b42ec71db51a92d7cdb2a6684824bc0464/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f7854687557686f614e794e426a54474552612f67697068792e676966'
   },
   {
     name: 'Emily Brick',
@@ -50,7 +51,8 @@ const teamContent = [
      [talk about accessibility at Dinosaur.js](https://www.youtube.com/watch?v=hKIQkgPVXH4), Marcy Sutton, and Anil Dash.`,
     favoriteTools: 'Figma, Notion (for taking notes & planning), React',
     avatar: 'https://user-images.githubusercontent.com/586552/46690198-b4fdc980-cbcf-11e8-95e3-c3e28b69a29c.jpg',
-    gif: 'https://camo.githubusercontent.com/4646a6d24f7c08a84028f83987a8ec8462179c11/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6441775547537553356b7157732f67697068792e676966'
+    gif:
+      'https://camo.githubusercontent.com/4646a6d24f7c08a84028f83987a8ec8462179c11/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6441775547537553356b7157732f67697068792e676966'
   },
   {
     name: 'Shawn Allen',
@@ -61,7 +63,8 @@ const teamContent = [
     questionTwo: `Anyone who has ever contributed to [A List Apart](http://alistapart.com/) or posted to the [webdesign-l](http://www.webdesign-l.com/) mailing list between 1999 and 2005. The [CSS Zen Garden](http://www.csszengarden.com/) was hugely inspirational for me, along with web standards pioneers like Eric Meyer, Mark Pilgrim, and Jeff Zeldman. [Jina](https://twitter.com/jina) is one of the hardest-working people in design systems, and her leadership in the community is a tremendous inspiration. I learned everything I know about SVG from [Sara Soueidan](https://twitter.com/SaraSoueidan), and everything I could _hope_ to know about CSS Grid from [Rachel Andrew](https://twitter.com/rachelandrew) and [Jen Simmons](https://twitter.com/jensimmons). If you want to learn about web components, follow [Monica Dinculescu](https://twitter.com/notwaldorf) and [Mu-An Chiou](https://twitter.com/muanchiou).`,
     favoriteTools: 'Vim, Things, Chrome DevTools, curl',
     avatar: 'https://user-images.githubusercontent.com/586552/46751266-f81b7380-cc87-11e8-8459-2166a1c40f63.jpg',
-    gif: 'https://camo.githubusercontent.com/f96029b65ae0f8a1592b30f5449b7115f6560d98/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f5374695957574e7857635741302f67697068792e676966'
+    gif:
+      'https://camo.githubusercontent.com/f96029b65ae0f8a1592b30f5449b7115f6560d98/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f5374695957574e7857635741302f67697068792e676966'
   },
   {
     name: 'Jon Rohan',

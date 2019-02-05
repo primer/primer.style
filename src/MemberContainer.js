@@ -67,7 +67,16 @@ class Member extends React.Component {
         <MemberQuestions member={member} colorName={colorName} />
         <Flex.Item mb={[6, 8, 8, 0, 0]} css={{flexShrink: 0, position: 'relative'}}>
           <Box mr={isOdd ? [0, 0, 0, 12, 12] : 0} ml={isOdd ? 0 : [0, 0, 12, 12, 12]}>
-            <AvatarShape shape={shape} src={avatarImage} bg={color} href={`https://github.com/${member.handle}`} onMouseOver={this.toggleHoverState.bind(this)} onMouseOut={this.toggleHoverState.bind(this)} />
+            <AvatarShape
+              shape={shape}
+              src={avatarImage}
+              bg={color}
+              href={`https://github.com/${member.handle}`}
+              onFocus={this.toggleHoverState.bind(this)}
+              onBlur={this.toggleHoverState.bind(this)}
+              onMouseOver={this.toggleHoverState.bind(this)}
+              onMouseOut={this.toggleHoverState.bind(this)}
+            />
             <Dots shape={shape} color={color} />
           </Box>
         </Flex.Item>
