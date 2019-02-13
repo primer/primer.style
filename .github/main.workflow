@@ -1,4 +1,4 @@
-workflow "Primer.style Actions" {
+workflow "lint, build, deploy" {
   on = "push"
   resolves = [
     "lint",
@@ -24,7 +24,7 @@ action "build" {
 }
 
 action "deploy" {
-  uses = "primer/deploy@b15189c"
+  uses = "primer/deploy@062a7c7"
   secrets = ["GITHUB_TOKEN", "NOW_TOKEN"]
   needs = "build"
 }
