@@ -1,6 +1,7 @@
 {
   "rules": [
     {"pathname": "/components**", "dest": "primer-components.now.sh"},
+    {"pathname": "/css**", "dest": "primer-css.now.sh"},
     {"dest": "primer-style.now.sh"}
   ]
 }
