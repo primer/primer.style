@@ -8,11 +8,11 @@ Primer illustrations are made up of a collection of various symbols which will b
 
 This is a list of the current symbols used in Primer illustrations
 
-- [Paintbrush](https://www.notion.so/ashygee/Primer-Illustration-Notes-baa141ee3f2e4541b12d65dc7a78dc7e#ec54f2cf2bab4e9ca8b77d389e12d430)
-- [Squiggles](https://www.notion.so/ashygee/Primer-Illustration-Notes-baa141ee3f2e4541b12d65dc7a78dc7e#94db5ca195a14273a0ce8ccb4b04b449)
-- [Dots](https://www.notion.so/ashygee/Primer-Illustration-Notes-baa141ee3f2e4541b12d65dc7a78dc7e#445085d781354572affe061f5b6c70d0)
-- [Geometric Shapes](https://www.notion.so/ashygee/Primer-Illustration-Notes-baa141ee3f2e4541b12d65dc7a78dc7e#99a900b3ae594502aaf9df7724f8ceae)
-- [Code Lines](https://www.notion.so/ashygee/Primer-Illustration-Notes-baa141ee3f2e4541b12d65dc7a78dc7e#3c5d46f85bc7427eaa812f717a07d57f)
+- Paintbrush
+- Squiggles
+- Dots
+- Geometric Shapes
+- Code Lines
 
 ## Paintbrush
 
