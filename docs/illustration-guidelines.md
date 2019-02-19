@@ -1,4 +1,4 @@
-# Primer Illustration Notes
+# Primer Illustration Style Guide
 
 Guidelines for creating Illustrations for Primer
 
