@@ -50,7 +50,3 @@ Code lines are represented by a row of rectangular blocks.
 **Spacing**
 
 - The space between blocks should be on a `base-8` scale and have the same amount of space between on both sides. Please refer to [Primer: Spacing guidelines](https://styleguide.github.com/primer/support/spacing/) for more information. (THESE ARE NOT DEFINITE RIGHT NOW)
-
-# Spacing
-
-We use the same spacing as what is in the Primer guidelines which is at a base of 2. **Do NOT exceed a maximum of 24 pixels if elements are contained within the same component.** 
