@@ -2,9 +2,9 @@
 
 set -e
 
-
 packages=(
   primer
+  @primer/css
   octicons
   @primer/components
 )
@@ -18,7 +18,7 @@ for p in "${packages[@]}"; do
 
   for version in $versions; do
     # Skip any non-major and minor releases
-    echo $version | egrep -q '(^"[0-9]+\.[0-9]+\.[0-9]+\-[^b]|^"[^0-9])' && continue
+    echo $version | egrep -q '(^"[0-9]+\.[0-9]+\.[0-9]+\-|^"[^0-9]|^"[0-9]+\.[0-9]+\.[^0])' && continue
 
     time=$(echo $package | jq -c ".time[$version]" | sed -e "s/\"//g")
 
