@@ -18,9 +18,8 @@ action "lint" {
 }
 
 action "build" {
-  uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
+  uses = "./.github/actions/build"
   needs = "npm install"
-  args = "run build"
 }
 
 action "deploy" {
