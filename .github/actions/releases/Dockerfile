@@ -1,4 +1,4 @@
-FROM node:10-slim
+FROM debian:9.5-slim
 
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
