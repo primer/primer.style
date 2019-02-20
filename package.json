@@ -4,7 +4,8 @@
     "dev": "x0 pages -op 8888",
     "build": "x0 build pages --out-dir docs",
     "start": "serve",
-    "lint": "eslint src pages"
+    "lint": "eslint src pages",
+    "update-releases": "./.github/actions/releases/entrypoint.sh"
   },
   "x0": {
     "title": "Primer open-source projects",
