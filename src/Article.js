@@ -12,6 +12,7 @@ export const iconForType = {
 }
 
 const packageNames = {
+  '@primer/css': 'Primer',
   primer: 'Primer',
   '@primer/components': 'Primer Components',
   octicons: 'Octicons'
