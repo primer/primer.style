@@ -9,46 +9,6 @@
   },
   {
     "type": "release",
-    "title": "primer@10.10.1",
-    "name": "primer",
-    "version": "10.10.1",
-    "url": "https://github.com/primer/primer/releases/tag/v10.10.1",
-    "date": "2018-11-26T00:42:03.294Z"
-  },
-  {
-    "type": "release",
-    "title": "primer@10.10.2",
-    "name": "primer",
-    "version": "10.10.2",
-    "url": "https://github.com/primer/primer/releases/tag/v10.10.2",
-    "date": "2018-11-29T19:11:54.868Z"
-  },
-  {
-    "type": "release",
-    "title": "primer@10.10.3",
-    "name": "primer",
-    "version": "10.10.3",
-    "url": "https://github.com/primer/primer/releases/tag/v10.10.3",
-    "date": "2019-01-08T00:17:13.086Z"
-  },
-  {
-    "type": "release",
-    "title": "primer@10.10.4",
-    "name": "primer",
-    "version": "10.10.4",
-    "url": "https://github.com/primer/primer/releases/tag/v10.10.4",
-    "date": "2019-01-11T23:08:58.191Z"
-  },
-  {
-    "type": "release",
-    "title": "primer@10.10.5",
-    "name": "primer",
-    "version": "10.10.5",
-    "url": "https://github.com/primer/primer/releases/tag/v10.10.5",
-    "date": "2019-01-19T00:13:34.216Z"
-  },
-  {
-    "type": "release",
     "title": "primer@10.3.0",
     "name": "primer",
     "version": "10.3.0",
@@ -81,14 +41,6 @@
   },
   {
     "type": "release",
-    "title": "primer@10.6.1",
-    "name": "primer",
-    "version": "10.6.1",
-    "url": "https://github.com/primer/primer/releases/tag/v10.6.1",
-    "date": "2018-06-19T23:36:02.148Z"
-  },
-  {
-    "type": "release",
     "title": "primer@10.7.0",
     "name": "primer",
     "version": "10.7.0",
@@ -102,14 +54,6 @@
     "version": "10.8.0",
     "url": "https://github.com/primer/primer/releases/tag/v10.8.0",
     "date": "2018-07-27T21:46:44.976Z"
-  },
-  {
-    "type": "release",
-    "title": "primer@10.8.1",
-    "name": "primer",
-    "version": "10.8.1",
-    "url": "https://github.com/primer/primer/releases/tag/v10.8.1",
-    "date": "2018-08-03T18:53:05.802Z"
   },
   {
     "type": "release",
@@ -185,22 +129,6 @@
   },
   {
     "type": "release",
-    "title": "octicons@8.1.2",
-    "name": "octicons",
-    "version": "8.1.2",
-    "url": "https://github.com/primer/octicons/releases/tag/v8.1.2",
-    "date": "2018-11-09T18:15:33.409Z"
-  },
-  {
-    "type": "release",
-    "title": "octicons@8.1.3",
-    "name": "octicons",
-    "version": "8.1.3",
-    "url": "https://github.com/primer/octicons/releases/tag/v8.1.3",
-    "date": "2018-11-16T21:52:15.592Z"
-  },
-  {
-    "type": "release",
     "title": "octicons@8.2.0",
     "name": "octicons",
     "version": "8.2.0",
@@ -225,34 +153,10 @@
   },
   {
     "type": "release",
-    "title": "octicons@8.4.1",
-    "name": "octicons",
-    "version": "8.4.1",
-    "url": "https://github.com/primer/octicons/releases/tag/v8.4.1",
-    "date": "2019-02-08T23:26:12.021Z"
-  },
-  {
-    "type": "release",
-    "title": "octicons@8.4.2",
-    "name": "octicons",
-    "version": "8.4.2",
-    "url": "https://github.com/primer/octicons/releases/tag/v8.4.2",
-    "date": "2019-02-20T17:38:16.461Z"
-  },
-  {
-    "type": "release",
     "title": "@primer/components@10.0.0",
     "name": "@primer/components",
     "version": "10.0.0",
     "url": "https://github.com/primer/components/releases/tag/v10.0.0",
     "date": "2019-02-11T21:22:55.795Z"
-  },
-  {
-    "type": "release",
-    "title": "@primer/components@10.0.1",
-    "name": "@primer/components",
-    "version": "10.0.1",
-    "url": "https://github.com/primer/components/releases/tag/v10.0.1",
-    "date": "2019-02-19T08:11:33.058Z"
   }
 ]

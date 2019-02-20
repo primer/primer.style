@@ -16,7 +16,7 @@ for p in "${packages[@]}"; do
 
   for version in $versions; do
     # Skip any non-major and minor releases
-    echo $version | egrep -q '(^"[0-9]+\.[0-9]+\.[0-9]+\-|^"[^0-9])' && continue
+    echo $version | egrep -q '(^"[0-9]+\.[0-9]+\.[0-9]+\-|^"[^0-9]|^"[0-9]+\.[0-9]+\.[^0])' && continue
 
     time=$(echo $package | jq -c ".time[$version]" | sed -e "s/\"//g")
 
