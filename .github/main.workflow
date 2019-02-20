@@ -18,12 +18,18 @@ action "lint" {
 }
 
 action "build" {
-  uses = "./.github/actions/build"
+  uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
   needs = "npm install"
+  args = "run build"
+}
+
+action "releases" {
+  uses = "./.github/actions/releases"
+  needs = "build"
 }
 
 action "deploy" {
   uses = "primer/deploy@062a7c7"
   secrets = ["GITHUB_TOKEN", "NOW_TOKEN"]
-  needs = "build"
+  needs = "releases"
 }

@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "x0 pages -op 8888",
-    "build": "script/get-release-data && x0 build pages --out-dir docs",
+    "build": "x0 build pages --out-dir docs",
     "start": "serve",
     "lint": "eslint src pages"
   },
