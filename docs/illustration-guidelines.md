@@ -31,7 +31,7 @@ Dot patterns can be used to add some contrast and texture beneath elements. Curr
 Primer illustrations use 4 types of geometric shapes. These shapes are:
 
 - Circle
-- Square*
+- Square<sup><a href="#footnote-1">1</a></sup>
 - Triangle
 - Hexagon
 
