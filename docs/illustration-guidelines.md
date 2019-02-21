@@ -20,7 +20,7 @@ The paintbrush represents the design/artistic side of Primer. It should only app
 
 ## Squiggles
 
-Squiggles come in two styles: 2px stroke/`blue-400` and 1px stroke/`blue-200`. They can vary in size but are typically `40x8` or `20x4`. Squiggles should typically only be horizontal or vertical, but if they are angled please use a 45° angle. 
+Squiggles come in two styles: 2px stroke/`blue-400` and 1px stroke/`blue-200`. They vary in size, but are typically 40x8 or 20x4 pixels. Squiggles may be oriented horizontally, vertically, or at a 45° angle.
 
 ## Dots
 
