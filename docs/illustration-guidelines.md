@@ -6,7 +6,7 @@ Guidelines for creating Illustrations for Primer
 
 Primer illustrations are made up of a collection of various symbols which will be referred to as illustration components in order to maintain consistency between documentation and Figma. These components are meant to come together and represent the connection between Design + Code within the system. 
 
-This is a list of the current symbols used in Primer illustrations
+The symbols used in Primer illustrations are:
 
 - Paintbrush
 - Squiggles
