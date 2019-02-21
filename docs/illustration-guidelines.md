@@ -45,8 +45,8 @@ Code lines are represented by a row of rectangular blocks.
 
 **Dimensions**
 
-- Block width should be at a  `base-8` scale.  Block height should be limited to  `16px`, `24px` or `32px`.  (THESE ARE NOT DEFINITE RIGHT NOW)
+- Block width should be at a  `base-8` scale.  Block height should be limited to  `16px`, `24px` or `32px`.
 
 **Spacing**
 
-- The space between blocks should be on a `base-8` scale and have the same amount of space between on both sides. Please refer to [Primer: Spacing guidelines](https://styleguide.github.com/primer/support/spacing/) for more information. (THESE ARE NOT DEFINITE RIGHT NOW)
+- The space between blocks should be on a `base-8` scale and have the same amount of space between on both sides. Please refer to [Primer: Spacing guidelines](https://styleguide.github.com/primer/support/spacing/) for more information.
