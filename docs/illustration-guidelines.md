@@ -16,7 +16,7 @@ The symbols used in Primer illustrations are:
 
 ## Paintbrush
 
-The paintbrush is used to represent the design/artistic side of Primer. It should only appear once per illustration.
+The paintbrush represents the design/artistic side of Primer. It should only appear once per illustration.
 
 ## Squiggles
 
