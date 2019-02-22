@@ -13,7 +13,8 @@ const teamContent = [
   The field of Graphic Design has a tremendous influence on me, and some of the designers and studios I’m inspired by are: [Natasha Jen](https://www.pentagram.com/about/natasha-jen), [Barron Webster](https://barronwebster.com/), [Maxime Buschi](https://www.youtube.com/watch?v=diBifN7qBgw), [Michael Bierut](https://www.pentagram.com/about/michael-bierut), [Eric Hu](http://erichu.info/), [Micah Barrett](http://micahbarrett.design/), [Draw Down Books](https://draw-down.com/), [Wei Huang](https://twitter.com/w__h_?lang=en), [Josh Schaub](http://joshschaub.ch/), [Morcoskey](https://morcoskey.com/), and [David Rudnik](https://davidrudnick.org/). I’ve always been inspired by those who are experimenting at the intersection of design and technology: [Tristan Harris](http://www.tristanharris.com/), [Brad Frost](http://bradfrost.com/), [Studio No-Plans](https://no-plans.com/), [Marie Otsuka](http://motsuka.com/), [Ben Wilkins](https://twitter.com/thatbenlifetho?lang=en), [Jon Gold](https://jon.gold/), [Bret Victor](http://worrydream.com/),  and [Chris Novello](http://chrisnovello.com/). I also love typography, and have a lot of admiration for type-designers and foundries: [Colophon Foundry](https://www.colophon-foundry.org/), [Kris Sowersby (Klim Type)](https://klim.co.nz/), [Matthew Carter](https://www.myfonts.com/person/Matthew_Carter/), [Richard Lipton](https://lipton.typenetwork.com/), [Lucas Sharp](http://lucassharp.com/), [Grilli Type](https://www.grillitype.com/), and [James Edmondson (OHnotypeco)](https://ohnotype.co/). There’s so many more people that I’ve learned and drawn inspiration from to mention and praise, so feel free to reach out! I’d love to share and discuss. <3`,
     favoriteTools: 'VScode, Figma, Adobe Creative Suite, Zero-Sugar Redbull',
     avatar: 'https://user-images.githubusercontent.com/24916540/47465791-490c8b00-d7a3-11e8-8dc8-9cc968a47b62.jpg',
-    gif: 'https://user-images.githubusercontent.com/24916540/50362777-e2df8280-051d-11e9-8225-a0ed066eac59.gif'
+    gif: 'https://user-images.githubusercontent.com/24916540/50362777-e2df8280-051d-11e9-8225-a0ed066eac59.gif',
+    alumni: true
   },
   {
     name: 'Ash Guillaume',
@@ -27,7 +28,8 @@ const teamContent = [
     favoriteTools: 'Figma, Atom, Keynote, Bear Notes, Spark Mail, Spotify',
     avatar: 'https://user-images.githubusercontent.com/10384315/48450021-61941380-e759-11e8-90e0-7b41f6cbb6e8.jpg',
     gif:
-      'https://camo.githubusercontent.com/c325b2b42ec71db51a92d7cdb2a6684824bc0464/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f7854687557686f614e794e426a54474552612f67697068792e676966'
+      'https://camo.githubusercontent.com/c325b2b42ec71db51a92d7cdb2a6684824bc0464/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f7854687557686f614e794e426a54474552612f67697068792e676966',
+    alumni: false
   },
   {
     name: 'Emily Brick',
@@ -38,7 +40,8 @@ const teamContent = [
     questionTwo: `[Inge Druckrey](https://www.youtube.com/watch?v=ldSkPqZKBl0) and [Edward Tufte](https://www.edwardtufte.com/tufte/books_ei) inspired me to get into design, and introduced me to the world of typographic and informational systems (simultaneously). This talk by [Bret Victor](https://vimeo.com/36579366) helped me feel less alone when I was starting out in the industry; at a time when code and design weren't yet openly intertwined. I’m also inspired by the folks behind [designbetter.co](https://www.designbetter.co/design-systems-handbook) for making knowledge around design systems transparent and available to everyone.  Additionally, and there are too many people to name, people like [Una Kravetz](https://twitter.com/Una?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor), [Sarah Drasner](https://twitter.com/sarah_edo), [Tim Holman](https://twitter.com/twholman), and [Val Head](https://twitter.com/vlh) are always on my radar, keeping the internet weird and creative and continuously pushing the boundaries of what's possible.`,
     favoriteTools: 'Atom, Figma, Bear, Dash, Slack',
     avatar: 'https://user-images.githubusercontent.com/586552/46690197-b4fdc980-cbcf-11e8-9ad2-57894e3dee92.jpg',
-    gif: 'https://user-images.githubusercontent.com/586552/50305051-ba914e80-045f-11e9-9a13-b0e918da2086.gif'
+    gif: 'https://user-images.githubusercontent.com/586552/50305051-ba914e80-045f-11e9-9a13-b0e918da2086.gif',
+    alumni: false
   },
   {
     name: 'Emily Plummer',
@@ -52,7 +55,8 @@ const teamContent = [
     favoriteTools: 'Figma, Notion (for taking notes & planning), React',
     avatar: 'https://user-images.githubusercontent.com/586552/46690198-b4fdc980-cbcf-11e8-95e3-c3e28b69a29c.jpg',
     gif:
-      'https://camo.githubusercontent.com/4646a6d24f7c08a84028f83987a8ec8462179c11/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6441775547537553356b7157732f67697068792e676966'
+      'https://camo.githubusercontent.com/4646a6d24f7c08a84028f83987a8ec8462179c11/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6441775547537553356b7157732f67697068792e676966',
+    alumni: false
   },
   {
     name: 'Shawn Allen',
@@ -64,7 +68,8 @@ const teamContent = [
     favoriteTools: 'Vim, Things, Chrome DevTools, curl',
     avatar: 'https://user-images.githubusercontent.com/586552/46751266-f81b7380-cc87-11e8-8459-2166a1c40f63.jpg',
     gif:
-      'https://camo.githubusercontent.com/f96029b65ae0f8a1592b30f5449b7115f6560d98/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f5374695957574e7857635741302f67697068792e676966'
+      'https://camo.githubusercontent.com/f96029b65ae0f8a1592b30f5449b7115f6560d98/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f5374695957574e7857635741302f67697068792e676966',
+    alumni: false
   },
   {
     name: 'Jon Rohan',
@@ -75,7 +80,8 @@ const teamContent = [
     questionTwo: `Both past and present I have to acknowledge that Nicole Sullivan has been profoundly influential in the way I front-end and write CSS. When she introduced concepts of OOCSS it brought me from thinking very linearly about CSS to a whole new range of systems thinking.`,
     favoriteTools: `Atom, Bash/Shell, Figma, GitHub, iTerm, Javascript, MacBook Pro, Things`,
     avatar: 'https://user-images.githubusercontent.com/586552/46690199-b4fdc980-cbcf-11e8-9f8d-59a694281b70.jpg',
-    gif: 'https://user-images.githubusercontent.com/54012/50536666-fced1680-0b56-11e9-89e6-995cdb01a599.gif'
+    gif: 'https://user-images.githubusercontent.com/54012/50536666-fced1680-0b56-11e9-89e6-995cdb01a599.gif',
+    alumni: false
   },
   {
     name: 'Diana Mounter',
@@ -87,7 +93,8 @@ const teamContent = [
     questionTwo: `I don't have room on this webpage to list everyone! [SMACSS](https://smacss.com/), [The Art and Science of CSS](https://www.amazon.com/Science-Jonathan-Bolton-Cameron-Paperback/dp/B00ZVORUW6), and [Veerle Pieters](http://veerle.duoh.com/) were some early influences. [OOCSS](https://github.com/stubbornella/oocss/wiki) by Nicole Sullivan, [CSS Wizardary](https://csswizardry.com/), [Basscss](http://basscss.com/), [Tachyons](https://tachyons.io/), and [BEM](http://getbem.com/naming/) influenced my approach to CSS architecture. More recently I've been inspired by Rune Madsen's [Programming Design Systems](https://programmingdesignsystems.com), [Compositor](https://github.com/c8r), [Dan Abramov](https://twitter.com/dan_abramov), [Sebastian Markbage](https://youtu.be/4anAwXYqLG8), and so many design and code wonder women like [Many Kerr](https://twitter.com/mandy_kerr), [Marcy Sutton](https://twitter.com/marcysutton), [Lea Verou](https://twitter.com/LeaVerou), [Mina Markham](https://twitter.com/MinaMarkham), [Sarah Drasner](https://twitter.com/sarah_edo) and [Jina Anne](https://twitter.com/jina).`,
     favoriteTools: 'Hyper, Atom, Figma, MDN, and Quip',
     avatar: 'https://user-images.githubusercontent.com/586552/46751001-5c8a0300-cc87-11e8-84bb-9024b03df74f.jpg',
-    gif: 'https://user-images.githubusercontent.com/334891/50363219-bab14d00-0538-11e9-9595-48b3c45358ab.gif'
+    gif: 'https://user-images.githubusercontent.com/334891/50363219-bab14d00-0538-11e9-9595-48b3c45358ab.gif',
+    alumni: false
   }
 ]
 
