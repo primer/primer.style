@@ -7,10 +7,12 @@ import teamContent from '../../src/team-content'
 import TeamImage from '../team-illo.svg'
 
 const shapes = ['hexagon', 'square', 'circle', 'diamond']
+const alumni = teamContent.filter(member => member.alumni)
+const currentMembers = teamContent.filter(member => !member.alumni)
 
-const getMemberContent = () => {
+const getMemberContent = (teamMembers) => {
   let shapeIndex = 0
-  return teamContent.map((member, i) => {
+  return teamMembers.map((member, i) => {
     if (i === shapes.length) shapeIndex = 0
     const element = <MemberContainer key={member.name} shape={shapes[shapeIndex]} isOdd={i % 2 === 0} member={member} />
     shapeIndex++
@@ -51,7 +53,9 @@ const TeamIndex = () => (
           </Flex.Item>
         </Relative>
       </Flex>
-      {getMemberContent()}
+      {getMemberContent(currentMembers)}
+      <Heading fontSize={7} color="blue.4" mb={8}>Alumni</Heading>
+      {getMemberContent(alumni)}
     </Box>
   </Box>
 )
