@@ -54,7 +54,9 @@ const TeamIndex = () => (
         </Relative>
       </Flex>
       {getMemberContent(currentMembers)}
-      <Heading fontSize={7} color="blue.4" mb={8}>Alumni</Heading>
+      <Heading fontSize={5} pb={3} mb={7} lineHeight={1.25} color={'orange.4'}>
+        Alumni
+      </Heading>
       {getMemberContent(alumni)}
     </Box>
   </Box>
