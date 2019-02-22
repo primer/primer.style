@@ -10,7 +10,7 @@ const shapes = ['hexagon', 'square', 'circle', 'diamond']
 const alumni = teamContent.filter(member => member.alumni)
 const currentMembers = teamContent.filter(member => !member.alumni)
 
-const getMemberContent = (teamMembers) => {
+const getMemberContent = teamMembers => {
   let shapeIndex = 0
   return teamMembers.map((member, i) => {
     if (i === shapes.length) shapeIndex = 0
