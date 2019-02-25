@@ -37,7 +37,7 @@ Primer illustrations use 4 types of geometric shapes:
 
 <sup><a name="footnote-1">1</a></sup> The square shape can be rotated 45° to register as a diamond as well.
 
-Shapes should only have a stroke and no fill. The stroke styles are `2px stroke/blue-400` and `1px stroke/blue-200`. When placing shapes next to one another the styling should be different.
+Shapes should only have a stroke and no fill. The stroke styles are 2px stroke/`blue-400` and 1px stroke/`blue-200`. When placing shapes next to one another the styling should be different.
 
 ## Code Lines
 
