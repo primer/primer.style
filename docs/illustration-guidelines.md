@@ -49,4 +49,4 @@ Code lines are represented by a row of rectangular blocks.
 
 **Spacing**
 
-- The space between blocks should be on a `base-8` scale and have the same amount of space between on both sides. Please refer to [Primer: Spacing guidelines](https://styleguide.github.com/primer/support/spacing/) for more information.
+- The space between blocks should be on an 8-pixel scale and have the same amount of space between on both sides. Please refer to the [Primer CSS spacing guidelines](https://primer.style/css/support/spacing) for more information.
