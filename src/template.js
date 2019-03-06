@@ -14,8 +14,14 @@ module.exports = ({html = '', css = '', scripts, title}) =>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width,initial-scale=1' />
   <link rel='stylesheet' href='https://unpkg.com/primer-layout/build/build.css' />
-  <link rel="apple-touch-icon" href="https://user-images.githubusercontent.com/334891/45369221-63075b00-b5b3-11e8-8ac7-7e588fe4c905.png">
-  <link rel="icon" href="https://user-images.githubusercontent.com/334891/45369187-51be4e80-b5b3-11e8-8066-b06025239a79.png">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+  <link rel="icon" sizes="192x192" href="/android-icon.png">
+  <meta name="msapplication-square310x310logo" content="microsoft-icon.png">
   <title>${title}</title>
   <meta name="keywords" content="Design System" />
   <meta property="og:article:author" content="GitHub Design Systems team" />
