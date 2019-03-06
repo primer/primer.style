@@ -59,7 +59,7 @@ function Package({children, icon, href, title, ...rest}) {
         </Box>
       </Flex.Item>
       <Flex.Item px={2}>
-        <Text is="p" fontSize={2}>
+        <Text is="p" fontSize={2} mt={0}>
           {children}
         </Text>
         <LinkLight display="inline-block" href={href}>
