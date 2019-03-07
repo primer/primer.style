@@ -1,28 +1,14 @@
+const icons = require('./icons')
+
 module.exports = ({html = '', css = '', scripts, title}) =>
   `<!DOCTYPE html>
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126681523-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-126681523-1');
-  </script>
-
+  <title>${title}</title>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width,initial-scale=1' />
-  <link rel='stylesheet' href='https://unpkg.com/primer-layout/build/build.css' />
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="touch-icon-iphone.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
-  <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
-  <link rel="icon" sizes="192x192" href="/android-icon.png">
-  <meta name="msapplication-square310x310logo" content="microsoft-icon.png">
-  <title>${title}</title>
+
+  ${icons.join('\n  ')}
+
   <meta name="keywords" content="Design System" />
   <meta property="og:article:author" content="GitHub Design Systems team" />
   <meta property="og:title" content="Primer" />
@@ -34,6 +20,17 @@ module.exports = ({html = '', css = '', scripts, title}) =>
   <meta property="og:image:height" content="630" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:site" content="@githubprimer" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126681523-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-126681523-1');
+  </script>
+
+  <link rel='stylesheet' href='https://unpkg.com/@primer/css/dist/layout.css' />
   ${css}
 </head>
 <body>
