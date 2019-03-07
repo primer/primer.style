@@ -1,6 +1,7 @@
-const {join, basename} = require('path')
-const mkdirp = require('mkdirp')
+/* eslint-disable github/unescaped-html-literal */
+const {join} = require('path')
 const {copyFileSync} = require('fs')
+const mkdirp = require('mkdirp')
 
 const argIndex = process.argv.indexOf('--out-dir')
 const outDir = argIndex > -1 ? process.argv[argIndex + 1] : 'docs'
@@ -13,13 +14,9 @@ const path = file => {
   return `/icons/${file}`
 }
 
-const link = ({rel = 'icon', type = 'image/png', file}) => (
-  `<link rel="${rel}" type="${type}" href="${path(file)}">`
-)
+const link = ({rel = 'icon', type = 'image/png', file}) => `<link rel="${rel}" type="${type}" href="${path(file)}">`
 
-const meta = ({name, file}) => (
-  `<link name="${name}" content="${path(file)}">`
-)
+const meta = ({name, file}) => `<link name="${name}" content="${path(file)}">`
 
 module.exports = [
   link({rel: 'icon', type: 'image/png', file: 'favicon.png'}),
