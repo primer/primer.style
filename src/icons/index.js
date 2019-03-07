@@ -9,7 +9,7 @@ const iconsDir = join(outDir, 'icons')
 mkdirp.sync(iconsDir)
 
 const path = file => {
-  copyFileSync(join(__dirname, file), join(outDir, file))
+  copyFileSync(join(__dirname, file), join(iconsDir, file))
   return `/icons/${file}`
 }
 
