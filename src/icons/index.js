@@ -24,7 +24,7 @@ module.exports = [
   link({rel: 'icon', type: 'image/png', sizes: '96x96', file: 'favicon-96.png'}),
   link({rel: 'icon', type: 'image/png', sizes: '144x144', file: 'favicon-144.png'}),
   link({rel: 'icon', type: 'image/png', sizes: '192x192', file: 'favicon-192.png'}),
-  link({rel: 'apple-touch-icon', sizes:'120x120', file: 'touch-icon-iphone.png'}),
+  link({rel: 'apple-touch-icon', sizes: '120x120', file: 'touch-icon-iphone.png'}),
   link({rel: 'apple-touch-icon', sizes: '152x152', file: 'touch-icon-ipad.png'}),
   link({rel: 'apple-touch-icon', sizes: '167x167', file: 'touch-icon-ipad-retina.png'}),
   link({rel: 'apple-touch-icon', sizes: '180x180', file: 'touch-icon-iphone-retina.png'}),
