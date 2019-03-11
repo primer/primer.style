@@ -9,7 +9,7 @@ const teamContent = [
 
   I also got inspired and learned a lot from methodologies like OOCSS, SMACSS, BEM, SUIT and nowadays CSS-in-JS. The "how to organize CSS" is a challenging, but also interesting problem to solve.`,
     favoriteTools: 'DevTools, Atom, Figma, Sketch, iA Writer, LICEcap, Things, coffee, headphones.',
-    avatar: 'https://avatars.githubusercontent.com/simurai?s=600',
+    avatar: 'https://user-images.githubusercontent.com/378023/54094782-ad448a00-43e6-11e9-93e0-b5960fa86e89.png',
     gif: 'https://user-images.githubusercontent.com/378023/53881412-fbf4cb80-4056-11e9-835b-3b4585e7e203.gif',
     alumni: false
   },
