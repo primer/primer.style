@@ -7,10 +7,12 @@ import teamContent from '../../src/team-content'
 import TeamImage from '../team-illo.svg'
 
 const shapes = ['hexagon', 'square', 'circle', 'diamond']
+const alumni = teamContent.filter(member => member.alumni)
+const currentMembers = teamContent.filter(member => !member.alumni)
 
-const getMemberContent = () => {
+const getMemberContent = teamMembers => {
   let shapeIndex = 0
-  return teamContent.map((member, i) => {
+  return teamMembers.map((member, i) => {
     if (i === shapes.length) shapeIndex = 0
     const element = <MemberContainer key={member.name} shape={shapes[shapeIndex]} isOdd={i % 2 === 0} member={member} />
     shapeIndex++
@@ -33,7 +35,7 @@ const TeamIndex = () => (
             Meet the team
           </Heading>
           <Text is="p" fontSize={3} color="blue.2">
-            The GitHub Design Systems team builds and maintains Primer—this includes our CSS framework, style guide
+            The GitHub Design Systems team builds and maintains Primer — this includes our CSS framework, style guide
             documentation, Octicons, numerous tools and libraries that support design and front-end, and our up-coming
             React.js component library.
           </Text>
@@ -46,12 +48,16 @@ const TeamIndex = () => (
           </Text>
         </Box>
         <Relative width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx={'auto'} mb={[4, 4, 4, 0]}>
-          <Flex.Item px={5}>
+          <Flex.Item px={5} pt={[6, 0, 0, 6]}>
             <TeamImage width="100%" height={null} />
           </Flex.Item>
         </Relative>
       </Flex>
-      {getMemberContent()}
+      {getMemberContent(currentMembers)}
+      <Heading fontSize={5} pb={3} mb={7} lineHeight={1.25} color={'orange.4'}>
+        Alumni
+      </Heading>
+      {getMemberContent(alumni)}
     </Box>
   </Box>
 )
