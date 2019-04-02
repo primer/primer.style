@@ -1,6 +1,6 @@
 const teamContent = [
   {
-    name: 'Simurai',
+    name: 'Simon Lüthi',
     title: 'Systems Designer',
     handle: 'simurai',
     cssFeature: 'fill: currentColor;',
