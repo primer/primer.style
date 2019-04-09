@@ -4,6 +4,7 @@
     {"pathname": "/css**", "dest": "primer-css.now.sh"},
     {"pathname": "/design**", "dest": "primer-design.now.sh"},
     {"pathname": "/blueprints**", "dest": "primer-blueprints.now.sh"},
+    {"pathname": "/presentations**", "dest": "primer-presentations.now.sh"},
     {"dest": "primer-style.now.sh"}
   ]
 }
