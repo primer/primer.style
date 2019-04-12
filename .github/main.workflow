@@ -29,7 +29,7 @@ action "releases" {
 }
 
 action "deploy" {
-  uses = "primer/deploy@062a7c7"
+  uses = "primer/deploy@v2.0.0"
   secrets = ["GITHUB_TOKEN", "NOW_TOKEN"]
   needs = "releases"
 }
