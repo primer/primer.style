@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@githubprimer/octicons-react": "8.1.0",
-    "@primer/blueprints": "0.0.0-65e6574",
+    "@primer/blueprints": "0.0.0-d1abdd7",
     "@primer/components": "4.0.0-beta",
     "emotion": "9.2.6",
     "emotion-theming": "9.2.6",
