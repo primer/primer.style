@@ -3,7 +3,7 @@ import {themeGet} from 'styled-system'
 import {Box, Flex, Text} from '@primer/components'
 import Article, {iconForType} from './Article'
 import Octicon from '@githubprimer/octicons-react'
-import styled from 'react-emotion'
+import styled from 'styled-components'
 
 const FilterButton = styled(props => {
   return (

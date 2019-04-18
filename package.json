@@ -12,17 +12,19 @@
   },
   "dependencies": {
     "@githubprimer/octicons-react": "8.1.0",
+    "@primer/blueprints": "0.0.0-65e6574",
     "@primer/components": "4.0.0-beta",
     "emotion": "9.2.6",
     "emotion-theming": "9.2.6",
     "primer-primitives": "1.0.2",
     "prop-types": "15.6.2",
-    "react": "16.5.0",
-    "react-dom": "16.5.0",
-    "react-emotion": "9.2.6",
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
     "react-markdown": "4.0.1",
+    "styled-components": "4.2.0",
     "styled-system": "3.1.11",
-    "throttle-debounce": "2.0.1"
+    "throttle-debounce": "2.0.1",
+    "webpack-dev-middleware": "3.6.0"
   },
   "devDependencies": {
     "@compositor/x0": "6.0.7",

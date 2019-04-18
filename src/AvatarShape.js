@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box, Link} from '@primer/components'
 import {themeGet, bgColor} from 'styled-system'
-import styled from 'react-emotion'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Circle from './svg/circle.svg'
 import Hexagon from './svg/hexagon.svg'

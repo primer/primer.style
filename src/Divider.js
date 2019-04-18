@@ -1,6 +1,6 @@
 import {Box} from '@primer/components'
 import {themeGet} from 'styled-system'
-import styled from 'react-emotion'
+import styled from 'styled-components'
 
 const Divider = styled(Box)`
   border-top: 2px solid ${themeGet('colors.blue.3')};
