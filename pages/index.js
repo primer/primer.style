@@ -1,7 +1,6 @@
 import React from 'react'
 import {Box} from '@primer/components'
 import styled from 'styled-components'
-import Nav from '../src/Nav'
 import {Header, JumpNav, ResponsiveJumpNav} from '@primer/blueprints'
 import Hero from '../src/Hero'
 import HiringPromo from '../src/HiringPromo'
@@ -11,7 +10,6 @@ import AtomPlugins from '../src/AtomPlugins'
 import OcticonsPromo from '../src/OcticonsPromo'
 import OpenSource from '../src/OpenSource'
 import PrimerReact from '../src/PrimerReact'
-
 
 const Anchor = styled.div`
   display: block;
@@ -23,12 +21,7 @@ const Anchor = styled.div`
 export default function Index() {
   return (
     <Box>
-      <Header
-        root="https://primer.style"
-        title="Primer"
-        subtitle="Blueprints"
-        next
-      >
+      <Header root="https://primer.style" title="Primer" subtitle="Blueprints" next>
         <JumpNav />
       </Header>
       <Hero />

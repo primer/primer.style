@@ -1,10 +1,9 @@
 import React from 'react'
 import {Box, BaseStyles, theme} from '@primer/components'
-import {ThemeProvider} from 'styled-components'
-import {injectGlobal} from 'emotion'
+import {ThemeProvider, createGlobalStyle} from 'styled-components'
 import {initDraggables} from '../src/draggable'
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     &:hover {

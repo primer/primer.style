@@ -1,6 +1,7 @@
 import React from 'react'
+import styled from 'styled-components'
 import {Box, Text, Heading, Flex, Relative} from '@primer/components'
-import Nav from '../../src/Nav'
+import {Header, JumpNav, ResponsiveJumpNav} from '@primer/blueprints'
 import LinkLight from '../../src/LinkLight'
 import MemberContainer from '../../src/MemberContainer'
 import teamContent from '../../src/team-content'
@@ -9,6 +10,12 @@ import TeamImage from '../team-illo.svg'
 const shapes = ['hexagon', 'square', 'circle', 'diamond']
 const alumni = teamContent.filter(member => member.alumni)
 const currentMembers = teamContent.filter(member => !member.alumni)
+const Anchor = styled.div`
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+`
 
 const getMemberContent = teamMembers => {
   let shapeIndex = 0
@@ -22,7 +29,9 @@ const getMemberContent = teamMembers => {
 
 const TeamIndex = () => (
   <Box>
-    <Nav />
+    <Header root="https://primer.style" title="Primer" subtitle="Blueprints" next>
+      <JumpNav />
+    </Header>
     <Box className="container-xl" pt={8} px={5} css={{overflow: 'hidden'}}>
       <Flex
         justifyContent="space-between"
@@ -58,6 +67,10 @@ const TeamIndex = () => (
         Alumni
       </Heading>
       {getMemberContent(alumni)}
+    </Box>
+    <Anchor id="jumpnav" />
+    <Box display={['block', 'block', 'block', 'none']}>
+      <ResponsiveJumpNav />
     </Box>
   </Box>
 )

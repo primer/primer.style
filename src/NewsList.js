@@ -69,9 +69,11 @@ class NewsList extends React.Component {
           </Flex>
         </Text>
         <Box>
-          {items.sort((a, b) => new Date(b.date) - new Date(a.date)).map(article => {
-            return <Article {...article} key={article.url} />
-          })}
+          {items
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .map(article => {
+              return <Article {...article} key={article.url} />
+            })}
         </Box>
       </Box>
     )

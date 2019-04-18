@@ -1,14 +1,24 @@
 import React from 'react'
 import {Box, Text, Heading, Flex, Relative} from '@primer/components'
-import Nav from '../../src/Nav'
+import {Header, JumpNav, ResponsiveJumpNav} from '@primer/blueprints'
+import styled from 'styled-components'
 import whatsNew from '../../src/whats-new'
 import NewsList from '../../src/NewsList'
 import NewsImage from '../news-illo.svg'
 
+const Anchor = styled.div`
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+`
+
 const NewsIndex = () => {
   return (
     <Box>
-      <Nav />
+      <Header root="https://primer.style" title="Primer" subtitle="Blueprints" next>
+        <JumpNav />
+      </Header>
       <Box className="container-xl" pt={8} px={5} style={{overflow: 'hidden'}}>
         <Flex
           justifyContent="space-between"
@@ -33,6 +43,10 @@ const NewsIndex = () => {
           </Relative>
         </Flex>
         <NewsList items={whatsNew} />
+      </Box>
+      <Anchor id="jumpnav" />
+      <Box display={['block', 'block', 'block', 'none']}>
+        <ResponsiveJumpNav />
       </Box>
     </Box>
   )
