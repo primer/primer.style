@@ -7,8 +7,8 @@ import LinkLight from './LinkLight'
 
 export default function OcticonsPromo() {
   return (
-    <Box pb={12} px={5}>
-      <Box style={{textAlign: 'center'}} mb={8} mx="auto" className="container-xl">
+    <Box px={5}>
+      <Flex as={Box} alignItems='center' flexDirection='column' style={{textAlign: 'center'}} mb={8} mx="auto" className="container-xl">
         <Relative as={Box} zIndex={100} mt={[4, 3, 0]} width={[1, 1, 1, 6 / 12]}>
           <Link href="http://octicons.github.com/">
             <Heading lineHeight="1.25" color="blue.4" mb={2} fontSize={7} fontWeight="bold">
@@ -22,12 +22,12 @@ export default function OcticonsPromo() {
             v8.1.0
           </Text>
         </Relative>
-        <Box className="container-lg">
-          <OcticonsImage width="100%" height={null} />
-        </Box>
+      </Flex>
+      <Box pb={6} mx='auto' className="container-lg">
+        <OcticonsImage width="100%" height={null} />
       </Box>
 
-      <Box mx="auto" className="container-xl" color="blue.2">
+      <Box pb={12} mx="auto" className="container-xl" color="blue.2">
         <Flex flexWrap="wrap" mx={-5}>
           <Package icon={FileCode} href="https://github.com/primer/octicons/#javascript" title="JavaScript docs">
             Install the node.js or react.js package via npm to use with your JavaScript project

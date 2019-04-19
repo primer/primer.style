@@ -65,7 +65,7 @@ class Member extends React.Component {
         flexDirection={direction(isOdd)}
       >
         <MemberQuestions member={member} colorName={colorName} />
-        <Flex.Item mb={[6, 8, 8, 0, 0]} css={{flexShrink: 0, position: 'relative'}}>
+        <Flex.Item mb={[6, 8, 8, 0, 0]} style={{flexShrink: 0, position: 'relative'}}>
           <Box mr={isOdd ? [0, 0, 0, 12, 12] : 0} ml={isOdd ? 0 : [0, 0, 12, 12, 12]}>
             <AvatarShape
               shape={shape}

@@ -32,7 +32,7 @@ const TeamIndex = () => (
     <Header root="https://primer.style" title="Primer" subtitle="Blueprints" next>
       <JumpNav />
     </Header>
-    <Box className="container-xl" pt={8} px={5} css={{overflow: 'hidden'}}>
+    <Box className="container-xl" pt={8} px={5} style={{overflow: 'hidden'}}>
       <Flex
         justifyContent="space-between"
         flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']}
@@ -56,7 +56,7 @@ const TeamIndex = () => (
             openings on our team.
           </Text>
         </Box>
-        <Relative width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx={'auto'} mb={[4, 4, 4, 0]}>
+        <Relative as={Box} width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx={'auto'} mb={[4, 4, 4, 0]}>
           <Flex.Item px={5} pt={[6, 0, 0, 6]}>
             <TeamImage width="100%" height={null} />
           </Flex.Item>

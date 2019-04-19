@@ -62,7 +62,7 @@ const Article = ({url, title, description, date, type, name, version}) => {
       </Link>
       <Box mb={3}>
         <Text fontSize={1} fontFamily="mono" color="blue.3">
-          <Octicon icon={articleIcon(type)} size={16} css={{marginRight: '4px'}} />
+          <Octicon icon={articleIcon(type)} size={16} style={{marginRight: '4px'}} />
           <Link color="blue.3" href={url}>
             {articleDomain(url)}
           </Link>
