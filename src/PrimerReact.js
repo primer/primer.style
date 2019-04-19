@@ -5,7 +5,7 @@ import ReactIcon from './ReactIcon.svg'
 
 export default function PrimerReact() {
   return (
-    <Box align="center" px={5} className="container-lg">
+    <Flex alignItems='center' flexDirection='column' px={5} className="container-lg">
       <ReactIcon />
       <Heading fontSize={[4, 5]} mt={2} mb={2} color="blue.4">
         Primer Components
@@ -27,6 +27,6 @@ export default function PrimerReact() {
           View the component library →
         </LinkLight>
       </Flex>
-    </Box>
+    </Flex>
   )
 }

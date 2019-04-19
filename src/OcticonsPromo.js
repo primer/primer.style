@@ -8,8 +8,8 @@ import LinkLight from './LinkLight'
 export default function OcticonsPromo() {
   return (
     <Box pb={12} px={5}>
-      <Box align="center" mb={8} mx="auto" className="container-xl">
-        <Relative zIndex={100} mt={[4, 3, 0]} width={[1, 1, 1, 6 / 12]}>
+      <Box style={{textAlign: 'center'}} mb={8} mx="auto" className="container-xl">
+        <Relative as={Box} zIndex={100} mt={[4, 3, 0]} width={[1, 1, 1, 6 / 12]}>
           <Link href="http://octicons.github.com/">
             <Heading lineHeight="1.25" color="blue.4" mb={2} fontSize={7} fontWeight="bold">
               Octicons
@@ -52,7 +52,7 @@ export default function OcticonsPromo() {
 
 function Package({children, icon, href, title, ...rest}) {
   return (
-    <Flex width={[1, 1, 1, 1 / 3]} px={5} mb={[4, 5, 5, 0]} {...rest}>
+    <Flex as={Box} width={[1, 1, 1, 1 / 3]} px={5} mb={[4, 5, 5, 0]} {...rest}>
       <Flex.Item color="blue.3">
         <Box width={44}>
           <Octicon icon={icon} mr={3} height={40} verticalAlign="top" />

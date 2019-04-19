@@ -17,6 +17,6 @@ IndexGrid.defaultProps = {
   flexWrap: 'wrap'
 }
 
-IndexGrid.Item = props => <Flex.Item width={[1, 1, 1, 6 / 12]} px={5} {...props} />
+IndexGrid.Item = props => <Flex.Item as={Box} width={[1, 1, 1, 6 / 12]} px={5} {...props} />
 
 export default IndexGrid

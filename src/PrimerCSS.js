@@ -43,7 +43,7 @@ export default function PrimerCSS() {
       </IndexGrid>
       <Box px={5} className="container-xl">
         <Flex mx={-5} flexWrap="wrap" alignItems="start">
-          <Flex width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]}>
+          <Flex as={Box} width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]}>
             <Flex.Item color="blue.3" mr={3}>
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </Flex.Item>
@@ -56,7 +56,7 @@ export default function PrimerCSS() {
               </Text>
             </Flex.Item>
           </Flex>
-          <Flex width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]}>
+          <Flex as={Box} width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]}>
             <Flex.Item color="blue.3" mr={3}>
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </Flex.Item>
@@ -69,7 +69,7 @@ export default function PrimerCSS() {
               </Text>
             </Flex.Item>
           </Flex>
-          <Flex width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]} align="top">
+          <Flex as={Box} width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]} align="top">
             <Flex.Item color="blue.3" mr={3}>
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </Flex.Item>
@@ -82,7 +82,7 @@ export default function PrimerCSS() {
               </Text>
             </Flex.Item>
           </Flex>
-          <Flex width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]} align="top">
+          <Flex as={Box} width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]} align="top">
             <Flex.Item color="blue.3" mr={3}>
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </Flex.Item>
