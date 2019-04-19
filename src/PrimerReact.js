@@ -13,7 +13,7 @@ export default function PrimerReact() {
           BETA
         </Text>
       </Heading>
-      <Text is="p" color="blue.2" mb={5} mx={[-2, 0]} fontSize={[2, 3]}>
+      <Text as="p" color="blue.2" mb={5} mx={[-2, 0]} fontSize={[2, 3]}>
         We&#8217;re building a React.js component library for Primer.
       </Text>
       <Flex flexWrap="wrap" alignItems="center" justifyContent="center">

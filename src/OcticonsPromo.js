@@ -15,7 +15,7 @@ export default function OcticonsPromo() {
               Octicons
             </Heading>
           </Link>
-          <Text is="p" color="blue.1" mb={[2, 3]} fontSize={[4, 5]}>
+          <Text as="p" color="blue.1" mb={[2, 3]} fontSize={[4, 5]}>
             Your project. GitHub&#8217;s icons.
           </Text>
           <Text fontSize={2} color="blue.3" fontFamily="mono">
@@ -59,7 +59,7 @@ function Package({children, icon, href, title, ...rest}) {
         </Box>
       </Flex.Item>
       <Flex.Item px={2}>
-        <Text is="p" fontSize={2} mt={0}>
+        <Text as="p" fontSize={2} mt={0}>
           {children}
         </Text>
         <LinkLight display="inline-block" href={href}>

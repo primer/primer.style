@@ -30,7 +30,7 @@ const NewsIndex = () => {
             <Heading fontSize={[48, 56]} color="blue.4" lineHeight={1} mb={3}>
               What’s new
             </Heading>
-            <Text is="p" fontSize={3} color="blue.2">
+            <Text as="p" fontSize={3} color="blue.2">
               Keep up to date with the latest articles, podcasts, releases and talks from the GitHub Design Systems
               team.
             </Text>

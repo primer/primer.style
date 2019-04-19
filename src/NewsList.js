@@ -7,7 +7,7 @@ import styled from 'styled-components'
 
 const FilterButton = styled(props => {
   return (
-    <Flex alignItems="center" is="a" {...props} color={props.selected ? 'blue.2' : 'blue.3'}>
+    <Flex alignItems="center" as="a" {...props} color={props.selected ? 'blue.2' : 'blue.3'}>
       {props.children}
     </Flex>
   )

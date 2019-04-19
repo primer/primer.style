@@ -20,7 +20,7 @@ export default function PrimerCSS() {
           <Heading lineHeight="1.25" color="blue.4" mb={3} fontSize={5} fontWeight="bold">
             Highly reusable, flexible styles
           </Heading>
-          <Text is="p" color="blue.2" mb={5} fontSize={3}>
+          <Text as="p" color="blue.2" mb={5} fontSize={3}>
             Styles can be mixed and matched to achieve many different layouts, independent of their location.
           </Text>
           <ButtonFill my={[2, 0]} mr={2} href="https://styleguide.github.com/primer/">
@@ -29,7 +29,7 @@ export default function PrimerCSS() {
           <ButtonOutline my={[2, 0]} href="https://github.com/primer/primer">
             GitHub
           </ButtonOutline>
-          <Text is="p" fontSize={2} mt={5} color="blue.3" fontFamily="mono">
+          <Text as="p" fontSize={2} mt={5} color="blue.3" fontFamily="mono">
             npm i primer@latest
           </Text>
         </IndexGrid.Item>
@@ -48,10 +48,10 @@ export default function PrimerCSS() {
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </Flex.Item>
             <Flex.Item>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
+              <Text as="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
                 primer
               </Text>
-              <Text is="p" color="blue.2" mb={5} fontSize={3}>
+              <Text as="p" color="blue.2" mb={5} fontSize={3}>
                 This package includes all 30 Primer modules from the core, product, and marketing packages
               </Text>
             </Flex.Item>
@@ -61,10 +61,10 @@ export default function PrimerCSS() {
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </Flex.Item>
             <Flex.Item>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
+              <Text as="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
                 primer-core
               </Text>
-              <Text is="p" color="blue.2" mb={5} fontSize={3}>
+              <Text as="p" color="blue.2" mb={5} fontSize={3}>
                 The core package contains modules that are shared between GitHub product and marketing websites
               </Text>
             </Flex.Item>
@@ -74,10 +74,10 @@ export default function PrimerCSS() {
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </Flex.Item>
             <Flex.Item>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
+              <Text as="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
                 primer-product
               </Text>
-              <Text is="p" color="blue.2" mb={5} fontSize={3}>
+              <Text as="p" color="blue.2" mb={5} fontSize={3}>
                 The product package contains modules that are used on GitHub product websites
               </Text>
             </Flex.Item>
@@ -87,10 +87,10 @@ export default function PrimerCSS() {
               <Octicon icon={Package} height={40} verticalAlign="middle" />
             </Flex.Item>
             <Flex.Item>
-              <Text is="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
+              <Text as="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
                 primer-marketing
               </Text>
-              <Text is="p" color="blue.2" mb={5} fontSize={3}>
+              <Text as="p" color="blue.2" mb={5} fontSize={3}>
                 The marketing package contains modules that are used on GitHub marketing websites
               </Text>
             </Flex.Item>

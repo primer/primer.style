@@ -43,7 +43,7 @@ const TeamIndex = () => (
           <Heading fontSize={[48, 56]} color="blue.4" lineHeight={1} mb={3} mt={[4, 4, 4, 0]}>
             Meet the team
           </Heading>
-          <Text is="p" fontSize={3} color="blue.2">
+          <Text as="p" fontSize={3} color="blue.2">
             The GitHub Design Systems team builds and maintains Primer — this includes our CSS framework, style guide
             documentation, Octicons, numerous tools and libraries that support design and front-end, and our up-coming
             React.js component library.

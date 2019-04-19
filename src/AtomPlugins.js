@@ -15,7 +15,7 @@ export default function AtomPlugins() {
         <Heading color="blue.4" mb={3} pr={[0, 0, 0, 3]} fontSize={5} lineHeight="1.25" fontWeight="bold">
           A better development experience with Atom
         </Heading>
-        <Text color="blue.2" is="p" fontSize={3} mb={5} pr={[0, 0, 0, 3]}>
+        <Text color="blue.2" as="p" fontSize={3} mb={5} pr={[0, 0, 0, 3]}>
           Install this custom Atom package to autocomplete classnames for Primer CSS and rails helpers for Octicons
         </Text>
         <ButtonFill my={[2, 0]} mr={2} href="https://atom.io/packages/autocomplete-primer">
@@ -24,7 +24,7 @@ export default function AtomPlugins() {
         <ButtonOutline my={[2, 0]} href="https://atom.io/">
           Get Atom
         </ButtonOutline>
-        <Text is="p" fontSize={2} mt={5} color="blue.3" fontFamily="mono">
+        <Text as="p" fontSize={2} mt={5} color="blue.3" fontFamily="mono">
           apm install autocomplete-primer
         </Text>
       </IndexGrid.Item>

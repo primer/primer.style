@@ -16,7 +16,7 @@ export default function OpenSource() {
           <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight="bold">
             Open source
           </Heading>
-          <Text is="p" color="black" mb={5} fontSize={4}>
+          <Text as="p" color="black" mb={5} fontSize={4}>
             Primer is open-sourced on GitHub. Contributions and feedback are welcome!
           </Text>
           <ButtonFillDark mr={2} href="https://github.com/primer">
@@ -44,14 +44,14 @@ export default function OpenSource() {
       </IndexGrid>
       <Box color="black" px={5} mx="auto" className="container-xl">
         <Box mt={12} py={5} borderTop={2} borderColor="black">
-          <Text pr={1} is="span">
+          <Text pr={1} as="span">
             Created and maintained by GitHub&#8217;s
           </Text>
           <LinkDark fontWeight="bold" href="https://primer.style/team">
             Design Systems team
           </LinkDark>
           <Text>.</Text>
-          <Text is="p">Copyright GitHub 2018.</Text>
+          <Text as="p">Copyright GitHub 2018.</Text>
         </Box>
       </Box>
     </Box>

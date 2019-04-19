@@ -69,7 +69,7 @@ const Article = ({url, title, description, date, type, name, version}) => {
           &nbsp;&middot; {articleDate(date)}
         </Text>
       </Box>
-      <Text is="p" mt={0} mb={1} color="blue.2" fontSize={3}>
+      <Text as="p" mt={0} mb={1} color="blue.2" fontSize={3}>
         {getDescription(description)}
       </Text>
     </Box>
