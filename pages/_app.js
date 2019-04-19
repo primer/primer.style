@@ -25,6 +25,7 @@ export default class Page extends React.Component {
     const {children} = this.props
     return (
       <BaseStyles>
+        <GlobalStyle/>
         <ThemeProvider theme={theme}>
           <Box bg="black" color="blue.2">
             {children}
