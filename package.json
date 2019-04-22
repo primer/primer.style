@@ -17,7 +17,7 @@
     "webpack-dev-middleware": "3.6.0"
   },
   "devDependencies": {
-    "@primer/blueprints": "4.0.0",
+    "@primer/blueprints": "0.0.0-fc37f1d",
     "@primer/components": "12.0.2",
     "@svgr/webpack": "2.3.0",
     "babel-core": "6.26.3",
