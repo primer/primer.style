@@ -31,16 +31,10 @@ export default class MyDocument extends Document {
           <meta property="twitter:site" content="@githubprimer" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126681523-1"></script>
           <link rel='stylesheet' href='https://unpkg.com/@primer/css/dist/layout.css' />
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-126681523-1');
-          </script>
           {renderedStyles}
         </Head>
         <body data-files={JSON.stringify(files)}>
-          <div id="root" class="overflow-hidden">
+          <div id="root" className="overflow-hidden">
             <Main />
             <NextScript />
           </div>

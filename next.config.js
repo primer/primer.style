@@ -23,7 +23,12 @@ module.exports = (nextConfig = {}) => {
 
       config.module.rules.push({
         test: /\.svg$/,
-        use: '@svgr/webpack'
+        use: {
+          loader: '@svgr/webpack',
+          options: {
+            svgo: false
+          }
+        }
       })
 
       configured = true
