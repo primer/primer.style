@@ -23,7 +23,7 @@ export default function OcticonsPromo() {
           </Text>
         </Relative>
       </Flex>
-      <Box pb={6} mx='auto' className="container-lg">
+      <Box mb={64} mx='auto' className="container-lg">
         <OcticonsImage width="100%" height={null} />
       </Box>
 

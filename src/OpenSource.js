@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Heading, Text} from '@primer/components'
+import {Box, BorderBox, Heading, Text} from '@primer/components'
 import {Octoface, MarkGithub} from '@githubprimer/octicons-react'
 import Octicon from './Octicon'
 import ButtonFillDark from './ButtonFillDark'
@@ -43,7 +43,7 @@ export default function OpenSource() {
         </IndexGrid.Item>
       </IndexGrid>
       <Box color="black" px={5} mx="auto" className="container-xl">
-        <Box mt={12} py={5} borderTop={2} borderColor="black">
+        <BorderBox mt={12} py={5} borderTop={2} borderBottom='none' borderLeft='none' borderRight='none' borderColor="black">
           <Text pr={1} as="span">
             Created and maintained by GitHub&#8217;s
           </Text>
@@ -52,7 +52,7 @@ export default function OpenSource() {
           </LinkDark>
           <Text>.</Text>
           <Text as="p">Copyright GitHub 2018.</Text>
-        </Box>
+        </BorderBox>
       </Box>
     </Box>
   )
