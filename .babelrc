@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    "macros",
+    "add-react-displayname",
+    "babel-plugin-styled-components"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        ["next/babel", {"preset-env": {"modules": "commonjs"}}]
+      ]
+    }
+  }
+}

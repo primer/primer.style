@@ -24,14 +24,16 @@ export default class Page extends React.Component {
   render() {
     const {children} = this.props
     return (
-      <BaseStyles style={{fontFamily: theme.fonts.normal}}>
+      <div>
         <GlobalStyle />
         <ThemeProvider theme={theme}>
-          <Box bg="black" color="blue.2">
-            {children}
-          </Box>
+          <BaseStyles style={{fontFamily: theme.fonts.normal}}>
+            <Box bg="black" color="blue.2">
+              {children}
+            </Box>
+          </BaseStyles>
         </ThemeProvider>
-      </BaseStyles>
+      </div>
     )
   }
 }
