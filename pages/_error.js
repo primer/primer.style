@@ -4,6 +4,7 @@ import {redirectTrailingSlash} from '../redirect'
 
 export default class Error extends React.Component {
   static getInitialProps(context) {
+    // redirect trailing slash URLs to "clean" ones without
     return redirectTrailingSlash(context) || getErrorProps(context)
   }
 
