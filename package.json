@@ -13,14 +13,12 @@
     "react-markdown": "4.0.1",
     "styled-components": "4.2.0",
     "styled-system": "3.1.11",
-    "throttle-debounce": "2.0.1",
-    "webpack-dev-middleware": "3.6.0"
+    "throttle-debounce": "2.0.1"
   },
   "devDependencies": {
-    "@primer/blueprints": "0.0.0-fc37f1d",
+    "@primer/blueprints": "4.0.0",
     "@primer/components": "12.0.2",
-    "@svgr/webpack": "2.3.0",
-    "babel-core": "6.26.3",
+    "@svgr/webpack": "2.4.1",
     "babel-plugin-add-react-displayname": "0.0.5",
     "eslint": "5.6.1",
     "eslint-plugin-github": "1.4.0",
@@ -29,7 +27,6 @@
     "now": "11.4.6",
     "now-github-url": "0.1.2",
     "react": "16.8.0",
-    "react-dom": "16.8.1",
-    "serve": "10.1.2"
+    "react-dom": "16.8.1"
   }
 }
