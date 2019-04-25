@@ -24,13 +24,16 @@ export default class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://primer.style" />
           <meta property="og:description" content="The design system that powers GitHub" />
-          <meta property="og:image" content="https://user-images.githubusercontent.com/10384315/53922681-2f6d3100-402a-11e9-9719-5d1811c8110a.png" />
+          <meta
+            property="og:image"
+            content="https://user-images.githubusercontent.com/10384315/53922681-2f6d3100-402a-11e9-9719-5d1811c8110a.png"
+          />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:site" content="@githubprimer" />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126681523-1"></script>
-          <link rel='stylesheet' href='https://unpkg.com/@primer/css/dist/layout.css' />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126681523-1" />
+          <link rel="stylesheet" href="https://unpkg.com/@primer/css/dist/layout.css" />
           {renderedStyles}
         </Head>
         <body data-files={JSON.stringify(files)}>

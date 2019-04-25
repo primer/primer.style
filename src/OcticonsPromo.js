@@ -8,7 +8,15 @@ import LinkLight from './LinkLight'
 export default function OcticonsPromo() {
   return (
     <Box px={5}>
-      <Flex as={Box} alignItems='center' flexDirection='column' style={{textAlign: 'center'}} mb={8} mx="auto" className="container-xl">
+      <Flex
+        as={Box}
+        alignItems="center"
+        flexDirection="column"
+        style={{textAlign: 'center'}}
+        mb={8}
+        mx="auto"
+        className="container-xl"
+      >
         <Relative as={Box} zIndex={100} mt={[4, 3, 0]} width={[1, 1, 1, 6 / 12]}>
           <Link href="http://octicons.github.com/">
             <Heading lineHeight="1.25" color="blue.4" mb={2} fontSize={7} fontWeight="bold">
@@ -23,7 +31,7 @@ export default function OcticonsPromo() {
           </Text>
         </Relative>
       </Flex>
-      <Box mb={64} mx='auto' className="container-lg">
+      <Box mb={64} mx="auto" className="container-lg">
         <OcticonsImage width="100%" height={null} />
       </Box>
 

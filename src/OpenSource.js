@@ -43,7 +43,15 @@ export default function OpenSource() {
         </IndexGrid.Item>
       </IndexGrid>
       <Box color="black" px={5} mx="auto" className="container-xl">
-        <BorderBox mt={12} py={5} borderTop={2} borderBottom='none' borderLeft='none' borderRight='none' borderColor="black">
+        <BorderBox
+          mt={12}
+          py={5}
+          borderTop={2}
+          borderBottom="none"
+          borderLeft="none"
+          borderRight="none"
+          borderColor="black"
+        >
           <Text pr={1} as="span">
             Created and maintained by GitHub&#8217;s
           </Text>

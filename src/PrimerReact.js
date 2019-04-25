@@ -1,11 +1,11 @@
 import React from 'react'
-import {Box, Flex, Heading, Text, Link} from '@primer/components'
+import {Flex, Heading, Text, Link} from '@primer/components'
 import LinkLight from './LinkLight'
 import ReactIcon from './ReactIcon.svg'
 
 export default function PrimerReact() {
   return (
-    <Flex alignItems='center' flexDirection='column' px={5} className="container-lg">
+    <Flex alignItems="center" flexDirection="column" px={5} className="container-lg">
       <ReactIcon />
       <Heading fontSize={[4, 5]} mt={2} mb={2} color="blue.4">
         Primer Components

@@ -1,8 +1,8 @@
 import React from 'react'
 import {Box, BaseStyles, theme} from '@primer/components'
-import {ThemeProvider, createGlobalStyle} from 'styled-components'
+import styled, {ThemeProvider, createGlobalStyle} from 'styled-components'
 import {initDraggables} from '../src/draggable'
-import styled from 'styled-components'
+
 import {Header, JumpNav, ResponsiveJumpNav} from '@primer/blueprints'
 import Hero from '../src/Hero'
 import HiringPromo from '../src/HiringPromo'
@@ -19,7 +19,6 @@ const Anchor = styled.div`
   top: -70px;
   visibility: hidden;
 `
-
 
 const GlobalStyle = createGlobalStyle`
   a {
@@ -40,7 +39,6 @@ export default class Page extends React.Component {
   }
 
   render() {
-    const {children} = this.props
     return (
       <div>
         <GlobalStyle />
