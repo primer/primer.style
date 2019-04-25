@@ -31,6 +31,10 @@ module.exports = (nextConfig = {}) => {
         }
       })
 
+      config.node = {
+          fs: 'empty'
+      }
+
       configured = true
       if (typeof nextConfig.webpack === 'function') {
         return nextConfig.webpack(config, options)
