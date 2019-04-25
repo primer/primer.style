@@ -47,7 +47,7 @@ export default class Page extends React.Component {
         <ThemeProvider theme={theme}>
           <BaseStyles style={{fontFamily: theme.fonts.normal}}>
             <Box bg="black" color="blue.2">
-              <Header root="https://primer.style" title="Primer" subtitle="Blueprints" next>
+              <Header root="https://primer.style" title="Primer" subtitle="Blueprints">
                 <JumpNav />
               </Header>
               <Hero />
