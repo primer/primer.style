@@ -42,7 +42,7 @@ export default function OcticonsPromo() {
             href="https://www.figma.com/file/FP7lqd1V00LUaT5zvdklkkZr/Octicons/duplicate"
             title="Open in Figma"
           >
-            Use SVG&#8217;s or Figma components in your design projects
+            Use SVGs or Figma components in your design projects
           </Package>
         </Flex>
       </Box>
