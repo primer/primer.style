@@ -21,7 +21,6 @@ We're working on updating our websites, domains, and npm package names so that i
 
 #### Team
 - [@ashygee](https://github.com/ashygee)
-- [@jhuashao](https://github.com/jhuashao)
 - [@emilybrick](https://github.com/emilybrick)
 - [@emplums](https://github.com/emplums)
 - [@shawnbot](https://github.com/shawnbot)
