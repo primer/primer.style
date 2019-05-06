@@ -1,6 +1,6 @@
 import React from 'react'
 import {Heading} from '@primer/components'
-import {redirectTrailingSlash} from '@primer/blueprints/next-components'
+import {redirectTrailingSlash} from './redirect.js'
 
 export default class Error extends React.Component {
   static getInitialProps(context) {

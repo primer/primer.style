@@ -1,14 +1,4 @@
 import Router from 'next/router'
-
-/**
- * Export this as your default from a page, and it'll redirect both server-
- * and client-side:
- *
- * ```js
- * import {redirect} from '../next-components/utils'
- * export default redirect('/some/path')
- * ```
- */
 export function redirect(uri, status = 303) {
   return class {
     static getInitialProps({res}) {
