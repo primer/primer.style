@@ -1,7 +1,6 @@
 {
   "version": 1,
   "name": "primer-style",
-  "type": "static",
   "alias": "primer-style.now.sh",
   "files": [
     "pages",
