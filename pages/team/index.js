@@ -1,6 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
-import {Box, Text, Heading, Flex, Relative} from '@primer/components'
+import styled, {ThemeProvider} from 'styled-components'
+import {Box, Text, Heading, Flex, Relative, theme, BaseStyles} from '@primer/components'
 import {Header, JumpNav, ResponsiveJumpNav} from '@primer/blueprints'
 import LinkLight from '../../src/LinkLight'
 import MemberContainer from '../../src/MemberContainer'
@@ -28,51 +28,55 @@ const getMemberContent = teamMembers => {
 }
 
 const TeamIndex = () => (
-  <Box>
-    <Header root="https://primer.style" title="Primer" subtitle="Blueprints" next>
-      <JumpNav />
-    </Header>
-    <Box className="container-xl" pt={8} px={5} style={{overflow: 'hidden'}}>
-      <Flex
-        justifyContent="space-between"
-        flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']}
-        mb={10}
-        mx={-5}
-      >
-        <Box width={[1, 1, 1, 7 / 12]} pt={[0, 0, 0, 8]} pb={[8, 8, 8, 12]} px={5}>
-          <Heading fontSize={[48, 56]} color="blue.4" lineHeight={1} mb={3} mt={[4, 4, 4, 0]}>
-            Meet the team
-          </Heading>
-          <Text as="p" fontSize={3} color="blue.2">
-            The GitHub Design Systems team builds and maintains Primer — this includes our CSS framework, style guide
-            documentation, Octicons, numerous tools and libraries that support design and front-end, and our up-coming
-            React.js component library.
-          </Text>
+  <BaseStyles>
+    <ThemeProvider theme={theme}>
+      <Box bg="black" color="blue.2">
+        <Header root="https://primer.style" title="Primer" subtitle="Blueprints" next>
+          <JumpNav />
+        </Header>
+        <Box className="container-xl" pt={8} px={5} style={{overflow: 'hidden'}}>
+          <Flex
+            justifyContent="space-between"
+            flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']}
+            mb={10}
+            mx={-5}
+          >
+            <Box width={[1, 1, 1, 7 / 12]} pt={[0, 0, 0, 8]} pb={[8, 8, 8, 12]} px={5}>
+              <Heading fontSize={[48, 56]} color="blue.4" lineHeight={1} mb={3} mt={[4, 4, 4, 0]}>
+                Meet the team
+              </Heading>
+              <Text as="p" fontSize={3} color="blue.2">
+                The GitHub Design Systems team builds and maintains Primer — this includes our CSS framework, style guide
+                documentation, Octicons, numerous tools and libraries that support design and front-end, and our up-coming
+                React.js component library.
+              </Text>
 
-          <Text fontSize={3} color="blue.2">
-            Our team officially formed in early 2016 with just two team members, and keeps on growing, with
-            opportunities for apprenticeships and internships in the future. Keep an eye on the GitHub&nbsp;
-            <LinkLight href="https://github.com/about/careers">careers page</LinkLight> if you’re interested in new
-            openings on our team.
-          </Text>
+              <Text fontSize={3} color="blue.2">
+                Our team officially formed in early 2016 with just two team members, and keeps on growing, with
+                opportunities for apprenticeships and internships in the future. Keep an eye on the GitHub&nbsp;
+                <LinkLight href="https://github.com/about/careers">careers page</LinkLight> if you’re interested in new
+                openings on our team.
+              </Text>
+            </Box>
+            <Relative as={Box} width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx={'auto'} mb={[4, 4, 4, 0]}>
+              <Flex.Item px={5} pt={[6, 0, 0, 6]}>
+                <TeamImage width="100%" height={null} />
+              </Flex.Item>
+            </Relative>
+          </Flex>
+          {getMemberContent(currentMembers)}
+          <Heading fontSize={5} pb={3} mb={7} lineHeight={1.25} color={'orange.4'}>
+            Alumni
+          </Heading>
+          {getMemberContent(alumni)}
         </Box>
-        <Relative as={Box} width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx={'auto'} mb={[4, 4, 4, 0]}>
-          <Flex.Item px={5} pt={[6, 0, 0, 6]}>
-            <TeamImage width="100%" height={null} />
-          </Flex.Item>
-        </Relative>
-      </Flex>
-      {getMemberContent(currentMembers)}
-      <Heading fontSize={5} pb={3} mb={7} lineHeight={1.25} color={'orange.4'}>
-        Alumni
-      </Heading>
-      {getMemberContent(alumni)}
-    </Box>
-    <Anchor id="jumpnav" />
-    <Box display={['block', 'block', 'block', 'none']}>
-      <ResponsiveJumpNav />
-    </Box>
-  </Box>
+        <Anchor id="jumpnav" />
+        <Box display={['block', 'block', 'block', 'none']}>
+          <ResponsiveJumpNav />
+        </Box>
+      </Box>
+    </ThemeProvider>
+  </BaseStyles>
 )
 
 export default TeamIndex
