@@ -40,7 +40,7 @@ export default class Page extends React.Component {
 
   render() {
     return (
-      <div>
+      <Box bg="black" color="blue.2">
         <GlobalStyle />
         <ThemeProvider theme={theme}>
           <BaseStyles style={{fontFamily: theme.fonts.normal}}>
@@ -67,7 +67,7 @@ export default class Page extends React.Component {
             </Box>
           </BaseStyles>
         </ThemeProvider>
-      </div>
+      </Box>
     )
   }
 }

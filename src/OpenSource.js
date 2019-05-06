@@ -1,7 +1,6 @@
 import React from 'react'
-import {Box, BorderBox, Heading, Text} from '@primer/components'
+import {Box, BorderBox, Heading, Text, StyledOcticon} from '@primer/components'
 import {Octoface, MarkGithub} from '@githubprimer/octicons-react'
-import Octicon from './Octicon'
 import ButtonFillDark from './ButtonFillDark'
 import TwitterIcon from './TwitterIcon'
 import SpectrumIcon from './SpectrumIcon'
@@ -20,7 +19,7 @@ export default function OpenSource() {
             Primer is open-sourced on GitHub. Contributions and feedback are welcome!
           </Text>
           <ButtonFillDark mr={2} href="https://github.com/primer">
-            <Octicon icon={MarkGithub} size={20} verticalAlign="text-bottom" mr={2} />
+            <StyledOcticon icon={MarkGithub} size={20} verticalAlign="text-bottom" mr={2} />
             Contribute on GitHub
           </ButtonFillDark>
         </IndexGrid.Item>
@@ -29,15 +28,15 @@ export default function OpenSource() {
             Keep in touch
           </Heading>
           <LinkDark pt={1} fontSize={2} mb={3} display="block" href="https://twitter.com/githubprimer">
-            <Octicon icon={TwitterIcon} size={20} verticalAlign="top" mr={2} />
+            <StyledOcticon icon={TwitterIcon} size={20} verticalAlign="top" mr={2} />
             Follow us on Twitter
           </LinkDark>
           <LinkDark fontSize={2} mb={3} display="block" href="https://spectrum.chat/primer">
-            <Octicon icon={SpectrumIcon} size={20} verticalAlign="top" mr={2} />
+            <StyledOcticon icon={SpectrumIcon} size={20} verticalAlign="top" mr={2} />
             Chat with us in Spectrum
           </LinkDark>
           <LinkDark fontSize={2} mb={3} display="block" href="https://github.com/primer/primer/issues/new/choose">
-            <Octicon icon={Octoface} size={20} verticalAlign="text-top" mr={2} />
+            <StyledOcticon icon={Octoface} size={20} verticalAlign="text-top" mr={2} />
             Share feedback on GitHub
           </LinkDark>
         </IndexGrid.Item>
