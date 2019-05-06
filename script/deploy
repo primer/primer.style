@@ -1,6 +1,0 @@
-#!/bin/bash
-set -e
-now $*
-# XXX this needs to match up with the last `dest` in rules.json
-now $* alias primer-style.now.sh
-now $* alias primer.style -r rules.json

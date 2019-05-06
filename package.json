@@ -1,38 +1,31 @@
 {
   "private": true,
   "scripts": {
-    "dev": "x0 pages -op 8888",
-    "build": "x0 build pages --out-dir docs",
-    "start": "serve",
+    "start": "next dev",
+    "now-build": "next build",
+    "now-start": "next start",
     "lint": "eslint src pages"
-  },
-  "x0": {
-    "title": "Primer open-source projects",
-    "template": "./src/template.js"
   },
   "dependencies": {
     "@githubprimer/octicons-react": "8.1.0",
-    "@primer/components": "4.0.0-beta",
-    "emotion": "9.2.6",
-    "emotion-theming": "9.2.6",
     "primer-primitives": "1.0.2",
     "prop-types": "15.6.2",
-    "react": "16.5.0",
-    "react-dom": "16.5.0",
-    "react-emotion": "9.2.6",
     "react-markdown": "4.0.1",
+    "styled-components": "4.2.0",
     "styled-system": "3.1.11",
     "throttle-debounce": "2.0.1"
   },
   "devDependencies": {
-    "@compositor/x0": "6.0.7",
-    "@svgr/webpack": "2.3.0",
-    "babel-plugin-emotion": "9.2.6",
+    "@primer/blueprints": "4.0.1",
+    "@primer/components": "12.0.2",
+    "@svgr/webpack": "2.4.1",
+    "babel-plugin-add-react-displayname": "0.0.5",
     "eslint": "5.6.1",
     "eslint-plugin-github": "1.4.0",
     "mkdirp": "0.5.1",
-    "now": "11.4.6",
+    "next": "7.0.2",
     "now-github-url": "0.1.2",
-    "serve": "10.1.2"
+    "react": "16.8.0",
+    "react-dom": "16.8.1"
   }
 }

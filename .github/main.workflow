@@ -1,30 +1,24 @@
-workflow "lint, build, deploy" {
+workflow "Primer.style Workflow" {
   on = "push"
   resolves = [
-    "lint",
+    "npm lint",
     "deploy",
   ]
 }
 
 action "npm install" {
-  uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
+  uses = "actions/npm@v2.0.0"
   args = "ci"
 }
 
-action "lint" {
-  uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
-  needs = "npm install"
+action "npm lint" {
+  uses = "actions/npm@v2.0.0"
+  needs = ["npm install"]
   args = "run lint"
 }
 
-action "build" {
-  uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
-  needs = "npm install"
-  args = "run build"
-}
-
 action "deploy" {
-  uses = "primer/deploy@v2.0.0"
+  uses = "primer/deploy@v3.0.0"
+  needs = ["npm install"]
   secrets = ["GITHUB_TOKEN", "NOW_TOKEN"]
-  needs = "build"
 }

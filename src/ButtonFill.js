@@ -2,7 +2,7 @@
 
 import {Link} from '@primer/components'
 import {space, themeGet} from 'styled-system'
-import styled from 'react-emotion'
+import styled from 'styled-components'
 
 const ButtonFill = styled(Link)`
   color: ${themeGet('colors.black')} !important;

@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Box, Link, Text, Heading} from '@primer/components'
-import Octicon from './Octicon'
+import {Box, Link, Text, Heading, StyledOcticon} from '@primer/components'
 import {Note, Tag, LinkExternal, Megaphone, Broadcast} from '@githubprimer/octicons-react'
 
 export const iconForType = {
@@ -62,14 +61,14 @@ const Article = ({url, title, description, date, type, name, version}) => {
       </Link>
       <Box mb={3}>
         <Text fontSize={1} fontFamily="mono" color="blue.3">
-          <Octicon icon={articleIcon(type)} size={16} css={{marginRight: '4px'}} />
+          <StyledOcticon icon={articleIcon(type)} size={16} mr={1} />
           <Link color="blue.3" href={url}>
             {articleDomain(url)}
           </Link>
           &nbsp;&middot; {articleDate(date)}
         </Text>
       </Box>
-      <Text is="p" mt={0} mb={1} color="blue.2" fontSize={3}>
+      <Text as="p" mt={0} mb={1} color="blue.2" fontSize={3}>
         {getDescription(description)}
       </Text>
     </Box>
