@@ -23,7 +23,6 @@
     "eslint": "5.6.1",
     "eslint-plugin-github": "1.4.0",
     "mkdirp": "0.5.1",
-    "next": "7.0.2",
     "now-github-url": "0.1.2",
     "react": "16.8.0",
     "react-dom": "16.8.1"
