@@ -1,5 +1,4 @@
 *.log
 .DS_Store
-docs/
 node_modules/
 .next/
