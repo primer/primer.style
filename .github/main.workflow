@@ -20,7 +20,7 @@ action "lint" {
 action "build" {
   uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
   needs = "npm install"
-  args = "run build"
+  args = "run now-build"
 }
 
 action "deploy" {
