@@ -16,7 +16,7 @@
     "throttle-debounce": "2.0.1"
   },
   "devDependencies": {
-    "@primer/blueprints": "4.0.0",
+    "@primer/blueprints": "4.0.1",
     "@primer/components": "12.0.2",
     "@svgr/webpack": "2.4.1",
     "babel-plugin-add-react-displayname": "0.0.5",
