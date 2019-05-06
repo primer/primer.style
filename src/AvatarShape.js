@@ -64,7 +64,7 @@ const A = styled(Box)`
 const ShapeOutline = styled(Link)`
   padding: 2px;
   position: relative;
-  background: transparent!important;
+  background: transparent !important;
   display: block;
   &:after {
     content: '';
