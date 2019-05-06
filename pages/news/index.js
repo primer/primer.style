@@ -1,8 +1,8 @@
 import React from 'react'
-import {ThemeProvider} from 'styled-components'
+import styled, {ThemeProvider} from 'styled-components'
 import {Box, Text, Heading, theme, Flex, Relative, BaseStyles} from '@primer/components'
 import {Header, JumpNav, ResponsiveJumpNav} from '@primer/blueprints'
-import styled from 'styled-components'
+
 import whatsNew from '../../src/whats-new'
 import NewsList from '../../src/NewsList'
 import NewsImage from '../news-illo.svg'
@@ -52,7 +52,8 @@ const NewsIndex = () => {
             <ResponsiveJumpNav />
           </Box>
         </Box>
-      </ThemeProvider>>
+      </ThemeProvider>
+      >
     </BaseStyles>
   )
 }

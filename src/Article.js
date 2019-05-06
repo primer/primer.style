@@ -61,7 +61,7 @@ const Article = ({url, title, description, date, type, name, version}) => {
       </Link>
       <Box mb={3}>
         <Text fontSize={1} fontFamily="mono" color="blue.3">
-          <StyledOcticon icon={articleIcon(type)} size={16} mr={1}/>
+          <StyledOcticon icon={articleIcon(type)} size={16} mr={1} />
           <Link color="blue.3" href={url}>
             {articleDomain(url)}
           </Link>
