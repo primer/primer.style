@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "start": "next dev",
-    "build": "next build",
+    "now-build": "next build",
     "now-start": "next start",
     "lint": "eslint src pages"
   },
