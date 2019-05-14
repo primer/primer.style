@@ -25,7 +25,7 @@ const NewsIndex = () => {
           </Text>
         </Box>
 
-        <Relative width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx={'auto'} mb={[4, 4, 4, 0]}>
+        <Relative width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx="auto" mb={[4, 4, 4, 0]}>
           <Flex.Item px={5} style={{flexShrink: 0}}>
             <NewsImage width="100%" height={null} />
           </Flex.Item>
