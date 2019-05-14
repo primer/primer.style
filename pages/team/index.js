@@ -51,7 +51,7 @@ const TeamIndex = () => (
           openings on our team.
         </Text>
       </Box>
-      <Relative as={Box} width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx={'auto'} mb={[4, 4, 4, 0]}>
+      <Relative as={Box} width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx="auto" mb={[4, 4, 4, 0]}>
         <Flex.Item px={5} pt={[6, 0, 0, 6]}>
           <TeamImage width="100%" height={null} />
         </Flex.Item>
