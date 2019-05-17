@@ -23,7 +23,7 @@ const TeamIndex = () => (
   <Box className="container-xl overflow-hidden" pt={8} px={5}>
     <Flex
       justifyContent="space-between"
-      flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']}
+      flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']}
       mb={10}
       mx={-5}
     >
