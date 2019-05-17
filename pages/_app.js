@@ -1,5 +1,6 @@
 import React from 'react'
-import App, {Container, Head} from 'next/app'
+import App, {Container} from 'next/app'
+import Head from 'next/head'
 import styled, {ThemeProvider, createGlobalStyle} from 'styled-components'
 import {theme, BaseStyles, Box} from '@primer/components'
 import {Header, ResponsiveJumpNav, JumpNav} from '@primer/blueprints'
@@ -43,9 +44,6 @@ export default class MyApp extends App {
     const {Component, pageProps} = this.props
     return (
       <BaseStyles fontSize={2} style={{fontFamily: theme.fonts.normal}}>
-        <Head>
-          <title>Primer Design System</title>
-        </Head>
         <GlobalStyle />
         <ThemeProvider theme={theme}>
           <Box bg="black" color="blue.2">
@@ -53,6 +51,9 @@ export default class MyApp extends App {
               <JumpNav />
             </Header>
             <Container>
+              <Head>
+                <title>Primer Design System</title>
+              </Head>
               <Component {...pageProps} />
             </Container>
             <Anchor id="jumpnav" />
