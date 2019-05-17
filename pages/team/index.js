@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import {Box, Text, Heading, Flex, Relative} from '@primer/components'
 import LinkLight from '../../src/LinkLight'
 import MemberContainer from '../../src/MemberContainer'
@@ -9,12 +8,6 @@ import TeamImage from '../team-illo.svg'
 const shapes = ['hexagon', 'square', 'circle', 'diamond']
 const alumni = teamContent.filter(member => member.alumni)
 const currentMembers = teamContent.filter(member => !member.alumni)
-const Anchor = styled.div`
-  display: block;
-  position: relative;
-  top: -70px;
-  visibility: hidden;
-`
 
 const getMemberContent = teamMembers => {
   let shapeIndex = 0
