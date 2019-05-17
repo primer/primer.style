@@ -21,26 +21,26 @@ const Anchor = styled.div`
 `
 
 export default class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
-    let pageProps = {};
+  static async getInitialProps({Component, ctx}) {
+    let pageProps = {}
 
     if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
+      pageProps = await Component.getInitialProps(ctx)
     }
 
-    return { pageProps };
+    return {pageProps}
   }
 
   componentDidMount() {
-      initDraggables()
+    initDraggables()
   }
 
   componentDidUpdate() {
-      initDraggables()
+    initDraggables()
   }
 
   render() {
-    const { Component, pageProps } = this.props;
+    const {Component, pageProps} = this.props
     return (
       <BaseStyles fontSize={2} style={{fontFamily: theme.fonts.normal}}>
         <GlobalStyle />

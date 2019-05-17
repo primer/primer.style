@@ -5,7 +5,6 @@ import whatsNew from '../../src/whats-new'
 import NewsList from '../../src/NewsList'
 import NewsImage from '../news-illo.svg'
 
-
 const NewsIndex = () => {
   return (
     <Box className="container-xl overflow-hidden" pt={8} px={5}>
@@ -20,8 +19,7 @@ const NewsIndex = () => {
             What’s new
           </Heading>
           <Text as="p" fontSize={3} color="blue.2">
-            Keep up to date with the latest articles, podcasts, releases and talks from the GitHub Design Systems
-            team.
+            Keep up to date with the latest articles, podcasts, releases and talks from the GitHub Design Systems team.
           </Text>
         </Box>
 
