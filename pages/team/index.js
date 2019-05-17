@@ -27,7 +27,7 @@ const getMemberContent = teamMembers => {
 }
 
 const TeamIndex = () => (
-  <Box className="container-xl" pt={8} px={5} style={{overflow: 'hidden'}}>
+  <Box className="container-xl overflow-hidden" pt={8} px={5}>
     <Flex
       justifyContent="space-between"
       flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row', 'row']}
