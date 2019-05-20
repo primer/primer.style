@@ -10,10 +10,7 @@ This site is built with [Primer React components][components] and [x0].
 To start up your local dev environment, run:
 
 1. `npm install` to install all the Node dependencies
-2. `npm run dev` to start the dev server
-3. `npm run build` to build the static site
-4. `npm start` to serve the static site
-
+2. `npm start` to run the app in development mode
 
 ## Deployment
 This site is deployed on [Now] and mapped to the `primer.style` domain. With the Now CLI installed globally (and authenticated), you should be able deploy the site by running:
