@@ -24,6 +24,7 @@ export default class MyDocument extends Document {
           <meta property="og:title" content="Primer" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://primer.style" />
+          <meta name="viewport" content="width=device-width,initial-scale=1" />
           <meta property="og:description" content="The design system that powers GitHub" />
           <meta
             property="og:image"
