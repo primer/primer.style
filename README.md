@@ -7,8 +7,6 @@
 </p>
 
 <p align="center">
-  <a href="https://primer.style/css">Documentation</a>
-  ·
   <a href="https://primer.style/components">Components</a>
   ·
   <a href="https://github.com/primer">Primer org</a>
