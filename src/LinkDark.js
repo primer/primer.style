@@ -2,7 +2,7 @@
 
 import {Link} from '@primer/components'
 import {display, themeGet} from 'styled-system'
-import styled from 'react-emotion'
+import styled from 'styled-components'
 
 const LinkDark = styled(Link)`
   color: ${themeGet('colors.black')} !important;

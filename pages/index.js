@@ -1,6 +1,4 @@
 import React from 'react'
-import {Box} from '@primer/components'
-import Nav from '../src/Nav'
 import Hero from '../src/Hero'
 import HiringPromo from '../src/HiringPromo'
 import PrimerCSS from '../src/PrimerCSS'
@@ -10,10 +8,9 @@ import OcticonsPromo from '../src/OcticonsPromo'
 import OpenSource from '../src/OpenSource'
 import PrimerReact from '../src/PrimerReact'
 
-export default function Index() {
+function Index() {
   return (
-    <Box>
-      <Nav />
+    <>
       <Hero />
       <Divider my={[9, 12]} />
       <HiringPromo />
@@ -26,6 +23,8 @@ export default function Index() {
       <Divider my={[9, 12]} />
       <OcticonsPromo />
       <OpenSource />
-    </Box>
+    </>
   )
 }
+
+export default Index

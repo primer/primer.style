@@ -1,13 +1,12 @@
 import React from 'react'
 import {themeGet} from 'styled-system'
-import {Box, Flex, Text} from '@primer/components'
+import {Box, Flex, Text, StyledOcticon} from '@primer/components'
 import Article, {iconForType} from './Article'
-import Octicon from '@githubprimer/octicons-react'
-import styled from 'react-emotion'
+import styled from 'styled-components'
 
 const FilterButton = styled(props => {
   return (
-    <Flex alignItems="center" is="a" {...props} color={props.selected ? 'blue.2' : 'blue.3'}>
+    <Flex alignItems="center" as="a" {...props} color={props.selected ? 'blue.2' : 'blue.3'}>
       {props.children}
     </Flex>
   )
@@ -61,7 +60,7 @@ class NewsList extends React.Component {
                   key={type}
                   selected={filter === type}
                 >
-                  <Octicon icon={iconForType[type]} size={20} css={{marginRight: '8px'}} />
+                  <StyledOcticon icon={iconForType[type]} size={20} mr={2} />
                   {`${type.charAt(0).toUpperCase()}${type.slice(1)}`}s
                 </FilterButton>
               )
@@ -69,9 +68,11 @@ class NewsList extends React.Component {
           </Flex>
         </Text>
         <Box>
-          {items.sort((a, b) => new Date(b.date) - new Date(a.date)).map(article => {
-            return <Article {...article} key={article.url} />
-          })}
+          {items
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .map(article => {
+              return <Article {...article} key={article.url} />
+            })}
         </Box>
       </Box>
     )

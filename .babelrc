@@ -1,5 +1,16 @@
 {
-	plugins: [
-		'babel-plugin-emotion'
-	]	
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    "macros",
+    "babel-plugin-styled-components"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        ["next/babel", {"preset-env": {"modules": "commonjs"}}]
+      ]
+    }
+  }
 }

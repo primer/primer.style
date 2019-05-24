@@ -1,6 +1,5 @@
 import React from 'react'
-import {Text, Heading, Link, Box} from '@primer/components'
-import Octicon from './Octicon'
+import {Text, Heading, Link, Box, StyledOcticon} from '@primer/components'
 import {MarkGithub} from '@githubprimer/octicons-react'
 import ReactMarkdown from 'react-markdown'
 
@@ -27,21 +26,22 @@ const MemberInfo = ({member, colorName}) => {
         fontSize={2}
         href={`https://github.com/${member.handle}`}
       >
-        <Octicon icon={MarkGithub} size={24} verticalAlign="middle" color={`${colorName}.3`} mr={3} />@{member.handle}
+        <StyledOcticon icon={MarkGithub} size={24} verticalAlign="middle" color={`${colorName}.3`} mr={3} />@
+        {member.handle}
       </Link>
-      <Text fontFamily="mono" color={`${colorName}.4`} is="div" fontSize={3} mt={7} mb={0}>
+      <Text fontFamily="mono" color={`${colorName}.4`} as="div" fontSize={3} mt={7} mb={0}>
         What drew you into design systems?
       </Text>
       <Text color={`${colorName}.1`} fontSize={3}>
         <MemberMarkdown source={member.questionOne} colorName={colorName} />
       </Text>
-      <Text fontFamily="mono" color={`${colorName}.4`} is="div" fontSize={3} mt={7} mb={0}>
+      <Text fontFamily="mono" color={`${colorName}.4`} as="div" fontSize={3} mt={7} mb={0}>
         Who have you learned from or been inspired by?
       </Text>
       <Text color={`${colorName}.1`} fontSize={3}>
         <MemberMarkdown source={member.questionTwo} colorName={colorName} />
       </Text>
-      <Text fontFamily="mono" color={`${colorName}.4`} is="div" fontSize={3} mt={7} mb={0}>
+      <Text fontFamily="mono" color={`${colorName}.4`} as="div" fontSize={3} mt={7} mb={0}>
         Favorite tools
       </Text>
       <Text color={`${colorName}.1`} fontSize={3}>
