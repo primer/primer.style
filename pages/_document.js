@@ -18,7 +18,6 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <title>Primer Design System</title>
           <meta name="keywords" content="Design System" />
           <meta property="og:article:author" content="GitHub Design Systems team" />
           <meta property="og:title" content="Primer" />
