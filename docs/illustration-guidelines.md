@@ -45,7 +45,7 @@ Code lines are represented by a row of rectangular blocks.
 
 **Dimensions**
 
-- Block width should be at a 8-pixel scale. Block height should be limited to 16, 24, or 32 pixels.
+- Block width should be at an 8-pixel scale. Block height should be limited to 16, 24, or 32 pixels.
 
 **Spacing**
 
