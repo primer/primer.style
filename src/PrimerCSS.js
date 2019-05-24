@@ -22,10 +22,10 @@ export default function PrimerCSS() {
           <Text as="p" color="blue.2" mb={5} fontSize={3}>
             Styles can be mixed and matched to achieve many different layouts, independent of their location.
           </Text>
-          <ButtonFill my={[2, 0]} mr={2} href="https://styleguide.github.com/primer/">
+          <ButtonFill my={[2, 0]} mr={2} href="https://primer.style/css/">
             Documentation
           </ButtonFill>
-          <ButtonOutline my={[2, 0]} href="https://github.com/primer/primer">
+          <ButtonOutline my={[2, 0]} href="https://github.com/primer/css">
             GitHub
           </ButtonOutline>
           <Text as="p" fontSize={2} mt={5} color="blue.3" fontFamily="mono">

@@ -25,8 +25,12 @@ export default function Hero() {
             Resources, tooling, and design guidelines for building interfaces with GitHub’s design system
           </Text>
           <Text fontFamily="mono" as="p" color="blue.3" mt={5}>
-            <LinkLight fontSize={[0, 1, 2]} href="https://styleguide.github.com/primer/">
-              Style guide
+            <LinkLight fontSize={[0, 1, 2]} href="https://primer.style/team">
+              Team
+            </LinkLight>{' '}
+            ・
+            <LinkLight ml={2} fontSize={[0, 1, 2]} href="https://primer.style/components/">
+              Components
             </LinkLight>{' '}
             ・
             <LinkLight ml={2} fontSize={[0, 1, 2]} href="https://spectrum.chat/primer">
