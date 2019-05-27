@@ -14,6 +14,11 @@ To start up your local dev environment, run:
 
 Additionally, you can run `npm run now-build` to build the static site, and `npm run now-start` to run the static site on your local environment. This can be helpful for debugging build issues.
 
+We use the [React configuration](https://github.com/github/eslint-plugin-github/blob/master/lib/configs/react.js) from [GitHub's eslint plugin](https://github.com/github/eslint-plugin-github) to lint our JavaScript. To check your work before pushing, run:
+```
+npm run lint
+```
+
 ## Deployment
 This site is deployed on [Now] and mapped to the `primer.style` domain. With the Now CLI installed globally (and authenticated), you should be able deploy the site by running:
 
