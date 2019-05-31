@@ -29,7 +29,7 @@ export default function Hero() {
               Team
             </LinkLight>{' '}
             ・
-            <LinkLight ml={2} fontSize={[0, 1, 2]} href="https://primer.style/components/">
+            <LinkLight ml={2} fontSize={[0, 1, 2]} href="https://primer.style/components">
               Components
             </LinkLight>{' '}
             ・
