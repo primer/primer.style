@@ -20,7 +20,7 @@ const getMemberContent = teamMembers => {
 }
 
 const TeamIndex = () => (
-  <Box className="container-xl overflow-hidden" pt={8} px={5}>
+  <Flex className="container-xl overflow-hidden" flexDirection="column" pt={8} px={5}>
     <Flex
       justifyContent="space-between"
       flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']}
@@ -55,7 +55,7 @@ const TeamIndex = () => (
       Alumni
     </Heading>
     {getMemberContent(alumni)}
-  </Box>
+  </Flex>
 )
 
 export default TeamIndex
