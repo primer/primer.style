@@ -6,7 +6,6 @@ import TwitterIcon from './TwitterIcon'
 import SpectrumIcon from './SpectrumIcon'
 import IndexGrid from './IndexGrid'
 import LinkDark from './LinkDark'
-import CopyrightYear from './CopyrightYear'
 
 export default function OpenSource() {
   return (
