@@ -6,6 +6,7 @@ import TwitterIcon from './TwitterIcon'
 import SpectrumIcon from './SpectrumIcon'
 import IndexGrid from './IndexGrid'
 import LinkDark from './LinkDark'
+import CopyrightYear from './CopyrightYear'
 
 export default function OpenSource() {
   return (
@@ -58,7 +59,7 @@ export default function OpenSource() {
             Design Systems team
           </LinkDark>
           <Text>.</Text>
-          <Text as="p">Copyright GitHub 2018.</Text>
+          <Text as="p">Copyright GitHub {CopyrightYear}.</Text>
         </BorderBox>
       </Box>
     </Box>
