@@ -59,7 +59,7 @@ export default function OpenSource() {
             Design Systems team
           </LinkDark>
           <Text>.</Text>
-          <Text as="p">Copyright GitHub {CopyrightYear}.</Text>
+          <Text as="p">Copyright GitHub {new Date().getFullYear()}.</Text>
         </BorderBox>
       </Box>
     </Box>
