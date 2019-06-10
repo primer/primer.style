@@ -1,6 +1,6 @@
 import React from 'react'
 import {Box, Heading, Text, Flex, StyledOcticon} from '@primer/components'
-import {Package} from '@githubprimer/octicons-react'
+import {Package} from '@primer/octicons-react'
 import CssImage from './svg/Css.svg'
 import IndexGrid from './IndexGrid'
 import ButtonFill from './ButtonFill'

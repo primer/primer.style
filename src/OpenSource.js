@@ -1,6 +1,6 @@
 import React from 'react'
 import {Box, BorderBox, Heading, Text, StyledOcticon} from '@primer/components'
-import {Octoface, MarkGithub} from '@githubprimer/octicons-react'
+import {Octoface, MarkGithub} from '@primer/octicons-react'
 import ButtonFillDark from './ButtonFillDark'
 import TwitterIcon from './TwitterIcon'
 import SpectrumIcon from './SpectrumIcon'

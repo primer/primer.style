@@ -1,6 +1,6 @@
 import React from 'react'
 import {Box, Heading, Text, Link, Flex, Relative, StyledOcticon} from '@primer/components'
-import {FileCode, Ruby, Paintcan} from '@githubprimer/octicons-react'
+import {FileCode, Ruby, Paintcan} from '@primer/octicons-react'
 import OcticonsImage from './svg/Octicons.svg'
 import LinkLight from './LinkLight'
 
