@@ -109,6 +109,20 @@ const teamContent = [
     avatar: 'https://user-images.githubusercontent.com/586552/46751001-5c8a0300-cc87-11e8-84bb-9024b03df74f.jpg',
     gif: 'https://user-images.githubusercontent.com/334891/50363219-bab14d00-0538-11e9-9595-48b3c45358ab.gif',
     alumni: false
+  },
+  {
+    name: 'Zain Khoja',
+    title: 'Systems Designer Intern',
+    handle: 'zainkho',
+    cssFeature: 'fill: currentColor;',
+    questionOne: `Ok, this might sound weird, but I really enjoy looking at UIs. There is something satisfying, seeing a bunch of components getting thrown on a page that fit well together, forming a balanced interface for users to interact with. I also enjoy building UIs and helping others to do the same.`,
+    questionTwo: `Thinking back, seeing the CSS Zen Garden was really inspiring. Also the CSS "demo scene" found in places like [CodePen](https://codepen.io/) is nuts. Admittedly, not always practical, but fun to check out.
+
+  I also got inspired and learned a lot from methodologies like OOCSS, SMACSS, BEM, SUIT and nowadays CSS-in-JS. The "how to organize CSS" is a challenging, but also interesting problem to solve.`,
+    favoriteTools: 'DevTools, Atom, Figma, Sketch, iA Writer, LICEcap, Things, coffee, headphones.',
+    avatar: 'https://avatars1.githubusercontent.com/u/6846673?v=4',
+    gif: 'https://user-images.githubusercontent.com/378023/53881412-fbf4cb80-4056-11e9-835b-3b4585e7e203.gif',
+    alumni: false
   }
 ]
 
