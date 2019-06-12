@@ -1,5 +1,19 @@
 const teamContent = [
   {
+    name: 'Zain Khoja',
+    title: 'Systems Designer Intern',
+    handle: 'zainkho',
+    cssFeature: 'fill: currentColor;',
+    questionOne: `I love organization and lists. I have a lists for things from movies to boba tea orders. I like to bring this into my design work as well, creating components and cohesiveness across platforms to make it easier for people to create great products.`,
+    questionTwo: `When I first began learning about design, I was inspired by the people who contributed back to the community by teaching and opening up to students. Resources like [Students Who Design](https://studentswho.design/) and [Design Details](https://designdetails.fm) helped me figure out how I wanted to make a positive impact in tech.
+
+  More recently, I've been inspired by design agencies and companies that are testing the boundaries of design outside of what is accepted as 'common pratice'. I enjoy seeing unique animation and motion used to convey information, emotion, and storytelling.`,
+    favoriteTools: 'Sketch, Figma, Atom, Dropbox Paper, Twitter, Ping Pong, Ukulele',
+    avatar: 'https://avatars1.githubusercontent.com/u/6846673?v=4',
+    gif: 'https://user-images.githubusercontent.com/6846673/59376179-7a22d700-8d04-11e9-91da-09e45112e162.gif',
+    alumni: false
+  },
+  {
     name: 'Simon Lüthi',
     title: 'Systems Designer',
     handle: 'simurai',
@@ -108,20 +122,6 @@ const teamContent = [
     favoriteTools: 'Hyper, Atom, Figma, MDN, and Quip',
     avatar: 'https://user-images.githubusercontent.com/586552/46751001-5c8a0300-cc87-11e8-84bb-9024b03df74f.jpg',
     gif: 'https://user-images.githubusercontent.com/334891/50363219-bab14d00-0538-11e9-9595-48b3c45358ab.gif',
-    alumni: false
-  },
-  {
-    name: 'Zain Khoja',
-    title: 'Systems Designer Intern',
-    handle: 'zainkho',
-    cssFeature: 'fill: currentColor;',
-    questionOne: `I love organization and lists. I have a lists for things from movies to boba tea orders. I like to bring this into my design work as well, creating components and cohesiveness across platforms to make it easier for people to create great products.`,
-    questionTwo: `When I first began learning about design, I was inspired by the people who contributed back to the community by teaching and opening up to students. Resources like [Students Who Design](https://studentswho.design/) and [Design Details](https://designdetails.fm) helped me figure out how I wanted to make a positive impact in tech.
-
-  More recently, I've been inspired by design agencies and companies that are testing the boundaries of design outside of what is accepted as 'common pratice'. I enjoy seeing unique animation and motion used to convey information, emotion, and storytelling.`,
-    favoriteTools: 'Sketch, Figma, Atom, Dropbox Paper, Twitter, Ping Pong, Ukulele',
-    avatar: 'https://avatars1.githubusercontent.com/u/6846673?v=4',
-    gif: 'https://user-images.githubusercontent.com/6846673/59376179-7a22d700-8d04-11e9-91da-09e45112e162.gif',
     alumni: false
   }
 ]
