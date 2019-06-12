@@ -115,13 +115,13 @@ const teamContent = [
     title: 'Systems Designer Intern',
     handle: 'zainkho',
     cssFeature: 'fill: currentColor;',
-    questionOne: `Ok, this might sound weird, but I really enjoy looking at UIs. There is something satisfying, seeing a bunch of components getting thrown on a page that fit well together, forming a balanced interface for users to interact with. I also enjoy building UIs and helping others to do the same.`,
-    questionTwo: `Thinking back, seeing the CSS Zen Garden was really inspiring. Also the CSS "demo scene" found in places like [CodePen](https://codepen.io/) is nuts. Admittedly, not always practical, but fun to check out.
+    questionOne: `I love organization and lists. I have a lists for things from movies to boba tea orders. I like to bring this into my design work as well, creating components and cohesiveness across platforms to make it easier for people to create great products.`,
+    questionTwo: `When I first began learning about design, I was inspired by the people who contributed back to the community by teaching and opening up to students. Resources like [Students Who Design](https://studentswho.design/) and [Design Details](https://designdetails.fm) helped me figure out how I wanted to make a positive impact in tech.
 
-  I also got inspired and learned a lot from methodologies like OOCSS, SMACSS, BEM, SUIT and nowadays CSS-in-JS. The "how to organize CSS" is a challenging, but also interesting problem to solve.`,
-    favoriteTools: 'DevTools, Atom, Figma, Sketch, iA Writer, LICEcap, Things, coffee, headphones.',
+  More recently, I've been inspired by design agencies and companies that are testing the boundaries of design outside of what is accepted as 'common pratice'. I enjoy seeing unique animation and motion used to convey information, emotion, and storytelling.`,
+    favoriteTools: 'Sketch, Figma, Atom, Dropbox Paper, Twitter, Ping Pong, Ukulele',
     avatar: 'https://avatars1.githubusercontent.com/u/6846673?v=4',
-    gif: 'https://user-images.githubusercontent.com/378023/53881412-fbf4cb80-4056-11e9-835b-3b4585e7e203.gif',
+    gif: 'https://user-images.githubusercontent.com/6846673/59376179-7a22d700-8d04-11e9-91da-09e45112e162.gif',
     alumni: false
   }
 ]
