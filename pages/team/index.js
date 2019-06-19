@@ -10,13 +10,9 @@ const alumni = teamContent.filter(member => member.alumni)
 const currentMembers = teamContent.filter(member => !member.alumni)
 
 const getMemberContent = teamMembers => {
-  let shapeIndex = 0
-  return teamMembers.map((member, i) => {
-    if (i === shapes.length) shapeIndex = 0
-    const element = <MemberContainer key={member.name} shape={shapes[shapeIndex]} isOdd={i % 2 === 0} member={member} />
-    shapeIndex++
-    return element
-  })
+  return teamMembers.map((member, i) => (
+    <MemberContainer key={member.name} shape={shapes[i % shapes.length]} isOdd={i % 2 === 0} member={member} />
+  ))
 }
 
 const TeamIndex = () => (

@@ -1,5 +1,17 @@
 const teamContent = [
   {
+    name: 'Cole Bemis',
+    title: 'Systems Engineer Intern',
+    handle: 'colebemis',
+    cssFeature: 'grid-gap',
+    questionOne: `While studying computer science, I developed a passion for design patterns and abstractions. I especially enjoyed learning about programming languages and automata theory. I'm excited about the potential to apply what I've learned to create strong *visual* languages. I also enjoy building tools that make it easier for designers and developers (like me) to create better user experiences.`,
+    questionTwo: `Too many to list! I would not be in this field if it weren't for my mom, who introduced me to HTML, CSS and JavaScript at a young age. Tom Falkner, Ben Waldron, Tyler Deitz, Tony Gines, Brett Spradling, Jake Swenson and Sam Ng have all been incredible mentors. And I'm constantly inspired by the work of [Brent Jackson](https://twitter.com/jxnblk), [Adam Morse](https://twitter.com/mrmrs_), [James](https://twitter.com/jamesm), [Max Stoiber](https://twitter.com/mxstbr), [Brian Lovin](https://twitter.com/brian_lovin), [Bryn Jackson](https://twitter.com/superbryntendo), [Steve Schoger](https://twitter.com/steveschoger), [Sara Soueidan](https://twitter.com/SaraSoueidan), [Dan Abramov](https://twitter.com/dan_abramov) and so many more.`,
+    favoriteTools: 'CodeSandbox, Figma, GitHub, React, Slack, VS Code',
+    avatar: 'https://user-images.githubusercontent.com/4608155/59656806-959e3f80-9153-11e9-99cc-25b33e575ad8.jpg',
+    gif: 'https://user-images.githubusercontent.com/4608155/59657078-73f18800-9154-11e9-8b36-81eed35e1266.gif',
+    alumni: false
+  },
+  {
     name: 'Zain Khoja',
     title: 'Systems Designer Intern',
     handle: 'zainkho',
