@@ -9,7 +9,7 @@ const teamContent = [
 
   More recently, I've been inspired by design agencies and companies that are testing the boundaries of design outside of what is accepted as 'common pratice'. I enjoy seeing unique animation and motion used to convey information, emotion, and storytelling.`,
     favoriteTools: 'Sketch, Figma, Atom, Dropbox Paper, Twitter, Ping Pong, Ukulele',
-    avatar: 'https://avatars1.githubusercontent.com/u/6846673?v=4',
+    avatar: 'https://user-images.githubusercontent.com/6846673/59784198-bb703500-9276-11e9-8ec6-a02fc3eb2fc5.jpg',
     gif: 'https://user-images.githubusercontent.com/6846673/59376179-7a22d700-8d04-11e9-91da-09e45112e162.gif',
     alumni: false
   },
