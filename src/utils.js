@@ -1,4 +1,3 @@
-import React from 'react'
 import getConfig from 'next/config'
 
 export const config = getConfig().publicRuntimeConfig || {}
