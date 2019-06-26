@@ -1,6 +1,8 @@
 import React from 'react'
 import Document, {Head, Main, NextScript} from 'next/document'
 import {ServerStyleSheet} from 'styled-components'
+import {getAssetPath} from '../src/utils'
+
 
 export default class MyDocument extends Document {
   static getInitialProps({renderPage}) {
@@ -25,6 +27,7 @@ export default class MyDocument extends Document {
           <meta property="og:url" content="https://primer.style" />
           <meta name="viewport" content="width=device-width,initial-scale=1" />
           <meta property="og:description" content="The design system that powers GitHub" />
+          <link rel="icon" href={getAssetPath('favicon.png')} />
           <meta
             property="og:image"
             content="https://user-images.githubusercontent.com/10384315/53922681-2f6d3100-402a-11e9-9719-5d1811c8110a.png"
