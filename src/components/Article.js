@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Box, Link, Text, Heading, StyledOcticon} from '@primer/components'
-import {Note, Tag, LinkExternal, Megaphone, Broadcast} from '@githubprimer/octicons-react'
+import {Note, Tag, LinkExternal, Megaphone, Broadcast} from '@primer/octicons-react'
 
 export const iconForType = {
   article: Note,

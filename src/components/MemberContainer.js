@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {themeGet} from 'styled-system'
 import {Flex, Box, theme} from '@primer/components'
 import MemberQuestions from './MemberQuestions'
 import AvatarShape from './AvatarShape'
-import DotsSVG from './svg/dots.svg'
+import {ReactComponent as DotsSVG} from '../svg/dots.svg'
 
 const Dots = ({shape, color}) => {
   const css = {

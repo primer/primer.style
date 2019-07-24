@@ -1,6 +1,6 @@
 import React from 'react'
 import {Heading, Text, StyledOcticon} from '@primer/components'
-import {RadioTower} from '@githubprimer/octicons-react'
+import {RadioTower} from '@primer/octicons-react'
 import ButtonPromo from './ButtonPromo'
 import LinkPromo from './LinkPromo'
 

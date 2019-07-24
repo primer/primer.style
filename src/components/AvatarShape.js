@@ -3,10 +3,10 @@ import {Box, Link} from '@primer/components'
 import {themeGet, bgColor} from 'styled-system'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import Circle from './svg/circle.svg'
-import Hexagon from './svg/hexagon.svg'
-import Square from './svg/square.svg'
-import Diamond from './svg/diamond.svg'
+import {ReactComponent as Circle} from '../svg/circle.svg'
+import {ReactComponent as Hexagon} from '../svg/hexagon.svg'
+import {ReactComponent as Square} from '../svg/square.svg'
+import {ReactComponent as Diamond} from '../svg/diamond.svg'
 
 const Shape = styled(({className, shape}) => {
   const shapes = {

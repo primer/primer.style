@@ -1,7 +1,7 @@
 import React from 'react'
 import {Flex, Heading, Text, Link} from '@primer/components'
 import LinkLight from './LinkLight'
-import ReactIcon from './ReactIcon.svg'
+import {ReactComponent as ReactIcon} from '../svg/ReactIcon.svg'
 
 export default function PrimerReact() {
   return (

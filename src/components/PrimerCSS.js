@@ -1,10 +1,10 @@
 import React from 'react'
 import {Box, Heading, Text, Flex, StyledOcticon} from '@primer/components'
-import {Package} from '@githubprimer/octicons-react'
-import CssImage from './svg/Css.svg'
+import {Package} from '@primer/octicons-react'
 import IndexGrid from './IndexGrid'
 import ButtonFill from './ButtonFill'
 import ButtonOutline from './ButtonOutline'
+import {ReactComponent as CssImage} from '../svg/Css.svg'
 
 export default function PrimerCSS() {
   return (

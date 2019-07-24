@@ -1,7 +1,7 @@
 import React from 'react'
-import {Text, Heading, Link, Box, StyledOcticon} from '@primer/components'
-import {MarkGithub} from '@githubprimer/octicons-react'
 import ReactMarkdown from 'react-markdown'
+import {Text, Heading, Link, Box, StyledOcticon} from '@primer/components'
+import {MarkGithub} from '@primer/octicons-react'
 
 const MemberMarkdown = ({source, colorName}) => {
   const link = props => (

@@ -1,9 +1,9 @@
 import React from 'react'
 import {Heading, Text} from '@primer/components'
-import AtomImage from './svg/Atom.svg'
 import ButtonFill from './ButtonFill'
 import ButtonOutline from './ButtonOutline'
 import IndexGrid from './IndexGrid'
+import {ReactComponent as AtomImage} from '../svg/Atom.svg'
 
 export default function AtomPlugins() {
   return (

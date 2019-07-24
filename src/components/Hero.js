@@ -1,9 +1,9 @@
 import React from 'react'
 import {Box, Heading, Text, Flex, Absolute, Relative} from '@primer/components'
-import HeroImage from './svg/Hero.svg'
-import HeroOverlay from './svg/HeroOverlay.svg'
 import LinkLight from './LinkLight'
 import IndexGrid from './IndexGrid'
+import {ReactComponent as HeroImage} from '../svg/Hero.svg'
+import {ReactComponent as HeroOverlay} from '../svg/HeroOverlay.svg'
 
 export default function Hero() {
   return (
