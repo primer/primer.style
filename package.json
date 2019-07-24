@@ -1,31 +1,34 @@
 {
   "private": true,
   "scripts": {
-    "start": "next dev",
-    "now-build": "next build",
-    "now-start": "next start",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "now-build": "npm run build",
     "lint": "eslint src pages"
   },
   "dependencies": {
-    "@githubprimer/octicons-react": "8.1.0",
-    "primer-primitives": "1.0.2",
-    "prop-types": "15.6.2",
-    "react-markdown": "4.0.1",
-    "styled-components": "4.2.0",
-    "styled-system": "3.1.11",
-    "throttle-debounce": "2.0.1"
-  },
-  "devDependencies": {
+    "@mdx-js/mdx": "1.1.0",
+    "@mdx-js/react": "1.0.27",
     "@primer/blueprints": "4.0.1",
     "@primer/components": "12.0.2",
-    "@svgr/webpack": "2.4.1",
-    "babel-plugin-add-react-displayname": "0.0.5",
+    "@primer/octicons-react": "9.1.0",
+    "@svgr/webpack": "4.3.2",
+    "gatsby": "2.13.39",
+    "gatsby-plugin-manifest": "2.2.4",
+    "gatsby-plugin-react-helmet": "3.1.2",
+    "gatsby-plugin-styled-components": "3.1.2",
+    "gatsby-plugin-svgr": "2.0.2",
+    "gatsby-transformer-yaml": "2.2.4",
+    "primer-primitives": "1.0.2",
+    "prop-types": "15.6.2",
+    "react": "16.8.1",
+    "react-dom": "16.8.1",
+    "react-helmet": "5.2.1",
+    "styled-components": "4.2.0",
+    "styled-system": "5.0.16"
+  },
+  "devDependencies": {
     "eslint": "5.6.1",
-    "eslint-plugin-github": "1.4.0",
-    "mkdirp": "0.5.1",
-    "next": "7.0.2",
-    "now-github-url": "0.1.2",
-    "react": "16.8.0",
-    "react-dom": "16.8.1"
+    "eslint-plugin-github": "1.4.0"
   }
 }
