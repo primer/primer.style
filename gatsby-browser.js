@@ -1,10 +1,10 @@
+/*
 import React from 'react'
 import {Link, theme} from '@primer/components'
 import {MDXProvider} from '@mdx-js/react'
 
 const components = {
   a: Link
-  /*
   pre: props => props.children,
   code: Code,
   inlineCode: InlineCode,
@@ -22,7 +22,6 @@ const components = {
   ul: List,
   ol: List.withComponent('ol'),
   dl: DescriptionList,
-  */
 }
 
 export function wrapRootElement({element}) {
@@ -33,7 +32,6 @@ export function wrapRootElement({element}) {
   )
 }
 
-/*
 export function wrapPageElement({element}) {
   return <BaseStyles>{element}</BaseStyles>
 }
