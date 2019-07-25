@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {themeGet} from 'styled-system'
+import themeGet from '@styled-system/theme-get'
 import {Flex, Box, theme} from '@primer/components'
 import MemberQuestions from './MemberQuestions'
 import AvatarShape from './AvatarShape'

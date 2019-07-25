@@ -1,7 +1,8 @@
 // Extends Link from primer/components to make color primitives available, as well as fontSize and space which should be added in primer/components. Ideally I'd use defaultProps here but because we use !important on utilities the theme colors won't override. We could probably add a function to handle this.
 
 import {Link} from '@primer/components'
-import {space, themeGet} from 'styled-system'
+import {space} from 'styled-system'
+import themeGet from '@styled-system/theme-get'
 import styled from 'styled-components'
 
 const ButtonFill = styled(Link)`
