@@ -1,17 +1,17 @@
 workflow "lint on push" {
   on = "push"
   resolves = [
-    "npm lint"
+    "lint"
   ]
 }
 
-action "npm install" {
+action "install" {
   uses = "actions/npm@v2.0.0"
-  args = "ci"
+  args = "install"
 }
 
-action "npm lint" {
+action "lint" {
   uses = "actions/npm@v2.0.0"
-  needs = ["npm install"]
+  needs = ["install"]
   args = "run lint"
 }
