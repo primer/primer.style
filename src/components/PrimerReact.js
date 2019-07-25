@@ -6,7 +6,7 @@ import {ReactComponent as ReactIcon} from '../svg/ReactIcon.svg'
 export default function PrimerReact() {
   return (
     <Flex alignItems="center" flexDirection="column" px={5} className="container-lg">
-      <ReactIcon />
+      <ReactIcon width={72} />
       <Heading fontSize={[4, 5]} mt={2} mb={2} color="blue.4">
         Primer Components
         <Text fontSize={2} ml={1} style={{verticalAlign: 'text-top'}}>
