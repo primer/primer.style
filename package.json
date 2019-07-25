@@ -4,7 +4,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "now-build": "npm run build",
-    "lint": "eslint src pages"
+    "lint": "eslint src"
   },
   "dependencies": {
     "@mdx-js/mdx": "1.1.0",
