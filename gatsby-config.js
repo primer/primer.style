@@ -1,6 +1,8 @@
 const path = require('path')
+const siteMetadata = require('./meta')
 
 module.exports = {
+  siteMetadata,
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-svgr',
@@ -10,18 +12,21 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'pages',
-        path: path.resolve('./src/pages')
+        path: path.resolve('./src/pages'),
+        layout: 'default'
       }
     },
+    /*
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
         extensions: ['.mdx', '.md'],
         defaultLayouts: {
-          default: require.resolve('./src/components/layout')
+          default: require.resolve('./src/components/Layout.js')
         }
       }
     },
+    */
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
