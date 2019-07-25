@@ -4,6 +4,7 @@ import {Helmet} from 'react-helmet'
 import {Box} from '@primer/components'
 import {Header, ResponsiveJumpNav, JumpNav} from '@primer/blueprints'
 import siteMetadata from '../../meta'
+import '@primer/css/layout/index.scss'
 
 const Anchor = styled.div`
   display: block;
@@ -11,8 +12,6 @@ const Anchor = styled.div`
   top: -70px;
   visibility: hidden;
 `
-
-import '@primer/css/layout/index.scss'
 
 export default function Layout({children, title, pageContext = {}, ...rest}) {
   if (pageContext.frontmatter && !title) {
