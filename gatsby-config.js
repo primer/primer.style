@@ -5,7 +5,18 @@ module.exports = {
   siteMetadata,
   plugins: [
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-svgr',
+    {
+      resolve: 'gatsby-plugin-svgr',
+      options: {
+        svgoConfig: {
+          multipass: true,
+          plugins: {
+            removeDimensions: true,
+            removeViewBox: false
+          }
+        }
+      }
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
     {
