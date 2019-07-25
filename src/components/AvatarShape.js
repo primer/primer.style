@@ -3,7 +3,7 @@ import themeGet from '@styled-system/theme-get'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import {Box, Link} from '@primer/components'
-import {bgColor} from 'styled-system'
+import {color} from 'styled-system'
 import {ReactComponent as Circle} from '../svg/circle.svg'
 import {ReactComponent as Hexagon} from '../svg/hexagon.svg'
 import {ReactComponent as Square} from '../svg/square.svg'
@@ -70,7 +70,7 @@ const ShapeOutline = styled(Link)`
   &:after {
     content: '';
     clip-path: url("#clip-${props => props.shape}");
-    ${bgColor};
+    ${color};
     position: absolute;
     top: 0;
     right: 0;
