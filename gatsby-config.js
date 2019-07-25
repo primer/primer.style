@@ -4,6 +4,7 @@ const siteMetadata = require('./meta')
 module.exports = {
   siteMetadata,
   plugins: [
+    'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-plugin-svgr',
