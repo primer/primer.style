@@ -1,10 +1,27 @@
-/*
 import React from 'react'
-import {Link, theme} from '@primer/components'
+import styled, {ThemeProvider, createGlobalStyle} from 'styled-components'
+import {BaseStyles, Link, theme} from '@primer/components'
 import {MDXProvider} from '@mdx-js/react'
+
+const GlobalStyle = createGlobalStyle`
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`
+
+const Anchor = styled.div`
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+`
 
 const components = {
   a: Link
+  /*
   pre: props => props.children,
   code: Code,
   inlineCode: InlineCode,
@@ -22,17 +39,24 @@ const components = {
   ul: List,
   ol: List.withComponent('ol'),
   dl: DescriptionList,
+  */
 }
 
 export function wrapRootElement({element}) {
   return (
     <MDXProvider components={components}>
-      {element}
+      <ThemeProvider theme={theme}>
+        {element}
+      </ThemeProvider>
     </MDXProvider>
   )
 }
 
 export function wrapPageElement({element}) {
-  return <BaseStyles>{element}</BaseStyles>
+  return (
+    <>
+      <GlobalStyle />
+      <BaseStyles fontSize={2}>{element}</BaseStyles>
+    </>
+  )
 }
-*/
