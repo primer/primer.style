@@ -1,8 +1,7 @@
 import React from 'react'
-import {graphql, useStaticQuery} from 'gatsby'
-import styled, {ThemeProvider} from 'styled-components'
+import styled from 'styled-components'
 import {Helmet} from 'react-helmet'
-import {theme, BaseStyles, Box} from '@primer/components'
+import {Box} from '@primer/components'
 import {Header, ResponsiveJumpNav, JumpNav} from '@primer/blueprints'
 import siteMetadata from '../../meta'
 
@@ -14,8 +13,6 @@ const Anchor = styled.div`
 `
 
 export default function Layout({children, title, pageContext = {}, ...rest}) {
-  console.warn('pageContext:', pageContext)
-
   if (pageContext.frontmatter && !title) {
     title = pageContext.frontmatter.title
   }
@@ -23,7 +20,10 @@ export default function Layout({children, title, pageContext = {}, ...rest}) {
   return (
     <>
       <Helmet>
-        <title>{siteMetadata.title || '???'}{title ? ` / ${title}` : ''}</title>
+        <title>
+          {siteMetadata.title || '???'}
+          {title ? ` / ${title}` : ''}
+        </title>
         <meta name="keywords" content="Design System" />
         <meta property="og:article:author" content="GitHub Design Systems team" />
         <meta property="og:title" content="Primer" />
