@@ -12,6 +12,8 @@ const Anchor = styled.div`
   visibility: hidden;
 `
 
+import '@primer/css/layout/index.scss'
+
 export default function Layout({children, title, pageContext = {}, ...rest}) {
   if (pageContext.frontmatter && !title) {
     title = pageContext.frontmatter.title
@@ -42,7 +44,7 @@ export default function Layout({children, title, pageContext = {}, ...rest}) {
         {/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126681523-1" /> */}
       </Helmet>
       <Box bg="black" color="blue.2" {...rest}>
-        <Header root="https://primer.style" title="Primer" subtitle="Blueprints">
+        <Header root="/" title="Primer">
           <JumpNav />
         </Header>
         {children}
