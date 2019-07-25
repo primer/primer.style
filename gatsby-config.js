@@ -9,13 +9,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-svgr',
       options: {
-        svgoConfig: {
-          multipass: true,
-          plugins: {
-            removeDimensions: true,
-            removeViewBox: false
-          }
-        }
+        svgo: false
       }
     },
     'gatsby-plugin-react-helmet',
