@@ -6,7 +6,7 @@
 <rect x="341.807" y="282" width="28.2664" height="32" fill="#044289"/>
 <rect x="41" y="202" width="53.8069" height="48" fill="#005CC5"/>
 <rect x="130.678" y="202" width="142.588" height="48" fill="#005CC5"/>
-<g data-draggable id="brush">
+<g data-draggable="true" id="brush">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M246.442 389.86C259.233 370.005 277.67 298.517 277.67 242.078C277.67 167.929 248.324 131 235.335 131C222.346 131 193 167.929 193 242.078C193 298.517 211.437 370.005 224.228 389.86H246.442Z" fill="#2188FF"/>
   <defs>
     <clipPath id="brushMask">
