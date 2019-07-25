@@ -27,6 +27,7 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1",
+    "react-markdown": "4.1.0",
     "styled-components": "4.2.0",
     "styled-system": "5.0.16"
   },
