@@ -1,4 +1,4 @@
-import releases from './data/releases'
+import releases from './releases'
 
 const whatsNew = [
   {
@@ -72,4 +72,4 @@ const whatsNew = [
   }
 ]
 
-export default whatsNew.concat(releases)
+export default whatsNew.concat(releases).sort((a, b) => a.date.localeCompare(b.date))
