@@ -10,10 +10,10 @@
     }
   ],
   "routes": [
-    {"src": "/components**", "dest": "primer-components.now.sh"},
-    {"src": "/css**", "dest": "primer-css.now.sh"},
-    {"src": "/design**", "dest": "primer-design.now.sh"},
-    {"src": "/blueprints**", "dest": "primer-blueprints.now.sh"},
-    {"src": "/presentations**", "dest": "primer-presentations.now.sh"}
+    {"src": "/components(/.*)?", "dest": "https://primer-components.now.sh"},
+    {"src": "/css(/.*)?", "dest": "https://primer-css.now.sh"},
+    {"src": "/design(/.*)?", "dest": "https://primer-design.now.sh"},
+    {"src": "/blueprints(/.*)?", "dest": "https://primer-blueprints.now.sh"},
+    {"src": "/presentations(/.*)?", "dest": "https://primer-presentations.now.sh"}
   ]
 }
