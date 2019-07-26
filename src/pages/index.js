@@ -11,7 +11,7 @@ import PrimerReact from '../components/PrimerReact'
 
 export default function Index(props) {
   return (
-    <Layout title="Home" {...props}>
+    <Layout {...props}>
       <Hero />
       <Divider my={[9, 12]} />
       <HiringPromo />
