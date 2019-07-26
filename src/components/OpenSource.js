@@ -12,10 +12,10 @@ export default function OpenSource() {
     <Box bg="blue.2" pt={12} mt={6}>
       <IndexGrid alignItems="start">
         <IndexGrid.Item mb={[8, 8, 8, 0]}>
-          <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight="bold">
+          <Heading color="black" mb={3} fontSize={7} fontWeight="bold">
             Open source
           </Heading>
-          <Text as="p" color="black" mb={5} fontSize={4}>
+          <Text as="div" color="black" mb={5} fontSize={4}>
             Primer is open-sourced on GitHub. Contributions and feedback are welcome!
           </Text>
           <ButtonFillDark mr={2} href="https://github.com/primer">
@@ -24,7 +24,7 @@ export default function OpenSource() {
           </ButtonFillDark>
         </IndexGrid.Item>
         <IndexGrid.Item>
-          <Heading lineHeight="1.25" color="black" mb={3} fontSize={7} fontWeight="bold">
+          <Heading color="black" mb={3} fontSize={7} fontWeight="bold">
             Keep in touch
           </Heading>
           <LinkDark pt={1} fontSize={2} mb={3} display="block" href="https://twitter.com/githubprimer">
