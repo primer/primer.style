@@ -45,10 +45,10 @@ export default function OpenSource() {
         <BorderBox
           mt={12}
           py={5}
+          borderRadius={0}
+          border={0}
           borderTop={2}
-          borderBottom="none"
-          borderLeft="none"
-          borderRight="none"
+          borderStyle="solid"
           borderColor="black"
         >
           <Text pr={1} as="span">
