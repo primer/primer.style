@@ -1,5 +1,4 @@
-import {Box} from '@primer/components'
-import themeGet from '@styled-system/theme-get'
+import {Box, themeGet} from '@primer/components'
 import styled from 'styled-components'
 
 const Divider = styled(Box)`

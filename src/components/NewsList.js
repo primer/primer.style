@@ -1,6 +1,5 @@
 import React from 'react'
-import themeGet from '@styled-system/theme-get'
-import {Box, Flex, Text, StyledOcticon} from '@primer/components'
+import {Box, Flex, Text, StyledOcticon, themeGet} from '@primer/components'
 import Article, {iconForType} from './Article'
 import styled from 'styled-components'
 

@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
-import themeGet from '@styled-system/theme-get'
-import {Flex, Box, theme} from '@primer/components'
+import {Flex, Box, themeGet} from '@primer/components'
 import MemberQuestions from './MemberQuestions'
 import AvatarShape from './AvatarShape'
 import {ReactComponent as DotsSVG} from '../svg/dots.svg'
@@ -54,8 +53,6 @@ export default function Member(props) {
     </Flex>
   )
 }
-
-Member.defaultProps = {theme}
 
 const shapeStyles = {
   hexagon: {
