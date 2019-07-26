@@ -1245,13 +1245,6 @@
   dependencies:
     "@styled-system/core" "^5.0.16"
 
-"@styled-system/theme-get@5.0.16":
-  version "5.0.16"
-  resolved "https://registry.yarnpkg.com/@styled-system/theme-get/-/theme-get-5.0.16.tgz#b49236b566124a6170342a6785597225ea7e6d3b"
-  integrity sha512-LxIuubZZ65HzTWsl9GpfDXWaYdkcOsEKSBwNdeg4S3TgszPheN5f++eLxyDun3is2dNhFjTbDL/7yBZwJo1h3g==
-  dependencies:
-    "@styled-system/core" "^5.0.16"
-
 "@styled-system/theme-get@5.0.5":
   version "5.0.5"
   resolved "https://registry.yarnpkg.com/@styled-system/theme-get/-/theme-get-5.0.5.tgz#917d8b4d2d9c862b622e3fb019c9a74d5546196e"
