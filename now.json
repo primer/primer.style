@@ -1,22 +1,19 @@
 {
-  "version": 1,
+  "version": 2,
   "name": "primer-style",
   "alias": "primer-style.now.sh",
-  "files": [
-    "pages",
-    "next.config.js",
-    "package.json",
-    "package-lock.json",
-    "src",
-    "static"
-  ],
-  "scale": {
-    "sfo": {
-      "min": 1,
-      "max": 3
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {"distDir": "public"}
     }
-  },
-  "engines": {
-    "node": "10"
-  }
+  ],
+  "routes": [
+    {"src": "/components(/.*)?", "dest": "https://primer-components.now.sh"},
+    {"src": "/css(/.*)?", "dest": "https://primer-css.now.sh"},
+    {"src": "/design(/.*)?", "dest": "https://primer-design.now.sh"},
+    {"src": "/blueprints(/.*)?", "dest": "https://primer-blueprints.now.sh"},
+    {"src": "/presentations(/.*)?", "dest": "https://primer-presentations.now.sh"}
+  ]
 }
