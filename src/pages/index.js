@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Flex, Heading, Text} from '@primer/components'
+import {BorderBox, Box, Flex, Heading, Text} from '@primer/components'
 import Hero from '../components/Hero'
 import Layout from '../components/Layout'
 import Footer from '../components/Footer'
@@ -43,10 +43,10 @@ export default function Index(props) {
   )
 }
 
-function Promo({image, title, children, ...rest}) {
+function Promo({title, children, ...rest}) {
   return (
-    <Box px={[0, 0, 3]} mb={[6, 6, 4]} width={[1, 1, 1/2, 1/3]} {...rest}>
-      <Box height={200} bg="gray.3" />
+    <Box px={[0, 0, 3]} mb={[6, 6, 4]} width={[1, 1, 1 / 2, 1 / 3]} {...rest}>
+      <BorderBox height={240} bg="gray.3" border={0} borderRadius={1} />
       <Heading fontSize={4} mt={2}>
         {title}
       </Heading>
