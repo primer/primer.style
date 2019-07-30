@@ -52,9 +52,7 @@ export default function Index(props) {
 function Promo({title, image: Image = 'div', children, ...rest}) {
   return (
     <Box pr={[0, 0, gutter]} mb={[6, 6, 4]} width={[1, 1, 1 / 2, 1 / 3]} {...rest}>
-      <BorderBox border={0} borderRadius={2} overflow="hidden">
-        <Box as={Image} bg="gray.3" width="100%" height={null} minHeight={220} />
-      </BorderBox>
+      <BorderBox as={Image} border={0} borderRadius={2} bg="gray.3" width="100%" height={null} minHeight={220} />
       <Heading fontSize={4} mt={1}>
         {title}
       </Heading>
