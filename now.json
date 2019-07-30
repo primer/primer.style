@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "primer-style",
-  "alias": "primer-style.now.sh",
+  "alias": "primer.style",
   "builds": [
     {
       "src": "package.json",
