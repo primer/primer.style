@@ -1,13 +1,15 @@
 import React from 'react'
-import {Flex, Heading, Text, Link} from '@primer/components'
+import {Box, Flex, Heading, Text, Link} from '@primer/components'
 import LinkLight from './LinkLight'
 import {ReactComponent as ReactIcon} from '../svg/ReactIcon.svg'
 
 export default function PrimerReact() {
   return (
     <Flex alignItems="center" flexDirection="column" px={5} className="container-lg">
-      <ReactIcon width={72} />
-      <Heading fontSize={[4, 5]} mt={2} mb={2} color="blue.4">
+      <Box mb={2}>
+        <ReactIcon width={72} />
+      </Box>
+      <Heading fontSize={[4, 5]} mb={2} color="blue.4">
         Primer Components
         <Text fontSize={2} ml={1} style={{verticalAlign: 'text-top'}}>
           BETA

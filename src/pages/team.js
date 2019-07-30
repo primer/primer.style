@@ -18,7 +18,7 @@ const getMemberContent = teamMembers => {
 
 export default function TeamIndex(props) {
   return (
-    <Layout {...props}>
+    <Layout title="Team" {...props}>
       <Flex className="container-xl overflow-hidden" flexDirection="column" pt={8} px={5}>
         <Flex
           justifyContent="space-between"
