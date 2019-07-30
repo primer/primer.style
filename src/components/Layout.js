@@ -1,10 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Helmet} from 'react-helmet'
-import {Box} from '@primer/components'
+import {Box, Heading} from '@primer/components'
 import {Header, ResponsiveJumpNav, JumpNav} from '@primer/blueprints'
 import siteMetadata from '../../meta'
 import '@primer/css/layout/index.scss'
+
+// FIXME: this works around known issues with Heading's default prop {m: 0}
+Object.assign(Heading.defaultProps, {
+  m: null,
+  mt: 0,
+  mb: 0
+})
 
 const Anchor = styled.div`
   display: block;
