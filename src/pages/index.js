@@ -48,7 +48,7 @@ export default function Index(props) {
 function Promo({title, children, ...rest}) {
   return (
     <Box pr={[0, 0, gutter]} mb={[6, 6, 4]} width={[1, 1, 1 / 2, 1 / 3]} {...rest}>
-      <BorderBox height={240} bg="gray.3" border={0} borderRadius={1} />
+      <BorderBox height={240} bg="gray.3" border={0} borderRadius={2} />
       <Heading fontSize={4} mt={2}>
         {title}
       </Heading>
