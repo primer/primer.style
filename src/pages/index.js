@@ -1,29 +1,19 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import {Box, Flex, Heading} from '@primer/components'
 import Hero from '../components/Hero'
-import HiringPromo from '../components/HiringPromo'
-import PrimerCSS from '../components/PrimerCSS'
-import Divider from '../components/Divider'
-import AtomPlugins from '../components/AtomPlugins'
-import OcticonsPromo from '../components/OcticonsPromo'
-import OpenSource from '../components/OpenSource'
-import PrimerReact from '../components/PrimerReact'
+import Layout from '../components/Layout'
+import Footer from '../components/Footer'
 
 export default function Index(props) {
   return (
     <Layout {...props}>
       <Hero />
-      <Divider my={[9, 12]} />
-      <HiringPromo />
-      <Divider my={[9, 12]} />
-      <PrimerCSS />
-      <Divider my={[9, 12]} />
-      <PrimerReact />
-      <Divider my={[9, 12]} />
-      <AtomPlugins />
-      <Divider my={[9, 12]} />
-      <OcticonsPromo />
-      <OpenSource />
+      <Box bg="blue.1" color="black" py={12}>
+        <Heading fontSize={6} textAlign="center">
+          Everything in one system
+        </Heading>
+      </Box>
+      <Footer />
     </Layout>
   )
 }
