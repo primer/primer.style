@@ -12,13 +12,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Anchor = styled.div`
-  display: block;
-  position: relative;
-  top: -70px;
-  visibility: hidden;
-`
-
 const components = {
   a: Link
   /*
