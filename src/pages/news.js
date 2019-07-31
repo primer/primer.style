@@ -5,7 +5,7 @@ import NewsList from '../components/NewsList'
 import {ReactComponent as NewsImage} from '../svg/news-illo.svg'
 import whatsNew from '../data/whats-new'
 
-export default function NewsIndex(props) {
+export default function NewsPage(props) {
   return (
     <Layout title="News" {...props}>
       <Flex className="container-xl overflow-hidden" flexDirection="column" pt={8} px={5}>
