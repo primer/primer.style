@@ -16,6 +16,7 @@
     "@primer/octicons-react": "9.1.0",
     "@svgr/webpack": "4.3.2",
     "gatsby": "2.13.39",
+    "gatsby-plugin-client-side-redirect": "0.0.2",
     "gatsby-plugin-manifest": "2.2.4",
     "gatsby-plugin-mdx": "1.0.17",
     "gatsby-plugin-react-helmet": "3.1.2",
