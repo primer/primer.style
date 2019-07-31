@@ -1,8 +1,11 @@
 const path = require('path')
-const siteMetadata = require('./meta')
+const {author} = require('./package.json')
 
 module.exports = {
-  siteMetadata,
+  siteMetadata: {
+    title: 'Primer Design System',
+    author
+  },
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
