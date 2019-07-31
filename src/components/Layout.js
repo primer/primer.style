@@ -1,9 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
 import {Helmet} from 'react-helmet'
 import {useStaticQuery, graphql} from 'gatsby'
 import {Box, Heading} from '@primer/components'
-import {Header, ResponsiveJumpNav, JumpNav} from '@primer/blueprints'
+import Header from './Header'
 import '@primer/css/layout/index.scss'
 
 // FIXME: this works around known issues with Heading's default prop {m: 0}
@@ -12,13 +11,6 @@ Object.assign(Heading.defaultProps, {
   mt: 0,
   mb: 0
 })
-
-const Anchor = styled.div`
-  display: block;
-  position: relative;
-  top: -70px;
-  visibility: hidden;
-`
 
 export default function Layout(props) {
   const {children, title, pageContext = {}, ...rest} = props
@@ -64,15 +56,9 @@ export default function Layout(props) {
         <meta property="twitter:site" content="@githubprimer" />
         {/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126681523-1" /> */}
       </Helmet>
+      <Header />
       <Box bg="black" color="blue.2" {...rest}>
-        <Header root="/" title="Primer">
-          <JumpNav />
-        </Header>
         {children}
-        <Anchor id="jumpnav" />
-        <Box display={['block', 'block', 'block', 'none']}>
-          <ResponsiveJumpNav />
-        </Box>
       </Box>
     </>
   )
