@@ -20,8 +20,12 @@ const Anchor = styled.div`
   visibility: hidden;
 `
 
-export default function Layout({children, title, pageContext = {}, ...rest}) {
-  const {site: {siteMetadata}} = useStaticQuery(graphql`
+export default function Layout(props) {
+  const {children, title, pageContext = {}, ...rest} = props
+
+  const {
+    site: {siteMetadata}
+  } = useStaticQuery(graphql`
     query meta {
       site {
         siteMetadata {
