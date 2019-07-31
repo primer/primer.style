@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Helmet} from 'react-helmet'
+import {useStaticQuery, graphql} from 'gatsby'
 import {Box, Heading} from '@primer/components'
 import {Header, ResponsiveJumpNav, JumpNav} from '@primer/blueprints'
-import siteMetadata from '../../meta'
 import '@primer/css/layout/index.scss'
 
 // FIXME: this works around known issues with Heading's default prop {m: 0}
@@ -21,16 +21,27 @@ const Anchor = styled.div`
 `
 
 export default function Layout({children, title, pageContext = {}, ...rest}) {
-  if (pageContext.frontmatter && !title) {
-    title = pageContext.frontmatter.title
+  const {site: {siteMetadata}} = useStaticQuery(graphql`
+    query meta {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  let pageTitle = title
+  if (pageContext.frontmatter && !pageTitle) {
+    pageTitle = pageContext.frontmatter.title
   }
 
   return (
     <>
       <Helmet>
         <title>
-          {siteMetadata.title || '???'}
-          {title ? ` / ${title}` : ''}
+          {pageTitle ? `${pageTitle} • ` : ''}
+          {siteMetadata.title}
         </title>
         <meta name="keywords" content="Design System" />
         <meta property="og:article:author" content="GitHub Design Systems team" />
