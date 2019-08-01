@@ -22,7 +22,6 @@ module.exports = {
         }
       }
     },
-    'gatsby-plugin-client-side-redirect',
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
     {
@@ -41,5 +40,6 @@ module.exports = {
         layout: 'default'
       }
     },
+    'gatsby-plugin-meta-redirect'
   ]
 }

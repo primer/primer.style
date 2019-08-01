@@ -5,6 +5,8 @@ import IndexGrid from './IndexGrid'
 import {ReactComponent as HeroImage} from '../svg/Hero.svg'
 import {ReactComponent as HeroOverlay} from '../svg/HeroOverlay.svg'
 
+const DOT = '・'
+
 export default function Hero() {
   return (
     <Box pt={[4, 2, 5]}>
@@ -21,24 +23,24 @@ export default function Hero() {
           <Heading color="blue.4" mb={2} fontSize={[48, 56, 84]} fontWeight="bold">
             Primer
           </Heading>
-          <Text color="blue.2" fontSize={[4, 5, 5, 7]} lineHeight={1.25}>
-            Resources, tooling, and design guidelines for building interfaces with GitHub’s design system
+          <Text as="div" color="white" fontSize={[4, 5, 5, 7]} lineHeight={1.25} mb={3}>
+            Design, build, and create with GitHub’s design system
+          </Text>
+          <Text as="div" color="blue.2">
+            Primer was created for GitHub by GitHub. We love it so much, we chose to open-source it to allow the
+            community to design and build their own projects with Primer.
           </Text>
           <Text fontFamily="mono" as="p" color="blue.3" mt={5}>
-            <LinkLight fontSize={[0, 1, 2]} href="https://primer.style/team">
-              Team
-            </LinkLight>{' '}
-            ・
-            <LinkLight ml={2} fontSize={[0, 1, 2]} href="https://primer.style/components">
-              Components
-            </LinkLight>{' '}
-            ・
-            <LinkLight ml={2} fontSize={[0, 1, 2]} href="https://spectrum.chat/primer">
-              Community
-            </LinkLight>{' '}
-            ・
+            <LinkLight fontSize={[0, 1, 2]} href="/about">
+              About
+            </LinkLight>
+            {DOT}
             <LinkLight ml={2} fontSize={[0, 1, 2]} href="https://github.com/primer/">
               Open-source
+            </LinkLight>
+            {DOT}
+            <LinkLight ml={2} fontSize={[0, 1, 2]} href="https://spectrum.chat/primer">
+              Community
             </LinkLight>
           </Text>
         </Flex.Item>

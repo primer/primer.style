@@ -18,14 +18,13 @@ export default function NavDropdown({children, title, color, direction = 'se', .
     <Box {...rest}>
       <Details
         overlay
-        mx={3}
         render={({toggle}) => (
           <>
             <Text color={color} as="summary" onClick={toggle}>
               {title} <StyledOcticon icon={ChevronDown} />
             </Text>
             <Relative>
-              <DropdownMenu as={Absolute} py={2} zIndex={90} bg="black" direction={direction}>
+              <DropdownMenu as={Absolute} py={2} bg="black" direction={direction}>
                 {children}
               </DropdownMenu>
             </Relative>

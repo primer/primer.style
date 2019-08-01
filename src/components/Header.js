@@ -6,11 +6,10 @@ import NavDropdown from './NavDropdown'
 import NavItem from './NavItem'
 
 const NavLink = props => <Link color="blue.2" as={GatsbyLink} {...props} />
-const DropdownLink = props => <NavItem as={GatsbyLink} {...props} />
 
 export default function Header(props) {
   return (
-    <Sticky {...props}>
+    <Sticky zIndex={100} {...props}>
       <Flex bg="black" px={5} py={3} alignItems="center" justifyContent="space-between">
         <Flex alignItems="center">
           <StyledOcticon color="blue.4" icon={MarkGithub} size="medium" mr={3} />
@@ -19,17 +18,29 @@ export default function Header(props) {
           </Link>
         </Flex>
         <Flex as="nav" alignItems="center">
-          <NavLink to="/news">What’s new</NavLink>
-          <NavDropdown title="Design">
-            <DropdownLink to="/design">Interface guidelines</DropdownLink>
-            <DropdownLink to="https://octicons.github.com">Octicons</DropdownLink>
-            <DropdownLink to="/css/tools/prototyping">Prototyping</DropdownLink>
+          <NavLink to="/news" ml={4}>
+            What’s new
+          </NavLink>
+          <NavDropdown title="Design" ml={4}>
+            <NavItem as={GatsbyLink} to="/design">
+              Interface guidelines
+            </NavItem>
+            <NavItem href="https://octicons.github.com">Octicons</NavItem>
+            <NavItem as={GatsbyLink} to="/css/tools/prototyping">
+              Prototyping
+            </NavItem>
           </NavDropdown>
-          <NavDropdown title="Development">
-            <DropdownLink to="/css">Primer CSS</DropdownLink>
-            <DropdownLink to="/components">Primer Components</DropdownLink>
+          <NavDropdown title="Development" ml={4}>
+            <NavItem as={GatsbyLink} to="/css">
+              Primer CSS
+            </NavItem>
+            <NavItem as={GatsbyLink} to="/components">
+              Primer Components
+            </NavItem>
           </NavDropdown>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/about" ml={4}>
+            About
+          </NavLink>
         </Flex>
       </Flex>
     </Sticky>
