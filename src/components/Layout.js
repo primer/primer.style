@@ -18,7 +18,7 @@ export default function Layout(props) {
   const {
     site: {siteMetadata}
   } = useStaticQuery(graphql`
-    query layout {
+    query Layout {
       site {
         siteMetadata {
           title
