@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
-        extensions: ['.mdx', '.md'],
+        extensions: ['.md', '.mdx'],
         defaultLayouts: {
           default: require.resolve('./src/components/Layout.js')
         }
@@ -40,6 +40,7 @@ module.exports = {
         layout: 'default'
       }
     },
+    // note: this must go last
     'gatsby-plugin-meta-redirect'
   ]
 }
