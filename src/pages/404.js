@@ -3,7 +3,7 @@ import {Box, Heading} from '@primer/components'
 import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 
-export default function FourOhFour(props) {
+export default function FourOhFour() {
   return (
     <Layout title="404" color="white" bg="red.9">
       <Box px={5} py={10} mx="auto" className="container-xl">
