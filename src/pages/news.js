@@ -3,7 +3,10 @@ import {Box, Text, Heading, Flex, Relative} from '@primer/components'
 import Layout from '../components/Layout'
 import NewsList from '../components/NewsList'
 import {ReactComponent as NewsImage} from '../svg/news-illo.svg'
-import whatsNew from '../data/whats-new'
+import posts from '../data/posts.yml'
+import releases from '../data/releases.json'
+
+const newsItems = posts.concat(releases)
 
 export default function NewsPage(props) {
   return (
@@ -31,7 +34,7 @@ export default function NewsPage(props) {
             </Flex.Item>
           </Relative>
         </Flex>
-        <NewsList items={whatsNew} />
+        <NewsList items={newsItems} />
       </Flex>
     </Layout>
   )
