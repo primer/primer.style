@@ -19,17 +19,17 @@ export default function Header(props) {
           </Link>
         </Flex>
         <Flex as="nav" alignItems="center">
-          <NavLink to="/news">What’s new</NavLink>
-          <NavDropdown title="Design">
+          <NavLink to="/news" ml={4}>What’s new</NavLink>
+          <NavDropdown title="Design" ml={4}>
             <DropdownLink to="/design">Interface guidelines</DropdownLink>
             <DropdownLink to="https://octicons.github.com">Octicons</DropdownLink>
             <DropdownLink to="/css/tools/prototyping">Prototyping</DropdownLink>
           </NavDropdown>
-          <NavDropdown title="Development">
+          <NavDropdown title="Development" ml={4}>
             <DropdownLink to="/css">Primer CSS</DropdownLink>
             <DropdownLink to="/components">Primer Components</DropdownLink>
           </NavDropdown>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/about" ml={4}>About</NavLink>
         </Flex>
       </Flex>
     </Sticky>

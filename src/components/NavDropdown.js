@@ -18,7 +18,6 @@ export default function NavDropdown({children, title, color, direction = 'se', .
     <Box {...rest}>
       <Details
         overlay
-        mx={3}
         render={({toggle}) => (
           <>
             <Text color={color} as="summary" onClick={toggle}>
