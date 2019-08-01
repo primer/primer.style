@@ -5104,13 +5104,6 @@ gatsby-page-utils@^0.0.5:
     micromatch "^3.1.10"
     slash "^1.0.0"
 
-gatsby-plugin-client-side-redirect@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-client-side-redirect/-/gatsby-plugin-client-side-redirect-0.0.2.tgz#a1282138dd8e525903e86b9c86a4f9b2e14e26f7"
-  integrity sha512-SIWZnkP3ANvVK0fKPhdRlcvM1uzz8GtvPRlvjpuuVk6M1pAQ12MomI8dD5FddMdFROEBsbEyEIdtc/kW5vrIFg==
-  dependencies:
-    fs-extra "^7.0.0"
-
 gatsby-plugin-manifest@2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.4.tgz#62d144c9fcdf2c476a460bcaacc26359db6e486d"
@@ -5153,6 +5146,13 @@ gatsby-plugin-mdx@1.0.17:
     unist-util-map "^1.0.4"
     unist-util-remove "^1.0.1"
     unist-util-visit "^1.4.0"
+
+gatsby-plugin-meta-redirect@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-meta-redirect/-/gatsby-plugin-meta-redirect-1.1.1.tgz#058e8e53edff38dc44d3bb6153109d01c910f863"
+  integrity sha512-Oc4qgU3SlDUM9qoxIMKO+re2bdMs3/a2KXrfL65gb8XMLsHylBbveWtXZRhgjd2QDL/49RX4S9SEykuadRju2w==
+  dependencies:
+    fs-extra "^7.0.0"
 
 gatsby-plugin-page-creator@^2.1.5:
   version "2.1.5"
