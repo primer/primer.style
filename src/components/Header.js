@@ -10,7 +10,7 @@ const DropdownLink = props => <NavItem as={GatsbyLink} {...props} />
 
 export default function Header(props) {
   return (
-    <Sticky {...props}>
+    <Sticky zIndex={100} {...props}>
       <Flex bg="black" px={5} py={3} alignItems="center" justifyContent="space-between">
         <Flex alignItems="center">
           <StyledOcticon color="blue.4" icon={MarkGithub} size="medium" mr={3} />
