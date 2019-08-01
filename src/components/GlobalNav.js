@@ -6,12 +6,12 @@ import NavItem from './NavItem'
 
 const NavLink = props => <Link color="blue.2" as={GatsbyLink} {...props} />
 
-export default function GlobalNav(props) {
+export default function GlobalNav({navProps = {ml: 4}}) {
   return <>
-    <NavLink to="/news" ml={4}>
+    <NavLink to="/news" {...navProps}>
       What’s new
     </NavLink>
-    <NavDropdown title="Design" ml={4}>
+    <NavDropdown title="Design" {...navProps}>
       <NavItem as={GatsbyLink} to="/design">
         Interface guidelines
       </NavItem>
@@ -20,7 +20,7 @@ export default function GlobalNav(props) {
         Prototyping
       </NavItem>
     </NavDropdown>
-    <NavDropdown title="Development" ml={4}>
+    <NavDropdown title="Development" {...navProps}>
       <NavItem as={GatsbyLink} to="/css">
         Primer CSS
       </NavItem>
@@ -28,7 +28,7 @@ export default function GlobalNav(props) {
         Primer Components
       </NavItem>
     </NavDropdown>
-    <NavLink to="/about" ml={4}>
+    <NavLink to="/about" {...navProps}>
       About
     </NavLink>
   </>
