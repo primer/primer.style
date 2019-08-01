@@ -1,9 +1,8 @@
 import React from 'react'
-import {Box, Heading, Text, Flex, Absolute, Relative} from '@primer/components'
+import {Box, Heading, Text, Flex, Relative} from '@primer/components'
 import LinkLight from './LinkLight'
 import IndexGrid from './IndexGrid'
 import {ReactComponent as HeroImage} from '../svg/Hero.svg'
-import {ReactComponent as HeroOverlay} from '../svg/HeroOverlay.svg'
 
 const DOT = '・'
 
@@ -14,9 +13,6 @@ export default function Hero() {
         <Flex.Item px={5} as={Box} width={[10 / 12, 8 / 12, 8 / 12, 5 / 12]} mx="auto">
           <Relative mt={[2, 3, 5]}>
             <HeroImage width="100%" height={null} />
-            <Absolute as={Box} top={0} left={0} width="100%" height="100%" zIndex={100} style={{pointerEvents: 'none'}}>
-              <HeroOverlay width="100%" height={null} />
-            </Absolute>
           </Relative>
         </Flex.Item>
         <Flex.Item as={Box} px={5} my={[4, 3, 0]} width={[1, 1, 1, 7 / 12]}>
