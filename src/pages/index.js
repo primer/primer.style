@@ -8,6 +8,7 @@ import {ReactComponent as ComponentsImage} from '../svg/components.svg'
 import {ReactComponent as PresentationsImage} from '../svg/presentations.svg'
 import {ReactComponent as OcticonsImage} from '../svg/octicons.svg'
 import {ReactComponent as GuidelinesImage} from '../svg/guidelines.svg'
+import {ReactComponent as FigmaImage} from '../svg/figma.svg'
 
 const gutter = 5
 
@@ -39,7 +40,7 @@ export default function Index(props) {
             <Promo title="Interface guidelines" image={GuidelinesImage} href="/design">
               Projects, standards, and usage guidelines for designing GitHub interfaces.
             </Promo>
-            <Promo title="Figma components" href="/figma">
+            <Promo title="Figma components" image={FigmaImage} href="/figma">
               Design layouts, flows, wireframes, and make prototypes with Primer components in Figma.
             </Promo>
           </Flex>
