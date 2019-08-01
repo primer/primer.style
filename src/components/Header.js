@@ -6,7 +6,6 @@ import NavDropdown from './NavDropdown'
 import NavItem from './NavItem'
 
 const NavLink = props => <Link color="blue.2" as={GatsbyLink} {...props} />
-const DropdownLink = props => <NavItem as={GatsbyLink} {...props} />
 
 export default function Header(props) {
   return (
@@ -21,13 +20,13 @@ export default function Header(props) {
         <Flex as="nav" alignItems="center">
           <NavLink to="/news" ml={4}>What’s new</NavLink>
           <NavDropdown title="Design" ml={4}>
-            <DropdownLink to="/design">Interface guidelines</DropdownLink>
-            <DropdownLink to="https://octicons.github.com">Octicons</DropdownLink>
-            <DropdownLink to="/css/tools/prototyping">Prototyping</DropdownLink>
+            <NavItem as={GatsbyLink} to="/design">Interface guidelines</NavItem>
+            <NavItem href="https://octicons.github.com">Octicons</NavItem>
+            <NavItem as={GatsbyLink} to="/css/tools/prototyping">Prototyping</NavItem>
           </NavDropdown>
           <NavDropdown title="Development" ml={4}>
-            <DropdownLink to="/css">Primer CSS</DropdownLink>
-            <DropdownLink to="/components">Primer Components</DropdownLink>
+            <NavItem as={GatsbyLink} to="/css">Primer CSS</NavItem>
+            <NavItem as={GatsbyLink} to="/components">Primer Components</NavItem>
           </NavDropdown>
           <NavLink to="/about" ml={4}>About</NavLink>
         </Flex>
