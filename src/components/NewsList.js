@@ -16,9 +16,6 @@ export default function NewsList({items, defaultFilter, ...rest}) {
     items = items.filter(item => item.type === filter)
   }
 
-  // sort alphabetically by date
-  items.sort((a, b) => a.date.localeCompare(b.date))
-
   return (
     <Box mt={[4, 0]} {...rest}>
       <Text fontSize={2} fontFamily="mono">
