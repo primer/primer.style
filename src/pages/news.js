@@ -1,14 +1,45 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {graphql, useStaticQuery} from 'gatsby'
 import {Box, Text, Heading, Flex, Relative} from '@primer/components'
 import Layout from '../components/Layout'
 import NewsList from '../components/NewsList'
 import {ReactComponent as NewsImage} from '../svg/news-illo.svg'
 import posts from '../data/posts.yml'
-import releases from '../data/releases.json'
-
-const newsItems = posts.concat(releases)
+// import getReleases from '../data/releases'
 
 export default function NewsPage(props) {
+  const {
+    allPrimerRelease: {nodes: oldReleases}
+  } = useStaticQuery(graphql`
+    query newsReleases {
+      allPrimerRelease {
+        nodes {
+          date
+          name
+          title
+          type
+          url
+          version
+        }
+      }
+    }
+  `)
+
+  // console.warn('default releases:', defaultReleases)
+  /* eslint-disable-next-line no-unused-vars */
+  const [releases, updateReleases] = useState(oldReleases)
+  const newsItems = posts.concat(releases)
+
+  newsItems.sort((a, b) => b.date.localeCompare(a.date))
+
+  /*
+  setTimeout(async () => {
+    const latest = await getReleases()
+    console.warn('latest releases:', latest)
+    updateReleases(latest)
+  }, 10)
+  */
+
   return (
     <Layout title="News" {...props}>
       <Flex className="container-xl overflow-hidden" flexDirection="column" pt={8} px={5}>
