@@ -14,7 +14,7 @@ const packageNames = {
   '@primer/css': 'Primer CSS',
   primer: 'Primer CSS',
   '@primer/components': 'Primer Components',
-  octicons: 'Octicons'
+  '@primer/octicons': 'Octicons'
 }
 
 const articleIcon = type => iconForType[type] || LinkExternal
@@ -23,18 +23,19 @@ const articleDomain = url => {
   return url.substring(url.indexOf('//') + 2, url.indexOf('/', 9))
 }
 
+const now = new Date()
+const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
 const articleDate = date => {
-  const dateNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
   const day = new Date(date)
-  const now = new Date()
-  return `${dateNames[day.getMonth()]} ${day.getDate()}${
+  return `${monthNames[day.getMonth()]} ${day.getDate()}${
     now.getFullYear() > day.getFullYear() ? `, ${day.getFullYear()}` : ''
   }`
 }
 
 const getTitle = (title, name, version) => {
   if (name && version) {
-    return `${packageNames[name]} v${version}`
+    return `${packageNames[name] || name} v${version}`
   }
   return title
 }
