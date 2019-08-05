@@ -8,11 +8,10 @@ module.exports = async function getReleases(packages = PRIMER_PACKAGES) {
   for (const name of packages) {
     const [org, repo] = name.replace(/^@/, '').split('/')
     const repoURL = `https://github.com/${org}/${repo}`
-    const packageInfo = await fetch(`https://registry.npmjs.org/${name}`)
-      .then(res => res.json())
-    for (const [version, info] of Object.entries(packageInfo.versions)) {
-      const {major, minor, patch, prerelease: [preid]} = semver.parse(version)
-      if (!preid && patch === 0) {
+    const packageInfo = await fetch(`https://registry.npmjs.org/${name}`).then(res => res.json())
+    for (const version of Object.keys(packageInfo.versions)) {
+      const parsed = semver.parse(version)
+      if (parsed.patch === 0 && parsed.prerelease.length === 0) {
         releases.push({
           type: 'release',
           name,
