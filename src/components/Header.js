@@ -20,7 +20,7 @@ export default function Header(props) {
           </Flex>
         </Flex>
       </Sticky>
-      <Box as="nav" bg="black" display={['block', 'block', 'none']} px={[3, 5]} pt={2}>
+      <Box as="nav" bg="black" display={['block', 'block', 'none']} px={[3, 5]}>
         <GlobalNav navProps={{display: 'inline-block', mr: 3}} />
       </Box>
     </>
