@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from '@primer/components'
+import {Link, Text} from '@primer/components'
 import {Link as GatsbyLink} from 'gatsby'
 import NavDropdown from './NavDropdown'
 import NavItem from './NavItem'
@@ -10,7 +10,8 @@ export default function GlobalNav({navProps = {ml: 4}}) {
   return (
     <>
       <NavLink to="/news" {...navProps}>
-        What’s new
+        <Text display={['block', 'block', 'none']}>News</Text>
+        <Text display={['none', 'none', 'block']}>What’s new</Text>
       </NavLink>
       <NavDropdown title="Design" {...navProps}>
         <NavItem as={GatsbyLink} to="/design">
@@ -21,7 +22,7 @@ export default function GlobalNav({navProps = {ml: 4}}) {
           Prototyping
         </NavItem>
       </NavDropdown>
-      <NavDropdown title="Development" {...navProps}>
+      <NavDropdown title="Develop" {...navProps}>
         <NavItem as={GatsbyLink} to="/css">
           Primer CSS
         </NavItem>
