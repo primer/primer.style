@@ -21,7 +21,7 @@ export default function Index(props) {
           <Heading fontSize={6} textAlign="center" lineHeight={1}>
             Everything in one system
           </Heading>
-          <Text as="p" textAlign="center" mb={4}>
+          <Text as="p" textAlign="center" mb={8}>
             Check out our most popular tools to use in your next project:
           </Text>
           <Flex flexWrap="wrap" mr={[0, 0, -gutter]}>
@@ -58,7 +58,7 @@ A.defaultProps = {
 }
 
 const Promo = ({title, href, image: Image = 'div', children, ...rest}) => (
-  <Box pr={[0, 0, gutter]} mb={[6, 6, 4]} width={[1, 1, 1 / 2, 1 / 3]} {...rest}>
+  <Box pr={[0, 0, gutter]} mb={[6, 6, 8]} width={[1, 1, 1 / 2, 1 / 3]} {...rest}>
     <A href={href} display="block" mb={1}>
       <BorderBox as={Image} bg="black" border={0} borderRadius={2} width="100%" height={null} minHeight={220} />
     </A>
