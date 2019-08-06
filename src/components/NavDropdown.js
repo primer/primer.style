@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import {color} from 'styled-system'
 import {ChevronDown} from '@primer/octicons-react'
 import {Details, Text, Relative, StyledOcticon, Absolute, Box} from '@primer/components'
 // import getDirectionStyles from './getDirectionStyles'
@@ -13,6 +14,11 @@ const DropdownMenu = styled.div`
   overflow: hidden;
 `
 
+const Summary = styled.summary`
+  cursor: pointer;
+  ${color}
+`
+
 export default function NavDropdown({children, title, color, direction = 'se', ...rest}) {
   return (
     <Box {...rest}>
@@ -20,9 +26,9 @@ export default function NavDropdown({children, title, color, direction = 'se', .
         overlay
         render={({toggle}) => (
           <>
-            <Text color={color} as="summary" onClick={toggle}>
+            <Summary color={color} onClick={toggle}>
               {title} <StyledOcticon icon={ChevronDown} />
-            </Text>
+            </Summary>
             <Relative>
               <DropdownMenu as={Absolute} py={2} bg="black" direction={direction}>
                 {children}
