@@ -19,10 +19,10 @@ export default function Header(props) {
             <GlobalNav navProps={{ml: 4}} />
           </Flex>
         </Flex>
-        <Box as="nav" display={['block', 'block', 'none']}>
-          <GlobalNav navProps={{display: 'block', ml: 4, mt: 2}} />
-        </Box>
       </Sticky>
+      <Box as="nav" bg="black" display={['block', 'block', 'none']}>
+        <GlobalNav navProps={{display: 'block', ml: 5, pt: 2}} />
+      </Box>
     </>
   )
 }
