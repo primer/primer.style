@@ -9,7 +9,7 @@ import LinkDark from './LinkDark'
 
 export default function OpenSource() {
   return (
-    <Box bg="blue.2" pt={12} mt={8}>
+    <Box bg="blue.2" pt={12}>
       <IndexGrid alignItems="start">
         <IndexGrid.Item mb={[8, 8, 8, 0]}>
           <Heading color="black" mb={3} fontSize={7} fontWeight="bold">
@@ -50,7 +50,7 @@ export default function OpenSource() {
             Design Systems team
           </LinkDark>
           <Text>.</Text>
-          <Text as="p">Copyright GitHub {new Date().getFullYear()}.</Text>
+          <Text as="p">&copy; GitHub {new Date().getFullYear()}</Text>
         </BorderBox>
       </Box>
     </Box>

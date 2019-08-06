@@ -1,9 +1,27 @@
 const path = require('path')
-const siteMetadata = require('./meta')
+const {author} = require('./package.json')
 
 module.exports = {
-  siteMetadata,
+  siteMetadata: {
+    title: 'Primer Design System',
+    author
+  },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: require.resolve('./src/icons/favicon-192.png')
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: ['.mdx', '.md'],
+        defaultLayouts: {
+          default: require.resolve('./src/components/Layout.js')
+        }
+      }
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
     {
@@ -22,22 +40,6 @@ module.exports = {
         layout: 'default'
       }
     },
-    /*
-    {
-      resolve: 'gatsby-plugin-mdx',
-      options: {
-        extensions: ['.mdx', '.md'],
-        defaultLayouts: {
-          default: require.resolve('./src/components/Layout.js')
-        }
-      }
-    },
-    */
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        icon: require.resolve('./src/icons/favicon-192.png')
-      }
-    }
+    'gatsby-plugin-meta-redirect'
   ]
 }
