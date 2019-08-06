@@ -19,7 +19,7 @@ export default function Hero() {
           <Heading color="blue.4" mb={2} fontSize={[48, 56, 84]} fontWeight="bold">
             Primer
           </Heading>
-          <Text as="div" color="blue.1" fontSize={[4, 5, 5, 7]} lineHeight={1.25} mb={3}>
+          <Text as="div" color="white" fontSize={[4, 5, 5, 7]} lineHeight={1.25} mb={3}>
             Design, build, and create with GitHub’s design system
           </Text>
           <Text as="div" color="blue.2">
