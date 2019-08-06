@@ -8,7 +8,7 @@ export default function Header(props) {
   return (
     <>
       <Sticky bg="black" zIndex={100} {...props}>
-        <Flex px={5} py={3} alignItems="center" justifyContent="space-between">
+        <Flex px={[3, 5]} py={3} alignItems="center" justifyContent="space-between">
           <Flex alignItems="center">
             <StyledOcticon color="blue.4" icon={MarkGithub} size="medium" mr={3} />
             <Link as={GatsbyLink} to="/" mr={4} color="blue.4" fontFamily="mono">
@@ -20,8 +20,8 @@ export default function Header(props) {
           </Flex>
         </Flex>
       </Sticky>
-      <Box as="nav" bg="black" display={['block', 'block', 'none']}>
-        <GlobalNav navProps={{display: 'block', ml: 5, pt: 2}} />
+      <Box as="nav" bg="black" display={['block', 'block', 'none']} px={[3, 5]} pt={2}>
+        <GlobalNav navProps={{display: 'inline-block', mr: 3}} />
       </Box>
     </>
   )
