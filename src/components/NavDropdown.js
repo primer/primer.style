@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {color} from 'styled-system'
 import {ChevronDown} from '@primer/octicons-react'
-import {Details, Relative, StyledOcticon, Absolute, Box} from '@primer/components'
+import {Relative, StyledOcticon, Absolute, Box} from '@primer/components'
 // import getDirectionStyles from './getDirectionStyles'
 
 const DropdownMenu = styled.div`
@@ -15,28 +15,39 @@ const DropdownMenu = styled.div`
 `
 
 const Summary = styled.summary`
+  color: inherit;
   cursor: pointer;
-  ${color}
+  list-style: none;
+
+  &::before,
+  &::-webkit-details-marker { display: none; }
 `
 
-export default function NavDropdown({children, title, color, direction = 'se', ...rest}) {
+export default function NavDropdown({children, title, direction = 'se', ...rest}) {
+  const ref = useRef(null)
+
+  useEffect(() => {
+    document.body.addEventListener('click', clickCheck)
+    return () => document.body.removeEventListener('click', clickCheck)
+  })
+
+  function clickCheck(event) {
+    const {current: details} = ref
+    if (!details.contains(event.target)) {
+      details.open = false
+    }
+  }
+
   return (
-    <Box {...rest}>
-      <Details
-        overlay
-        render={({toggle}) => (
-          <>
-            <Summary color={color} onClick={toggle}>
-              {title} <StyledOcticon icon={ChevronDown} />
-            </Summary>
-            <Relative>
-              <DropdownMenu as={Absolute} py={2} bg="black" direction={direction}>
-                {children}
-              </DropdownMenu>
-            </Relative>
-          </>
-        )}
-      />
+    <Box as="details" {...rest} ref={ref}>
+      <Summary>
+        {title} <StyledOcticon icon={ChevronDown} />
+      </Summary>
+      <Relative>
+        <DropdownMenu as={Absolute} py={2} bg="black" direction={direction}>
+          {children}
+        </DropdownMenu>
+      </Relative>
     </Box>
   )
 }
