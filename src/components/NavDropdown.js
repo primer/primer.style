@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {color} from 'styled-system'
 import {ChevronDown} from '@primer/octicons-react'
-import {Details, Text, Relative, StyledOcticon, Absolute, Box} from '@primer/components'
+import {Details, Relative, StyledOcticon, Absolute, Box} from '@primer/components'
 // import getDirectionStyles from './getDirectionStyles'
 
 const DropdownMenu = styled.div`
