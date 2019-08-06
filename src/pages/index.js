@@ -40,7 +40,7 @@ export default function Index(props) {
             <Promo title="Interface guidelines" image={GuidelinesImage} href="/design">
               Projects, standards, and usage guidelines for designing GitHub interfaces.
             </Promo>
-            <Promo title="Figma components" image={FigmaImage} href="/figma">
+            <Promo title="Figma components" image={FigmaImage} href="/design/tools/figma">
               Design layouts, flows, wireframes, and make prototypes with Primer components in Figma.
             </Promo>
           </Flex>
