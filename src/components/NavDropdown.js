@@ -1,7 +1,6 @@
 import React, {useEffect, useRef} from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import {color} from 'styled-system'
 import {ChevronDown} from '@primer/octicons-react'
 import {Relative, StyledOcticon, Absolute, Box} from '@primer/components'
 // import getDirectionStyles from './getDirectionStyles'
@@ -20,7 +19,9 @@ const Summary = styled.summary`
   list-style: none;
 
   &::before,
-  &::-webkit-details-marker { display: none; }
+  &::-webkit-details-marker {
+    display: none;
+  }
 `
 
 export default function NavDropdown({children, title, direction = 'se', ...rest}) {
