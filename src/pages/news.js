@@ -1,11 +1,13 @@
 import React, {useState} from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 import {Box, Text, Heading, Flex, Relative} from '@primer/components'
+import fetch from 'isomorphic-unfetch'
 import Layout from '../components/Layout'
 import NewsList from '../components/NewsList'
 import {ReactComponent as NewsImage} from '../svg/news-illo.svg'
 import posts from '../data/posts.yml'
-// import getReleases from '../data/releases'
+
+const LATEST_RELEASE_API_URL = `https://releases-git-lint-actions.primer.now.sh/api`
 
 export default function NewsPage(props) {
   const {
@@ -15,11 +17,14 @@ export default function NewsPage(props) {
       allPrimerRelease {
         nodes {
           date
-          name
           title
-          type
-          url
           version
+          npm {
+            name
+          }
+          github {
+            html_url
+          }
         }
       }
     }
@@ -28,17 +33,26 @@ export default function NewsPage(props) {
   // console.warn('default releases:', defaultReleases)
   /* eslint-disable-next-line no-unused-vars */
   const [releases, updateReleases] = useState(oldReleases)
-  const newsItems = posts.concat(releases)
+  const [updated, setUpdated] = useState(false)
 
+  for (const release of releases) {
+    release.name = release.npm ? release.npm.name : null
+    release.type = 'release'
+    release.url = release.github.html_url
+    delete release.description
+  }
+
+  const newsItems = posts.concat(releases)
   newsItems.sort((a, b) => b.date.localeCompare(a.date))
 
-  /*
-  setTimeout(async () => {
-    const latest = await getReleases()
-    console.warn('latest releases:', latest)
-    updateReleases(latest)
-  }, 10)
-  */
+  if (!updated) {
+    setTimeout(async () => {
+      const latest = await getReleases()
+      console.warn('latest release data:', latest)
+      updateReleases(latest)
+      setUpdated(true)
+    }, 10)
+  }
 
   return (
     <Layout title="News" {...props}>
@@ -69,4 +83,9 @@ export default function NewsPage(props) {
       </Flex>
     </Layout>
   )
+}
+
+async function getReleases() {
+  const {releases} = await fetch(LATEST_RELEASE_API_URL).then(res => res.json())
+  return releases
 }
