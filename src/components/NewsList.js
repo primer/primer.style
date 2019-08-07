@@ -1,7 +1,52 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Box, Flex, Text, StyledOcticon, themeGet} from '@primer/components'
 import Article, {iconForType} from './Article'
 import styled from 'styled-components'
+
+export default function NewsList({items, defaultFilter, ...rest}) {
+  const [filter, updateFilter] = useState(defaultFilter)
+  const setFilter = value => updateFilter(filter === value ? null : value)
+
+  const types = items.reduce((types, {type}) => {
+    types.add(type)
+    return types
+  }, new Set())
+
+  if (filter) {
+    items = items.filter(item => item.type === filter)
+  }
+
+  return (
+    <Box mt={[4, 0]} {...rest}>
+      <Text fontSize={2} fontFamily="mono">
+        <Flex flexWrap="wrap" mb={[8, 9]} flexDirection={['column', 'column', 'row', 'row']}>
+          <FilterButton mb={[3, 3, 3, 0]} mr={5} onClick={() => setFilter(null)} selected={filter === null}>
+            All
+          </FilterButton>
+          {Array.from(types)
+            .sort()
+            .map(type => (
+              <FilterButton
+                mb={[3, 3, 3, 0]}
+                mr={5}
+                onClick={() => setFilter(type)}
+                key={type}
+                selected={filter === type}
+              >
+                <StyledOcticon icon={iconForType[type]} size={20} mr={2} />
+                {`${type.charAt(0).toUpperCase()}${type.slice(1)}`}s
+              </FilterButton>
+            ))}
+        </Flex>
+      </Text>
+      <Box>
+        {items.map(article => (
+          <Article {...article} key={article.url} />
+        ))}
+      </Box>
+    </Box>
+  )
+}
 
 const FilterButton = styled(props => {
   return (
@@ -16,66 +61,3 @@ const FilterButton = styled(props => {
     text-decoration: ${props => (props.selected ? 'none' : 'underline')};
   }
 `
-
-class NewsList extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {filter: null}
-  }
-
-  setFilter(type) {
-    if (this.state.filter === type) {
-      this.setState({filter: null})
-    } else {
-      this.setState({filter: type})
-    }
-  }
-
-  render() {
-    const {filter} = this.state
-    let {items} = this.props
-
-    const types = items.reduce((types, {type}) => {
-      types.add(type)
-      return types
-    }, new Set())
-
-    if (filter) {
-      items = items.filter(item => item.type === filter)
-    }
-    return (
-      <Box mt={[4, 0]}>
-        <Text fontSize={2} fontFamily="mono">
-          <Flex flexWrap="wrap" mb={[8, 9]} flexDirection={['column', 'column', 'row', 'row']}>
-            <FilterButton mb={[3, 3, 3, 0]} mr={5} onClick={() => this.setFilter(null)} selected={filter === null}>
-              All
-            </FilterButton>
-            {[...types].sort().map(type => {
-              return (
-                <FilterButton
-                  mb={[3, 3, 3, 0]}
-                  mr={5}
-                  onClick={() => this.setFilter(type)}
-                  key={type}
-                  selected={filter === type}
-                >
-                  <StyledOcticon icon={iconForType[type]} size={20} mr={2} />
-                  {`${type.charAt(0).toUpperCase()}${type.slice(1)}`}s
-                </FilterButton>
-              )
-            })}
-          </Flex>
-        </Text>
-        <Box>
-          {items
-            .sort((a, b) => new Date(b.date) - new Date(a.date))
-            .map(article => {
-              return <Article {...article} key={article.url} />
-            })}
-        </Box>
-      </Box>
-    )
-  }
-}
-
-export default NewsList
