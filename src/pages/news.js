@@ -48,7 +48,7 @@ export default function NewsPage(props) {
   if (!updated) {
     setTimeout(async () => {
       const latest = await getReleases()
-      console.warn('latest release data:', latest)
+      // console.warn('latest release data:', latest)
       updateReleases(latest)
       setUpdated(true)
     }, 10)
