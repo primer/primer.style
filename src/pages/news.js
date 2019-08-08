@@ -35,14 +35,7 @@ export default function NewsPage(props) {
   const [releases, setReleases] = useState(oldReleases)
 
   useEffect(() => {
-    // this is what React tells us to do, rather than passing an async function
-    // to useEffect() :shrug:
-    async function updateReleases() {
-      const latest = await getReleases()
-      // console.warn(`got ${latest.length} new releases`)
-      setReleases(latest)
-    }
-    updateReleases()
+    getReleases().then(latest => setReleases(latest))
   }, [])
 
   const newsItems = releases
