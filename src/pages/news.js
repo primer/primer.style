@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 import {Box, Text, Heading, Flex, Relative} from '@primer/components'
 import fetch from 'isomorphic-unfetch'
@@ -32,27 +32,30 @@ export default function NewsPage(props) {
 
   // console.warn('default releases:', defaultReleases)
   /* eslint-disable-next-line no-unused-vars */
-  const [releases, updateReleases] = useState(oldReleases)
-  const [updated, setUpdated] = useState(false)
+  const [releases, setReleases] = useState(oldReleases)
 
-  for (const release of releases) {
-    release.name = release.npm ? release.npm.name : null
-    release.type = 'release'
-    release.url = release.github.html_url
-    delete release.description
-  }
-
-  const newsItems = posts.concat(releases)
-  newsItems.sort((a, b) => b.date.localeCompare(a.date))
-
-  if (!updated) {
-    setTimeout(async () => {
+  useEffect(() => {
+    // this is what React tells us to do, rather than passing an async function
+    // to useEffect() :shrug:
+    async function updateReleases() {
       const latest = await getReleases()
-      // console.warn('latest release data:', latest)
-      updateReleases(latest)
-      setUpdated(true)
-    }, 10)
-  }
+      console.warn(`got ${latest.length} new releases`)
+      setReleases(latest)
+    }
+    updateReleases()
+  }, [])
+
+  const newsItems = releases
+    // tidy up release data for the Article component
+    .map(release => ({
+      ...release,
+      name: release.npm ? release.npm.name : null,
+      type: 'release',
+      url: release.github.html_url,
+      description: null
+    }))
+    .concat(posts)
+    .sort((a, b) => b.date.localeCompare(a.date))
 
   return (
     <Layout title="News" {...props}>
