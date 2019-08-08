@@ -39,7 +39,7 @@ export default function NewsPage(props) {
     // to useEffect() :shrug:
     async function updateReleases() {
       const latest = await getReleases()
-      console.warn(`got ${latest.length} new releases`)
+      // console.warn(`got ${latest.length} new releases`)
       setReleases(latest)
     }
     updateReleases()
