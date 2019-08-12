@@ -15,6 +15,6 @@
     {"src": "/design(/.*)?", "dest": "https://primer-design.now.sh"},
     {"src": "/blueprints(/.*)?", "dest": "https://primer-blueprints.now.sh"},
     {"src": "/presentations(/.*)?", "dest": "https://primer-presentations.now.sh"},
-    {"src": "/doctocat(/.*)?", "dest": "https://doctocat.now.sh"}
+    {"src": "/doctocat(/.*)?", "dest": "https://doctocat-git-base-path.primer.now.sh"}
   ]
 }
