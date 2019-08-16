@@ -38,7 +38,7 @@ export default function Index(props) {
               Slide templates that let you focus on the story without having to worry about the design details.
             </Promo>
             <Promo title="Interface guidelines" image={GuidelinesImage} href="/design">
-              Projects, standards, and usage guidelines for designing GitHub interfaces.
+              Principles, standards, and usage guidelines for designing GitHub interfaces.
             </Promo>
             <Promo title="Figma components" image={FigmaImage} href="/design/tools/figma">
               Design layouts, flows, wireframes, and make prototypes with Primer components in Figma.
