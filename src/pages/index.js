@@ -6,9 +6,9 @@ import Footer from '../components/Footer'
 import {ReactComponent as CSSImage} from '../svg/css.svg'
 import {ReactComponent as ComponentsImage} from '../svg/components.svg'
 import {ReactComponent as PresentationsImage} from '../svg/presentations.svg'
-import {ReactComponent as OcticonsImage} from '../octicons.svg'
-import {ReactComponent as GuidelinesImage} from '../guidelines.svg'
-import {ReactComponent as FigmaImage} from '../figma.svg'
+import {ReactComponent as OcticonsImage} from '../svg/octicons.svg'
+import {ReactComponent as GuidelinesImage} from '../svg/guidelines.svg'
+import {ReactComponent as FigmaImage} from '../svg/figma.svg'
 
 const gutter = 5
 
