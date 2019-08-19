@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, {ThemeProvider, createGlobalStyle} from 'styled-components'
+import {ThemeProvider, createGlobalStyle} from 'styled-components'
 import {BaseStyles, Link, theme} from '@primer/components'
 import {MDXProvider} from '@mdx-js/react'
 
@@ -38,9 +38,7 @@ const components = {
 export function wrapRootElement({element}) {
   return (
     <MDXProvider components={components}>
-      <ThemeProvider theme={theme}>
-        {element}
-      </ThemeProvider>
+      <ThemeProvider theme={theme}>{element}</ThemeProvider>
     </MDXProvider>
   )
 }
