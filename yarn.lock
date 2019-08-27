@@ -1063,10 +1063,10 @@
   resolved "https://registry.yarnpkg.com/@primer/css/-/css-12.5.0.tgz#c67314c7da4a92b7251ef1221daa8038c48cfcc2"
   integrity sha512-MyA2hoCY3UAmMKPHPN+LM1HrwGz5VR92fkEkIzAQgHBYMPstT77tjHkO8OPoWW//DShdYMYAgukZdMJ8lnsfbg==
 
-"@primer/gatsby-theme-doctocat@0.0.0-68d287e":
-  version "0.0.0-68d287e"
-  resolved "https://registry.yarnpkg.com/@primer/gatsby-theme-doctocat/-/gatsby-theme-doctocat-0.0.0-68d287e.tgz#a36486a1241044163939d334d5b04c6f282d6693"
-  integrity sha512-NesoUeOK1ezVTIjs9pJZCLUgmx/I1IviZoaK4Ucujb2VXwEJW3HJj1DcAAgOJqZP3dbeAyHMjXUfrkpklMexgA==
+"@primer/gatsby-theme-doctocat@0.12.0-rc.b870189":
+  version "0.12.0-rc.b870189"
+  resolved "https://registry.yarnpkg.com/@primer/gatsby-theme-doctocat/-/gatsby-theme-doctocat-0.12.0-rc.b870189.tgz#a6cd42b862a89b3579e950a7a956f1e3072aefe6"
+  integrity sha512-GDvSwUvK0+IRsvI+S3Md2HtEtdF5BA0QXAdWPldVw/H7mnXTrxO4dFhqTvPuWYOofU9I8XgonqAgcOlasdfFdg==
   dependencies:
     "@mdx-js/mdx" "^1.0.21"
     "@mdx-js/react" "^1.0.21"
