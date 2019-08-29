@@ -24,7 +24,7 @@ const teamContent = [
     avatar: 'https://user-images.githubusercontent.com/6846673/59784198-bb703500-9276-11e9-8ec6-a02fc3eb2fc5.jpg',
     gif: 'https://user-images.githubusercontent.com/6846673/59376179-7a22d700-8d04-11e9-91da-09e45112e162.gif',
     alumni: true,
-    color: 'orange',
+    color: 'orange'
   },
   {
     name: 'Simon Lüthi',
