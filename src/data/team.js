@@ -127,7 +127,7 @@ const teamContent = [
   {
     name: 'Diana Mounter',
     handle: 'broccolini',
-    title: 'Design Operations Manager',
+    title: 'Design Infrastructure Manager',
     cssFeature: 'text-decoration: underline wavy',
     questionOne:
       'I was drawn to design systems for many reasons—the opportunity to improve design and development workflow efficiency; the potential benefits well-design systems can bring to the user experience; I like to bring order to chaos and enjoy working at the intersection of design and code. I also love that there is still so much to learn in the field and really enjoy the passion of the community behind design systems.',
