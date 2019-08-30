@@ -33,6 +33,7 @@ We're working on updating our websites, domains, and npm package names so that i
 - [@shawnbot](https://github.com/shawnbot)
 - [@jonrohan](https://github.com/jonrohan)
 - [@broccolini](https://github.com/broccolini)
+- [@vdepizzol](https://github.com/vdepizzol)
 
 #### Alumni
 - [@jhuashao](https://github.com/jhuashao)
