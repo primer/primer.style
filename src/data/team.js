@@ -1,5 +1,17 @@
 const teamContent = [
   {
+    name: 'Vinicius Depizzol',
+    handle: 'vdepizzol',
+    title: 'Systems Designer',
+    questionOne:
+      'I’ve always been a product designer at heart. Besides the different titles I’ve had over the years, caring about the user experience in a cohesive product was always what truly motivated me to be in this area. As I started working in larger projects, style guides, design patterns and design systems became essential to scale cohesion, and ultimately part of my life.',
+    questionTwo: `I’ve been lucky to encounter and collaborate with immensely talented people where I’ve been — that has shaped me more than I can imagine. Over the years, stumbling upon [Bruno Bergher](https://brunobergher.com/), [Lulu LaMer](https://twitter.com/Lulu), [Andrew Branch](https://blog.andrewbran.ch/), among many many others, have shown me people who are eager to learn, and above all open to being wrong (even if they’re right most of the time). \n \n I like how [Yuval Noah Harari](https://en.wikipedia.org/wiki/Yuval_Noah_Harari) has helped me (and an entire generation) to see the big picture, and I have always been inspired by designers who spread beyond their areas like [Frank Chimero](https://frankchimero.com/) and [Rasmus Andersson](https://rsms.me) do.`,
+    favoriteTools: 'Pen and paper, Figma, photography camera',
+    avatar: 'https://user-images.githubusercontent.com/293280/64046286-6d9e6580-cb20-11e9-97da-47fb76a4ee36.JPG',
+    gif: 'https://user-images.githubusercontent.com/293280/64045892-501ccc00-cb1f-11e9-99fb-ee1b8f7ce6ce.gif',
+    alumni: false
+  },
+  {
     name: 'Cole Bemis',
     title: 'Systems Engineer Contractor',
     handle: 'colebemis',
@@ -135,18 +147,6 @@ const teamContent = [
     favoriteTools: 'Hyper, Atom, Figma, MDN, and Quip',
     avatar: 'https://user-images.githubusercontent.com/586552/46751001-5c8a0300-cc87-11e8-84bb-9024b03df74f.jpg',
     gif: 'https://user-images.githubusercontent.com/334891/50363219-bab14d00-0538-11e9-9595-48b3c45358ab.gif',
-    alumni: false
-  },
-  {
-    name: 'Vinicius Depizzol',
-    handle: 'vdepizzol',
-    title: 'Systems Designer',
-    questionOne:
-      'I’ve always been a product designer at heart. Besides the different titles I’ve had over the years, caring about the user experience in a cohesive product was always what truly motivated me to be in this area. As I started working in larger projects, style guides, design patterns and design systems became essential to scale cohesion, and ultimately part of my life.',
-    questionTwo: `I’ve been lucky to encounter and collaborate with immensely talented people where I’ve been — that has shaped me more than I can imagine. Over the years, stumbling upon [Bruno Bergher](https://brunobergher.com/), [Lulu LaMer](https://twitter.com/Lulu), [Andrew Branch](https://blog.andrewbran.ch/), among many many others, have shown me people who are eager to learn, and above all open to being wrong (even if they’re right most of the time). \n \n I like how [Yuval Noah Harari](https://en.wikipedia.org/wiki/Yuval_Noah_Harari) has helped me (and an entire generation) to see the big picture, and I have always been inspired by designers who spread beyond their areas like [Frank Chimero](https://frankchimero.com/) and [Rasmus Andersson](https://rsms.me) do.`,
-    favoriteTools: 'Pen and paper, Figma, photography camera',
-    avatar: 'https://user-images.githubusercontent.com/293280/64046286-6d9e6580-cb20-11e9-97da-47fb76a4ee36.JPG',
-    gif: 'https://user-images.githubusercontent.com/293280/64045892-501ccc00-cb1f-11e9-99fb-ee1b8f7ce6ce.gif',
     alumni: false
   }
 ]
