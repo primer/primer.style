@@ -1,7 +1,7 @@
 const teamContent = [
   {
     name: 'Cole Bemis',
-    title: 'Systems Engineer Intern',
+    title: 'Systems Engineer Contractor',
     handle: 'colebemis',
     cssFeature: 'grid-gap',
     questionOne: `While studying computer science, I developed a passion for design patterns and abstractions. I especially enjoyed learning about programming languages and automata theory. I'm excited about the potential to apply what I've learned to create strong *visual* languages. I also enjoy building tools that make it easier for designers and developers (like me) to create better user experiences.`,
@@ -23,7 +23,8 @@ const teamContent = [
     favoriteTools: 'Sketch, Figma, Atom, Dropbox Paper, Twitter, Ping Pong, Ukulele',
     avatar: 'https://user-images.githubusercontent.com/6846673/59784198-bb703500-9276-11e9-8ec6-a02fc3eb2fc5.jpg',
     gif: 'https://user-images.githubusercontent.com/6846673/59376179-7a22d700-8d04-11e9-91da-09e45112e162.gif',
-    alumni: false
+    alumni: true,
+    color: 'orange'
   },
   {
     name: 'Simon Lüthi',
@@ -126,7 +127,7 @@ const teamContent = [
   {
     name: 'Diana Mounter',
     handle: 'broccolini',
-    title: 'Design Operations Manager',
+    title: 'Design Infrastructure Manager',
     cssFeature: 'text-decoration: underline wavy',
     questionOne:
       'I was drawn to design systems for many reasons—the opportunity to improve design and development workflow efficiency; the potential benefits well-design systems can bring to the user experience; I like to bring order to chaos and enjoy working at the intersection of design and code. I also love that there is still so much to learn in the field and really enjoy the passion of the community behind design systems.',
