@@ -24,6 +24,7 @@
 We're working on updating our websites, domains, and npm package names so that it will be easier in future to find all things Primer. We welcome feedback and contributions at any time. Please check existing issues and pull requests before contributing, and please communicate via an issue first if you intend to make large-scale changes. See [contributing](.github/CONTRIBUTING.md) for more info.
 
 #### Team
+- [@vdepizzol](https://github.com/vdepizzol)
 - [@colebemis](https://github.com/colebemis)
 - [@zainkho](https://github.com/zainkho)
 - [@simurai](https://github.com/simurai)
@@ -33,7 +34,6 @@ We're working on updating our websites, domains, and npm package names so that i
 - [@shawnbot](https://github.com/shawnbot)
 - [@jonrohan](https://github.com/jonrohan)
 - [@broccolini](https://github.com/broccolini)
-- [@vdepizzol](https://github.com/vdepizzol)
 
 #### Alumni
 - [@jhuashao](https://github.com/jhuashao)
