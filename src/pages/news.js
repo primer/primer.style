@@ -31,7 +31,6 @@ export default function NewsPage() {
   `)
 
   // console.warn('default releases:', defaultReleases)
-  /* eslint-disable-next-line no-unused-vars */
   const [releases, setReleases] = useState(oldReleases)
 
   useEffect(() => {
