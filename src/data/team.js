@@ -1,7 +1,19 @@
 const teamContent = [
   {
+    name: 'Vinicius Depizzol',
+    handle: 'vdepizzol',
+    title: 'Systems Designer',
+    questionOne:
+      'Throughout the various roles I’ve had in product design, creating good and cohesive experiences for people was always what truly motivated me to be in this area. As I started working in larger projects, style guides, design patterns and design systems became essential to scale cohesion, and ultimately part of my life.',
+    questionTwo: `I’ve been lucky to encounter and collaborate with immensely talented people where I’ve been — that has shaped me more than I can imagine. Over the years, stumbling upon [Bruno Bergher](https://brunobergher.com/), [Lulu LaMer](https://twitter.com/Lulu), [Andrew Branch](https://blog.andrewbran.ch/), among many many others, have shown me people who are eager to learn, and above all open to being wrong (even if they’re right most of the time). \n \n I like how [Yuval Noah Harari](https://en.wikipedia.org/wiki/Yuval_Noah_Harari) has helped me (and an entire generation) to see the big picture, and I have always been inspired by designers who spread beyond their areas like [Frank Chimero](https://frankchimero.com/) and [Rasmus Andersson](https://rsms.me) do.`,
+    favoriteTools: 'Pen and paper, Figma, photography camera',
+    avatar: 'https://user-images.githubusercontent.com/293280/64046286-6d9e6580-cb20-11e9-97da-47fb76a4ee36.JPG',
+    gif: 'https://user-images.githubusercontent.com/293280/64045892-501ccc00-cb1f-11e9-99fb-ee1b8f7ce6ce.gif',
+    alumni: false
+  },
+  {
     name: 'Cole Bemis',
-    title: 'Systems Engineer Intern',
+    title: 'Systems Engineer Contractor',
     handle: 'colebemis',
     cssFeature: 'grid-gap',
     questionOne: `While studying computer science, I developed a passion for design patterns and abstractions. I especially enjoyed learning about programming languages and automata theory. I'm excited about the potential to apply what I've learned to create strong *visual* languages. I also enjoy building tools that make it easier for designers and developers (like me) to create better user experiences.`,
@@ -23,7 +35,8 @@ const teamContent = [
     favoriteTools: 'Sketch, Figma, Atom, Dropbox Paper, Twitter, Ping Pong, Ukulele',
     avatar: 'https://user-images.githubusercontent.com/6846673/59784198-bb703500-9276-11e9-8ec6-a02fc3eb2fc5.jpg',
     gif: 'https://user-images.githubusercontent.com/6846673/59376179-7a22d700-8d04-11e9-91da-09e45112e162.gif',
-    alumni: false
+    alumni: true,
+    color: 'orange'
   },
   {
     name: 'Simon Lüthi',
@@ -126,7 +139,7 @@ const teamContent = [
   {
     name: 'Diana Mounter',
     handle: 'broccolini',
-    title: 'Design Operations Manager',
+    title: 'Design Infrastructure Manager',
     cssFeature: 'text-decoration: underline wavy',
     questionOne:
       'I was drawn to design systems for many reasons—the opportunity to improve design and development workflow efficiency; the potential benefits well-design systems can bring to the user experience; I like to bring order to chaos and enjoy working at the intersection of design and code. I also love that there is still so much to learn in the field and really enjoy the passion of the community behind design systems.',
