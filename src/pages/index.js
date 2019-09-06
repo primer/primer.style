@@ -12,9 +12,9 @@ import {ReactComponent as FigmaImage} from '../svg/figma.svg'
 
 const gutter = 5
 
-export default function Index(props) {
+export default function Index() {
   return (
-    <Layout {...props}>
+    <Layout>
       <Hero />
       <Box bg="blue.1" color="black" px={4} py={12}>
         <Box className="container-xl" px={2}>

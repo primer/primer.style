@@ -19,7 +19,6 @@ const Shape = styled(({className, shape}) => {
   return <Tag className={className} />
 })`
   position: relative;
-  z-index: 2;
   width: 100%;
   height: auto;
   fill: none;
@@ -29,7 +28,6 @@ const Image = styled('img')`
   object-fit: cover;
   width: 100%;
   height: 100%;
-  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
@@ -37,7 +35,6 @@ const Image = styled('img')`
 
 const A = styled(Box)`
   position: relative;
-  z-index: 2;
   display: inline-block;
   clip-path: url("#clip-${props => props.shape}");
   &:after {
@@ -54,7 +51,6 @@ const A = styled(Box)`
     linear-gradient(to left, ${themeGet('colors.blue.6')} 50%, transparent);
     mix-blend-mode: multiply;
     opacity: 0;
-    z-index: 3;
   }
   &:hover:after {
     opacity: 1;
@@ -66,7 +62,7 @@ const ShapeOutline = styled(Link)`
   position: relative;
   background: transparent !important;
   display: block;
-  &:after {
+  &:before {
     content: '';
     clip-path: url("#clip-${props => props.shape}");
     ${color};
@@ -75,7 +71,6 @@ const ShapeOutline = styled(Link)`
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1;
   }
 `
 

@@ -9,7 +9,7 @@ import posts from '../data/posts.yml'
 
 const LATEST_RELEASE_API_URL = `https://releases-git-lint-actions.primer.now.sh/api`
 
-export default function NewsPage(props) {
+export default function NewsPage() {
   const {
     allPrimerRelease: {nodes: oldReleases}
   } = useStaticQuery(graphql`
@@ -31,7 +31,6 @@ export default function NewsPage(props) {
   `)
 
   // console.warn('default releases:', defaultReleases)
-  /* eslint-disable-next-line no-unused-vars */
   const [releases, setReleases] = useState(oldReleases)
 
   useEffect(() => {
@@ -51,7 +50,7 @@ export default function NewsPage(props) {
     .sort((a, b) => b.date.localeCompare(a.date))
 
   return (
-    <Layout title="News" {...props}>
+    <Layout pageContext={{frontmatter: {title: 'News'}}}>
       <Flex className="container-xl overflow-hidden" flexDirection="column" pt={8} px={5}>
         <Flex
           justifyContent="space-between"

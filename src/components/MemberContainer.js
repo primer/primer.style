@@ -37,6 +37,7 @@ export default function Member(props) {
       <MemberQuestions member={member} colorName={colorName} />
       <Flex.Item mb={[6, 8, 8, 0, 0]} style={{flexShrink: 0, position: 'relative'}}>
         <Box mr={isOdd ? [0, 0, 0, 12, 12] : 0} ml={isOdd ? 0 : [0, 0, 12, 12, 12]}>
+          <Dots shape={shape} color={color} />
           <AvatarShape
             shape={shape}
             src={avatarImage}
@@ -47,7 +48,6 @@ export default function Member(props) {
             onMouseOver={() => setHover(true)}
             onMouseOut={() => setHover(false)}
           />
-          <Dots shape={shape} color={color} />
         </Box>
       </Flex.Item>
     </Flex>
