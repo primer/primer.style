@@ -128,7 +128,7 @@ const teamContent = [{
         favoriteTools: 'Vim, Things, Chrome DevTools, curl',
         avatar: 'https://user-images.githubusercontent.com/586552/46751266-f81b7380-cc87-11e8-8459-2166a1c40f63.jpg',
         gif: 'https://camo.githubusercontent.com/f96029b65ae0f8a1592b30f5449b7115f6560d98/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f5374695957574e7857635741302f67697068792e676966',
-        alumni: false
+        alumni: true
     },
     {
         name: 'Jon Rohan',
