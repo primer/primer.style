@@ -43,7 +43,7 @@ export default function Team(props) {
       </Flex>
       {getMemberContent(currentMembers)}
       <Heading fontSize={5} pb={3} mb={7} lineHeight={1.25} color="orange.4">
-        Alumni
+        Past interns and apprentices
       </Heading>
       {getMemberContent(alumni)}
     </Flex>
