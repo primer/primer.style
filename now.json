@@ -16,6 +16,6 @@
     {"source": "/design(/.*)?", "destination": "https://primer-design.now.sh"},
     {"source": "/blueprints(/.*)?", "destination": "https://primer-blueprints.now.sh"},
     {"source": "/presentations(/.*)?", "destination": "https://primer-presentations.now.sh"},
-    {"sourc": "/doctocat(/.*)?", "destination": "https://doctocat.now.sh"}
+    {"source": "/doctocat(/.*)?", "destination": "https://doctocat.now.sh"}
   ]
 }
