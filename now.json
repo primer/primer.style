@@ -9,7 +9,7 @@
       "config": {"distDir": "public"}
     }
   ],
-  "routes": [
+  "redirects": [
     {"src": "/components(/.*)?", "dest": "https://primer-components.now.sh"},
     {"src": "/playroom(/.*)?", "dest": "https://primer-components.now.sh/playroom"},
     {"src": "/css(/.*)?", "dest": "https://primer-css.now.sh"},
@@ -17,8 +17,5 @@
     {"src": "/blueprints(/.*)?", "dest": "https://primer-blueprints.now.sh"},
     {"src": "/presentations(/.*)?", "dest": "https://primer-presentations.now.sh"},
     {"src": "/doctocat(/.*)?", "dest": "https://doctocat.now.sh"}
-  ],
-  "redirects": [
-    {"source": "/components/playroom", "destination": "https://primer-components.now.sh/playroom"}
   ]
 }
