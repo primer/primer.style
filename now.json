@@ -9,13 +9,13 @@
       "config": {"distDir": "public"}
     }
   ],
-  "redirects": [
-    {"source": "/components(/.*)?", "destination": "https://primer-components.now.sh"},
-    {"source": "/playroom(/.*)?", "destination": "https://primer-components.now.sh/playroom"},
-    {"source": "/css(/.*)?", "destination": "https://primer-css.now.sh"},
-    {"source": "/design(/.*)?", "destination": "https://primer-design.now.sh"},
-    {"source": "/blueprints(/.*)?", "destination": "https://primer-blueprints.now.sh"},
-    {"source": "/presentations(/.*)?", "destination": "https://primer-presentations.now.sh"},
-    {"source": "/doctocat(/.*)?", "destination": "https://doctocat.now.sh"}
+  "routes": [
+    {"src": "/components(/.*)?", "dest": "https://primer-components.now.sh"},
+    {"src": "/playroom(/.*)?", "dest": "https://primer-components.now.sh/playroom"},
+    {"src": "/css(/.*)?", "dest": "https://primer-css.now.sh"},
+    {"src": "/design(/.*)?", "dest": "https://primer-design.now.sh"},
+    {"src": "/blueprints(/.*)?", "dest": "https://primer-blueprints.now.sh"},
+    {"src": "/presentations(/.*)?", "dest": "https://primer-presentations.now.sh"},
+    {"src": "/doctocat(/.*)?", "dest": "https://doctocat.now.sh"}
   ]
 }
