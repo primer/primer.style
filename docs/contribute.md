@@ -39,7 +39,7 @@ Documentation is a core part of Primer, and, just as design and code, we’re al
 
 ## Close issues
 
-There are issues marked with the “status: help wanted” label in the design-systems repo that we’d love some help with. If you think you can help, add a comment on the issue stating when and (if you know) how you’ll be able to tackle it and we’ll support you throughout. 
+There are issues marked with the label “status: help wanted” in the design-systems repo that we’d love some help with. If you think you can help, add a comment on the issue stating when and (if you know) how you’ll be able to tackle it and we’ll support you throughout. 
 
 ## Propose a new component or UI pattern
 
