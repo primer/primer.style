@@ -36,7 +36,8 @@ Documentation is a core part of Primer, and, just as design and code, we’re al
 
 - Submit an issue 
 - Submit a pull request with a fix (you can do this directly via the “Edit this page on GitHub” link on the footer of docs pages)
-- Close issues
+
+## Close issues
 
 There are issues marked with the “status: help wanted” label in the design-systems repo that we’d love some help with. If you think you can help, add a comment on the issue stating when and (if you know) how you’ll be able to tackle it and we’ll support you throughout. 
 
