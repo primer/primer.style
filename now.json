@@ -10,7 +10,7 @@
     }
   ],
   "redirects": [
-    {"source": "/components(/.*)?", "dest": "https://primer-components.now.sh"},
+    {"source": "/components(/.*)?", "destination": "https://primer-components.now.sh"},
     {"source": "/playroom(/.*)?", "destination": "https://primer-components.now.sh/playroom"},
     {"source": "/css(/.*)?", "destination": "https://primer-css.now.sh"},
     {"source": "/design(/.*)?", "destination": "https://primer-design.now.sh"},
