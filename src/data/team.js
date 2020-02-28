@@ -1,5 +1,16 @@
 const teamContent = [
     {
+        name: 'Inayaili León',
+        handle: 'yaili',
+        title: 'Design Producer',
+        questionOne: 'I like it when things around me are organized. I like writing, and the process of refining an idea into words. I like guidelines, style guides, patterns, HTML, and CSS. I like to have several projects on at once. I like planning. I like to work smart, not hard. When you add all of these you get… design systems!',
+        questionTwo: 'More than anything, the people I’ve worked with over the years. I learned something from everyone: being generous with my knowledge, being serious about research, work discipline, balancing family life and work, speaking up, picking my battles, and everything good that I know. Also: the conversations and connections I made during the early years of Design Twitter — still going strong.',
+        favoriteTools: 'Too many! Things, Simplenote, iA Writer, Dictionary, VS Code, xScope, notebooks, Pinboard, Overcast, spreadsheets, and Earl Grey.',
+        avatar: 'https://avatars2.githubusercontent.com/u/223966?s=400&v=4',
+        gif: 'https://user-images.githubusercontent.com/223966/75572471-be046a80-5a52-11ea-924e-9f6d7aca6d3d.gif',
+        alumni: false
+    },
+    {
         name: 'Joel Hawksley',
         handle: 'joelhawksley',
         title: 'Software Engineer',
