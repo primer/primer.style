@@ -56,7 +56,7 @@ There are issues marked with the label “status: help wanted” across the diff
 
 ## Propose a new component or UI pattern
 
-If you'd like to propose a new Primer component, let's talk! The best way to get started is to message the design systems team in Slack so we can verify if the request (or similar) is already being worked on. If you prefer, you can submit an issue in the [design-systems repo](https://github.com/github/design-systems) (internal GitHub users only) with as much detail about the prooposal as possible: problem statement, user and product needs, context, timelines, and anything else that will help triage the issue.
+If you'd like to propose a new Primer component, let's talk! The best way to get started is to message the design systems team in Slack so we can verify if the request (or similar) is already being worked on. If you prefer, you can submit an issue in the [design-systems repo](https://github.com/github/design-systems) (internal GitHub users only) with as much detail about the proposal as possible: problem statement, user and product needs, context, timelines, and anything else that will help triage the issue.
 
 _Please note: Currently we can only accept and work on internal GitHub requests for components._
 
