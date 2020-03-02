@@ -1,5 +1,18 @@
 const teamContent = [
   {
+    name: 'Michelle Tilley',
+    handle: 'BinaryMuse',
+    title: 'Software Engineer',
+    questionOne:
+      "Over the decades, my primary expertise has slowly migrated from back-end development to front-end. I've always had an interest in design, and working on design systems allows me to explore that interest while continuing to leverage my expertise in front-end engineering.",
+    questionTwo:
+      "The constant shifts in front-end programming over the years and an intrinsic desire to learn have always been a driving factor in my own exploration of computer programming. I'm fortuante to work with a huge number of talented engineers and designers at GitHub, which is very inspiring and rewarding.",
+    favoriteTools: 'Vim, Photoshop, Blender, and a good, old-fashioned shell prompt.',
+    avatar: 'https://user-images.githubusercontent.com/189606/75723431-29d41680-5c91-11ea-99ba-40e24813c1c0.jpg',
+    gif: 'https://user-images.githubusercontent.com/189606/75723924-1ffee300-5c92-11ea-873c-8335de7eece6.gif',
+    alumni: false
+  },
+  {
     name: 'Javier Díaz',
     handle: 'edokoa',
     title: 'Systems Designer',
