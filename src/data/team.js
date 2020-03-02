@@ -1,5 +1,16 @@
 const teamContent = [
     {
+        name: 'Javier Díaz',
+        handle: 'edokoa',
+        title: 'Systems Designer',
+        questionOne: 'I think it happened naturally while working on bigger projects and having to define a source of truth. Producing and mantaining complex products is really difficult if you have to reinvent the wheel going through all the decision-making process again and again, alone or with your teammates.',
+        questionTwo: 'My biggest source of inspiration have always been video games, I really like how good games craft a small reality and then put a lot of care into making interaction feel satisfactory and self-explanatory. Apart from that, I think there are lots of places inspiration can be drawn from: Music, furniture and interior design, photography, movies... ',
+        favoriteTools: 'Photoshop, Figma, Maya, Unity, VS Code, PocketCasts, CityMapper.',
+        avatar: 'https://avatars0.githubusercontent.com/u/694831?s=460&v=4',
+        gif: 'https://user-images.githubusercontent.com/694831/75690516-48dba400-5ca3-11ea-9e9a-e033c612c827.gif',
+        alumni: false
+    },
+    {
         name: 'Inayaili León',
         handle: 'yaili',
         title: 'Design Producer',
