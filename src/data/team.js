@@ -44,7 +44,7 @@ const teamContent = [
     handle: 'joelhawksley',
     title: 'Software Engineer',
     questionOne:
-      'While working in numerous Rails codebases over the years, I kept seeing the same structural issues in the view layer as applications grew in size. I came up with an idea to bring component-driven design patterns to Rails, and am thrilled to be pursuing it for the purpose building out our design systems at GitHub.',
+      'While working in numerous Rails codebases over the years, I kept seeing the same structural issues in the view layer as applications grew in size. I came up with an idea to bring component-driven design patterns to Rails, and am thrilled to be pursuing it for the purpose of building out our design systems at GitHub.',
     questionTwo:
       'My mom is a professor in visual communication, so I’ve been in the design world since before I could walk. I learned how to be a software engineer from my friend Aaron Snyder, who took me as his apprentice after I left the newspaper industry. These days I learn a lot from my coworkers, especially [tenderlove](http://tenderlovemaking.com//) and [seejohnrun](http://seejohncode.com/).',
     favoriteTools: 'VS Code, Todoist, Spotify',
