@@ -46,7 +46,7 @@ const teamContent = [
     questionOne:
       'While working in numerous Rails codebases over the years, I kept seeing the same structural issues in the view layer as applications grew in size. I came up with an idea to bring component-driven design patterns to Rails, and am thrilled to be pursuing it for the purpose building out our design systems at GitHub.',
     questionTwo:
-      'My mom is a professor in visual communication, so I’ve been in the design world since before I could walk. I learned how to be a software engineer from my friend Aaron Snyder, who took me as his apprentice after I left the newspaper industry. These days I learn a lot from my coworkers, especially [tenderlove](https://markmanson.net/) and [seejohnrun](http://seejohncode.com/).',
+      'My mom is a professor in visual communication, so I’ve been in the design world since before I could walk. I learned how to be a software engineer from my friend Aaron Snyder, who took me as his apprentice after I left the newspaper industry. These days I learn a lot from my coworkers, especially [tenderlove](http://tenderlovemaking.com//) and [seejohnrun](http://seejohncode.com/).',
     favoriteTools: 'VS Code, Todoist, Spotify',
     avatar: 'https://user-images.githubusercontent.com/10384315/75709494-9f32ed80-5c77-11ea-86eb-e798fcfcaa5d.jpg',
     gif: 'https://user-images.githubusercontent.com/1940294/75078886-191ee600-54c4-11ea-883c-93e1815e75a6.gif',
