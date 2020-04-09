@@ -46,7 +46,7 @@ export default function OpenSource() {
           <Text pr={1} as="span">
             Created and maintained by GitHub&#8217;s
           </Text>
-          <LinkDark fontWeight="bold" href="https://primer.style/team">
+          <LinkDark fontWeight="bold" href="https://primer.style/about#team">
             Design Systems team
           </LinkDark>
           <Text>.</Text>

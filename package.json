@@ -10,9 +10,9 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.1.0",
     "@mdx-js/react": "^1.0.27",
-    "@primer/components": "^13.2.0",
+    "@primer/components": "^17.1.1",
     "@primer/css": "^12.5.0",
-    "@primer/gatsby-theme-doctocat": "^0.14.2",
+    "@primer/gatsby-theme-doctocat": "^0.20.0",
     "@primer/octicons-react": "^9.1.1",
     "@primer/releases": "0.0.0-634eadc",
     "@svgr/webpack": "^4.3.2",
