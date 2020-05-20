@@ -1229,17 +1229,17 @@
   dependencies:
     "@primer/octicons" "^9.1.1"
 
-"@primer/gatsby-theme-doctocat@^0.20.0":
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/@primer/gatsby-theme-doctocat/-/gatsby-theme-doctocat-0.20.0.tgz#95f7d965ecfa7199ad0e022b1029b9c6b2a793ff"
-  integrity sha512-ltCnDFRT+X3EIT5jI8jsGKeVx7RZTJpqC9Ms1AbtTZ7V6aJ6ocHbY0kSYqWmGu8Juaqy0u3aocoG8u4P66q7QQ==
+"@primer/gatsby-theme-doctocat@^0.21.0":
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/@primer/gatsby-theme-doctocat/-/gatsby-theme-doctocat-0.21.0.tgz#ee91c270d078fa18abf6a92fbef449b8b27beb40"
+  integrity sha512-LdvpLdIA1tFD0Xk4SJy5bOs1NJSlBvcuNvKHFf1KS1HDI3ZJDxQV8hqN8ahf0TL+kRwSEOvY8ErB/d8Je3Tuwg==
   dependencies:
     "@babel/preset-env" "^7.5.5"
     "@babel/preset-react" "^7.0.0"
     "@mdx-js/mdx" "^1.0.21"
     "@mdx-js/react" "^1.0.21"
     "@primer/components" "^16.1.0"
-    "@primer/octicons-react" "^9.1.1"
+    "@primer/styled-octicons" "^0.0.0-0ccdd71"
     "@styled-system/theme-get" "^5.0.12"
     "@testing-library/jest-dom" "^4.1.0"
     "@testing-library/react" "^9.1.3"
@@ -1313,6 +1313,11 @@
     micro "^9.3.4"
     node-fetch "^2.6.0"
     semver "^6.3.0"
+
+"@primer/styled-octicons@^0.0.0-0ccdd71":
+  version "0.0.0-44a8bc7"
+  resolved "https://registry.yarnpkg.com/@primer/styled-octicons/-/styled-octicons-0.0.0-44a8bc7.tgz#0f509a21f9dce2fdffa431aa1fc0066e75f3b1c9"
+  integrity sha512-Tkse8+XzDLoyWi6R9wUikqM01FomLGJOAvZYPQfXu5jsFcjw5l67LWWJIHLRIre/RED0RuAoPrzR52SpJmKlAg==
 
 "@reach/component-component@^0.3.0":
   version "0.3.0"
@@ -1492,6 +1497,13 @@
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/@styled-system/prop-types/-/prop-types-5.1.2.tgz#252898644aa277fcdb1bb916c3b354c78b78155a"
   integrity sha512-q2hnuZrOjZdCRYvSoMF5VIDRfpqPHDSgqajoMH0iy7BszPAkZZcIC7L4PzJTIcGSBrB9OJTBitWo9s7N60tgtA==
+  dependencies:
+    prop-types "^15.7.2"
+
+"@styled-system/prop-types@^5.1.5":
+  version "5.1.5"
+  resolved "https://registry.yarnpkg.com/@styled-system/prop-types/-/prop-types-5.1.5.tgz#f813b78c583f9a3a9693d5eb185c2fd3dd0448a8"
+  integrity sha512-D/0d0ltp8QGhwrRifivQeIdoKkQDpFIGi98DXdpRXOaJStYXLx6aBSfS/YYIijbF1nZs1hWlAgXxYvDhCxHLSA==
   dependencies:
     prop-types "^15.7.2"
 
