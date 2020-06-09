@@ -18,6 +18,6 @@
     {"src": "/doctocat(/.*)?", "dest": "https://doctocat.now.sh"},
     {"src": "/octicons-v2(/.*)?", "dest": "https://octicons-git-v2.primer.now.sh"},
     {"src": "/octicons(/.*)?", "dest": "https://octicons.primer.now.sh"},
-    {"src": "/fluid(/.*)?", "dest": "https://fluid.style/"}
+    {"src": "/fluid(/.*)?", "dest": "https://fluid.style"}
   ]
 }
