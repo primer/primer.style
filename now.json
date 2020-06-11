@@ -19,6 +19,6 @@
     {"src": "/octicons(/.*)?", "dest": "https://octicons.primer.now.sh"}
   ],
   "redirects": [
-    {"source": "/octicons-v2(/.*)?", "destination": "/octicons$1"},
+    {"source": "/octicons-v2(/.*)?", "destination": "/octicons$1"}
   ]
 }
