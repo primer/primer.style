@@ -16,9 +16,7 @@
     {"src": "/blueprints(/.*)?", "dest": "https://primer-blueprints.now.sh"},
     {"src": "/presentations(/.*)?", "dest": "https://primer-presentations.now.sh"},
     {"src": "/doctocat(/.*)?", "dest": "https://doctocat.now.sh"},
-    {"src": "/octicons(/.*)?", "dest": "https://octicons.primer.now.sh"}
-  ],
-  "redirects": [
-    {"source": "/octicons-v2(/.*)?", "destination": "/octicons$1"}
+    {"src": "/octicons(/.*)?", "dest": "https://octicons.primer.now.sh"},
+    {"src": "/octicons-v2(/.*)?", "status": 301, "headers": {"Location": "/octicons"}}
   ]
 }
