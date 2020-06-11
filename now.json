@@ -18,7 +18,7 @@
     {"src": "/doctocat(/.*)?", "dest": "https://doctocat.now.sh"},
     {"src": "/octicons(/.*)?", "dest": "https://octicons.primer.now.sh"}
   ],
-  redirects: [
+  "redirects": [
     {"source": "/octicons-v2(/.*)?", "destination": "/octicons$1"},
   ]
 }
