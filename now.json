@@ -17,6 +17,6 @@
     {"src": "/presentations(/.*)?", "dest": "https://primer-presentations.now.sh"},
     {"src": "/doctocat(/.*)?", "dest": "https://doctocat.now.sh"},
     {"src": "/octicons(/.*)?", "dest": "https://octicons.primer.now.sh"},
-    {"src": "/octicons-v2(/.*)?", "status": 301, "headers": {"Location": "/octicons"}}
+    {"src": "/octicons-v2(/.*)?", "status": 301, "headers": {"Location": "/octicons$1"}}
   ]
 }
