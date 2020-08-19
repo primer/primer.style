@@ -78,7 +78,7 @@ const teamContent = [
   },
   {
     name: 'Cole Bemis',
-    title: 'Systems Engineer Contractor',
+    title: 'Design Systems Engineer',
     handle: 'colebemis',
     cssFeature: 'grid-gap',
     questionOne: `While studying computer science, I developed a passion for design patterns and abstractions. I especially enjoyed learning about programming languages and automata theory. I'm excited about the potential to apply what I've learned to create strong *visual* languages. I also enjoy building tools that make it easier for designers and developers (like me) to create better user experiences.`,
