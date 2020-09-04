@@ -31,7 +31,7 @@ export default function Index() {
             <Promo title="React components" image={ComponentsImage} href="/components">
               Presentational UI components with encapsulated styles and constraint-based theme props.
             </Promo>
-            <Promo title="Octicons" image={OcticonsImage} href="https://octicons.github.com">
+            <Promo title="Octicons" image={OcticonsImage} href="/octicons">
               Your project. GitHub’s icons. Available in Ruby and JavaScript implementations.
             </Promo>
             <Promo title="Presentations" image={PresentationsImage} href="/presentations">
