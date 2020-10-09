@@ -18,6 +18,7 @@
     {"src": "/doctocat(/.*)?", "dest": "https://doctocat.now.sh"},
     {"src": "/cli(/.*)?", "dest": "https://cli.primer.vercel.app"},
     {"src": "/octicons(/.*)?", "dest": "https://octicons.primer.now.sh"},
-    {"src": "/octicons-v2(/.*)?", "status": 301, "headers": {"Location": "/octicons$1"}}
+    {"src": "/octicons-v2(/.*)?", "status": 301, "headers": {"Location": "/octicons$1"}},
+    {"src": "/primitives(/.*)?", "dest": "https://primitives-git-mkt-color-modes.primer.vercel.app"}
   ]
 }
