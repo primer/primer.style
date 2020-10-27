@@ -19,7 +19,7 @@ These are the key repos you should watch if you’re interested in getting invol
 
 - [Design](https://github.com/primer/design)
 - [Primer CSS](https://github.com/primer/css)
-- [Primer Components (React)](https://github.com/primer/components)
+- [Primer React](https://github.com/primer/components)
 - [Octicons](https://github.com/primer/octicons)
 - [Doctocat](https://github.com/primer/doctocat)
 - [Design systems](https://github.com/github/design-systems) (internal to GitHub users)
@@ -32,7 +32,7 @@ If you spot something that doesn’t look right in our design, code or documenta
 
 - [Interface guidelines](https://github.com/primer/design) 
 - [Primer CSS](https://github.com/primer/css)
-- [Primer Components (React)](https://github.com/primer/components)
+- [Primer React](https://github.com/primer/components)
 - [Octicons](https://github.com/primer/octicons)
 - [Doctocat](https://github.com/primer/doctocat)
 - [Presentations](https://github.com/primer/presentations)

@@ -3,7 +3,7 @@ Hi, and thanks for contributing to `primer.style`!
 
 
 ## Tools
-This site is built with [Gatsby] and [Primer Components].
+This site is built with [Gatsby] and [Primer React].
 
 
 ## Development
@@ -37,7 +37,7 @@ Now's [path alias] feature allows us to serve multiple apps under a single domai
 #### Path alias tips and tricks
 Because of the way that Now's path alias feature works, separate apps need to be configured to serve all of their URLs under the same path as they're aliased to on `primer.style`. In other words, an app aliased to `/alias/**` will need to serve all of its content from `/alias/` rather than `/`. For both Gatsby and Next.js, this means nesting all of your page content in `pages/<alias>/`.
 
-[primer components]: https://primer.style/components
+[Primer React]: https://primer.style/components
 [Now]: https://zeit.co/now
 [Now GitHub app]: https://github.com/apps/now
 [path alias]: https://zeit.co/docs/features/path-aliases
