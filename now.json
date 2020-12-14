@@ -22,5 +22,6 @@
     {"src": "/primitives(/.*)?", "dest": "https://primitives-git-mkt-color-modes.primer.vercel.app"},
     {"src": "/mobile(/.*)?", "dest": "https://mobile.primer.vercel.app"},
     {"src": "/view-components(/.*)?", "dest": "https://view-components.vercel.app"}
+    {"src": "/desktop(/.*)?", "dest": "https://desktop-nu.vercel.app"}
   ]
 }
