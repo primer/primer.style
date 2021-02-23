@@ -21,6 +21,7 @@
     {"src": "/octicons-v2(/.*)?", "status": 301, "headers": {"Location": "/octicons$1"}},
     {"src": "/primitives(/.*)?", "dest": "https://primitives-git-mkt-color-modes.primer.vercel.app"},
     {"src": "/mobile(/.*)?", "dest": "https://mobile.primer.vercel.app"},
+    {"src": "/view-components/stories(/.*)?", "dest": "https://primer-view-components.herokuapp.com"},
     {"src": "/view-components(/.*)?", "dest": "https://view-components.vercel.app"},
     {"src": "/desktop(/.*)?", "dest": "https://desktop-nu.vercel.app"}
   ]
