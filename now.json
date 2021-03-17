@@ -19,7 +19,7 @@
     {"src": "/cli(/.*)?", "dest": "https://cli.primer.vercel.app"},
     {"src": "/octicons(/.*)?", "dest": "https://octicons.primer.now.sh"},
     {"src": "/octicons-v2(/.*)?", "status": 301, "headers": {"Location": "/octicons$1"}},
-    {"src": "/primitives(/.*)?", "dest": "https://primitives-git-mkt-color-modes.primer.vercel.app"},
+    {"src": "/primitives(/.*)?", "dest": "https://primitives-git-release-400-primer.vercel.app"},
     {"src": "/mobile(/.*)?", "dest": "https://mobile.primer.vercel.app"},
     {"src": "/view-components/stories(/.*)?", "dest": "https://primer-view-components.herokuapp.com"},
     {"src": "/view-components(/.*)?", "dest": "https://view-components.vercel.app"},
