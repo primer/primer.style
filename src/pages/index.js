@@ -43,6 +43,9 @@ export default function Index() {
             <Promo title="Figma components" image={FigmaImage} href="/design/tools/figma">
               Design layouts, flows, wireframes, and make prototypes with Primer components in Figma.
             </Promo>
+            <Promo title="ViewComponents" image={ComponentsImage} href="/view-components">
+              ViewComponents for the Primer Design System.
+            </Promo>
           </Flex>
         </Box>
       </Box>
