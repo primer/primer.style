@@ -32,7 +32,7 @@ export default function Index() {
               Presentational UI components with encapsulated styles and constraint-based theme props.
             </Promo>
             <Promo title="ViewComponents" image={ViewComponentsImage} href="/view-components">
-              ViewComponents for use in Rails applications.
+              Build component-driven UI in Rails with ViewComponents.
             </Promo>
             <Promo title="Octicons" image={OcticonsImage} href="/octicons">
               Your project. GitHub’s icons. Available in Ruby and JavaScript implementations.
