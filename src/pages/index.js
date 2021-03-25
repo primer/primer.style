@@ -6,7 +6,6 @@ import Footer from '../components/Footer'
 import {ReactComponent as CSSImage} from '../svg/css.svg'
 import {ReactComponent as ComponentsImage} from '../svg/components.svg'
 import {ReactComponent as ViewComponentsImage} from '../svg/view-components.svg'
-import {ReactComponent as PresentationsImage} from '../svg/presentations.svg'
 import {ReactComponent as OcticonsImage} from '../svg/octicons.svg'
 import {ReactComponent as GuidelinesImage} from '../svg/guidelines.svg'
 import {ReactComponent as FigmaImage} from '../svg/figma.svg'
@@ -34,9 +33,6 @@ export default function Index() {
             </Promo>
             <Promo title="Octicons" image={OcticonsImage} href="/octicons">
               Your project. GitHub’s icons. Available in Ruby and JavaScript implementations.
-            </Promo>
-            <Promo title="Presentations" image={PresentationsImage} href="/presentations">
-              Slide templates that let you focus on the story without having to worry about the design details.
             </Promo>
             <Promo title="Interface guidelines" image={GuidelinesImage} href="/design">
               Principles, standards, and usage guidelines for designing GitHub interfaces.
