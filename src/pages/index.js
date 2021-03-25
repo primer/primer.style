@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Footer from '../components/Footer'
 import {ReactComponent as CSSImage} from '../svg/css.svg'
 import {ReactComponent as ComponentsImage} from '../svg/components.svg'
+import {ReactComponent as ViewComponentsImage} from '../svg/view-components.svg'
 import {ReactComponent as PresentationsImage} from '../svg/presentations.svg'
 import {ReactComponent as OcticonsImage} from '../svg/octicons.svg'
 import {ReactComponent as GuidelinesImage} from '../svg/guidelines.svg'
@@ -43,7 +44,7 @@ export default function Index() {
             <Promo title="Figma components" image={FigmaImage} href="/design/tools/figma">
               Design layouts, flows, wireframes, and make prototypes with Primer components in Figma.
             </Promo>
-            <Promo title="ViewComponents" image={ComponentsImage} href="/view-components">
+            <Promo title="ViewComponents" image={ViewComponentsImage} href="/view-components">
               ViewComponents for the Primer Design System.
             </Promo>
           </Flex>
