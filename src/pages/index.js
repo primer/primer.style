@@ -45,7 +45,7 @@ export default function Index() {
               Design layouts, flows, wireframes, and make prototypes with Primer components in Figma.
             </Promo>
             <Promo title="ViewComponents" image={ViewComponentsImage} href="/view-components">
-              ViewComponents for the Primer Design System.
+              ViewComponents for use in Rails applications.
             </Promo>
           </Flex>
         </Box>
