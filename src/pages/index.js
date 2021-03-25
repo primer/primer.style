@@ -31,6 +31,9 @@ export default function Index() {
             <Promo title="React components" image={ComponentsImage} href="/components">
               Presentational UI components with encapsulated styles and constraint-based theme props.
             </Promo>
+            <Promo title="ViewComponents" image={ViewComponentsImage} href="/view-components">
+              ViewComponents for use in Rails applications.
+            </Promo>
             <Promo title="Octicons" image={OcticonsImage} href="/octicons">
               Your project. GitHub’s icons. Available in Ruby and JavaScript implementations.
             </Promo>
@@ -39,9 +42,6 @@ export default function Index() {
             </Promo>
             <Promo title="Figma components" image={FigmaImage} href="/design/tools/figma">
               Design layouts, flows, wireframes, and make prototypes with Primer components in Figma.
-            </Promo>
-            <Promo title="ViewComponents" image={ViewComponentsImage} href="/view-components">
-              ViewComponents for use in Rails applications.
             </Promo>
           </Flex>
         </Box>
