@@ -10,12 +10,12 @@
     }
   ],
   "routes": [
-    {"src": "/components(/.*)?", "dest": "https://primer-components.now.sh"},
+    {"src": "/components(/.*)?", "dest": "https://primer-components.vercel.app"},
     {"src": "/css(/.*)?", "dest": "https://primer-css.vercel.app"},
-    {"src": "/design(/.*)?", "dest": "https://primer-design.now.sh"},
-    {"src": "/blueprints(/.*)?", "dest": "https://primer-blueprints.now.sh"},
-    {"src": "/presentations(/.*)?", "dest": "https://primer-presentations.now.sh"},
-    {"src": "/doctocat(/.*)?", "dest": "https://doctocat.now.sh"},
+    {"src": "/design(/.*)?", "dest": "https://primer-design.vercel.app"},
+    {"src": "/blueprints(/.*)?", "dest": "https://primer-blueprints.vercel.app"},
+    {"src": "/presentations(/.*)?", "dest": "https://primer-presentations.vercel.app"},
+    {"src": "/doctocat(/.*)?", "dest": "https://doctocat.vercel.app"},
     {"src": "/cli(/.*)?", "dest": "https://cli.primer.vercel.app"},
     {"src": "/octicons(/.*)?", "dest": "https://octicons-primer.vercel.app"},
     {"src": "/octicons-v2(/.*)?", "status": 301, "headers": {"Location": "/octicons$1"}},
