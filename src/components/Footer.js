@@ -36,7 +36,7 @@ export default function OpenSource() {
             Chat with us in Spectrum
           </LinkDark>
           <LinkDark fontSize={2} mb={3} display="block" href="https://github.com/primer/css/issues/new/choose">
-            <StyledOcticon icon={Comment} size={20} verticalAlign="text-top" mr={2} />
+            <StyledOcticon icon={MarkGithub} size={20} verticalAlign="text-top" mr={2} />
             Share feedback on GitHub
           </LinkDark>
         </IndexGrid.Item>
