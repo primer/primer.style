@@ -10,7 +10,7 @@ const teamContent = [
     favoriteTools: 'Vim, Photoshop, Blender, and a good, old-fashioned shell prompt.',
     avatar: 'https://user-images.githubusercontent.com/189606/75723431-29d41680-5c91-11ea-99ba-40e24813c1c0.jpg',
     gif: 'https://user-images.githubusercontent.com/189606/75723924-1ffee300-5c92-11ea-873c-8335de7eece6.gif',
-    alumni: false
+    alumni: true
   },
   {
     name: 'Javier Díaz',
@@ -174,7 +174,7 @@ const teamContent = [
     avatar: 'https://user-images.githubusercontent.com/586552/46690198-b4fdc980-cbcf-11e8-95e3-c3e28b69a29c.jpg',
     gif:
       'https://camo.githubusercontent.com/4646a6d24f7c08a84028f83987a8ec8462179c11/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6441775547537553356b7157732f67697068792e676966',
-    alumni: false
+    alumni: true
   },
   {
     name: 'Jon Rohan',
