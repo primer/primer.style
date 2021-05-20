@@ -207,11 +207,11 @@ const teamContent = [
     title: 'Design Infrastructure Manager',
     handle: 'tallys',
     cssFeature: `background-color: hotpink`,
-    questionOne: ``,
-    questionTwo: ``,
-    favoriteTools: `Sublime Text, React, Figma, GitHub, coffee`,
-    avatar: 'https://user-images.githubusercontent.com/586552/46690199-b4fdc980-cbcf-11e8-9f8d-59a694281b70.jpg',
-    gif: 'https://user-images.githubusercontent.com/54012/50536666-fced1680-0b56-11e9-89e6-995cdb01a599.gif',
+    questionOne: `Technology and design being considered at odds is a recent invention. Design systems are just the way I think, so building bridges between design and engineering is at the heart of much of my work.`,
+    questionTwo: `I am fortunate to say that the list of people who have taught and inspired me is long. I am full of gratitude for the people who take the time and energy to teach, build tools for collaboration, and run communities that lift people up.`,
+    favoriteTools: `Sublime Text, React, Pencil and Paper, Figma, GitHub, coffee`,
+    avatar: 'https://user-images.githubusercontent.com/6720549/119012675-3c08a600-b964-11eb-8bc0-4bf64a2d468f.jpg',
+    gif: 'https://user-images.githubusercontent.com/6720549/118991044-63a24300-b951-11eb-81d4-d5a63f71db06.gif',
     alumni: false
   },
   {
