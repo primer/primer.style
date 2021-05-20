@@ -137,7 +137,7 @@ const teamContent = [
   },
   {
     name: 'Ash Guillaume',
-    title: 'Graphic Designer',
+    title: 'Systems Designer',
     handle: 'ashygee',
     cssFeature: 'align-items: center;',
     questionOne: `I came into design systems very organically. When I began my career in the agency world, I worked within constraints of branding and style guidelines of our various clients. At the time I didn't fully recognize these guidelines as what we now refer to as design systems. As my career continued to grow I noticed that I began to be far more interested in how various companies/brands packaged the many pieces that made up their brand and/or products. I love how design systems bring together all the pieces in order to unleash endless creativity but still maintain the necessary constraints.`,
@@ -203,9 +203,21 @@ const teamContent = [
     alumni: false
   },
   {
+    name: 'Natalya Shelburne',
+    title: 'Design Infrastructure Manager',
+    handle: 'tallys',
+    cssFeature: `background-color: hotpink`,
+    questionOne: ``,
+    questionTwo: ``,
+    favoriteTools: `Sublime Text, React, Figma, GitHub, coffee`,
+    avatar: 'https://user-images.githubusercontent.com/586552/46690199-b4fdc980-cbcf-11e8-9f8d-59a694281b70.jpg',
+    gif: 'https://user-images.githubusercontent.com/54012/50536666-fced1680-0b56-11e9-89e6-995cdb01a599.gif',
+    alumni: false
+  },
+  {
     name: 'Diana Mounter',
     handle: 'broccolini',
-    title: 'Design Infrastructure Manager',
+    title: 'Design Infrastructure Director',
     cssFeature: 'text-decoration: underline wavy',
     questionOne:
       'I was drawn to design systems for many reasons—the opportunity to improve design and development workflow efficiency; the potential benefits well-design systems can bring to the user experience; I like to bring order to chaos and enjoy working at the intersection of design and code. I also love that there is still so much to learn in the field and really enjoy the passion of the community behind design systems.',
