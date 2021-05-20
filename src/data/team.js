@@ -137,7 +137,7 @@ const teamContent = [
   },
   {
     name: 'Ash Guillaume',
-    title: 'Graphic Designer',
+    title: 'Systems Designer',
     handle: 'ashygee',
     cssFeature: 'align-items: center;',
     questionOne: `I came into design systems very organically. When I began my career in the agency world, I worked within constraints of branding and style guidelines of our various clients. At the time I didn't fully recognize these guidelines as what we now refer to as design systems. As my career continued to grow I noticed that I began to be far more interested in how various companies/brands packaged the many pieces that made up their brand and/or products. I love how design systems bring together all the pieces in order to unleash endless creativity but still maintain the necessary constraints.`,
@@ -151,7 +151,7 @@ const teamContent = [
     alumni: false
   },
   {
-    name: 'Emily Brick',
+    name: 'Natalya Shelburne',
     title: 'Systems Designer',
     handle: 'emilybrick',
     cssFeature: 'align-items: center;',
@@ -191,9 +191,21 @@ const teamContent = [
     alumni: false
   },
   {
+    name: 'Natalya Shelburne',
+    title: 'Design Infrastructure Manager',
+    handle: 'tallys',
+    cssFeature: `background-color: hotpink`,
+    questionOne: `Technology and design being considered at odds is a recent invention. Design systems are just the way I think, so building bridges between design and engineering is at the heart of much of my work.`,
+    questionTwo: `I am fortunate to say that the list of people who have taught and inspired me is long. I am full of gratitude for the people who take the time and energy to teach, build tools for collaboration, and run communities that lift people up.`,
+    favoriteTools: `Sublime Text, React, Pencil and Paper, Figma, GitHub, coffee`,
+    avatar: 'https://user-images.githubusercontent.com/6720549/119029291-7418e480-b976-11eb-9641-7c47e8134414.jpg',
+    gif: 'https://user-images.githubusercontent.com/6720549/118991044-63a24300-b951-11eb-81d4-d5a63f71db06.gif',
+    alumni: false
+  },
+  {
     name: 'Diana Mounter',
     handle: 'broccolini',
-    title: 'Design Infrastructure Manager',
+    title: 'Design Infrastructure Director',
     cssFeature: 'text-decoration: underline wavy',
     questionOne:
       'I was drawn to design systems for many reasons—the opportunity to improve design and development workflow efficiency; the potential benefits well-design systems can bring to the user experience; I like to bring order to chaos and enjoy working at the intersection of design and code. I also love that there is still so much to learn in the field and really enjoy the passion of the community behind design systems.',
