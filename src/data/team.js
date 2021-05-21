@@ -151,7 +151,7 @@ const teamContent = [
     alumni: false
   },
   {
-    name: 'Natalya Shelburne',
+    name: 'Emily Brick',
     title: 'Systems Designer',
     handle: 'emilybrick',
     cssFeature: 'align-items: center;',
