@@ -191,6 +191,18 @@ const teamContent = [
     alumni: false
   },
   {
+    name: 'Julius Yanik',
+    title: 'Systems Designer',
+    handle: 'juliusschaeper',
+    cssFeature: `grid-template-areas: "header header header" "footer footer footer"`,
+    questionOne: `Being able to focus on the key elements of design, form, color and typography.`,
+    questionTwo: `Having an education in industrial design, the Bauhaus design philosophy and Dieter Rams inspired me a lot. Everything I know about digital product design I learned at Wunderlist, which design team was very inspiring.`,
+    favoriteTools: `Remarkable tablet, Figma, Origami, Glyphs, GitHubs internal color tool`,
+    avatar: 'https://user-images.githubusercontent.com/6720549/120376679-28f1c080-c2ea-11eb-8d6a-d93bb669fdc1.jpg',
+    gif: 'https://user-images.githubusercontent.com/6720549/120376656-22fbdf80-c2ea-11eb-81ec-384cbd2f9f50.gif',
+    alumni: false
+  },
+  {
     name: 'Natalya Shelburne',
     title: 'Design Infrastructure Manager',
     handle: 'tallys',
