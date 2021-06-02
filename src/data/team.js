@@ -1,5 +1,29 @@
 const teamContent = [
   {
+    name: 'Natalya Shelburne',
+    title: 'Design Infrastructure Manager',
+    handle: 'tallys',
+    cssFeature: `background-color: hotpink`,
+    questionOne: `Technology and design being considered at odds is a recent invention. Design systems are just the way I think, so building bridges between design and engineering is at the heart of much of my work.`,
+    questionTwo: `I am fortunate to say that the list of people who have taught and inspired me is long. I am full of gratitude for the people who take the time and energy to teach, build tools for collaboration, and run communities that lift people up.`,
+    favoriteTools: `Sublime Text, React, Pencil and Paper, Figma, GitHub, coffee`,
+    avatar: 'https://user-images.githubusercontent.com/6720549/119029291-7418e480-b976-11eb-9641-7c47e8134414.jpg',
+    gif: 'https://user-images.githubusercontent.com/6720549/118991044-63a24300-b951-11eb-81d4-d5a63f71db06.gif',
+    alumni: false
+  },
+  {
+    name: 'Julius Yanik',
+    title: 'Systems Designer',
+    handle: 'juliusschaeper',
+    cssFeature: `grid-template-areas: "header header header" "footer footer footer"`,
+    questionOne: `Being able to focus on the key elements of design, form, color and typography.`,
+    questionTwo: `Having an education in industrial design, the Bauhaus design philosophy and Dieter Rams inspired me a lot. Everything I know about digital product design I learned at Wunderlist, which design team was very inspiring.`,
+    favoriteTools: `Remarkable tablet, Figma, Origami, Glyphs, GitHubs internal color tool`,
+    avatar: 'https://user-images.githubusercontent.com/6720549/120377556-470bf080-c2eb-11eb-8230-53db30314b15.jpg',
+    gif: 'https://user-images.githubusercontent.com/6720549/120376656-22fbdf80-c2ea-11eb-81ec-384cbd2f9f50.gif',
+    alumni: false
+  },
+  {
     name: 'Michelle Tilley',
     handle: 'BinaryMuse',
     title: 'Software Engineer',
@@ -188,30 +212,6 @@ const teamContent = [
     favoriteTools: `Atom, Bash/Shell, Figma, GitHub, iTerm, Javascript, MacBook Pro, Things`,
     avatar: 'https://user-images.githubusercontent.com/586552/46690199-b4fdc980-cbcf-11e8-9f8d-59a694281b70.jpg',
     gif: 'https://user-images.githubusercontent.com/54012/50536666-fced1680-0b56-11e9-89e6-995cdb01a599.gif',
-    alumni: false
-  },
-  {
-    name: 'Julius Yanik',
-    title: 'Systems Designer',
-    handle: 'juliusschaeper',
-    cssFeature: `grid-template-areas: "header header header" "footer footer footer"`,
-    questionOne: `Being able to focus on the key elements of design, form, color and typography.`,
-    questionTwo: `Having an education in industrial design, the Bauhaus design philosophy and Dieter Rams inspired me a lot. Everything I know about digital product design I learned at Wunderlist, which design team was very inspiring.`,
-    favoriteTools: `Remarkable tablet, Figma, Origami, Glyphs, GitHubs internal color tool`,
-    avatar: 'https://user-images.githubusercontent.com/6720549/120377556-470bf080-c2eb-11eb-8230-53db30314b15.jpg',
-    gif: 'https://user-images.githubusercontent.com/6720549/120376656-22fbdf80-c2ea-11eb-81ec-384cbd2f9f50.gif',
-    alumni: false
-  },
-  {
-    name: 'Natalya Shelburne',
-    title: 'Design Infrastructure Manager',
-    handle: 'tallys',
-    cssFeature: `background-color: hotpink`,
-    questionOne: `Technology and design being considered at odds is a recent invention. Design systems are just the way I think, so building bridges between design and engineering is at the heart of much of my work.`,
-    questionTwo: `I am fortunate to say that the list of people who have taught and inspired me is long. I am full of gratitude for the people who take the time and energy to teach, build tools for collaboration, and run communities that lift people up.`,
-    favoriteTools: `Sublime Text, React, Pencil and Paper, Figma, GitHub, coffee`,
-    avatar: 'https://user-images.githubusercontent.com/6720549/119029291-7418e480-b976-11eb-9641-7c47e8134414.jpg',
-    gif: 'https://user-images.githubusercontent.com/6720549/118991044-63a24300-b951-11eb-81d4-d5a63f71db06.gif',
     alumni: false
   },
   {
