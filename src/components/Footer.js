@@ -3,7 +3,6 @@ import {Box, BorderBox, Heading, Text, StyledOcticon} from '@primer/components'
 import {Octoface, MarkGithub} from '@primer/octicons-react'
 import ButtonFillDark from './ButtonFillDark'
 import TwitterIcon from './TwitterIcon'
-import SpectrumIcon from './SpectrumIcon'
 import IndexGrid from './IndexGrid'
 import LinkDark from './LinkDark'
 
@@ -30,10 +29,6 @@ export default function OpenSource() {
           <LinkDark pt={1} fontSize={2} mb={3} display="block" href="https://twitter.com/githubprimer">
             <StyledOcticon icon={TwitterIcon} size={20} verticalAlign="top" mr={2} />
             Follow us on Twitter
-          </LinkDark>
-          <LinkDark fontSize={2} mb={3} display="block" href="https://spectrum.chat/primer">
-            <StyledOcticon icon={SpectrumIcon} size={20} verticalAlign="top" mr={2} />
-            Chat with us in Spectrum
           </LinkDark>
           <LinkDark fontSize={2} mb={3} display="block" href="https://github.com/primer/css/issues/new/choose">
             <StyledOcticon icon={MarkGithub} size={20} verticalAlign="text-top" mr={2} />
