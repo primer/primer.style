@@ -34,10 +34,6 @@ export default function Hero() {
             <LinkLight ml={2} fontSize={[0, 1, 2]} href="https://github.com/primer/">
               Open-source
             </LinkLight>
-            {DOT}
-            <LinkLight ml={2} fontSize={[0, 1, 2]} href="https://spectrum.chat/primer">
-              Community
-            </LinkLight>
           </Text>
         </Flex.Item>
       </IndexGrid>
