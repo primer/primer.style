@@ -23,7 +23,7 @@ export default function Hero() {
             Design, build, and create with GitHub’s design system
           </Text>
           <Text as="div" color="blue.2">
-            Primer was created for GitHub by GitHub. We love it so much, we chose to <a href="https://github.com/primer/">open-source</a> it to allow the
+            Primer was created for GitHub by GitHub. We love it so much, we chose to  <LinkLight href="https://github.com/primer/">open-source</LinkLight> it to allow the
             community to design and build their own projects with Primer.
           </Text>
         </Flex.Item>
