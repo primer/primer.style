@@ -54,6 +54,12 @@ Documentation is a core part of Primer, and, just as design and code, we’re al
 
 There are issues marked with the label “status: help wanted” across the different Primer repos that we’d love some help with. If you think you can help, add a comment on the issue stating when and (if you know) how you’ll be able to tackle it and we’ll support you throughout. 
 
+### Opening a pull request
+
+When working on an issue, don't worry too much about commit frequency or having the perfect commit message. We squash commits down into a single commit when merging pull requests.
+
+Instead, we encourage you to be detailed in your pull request descriptions. Be sure to address what change is being made, why the change is being made, and add links to the relevant issue or any references used.
+
 ## Propose a new component or UI pattern
 
 If you'd like to propose a new Primer component, let's talk! The best way to get started is to message the design systems team in Slack so we can verify if the request (or similar) is already being worked on. If you prefer, you can submit an issue in the [design-systems repo](https://github.com/github/design-systems) (internal GitHub users only) with as much detail about the proposal as possible: problem statement, user and product needs, context, timelines, and anything else that will help triage the issue.
