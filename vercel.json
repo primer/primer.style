@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    {"source": "/components/:path*", "destination": "https://primer-components-rdgllu4kb-primer.vercel.app/components/:path*"},
+    {"source": "/react(/.*)?", "destination": "https://primer-components-oktpqo7w6-primer.vercel.app"},
     {"source": "/css(/.*)?", "destination": "https://primer-css.vercel.app"},
     {"source": "/design(/.*)?", "destination": "https://primer-design.vercel.app"},
     {"source": "/blueprints(/.*)?", "destination": "https://primer-blueprints.vercel.app"},
@@ -15,6 +15,7 @@
     {"source": "/desktop(/.*)?", "destination": "https://desktop-nu.vercel.app"}
   ],
   "redirects": [
-    {"source": "/octicons-v2(/.*)?", "destination": "/octicons$1"}
+    {"source": "/octicons-v2(/.*)?", "destination": "/octicons$1"},
+    {"source": "/components(/.*)?", "destination": "/react$1"}
   ]
 }
