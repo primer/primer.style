@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    {"source": "/components/:path*", "destination": "https://primer-components-guo7frnni-primer.vercel.app/components/:path*"},
+    {"source": "/components/:path*", "destination": "https://primer-components-rdgllu4kb-primer.vercel.app/components/:path*"},
     {"source": "/css(/.*)?", "destination": "https://primer-css.vercel.app"},
     {"source": "/design(/.*)?", "destination": "https://primer-design.vercel.app"},
     {"source": "/blueprints(/.*)?", "destination": "https://primer-blueprints.vercel.app"},
