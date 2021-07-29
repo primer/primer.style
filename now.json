@@ -1,28 +1,20 @@
 {
-  "version": 2,
-  "name": "primer-style",
-  "alias": "primer.style",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build",
-      "config": {"distDir": "public"}
-    }
+  "rewrites": [
+    {"source": "/components(/.*)?", "destination": "https://primer-components.vercel.app"},
+    {"source": "/css(/.*)?", "destination": "https://primer-css.vercel.app"},
+    {"source": "/design(/.*)?", "destination": "https://primer-design.vercel.app"},
+    {"source": "/blueprints(/.*)?", "destination": "https://primer-blueprints.vercel.app"},
+    {"source": "/presentations(/.*)?", "destination": "https://primer-presentations.vercel.app"},
+    {"source": "/doctocat(/.*)?", "destination": "https://doctocat.vercel.app"},
+    {"source": "/cli(/.*)?", "destination": "https://cli.primer.vercel.app"},
+    {"source": "/octicons(/.*)?", "destination": "https://octicons-primer.vercel.app"},
+    {"source": "/primitives(/.*)?", "destination": "https://primitives-git-release-400-primer.vercel.app"},
+    {"source": "/mobile(/.*)?", "destination": "https://mobile.primer.vercel.app"},
+    {"source": "/view-components/stories(/.*)?", "destination": "https://primer-view-components.herokuapp.com"},
+    {"source": "/view-components(/.*)?", "destination": "https://view-components.vercel.app"},
+    {"source": "/desktop(/.*)?", "destination": "https://desktop-nu.vercel.app"}
   ],
-  "routes": [
-    {"src": "/components(/.*)?", "dest": "https://primer-components.vercel.app"},
-    {"src": "/css(/.*)?", "dest": "https://primer-css.vercel.app"},
-    {"src": "/design(/.*)?", "dest": "https://primer-design.vercel.app"},
-    {"src": "/blueprints(/.*)?", "dest": "https://primer-blueprints.vercel.app"},
-    {"src": "/presentations(/.*)?", "dest": "https://primer-presentations.vercel.app"},
-    {"src": "/doctocat(/.*)?", "dest": "https://doctocat.vercel.app"},
-    {"src": "/cli(/.*)?", "dest": "https://cli.primer.vercel.app"},
-    {"src": "/octicons(/.*)?", "dest": "https://octicons-primer.vercel.app"},
-    {"src": "/octicons-v2(/.*)?", "status": 301, "headers": {"Location": "/octicons$1"}},
-    {"src": "/primitives(/.*)?", "dest": "https://primitives-git-release-400-primer.vercel.app"},
-    {"src": "/mobile(/.*)?", "dest": "https://mobile.primer.vercel.app"},
-    {"src": "/view-components/stories(/.*)?", "dest": "https://primer-view-components.herokuapp.com"},
-    {"src": "/view-components(/.*)?", "dest": "https://view-components.vercel.app"},
-    {"src": "/desktop(/.*)?", "dest": "https://desktop-nu.vercel.app"}
+  "redirects": [
+    {"source": "/octicons-v2(/.*)?", "destination": "/octicons$1"}
   ]
 }
