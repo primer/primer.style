@@ -1,6 +1,5 @@
 {
   "rewrites": [
-    {"source": "/react(/.*)?", "destination": "https://primer-components.vercel.app"},
     {"source": "/components(/.*)?", "destination": "https://primer-components.vercel.app"},
     {"source": "/css(/.*)?", "destination": "https://primer-css.vercel.app"},
     {"source": "/design(/.*)?", "destination": "https://primer-design.vercel.app"},
