@@ -16,6 +16,6 @@
   ],
   "redirects": [
     {"source": "/octicons-v2(/.*)?", "destination": "/octicons$1"},
-    {"source": "/components(/.*)?", "destination": "/components$1"}
+    {"source": "/components(/.*)?", "destination": "/react$1"}
   ]
 }
