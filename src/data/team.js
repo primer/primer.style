@@ -1,5 +1,16 @@
 const teamContent = [
   {
+    name: 'Mike Perrotti',
+    title: 'Systems Designer',
+    handle: 'mperrotti',
+    questionOne: 'I was frustrated by all of the inconsistent UI, duplicated work, and redundant meetings that my teams would have to deal with. I finally found a discipline where I could use my design skills and my engineering skills to solve meaty problems without being limited to a traditional design or engineering role.',
+    questionTwo: `Working on a design system with Adam Detrick was invaluable and taught me so much. I'm also humbled and inspired by the work of David DeSandro, Lynn Hershman, Rachel Andrew, and Wei Huang.`,
+    favoriteTools: 'VS Code, Zsh, CSS, React, Adobe Illustrator, pen and paper, Microsoft To Do, Chrome Inspector',
+    avatar: 'https://user-images.githubusercontent.com/2313998/129769461-a446975e-cbc8-45eb-870a-c19d6a5e13e4.png',
+    gif: 'https://user-images.githubusercontent.com/2313998/129771358-b6808a2d-d48a-4e62-b227-9da168e047ac.gif',
+    alumni: false
+  },
+  {
     name: 'Natalya Shelburne',
     title: 'Design Infrastructure Manager',
     handle: 'tallys',
