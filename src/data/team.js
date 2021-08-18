@@ -234,7 +234,7 @@ const teamContent = [
     questionOne:
       "I'm a big fan of useful abstraction layers, and design systems are generally great examples. Although I've been a programmer for a long time, I enjoy dabbling in design in my free time and love to see systems that make good design achievable (nay, easy!) for non-designers :)",
     questionTwo:
-      'Whenever I need some design inspiration, I head over to [Dribbble](https://dribbble.com/). When I was a kid, I learned a ton from my mom who was a graphic designer for REI and Eddy Bauer in the 1980s (i.e. before computers).',
+      'Whenever I need some design inspiration, I head over to [Dribbble](https://dribbble.com/). When I was a kid, I learned a ton from my mom who was a graphic designer for REI and Eddie Bauer in the 1980s (i.e. before computers).',
     favoriteTools: 'VScode, Ruby, Chrome, iTerm 2',
     avatar: 'https://avatars.githubusercontent.com/u/575280?v=4',
     gif: 'https://user-images.githubusercontent.com/575280/129806447-88b7a872-3d27-4ab3-b7d0-af731293b6d7.gif',
