@@ -1,5 +1,16 @@
 const teamContent = [
   {
+    name: 'Allie Thu',
+    title: 'Systems Designer',
+    handle: 'alliethu',
+    questionOne: 'Early on in my career, I felt a natural pull towards design systems as I\'ve always been a person who finds great joy in consolidating, organizing, and making sense of messy things. As soon as I began to specialize in accessibility, the power and importance of design systems became even more clear, ultimately turning into the core of my work.',
+    questionTwo: `I believe I inherited my love for learning and understanding things from my dad. My husband has helped teach me that I can be both a #bossatwork and a #bossmom. The Accessibility community who is small, but mighty, working hard to empower and educate people like me to grow the community even further. To name a few, Sheri Byrne-Haber, Jack McElaney, Cat Noone and Anna Cook. All the open source design systems out there.`,
+    favoriteTools: 'Notion, Slack, Figma, Microsoft Accessibility Insights',
+    avatar: 'https://avatars.githubusercontent.com/u/7228610?v=4',
+    gif: 'https://user-images.githubusercontent.com/7228610/130678310-004fa38e-51ce-46f6-907f-ae9b7bc26e6c.gif',
+    alumni: false
+  },
+  {
     name: 'Mike Perrotti',
     title: 'Systems Designer',
     handle: 'mperrotti',
