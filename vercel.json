@@ -12,7 +12,8 @@
     {"source": "/mobile(/.*)?", "destination": "https://mobile.primer.vercel.app"},
     {"source": "/view-components/stories(/.*)?", "destination": "https://primer-view-components.herokuapp.com"},
     {"source": "/view-components(/.*)?", "destination": "https://view-components.vercel.app"},
-    {"source": "/desktop(/.*)?", "destination": "https://desktop-nu.vercel.app"}
+    {"source": "/desktop(/.*)?", "destination": "https://desktop-nu.vercel.app"},
+    {"source": "/contribute(/.*)?", "destination": "https://primer-contribute.vercel.app"}
   ],
   "redirects": [
     {"source": "/octicons-v2(/.*)?", "destination": "/octicons$1"},
