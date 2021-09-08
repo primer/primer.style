@@ -38,7 +38,7 @@ const teamContent = [
     title: 'Systems Designer',
     handle: 'maximedegreve',
     questionOne: `Being part of a few startups I've always noticed that engineers quickly outgrew designers and when this happened it was hard to keep up as a designer. Small obvious design patterns would often need clarification because they weren't clear. System thinking has always reduced this problem and allowed teams to move quickly without compromising on quality.`,
-    questionTwo: `Co-workers have always played a crucial part in growing into system thinking. Working as a designer on a design tool in the past we we're also lucky to chat to endless of big companies trying to set up design systems as well.`,
+    questionTwo: `Co-workers have always played a crucial part in growing into system thinking. Working as a designer on a design tool in the past I was also lucky to chat to endless of big companies trying to set up design systems as well.`,
     favoriteTools: `React, XCode, Figma, GitHub, Atom and 4pm biscuits`,
     avatar: 'https://user-images.githubusercontent.com/980622/132508908-950856ba-550f-4c7b-ba28-eb9b3a5250bc.jpg',
     gif: 'https://user-images.githubusercontent.com/980622/132508959-aa279711-0193-47d3-b51b-68a64e9d402b.gif',
