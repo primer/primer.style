@@ -1,5 +1,20 @@
 const teamContent = [
   {
+    name: 'Katie Langerman',
+    title: 'Systems Designer',
+    handle: 'langermank',
+    questionOne: `I have a background in design but also love writing code, and design systems are very welcoming to multi-disciplinary folks. I love how design systems bring people together across orgs and create a shared language for collaboration.`,
+    questionTwo: `Medium posts from [Nathan Curtis](https://medium.com/@nathanacurtis) kept me afloat while I worked on my first design system, along with the community in Jina's [Design Systems slack](https://design.systems/).
+
+I've learned my favorite CSS trickery from [Andy Bell](https://piccalil.li/), [Rachel Andrew](https://rachelandrew.co.uk/css/), [Stephanie Eckles](https://thinkdobecreate.com/), [Sara Soueidan](https://www.sarasoueidan.com/), and [Una](https://una.im/).
+
+Various design podcasts including [SimpleBits](https://show.simplebits.com/), [Honest Designers](https://www.honestdesigners.com/), [Design Details](https://designdetails.fm/), [Design Better](https://www.designbetter.co/podcast), and [CSS Podcast](https://thecsspodcast.libsyn.com/)`,
+    favoriteTools: `VS Code, Firefox dev tools, CSS, Figma, Pika, Notion`,
+    avatar: 'https://user-images.githubusercontent.com/18661030/133150912-f74c0a6b-2e8a-4547-9d80-872a7d0ff8db.jpg',
+    gif: 'https://user-images.githubusercontent.com/18661030/133155524-f0633783-d6ef-4b3a-938a-d30cdb6364da.gif',
+    alumni: false,
+  },
+  {
     name: 'Maxime De Greve',
     title: 'Systems Designer',
     handle: 'maximedegreve',
@@ -8,29 +23,31 @@ const teamContent = [
     favoriteTools: `React, XCode, Figma, GitHub, Atom and 4pm biscuits`,
     avatar: 'https://user-images.githubusercontent.com/980622/132508908-950856ba-550f-4c7b-ba28-eb9b3a5250bc.jpg',
     gif: 'https://user-images.githubusercontent.com/980622/132508959-aa279711-0193-47d3-b51b-68a64e9d402b.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Allie Thu',
     title: 'Systems Designer - Accessibility',
     handle: 'alliethu',
-    questionOne: 'Early on in my career, I felt a natural pull towards design systems as I\'ve always been a person who finds great joy in consolidating, organizing, and making sense of messy things. As soon as I began to specialize in accessibility, the power and importance of design systems became even more clear, ultimately turning into the core of my work.',
+    questionOne:
+      "Early on in my career, I felt a natural pull towards design systems as I've always been a person who finds great joy in consolidating, organizing, and making sense of messy things. As soon as I began to specialize in accessibility, the power and importance of design systems became even more clear, ultimately turning into the core of my work.",
     questionTwo: `I believe I inherited my curiousity and love for learning from my dad. My husband, who has helped teach me that I can be both a #bossatwork and a #bossmom. The Accessibility community who is small, but mighty, working hard to empower and educate people like me to grow the community even further. Lastly, all the open source design systems out there!`,
     favoriteTools: 'Notion, Slack, Figma, Microsoft Accessibility Insights, Spotify',
     avatar: 'https://user-images.githubusercontent.com/7228610/130680358-cd3a8b01-4fae-4e2c-ba05-e9ad6dd5cb14.jpg',
     gif: 'https://user-images.githubusercontent.com/7228610/130678310-004fa38e-51ce-46f6-907f-ae9b7bc26e6c.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Mike Perrotti',
     title: 'Systems Designer',
     handle: 'mperrotti',
-    questionOne: 'I was frustrated by all of the inconsistent UI, duplicated work, and redundant meetings that my teams would have to deal with. I finally found a discipline where I could use my design skills and my engineering skills to solve meaty problems without being limited to a traditional design or engineering role.',
+    questionOne:
+      'I was frustrated by all of the inconsistent UI, duplicated work, and redundant meetings that my teams would have to deal with. I finally found a discipline where I could use my design skills and my engineering skills to solve meaty problems without being limited to a traditional design or engineering role.',
     questionTwo: `Working on a design system with Adam Detrick was invaluable and taught me so much. I'm also humbled and inspired by the work of David DeSandro, Lynn Hershman, Rachel Andrew, and Wei Huang.`,
     favoriteTools: 'VS Code, Zsh, CSS, React, Adobe Illustrator, pen and paper, Microsoft To Do, Chrome Inspector',
     avatar: 'https://user-images.githubusercontent.com/2313998/129769461-a446975e-cbc8-45eb-870a-c19d6a5e13e4.png',
     gif: 'https://user-images.githubusercontent.com/2313998/129771358-b6808a2d-d48a-4e62-b227-9da168e047ac.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Natalya Shelburne',
@@ -42,7 +59,7 @@ const teamContent = [
     favoriteTools: `Sublime Text, React, Pencil and Paper, Figma, GitHub, coffee`,
     avatar: 'https://user-images.githubusercontent.com/6720549/119029291-7418e480-b976-11eb-9641-7c47e8134414.jpg',
     gif: 'https://user-images.githubusercontent.com/6720549/118991044-63a24300-b951-11eb-81d4-d5a63f71db06.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Julius Yanik',
@@ -54,7 +71,7 @@ const teamContent = [
     favoriteTools: `Remarkable tablet, Figma, Origami, Glyphs, GitHubs internal color tool`,
     avatar: 'https://user-images.githubusercontent.com/6720549/120377556-470bf080-c2eb-11eb-8230-53db30314b15.jpg',
     gif: 'https://user-images.githubusercontent.com/6720549/120376656-22fbdf80-c2ea-11eb-81ec-384cbd2f9f50.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Michelle Tilley',
@@ -68,7 +85,7 @@ const teamContent = [
     avatar: 'https://user-images.githubusercontent.com/189606/75723431-29d41680-5c91-11ea-99ba-40e24813c1c0.jpg',
     gif: 'https://user-images.githubusercontent.com/189606/75723924-1ffee300-5c92-11ea-873c-8335de7eece6.gif',
     alumni: true,
-    color: 'orange'
+    color: 'orange',
   },
   {
     name: 'Javier Díaz',
@@ -81,7 +98,7 @@ const teamContent = [
     favoriteTools: 'Photoshop, Figma, Maya, Unity, VS Code, PocketCasts, CityMapper.',
     avatar: 'https://user-images.githubusercontent.com/10384315/75708333-7c9fd500-5c75-11ea-9b37-e64dbc32d1d2.jpg',
     gif: 'https://user-images.githubusercontent.com/694831/75690516-48dba400-5ca3-11ea-9e9a-e033c612c827.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Inayaili León',
@@ -95,7 +112,7 @@ const teamContent = [
       'Too many! Things, Simplenote, iA Writer, Dictionary, VS Code, xScope, notebooks, Pinboard, Overcast, spreadsheets, and Earl Grey.',
     avatar: 'https://user-images.githubusercontent.com/10384315/75708294-67c34180-5c75-11ea-9f9b-db9a11530bdd.jpg',
     gif: 'https://user-images.githubusercontent.com/223966/75572471-be046a80-5a52-11ea-924e-9f6d7aca6d3d.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Joel Hawksley',
@@ -108,7 +125,7 @@ const teamContent = [
     favoriteTools: 'VS Code, Todoist, Spotify',
     avatar: 'https://user-images.githubusercontent.com/10384315/75709494-9f32ed80-5c77-11ea-86eb-e798fcfcaa5d.jpg',
     gif: 'https://user-images.githubusercontent.com/1940294/75078886-191ee600-54c4-11ea-883c-93e1815e75a6.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Aurora Pleguezuelo',
@@ -120,7 +137,7 @@ const teamContent = [
     favoriteTools: 'Figma, Things, SPREADSHEETS!, Notion, Emojis, Moleskine journals and Fujifilm X-H1.',
     avatar: 'https://user-images.githubusercontent.com/10384315/75709531-afe36380-5c77-11ea-9b94-27f780901284.jpg',
     gif: 'https://user-images.githubusercontent.com/6951037/66052384-cf435c80-e530-11e9-958d-c33476b7ef96.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Vinicius Depizzol',
@@ -132,7 +149,7 @@ const teamContent = [
     favoriteTools: 'Pen and paper, Figma, photography camera',
     avatar: 'https://user-images.githubusercontent.com/293280/64046286-6d9e6580-cb20-11e9-97da-47fb76a4ee36.JPG',
     gif: 'https://user-images.githubusercontent.com/293280/64045892-501ccc00-cb1f-11e9-99fb-ee1b8f7ce6ce.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Cole Bemis',
@@ -144,7 +161,7 @@ const teamContent = [
     favoriteTools: 'CodeSandbox, Figma, GitHub, React, Slack, VS Code',
     avatar: 'https://user-images.githubusercontent.com/4608155/59656806-959e3f80-9153-11e9-99cc-25b33e575ad8.jpg',
     gif: 'https://user-images.githubusercontent.com/4608155/59657078-73f18800-9154-11e9-8b36-81eed35e1266.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Zain Khoja',
@@ -159,7 +176,7 @@ const teamContent = [
     avatar: 'https://user-images.githubusercontent.com/6846673/59784198-bb703500-9276-11e9-8ec6-a02fc3eb2fc5.jpg',
     gif: 'https://user-images.githubusercontent.com/6846673/59376179-7a22d700-8d04-11e9-91da-09e45112e162.gif',
     alumni: true,
-    color: 'orange'
+    color: 'orange',
   },
   {
     name: 'Simon Lüthi',
@@ -173,7 +190,7 @@ const teamContent = [
     favoriteTools: 'DevTools, Atom, Figma, Sketch, iA Writer, LICEcap, Things, coffee, headphones.',
     avatar: 'https://user-images.githubusercontent.com/378023/54094782-ad448a00-43e6-11e9-93e0-b5960fa86e89.png',
     gif: 'https://user-images.githubusercontent.com/378023/53881412-fbf4cb80-4056-11e9-835b-3b4585e7e203.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Joshua Shao',
@@ -190,7 +207,7 @@ const teamContent = [
     favoriteTools: 'VScode, Figma, Adobe Creative Suite, Zero-Sugar Redbull',
     avatar: 'https://user-images.githubusercontent.com/24916540/47465791-490c8b00-d7a3-11e8-8dc8-9cc968a47b62.jpg',
     gif: 'https://user-images.githubusercontent.com/24916540/50362777-e2df8280-051d-11e9-8225-a0ed066eac59.gif',
-    alumni: true
+    alumni: true,
   },
   {
     name: 'Ash Guillaume',
@@ -203,9 +220,8 @@ const teamContent = [
   When I first started my career, [Frank Chimero](https://frankchimero.com/) was a huge inspiration. His book, [The Shape of Design](https://frankchimero.com/design/the-shape-of-design/), really helped to form my philosophy and approach to problems and how to cultivate a design process. Along with that but not design related, [Jason Fried](https://twitter.com/jasonfried) has been a great inspiration to how I approach work. His book (written alongside David Heinemeier Hansson) [Rework](https://basecamp.com/books/rework) still is the best, no nonsense, business book I've ever read.`,
     favoriteTools: 'Figma, Atom, Keynote, Bear Notes, Spark Mail, Spotify',
     avatar: 'https://user-images.githubusercontent.com/10384315/48450021-61941380-e759-11e8-90e0-7b41f6cbb6e8.jpg',
-    gif:
-      'https://camo.githubusercontent.com/c325b2b42ec71db51a92d7cdb2a6684824bc0464/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f7854687557686f614e794e426a54474552612f67697068792e676966',
-    alumni: false
+    gif: 'https://camo.githubusercontent.com/c325b2b42ec71db51a92d7cdb2a6684824bc0464/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f7854687557686f614e794e426a54474552612f67697068792e676966',
+    alumni: false,
   },
   {
     name: 'Emily Brick',
@@ -217,7 +233,7 @@ const teamContent = [
     favoriteTools: 'Atom, Figma, Bear, Dash, Slack',
     avatar: 'https://user-images.githubusercontent.com/586552/46690197-b4fdc980-cbcf-11e8-9ad2-57894e3dee92.jpg',
     gif: 'https://user-images.githubusercontent.com/586552/50305051-ba914e80-045f-11e9-9a13-b0e918da2086.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Emily Plummer',
@@ -230,10 +246,9 @@ const teamContent = [
      [talk about accessibility at Dinosaur.js](https://www.youtube.com/watch?v=hKIQkgPVXH4), Marcy Sutton, and Anil Dash.`,
     favoriteTools: 'Figma, Notion (for taking notes & planning), React',
     avatar: 'https://user-images.githubusercontent.com/586552/46690198-b4fdc980-cbcf-11e8-95e3-c3e28b69a29c.jpg',
-    gif:
-      'https://camo.githubusercontent.com/4646a6d24f7c08a84028f83987a8ec8462179c11/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6441775547537553356b7157732f67697068792e676966',
+    gif: 'https://camo.githubusercontent.com/4646a6d24f7c08a84028f83987a8ec8462179c11/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6441775547537553356b7157732f67697068792e676966',
     alumni: true,
-    color: 'orange'
+    color: 'orange',
   },
   {
     name: 'Jon Rohan',
@@ -245,7 +260,7 @@ const teamContent = [
     favoriteTools: `Atom, Bash/Shell, Figma, GitHub, iTerm, Javascript, MacBook Pro, Things`,
     avatar: 'https://user-images.githubusercontent.com/586552/46690199-b4fdc980-cbcf-11e8-9f8d-59a694281b70.jpg',
     gif: 'https://user-images.githubusercontent.com/54012/50536666-fced1680-0b56-11e9-89e6-995cdb01a599.gif',
-    alumni: false
+    alumni: false,
   },
   {
     name: 'Diana Mounter',
@@ -258,8 +273,8 @@ const teamContent = [
     favoriteTools: 'Hyper, Atom, Figma, MDN, and Quip',
     avatar: 'https://user-images.githubusercontent.com/586552/46751001-5c8a0300-cc87-11e8-84bb-9024b03df74f.jpg',
     gif: 'https://user-images.githubusercontent.com/334891/50363219-bab14d00-0538-11e9-9595-48b3c45358ab.gif',
-    alumni: false
-  }
+    alumni: false,
+  },
 ]
 
 export default teamContent
