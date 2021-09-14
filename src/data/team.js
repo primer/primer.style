@@ -1,4 +1,19 @@
 const teamContent = [
+      {
+    name: 'Katie Langerman',
+    title: 'Systems Designer',
+    handle: 'langermank',
+    questionOne: `I have a background in design but also love writing code, and design systems are very welcoming to multi-disciplinary folks. I love how design systems bring people together across orgs and create a shared language for collaboration.`,
+    questionTwo: `Medium posts from [Nathan Curtis](https://medium.com/@nathanacurtis) kept me afloat while I worked on my first design system, along with the community in Jina's [Design Systems slack](https://design.systems/).
+
+I've learned my favorite CSS trickery from [Andy Bell](https://piccalil.li/), [Rachel Andrew](https://rachelandrew.co.uk/css/), [Stephanie Eckles](https://thinkdobecreate.com/), [Sara Soueidan](https://www.sarasoueidan.com/), and [Una](https://una.im/).
+
+Various design podcasts including [SimpleBits](https://show.simplebits.com/), [Honest Designers](https://www.honestdesigners.com/), [Design Details](https://designdetails.fm/), [Design Better](https://www.designbetter.co/podcast), and [CSS Podcast](https://thecsspodcast.libsyn.com/)`,
+    favoriteTools: `VS Code, Firefox dev tools, CSS, Figma, Pika, Notion`,
+    avatar: 'https://user-images.githubusercontent.com/18661030/133150912-f74c0a6b-2e8a-4547-9d80-872a7d0ff8db.jpg',
+    gif: 'https://user-images.githubusercontent.com/18661030/133155524-f0633783-d6ef-4b3a-938a-d30cdb6364da.gif',
+    alumni: false,
+  },
   {
     name: 'Maxime De Greve',
     title: 'Systems Designer',
