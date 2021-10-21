@@ -3,7 +3,7 @@ const teamContent = [
     name: 'Reza Rahman',
     title: 'Software Engineer',
     handle: 'rezrah',
-    questionOne: `Design Systems gave me a unique opportunity to combine two of my passions: systems engineering with design operations. I find pleasure in the small details, like drawing component schematics, automating repetitive workflows, writing specifications, etc. Crucially, I enjoy building systems that my colleagues and peers can easily use to make their own lives easier.`,
+    questionOne: `Design Systems gave me a unique opportunity to combine two of my passions: systems engineering with design operations. I find pleasure in the small details, like drawing component schematics, automating repetitive workflows, writing specifications, etc. Crucially, I enjoy building systems that others can use to optimise their own workflows and lives.`,
     questionTwo: `I'm inspired by engineering thought leaders like Kent C. Dodds, Brian Lonsdorf (AKA Prof. Frisby), Eric Elliot, Dan Abramov, and all of my current and former colleagues in the space. I also enjoy following OG design system pioneers like Jina, Brad Frost, Nathan Curtis, Dan Mall and the work of teams like [@salesforceux](https://twitter.com/SalesforceUX), [@materialdesign](https://twitter.com/materialdesign), [@spotifydesign](https://twitter.com/spotifydesign), and it should go without saying… the team at [@primer](https://github.com/primer).`,
     favoriteTools: `Spotify, Figma, Photoshop, React + React Native, AWS, Notes (I know...), Flat Whites`,
     avatar: 'https://user-images.githubusercontent.com/13340707/138252080-2a094636-fa13-4d70-b60d-93fdefa5e890.jpg',
