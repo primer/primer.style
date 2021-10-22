@@ -1,19 +1,19 @@
 {
   "rewrites": [
-    {"source": "/react(/.*)?", "destination": "https://primer-components.vercel.app"},
-    {"source": "/css(/.*)?", "destination": "https://primer-css.vercel.app"},
-    {"source": "/design(/.*)?", "destination": "https://primer-design.vercel.app"},
+    {"source": "/react(/.*)?", "destination": "https://primer-components.vercel.app/react/"},
+    {"source": "/css(/.*)?", "destination": "https://primer-css.vercel.app/css/"},
+    {"source": "/design(/.*)?", "destination": "https://primer-design.vercel.app/design/"},
     {"source": "/blueprints(/.*)?", "destination": "https://primer-blueprints.vercel.app"},
-    {"source": "/presentations(/.*)?", "destination": "https://primer-presentations.vercel.app"},
-    {"source": "/doctocat(/.*)?", "destination": "https://doctocat.vercel.app"},
-    {"source": "/cli(/.*)?", "destination": "https://cli.primer.vercel.app"},
-    {"source": "/octicons(/.*)?", "destination": "https://octicons-primer.vercel.app"},
-    {"source": "/primitives(/.*)?", "destination": "https://primer-primitives.vercel.app"},
-    {"source": "/mobile(/.*)?", "destination": "https://mobile.primer.vercel.app"},
-    {"source": "/view-components/stories(/.*)?", "destination": "https://primer-view-components.herokuapp.com"},
-    {"source": "/view-components(/.*)?", "destination": "https://view-components.vercel.app"},
-    {"source": "/desktop(/.*)?", "destination": "https://desktop-nu.vercel.app"},
-    {"source": "/contribute(/.*)?", "destination": "https://primer-contribute.vercel.app"}
+    {"source": "/presentations(/.*)?", "destination": "https://primer-presentations.vercel.app/presentations/"},
+    {"source": "/doctocat(/.*)?", "destination": "https://doctocat.vercel.app/doctocat/"},
+    {"source": "/cli(/.*)?", "destination": "https://cli.primer.vercel.app/cli/"},
+    {"source": "/octicons(/.*)?", "destination": "https://octicons-primer.vercel.app/octicons/"},
+    {"source": "/primitives(/.*)?", "destination": "https://primer-primitives.vercel.app/primitives/"},
+    {"source": "/mobile(/.*)?", "destination": "https://mobile.primer.vercel.app/mobile/"},
+    {"source": "/view-components/stories(/.*)?", "destination": "https://primer-view-components.herokuapp.com/view-components/stories/"},
+    {"source": "/view-components(/.*)?", "destination": "https://view-components.vercel.app/view-components/"},
+    {"source": "/desktop(/.*)?", "destination": "https://desktop-nu.vercel.app/desktop/"},
+    {"source": "/contribute(/.*)?", "destination": "https://primer-contribute.vercel.app/contribute/"}
   ],
   "redirects": [
     {"source": "/octicons-v2(/.*)?", "destination": "/octicons$1"},
