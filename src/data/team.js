@@ -1,5 +1,16 @@
 const teamContent = [
   {
+    name: 'Daniel Guillan',
+    title: 'Systems Designer',
+    handle: 'danielguillan',
+    questionOne: `I first learned about design systems through the work of Joseph Müller-Brockmann, Massimo Vignelli, and Otl Aicher. I was fascinated by their principles, the patterns they developed, the modularity of their approach, and the abstractions they established. All that gave me an entirely new perspective and understanding of design. I later connected these learnings to my work while scaling user interfaces on startups and larger organizations.`,
+    questionTwo: `I've been very fortunate to learn and work with many inspiring designers, engineers, and product people over the last few years. Aitor, Anna, Javi, Miguel, and Ricardo, to name just a few.  Also, I've learned a lot about design, process, thinking, and strategy from Oliver Reichenstein and Ryan Singer, and code from Nicolas Gallagher, Harry Roberts, and  Lea Verou.`,
+    favoriteTools: `Obsidian, iA Writer, Lamy 2000, Framer, VS Code, Next.js, Vercel, Raycast, coffee, rum`,
+    avatar: 'https://user-images.githubusercontent.com/175638/138738100-5d2775c3-c757-47b8-a1b0-cbd5c82a743a.jpg',
+    gif: 'https://user-images.githubusercontent.com/175638/138738336-2a11400c-266d-452c-b48b-766baa25641e.gif',
+    alumni: false,
+  },
+  {
     name: 'Reza Rahman',
     title: 'Software Engineer',
     handle: 'rezrah',
