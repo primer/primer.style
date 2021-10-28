@@ -1,5 +1,75 @@
 const teamContent = [
   {
+    name: 'Daniel Guillan',
+    title: 'Systems Designer',
+    handle: 'danielguillan',
+    questionOne: `I first learned about design systems through the work of Joseph Müller-Brockmann, Massimo Vignelli, and Otl Aicher. I was fascinated by their principles, the patterns they developed, the modularity of their approach, and the abstractions they established. All that gave me an entirely new perspective and understanding of design. I later connected these learnings to my work while scaling user interfaces on startups and larger organizations.`,
+    questionTwo: `I've been very fortunate to learn and work with many inspiring designers, engineers, and product people over the last few years. Aitor, Anna, Javi, Miguel, and Ricardo, to name just a few.  Also, I've learned a lot about design, process, thinking, and strategy from Oliver Reichenstein and Ryan Singer, and code from Nicolas Gallagher, Harry Roberts, and  Lea Verou.`,
+    favoriteTools: `Obsidian, iA Writer, Lamy 2000, Framer, VS Code, Next.js, Vercel, Raycast, coffee, rum`,
+    avatar: 'https://user-images.githubusercontent.com/175638/138738100-5d2775c3-c757-47b8-a1b0-cbd5c82a743a.jpg',
+    gif: 'https://user-images.githubusercontent.com/175638/138738336-2a11400c-266d-452c-b48b-766baa25641e.gif',
+    alumni: false,
+  },
+  {
+    name: 'Reza Rahman',
+    title: 'Software Engineer',
+    handle: 'rezrah',
+    questionOne: `Design Systems gave me a unique opportunity to combine two of my passions: systems engineering with design operations. I find pleasure in the small details, like drawing component schematics, automating repetitive workflows, writing specifications, etc. Crucially, I enjoy building systems that others can use to optimise their own workflows and lives.`,
+    questionTwo: `I'm inspired by engineering thought leaders like Kent C. Dodds, Brian Lonsdorf (AKA Prof. Frisby), Eric Elliot, Dan Abramov, and all of my current and former colleagues in the space. I also enjoy following OG design system pioneers like Jina, Brad Frost, Nathan Curtis, Dan Mall and the work of teams like [@salesforceux](https://twitter.com/SalesforceUX), [@materialdesign](https://twitter.com/materialdesign), [@spotifydesign](https://twitter.com/spotifydesign), and it should go without saying… the team at [@primer](https://github.com/primer).`,
+    favoriteTools: `Spotify, Figma, Photoshop, React + React Native, AWS, Notes (I know...), Flat Whites`,
+    avatar: 'https://user-images.githubusercontent.com/13340707/138252080-2a094636-fa13-4d70-b60d-93fdefa5e890.jpg',
+    gif: 'https://user-images.githubusercontent.com/13340707/138258250-a2d9a33b-9e1b-4053-849f-0fa451065fa0.gif',
+    alumni: false,
+  },
+  {
+    name: 'Katie Langerman',
+    title: 'Systems Designer',
+    handle: 'langermank',
+    questionOne: `I have a background in design but also love writing code, and design systems are very welcoming to multi-disciplinary folks. I love how design systems bring people together across orgs and create a shared language for collaboration.`,
+    questionTwo: `Medium posts from [Nathan Curtis](https://medium.com/@nathanacurtis) kept me afloat while I worked on my first design system, along with the community in Jina's [Design Systems slack](https://design.systems/).
+
+I've learned my favorite CSS trickery from [Andy Bell](https://piccalil.li/), [Rachel Andrew](https://rachelandrew.co.uk/css/), [Stephanie Eckles](https://thinkdobecreate.com/), [Sara Soueidan](https://www.sarasoueidan.com/), and [Una](https://una.im/).
+
+Various design podcasts including [SimpleBits](https://show.simplebits.com/), [Honest Designers](https://www.honestdesigners.com/), [Design Details](https://designdetails.fm/), [Design Better](https://www.designbetter.co/podcast), and [CSS Podcast](https://thecsspodcast.libsyn.com/)`,
+    favoriteTools: `VS Code, Firefox dev tools, CSS, Figma, Pika, Notion`,
+    avatar: 'https://user-images.githubusercontent.com/18661030/133150912-f74c0a6b-2e8a-4547-9d80-872a7d0ff8db.jpg',
+    gif: 'https://user-images.githubusercontent.com/18661030/133155524-f0633783-d6ef-4b3a-938a-d30cdb6364da.gif',
+    alumni: false,
+  },
+  {
+    name: 'Maxime De Greve',
+    title: 'Systems Designer',
+    handle: 'maximedegreve',
+    questionOne: `Being part of a few startups I've always noticed that engineers quickly outgrew designers and when this happened it was hard to keep up as a designer. Small obvious design patterns would often need clarification because they weren't clear. System thinking has always reduced this problem and allowed us to move quickly without compromising on quality.`,
+    questionTwo: `Co-workers have always played a crucial part in growing into system thinking. Working as a designer on a design tool in the past I was also lucky to chat to endless of big companies trying to set up design systems as well.`,
+    favoriteTools: `React, XCode, Figma, GitHub, Atom and 4pm biscuits`,
+    avatar: 'https://user-images.githubusercontent.com/980622/132508908-950856ba-550f-4c7b-ba28-eb9b3a5250bc.jpg',
+    gif: 'https://user-images.githubusercontent.com/980622/132508959-aa279711-0193-47d3-b51b-68a64e9d402b.gif',
+    alumni: false
+  },
+  {
+    name: 'Allie Thu',
+    title: 'Systems Designer - Accessibility',
+    handle: 'alliethu',
+    questionOne: 'Early on in my career, I felt a natural pull towards design systems as I\'ve always been a person who finds great joy in consolidating, organizing, and making sense of messy things. As soon as I began to specialize in accessibility, the power and importance of design systems became even more clear, ultimately turning into the core of my work.',
+    questionTwo: `I believe I inherited my curiousity and love for learning from my dad. My husband, who has helped teach me that I can be both a #bossatwork and a #bossmom. The Accessibility community who is small, but mighty, working hard to empower and educate people like me to grow the community even further. Lastly, all the open source design systems out there!`,
+    favoriteTools: 'Notion, Slack, Figma, Microsoft Accessibility Insights, Spotify',
+    avatar: 'https://user-images.githubusercontent.com/7228610/130680358-cd3a8b01-4fae-4e2c-ba05-e9ad6dd5cb14.jpg',
+    gif: 'https://user-images.githubusercontent.com/7228610/130678310-004fa38e-51ce-46f6-907f-ae9b7bc26e6c.gif',
+    alumni: false
+  },
+  {
+    name: 'Mike Perrotti',
+    title: 'Systems Designer',
+    handle: 'mperrotti',
+    questionOne: 'I was frustrated by all of the inconsistent UI, duplicated work, and redundant meetings that my teams would have to deal with. I finally found a discipline where I could use my design skills and my engineering skills to solve meaty problems without being limited to a traditional design or engineering role.',
+    questionTwo: `Working on a design system with Adam Detrick was invaluable and taught me so much. I'm also humbled and inspired by the work of David DeSandro, Lynn Hershman, Rachel Andrew, and Wei Huang.`,
+    favoriteTools: 'VS Code, Zsh, CSS, React, Adobe Illustrator, pen and paper, Microsoft To Do, Chrome Inspector',
+    avatar: 'https://user-images.githubusercontent.com/2313998/129769461-a446975e-cbc8-45eb-870a-c19d6a5e13e4.png',
+    gif: 'https://user-images.githubusercontent.com/2313998/129771358-b6808a2d-d48a-4e62-b227-9da168e047ac.gif',
+    alumni: false
+  },
+  {
     name: 'Cameron Dutro',
     handle: 'camertron',
     title: 'Software Engineer',
