@@ -1,5 +1,16 @@
 const teamContent = [
   {
+    name: 'Chelsea Adelman',
+    title: 'Accessibility Systems Designer',
+    handle: 'ichelsea',
+    questionOne: `The majority of my time as a designer has been within product design, and pursuing my passion for accessible design started early on. I began finding that accessibility and systems thinking were intrinsically linked, so transitioning to design systems to focus on accessibility was a natural course. Being able to affect change that helps people has always been a deep-seated need of mine to fill with my work, and I'm able to do that two-fold in design systems to help product designers and end users.`,
+    questionTwo: `Years ago when I was interested in learning how to fix computers, a coworker once told me that you could teach a monkey to build a computer. The meaning behind this was that I could go out and learn whatever I wanted regardless of previous knowledge or background, as long as the desire was there. I really took this to heart with me and it's been a key part of my growth to where I am today. I've been able to learn from countless coworkers over the years who have shared their knowledge and helped me grow.`,
+    favoriteTools: `Figma, Microsoft Edge, Microsoft Accessibility Insights, Procreate and GoodNotes on iPad, Obsidian, custom mechanical keyboards`,
+    avatar: 'https://user-images.githubusercontent.com/40274682/140833776-28cf21b2-1b59-4a25-857f-713d8a42c1fa.jpg',
+    gif: 'https://user-images.githubusercontent.com/40274682/140420359-9c85b4a2-26ae-4818-8415-c33b7c189e00.gif',
+    alumni: false,
+  },
+  {
     name: 'Daniel Guillan',
     title: 'Systems Designer',
     handle: 'danielguillan',
