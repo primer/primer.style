@@ -1791,10 +1791,10 @@
   dependencies:
     "@primer/octicons" "^9.1.1"
 
-"@primer/gatsby-theme-doctocat@^1.6.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@primer/gatsby-theme-doctocat/-/gatsby-theme-doctocat-1.7.0.tgz#57a8617a77807a87154137225095d9216585c5aa"
-  integrity sha512-c+HqWXniGTl738Lxc8qJYbQEnqJihpQZwYhBmW+jdiNLf5bOYJugXYHr5HpeCsqeKczvt/tUlPJBHhTN/B2PIA==
+"@primer/gatsby-theme-doctocat@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@primer/gatsby-theme-doctocat/-/gatsby-theme-doctocat-1.8.1.tgz#1ea50731a267dbc6335d6f8b964a4f5ac2b67286"
+  integrity sha512-+EIW91IBYtpmqVXR9pU1DWtE5vgqsyv0oOqAJ2ydP6ATT9s1zcLt5XTp/lFTv74URSjafoelM0UcPmcfX4CEvg==
   dependencies:
     "@babel/preset-env" "^7.5.5"
     "@babel/preset-react" "^7.0.0"
