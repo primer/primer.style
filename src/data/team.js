@@ -1,5 +1,38 @@
 const teamContent = [
-      {
+  {
+    name: 'Chelsea Adelman',
+    title: 'Accessibility Systems Designer',
+    handle: 'ichelsea',
+    questionOne: `The majority of my time as a designer has been within product design, and pursuing my passion for accessible design started early on. I began finding that accessibility and systems thinking were intrinsically linked, so transitioning to design systems to focus on accessibility was a natural course. Being able to affect change that helps people has always been a deep-seated need of mine to fill with my work, and I'm able to do that two-fold in design systems to help product designers and end users.`,
+    questionTwo: `Years ago when I was interested in learning how to fix computers, a coworker once told me that you could teach a monkey to build a computer. The meaning behind this was that I could go out and learn whatever I wanted regardless of previous knowledge or background, as long as the desire was there. I really took this to heart with me and it's been a key part of my growth to where I am today. I've been able to learn from countless coworkers over the years who have shared their knowledge and helped me grow.`,
+    favoriteTools: `Figma, Microsoft Edge, Microsoft Accessibility Insights, Procreate and GoodNotes on iPad, Obsidian, custom mechanical keyboards`,
+    avatar: 'https://user-images.githubusercontent.com/40274682/140833776-28cf21b2-1b59-4a25-857f-713d8a42c1fa.jpg',
+    gif: 'https://user-images.githubusercontent.com/40274682/140420359-9c85b4a2-26ae-4818-8415-c33b7c189e00.gif',
+    alumni: false,
+  },
+  {
+    name: 'Daniel Guillan',
+    title: 'Systems Designer',
+    handle: 'danielguillan',
+    questionOne: `I first learned about design systems through the work of Joseph Müller-Brockmann, Massimo Vignelli, and Otl Aicher. I was fascinated by their principles, the patterns they developed, the modularity of their approach, and the abstractions they established. All that gave me an entirely new perspective and understanding of design. I later connected these learnings to my work while scaling user interfaces on startups and larger organizations.`,
+    questionTwo: `I've been very fortunate to learn and work with many inspiring designers, engineers, and product people over the last few years. Aitor, Anna, Javi, Miguel, and Ricardo, to name just a few.  Also, I've learned a lot about design, process, thinking, and strategy from Oliver Reichenstein and Ryan Singer, and code from Nicolas Gallagher, Harry Roberts, and  Lea Verou.`,
+    favoriteTools: `Obsidian, iA Writer, Lamy 2000, Framer, VS Code, Next.js, Vercel, Raycast, coffee, rum`,
+    avatar: 'https://user-images.githubusercontent.com/175638/138738100-5d2775c3-c757-47b8-a1b0-cbd5c82a743a.jpg',
+    gif: 'https://user-images.githubusercontent.com/175638/138738336-2a11400c-266d-452c-b48b-766baa25641e.gif',
+    alumni: false,
+  },
+  {
+    name: 'Reza Rahman',
+    title: 'Software Engineer',
+    handle: 'rezrah',
+    questionOne: `Design Systems gave me a unique opportunity to combine two of my passions: systems engineering with design operations. I find pleasure in the small details, like drawing component schematics, automating repetitive workflows, writing specifications, etc. Crucially, I enjoy building systems that others can use to optimise their own workflows and lives.`,
+    questionTwo: `I'm inspired by engineering thought leaders like Kent C. Dodds, Brian Lonsdorf (AKA Prof. Frisby), Eric Elliot, Dan Abramov, and all of my current and former colleagues in the space. I also enjoy following OG design system pioneers like Jina, Brad Frost, Nathan Curtis, Dan Mall and the work of teams like [@salesforceux](https://twitter.com/SalesforceUX), [@materialdesign](https://twitter.com/materialdesign), [@spotifydesign](https://twitter.com/spotifydesign), and it should go without saying… the team at [@primer](https://github.com/primer).`,
+    favoriteTools: `Spotify, Figma, Photoshop, React + React Native, AWS, Notes (I know...), Flat Whites`,
+    avatar: 'https://user-images.githubusercontent.com/13340707/138252080-2a094636-fa13-4d70-b60d-93fdefa5e890.jpg',
+    gif: 'https://user-images.githubusercontent.com/13340707/138258250-a2d9a33b-9e1b-4053-849f-0fa451065fa0.gif',
+    alumni: false,
+  },
+  {
     name: 'Katie Langerman',
     title: 'Systems Designer',
     handle: 'langermank',
@@ -45,6 +78,19 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     favoriteTools: 'VS Code, Zsh, CSS, React, Adobe Illustrator, pen and paper, Microsoft To Do, Chrome Inspector',
     avatar: 'https://user-images.githubusercontent.com/2313998/129769461-a446975e-cbc8-45eb-870a-c19d6a5e13e4.png',
     gif: 'https://user-images.githubusercontent.com/2313998/129771358-b6808a2d-d48a-4e62-b227-9da168e047ac.gif',
+    alumni: false
+  },
+  {
+    name: 'Cameron Dutro',
+    handle: 'camertron',
+    title: 'Software Engineer',
+    questionOne:
+      "I'm a big fan of useful abstraction layers, and design systems are generally great examples. Although I've been a programmer for a long time, I enjoy dabbling in design in my free time and love to see systems that make good design achievable (nay, easy!) for non-designers :)",
+    questionTwo:
+      'Whenever I need some design inspiration, I head over to [Dribbble](https://dribbble.com/). When I was a kid, I learned a ton from my mom who was a graphic designer for REI and Eddie Bauer in the 1980s (i.e. before computers).',
+    favoriteTools: 'VScode, Ruby, Chrome, iTerm 2',
+    avatar: 'https://avatars.githubusercontent.com/u/575280?v=4',
+    gif: 'https://user-images.githubusercontent.com/575280/129806447-88b7a872-3d27-4ab3-b7d0-af731293b6d7.gif',
     alumni: false
   },
   {
