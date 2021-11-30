@@ -8,6 +8,8 @@ import {ReactComponent as Hexagon} from '../svg/hexagon.svg'
 import {ReactComponent as Square} from '../svg/square.svg'
 import {ReactComponent as Diamond} from '../svg/diamond.svg'
 
+const TRANSITION_STYLE = '0.8s ease'
+
 const Shape = styled(({className, shape}) => {
   const shapes = {
     hexagon: Hexagon,
@@ -31,6 +33,9 @@ const Image = styled('img')`
   position: absolute;
   top: 0;
   left: 0;
+  transition: filter ${TRANSITION_STYLE};
+  filter: grayscale(1);
+  ${({$hover}) => $hover && `filter: grayscale(0);`}
 `
 
 const A = styled(Box)`
@@ -39,7 +44,7 @@ const A = styled(Box)`
   clip-path: url("#clip-${props => props.shape}");
   &:after {
     content: '';
-    transition: opacity 0.8s ease;
+    transition: opacity ${TRANSITION_STYLE};
     position: absolute;
     left: 0;
     top: 0;
@@ -77,18 +82,20 @@ const ShapeOutline = styled(Link)`
 const AvatarShape = props => (
   <ShapeOutline shape={props.shape} bg={props.bg} {...props}>
     <A className={props.className} shape={props.shape}>
-      <Image src={props.src} />
+      <Image src={props.src} $hover={props.hover} />
       <Shape shape={props.shape} />
     </A>
   </ShapeOutline>
 )
 
 AvatarShape.defaultProps = {
-  bg: 'blue.4'
+  bg: 'blue.4',
+  hover: false,
 }
 
 AvatarShape.propTypes = {
-  shape: PropTypes.oneOf(['hexagon', 'square', 'circle', 'diamond'])
+  shape: PropTypes.oneOf(['hexagon', 'square', 'circle', 'diamond']),
+  hover: PropTypes.bool,
 }
 
 export default AvatarShape

@@ -22,9 +22,17 @@
 We're working on updating our websites, domains, and npm package names so that it will be easier in future to find all things Primer. We welcome feedback and contributions at any time. Please check existing issues and pull requests before contributing, and please communicate via an issue first if you intend to make large-scale changes. See [contributing](.github/CONTRIBUTING.md) for more info.
 
 #### Team
+- [@pouretrebelle](https://github.com/pouretrebelle)
+- [@ichelsea](https://github.com/ichelsea)
 - [@danielguillan](https://github.com/danielguillan)
+- [@rezrah](https://github.com/rezrah)
 - [@langermank](https://github.com/langermank)
 - [@maximedegreve](https://github.com/maximedegreve)
+- [@alliethu](https://github.com/alliethu)
+- [@mperrotti](https://github.com/mperrotti)
+- [@camertron](https://github.com/camertron)
+- [@tallys](https://github.com/tallys)
+- [@juliusschaeper](https://github.com/juliusschaeper)
 - [@edokoa](https://github.com/edokoa)
 - [@yaili](https://github.com/yaili)
 - [@joelhawksley](https://github.com/joelhawksley)
@@ -35,7 +43,6 @@ We're working on updating our websites, domains, and npm package names so that i
 - [@ashygee](https://github.com/ashygee)
 - [@emilybrick](https://github.com/emilybrick)
 - [@jonrohan](https://github.com/jonrohan)
-- [@tallys](https://github.com/tallys)
 - [@broccolini](https://github.com/broccolini)
 
 #### Alumni

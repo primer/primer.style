@@ -1,5 +1,16 @@
 const teamContent = [
   {
+    name: 'Charlotte Dann',
+    title: 'Accessibility Software Engineer',
+    handle: 'pouretrebelle',
+    questionOne: `I get so much joy from writing HTML and CSS, and design systems are one level up - systematically making UIs accessible and consistent. I love concentrating on the tiny things like button states so product folk can build the big picture, knowing that the details are taken care of.`,
+    questionTwo: `Chris Coyier's [CSS-Tricks](https://css-tricks.com/) was a hugely important resource for me when I was first learning how to make websites, and the community on [CodePen](https://codepen.io/) is an endless source of inspiration. `,
+    favoriteTools: `VS Code, DevTools, Figma, Notion, Field Notes, earl grey`,
+    avatar: 'https://user-images.githubusercontent.com/1901935/143463395-7eac409f-7ff4-44e0-b074-16754f9a29ec.png',
+    gif: 'https://user-images.githubusercontent.com/1901935/142913543-0eb8b113-2377-499f-8f83-1695c6f3a033.gif',
+    alumni: false,
+  },
+  {
     name: 'Chelsea Adelman',
     title: 'Accessibility Systems Designer',
     handle: 'ichelsea',
