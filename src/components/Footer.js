@@ -42,7 +42,7 @@ export default function OpenSource() {
             Created and maintained by GitHub&#8217;s
           </Text>
           <LinkDark fontWeight="bold" href="https://primer.style/about#team">
-            Design Systems team
+            Design Infrastructure team
           </LinkDark>
           <Text>.</Text>
           <Text as="p">&copy; GitHub {new Date().getFullYear()}</Text>
