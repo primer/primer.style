@@ -44,6 +44,17 @@ const teamContent = [
     alumni: false,
   },
   {
+    name: 'Siddharth Kshetrapal',
+    title: 'Software Engineer',
+    handle: 'siddharthkp',
+    questionOne: `Through pure frustration of “there has to be a better way”, I wandered into the world of design systems and it just clicked! Found so many talented folks who worked on the intersection of design and development roles (used to be called "hybrids", but that might be out of fashion). Bought into the idea of defining a common language for designers and developers, still chasing that dream :)`,
+    questionTwo: `People I have worked with over the years ♥️ and the people I’ve looked up to — [Nicole Sullivan](https://github.com/stubbornella), [Jina Anne](https://github.com/jina), [Jacob Thornton](https://github.com/fat), [Brent Jackson](https://github.com/jxnblk), [Sunil Pai](https://github.com/threepointone), [Sarah Drasner](https://github.com/sdras), [Addy Osmani](https://github.com/addyosmani) and my sister!`,
+    favoriteTools: `Devtools, Figma, iA Writer, GitHub, CodeSandbox, Hyper, Vercel, Kap, Muji pens!`,
+    avatar: 'https://avatars.githubusercontent.com/u/1863771?v=4',
+    gif: 'https://user-images.githubusercontent.com/1863771/145415749-f8a9eea3-2b01-4e8a-8462-161bf1a602b1.gif',
+    alumni: false,
+  },
+  {
     name: 'Katie Langerman',
     title: 'Systems Designer',
     handle: 'langermank',
