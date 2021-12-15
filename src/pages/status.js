@@ -59,7 +59,11 @@ export default function StatusPage() {
   }, [])
 
   return (
-    <Layout pageContext={{frontmatter: {title: 'Status'}}}>
+    <Layout
+      pageContext={{
+        frontmatter: {title: 'Component status', description: 'Status of components in the Primer Design System'},
+      }}
+    >
       <Box className="container-xl" px={5} pb={8}>
         <Box pt={8} pb={6}>
           <Heading fontSize={[48, 56]} color="blue.4" lineHeight={1} mb={3}>
