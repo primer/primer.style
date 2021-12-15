@@ -13,7 +13,6 @@ Object.assign(Heading.defaultProps, {
 
 const GlobalStyles = createGlobalStyle`
   body {
-    color: ${themeGet('colors.blue.2')};
     background-color: ${themeGet('colors.black')}; 
   }
 `
@@ -24,7 +23,7 @@ export default function Layout({pageContext, children}) {
       <GlobalStyles />
       <Head title={pageContext.frontmatter.title} description={pageContext.frontmatter.description} />
       <Header isSearchEnabled={false} />
-      <Box>{children}</Box>
+      <Box color="blue.2">{children}</Box>
     </>
   )
 }
