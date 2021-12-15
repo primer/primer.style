@@ -1,11 +1,57 @@
 import componentMetadata from '@primer/component-metadata'
-import {Heading, Text, Box} from '@primer/components'
+import {Box, Heading, Text, themeGet} from '@primer/components'
 import StatusLabel from '@primer/gatsby-theme-doctocat/src/components/status-label'
 import fetch from 'isomorphic-unfetch'
 import React from 'react'
+import styled from 'styled-components'
 import Layout from '../components/Layout'
+import LinkLight from '../components/LinkLight'
 
-export default function NewsPage() {
+// TODO: Make table header sticky
+const Table = styled.table`
+  display: block;
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  border-collapse: collapse;
+
+  th {
+    font-family: ${themeGet('fonts.mono')};
+    font-weight: ${themeGet('fontWeights.normal')};
+    color: ${themeGet('colors.blue.3')};
+  }
+
+  th,
+  td {
+    padding: ${themeGet('space.2')} ${themeGet('space.3')};
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-left: 0;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 0;
+  }
+
+  td {
+    border-top: 1px solid ${themeGet('colors.gray.7')};
+    vertical-align: top;
+  }
+
+  th {
+    position: sticky;
+    top: 0;
+  }
+
+  img {
+    background-color: transparent;
+  }
+`
+
+export default function StatusPage() {
   const [components, setComponents] = React.useState(null)
 
   React.useEffect(() => {
@@ -14,29 +60,39 @@ export default function NewsPage() {
 
   return (
     <Layout pageContext={{frontmatter: {title: 'Status'}}}>
-      <div className="container-xl">
+      <Box className="container-xl" px={5} pb={8}>
+        <Box pt={8} pb={6}>
+          <Heading fontSize={[48, 56]} color="blue.4" lineHeight={1} mb={3}>
+            Component status
+          </Heading>
+          <Text as="p" fontSize={3} color="blue.2">
+            Status of components in the Primer Design System.
+            <br />
+            Check out the <LinkLight href="#">component lifecycle</LinkLight> for more information about each status.
+          </Text>
+        </Box>
         {components ? (
-          <table style={{width: '100%'}}>
+          <Table>
             <colgroup>
-              <col style={{width: '20%'}} />
-              <col style={{width: '20%'}} />
-              <col style={{width: '20%'}} />
-              <col style={{width: '40%'}} />
+              <col style={{width: '15%'}} />
+              <col style={{width: '15%'}} />
+              <col style={{width: '15%'}} />
+              <col style={{width: '55%'}} />
             </colgroup>
             <thead>
               <tr>
                 <th align="left">Component</th>
                 {/* TODO: How would we add a Figma column? Where would that data come from ? */}
-                <th align="left">ViewComponent</th>
-                <th align="left">React</th>
+                <th>ViewComponent</th>
+                <th>React</th>
                 <th align="left">Description</th>
               </tr>
             </thead>
             <tbody>
               {components.map((component) => (
                 <tr key={component.id}>
-                  <td>{component.displayName}</td>
-                  <td>
+                  <td style={{whiteSpace: 'nowrap'}}>{component.displayName}</td>
+                  <td align="center" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.viewComponent ? (
                       <a href={component.implementations.viewComponent.url}>
                         <StatusLabel status={component.implementations.viewComponent.status} />
@@ -45,22 +101,22 @@ export default function NewsPage() {
                       ''
                     )}
                   </td>
-                  <td>
+                  <td align="center" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.react ? (
                       <a href={component.implementations.react.url}>
                         <StatusLabel status={component.implementations.react.status} />
                       </a>
                     ) : (
-                      ''
+                      <Text color="gray.5">Not available</Text>
                     )}
                   </td>
-                  <td>{component.description}</td>
+                  <td style={{minWidth: 400}}>{component.description}</td>
                 </tr>
               ))}
             </tbody>
-          </table>
+          </Table>
         ) : null}
-      </div>
+      </Box>
     </Layout>
   )
 }
