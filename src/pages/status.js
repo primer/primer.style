@@ -55,7 +55,9 @@ export default function StatusPage() {
   const [components, setComponents] = React.useState(null)
 
   React.useEffect(() => {
-    getComponents().then((components) => setComponents(components))
+    getComponents()
+      .then((components) => setComponents(components))
+      .catch((error) => console.error(error))
   }, [])
 
   return (
@@ -130,8 +132,6 @@ async function getComponents() {
   const viewComponents = await fetch(`https://primer.style/view-components/components.json`).then((res) => res.json())
 
   const reactComponents = await fetch(`https://primer.style/react/components.json`).then((res) => res.json())
-
-  // TODO: handle errors
 
   const implementations = {
     react: {
