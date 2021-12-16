@@ -102,7 +102,7 @@ export default function StatusPage() {
                         <StatusLabel status={component.implementations.viewComponent.status} />
                       </a>
                     ) : (
-                      ''
+                      <Text color="gray.5">Not available</Text>
                     )}
                   </td>
                   <td align="center" style={{whiteSpace: 'nowrap'}}>
