@@ -1,5 +1,20 @@
 const teamContent = [
   {
+    name: 'Leslie Cohn-Wein',
+    title: 'Design Infrastructure Engineering Manager',
+    handle: 'lesliecdubs',
+    questionOne: `As an agency developer early in my career, it seemed we were always building the same UI with different styles. So why not build once, with enough flexibility to customize for many clients?
+
+Later, it became clear to me that systems could boost the end user's experience through more than speed to production; systems multiply consistency, usability, and accessibility. And who doesn't want a top-notch, inclusive user experience which the makers can ship more quickly?`,
+    questionTwo: `We stand on the shoulders of giants. I deeply appreciate the former colleagues who have helped me learn and grow, all of the folks who write and speak in the design systems space, and the work of management leaders like [Lara Hogan](https://larahogan.me/), [Camille Fournier](https://twitter.com/skamille), [Sarah Drasner](https://www.engmanagement.dev/), and Caree Youngman.
+
+The playful, innovative work of my friend [Charlie Gerard](https://charliegerard.dev/projects) never fails to inspire and remind me what humans in tech are capable of creating.`,
+    favoriteTools: `VS Code, React, CSS, axe Accessibility Linter, Netlify, and a big mug`,
+    avatar: 'https://user-images.githubusercontent.com/3902488/153995479-15e25bf5-3f81-4f05-8569-213f668590d4.jpeg',
+    gif: 'https://user-images.githubusercontent.com/3902488/153995859-eb0b6072-523e-46f5-9850-375a52876716.gif',
+    alumni: false,
+  },
+  {
     name: 'Charlotte Dann',
     title: 'Accessibility Software Engineer',
     handle: 'pouretrebelle',
