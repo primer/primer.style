@@ -15,6 +15,17 @@ The playful, innovative work of my friend [Charlie Gerard](https://charliegerard
     alumni: false,
   },
   {
+    name: 'Hector Garcia',
+    title: 'Accessibility Software Engineer',
+    handle: 'hectahertz',
+    questionOne: `Having worked on a few different projects over the years I realized that having a solid design system is one of the best ways to build faster, more consistent, accessible, and overall higher quality products. I love focusing on the details of all the different pieces of a design system and how they fit together to create awesome experiences for both end users and developers.`,
+    questionTwo: `I've been fortunate to learn so much from my colleagues over the years! I'm also a big fan of all the people that write and share content with the community. Some of my favorites are [Sara Soueidan](https://www.sarasoueidan.com/), [Sarah Drasner](https://sarah.dev/), [Marcy Sutton](https://marcysutton.com/), [Steve Schoger](https://www.steveschoger.com/), [Suz Hinton](https://noopkat.com/) and [Salma Alam-Naylor](https://whitep4nth3r.com/).`,
+    favoriteTools: `iTerm, Visual Studio Code, Edge, Firefox, Microsoft Accessibility Insights, axe Accessibility Linter, GitHub, Spotify, Quip`,
+    avatar: 'https://user-images.githubusercontent.com/24622853/154278844-db71cd48-f85c-4c57-bcc0-0a7966e06d7a.jpeg',
+    gif: 'https://user-images.githubusercontent.com/24622853/154278835-65fd86da-cf76-41ed-9d81-c9996911c128.gif',
+    alumni: false,
+  },
+  {
     name: 'Charlotte Dann',
     title: 'Accessibility Software Engineer',
     handle: 'pouretrebelle',
