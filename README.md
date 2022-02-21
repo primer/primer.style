@@ -23,6 +23,7 @@ We're working on updating our websites, domains, and npm package names so that i
 
 #### Team
 - [@lesliecdubs](https://github.com/lesliecdubs)
+- [@hectahertz](https://github.com/hectahertz)
 - [@pouretrebelle](https://github.com/pouretrebelle)
 - [@ichelsea](https://github.com/ichelsea)
 - [@danielguillan](https://github.com/danielguillan)
