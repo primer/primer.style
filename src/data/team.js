@@ -248,7 +248,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     handle: 'alliethu',
     questionOne:
       "Early on in my career, I felt a natural pull towards design systems as I've always been a person who finds great joy in consolidating, organizing, and making sense of messy things. As soon as I began to specialize in accessibility, the power and importance of design systems became even more clear, ultimately turning into the core of my work.",
-    questionTwo: `I believe I inherited my curiousity and love for learning from my dad. My husband, who has helped teach me that I can be both a #bossatwork and a #bossmom. The Accessibility community who is small, but mighty, working hard to empower and educate people like me to grow the community even further. Lastly, all the open source design systems out there!`,
+    questionTwo: `I believe I inherited my curiosity and love for learning from my dad. My husband, who has helped teach me that I can be both a #bossatwork and a #bossmom. The Accessibility community who is small, but mighty, working hard to empower and educate people like me to grow the community even further. Lastly, all the open source design systems out there!`,
     favoriteTools: 'Notion, Slack, Figma, Microsoft Accessibility Insights, Spotify',
     avatar: 'https://user-images.githubusercontent.com/7228610/130680358-cd3a8b01-4fae-4e2c-ba05-e9ad6dd5cb14.jpg',
     gif: 'https://user-images.githubusercontent.com/7228610/183948245-6004efcf-1d90-40c0-8aba-22c4cdb6f7c1.gif',
