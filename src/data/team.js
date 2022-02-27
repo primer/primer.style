@@ -184,7 +184,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     handle: 'edokoa',
     title: 'Systems Designer',
     questionOne:
-      'I think it happened naturally while working on bigger projects and having to define a source of truth. Producing and mantaining complex products is really difficult if you have to reinvent the wheel going through all the decision-making process again and again, alone or with your teammates.',
+      'I think it happened naturally while working on bigger projects and having to define a source of truth. Producing and maintaining complex products is really difficult if you have to reinvent the wheel going through all the decision-making process again and again, alone or with your teammates.',
     questionTwo:
       'My biggest source of inspiration have always been video games, I really like how good games craft a small reality and then put a lot of care into making interaction feel satisfactory and self-explanatory. Apart from that, I think there are lots of places inspiration can be drawn from: Music, furniture and interior design, photography, movies... ',
     favoriteTools: 'Photoshop, Figma, Maya, Unity, VS Code, PocketCasts, CityMapper.',
