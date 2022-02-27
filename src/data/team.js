@@ -263,7 +263,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     questionOne: `I love organization and lists. I have a lists for things from movies to boba tea orders. I like to bring this into my design work as well, creating components and cohesiveness across platforms to make it easier for people to create great products.`,
     questionTwo: `When I first began learning about design, I was inspired by the people who contributed back to the community by teaching and opening up to students. Resources like [Students Who Design](https://studentswho.design/) and [Design Details](https://designdetails.fm) helped me figure out how I wanted to make a positive impact in tech.
 
-  More recently, I've been inspired by design agencies and companies that are testing the boundaries of design outside of what is accepted as 'common pratice'. I enjoy seeing unique animation and motion used to convey information, emotion, and storytelling.`,
+  More recently, I've been inspired by design agencies and companies that are testing the boundaries of design outside of what is accepted as 'common practice'. I enjoy seeing unique animation and motion used to convey information, emotion, and storytelling.`,
     favoriteTools: 'Sketch, Figma, Atom, Dropbox Paper, Twitter, Ping Pong, Ukulele',
     avatar: 'https://user-images.githubusercontent.com/6846673/59784198-bb703500-9276-11e9-8ec6-a02fc3eb2fc5.jpg',
     gif: 'https://user-images.githubusercontent.com/6846673/59376179-7a22d700-8d04-11e9-91da-09e45112e162.gif',
