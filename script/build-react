@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd docs
+npm run build
+mkdir -p static/react
+cp -R public/. static/react

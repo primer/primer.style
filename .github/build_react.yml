@@ -1,0 +1,62 @@
+name: Build React
+on:
+  push:
+    branches:
+      - rezrah/spike-redirects
+
+jobs:
+  ci:
+    name: Build sub sites
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Checkout react
+        uses: actions/checkout@v3
+        with:
+          repository: primer/react
+          token: ${{ secrets.GPR_AUTH_TOKEN_SHARED }}
+          path: react
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Build react site
+        run: npm run build:react
+
+      - name: Create GitHub deployment
+        uses: chrnorm/deployment-action@v1.2.0
+        id: deployment
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment: Preview
+
+      - name: Deploy with Vercel
+        uses: amondnet/vercel-action@v20
+        id: vercel-action
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          vercel-token: ${{ secrets.VERCEL_TOKEN_SHARED }}
+          github-comment: false
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID_SHARED }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+
+      - name: Update deployment status (success)
+        if: success()
+        uses: chrnorm/deployment-status@v1.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment_url: ${{ steps.vercel-action.outputs.preview-url }}
+          state: 'success'
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
+
+      - name: Update deployment status (failure)
+        if: failure()
+        uses: chrnorm/deployment-status@v1.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          state: 'failure'
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
