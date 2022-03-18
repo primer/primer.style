@@ -18,6 +18,7 @@
     "@primer/releases": "0.0.0-634eadc",
     "@svgr/webpack": "^4.3.2",
     "gatsby": "^2.13.39",
+    "gatsby-plugin-htaccess": "^1.4.0",
     "gatsby-plugin-manifest": "^2.2.4",
     "gatsby-plugin-mdx": "^1.0.17",
     "gatsby-plugin-meta-redirect": "^1.1.1",
@@ -42,6 +43,7 @@
   },
   "devDependencies": {
     "eslint": "^5.6.1",
-    "eslint-plugin-github": "^1.4.0"
+    "eslint-plugin-github": "^1.4.0",
+    "gatsby-plugin-htaccess-redirects": "^0.3.0"
   }
 }
