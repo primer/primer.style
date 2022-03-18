@@ -21,9 +21,15 @@ exports.sourceNodes = async ({actions: {createNode}, createContentDigest}) => {
         type: 'PrimerRelease',
         mediaType: 'application/json',
         content: JSON.stringify(release),
-        contentDigest: createContentDigest(release)
-      }
+        contentDigest: createContentDigest(release),
+      },
     }
     createNode(node)
   }
 }
+
+createRedirect({
+  fromPath: `/react/*`,
+  toPath: `https://primer-components.vercel.app/react/*`,
+  statusCode: 200,
+})
