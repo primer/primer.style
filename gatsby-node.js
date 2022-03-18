@@ -6,6 +6,12 @@ exports.createPages = ({actions: {createRedirect}}) => {
     // console.warn(`[redirect] ${fromPath} → ${toPath}`)
     createRedirect({fromPath, toPath, redirectInBrowser: true})
   }
+
+  createRedirect({
+    fromPath: `/react/*`,
+    toPath: `https://primer-components.vercel.app/react/*`,
+    statusCode: 200,
+  })
 }
 
 exports.sourceNodes = async ({actions: {createNode}, createContentDigest}) => {
@@ -27,9 +33,3 @@ exports.sourceNodes = async ({actions: {createNode}, createContentDigest}) => {
     createNode(node)
   }
 }
-
-createRedirect({
-  fromPath: `/react/*`,
-  toPath: `https://primer-components.vercel.app/react/*`,
-  statusCode: 200,
-})
