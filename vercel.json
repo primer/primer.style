@@ -1,5 +1,7 @@
 {
-  "builds": [{"src": "/public", "use": "@vercel/static"}],
+  "github": {
+    "enabled": false
+  },
   "rewrites": [
     {"source": "/react(/.*)?", "destination": "https://primer-components.vercel.app/react$1"},
     {"source": "/css(/.*)?", "destination": "https://primer-css.vercel.app/css$1"},
