@@ -30,6 +30,9 @@ jobs:
       - name: Build react site
         run: npm run build:react
 
+      - name: Build the main site
+        run: npm run build
+
       - name: Create GitHub deployment
         uses: chrnorm/deployment-action@v1.2.0
         id: deployment
