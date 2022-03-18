@@ -1,6 +1,6 @@
 #!/bin/bash
 
+mkdir -p static/react
 cd docs
 npm run build
-mkdir -p static/react
 cp -R public/. static/react
