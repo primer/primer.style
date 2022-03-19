@@ -2,10 +2,13 @@
 set -e
 
 mkdir -p static/react
+npm install
+
 cd react/docs
-npm run build
+npm install
+gatsby build
 cp -R ./public/. ../../static/react 
 
 cd ../../ 
-
+./script/build-storybook
 npm run build
