@@ -6,8 +6,7 @@
     "build:react": "./script/build-react",
     "now-dev": "gatsby develop -p $PORT",
     "now-build": "npm run build",
-    "lint": "eslint *.js src",
-    "postinstall": "(cd react && npm install) && (cd react/docs && npm install)"
+    "lint": "eslint *.js src"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.1.0",
