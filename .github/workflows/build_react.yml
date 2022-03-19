@@ -12,12 +12,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Checkout react
-        uses: actions/checkout@v3
-        with:
-          repository: primer/react
-          token: ${{ secrets.GPR_AUTH_TOKEN_SHARED }}
-          path: react
+      # - name: Checkout react
+      #   uses: actions/checkout@v3
+      #   with:
+      #     repository: primer/react
+      #     token: ${{ secrets.GPR_AUTH_TOKEN_SHARED }}
+      #     path: react
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -29,6 +29,8 @@ jobs:
 
       - name: Build react site
         run: npm run build:react
+        env:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build the main site
         run: npm run build
