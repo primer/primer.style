@@ -1,7 +1,6 @@
 #!/bin/bash
+set -e
 
-git clone "https://"$github-token"@github.com/primer/react.git" react
-(cd react && npm install) && (cd react/docs && npm install)
 mkdir -p static/react
 cd react/docs
 npm run build
