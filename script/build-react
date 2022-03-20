@@ -5,15 +5,17 @@ mkdir -p static/react
 npm install
 
 cd react/docs
-echo "the PWD is : $PWD. should be react/docs"
+echo "the PWD is next line. should be react/docs"
+echo $PWD
 
 npm install
 gatsby build
 cp -R ./public/. ../../static/react 
 
 cd ../
-echo "the PWD is : $PWD, should be project root"
+echo "the PWD is next line, should be project root"
+echo $PWD
 
 chmod +x ./script/build-storybook.sh
-#./script/build-storybook.sh
+./script/build-storybook.sh
 npm run build
