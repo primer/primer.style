@@ -3,20 +3,6 @@ set -e
 
 mkdir -p static/react
 npm install
-
-cd react/docs
-echo "the PWD is next line. should be react/docs"
-echo $PWD
-
-npm install
-gatsby build --prefix-paths
-
-cd ../
-echo "the PWD is next line, should be project root"
-echo $PWD
-
-chmod +x ./script/build-storybook
-./script/build-storybook
-npm run build
-
+cd react/docs && npm install && gatsby build --prefix-paths
+cd ../ && chmod +x ./script/build-storybook && ./script/build-storybook && npm run build
 cp -R ./docs/public/. ../static/react 
