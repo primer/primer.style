@@ -10,5 +10,6 @@ gatsby build
 cp -R ./public/. ../../static/react 
 
 cd ../../ 
-./script/build-storybook
+chmod +x ./script/build-storybook.sh
+./script/build-storybook.sh
 npm run build
