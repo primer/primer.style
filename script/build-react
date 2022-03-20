@@ -16,6 +16,6 @@ cd ../
 echo "the PWD is next line, should be project root"
 echo $PWD
 
-chmod +x ./script/build-storybook.sh
-./script/build-storybook.sh
+chmod +x ./script/build-storybook
+./script/build-storybook
 npm run build
