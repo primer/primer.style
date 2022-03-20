@@ -19,6 +19,13 @@ jobs:
           token: ${{ secrets.GPR_AUTH_TOKEN_SHARED }}
           path: react
 
+      - name: Checkout css
+        uses: actions/checkout@v3
+        with:
+          repository: primer/css
+          token: ${{ secrets.GPR_AUTH_TOKEN_SHARED }}
+          path: css
+
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
