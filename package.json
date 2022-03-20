@@ -4,6 +4,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "build:react": "./script/build-react",
+    "build:css": "./script/build-css",
     "now-dev": "gatsby develop -p $PORT",
     "now-build": "npm run build",
     "lint": "eslint *.js src",

@@ -1,4 +1,4 @@
-name: Build React
+name: Deploy docs
 on:
   push:
     branches:
@@ -29,6 +29,9 @@ jobs:
 
       - name: Build react site
         run: npm run build:react
+
+      - name: Build css site
+        run: npm run build:css
 
       - name: Build the main site
         run: npm run build
