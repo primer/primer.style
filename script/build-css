@@ -4,4 +4,4 @@ set -e
 mkdir -p static/css
 npm install
 cd css/docs && npm install && npm run build
-cp -R ./docs/public/. ../static/css 
+cp -R ./public/. ../../static/css 
