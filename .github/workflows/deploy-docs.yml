@@ -1,8 +1,9 @@
 name: Deploy docs
 on:
+  pull_request_target:
   push:
     branches:
-      - rezrah/spike-redirects
+      - pages-main
 
 permissions:
   contents: read
