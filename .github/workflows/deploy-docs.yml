@@ -65,7 +65,7 @@ jobs:
           path: artifact.tar
 
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: deployment_pages
         uses: paper-spa/deploy-pages@main
         with:
           preview: ${{ github.event_name == 'pull_request_target' }}
