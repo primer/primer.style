@@ -1,6 +1,8 @@
 name: Deploy docs
 on:
-  pull_request_target:
+  pull_request:
+    branches:
+      - rezrah/spike-redirects
   push:
     branches:
       - pages-main
@@ -69,7 +71,7 @@ jobs:
       #   id: deployment_pages
       #   uses: paper-spa/deploy-pages@main
       #   with:
-      #     preview: ${{ github.event_name == 'pull_request_target' }}
+      #     preview: ${{ github.event_name == 'pull_request' }}
 
       # - name: Deploy with Vercel
       #   uses: amondnet/vercel-action@v20
@@ -109,4 +111,4 @@ jobs:
         id: deployment
         uses: paper-spa/deploy-pages@main
         with:
-          preview: ${{ github.event_name == 'pull_request_target' }}
+          preview: ${{ github.event_name == 'pull_request' }}
