@@ -4,6 +4,11 @@ on:
     branches:
       - rezrah/spike-redirects
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   ci:
     name: Build sub sites
@@ -49,6 +54,21 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           environment: Preview
+
+      - name: Archive build output
+        run: 'tar --dereference --directory public/ -cvf artifact.tar .'
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: github-pages
+          path: artifact.tar
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: paper-spa/deploy-pages@main
+        with:
+          preview: ${{ github.event_name == 'pull_request_target' }}
 
       - name: Deploy with Vercel
         uses: amondnet/vercel-action@v20
