@@ -1,5 +1,6 @@
 *.log
 .cache/
 .DS_Store
-public/
+public/*
+!public/staticwebapp.config.json
 node_modules/
