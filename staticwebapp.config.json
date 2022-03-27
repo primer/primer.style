@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "route": "/react*",
+      "rewrite": "https://primer-components.vercel.app/react*",
+      "status": 200
+    }
+  ]
+}

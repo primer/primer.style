@@ -27,7 +27,7 @@ jobs:
           action: 'upload'
           app_location: '/'
           api_location: ''
-          output_location: '/public'
+          output_location: 'public'
 
   azure-cleanup:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
