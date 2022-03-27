@@ -2,8 +2,11 @@
   "routes": [
     {
       "route": "/react*",
-      "rewrite": "https://primer-components.vercel.app/react*",
-      "status": 200
+      "rewrite": "/react-subfolder*"
+    },
+    {
+      "route": "/css*",
+      "rewrite": "/css"
     }
   ]
 }
