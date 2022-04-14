@@ -3,21 +3,21 @@
   "rewrites": [
     {"source": "/react(/.*)?", "destination": "https://primer-components.vercel.app/react$1"},
     {"source": "/css(/.*)?", "destination": "https://primer-css.vercel.app/css$1"},
-    {"source": "/design(/.*)?", "destination": "https://primer-design.vercel.app/design$1"},
+    {"source": "/design(/.*)?", "destination": "https://primer.github.io/design$1"},
     {"source": "/blueprints(/.*)?", "destination": "https://primer-blueprints.vercel.app"},
     {"source": "/presentations(/.*)?", "destination": "https://primer-presentations.vercel.app/presentations$1"},
     {"source": "/doctocat(/.*)?", "destination": "https://doctocat.vercel.app/doctocat$1"},
     {"source": "/cli(/.*)?", "destination": "https://cli.primer.vercel.app/cli$1"},
     {"source": "/octicons(/.*)?", "destination": "https://octicons-primer.vercel.app/octicons$1"},
     {"source": "/primitives(/.*)?", "destination": "https://primer-primitives.vercel.app/primitives$1"},
-    {"source": "/mobile(/.*)?", "destination": "https://mobile.primer.vercel.app/mobile$1"},
+    {"source": "/mobile(/.*)?", "destination": "https://primer.github.io/mobile$1"},
     {"source": "/rails(/.*)?", "destination": "https://primer-view-components.herokuapp.com/$1"},
     {
       "source": "/view-components/stories(/.*)?",
       "destination": "https://view-components-storybook.eastus.cloudapp.azure.com/view-components/stories$1"
     },
     {"source": "/view-components(/.*)?", "destination": "https://view-components.vercel.app/view-components$1"},
-    {"source": "/desktop(/.*)?", "destination": "https://desktop-nu.vercel.app/desktop$1"},
+    {"source": "/desktop(/.*)?", "destination": "https://primer.github.io/desktop$1"},
     {"source": "/contribute(/.*)?", "destination": "https://primer.github.io/contribute$1"}
   ],
   "redirects": [
