@@ -30,8 +30,10 @@ jobs:
         with:
           name: node-app
           path: ./public/
-      run: |
-        cp web.config ./public/
+
+      - name: Copy rewrites to server root
+        run: |
+          cp web.config ./public/
 
   deploy:
     runs-on: ubuntu-latest
