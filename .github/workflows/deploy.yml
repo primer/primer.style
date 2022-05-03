@@ -30,6 +30,8 @@ jobs:
         with:
           name: node-app
           path: ./public/
+      run: |
+        cp web.config ./public/
 
   deploy:
     runs-on: ubuntu-latest
