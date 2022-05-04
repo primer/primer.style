@@ -20,10 +20,10 @@ jobs:
         with:
           node-version: '14.x'
 
-      - name: npm install, build, and test
+      - name: install and build
         run: |
-          npm install
-          npm run build --if-present
+          yarn
+          yarn build
 
       - name: Copy rewrites to server root
         run: |
@@ -48,7 +48,7 @@ jobs:
         with:
           name: node-app
 
-      - name: 'Deploy to Azure Web App'
+      - name: Deploy to Azure Web App service
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
