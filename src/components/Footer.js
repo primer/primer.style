@@ -39,7 +39,7 @@ export default function OpenSource() {
       <Box color="black" px={5} mx="auto" className="container-xl">
         <BorderBox mt={12} py={5} borderRadius={0} border={0} borderTop={2} borderStyle="solid" borderColor="black">
           <Text pr={1} as="span">
-            Created and maintained by GitHub&#8217;s
+            Created and maintained by GitHub&#8217;s (v1)
           </Text>
           <LinkDark fontWeight="bold" href="https://primer.style/about#team">
             Design Infrastructure team
