@@ -1,7 +1,7 @@
 const teamContent = [
   {
     name: 'Leslie Cohn-Wein',
-    title: 'Design Infrastructure Engineering Manager',
+    title: 'Design Engineering Director',
     handle: 'lesliecdubs',
     questionOne: `As an agency developer early in my career, it seemed we were always building the same UI with different styles. So why not build once, with enough flexibility to customize for many clients?
 
