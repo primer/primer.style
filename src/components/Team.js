@@ -23,9 +23,8 @@ export default function Team(props) {
             Meet the team
           </Heading>
           <Text as="p" fontSize={3} color="blue.2">
-            The GitHub Design Infrastructure team builds and maintains Primer — this includes our CSS framework, style guide
-            documentation, Octicons, numerous tools and libraries that support design and front-end, and our up-coming
-            React.js component library.
+            The GitHub Design Infrastructure and Design Engineering teams build and maintain Primer — this includes our CSS framework, style guide
+            documentation, Octicons, numerous tools and libraries that support design and front-end, and component libraries.
           </Text>
 
           <Text fontSize={3} color="blue.2">
