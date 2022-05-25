@@ -3,8 +3,7 @@ name: Build and deploy production
 on:
   push:
     branches:
-      - rezrah/azure-app-service-spike
-      # - main
+      - main
 
   workflow_dispatch:
 
