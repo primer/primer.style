@@ -130,8 +130,8 @@ export default function StatusPage() {
 }
 
 async function getComponents() {
-  const handleError = (err) => {
-    throw new Error(err)
+  const handleError = (error) => {
+    console.error(error)
   }
 
   // Get component status data
