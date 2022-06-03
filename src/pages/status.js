@@ -135,11 +135,11 @@ async function getComponents() {
   }
 
   // Get component status data
-  const viewComponents = await fetch(`https://primer.style/view-components/components.json`)
+  const viewComponents = await fetch(`https://primer.github.io/view_components/components.json`)
     .then((res) => res.json())
     .catch(handleError)
 
-  const reactComponents = await fetch(`https://primer.style/react/components.json`)
+  const reactComponents = await fetch(`https://primer.github.io/react/components.json`)
     .then((res) => res.json())
     .catch(handleError)
 
