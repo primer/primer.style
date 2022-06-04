@@ -1,4 +1,4 @@
-name: Build and deploy production
+name: Build and deploy staging
 
 on:
   push:
@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'production'
+      name: 'staging'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
