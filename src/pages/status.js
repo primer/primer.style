@@ -55,10 +55,21 @@ export default function StatusPage() {
   const [components, setComponents] = React.useState(null)
 
   React.useEffect(() => {
-    getComponents()
-      .then((components) => setComponents(components))
-      .catch((error) => console.error(error))
-  }, [])
+    const fetchData = async () => {
+      try {
+        const components = await getComponents()
+        setComponents(components)
+      } catch (error) {
+        console.error('this is what broke', error)
+      }
+    }
+
+    if (!components) {
+      fetchData()
+    }
+  }, [components])
+
+  console.log(123, components)
 
   return (
     <Layout
@@ -137,14 +148,12 @@ async function getComponents() {
   // Get component status data
   const viewComponents = await fetch(`https://primer.github.io/view_components/components.json`)
     .then((res) => {
-      console.log('viewComponents', res.json())
       return res.json()
     })
     .catch(handleError)
 
   const reactComponents = await fetch(`https://primer.github.io/react/components.json`)
     .then((res) => {
-      console.log('reactComponents', res.json())
       return res.json()
     })
     .catch(handleError)
