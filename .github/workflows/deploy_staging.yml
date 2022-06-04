@@ -20,8 +20,6 @@ jobs:
           node-version: '14.x'
 
       - name: install and build
-        secrets:
-          gh_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           yarn
           yarn build
