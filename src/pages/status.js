@@ -74,7 +74,7 @@ export default function StatusPage() {
           <Text as="p" fontSize={3} color="blue.2">
             Status of components in the Primer Design System.
             <br />
-            Check out the
+            Check out the{' '}
             <LinkLight href="https://primer.style/contribute/component-lifecycle">component lifecycle</LinkLight> for
             more information about each status.
           </Text>
