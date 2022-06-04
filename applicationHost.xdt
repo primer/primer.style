@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+    <system.webServer>
+        <proxy xdt:Transform="InsertIfMissing" enabled="true" preserveHostHeader="false" reverseRewriteHostInResponseHeaders="false"/>
+        <rewrite xdt:Transform="InsertIfMissing">
+            <allowedServerVariables xdt:Transform="InsertIfMissing">
+                <add name="HTTP_X_ORIGINAL_HOST" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)"/>
+                <add name="HTTP_X_UNPROXIED_URL" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)"/>
+                <add name="HTTP_X_ORIGINAL_ACCEPT_ENCODING" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)"/>
+                <add name="HTTP_ACCEPT_ENCODING" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)"/>
+            </allowedServerVariables>
+        </rewrite>
+    </system.webServer>
+</configuration>  
