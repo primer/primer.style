@@ -29,11 +29,11 @@ There are three ways to deploy this site:
 
 ### Path rewriting
 
-Reverse-proxy URL rewriting allows us to serve multiple apps under a single domain (in this case, `primer.style`). As this site grows, we will split larger pages off into separate apps and manage their aliases in this repo's [web.config]](./web.config). We recommend deploying these separate apps to GitHub Pages.
+Reverse-proxy URL rewriting allows us to serve multiple apps under a single domain (in this case, `primer.style`). As this site grows, we will split larger pages off into separate apps and manage their aliases in this repo's [web.config](./web.config). We recommend deploying these separate apps to GitHub Pages.
 
 ### Adding new apps to primer.style routing
 
-The following describes how to add an externally-hosted app as a new page to primer.style routing. This example assumes that your app will be served from `primer.style/your-app-name`.
+The following steps describe how to reverse-proxy an externally-hosted app as a new page route to primer.style. This example assumes that your app will be served from `primer.style/your-app-name`.
 
 1. Deploy your app to GitHub Pages, or another hosting provider so that it is accessible on a unique origin URL. E.g. `https://primer.github.io/your-app-name`
 2. Ensure that your app is deploying to a subfolder that corresponds to the one you would like to use on primer.style. E.g. Deploy to `/your-app-name/`, and not to `/`.
@@ -62,6 +62,6 @@ The following describes how to add an externally-hosted app as a new page to pri
 
 Because of the way that GitHub Pages deploys websites to a subfolder named after the repository, separate apps need to be configured to serve all of their URLs under the same path as they're aliased to on `primer.style`. In other words, an app aliased to `/alias/**` will need to serve all of its content from `/alias/` rather than `/`. For both Gatsby and Next.js, this means nesting all of your page content in `pages/<alias>/`.
 
-[azure]: https:portal.azure.com
+[azure]: https://portal.azure.com
 [primer.style]: https://primer.style
 [gatsby]: https://www.gatsbyjs.org
