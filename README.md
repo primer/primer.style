@@ -33,6 +33,7 @@ We're working on updating our websites, domains, and npm package names so that i
 - [@alliethu](https://github.com/alliethu)
 - [@mperrotti](https://github.com/mperrotti)
 - [@camertron](https://github.com/camertron)
+- [@josepmartins](https://github.com/josepmartins)
 - [@tallys](https://github.com/tallys)
 - [@juliusschaeper](https://github.com/juliusschaeper)
 - [@edokoa](https://github.com/edokoa)
