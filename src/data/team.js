@@ -1,5 +1,16 @@
 const teamContent = [
   {
+    name: 'Josep Martins',
+    handle: 'josepmartins',
+    title: 'Systems Designer',
+    questionOne: 'It happened naturally when working on startup projects with few resources, trying to improve our workflow while avoiding repetitive tasks and inconsistent UI. Learning OOCSS, SMACSS, or BEM methodologies influenced and pull me towards a system thinking approach.',
+    questionTwo: 'From all the co-workers and friends I’ve been lucky to work with: [Hayk An](https://github.com/hihayk), [Victoria Nikitina](https://twitter.com/killnicole), [Daniel Guillan](https://github.com/danielguillan), [Javier Sanchez](https://github.com/vieron), and from all of the folks who share their knowledge in the design and development space: [Lea Verou](https://github.com/LeaVerou), [Harry Roberts](https://github.com/csswizardry), [Sara Soueidan](https://github.com/SaraSoueidan), [Benjamin de Cock](https://github.com/bendc), and [Brent Jackson](https://github.com/jxnblk) to name a few.',
+    favoriteTools: 'VS Code, Notes, Figma, GitHub, Vercel, Spotify',
+    avatar: 'https://user-images.githubusercontent.com/912236/176458039-9c71869d-66c6-4329-a0e7-c5c7ddcdd722.jpg',
+    gif: 'https://user-images.githubusercontent.com/912236/176458822-7710da14-9036-478b-807d-733922240761.gif',
+    alumni: false
+  },
+  {
     name: 'Leslie Cohn-Wein',
     title: 'Design Engineering Director',
     handle: 'lesliecdubs',
