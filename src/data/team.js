@@ -174,7 +174,8 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     favoriteTools: `Remarkable tablet, Figma, Origami, Glyphs, GitHubs internal color tool`,
     avatar: 'https://user-images.githubusercontent.com/6720549/120377556-470bf080-c2eb-11eb-8230-53db30314b15.jpg',
     gif: 'https://user-images.githubusercontent.com/6720549/120376656-22fbdf80-c2ea-11eb-81ec-384cbd2f9f50.gif',
-    alumni: false
+    alumni: true,
+    color: 'orange'
   },
   {
     name: 'Michelle Tilley',
@@ -240,7 +241,8 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     favoriteTools: 'Figma, Things, SPREADSHEETS!, Notion, Emojis, Moleskine journals and Fujifilm X-H1.',
     avatar: 'https://user-images.githubusercontent.com/10384315/75709531-afe36380-5c77-11ea-9b94-27f780901284.jpg',
     gif: 'https://user-images.githubusercontent.com/6951037/66052384-cf435c80-e530-11e9-958d-c33476b7ef96.gif',
-    alumni: false
+    alumni: true,
+    color: 'orange'
   },
   {
     name: 'Vinicius Depizzol',
