@@ -3,7 +3,7 @@ const teamContent = [
     name: 'Josep Martins',
     handle: 'josepmartins',
     title: 'Systems Designer',
-    questionOne: 'It happened naturally when working on startup projects with few resources, trying to improve our workflow while avoiding repetitive tasks and inconsistent UI. Learning OOCSS, SMACSS, or BEM methodologies influenced and pull me towards a system thinking approach.',
+    questionOne: 'It naturally occurred while working on startup projects with limited resources, striving to enhance our productivity while avoiding repeated activities and inconsistent UI. Learning about OOCSS, SMACSS, or BEM methodologies pushed and drew me in the direction of a system thinking strategy.',
     questionTwo: 'From all the co-workers and friends I’ve been lucky to work with: [Hayk An](https://github.com/hihayk), [Victoria Nikitina](https://twitter.com/killnicole), [Daniel Guillan](https://github.com/danielguillan), [Javier Sanchez](https://github.com/vieron), and from all of the folks who share their knowledge in the design and development space: [Lea Verou](https://github.com/LeaVerou), [Harry Roberts](https://github.com/csswizardry), [Sara Soueidan](https://github.com/SaraSoueidan), [Benjamin de Cock](https://github.com/bendc), and [Brent Jackson](https://github.com/jxnblk) to name a few.',
     favoriteTools: 'VS Code, Notes, Figma, GitHub, Vercel, Spotify',
     avatar: 'https://user-images.githubusercontent.com/912236/176458039-9c71869d-66c6-4329-a0e7-c5c7ddcdd722.jpg',
@@ -174,7 +174,8 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     favoriteTools: `Remarkable tablet, Figma, Origami, Glyphs, GitHubs internal color tool`,
     avatar: 'https://user-images.githubusercontent.com/6720549/120377556-470bf080-c2eb-11eb-8230-53db30314b15.jpg',
     gif: 'https://user-images.githubusercontent.com/6720549/120376656-22fbdf80-c2ea-11eb-81ec-384cbd2f9f50.gif',
-    alumni: false
+    alumni: true,
+    color: 'orange'
   },
   {
     name: 'Michelle Tilley',
@@ -240,7 +241,8 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     favoriteTools: 'Figma, Things, SPREADSHEETS!, Notion, Emojis, Moleskine journals and Fujifilm X-H1.',
     avatar: 'https://user-images.githubusercontent.com/10384315/75709531-afe36380-5c77-11ea-9b94-27f780901284.jpg',
     gif: 'https://user-images.githubusercontent.com/6951037/66052384-cf435c80-e530-11e9-958d-c33476b7ef96.gif',
-    alumni: false
+    alumni: true,
+    color: 'orange'
   },
   {
     name: 'Vinicius Depizzol',
