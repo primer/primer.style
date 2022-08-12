@@ -19,6 +19,19 @@ Finally, when it comes to building and supporting teams I've loved going through
     alumni: false,
   },
   {
+    name: 'Lukas Oppermann',
+    handle: 'lukasoppermann',
+    title: 'Systems Designer',
+    questionOne:
+      'As a product designer I always focused on creating a consistent experience. When I started as a designer, this meant building style guides and meticulously checking every screen before it was shipped. Over time this turned into design systems with coded components, design tokens, patterns and guidelines.',
+    questionTwo:
+      'I learned one of my most valuable lesson from Michael Beirut who is so modest and open about his mistakes. This helped me realise that being vulnerable is a strength that accelerates personal growth. [James Clear](https://twitter.com/jamesclear), with his book “atomic habits” taught me that achieving big goals is done by taking one small step after another. I have also learned much from my friends and colleagues. I find that everybody has something to teach if you are willing to learn.',
+    favoriteTools: 'VS Code, Figma, GitHub, Notion, Spotify, Raycast, Fig',
+    avatar: 'https://avatars.githubusercontent.com/u/813754?v=4',
+    gif: 'https://user-images.githubusercontent.com/813754/183907598-d18d505d-56fd-4af4-8d9c-0f723bb05e60.gif',
+    alumni: false,
+  },
+  {
     name: 'Josep Martins',
     handle: 'josepmartins',
     title: 'Systems Designer',
