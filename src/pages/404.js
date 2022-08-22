@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Heading} from '@primer/components'
+import {Box, Heading} from '@primer/react'
 import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import {Box, Link, themeGet} from '@primer/components'
+import {Box, Link, themeGet} from '@primer/react'
 import {color} from 'styled-system'
 import {ReactComponent as Circle} from '../svg/circle.svg'
 import {ReactComponent as Hexagon} from '../svg/hexagon.svg'
@@ -15,7 +15,7 @@ const Shape = styled(({className, shape}) => {
     hexagon: Hexagon,
     circle: Circle,
     square: Square,
-    diamond: Diamond
+    diamond: Diamond,
   }
   const Tag = shapes[shape]
   return <Tag className={className} />
@@ -41,7 +41,7 @@ const Image = styled('img')`
 const A = styled(Box)`
   position: relative;
   display: inline-block;
-  clip-path: url("#clip-${props => props.shape}");
+  clip-path: url('#clip-${(props) => props.shape}');
   &:after {
     content: '';
     transition: opacity ${TRANSITION_STYLE};
@@ -51,9 +51,9 @@ const A = styled(Box)`
     right: 0;
     bottom: 0;
     background: radial-gradient(ellipse at top left, ${themeGet('colors.blue.4')}, transparent),
-    radial-gradient(ellipse at bottom right, ${themeGet('colors.orange.4')}, transparent),
-    linear-gradient(to right, ${themeGet('colors.orange.5')} 50%, transparent),
-    linear-gradient(to left, ${themeGet('colors.blue.6')} 50%, transparent);
+      radial-gradient(ellipse at bottom right, ${themeGet('colors.orange.4')}, transparent),
+      linear-gradient(to right, ${themeGet('colors.orange.5')} 50%, transparent),
+      linear-gradient(to left, ${themeGet('colors.blue.6')} 50%, transparent);
     mix-blend-mode: multiply;
     opacity: 0;
   }
@@ -69,7 +69,7 @@ const ShapeOutline = styled(Link)`
   display: block;
   &:before {
     content: '';
-    clip-path: url("#clip-${props => props.shape}");
+    clip-path: url('#clip-${(props) => props.shape}');
     ${color};
     position: absolute;
     top: 0;
@@ -79,7 +79,7 @@ const ShapeOutline = styled(Link)`
   }
 `
 
-const AvatarShape = props => (
+const AvatarShape = (props) => (
   <ShapeOutline shape={props.shape} bg={props.bg} {...props}>
     <A className={props.className} shape={props.shape}>
       <Image src={props.src} $hover={props.hover} />

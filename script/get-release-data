@@ -4,7 +4,7 @@ packages=(
   primer
   @primer/css
   octicons
-  @primer/components
+  @primer/react
 )
 
 output=""

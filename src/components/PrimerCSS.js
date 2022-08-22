@@ -1,6 +1,6 @@
 import React from 'react'
-import {Box, Heading, Text, Flex, StyledOcticon} from '@primer/components'
-import {Package} from '@primer/octicons-react'
+import {Box, Heading, Text, Flex, StyledOcticon} from '@primer/react'
+import {PackageIcon} from '@primer/octicons-react'
 import IndexGrid from './IndexGrid'
 import ButtonFill from './ButtonFill'
 import ButtonOutline from './ButtonOutline'
@@ -44,7 +44,7 @@ export default function PrimerCSS() {
         <Flex mx={-5} flexWrap="wrap" alignItems="start">
           <Flex as={Box} width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]}>
             <Flex.Item color="blue.3" mr={3}>
-              <StyledOcticon icon={Package} height={40} verticalAlign="middle" />
+              <StyledOcticon icon={PackageIcon} height={40} verticalAlign="middle" />
             </Flex.Item>
             <Flex.Item>
               <Text as="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
@@ -57,7 +57,7 @@ export default function PrimerCSS() {
           </Flex>
           <Flex as={Box} width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]}>
             <Flex.Item color="blue.3" mr={3}>
-              <StyledOcticon icon={Package} height={40} verticalAlign="middle" />
+              <StyledOcticon icon={PackageIcon} height={40} verticalAlign="middle" />
             </Flex.Item>
             <Flex.Item>
               <Text as="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
@@ -70,7 +70,7 @@ export default function PrimerCSS() {
           </Flex>
           <Flex as={Box} width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]} align="top">
             <Flex.Item color="blue.3" mr={3}>
-              <StyledOcticon icon={Package} height={40} verticalAlign="middle" />
+              <StyledOcticon icon={PackageIcon} height={40} verticalAlign="middle" />
             </Flex.Item>
             <Flex.Item>
               <Text as="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">
@@ -83,7 +83,7 @@ export default function PrimerCSS() {
           </Flex>
           <Flex as={Box} width={[1, 6 / 12, 6 / 12]} px={5} mb={[3, 4, 4, 0]} align="top">
             <Flex.Item color="blue.3" mr={3}>
-              <StyledOcticon icon={Package} height={40} verticalAlign="middle" />
+              <StyledOcticon icon={PackageIcon} height={40} verticalAlign="middle" />
             </Flex.Item>
             <Flex.Item>
               <Text as="p" fontSize={2} color="blue.3" mt={1} fontFamily="mono">

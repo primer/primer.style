@@ -1,11 +1,10 @@
 import componentMetadata from '@primer/component-metadata'
-import {Box, Heading, Text, themeGet} from '@primer/components'
-import StatusLabel from '@primer/gatsby-theme-doctocat/src/components/status-label'
+import {Box, Heading, Text, Link, themeGet} from '@primer/react'
+import {StatusLabel} from '@primer/gatsby-theme-doctocat'
 import fetch from 'isomorphic-unfetch'
 import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/Layout'
-import LinkLight from '../components/LinkLight'
 
 // TODO: Make table header sticky
 const Table = styled.table`
@@ -18,7 +17,7 @@ const Table = styled.table`
   th {
     font-family: ${themeGet('fonts.mono')};
     font-weight: ${themeGet('fontWeights.normal')};
-    color: ${themeGet('colors.blue.3')};
+    color: ${themeGet('colors.accent.fg')};
   }
 
   th,
@@ -37,7 +36,7 @@ const Table = styled.table`
   }
 
   td {
-    border-top: 1px solid ${themeGet('colors.gray.7')};
+    border-top: 1px solid ${themeGet('colors.border.default')};
     vertical-align: top;
   }
 
@@ -68,15 +67,13 @@ export default function StatusPage() {
     >
       <Box className="container-xl" px={5} pb={8}>
         <Box pt={8} pb={6}>
-          <Heading fontSize={[48, 56]} color="blue.4" lineHeight={1} mb={3}>
-            Component status
-          </Heading>
-          <Text as="p" fontSize={3} color="blue.2">
-            Status of components in the Primer Design System.
-            <br />
-            Check out the{' '}
-            <LinkLight href="https://primer.style/contribute/component-lifecycle">component lifecycle</LinkLight> for
-            more information about each status.
+          <Heading sx={{color: 'accent.fg', fontSize: [48, 56], lineHeight: 1, mb: 3}}>Component status</Heading>
+          <Text as="p" sx={{fontSize: 3}}>
+            Status of components in the Primer Design System. <br />
+            Check out the <Link href="https://primer.style/contribute/component-lifecycle">
+              component lifecycle
+            </Link>{' '}
+            for more information about each status.
           </Text>
         </Box>
         {components ? (
@@ -102,20 +99,20 @@ export default function StatusPage() {
                   <td style={{whiteSpace: 'nowrap'}}>{component.displayName}</td>
                   <td align="center" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.viewComponent ? (
-                      <a href={component.implementations.viewComponent.url}>
+                      <Link href={component.implementations.viewComponent.url}>
                         <StatusLabel status={component.implementations.viewComponent.status} />
-                      </a>
+                      </Link>
                     ) : (
-                      <Text color="gray.5">Not available</Text>
+                      <Text sx={{color: 'fg.subtle'}}>Not available</Text>
                     )}
                   </td>
                   <td align="center" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.react ? (
-                      <a href={component.implementations.react.url}>
+                      <Link href={component.implementations.react.url}>
                         <StatusLabel status={component.implementations.react.status} />
-                      </a>
+                      </Link>
                     ) : (
-                      <Text color="gray.5">Not available</Text>
+                      <Text sx={{color: 'fg.subtle'}}>Not available</Text>
                     )}
                   </td>
                   <td style={{minWidth: 400}}>{component.description}</td>
