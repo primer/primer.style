@@ -43,6 +43,16 @@ const MemberInfo = ({member, colorName}) => {
       <Text fontSize={3}>
         <MemberMarkdown source={member.favoriteTools} colorName={color} />
       </Text>
+      {member.cssFeature ? (
+        <>
+          <Text fontFamily="mono" color={`${colorName}.4`} as="div" fontSize={3} mt={7} mb={0}>
+            Favorite CSS feature
+          </Text>
+          <Text color={`${colorName}.1`} fontSize={3}>
+            <MemberMarkdown source={`\`${member.cssFeature}\``} colorName={colorName} />
+          </Text>
+        </>
+      ) : null}
     </Box>
   )
 }
