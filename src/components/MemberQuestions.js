@@ -4,7 +4,7 @@ import {Text, Heading, Link, Box, StyledOcticon} from '@primer/components'
 import {MarkGithub} from '@primer/octicons-react'
 
 const MemberMarkdown = ({source, colorName}) => {
-  const link = props => (
+  const link = (props) => (
     <Link color={`${colorName}.3`} {...props}>
       {props.children}
     </Link>
@@ -47,12 +47,22 @@ const MemberInfo = ({member, colorName}) => {
       <Text color={`${colorName}.1`} fontSize={3}>
         <MemberMarkdown source={member.favoriteTools} colorName={colorName} />
       </Text>
+      {member.cssFeature ? (
+        <>
+          <Text fontFamily="mono" color={`${colorName}.4`} as="div" fontSize={3} mt={7} mb={0}>
+            Favorite CSS feature
+          </Text>
+          <Text color={`${colorName}.1`} fontSize={3}>
+            <MemberMarkdown source={`\`${member.cssFeature}\``} colorName={colorName} />
+          </Text>
+        </>
+      ) : null}
     </Box>
   )
 }
 
 MemberInfo.defaultProps = {
-  color: 'blue'
+  color: 'blue',
 }
 
 export default MemberInfo
