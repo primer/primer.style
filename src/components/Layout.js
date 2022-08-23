@@ -8,12 +8,13 @@ import {createGlobalStyle} from 'styled-components'
 Object.assign(Heading.defaultProps, {
   m: null,
   mt: 0,
-  mb: 0
+  mb: 0,
 })
 
 const GlobalStyles = createGlobalStyle`
   body {
-    background-color: ${themeGet('colors.black')}; 
+    background-color: ${themeGet('colors.white')}; 
+    color: ${themeGet('colors.black')};
   }
 `
 
@@ -30,6 +31,6 @@ export default function Layout({pageContext, children}) {
 
 Layout.defaultProps = {
   pageContext: {
-    frontmatter: {}
-  }
+    frontmatter: {},
+  },
 }

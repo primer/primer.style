@@ -1,5 +1,5 @@
 import componentMetadata from '@primer/component-metadata'
-import {Box, Heading, Text, themeGet} from '@primer/components'
+import {Box, Heading, Label, Text, themeGet} from '@primer/components'
 import StatusLabel from '@primer/gatsby-theme-doctocat/src/components/status-label'
 import fetch from 'isomorphic-unfetch'
 import React from 'react'
@@ -17,13 +17,14 @@ const Table = styled.table`
 
   th {
     font-family: ${themeGet('fonts.mono')};
-    font-weight: ${themeGet('fontWeights.normal')};
-    color: ${themeGet('colors.blue.3')};
+    font-weight: ${themeGet('fontWeights.semiBold')};
   }
 
   th,
   td {
     padding: ${themeGet('space.2')} ${themeGet('space.3')};
+    text-align: left;
+    color: ${themeGet('colors.gray.8')};
   }
 
   th:first-child,
@@ -37,7 +38,7 @@ const Table = styled.table`
   }
 
   td {
-    border-top: 1px solid ${themeGet('colors.gray.7')};
+    border-top: 1px solid ${themeGet('colors.gray.3')};
     vertical-align: top;
   }
 
@@ -68,10 +69,10 @@ export default function StatusPage() {
     >
       <Box className="container-xl" px={5} pb={8}>
         <Box pt={8} pb={6}>
-          <Heading fontSize={[48, 56]} color="blue.4" lineHeight={1} mb={3}>
+          <Heading fontSize={[48, 56]} color="gray.8" lineHeight={1} mb={3}>
             Component status
           </Heading>
-          <Text as="p" fontSize={3} color="blue.2">
+          <Text as="p" fontSize={3} color="gray.6">
             Status of components in the Primer Design System.
             <br />
             Check out the{' '}
@@ -82,25 +83,28 @@ export default function StatusPage() {
         {components ? (
           <Table>
             <colgroup>
-              <col style={{width: '15%'}} />
-              <col style={{width: '15%'}} />
-              <col style={{width: '15%'}} />
-              <col style={{width: '55%'}} />
+              <col style={{width: '10%'}} />
+              <col style={{width: '10%'}} />
+              <col style={{width: '10%'}} />
+              <col style={{width: '10%'}} />
+              <col style={{width: '10%'}} />
+              <col style={{width: '50%'}} />
             </colgroup>
             <thead>
               <tr>
-                <th align="left">Component</th>
-                {/* TODO: How would we add a Figma column? Where would that data come from ? */}
+                <th>Component</th>
                 <th>ViewComponent</th>
+                <th>Accessible</th>
                 <th>React</th>
-                <th align="left">Description</th>
+                <th>Accessible</th>
+                <th>Description</th>
               </tr>
             </thead>
             <tbody>
               {components.map((component) => (
                 <tr key={component.id}>
                   <td style={{whiteSpace: 'nowrap'}}>{component.displayName}</td>
-                  <td align="center" style={{whiteSpace: 'nowrap'}}>
+                  <td align="left" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.viewComponent ? (
                       <a href={component.implementations.viewComponent.url}>
                         <StatusLabel status={component.implementations.viewComponent.status} />
@@ -109,16 +113,29 @@ export default function StatusPage() {
                       <Text color="gray.5">Not available</Text>
                     )}
                   </td>
-                  <td align="center" style={{whiteSpace: 'nowrap'}}>
+                  <td style={{whiteSpace: 'nowrap'}}>
+                    <Text color="gray.5"></Text>
+                  </td>
+                  <td align="left" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.react ? (
                       <a href={component.implementations.react.url}>
                         <StatusLabel status={component.implementations.react.status} />
                       </a>
                     ) : (
-                      <Text color="gray.5">Not available</Text>
+                      <Text color="gray.5"></Text>
                     )}
                   </td>
-                  <td style={{minWidth: 400}}>{component.description}</td>
+                  <td align="left" style={{whiteSpace: 'nowrap'}}>
+                    {(component.implementations.react && component.displayName === 'Select') ||
+                    component.displayName === 'Action menu' ? (
+                      <Label bg="blue.5">Accessible</Label>
+                    ) : (
+                      <Text color="gray.5"></Text>
+                    )}
+                  </td>
+                  <td style={{minWidth: 400}}>
+                    <Text color="gray.8">{component.description}</Text>
+                  </td>
                 </tr>
               ))}
             </tbody>

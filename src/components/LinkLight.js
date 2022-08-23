@@ -4,11 +4,11 @@ import {Link, themeGet} from '@primer/components'
 import styled from 'styled-components'
 
 const LinkLight = styled(Link)`
-  color: ${themeGet('colors.blue.3')} !important;
+  color: ${themeGet('colors.blue.5')} !important;
 `
 
 LinkLight.defaultProps = {
-  color: 'blue.2'
+  color: 'blue.5',
 }
 
 export default LinkLight
