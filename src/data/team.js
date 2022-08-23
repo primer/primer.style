@@ -14,6 +14,7 @@ When it comes to accessibility, I am forever grateful for all the resources, wri
 Finally, when it comes to building and supporting teams I've loved going through resources from [Julie Zhou](https://twitter.com/joulee), [Lara Hogan](https://twitter.com/lara_hogan), and [Will Larson](https://twitter.com/lethain).
     `,
     favoriteTools: 'NeoVim, GitHub, ARIA APG, coffee, Figma, Spotify',
+    cssFeature: 'var(--css-custom-properties)',
     avatar: 'https://user-images.githubusercontent.com/3901764/184181622-30111cc8-7e66-4356-a606-40be07b6a27c.jpg',
     gif: 'https://user-images.githubusercontent.com/3901764/184182200-20d9a3cb-2cae-45cf-bad4-1ac2e123ccc2.gif',
     alumni: false,
