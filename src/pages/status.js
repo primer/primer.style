@@ -107,9 +107,9 @@ export default function StatusPage() {
               </tr>
               <tr>
                 <th>Status</th>
-                <th>Accessible</th>
+                <th>Accessibility</th>
                 <th>Status</th>
-                <th>Accessible</th>
+                <th>Accessibility</th>
               </tr>
             </thead>
             {/* <thead>
@@ -132,11 +132,11 @@ export default function StatusPage() {
                         <StatusLabel status={component.implementations.viewComponent.status} />
                       </a>
                     ) : (
-                      <Text color="gray.5">Not available</Text>
+                      <Text color="gray.5">-</Text>
                     )}
                   </td>
                   <td style={{whiteSpace: 'nowrap'}}>
-                    <Text color="gray.5">Not accessible</Text>
+                    <Text color="gray.5">-</Text>
                   </td>
                   <td align="left" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.react ? (
@@ -144,15 +144,17 @@ export default function StatusPage() {
                         <StatusLabel status={component.implementations.react.status} />
                       </a>
                     ) : (
-                      <Text color="gray.5">Not available</Text>
+                      <Text color="gray.5">-</Text>
                     )}
                   </td>
                   <td align="left" style={{whiteSpace: 'nowrap'}}>
                     {(component.implementations.react && component.displayName === 'Select') ||
                     component.displayName === 'Action menu' ? (
-                      <Label bg="blue.5">Accessible</Label>
+                      <Label color="blue.5" bg="white" style={{border: '1px solid', borderColor: 'blue.5'}}>
+                        Reviewed
+                      </Label>
                     ) : (
-                      <Text color="gray.5">Not accessible</Text>
+                      <Text color="gray.5">-</Text>
                     )}
                   </td>
                   <td style={{minWidth: 400}}>
