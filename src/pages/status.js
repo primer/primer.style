@@ -126,7 +126,7 @@ export default function StatusPage() {
               {components.map((component) => (
                 <tr key={component.id}>
                   <td style={{whiteSpace: 'nowrap'}}>{component.displayName}</td>
-                  <td align="left" style={{whiteSpace: 'nowrap'}}>
+                  <td style={{textAlign: 'center'}} align="left">
                     {component.implementations.viewComponent ? (
                       <a href={component.implementations.viewComponent.url}>
                         <StatusLabel status={component.implementations.viewComponent.status} />
@@ -135,10 +135,10 @@ export default function StatusPage() {
                       <Text color="gray.5">-</Text>
                     )}
                   </td>
-                  <td style={{whiteSpace: 'nowrap'}}>
+                  <td style={{textAlign: 'center'}}>
                     <Text color="gray.5">-</Text>
                   </td>
-                  <td align="left" style={{whiteSpace: 'nowrap'}}>
+                  <td style={{textAlign: 'center'}}>
                     {component.implementations.react ? (
                       <a href={component.implementations.react.url}>
                         <StatusLabel status={component.implementations.react.status} />
@@ -147,7 +147,7 @@ export default function StatusPage() {
                       <Text color="gray.5">-</Text>
                     )}
                   </td>
-                  <td align="left" style={{whiteSpace: 'nowrap'}}>
+                  <td style={{textAlign: 'center'}}>
                     {(component.implementations.react && component.displayName === 'Select') ||
                     component.displayName === 'Action menu' ? (
                       <Label color="blue.5" bg="white" style={{border: '1px solid', borderColor: 'blue.5'}}>
