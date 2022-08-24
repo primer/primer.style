@@ -21,9 +21,27 @@ exports.sourceNodes = async ({actions: {createNode}, createContentDigest}) => {
         type: 'PrimerRelease',
         mediaType: 'application/json',
         content: JSON.stringify(release),
-        contentDigest: createContentDigest(release)
-      }
+        contentDigest: createContentDigest(release),
+      },
     }
     createNode(node)
+  }
+}
+
+exports.onCreateWebpackConfig = ({stage, loaders, actions}) => {
+  if (stage === 'build-html' || stage === 'develop-html') {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            // Ignore "@github\/markdown-toolbar-element" module during server-side rendering
+            // because it uses DOM APIs that aren't available on the server.
+            // Copied from https://www.gatsbyjs.com/docs/debugging-html-builds/#fixing-third-party-modules
+            test: /@github\/markdown-toolbar-element/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
   }
 }

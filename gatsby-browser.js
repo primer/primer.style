@@ -1,19 +1,9 @@
 import React from 'react'
-import {ThemeProvider, createGlobalStyle} from 'styled-components'
-import {BaseStyles, Link, theme} from '@primer/components'
+import {BaseStyles, Link, ThemeProvider} from '@primer/react'
 import {MDXProvider} from '@mdx-js/react'
 
-const GlobalStyle = createGlobalStyle`
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-`
-
 const components = {
-  a: Link
+  a: Link,
   /*
   pre: props => props.children,
   code: Code,
@@ -38,7 +28,7 @@ const components = {
 export function wrapRootElement({element}) {
   return (
     <MDXProvider components={components}>
-      <ThemeProvider theme={theme}>{element}</ThemeProvider>
+      <ThemeProvider>{element}</ThemeProvider>
     </MDXProvider>
   )
 }
@@ -46,8 +36,9 @@ export function wrapRootElement({element}) {
 export function wrapPageElement({element}) {
   return (
     <>
-      <GlobalStyle />
-      <BaseStyles fontSize={2}>{element}</BaseStyles>
+      <ThemeProvider>
+        <BaseStyles fontSize={2}>{element}</BaseStyles>
+      </ThemeProvider>
     </>
   )
 }

@@ -1,6 +1,6 @@
 // Extends Link from primer/components to make color primitives available. Ideally I'd use defaultProps here but because we use !important on utilities the theme colors won't override. We could probably add a function to handle this.
 
-import {Link, themeGet} from '@primer/components'
+import {Link, themeGet} from '@primer/react'
 import styled from 'styled-components'
 
 const LinkLight = styled(Link)`
@@ -8,7 +8,7 @@ const LinkLight = styled(Link)`
 `
 
 LinkLight.defaultProps = {
-  color: 'blue.2'
+  color: 'blue.2',
 }
 
 export default LinkLight
