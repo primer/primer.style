@@ -16,8 +16,13 @@ const Table = styled.table`
   border-collapse: collapse;
 
   th {
-    font-family: ${themeGet('fonts.mono')};
-    font-weight: ${themeGet('fontWeights.semiBold')};
+    background-color: ${themeGet('colors.gray.0')};
+    border-top: 1px solid ${themeGet('colors.gray.3')};
+    border-left: 1px solid ${themeGet('colors.gray.3')};
+  }
+
+  th:last-child {
+    border-right: 1px solid ${themeGet('colors.gray.3')};
   }
 
   th,
@@ -27,19 +32,14 @@ const Table = styled.table`
     color: ${themeGet('colors.gray.8')};
   }
 
-  th:first-child,
-  td:first-child {
-    padding-left: 0;
-  }
-
-  th:last-child,
-  td:last-child {
-    padding-right: 0;
-  }
-
   td {
     border-top: 1px solid ${themeGet('colors.gray.3')};
+    border-left: 1px solid ${themeGet('colors.gray.3')};
     vertical-align: top;
+  }
+
+  td:last-child {
+    border-right: 1px solid ${themeGet('colors.gray.3')};
   }
 
   th {
@@ -92,6 +92,28 @@ export default function StatusPage() {
             </colgroup>
             <thead>
               <tr>
+                <th rowspan="2" colspan="1">
+                  Component
+                </th>
+                <th rowspan="1" colspan="2" style={{textAlign: 'center'}}>
+                  ViewComponent
+                </th>
+                <th rowspan="1" colspan="2" style={{textAlign: 'center'}}>
+                  React
+                </th>
+                <th rowspan="2" colspan="1">
+                  Description
+                </th>
+              </tr>
+              <tr>
+                <th>Status</th>
+                <th>Accessible</th>
+                <th>Status</th>
+                <th>Accessible</th>
+              </tr>
+            </thead>
+            {/* <thead>
+              <tr>
                 <th>Component</th>
                 <th>ViewComponent</th>
                 <th>Accessible</th>
@@ -99,7 +121,7 @@ export default function StatusPage() {
                 <th>Accessible</th>
                 <th>Description</th>
               </tr>
-            </thead>
+            </thead> */}
             <tbody>
               {components.map((component) => (
                 <tr key={component.id}>
@@ -114,7 +136,7 @@ export default function StatusPage() {
                     )}
                   </td>
                   <td style={{whiteSpace: 'nowrap'}}>
-                    <Text color="gray.5"></Text>
+                    <Text color="gray.5">Not accessible</Text>
                   </td>
                   <td align="left" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.react ? (
@@ -122,7 +144,7 @@ export default function StatusPage() {
                         <StatusLabel status={component.implementations.react.status} />
                       </a>
                     ) : (
-                      <Text color="gray.5"></Text>
+                      <Text color="gray.5">Not available</Text>
                     )}
                   </td>
                   <td align="left" style={{whiteSpace: 'nowrap'}}>
@@ -130,7 +152,7 @@ export default function StatusPage() {
                     component.displayName === 'Action menu' ? (
                       <Label bg="blue.5">Accessible</Label>
                     ) : (
-                      <Text color="gray.5"></Text>
+                      <Text color="gray.5">Not accessible</Text>
                     )}
                   </td>
                   <td style={{minWidth: 400}}>
