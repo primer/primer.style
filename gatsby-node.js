@@ -29,6 +29,14 @@ exports.sourceNodes = async ({actions: {createNode}, createContentDigest}) => {
 }
 
 exports.onCreateWebpackConfig = ({stage, loaders, actions}) => {
+  actions.setWebpackConfig({
+    resolve: {
+      fallback: {
+        path: require.resolve('path-browserify'),
+      },
+    },
+  })
+
   if (stage === 'build-html' || stage === 'develop-html') {
     actions.setWebpackConfig({
       module: {
