@@ -5,12 +5,8 @@ const teamContent = [
     title: 'Software Engineer',
     questionOne:
       'Since the beginning of my software career I have heard the common phrase "Don\'t repeat yourself" or DRY programming as some people might know it. In following this practice I found myself designing React components to be reused. This interest in reusable code paired with my fascination with design and usability led me to design systems.',
-    questionTwo: `Most of the influential inspiration has been from my co-workers at each of the places I have worked at over the years. The amount of information that I have collectively gained from them is incalculable.
-
-	In the accessibility space I have learned quite a bit from [Derek Featherstone](http://simplyaccessible.com/article/author/feather/). Orienting your mind to look through a lens of more inclusive design has changed my perspective on both design and engineering.
-	
-	My favorite design system podcast over the years has been [designsystemspodcast](https://www.designsystemspodcast.com/). Not only do they have really interesting takes on different companies navigating the design system space, but they are good at giving useful information that can be directly applied to your own organization.	
-    `,
+    questionTwo:
+      'Most of the influential inspiration has been from my co-workers at each of the places I have worked at over the years. The amount of information that I have collectively gained from them is incalculable.\n\nIn the accessibility space I have learned quite a bit from [Derek Featherstone](http://simplyaccessible.com/article/author/feather/). Orienting your mind to look through a lens of more inclusive design has changed my perspective on both design and engineering.\n\nMy favorite design system podcast over the years has been [designsystemspodcast](https://www.designsystemspodcast.com/). Not only do they have really interesting takes on different companies navigating the design system space, but they are good at giving useful information that can be directly applied to your own organization.',
     favoriteTools: 'VSCode, GitHub, Figma, Spotify, Daily Dev',
     cssFeature: 'grid-template-areas',
     avatar: 'https://avatars.githubusercontent.com/u/31220082?v=4',
