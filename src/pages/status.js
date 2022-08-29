@@ -189,7 +189,7 @@ async function getComponents() {
   const components = {}
 
   for (const [implementation, {url, data}] of Object.entries(implementations)) {
-    for (const {id, path, status, accessible} of data) {
+    for (const {id, path, status, a11yReviewed} of data) {
       if (!(id in components)) {
         components[id] = {
           id,
@@ -202,7 +202,7 @@ async function getComponents() {
       components[id].implementations[implementation] = {
         status: status.charAt(0).toUpperCase() + status.slice(1), // Capitalize the first letter
         url: `${url}${path}`,
-        accessible: accessible || false,
+        a11yReviewed: a11yReviewed || false,
       }
     }
   }
