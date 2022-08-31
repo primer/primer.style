@@ -60,13 +60,14 @@ export default function NewsPage() {
           mx={-5}
         >
           <Box width={[1, 1, 1, 7 / 12]} pt={[0, 0, 0, 8]} pb={[6, 5, 5, 6]} px={5}>
-            <Heading sx={{fontSize: [48, 56], color: 'accent.fg', lineHeight: 1, mb: 3}}>What’s new</Heading>
-            <Text as="p" sx={{fontSize: 3}}>
+            <Heading as={'h1'} sx={{fontSize: 7, color: 'accent.fg', mb: 2}}>
+              What’s new
+            </Heading>
+            <Text as="p" sx={{fontSize: 3, m: 0}}>
               Keep up to date with the latest articles, podcasts, releases and talks from the GitHub Design Systems
               team.
             </Text>
           </Box>
-
           <Box position={'relative'} width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx="auto" mb={[4, 4, 4, 0]}>
             <Box px={5} style={{flexShrink: 0}}>
               <NewsImage width="100%" height={null} />

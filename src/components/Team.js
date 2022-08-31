@@ -20,10 +20,10 @@ export default function Team(props) {
         mx={-5}
       >
         <Box width={[1, 1, 1, 7 / 12]} pt={[0, 0, 0, 8]} pb={[8, 8, 8, 12]} px={5}>
-          <Heading sx={{color: 'accent.fg', fontSize: [48, 56], lineHeight: 1, mb: 3, mt: [4, 4, 4, 0]}}>
+          <Heading as={'h1'} sx={{color: 'accent.fg', fontSize: 7, mb: 2, mt: [4, 4, 4, 0]}}>
             Meet the team
           </Heading>
-          <Text as="p" sx={{fontSize: 3}}>
+          <Text as="p" sx={{m: 0, fontSize: 3}}>
             The GitHub Design Infrastructure and Design Engineering teams build and maintain Primer — this includes our
             CSS framework, style guide documentation, Octicons, numerous tools and libraries that support design and
             front-end, and component libraries.

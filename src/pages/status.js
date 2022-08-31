@@ -74,14 +74,14 @@ export default function StatusPage() {
       }}
     >
       <Box className="container-xl" px={5} pb={8}>
-        <Box pt={8} pb={6}>
-          <Heading sx={{fontSize: [48, 56], lineHeight: 1, mb: 3}}>Component status</Heading>
-          <Text as="p" sx={{fontSize: 3}}>
-            Status of components in the Primer Design System. <br />
-            Check out the <Link href="https://primer.style/contribute/component-lifecycle">
-              component lifecycle
-            </Link>{' '}
-            for more information about each status.
+        <Box width={[1, 1, 1, 7 / 12]} pt={8} pb={6}>
+          <Heading as="h1" sx={{fontSize: 7, mb: 2}}>
+            Component status
+          </Heading>
+          <Text as="p" sx={{m: 0, fontSize: 3}}>
+            Status of components in the Primer Design System. Check out the{' '}
+            <Link href="https://primer.style/contribute/component-lifecycle">component lifecycle</Link> for more
+            information about each status.
           </Text>
         </Box>
         {components ? (
@@ -117,40 +117,42 @@ export default function StatusPage() {
               {components.map((component) => (
                 <tr key={component.id}>
                   <td style={{whiteSpace: 'nowrap'}}>{component.displayName}</td>
-                  <td align="center" style={{whiteSpace: 'nowrap'}}>
+                  <td style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.viewComponent ? (
                       <Link href={component.implementations.viewComponent.url}>
                         <StatusLabel status={component.implementations.viewComponent.status} />
                       </Link>
                     ) : (
-                      <Text sx={{color: 'fg.subtle'}}>-</Text>
+                      <Text sx={{fontSize: 1, color: 'fg.subtle'}}>Not available</Text>
                     )}
                   </td>
-                  <td align="center" style={{whiteSpace: 'nowrap'}}>
+                  <td style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.viewComponent && component.implementations.viewComponent.accessible ? (
                       <Label variant="accent">Reviewed</Label>
                     ) : (
-                      <Text sx={{color: 'fg.subtle'}}>-</Text>
+                      <Text sx={{fontSize: 1, color: 'fg.subtle'}}>Not reviewed</Text>
                     )}
                   </td>
 
-                  <td align="center" style={{whiteSpace: 'nowrap'}}>
+                  <td style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.react ? (
                       <Link href={component.implementations.react.url}>
                         <StatusLabel status={component.implementations.react.status} />
                       </Link>
                     ) : (
-                      <Text sx={{color: 'fg.subtle'}}>-</Text>
+                      <Text sx={{fontSize: 1, color: 'fg.subtle'}}>Not available</Text>
                     )}
                   </td>
-                  <td align="center" style={{whiteSpace: 'nowrap'}}>
+                  <td style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.react && component.implementations.react.accessible ? (
-                      <Label variant="accent">Reviewed</Label>
+                      <Label variant="secondary">Reviewed</Label>
                     ) : (
-                      <Text sx={{color: 'fg.subtle'}}>-</Text>
+                      <Text sx={{fontSize: 1, color: 'fg.subtle'}}>Not reviewed</Text>
                     )}
                   </td>
-                  <td style={{minWidth: 400}}>{component.description}</td>
+                  <td style={{minWidth: 400}}>
+                    <Text sx={{fontSize: 1}}>{component.description}</Text>
+                  </td>
                 </tr>
               ))}
             </tbody>
