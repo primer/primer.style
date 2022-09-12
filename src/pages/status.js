@@ -17,6 +17,10 @@ const Table = styled.table`
     background-color: ${themeGet('colors.canvas.subtle')};
   }
 
+  a:hover {
+    text-decoration: none;
+  }
+
   th,
   td {
     padding: ${themeGet('space.2')} ${themeGet('space.3')};
@@ -117,42 +121,40 @@ export default function StatusPage() {
               {components.map((component) => (
                 <tr key={component.id}>
                   <td style={{whiteSpace: 'nowrap'}}>{component.displayName}</td>
-                  <td style={{whiteSpace: 'nowrap'}}>
+                  <td align="center" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.viewComponent ? (
                       <Link href={component.implementations.viewComponent.url}>
                         <StatusLabel status={component.implementations.viewComponent.status} />
                       </Link>
                     ) : (
-                      <Text sx={{fontSize: 1, color: 'fg.subtle'}}>Not available</Text>
+                      <Text sx={{color: 'fg.subtle'}}>Not available</Text>
                     )}
                   </td>
-                  <td style={{whiteSpace: 'nowrap'}}>
+                  <td align="center" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.viewComponent && component.implementations.viewComponent.accessible ? (
-                      <Label variant="accent">Reviewed</Label>
+                      <Label variant="primary">Reviewed</Label>
                     ) : (
-                      <Text sx={{fontSize: 1, color: 'fg.subtle'}}>Not reviewed</Text>
+                      <Text sx={{color: 'fg.subtle'}}>Not reviewed</Text>
                     )}
                   </td>
 
-                  <td style={{whiteSpace: 'nowrap'}}>
+                  <td align="center" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.react ? (
                       <Link href={component.implementations.react.url}>
                         <StatusLabel status={component.implementations.react.status} />
                       </Link>
                     ) : (
-                      <Text sx={{fontSize: 1, color: 'fg.subtle'}}>Not available</Text>
+                      <Text sx={{color: 'fg.subtle'}}>Not available</Text>
                     )}
                   </td>
-                  <td style={{whiteSpace: 'nowrap'}}>
+                  <td align="center" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.react && component.implementations.react.accessible ? (
-                      <Label variant="secondary">Reviewed</Label>
+                      <Label variant="primary">Reviewed</Label>
                     ) : (
-                      <Text sx={{fontSize: 1, color: 'fg.subtle'}}>Not reviewed</Text>
+                      <Text sx={{color: 'fg.subtle'}}>Not reviewed</Text>
                     )}
                   </td>
-                  <td style={{minWidth: 400}}>
-                    <Text sx={{fontSize: 1}}>{component.description}</Text>
-                  </td>
+                  <td style={{minWidth: 400}}>{component.description}</td>
                 </tr>
               ))}
             </tbody>
