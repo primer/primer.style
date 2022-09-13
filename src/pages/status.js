@@ -13,10 +13,6 @@ const Table = styled.table`
   border-collapse: separate;
   border-spacing: 0;
 
-  th {
-    background-color: ${themeGet('colors.canvas.subtle')};
-  }
-
   a:hover {
     text-decoration: none;
   }
@@ -29,17 +25,29 @@ const Table = styled.table`
     border-width: 0;
     border-left-width: 1px;
     border-top-width: 1px;
+    font-weight: normal;
+    vertical-align: top;
   }
 
-  tr:first-child > th:first-child {
+  th {
+    background-color: ${themeGet('colors.canvas.subtle')};
+    font-weight: ${themeGet('fontWeights.bold')};
+    vertical-align: middle;
+  }
+
+  tbody th {
+    vertical-align: top;
+  }
+
+  thead tr:first-child > th:first-child {
     border-top-left-radius: 6px;
   }
 
-  tr:first-child > th:last-child {
+  thead tr:first-child > th:last-child {
     border-top-right-radius: 6px;
   }
 
-  tr:last-child > td:first-child {
+  tr:last-child > th:first-child {
     border-bottom-left-radius: 6px;
   }
 
@@ -52,7 +60,8 @@ const Table = styled.table`
     border-right-width: 1px;
   }
 
-  tr:last-child td {
+  tr:last-child td,
+  tbody tr:last-child th {
     border-bottom-width: 1px;
   }
 
@@ -120,7 +129,9 @@ export default function StatusPage() {
               {console.log('COMPTNNT', components)}
               {components.map((component) => (
                 <tr key={component.id}>
-                  <td style={{whiteSpace: 'nowrap'}}>{component.displayName}</td>
+                  <th align="left" scope="row" style={{whiteSpace: 'nowrap'}}>
+                    {component.displayName}
+                  </th>
                   <td align="center" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.viewComponent ? (
                       <Link href={component.implementations.viewComponent.url}>
