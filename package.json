@@ -40,6 +40,7 @@
     "styled-system": "^5.0.16"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.1",
     "eslint": "^5.6.1",
     "eslint-plugin-github": "^1.4.0",
     "sass": "^1.54.5"
