@@ -10,7 +10,6 @@ exports.createPages = ({actions: {createRedirect}}) => {
 
 exports.sourceNodes = async ({actions: {createNode}, createContentDigest}) => {
   const {releases} = await getReleases()
-
   for (const release of releases) {
     const node = {
       ...release,
@@ -28,7 +27,15 @@ exports.sourceNodes = async ({actions: {createNode}, createContentDigest}) => {
   }
 }
 
-exports.onCreateWebpackConfig = ({stage, loaders, actions}) => {
+exports.onCreateWebpackConfig = ({stage, loaders, actions, getConfig}) => {
+  actions.setWebpackConfig({
+    resolve: {
+      fallback: {
+        path: require.resolve('path-browserify'),
+      },
+    },
+  })
+
   if (stage === 'build-html' || stage === 'develop-html') {
     actions.setWebpackConfig({
       module: {
