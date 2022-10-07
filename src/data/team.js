@@ -47,6 +47,32 @@ Finally, when it comes to building and supporting teams I've loved going through
     alumni: false,
   },
   {
+    name: 'Alexis Lucio',
+    handle: 'alexislucio',
+    title: 'Senior Accessibility Designer',
+    questionOne:
+      'Design systems were initially described to me as “a centralized hub for designers and developers to build faster, more efficiently, and consistent.” That made a lot of sense and it’s easier said that done. When I started to work in web accessibility (a11y), I realized the biggest impact I could make on a product was through an accessible design system versus one-off product fixes, which only increased my interest.',
+    questionTwo:
+      'I am extremely grateful to have a series of mentors that have created brave spaces for me as someone in tech with multiple marginalized identities. Most recently, I’ve been inspired by the compassion and optimism of the a11y community, and younger generations who realize that web accessibility is civil and humane right versus an afterthought.',
+    favoriteTools: 'Figma, Inspect, Colour Contrast Analyzer (CCA), Slack, Spotify, dance breaks',
+    avatar: 'https://avatars.githubusercontent.com/u/19936163?v=4',
+    gif: 'https://user-images.githubusercontent.com/19936163/192598673-f924080b-585a-44f1-bdcb-c9c81b3aa1bd.gif',
+    alumni: false,
+  },
+  {
+    name: 'Eric Bailey',
+    handle: 'ericwbailey',
+    title: 'Senior Accessibility Designer',
+    questionOne:
+      'Design systems help ensure rock-solid, accessible patterns get distributed and updated at scale. This is vital to help ensuring digital experiences such as GitHub are usable by all.',
+    questionTwo:
+      'Too many to name here. The digital accessibility space is full of kind, intelligent, passionate people, and I owe much of my growth and career to their collective knowledge.',
+    favoriteTools: 'Figma, VS Code, Slack, VoiceOver, NVDA, Dropbox Paper, Obsidian, and copious amounts of iced coffee.',
+    avatar: 'https://avatars.githubusercontent.com/u/634191?v=4',
+    gif: 'https://user-images.githubusercontent.com/634191/192597827-ff2b2b43-c0d9-4c40-bf0c-7811acf22d78.gif',
+    alumni: false,
+  },
+  {
     name: 'Josep Martins',
     handle: 'josepmartins',
     title: 'Systems Designer',
