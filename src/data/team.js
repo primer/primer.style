@@ -73,6 +73,17 @@ Finally, when it comes to building and supporting teams I've loved going through
     alumni: false,
   },
   {
+    name: 'Armağan Ersöz',
+    handle: 'broccolinisoup',
+    title: 'Software Engineer',
+    questionOne:'After seeing how reusable component libraries can solve so many UX and DX problems, I continued to dig into the space and started learning about design systems and I was fascinated by the concept since then! I also love focusing on building individual pieces and making them accessible with a systematic approach so that other teams only worry about their domain-specific problems.',
+    questionTwo:`[Alla Kholmatova’s](https://www.craftui.com/) [Design Systems](https://shop.smashingmagazine.com/products/design-systems-by-alla-kholmatova) book was one of the first resources I came across in this area and it broadened my understanding greatly. The work [Dan Mall](https://v4.danmall.com/), [Brad Frost](https://bradfrost.com/) and [Nathan Curtis](https://medium.com/@nathanacurtis) have been doing in the design systems space helped me start putting things in action along with some of my favourite platforms and they are [Invision Design Better](https://www.designbetter.co/), [IBM Carbon Design System](https://carbondesignsystem.com/), [Smashing Magazine](https://smashingmagazine.com/). There are also quite a few individuals I enjoy learning from and some of them are [Joshua Comeau](https://www.joshwcomeau.com/), [Sara Soueidan](https://sarasoueidan.com/), [Marcy Sutton](https://marcysutton.com/), [Stephanie Eckles](https://thinkdobecreate.com/) and of course the amazing Primer team 💙`,
+    favoriteTools: 'VS Code, Notion, GitHub, Slack, pen and paper, Hario V60 brewing kit, books',
+    avatar: 'https://avatars.githubusercontent.com/u/1446503?v=4',
+    gif: 'https://user-images.githubusercontent.com/1446503/194750845-901a2a63-b2b2-46d8-95dd-8ac0cca4efc1.gif',
+    alumni: false,
+  },
+  {
     name: 'Josep Martins',
     handle: 'josepmartins',
     title: 'Systems Designer',
