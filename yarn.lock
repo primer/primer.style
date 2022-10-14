@@ -1845,17 +1845,17 @@
   dependencies:
     "@primer/primitives" "^7.9.0"
 
-"@primer/gatsby-theme-doctocat@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@primer/gatsby-theme-doctocat/-/gatsby-theme-doctocat-4.0.1.tgz#f35deb65bc39b3695a87997fbef0743d26d376ce"
-  integrity sha512-sCL50WQMH3GG0AQPhhKHkBqT+lDVBSmJvi4ML4CvN/nbg9Gqro9vQvGV3ewsTlkFmsp+GP3PfoyVWhEgzwy9VA==
+"@primer/gatsby-theme-doctocat@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@primer/gatsby-theme-doctocat/-/gatsby-theme-doctocat-4.2.0.tgz#230f4f241e0035cd23e8da7e8ae5e48097aaf9d4"
+  integrity sha512-WgptcLQHZ565IQbp9WETRCVCiapnkk1HURyWk26XhAZfeDHNFoKKNgZRzW1wzZU/nkRuzw6jCgUduZG6wICpBw==
   dependencies:
     "@babel/preset-env" "^7.5.5"
     "@babel/preset-react" "^7.0.0"
     "@mdx-js/mdx" "^1.0.21"
     "@mdx-js/react" "^1.0.21"
     "@primer/component-metadata" "^0.4.0"
-    "@primer/octicons-react" "^16.3.1"
+    "@primer/octicons-react" "^17.5.0"
     "@primer/react" "^35.2.2"
     "@styled-system/theme-get" "^5.0.12"
     "@testing-library/jest-dom" "^5.16.2"
@@ -1902,15 +1902,15 @@
     styled-system "^5.0.18"
     worker-loader "^3.0.2"
 
-"@primer/octicons-react@^16.3.1":
-  version "16.3.1"
-  resolved "https://registry.yarnpkg.com/@primer/octicons-react/-/octicons-react-16.3.1.tgz#86982fe1001eee138d5ee46accbcdf62d51d11c5"
-  integrity sha512-uzTs8/CvLiW1/47cgMRkIK9bKWpnw+UonCbgczXErwSSLqMDHfiiTpobW1trvRuoiMgLwsPo0l7kBBdKBnmq3g==
-
-"@primer/octicons-react@^17.3.0", "@primer/octicons-react@^17.4.1":
+"@primer/octicons-react@^17.3.0":
   version "17.4.1"
   resolved "https://registry.yarnpkg.com/@primer/octicons-react/-/octicons-react-17.4.1.tgz#022c13c2695119f5e2e5fc3e2edeed08164171c1"
   integrity sha512-xTtpfgpyFyKlfNhvPOfCNVRwkoDBRKzZFwygpr4+Pwzs+selrL1phPLt2z6abeIY8cTEw1XRBGi00tylSaBJyQ==
+
+"@primer/octicons-react@^17.5.0", "@primer/octicons-react@^17.7.0":
+  version "17.7.0"
+  resolved "https://registry.yarnpkg.com/@primer/octicons-react/-/octicons-react-17.7.0.tgz#50f3ceb2f636154a3e7fa6e355350b75f03bba88"
+  integrity sha512-rxJiArra+q7lorhzQH223btMcRR8di9TUei9DhQG18jmVEI+wQTY+MypI5FZqU8UyehBOtcnD4TWx+i4Zwpz5Q==
 
 "@primer/primitives@7.9.0", "@primer/primitives@^7.9.0":
   version "7.9.0"

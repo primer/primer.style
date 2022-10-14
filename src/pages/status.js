@@ -1,6 +1,7 @@
 import componentMetadata from '@primer/component-metadata'
-import {Box, Heading, Text, Link, Label, themeGet} from '@primer/react'
+import {Box, Heading, Text, Link, Label, themeGet, StyledOcticon} from '@primer/react'
 import {StatusLabel} from '@primer/gatsby-theme-doctocat'
+import {AccessibilityInsetIcon} from '@primer/octicons-react'
 import fetch from 'isomorphic-unfetch'
 import React from 'react'
 import styled from 'styled-components'
@@ -13,8 +14,12 @@ const Table = styled.table`
   border-collapse: separate;
   border-spacing: 0;
 
-  a:hover {
-    text-decoration: none;
+  a {
+    color: currentColor;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   th,
@@ -70,8 +75,47 @@ const Table = styled.table`
   }
 `
 
+function EmptyCell() {
+  return <Text sx={{fontSize: 1, color: 'fg.subtle'}}>Not available</Text>
+}
+
+function AccessibilityLabel({a11yReviewed, size}) {
+  if (a11yReviewed) {
+    return (
+      <Label
+        size={size}
+        sx={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: 1,
+          backgroundColor: 'done.subtle',
+          fontWeight: 'normal',
+          borderColor: 'transparent',
+        }}
+      >
+        <StyledOcticon icon={AccessibilityInsetIcon} sx={{fill: 'done.fg'}} />
+        Reviewed
+      </Label>
+    )
+  } else {
+    return (
+      <Label
+        size={size}
+        sx={{
+          backgroundColor: 'neutral.subtle',
+          fontWeight: 'normal',
+          borderColor: 'transparent',
+        }}
+      >
+        Review pending
+      </Label>
+    )
+  }
+}
+
 export default function StatusPage() {
   const [components, setComponents] = React.useState(null)
+  const labelSize = 'large'
 
   React.useEffect(() => {
     getComponents()
@@ -135,34 +179,39 @@ export default function StatusPage() {
                   <td align="center" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.viewComponent ? (
                       <Link href={component.implementations.viewComponent.url}>
-                        <StatusLabel status={component.implementations.viewComponent.status} />
+                        <StatusLabel size={labelSize} status={component.implementations.viewComponent.status} />
                       </Link>
                     ) : (
-                      <Text sx={{color: 'fg.subtle'}}>Not available</Text>
+                      <EmptyCell />
                     )}
                   </td>
                   <td align="center" style={{whiteSpace: 'nowrap'}}>
-                    {component.implementations.viewComponent && component.implementations.viewComponent.accessible ? (
-                      <Label variant="primary">Reviewed</Label>
+                    {component.implementations.viewComponent ? (
+                      <AccessibilityLabel
+                        a11yReviewed={component.implementations.viewComponent.a11yReviewed}
+                        size={labelSize}
+                      />
                     ) : (
-                      <Text sx={{color: 'fg.subtle'}}>Not reviewed</Text>
+                      <EmptyCell />
                     )}
                   </td>
-
                   <td align="center" style={{whiteSpace: 'nowrap'}}>
                     {component.implementations.react ? (
                       <Link href={component.implementations.react.url}>
-                        <StatusLabel status={component.implementations.react.status} />
+                        <StatusLabel size={labelSize} status={component.implementations.react.status} />
                       </Link>
                     ) : (
-                      <Text sx={{color: 'fg.subtle'}}>Not available</Text>
+                      <EmptyCell />
                     )}
                   </td>
                   <td align="center" style={{whiteSpace: 'nowrap'}}>
-                    {component.implementations.react && component.implementations.react.accessible ? (
-                      <Label variant="primary">Reviewed</Label>
+                    {component.implementations.react ? (
+                      <AccessibilityLabel
+                        a11yReviewed={component.implementations.react.a11yReviewed}
+                        size={labelSize}
+                      />
                     ) : (
-                      <Text sx={{color: 'fg.subtle'}}>Not reviewed</Text>
+                      <EmptyCell />
                     )}
                   </td>
                   <td style={{minWidth: 400}}>{component.description}</td>
