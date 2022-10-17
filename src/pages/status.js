@@ -1,15 +1,13 @@
 import componentMetadata from '@primer/component-metadata'
-import {Box, Heading, Text, Link, Label, themeGet, StyledOcticon} from '@primer/react'
-import {StatusLabel} from '@primer/gatsby-theme-doctocat'
-import {AccessibilityInsetIcon} from '@primer/octicons-react'
+import {Box, Heading, Text, Link, themeGet, SegmentedControl} from '@primer/react'
 import fetch from 'isomorphic-unfetch'
 import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/Layout'
+import StatusRows from '../components/StatusRows'
+import {PageLayout} from '@primer/react'
 
-// TODO: Make table header sticky
 const Table = styled.table`
-  display: block;
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -52,11 +50,11 @@ const Table = styled.table`
     border-top-right-radius: 6px;
   }
 
-  tr:last-child > th:first-child {
+  tbody tr:last-child > th:first-child {
     border-bottom-left-radius: 6px;
   }
 
-  tr:last-child > td:last-child {
+  tbody tr:last-child > td:last-child {
     border-bottom-right-radius: 6px;
   }
 
@@ -75,53 +73,23 @@ const Table = styled.table`
   }
 `
 
-function EmptyCell() {
-  return <Text sx={{fontSize: 1, color: 'fg.subtle'}}>Not available</Text>
-}
-
-function AccessibilityLabel({a11yReviewed, size}) {
-  if (a11yReviewed) {
-    return (
-      <Label
-        size={size}
-        sx={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: 1,
-          backgroundColor: 'done.subtle',
-          fontWeight: 'normal',
-          borderColor: 'transparent',
-        }}
-      >
-        <StyledOcticon icon={AccessibilityInsetIcon} sx={{fill: 'done.fg'}} />
-        Reviewed
-      </Label>
-    )
-  } else {
-    return (
-      <Label
-        size={size}
-        sx={{
-          backgroundColor: 'neutral.subtle',
-          fontWeight: 'normal',
-          borderColor: 'transparent',
-        }}
-      >
-        Review pending
-      </Label>
-    )
-  }
-}
-
 export default function StatusPage() {
-  const [components, setComponents] = React.useState(null)
-  const labelSize = 'large'
+  const [components, setComponents] = React.useState([])
+  const [filter, updateFilter] = React.useState('')
+  const setFilter = (value) => updateFilter(filter === value ? null : value)
 
   React.useEffect(() => {
     getComponents()
       .then((components) => setComponents(components))
       .catch((error) => console.error(error))
   }, [])
+
+  const statusesList = components.reduce((statusesList, {implementations}) => {
+    if (implementations.react) {
+      statusesList.add(implementations.react.status)
+    }
+    return statusesList
+  }, new Set())
 
   return (
     <Layout
@@ -130,97 +98,72 @@ export default function StatusPage() {
         frontmatter: {title: 'Component status', description: 'Status of components in the Primer Design System'},
       }}
     >
-      <Box className="container-xl" px={5} pb={8}>
-        <Box width={[1, 1, 1, 7 / 12]} pt={8} pb={6}>
-          <Heading as="h1" sx={{fontSize: 7, mb: 2}}>
-            Component status
-          </Heading>
-          <Text as="p" sx={{m: 0, fontSize: 3}}>
-            Status of components in the Primer Design System. Check out the{' '}
-            <Link href="https://primer.style/contribute/component-lifecycle">component lifecycle</Link> for more
-            information about each status.
-          </Text>
-        </Box>
-        {components ? (
-          <Table>
-            <col />
-            <colgroup span="2" style={{textAlign: 'center'}}></colgroup>
-            <colgroup span="2" style={{textAlign: 'center'}}></colgroup>
-            <col />
-            <thead>
-              <tr>
-                <th align="left" rowspan="2" colspan="1">
-                  Component
-                </th>
-                <th rowspan="1" colspan="2">
-                  ViewComponent
-                </th>
-                <th rowspan="1" colspan="2">
-                  React
-                </th>
-                <th align="left" rowspan="2" colspan="1">
-                  Description
-                </th>
-              </tr>
-              <tr>
-                <th>Status</th>
-                <th>Accessibility</th>
-                <th>Status</th>
-                <th>Accessibility</th>
-              </tr>
-            </thead>
-            <tbody>
-              {console.log('COMPTNNT', components)}
-              {components.map((component) => (
-                <tr key={component.id}>
-                  <th align="left" scope="row" style={{whiteSpace: 'nowrap'}}>
-                    {component.displayName}
+      <PageLayout>
+        <PageLayout.Content>
+          <Box width={[1, 1, 1, 7 / 12]} pt={8} pb={6}>
+            <Heading as="h1" sx={{fontSize: 7, mb: 2}}>
+              Component status
+            </Heading>
+            <Text as="p" sx={{mt: 0, fontSize: 3}}>
+              Status of components in the Primer Design System. Check out the{' '}
+              <Link href="https://primer.style/contribute/component-lifecycle">component lifecycle</Link> for more
+              information about each status.
+            </Text>
+            <SegmentedControl aria-label="Filter components">
+              <SegmentedControl.Button defaultSelected onClick={() => setFilter('')} selected={filter === ''}>
+                All
+              </SegmentedControl.Button>
+              <SegmentedControl.Button
+                defaultSelected
+                onClick={() => setFilter('accessibility')}
+                selected={filter === 'accessibility'}
+              >
+                Accessibility
+              </SegmentedControl.Button>
+              {Array.from(statusesList)
+                .sort()
+                .map((status) => (
+                  <SegmentedControl.Button onClick={() => setFilter(status)} key={status}>
+                    {status}
+                  </SegmentedControl.Button>
+                ))}
+            </SegmentedControl>
+          </Box>
+          {components ? (
+            <Table>
+              <colgroup>
+                <col span="2" style={{textAlign: 'center'}} />
+                <col span="2" style={{textAlign: 'center'}} />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th align="left" rowSpan="2" colSpan="1">
+                    Component
                   </th>
-                  <td align="center" style={{whiteSpace: 'nowrap'}}>
-                    {component.implementations.viewComponent ? (
-                      <Link href={component.implementations.viewComponent.url}>
-                        <StatusLabel size={labelSize} status={component.implementations.viewComponent.status} />
-                      </Link>
-                    ) : (
-                      <EmptyCell />
-                    )}
-                  </td>
-                  <td align="center" style={{whiteSpace: 'nowrap'}}>
-                    {component.implementations.viewComponent ? (
-                      <AccessibilityLabel
-                        a11yReviewed={component.implementations.viewComponent.a11yReviewed}
-                        size={labelSize}
-                      />
-                    ) : (
-                      <EmptyCell />
-                    )}
-                  </td>
-                  <td align="center" style={{whiteSpace: 'nowrap'}}>
-                    {component.implementations.react ? (
-                      <Link href={component.implementations.react.url}>
-                        <StatusLabel size={labelSize} status={component.implementations.react.status} />
-                      </Link>
-                    ) : (
-                      <EmptyCell />
-                    )}
-                  </td>
-                  <td align="center" style={{whiteSpace: 'nowrap'}}>
-                    {component.implementations.react ? (
-                      <AccessibilityLabel
-                        a11yReviewed={component.implementations.react.a11yReviewed}
-                        size={labelSize}
-                      />
-                    ) : (
-                      <EmptyCell />
-                    )}
-                  </td>
-                  <td style={{minWidth: 400}}>{component.description}</td>
+                  <th rowSpan="1" colSpan="2">
+                    ViewComponent
+                  </th>
+                  <th rowSpan="1" colSpan="2">
+                    React
+                  </th>
+                  <th align="left" rowSpan="2" colSpan="1">
+                    Description
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </Table>
-        ) : null}
-      </Box>
+                <tr>
+                  <th>Status</th>
+                  <th>Accessibility</th>
+                  <th>Status</th>
+                  <th>Accessibility</th>
+                </tr>
+              </thead>
+              <tbody>
+                <StatusRows components={components} filter={filter} />
+              </tbody>
+            </Table>
+          ) : null}
+        </PageLayout.Content>
+      </PageLayout>
     </Layout>
   )
 }
