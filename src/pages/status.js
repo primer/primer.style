@@ -76,7 +76,6 @@ const Table = styled.table`
 export default function StatusPage() {
   const [components, setComponents] = React.useState([])
   const [filter, updateFilter] = React.useState('')
-  const setFilter = (value) => updateFilter(filter === value ? null : value)
 
   React.useEffect(() => {
     getComponents()
@@ -110,12 +109,12 @@ export default function StatusPage() {
               information about each status.
             </Text>
             <SegmentedControl aria-label="Filter components">
-              <SegmentedControl.Button defaultSelected onClick={() => setFilter('')} selected={filter === ''}>
+              <SegmentedControl.Button defaultSelected onClick={() => updateFilter('')} selected={filter === ''}>
                 All
               </SegmentedControl.Button>
               <SegmentedControl.Button
                 defaultSelected
-                onClick={() => setFilter('accessibility')}
+                onClick={() => updateFilter('accessibility')}
                 selected={filter === 'accessibility'}
               >
                 Accessibility
@@ -123,7 +122,7 @@ export default function StatusPage() {
               {Array.from(statusesList)
                 .sort()
                 .map((status) => (
-                  <SegmentedControl.Button onClick={() => setFilter(status)} key={status}>
+                  <SegmentedControl.Button onClick={() => updateFilter(status)} key={status}>
                     {status}
                   </SegmentedControl.Button>
                 ))}
@@ -137,16 +136,16 @@ export default function StatusPage() {
               </colgroup>
               <thead>
                 <tr>
-                  <th align="left" rowSpan="2" colSpan="1">
+                  <th width="20%" align="left" rowSpan="2" colSpan="1">
                     Component
                   </th>
-                  <th rowSpan="1" colSpan="2">
+                  <th width="20%" rowSpan="1" colSpan="2">
                     ViewComponent
                   </th>
-                  <th rowSpan="1" colSpan="2">
+                  <th width="20%" rowSpan="1" colSpan="2">
                     React
                   </th>
-                  <th align="left" rowSpan="2" colSpan="1">
+                  <th width="40%" align="left" rowSpan="2" colSpan="1">
                     Description
                   </th>
                 </tr>
