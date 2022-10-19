@@ -137,16 +137,16 @@ export default function StatusPage() {
               </colgroup>
               <thead>
                 <tr>
-                  <th align="left" rowSpan="2" colSpan="1">
+                  <th width="20%" align="left" rowSpan="2" colSpan="1">
                     Component
                   </th>
-                  <th rowSpan="1" colSpan="2">
+                  <th width="20%" rowSpan="1" colSpan="2">
                     ViewComponent
                   </th>
-                  <th rowSpan="1" colSpan="2">
+                  <th width="20%" rowSpan="1" colSpan="2">
                     React
                   </th>
-                  <th align="left" rowSpan="2" colSpan="1">
+                  <th width="40%" align="left" rowSpan="2" colSpan="1">
                     Description
                   </th>
                 </tr>
