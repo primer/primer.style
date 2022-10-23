@@ -49,10 +49,10 @@ export default function StatusRows({components, filter}) {
       (component) =>
         (component.implementations.react &&
           (component.implementations.react.status === filter ||
-            (component.implementations.react.a11yReviewed && filter === 'accessibility'))) ||
+            (component.implementations.react.a11yReviewed && filter === 'Accessibility'))) ||
         (component.implementations.viewComponent &&
           (component.implementations.viewComponent.status === filter ||
-            (component.implementations.viewComponent.a11yReviewed && filter === 'accessibility')))
+            (component.implementations.viewComponent.a11yReviewed && filter === 'Accessibility')))
     )
   }
 

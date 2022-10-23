@@ -1,5 +1,5 @@
 import componentMetadata from '@primer/component-metadata'
-import {Box, Heading, Text, Link, themeGet, SegmentedControl} from '@primer/react'
+import {Box, Heading, Text, Link, themeGet, ActionList, ActionMenu} from '@primer/react'
 import fetch from 'isomorphic-unfetch'
 import React from 'react'
 import styled from 'styled-components'
@@ -73,9 +73,14 @@ const Table = styled.table`
   }
 `
 
+const initialFieldTypes = [
+  {filter: '', name: 'All components'},
+  {filter: 'Accessibility', name: 'Reviewed for accessibility'},
+]
+
 export default function StatusPage() {
   const [components, setComponents] = React.useState([])
-  const [filter, updateFilter] = React.useState('')
+  const [selectedIndex, setSelectedIndex] = React.useState(0)
 
   React.useEffect(() => {
     getComponents()
@@ -87,8 +92,17 @@ export default function StatusPage() {
     if (implementations.react) {
       statusesList.add(implementations.react.status)
     }
-    return statusesList
+
+    return new Set([...statusesList].sort())
   }, new Set())
+
+  const statusFieldTypes = [...statusesList].map((status) => ({
+    filter: status,
+    name: status + ' status',
+  }))
+
+  const fieldTypes = [...initialFieldTypes, ...statusFieldTypes]
+  const selectedType = fieldTypes[selectedIndex]
 
   return (
     <Layout
@@ -108,25 +122,22 @@ export default function StatusPage() {
               <Link href="https://primer.style/contribute/component-lifecycle">component lifecycle</Link> for more
               information about each status.
             </Text>
-            <SegmentedControl aria-label="Filter components">
-              <SegmentedControl.Button defaultSelected onClick={() => updateFilter('')} selected={filter === ''}>
-                All
-              </SegmentedControl.Button>
-              <SegmentedControl.Button
-                defaultSelected
-                onClick={() => updateFilter('accessibility')}
-                selected={filter === 'accessibility'}
-              >
-                Accessibility
-              </SegmentedControl.Button>
-              {Array.from(statusesList)
-                .sort()
-                .map((status) => (
-                  <SegmentedControl.Button onClick={() => updateFilter(status)} key={status}>
-                    {status}
-                  </SegmentedControl.Button>
-                ))}
-            </SegmentedControl>
+            <ActionMenu>
+              <ActionMenu.Button aria-label="Show components">Show: {selectedType.name}</ActionMenu.Button>
+              <ActionMenu.Overlay width="medium">
+                <ActionList selectionVariant="single">
+                  {fieldTypes.map((type, index) => (
+                    <ActionList.Item
+                      key={index}
+                      selected={index === selectedIndex}
+                      onSelect={() => setSelectedIndex(index)}
+                    >
+                      {type.name}
+                    </ActionList.Item>
+                  ))}
+                </ActionList>
+              </ActionMenu.Overlay>
+            </ActionMenu>
           </Box>
           {components ? (
             <Table>
@@ -157,7 +168,7 @@ export default function StatusPage() {
                 </tr>
               </thead>
               <tbody>
-                <StatusRows components={components} filter={filter} />
+                <StatusRows components={components} filter={selectedType.filter} />
               </tbody>
             </Table>
           ) : null}
