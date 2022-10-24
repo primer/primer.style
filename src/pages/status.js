@@ -73,6 +73,17 @@ const Table = styled.table`
   }
 `
 
+const STATUS_COLORS = {
+  alpha: 'severe.fg',
+  beta: 'attention.fg',
+  stable: 'success.fg',
+  deprecated: 'danger.fg',
+}
+
+function getStatusColor(status) {
+  return STATUS_COLORS[status.toLowerCase()] || 'fg.muted'
+}
+
 const initialFieldTypes = [
   {filter: '', name: 'All components'},
   {filter: 'Accessibility', name: 'Reviewed for accessibility'},
@@ -89,6 +100,10 @@ export default function StatusPage() {
   }, [])
 
   const statusesList = components.reduce((statusesList, {implementations}) => {
+    if (implementations.viewComponent) {
+      statusesList.add(implementations.viewComponent.status)
+    }
+
     if (implementations.react) {
       statusesList.add(implementations.react.status)
     }
@@ -142,6 +157,17 @@ export default function StatusPage() {
                         selected={type.filter === selectedField.filter}
                         onSelect={() => setSelectedField(type)}
                       >
+                        <ActionList.LeadingVisual>
+                          <Box
+                            aria-hidden="true"
+                            sx={{
+                              height: '10px',
+                              width: '10px',
+                              backgroundColor: getStatusColor(type.filter),
+                              borderRadius: 99,
+                            }}
+                          />
+                        </ActionList.LeadingVisual>
                         {type.name}
                       </ActionList.Item>
                     ))}
