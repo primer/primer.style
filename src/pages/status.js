@@ -80,7 +80,7 @@ const initialFieldTypes = [
 
 export default function StatusPage() {
   const [components, setComponents] = React.useState([])
-  const [selectedIndex, setSelectedIndex] = React.useState(0)
+  const [selectedField, setSelectedField] = React.useState(initialFieldTypes[0])
 
   React.useEffect(() => {
     getComponents()
@@ -98,11 +98,8 @@ export default function StatusPage() {
 
   const statusFieldTypes = [...statusesList].map((status) => ({
     filter: status,
-    name: status + ' status',
+    name: status,
   }))
-
-  const fieldTypes = [...initialFieldTypes, ...statusFieldTypes]
-  const selectedType = fieldTypes[selectedIndex]
 
   return (
     <Layout
@@ -123,18 +120,32 @@ export default function StatusPage() {
               information about each status.
             </Text>
             <ActionMenu>
-              <ActionMenu.Button aria-label="Show components">Show: {selectedType.name}</ActionMenu.Button>
+              <ActionMenu.Button aria-label="Show components">Show: {selectedField.name}</ActionMenu.Button>
               <ActionMenu.Overlay width="medium">
                 <ActionList selectionVariant="single">
-                  {fieldTypes.map((type, index) => (
-                    <ActionList.Item
-                      key={index}
-                      selected={index === selectedIndex}
-                      onSelect={() => setSelectedIndex(index)}
-                    >
-                      {type.name}
-                    </ActionList.Item>
-                  ))}
+                  <ActionList.Group>
+                    {initialFieldTypes.map((type, index) => (
+                      <ActionList.Item
+                        key={index}
+                        selected={type.filter === selectedField.filter}
+                        onSelect={() => setSelectedField(type)}
+                      >
+                        {type.name}
+                      </ActionList.Item>
+                    ))}
+                  </ActionList.Group>
+                  <ActionList.Divider />
+                  <ActionList.Group title="Status">
+                    {statusFieldTypes.map((type, index) => (
+                      <ActionList.Item
+                        key={index}
+                        selected={type.filter === selectedField.filter}
+                        onSelect={() => setSelectedField(type)}
+                      >
+                        {type.name}
+                      </ActionList.Item>
+                    ))}
+                  </ActionList.Group>
                 </ActionList>
               </ActionMenu.Overlay>
             </ActionMenu>
@@ -168,7 +179,7 @@ export default function StatusPage() {
                 </tr>
               </thead>
               <tbody>
-                <StatusRows components={components} filter={selectedType.filter} />
+                <StatusRows components={components} filter={selectedField.filter} />
               </tbody>
             </Table>
           ) : null}
