@@ -1,5 +1,5 @@
 import componentMetadata from '@primer/component-metadata'
-import {Box, Heading, Text, Link, themeGet, SegmentedControl} from '@primer/react'
+import {Box, Heading, Text, Link, themeGet, ActionList, ActionMenu} from '@primer/react'
 import fetch from 'isomorphic-unfetch'
 import React from 'react'
 import styled from 'styled-components'
@@ -73,9 +73,25 @@ const Table = styled.table`
   }
 `
 
+const STATUS_COLORS = {
+  alpha: 'severe.fg',
+  beta: 'attention.fg',
+  stable: 'success.fg',
+  deprecated: 'danger.fg',
+}
+
+function getStatusColor(status) {
+  return STATUS_COLORS[status.toLowerCase()] || 'fg.muted'
+}
+
+const initialFieldTypes = [
+  {type: '', name: 'All components'},
+  {type: 'Accessibility', name: 'Reviewed for accessibility'},
+]
+
 export default function StatusPage() {
   const [components, setComponents] = React.useState([])
-  const [filter, updateFilter] = React.useState('')
+  const [selectedField, setSelectedField] = React.useState(initialFieldTypes[0])
 
   React.useEffect(() => {
     getComponents()
@@ -84,11 +100,21 @@ export default function StatusPage() {
   }, [])
 
   const statusesList = components.reduce((statusesList, {implementations}) => {
+    if (implementations.viewComponent) {
+      statusesList.add(implementations.viewComponent.status)
+    }
+
     if (implementations.react) {
       statusesList.add(implementations.react.status)
     }
-    return statusesList
+
+    return new Set([...statusesList].sort())
   }, new Set())
+
+  const statusFieldTypes = [...statusesList].map((status) => ({
+    type: status,
+    name: status,
+  }))
 
   return (
     <Layout
@@ -108,25 +134,47 @@ export default function StatusPage() {
               <Link href="https://primer.style/contribute/component-lifecycle">component lifecycle</Link> for more
               information about each status.
             </Text>
-            <SegmentedControl aria-label="Filter components">
-              <SegmentedControl.Button defaultSelected onClick={() => updateFilter('')} selected={filter === ''}>
-                All
-              </SegmentedControl.Button>
-              <SegmentedControl.Button
-                defaultSelected
-                onClick={() => updateFilter('accessibility')}
-                selected={filter === 'accessibility'}
-              >
-                Accessibility
-              </SegmentedControl.Button>
-              {Array.from(statusesList)
-                .sort()
-                .map((status) => (
-                  <SegmentedControl.Button onClick={() => updateFilter(status)} key={status}>
-                    {status}
-                  </SegmentedControl.Button>
-                ))}
-            </SegmentedControl>
+            <ActionMenu>
+              <ActionMenu.Button aria-label="Show components">Show: {selectedField.name}</ActionMenu.Button>
+              <ActionMenu.Overlay width="medium">
+                <ActionList selectionVariant="single">
+                  <ActionList.Group>
+                    {initialFieldTypes.map((field, index) => (
+                      <ActionList.Item
+                        key={index}
+                        selected={field.type === selectedField.type}
+                        onSelect={() => setSelectedField(field)}
+                      >
+                        {field.name}
+                      </ActionList.Item>
+                    ))}
+                  </ActionList.Group>
+                  <ActionList.Divider />
+                  <ActionList.Group title="Status">
+                    {statusFieldTypes.map((field, index) => (
+                      <ActionList.Item
+                        key={index}
+                        selected={field.type === selectedField.type}
+                        onSelect={() => setSelectedField(field)}
+                      >
+                        <ActionList.LeadingVisual>
+                          <Box
+                            aria-hidden="true"
+                            sx={{
+                              height: '12px',
+                              width: '12px',
+                              backgroundColor: getStatusColor(field.type),
+                              borderRadius: 99,
+                            }}
+                          />
+                        </ActionList.LeadingVisual>
+                        {field.name}
+                      </ActionList.Item>
+                    ))}
+                  </ActionList.Group>
+                </ActionList>
+              </ActionMenu.Overlay>
+            </ActionMenu>
           </Box>
           {components ? (
             <Table>
@@ -157,7 +205,7 @@ export default function StatusPage() {
                 </tr>
               </thead>
               <tbody>
-                <StatusRows components={components} filter={filter} />
+                <StatusRows components={components} type={selectedField.type} />
               </tbody>
             </Table>
           ) : null}
