@@ -85,8 +85,8 @@ function getStatusColor(status) {
 }
 
 const initialFieldTypes = [
-  {filter: '', name: 'All components'},
-  {filter: 'Accessibility', name: 'Reviewed for accessibility'},
+  {type: '', name: 'All components'},
+  {type: 'Accessibility', name: 'Reviewed for accessibility'},
 ]
 
 export default function StatusPage() {
@@ -112,7 +112,7 @@ export default function StatusPage() {
   }, new Set())
 
   const statusFieldTypes = [...statusesList].map((status) => ({
-    filter: status,
+    type: status,
     name: status,
   }))
 
@@ -139,36 +139,36 @@ export default function StatusPage() {
               <ActionMenu.Overlay width="medium">
                 <ActionList selectionVariant="single">
                   <ActionList.Group>
-                    {initialFieldTypes.map((type, index) => (
+                    {initialFieldTypes.map((field, index) => (
                       <ActionList.Item
                         key={index}
-                        selected={type.filter === selectedField.filter}
-                        onSelect={() => setSelectedField(type)}
+                        selected={field.type === selectedField.type}
+                        onSelect={() => setSelectedField(field)}
                       >
-                        {type.name}
+                        {field.name}
                       </ActionList.Item>
                     ))}
                   </ActionList.Group>
                   <ActionList.Divider />
                   <ActionList.Group title="Status">
-                    {statusFieldTypes.map((type, index) => (
+                    {statusFieldTypes.map((field, index) => (
                       <ActionList.Item
                         key={index}
-                        selected={type.filter === selectedField.filter}
-                        onSelect={() => setSelectedField(type)}
+                        selected={field.type === selectedField.type}
+                        onSelect={() => setSelectedField(field)}
                       >
                         <ActionList.LeadingVisual>
                           <Box
                             aria-hidden="true"
                             sx={{
-                              height: '10px',
-                              width: '10px',
-                              backgroundColor: getStatusColor(type.filter),
+                              height: '12px',
+                              width: '12px',
+                              backgroundColor: getStatusColor(field.type),
                               borderRadius: 99,
                             }}
                           />
                         </ActionList.LeadingVisual>
-                        {type.name}
+                        {field.name}
                       </ActionList.Item>
                     ))}
                   </ActionList.Group>
@@ -205,7 +205,7 @@ export default function StatusPage() {
                 </tr>
               </thead>
               <tbody>
-                <StatusRows components={components} filter={selectedField.filter} />
+                <StatusRows components={components} type={selectedField.type} />
               </tbody>
             </Table>
           ) : null}

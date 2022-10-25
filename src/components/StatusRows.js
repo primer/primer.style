@@ -41,18 +41,18 @@ function AccessibilityLabel({a11yReviewed, size}) {
   }
 }
 
-export default function StatusRows({components, filter}) {
+export default function StatusRows({components, type}) {
   const labelSize = 'large'
 
-  if (filter) {
+  if (type) {
     components = components.filter(
       (component) =>
         (component.implementations.react &&
-          (component.implementations.react.status === filter ||
-            (component.implementations.react.a11yReviewed && filter === 'Accessibility'))) ||
+          (component.implementations.react.status === type ||
+            (component.implementations.react.a11yReviewed && type === 'Accessibility'))) ||
         (component.implementations.viewComponent &&
-          (component.implementations.viewComponent.status === filter ||
-            (component.implementations.viewComponent.a11yReviewed && filter === 'Accessibility')))
+          (component.implementations.viewComponent.status === type ||
+            (component.implementations.viewComponent.a11yReviewed && type === 'Accessibility')))
     )
   }
 
