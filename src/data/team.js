@@ -1,5 +1,19 @@
 const teamContent = [
   {
+    name: 'Keith Cirkel',
+    handle: 'keithamus',
+    title: 'Software Engineer',
+    questionOne:
+      'I believe UI engineering is an incredibly deep and complex discipline that deserves equal prominence alongside other platform and infrastructure teams; a design system is key to scaling a UI to meet the demands of our users. I think the work of a Design System intersects the concerns of users and colleagues more than most other teams.',
+    questionTwo:
+      'I\'m inspired by art movements like Bauhaus, and the work of Mies van der Rohe, Dame Zaha Hadid, Frank Lloyd Wright. I enjoy the graphic design of Saul Bass. Don Norman\'s approach to user interfaces inspires me. The software principles of Doug McIlroy, Edsger Dijkstra, Barbara Liskov, Ken Thomson. I\'m inspired by the tireless work Sir David Attenborough and Steve & Robert Irwin do to show us the power and beauty of nature. Of course I would not be working in this industry without the work of Tim Berners-Lee, Håkon Wium Lie, Chris Lilley.',
+    favoriteTools: 'GitHub, neovim, Firefox',
+    cssFeature: 'float: left',
+    avatar: 'https://avatars.githubusercontent.com/u/118266?v=4',
+    gif: 'https://user-images.githubusercontent.com/118266/198547240-c6bbf2cd-3c3f-4d58-8e1e-0336f90fd48c.gif',
+    alumni: false,
+  },
+  {
     name: 'Josh Bowden',
     handle: 'JoshBowdenConcepts',
     title: 'Software Engineer',
