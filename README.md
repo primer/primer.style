@@ -55,6 +55,7 @@ We're working on updating our websites, domains, and npm package names so that i
 - [@emilybrick](https://github.com/emilybrick)
 - [@jonrohan](https://github.com/jonrohan)
 - [@broccolini](https://github.com/broccolini)
+- [@raytalks](https://github.com/raytalks)
 
 #### Alumni
 - [@emplums](https://github.com/emplums)
