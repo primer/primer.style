@@ -1,5 +1,6 @@
 import componentMetadata from '@primer/component-metadata'
-import {Box, Heading, Text, Link, themeGet, ActionList, ActionMenu} from '@primer/react'
+import {Box, Heading, Text, Link, themeGet, ActionList, ActionMenu, StyledOcticon} from '@primer/react'
+import {DotFillIcon, AccessibilityInsetIcon, ListUnorderedIcon} from '@primer/octicons-react'
 import fetch from 'isomorphic-unfetch'
 import React from 'react'
 import styled from 'styled-components'
@@ -74,10 +75,10 @@ const Table = styled.table`
 `
 
 const STATUS_COLORS = {
-  alpha: 'severe.fg',
-  beta: 'attention.fg',
-  stable: 'success.fg',
-  deprecated: 'danger.fg',
+  alpha: 'severe.emphasis',
+  beta: 'attention.emphasis',
+  stable: 'success.emphasis',
+  deprecated: 'danger.emphasis',
 }
 
 function getStatusColor(status) {
@@ -85,8 +86,8 @@ function getStatusColor(status) {
 }
 
 const initialFieldTypes = [
-  {type: '', name: 'All components'},
-  {type: 'Accessibility', name: 'Reviewed for accessibility'},
+  {type: '', name: 'All components', icon: ListUnorderedIcon},
+  {type: 'Accessibility', name: 'Reviewed for accessibility', icon: AccessibilityInsetIcon},
 ]
 
 export default function StatusPage() {
@@ -145,6 +146,9 @@ export default function StatusPage() {
                         selected={field.type === selectedField.type}
                         onSelect={() => setSelectedField(field)}
                       >
+                        <ActionList.LeadingVisual>
+                          <StyledOcticon icon={field.icon} />
+                        </ActionList.LeadingVisual>
                         {field.name}
                       </ActionList.Item>
                     ))}
@@ -158,15 +162,7 @@ export default function StatusPage() {
                         onSelect={() => setSelectedField(field)}
                       >
                         <ActionList.LeadingVisual>
-                          <Box
-                            aria-hidden="true"
-                            sx={{
-                              height: '12px',
-                              width: '12px',
-                              backgroundColor: getStatusColor(field.type),
-                              borderRadius: 99,
-                            }}
-                          />
+                          <StyledOcticon icon={DotFillIcon} color={getStatusColor(field.type)} />
                         </ActionList.LeadingVisual>
                         {field.name}
                       </ActionList.Item>

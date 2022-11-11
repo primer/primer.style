@@ -4,7 +4,7 @@ import {StatusLabel} from '@primer/gatsby-theme-doctocat'
 import {AccessibilityInsetIcon} from '@primer/octicons-react'
 
 function EmptyCell() {
-  return <Text sx={{fontSize: 1, color: 'fg.subtle'}}>Not available</Text>
+  return <Text sx={{fontSize: 0, color: 'fg.subtle'}}>Not available</Text>
 }
 
 function AccessibilityLabel({a11yReviewed, size}) {
