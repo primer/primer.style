@@ -1,57 +1,98 @@
 import componentMetadata from '@primer/component-metadata'
-import {Box, Heading, Text, Link, themeGet} from '@primer/react'
-import {StatusLabel} from '@primer/gatsby-theme-doctocat'
+import {Box, Heading, Text, Link, themeGet, ActionList, ActionMenu, StyledOcticon} from '@primer/react'
+import {DotFillIcon, AccessibilityInsetIcon, ListUnorderedIcon} from '@primer/octicons-react'
 import fetch from 'isomorphic-unfetch'
 import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/Layout'
+import StatusRows from '../components/StatusRows'
+import {PageLayout} from '@primer/react'
 
-// TODO: Make table header sticky
 const Table = styled.table`
-  display: block;
   width: 100%;
-  overflow: auto;
-  position: relative;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
 
-  th {
-    font-family: ${themeGet('fonts.mono')};
-    font-weight: ${themeGet('fontWeights.normal')};
-    color: ${themeGet('colors.accent.fg')};
+  a {
+    color: currentColor;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   th,
   td {
     padding: ${themeGet('space.2')} ${themeGet('space.3')};
-  }
-
-  th:first-child,
-  td:first-child {
-    padding-left: 0;
-  }
-
-  th:last-child,
-  td:last-child {
-    padding-right: 0;
-  }
-
-  td {
-    border-top: 1px solid ${themeGet('colors.border.default')};
+    border-color: ${themeGet('colors.border.default')};
+    border-style: solid;
+    border-width: 0;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    font-weight: normal;
     vertical-align: top;
   }
 
   th {
-    position: sticky;
-    top: 0;
+    background-color: ${themeGet('colors.canvas.subtle')};
+    font-weight: ${themeGet('fontWeights.bold')};
+    vertical-align: middle;
   }
 
-  img {
-    background-color: transparent;
+  tbody th {
+    vertical-align: top;
+  }
+
+  thead tr:first-child > th:first-child {
+    border-top-left-radius: 6px;
+  }
+
+  thead tr:first-child > th:last-child {
+    border-top-right-radius: 6px;
+  }
+
+  tbody tr:last-child > th:first-child {
+    border-bottom-left-radius: 6px;
+  }
+
+  tbody tr:last-child > td:last-child {
+    border-bottom-right-radius: 6px;
+  }
+
+  tr:first-child th:last-child,
+  td:last-child {
+    border-right-width: 1px;
+  }
+
+  tr:last-child td,
+  tbody tr:last-child th {
+    border-bottom-width: 1px;
+  }
+
+  td {
+    vertical-align: top;
   }
 `
 
+const STATUS_COLORS = {
+  alpha: 'severe.emphasis',
+  beta: 'attention.emphasis',
+  stable: 'success.emphasis',
+  deprecated: 'danger.emphasis',
+}
+
+function getStatusColor(status) {
+  return STATUS_COLORS[status.toLowerCase()] || 'fg.muted'
+}
+
+const initialFieldTypes = [
+  {type: '', name: 'All components', icon: ListUnorderedIcon},
+  {type: 'Accessibility', name: 'Reviewed for accessibility', icon: AccessibilityInsetIcon},
+]
+
 export default function StatusPage() {
-  const [components, setComponents] = React.useState(null)
+  const [components, setComponents] = React.useState([])
+  const [selectedField, setSelectedField] = React.useState(initialFieldTypes[0])
 
   React.useEffect(() => {
     getComponents()
@@ -59,69 +100,113 @@ export default function StatusPage() {
       .catch((error) => console.error(error))
   }, [])
 
+  const statusesList = components.reduce((statusesList, {implementations}) => {
+    if (implementations.viewComponent) {
+      statusesList.add(implementations.viewComponent.status)
+    }
+
+    if (implementations.react) {
+      statusesList.add(implementations.react.status)
+    }
+
+    return new Set([...statusesList].sort())
+  }, new Set())
+
+  const statusFieldTypes = [...statusesList].map((status) => ({
+    type: status,
+    name: status,
+  }))
+
   return (
     <Layout
+      colorMode={'default'}
       pageContext={{
         frontmatter: {title: 'Component status', description: 'Status of components in the Primer Design System'},
       }}
     >
-      <Box className="container-xl" px={5} pb={8}>
-        <Box pt={8} pb={6}>
-          <Heading sx={{color: 'accent.fg', fontSize: [48, 56], lineHeight: 1, mb: 3}}>Component status</Heading>
-          <Text as="p" sx={{fontSize: 3}}>
-            Status of components in the Primer Design System. <br />
-            Check out the <Link href="https://primer.style/contribute/component-lifecycle">
-              component lifecycle
-            </Link>{' '}
-            for more information about each status.
-          </Text>
-        </Box>
-        {components ? (
-          <Table>
-            <colgroup>
-              <col style={{width: '15%'}} />
-              <col style={{width: '15%'}} />
-              <col style={{width: '15%'}} />
-              <col style={{width: '55%'}} />
-            </colgroup>
-            <thead>
-              <tr>
-                <th align="left">Component</th>
-                {/* TODO: How would we add a Figma column? Where would that data come from ? */}
-                <th>ViewComponent</th>
-                <th>React</th>
-                <th align="left">Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              {components.map((component) => (
-                <tr key={component.id}>
-                  <td style={{whiteSpace: 'nowrap'}}>{component.displayName}</td>
-                  <td align="center" style={{whiteSpace: 'nowrap'}}>
-                    {component.implementations.viewComponent ? (
-                      <Link href={component.implementations.viewComponent.url}>
-                        <StatusLabel status={component.implementations.viewComponent.status} />
-                      </Link>
-                    ) : (
-                      <Text sx={{color: 'fg.subtle'}}>Not available</Text>
-                    )}
-                  </td>
-                  <td align="center" style={{whiteSpace: 'nowrap'}}>
-                    {component.implementations.react ? (
-                      <Link href={component.implementations.react.url}>
-                        <StatusLabel status={component.implementations.react.status} />
-                      </Link>
-                    ) : (
-                      <Text sx={{color: 'fg.subtle'}}>Not available</Text>
-                    )}
-                  </td>
-                  <td style={{minWidth: 400}}>{component.description}</td>
+      <PageLayout>
+        <PageLayout.Content>
+          <Box width={[1, 1, 1, 7 / 12]} pt={8} pb={6}>
+            <Heading as="h1" sx={{fontSize: 7, mb: 2}}>
+              Component status
+            </Heading>
+            <Text as="p" sx={{mt: 0, fontSize: 3}}>
+              Status of components in the Primer Design System. Check out the{' '}
+              <Link href="https://primer.style/contribute/component-lifecycle">component lifecycle</Link> for more
+              information about each status.
+            </Text>
+            <ActionMenu>
+              <ActionMenu.Button aria-label="Show components">Show: {selectedField.name}</ActionMenu.Button>
+              <ActionMenu.Overlay width="medium">
+                <ActionList selectionVariant="single">
+                  <ActionList.Group>
+                    {initialFieldTypes.map((field, index) => (
+                      <ActionList.Item
+                        key={index}
+                        selected={field.type === selectedField.type}
+                        onSelect={() => setSelectedField(field)}
+                      >
+                        <ActionList.LeadingVisual>
+                          <StyledOcticon icon={field.icon} />
+                        </ActionList.LeadingVisual>
+                        {field.name}
+                      </ActionList.Item>
+                    ))}
+                  </ActionList.Group>
+                  <ActionList.Divider />
+                  <ActionList.Group title="Status">
+                    {statusFieldTypes.map((field, index) => (
+                      <ActionList.Item
+                        key={index}
+                        selected={field.type === selectedField.type}
+                        onSelect={() => setSelectedField(field)}
+                      >
+                        <ActionList.LeadingVisual>
+                          <StyledOcticon icon={DotFillIcon} color={getStatusColor(field.type)} />
+                        </ActionList.LeadingVisual>
+                        {field.name}
+                      </ActionList.Item>
+                    ))}
+                  </ActionList.Group>
+                </ActionList>
+              </ActionMenu.Overlay>
+            </ActionMenu>
+          </Box>
+          {components ? (
+            <Table>
+              <colgroup>
+                <col span="2" style={{textAlign: 'center'}} />
+                <col span="2" style={{textAlign: 'center'}} />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th width="20%" align="left" rowSpan="2" colSpan="1">
+                    Component
+                  </th>
+                  <th width="20%" rowSpan="1" colSpan="2">
+                    ViewComponent
+                  </th>
+                  <th width="20%" rowSpan="1" colSpan="2">
+                    React
+                  </th>
+                  <th width="40%" align="left" rowSpan="2" colSpan="1">
+                    Description
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </Table>
-        ) : null}
-      </Box>
+                <tr>
+                  <th>Status</th>
+                  <th>Accessibility</th>
+                  <th>Status</th>
+                  <th>Accessibility</th>
+                </tr>
+              </thead>
+              <tbody>
+                <StatusRows components={components} type={selectedField.type} />
+              </tbody>
+            </Table>
+          ) : null}
+        </PageLayout.Content>
+      </PageLayout>
     </Layout>
   )
 }
@@ -154,7 +239,7 @@ async function getComponents() {
   const components = {}
 
   for (const [implementation, {url, data}] of Object.entries(implementations)) {
-    for (const {id, path, status} of data) {
+    for (const {id, path, status, a11yReviewed} of data) {
       if (!(id in components)) {
         components[id] = {
           id,
@@ -167,6 +252,7 @@ async function getComponents() {
       components[id].implementations[implementation] = {
         status: status.charAt(0).toUpperCase() + status.slice(1), // Capitalize the first letter
         url: `${url}${path}`,
+        a11yReviewed: a11yReviewed || false,
       }
     }
   }
