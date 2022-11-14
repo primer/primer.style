@@ -39,10 +39,6 @@ const Table = styled.table`
     vertical-align: middle;
   }
 
-  tbody th {
-    vertical-align: top;
-  }
-
   thead tr:first-child > th:first-child {
     border-top-left-radius: 6px;
   }
@@ -70,7 +66,7 @@ const Table = styled.table`
   }
 
   td {
-    vertical-align: top;
+    vertical-align: middle;
   }
 `
 
