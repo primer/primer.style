@@ -90,6 +90,14 @@ const initialFieldTypes = [
   {type: 'Accessibility', name: 'Reviewed for accessibility', icon: AccessibilityInsetIcon},
 ]
 
+const statusFieldTypes = [
+  {type: 'Stable', name: 'Stable'},
+  {type: 'Beta', name: 'Beta'},
+  {type: 'Alpha', name: 'Alpha'},
+  {type: 'Draft', name: 'Draft'},
+  {type: 'Deprecated', name: 'Deprecated'},
+]
+
 export default function StatusPage() {
   const [components, setComponents] = React.useState([])
   const [selectedField, setSelectedField] = React.useState(initialFieldTypes[0])
@@ -99,23 +107,6 @@ export default function StatusPage() {
       .then((components) => setComponents(components))
       .catch((error) => console.error(error))
   }, [])
-
-  const statusesList = components.reduce((statusesList, {implementations}) => {
-    if (implementations.viewComponent) {
-      statusesList.add(implementations.viewComponent.status)
-    }
-
-    if (implementations.react) {
-      statusesList.add(implementations.react.status)
-    }
-
-    return new Set([...statusesList].sort())
-  }, new Set())
-
-  const statusFieldTypes = [...statusesList].map((status) => ({
-    type: status,
-    name: status,
-  }))
 
   return (
     <Layout
