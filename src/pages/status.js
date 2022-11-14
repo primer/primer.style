@@ -1,5 +1,6 @@
 import componentMetadata from '@primer/component-metadata'
-import {Box, Heading, Text, Link, themeGet, ActionList, ActionMenu} from '@primer/react'
+import {Box, Heading, Text, Link, themeGet, ActionList, ActionMenu, StyledOcticon} from '@primer/react'
+import {DotFillIcon, AccessibilityInsetIcon, ListUnorderedIcon} from '@primer/octicons-react'
 import fetch from 'isomorphic-unfetch'
 import React from 'react'
 import styled from 'styled-components'
@@ -38,10 +39,6 @@ const Table = styled.table`
     vertical-align: middle;
   }
 
-  tbody th {
-    vertical-align: top;
-  }
-
   thead tr:first-child > th:first-child {
     border-top-left-radius: 6px;
   }
@@ -69,15 +66,15 @@ const Table = styled.table`
   }
 
   td {
-    vertical-align: top;
+    vertical-align: middle;
   }
 `
 
 const STATUS_COLORS = {
-  alpha: 'severe.fg',
-  beta: 'attention.fg',
-  stable: 'success.fg',
-  deprecated: 'danger.fg',
+  alpha: 'severe.emphasis',
+  beta: 'attention.emphasis',
+  stable: 'success.emphasis',
+  deprecated: 'danger.emphasis',
 }
 
 function getStatusColor(status) {
@@ -85,8 +82,16 @@ function getStatusColor(status) {
 }
 
 const initialFieldTypes = [
-  {type: '', name: 'All components'},
-  {type: 'Accessibility', name: 'Reviewed for accessibility'},
+  {type: '', name: 'All components', icon: ListUnorderedIcon},
+  {type: 'Accessibility', name: 'Reviewed for accessibility', icon: AccessibilityInsetIcon},
+]
+
+const statusFieldTypes = [
+  {type: 'Stable', name: 'Stable'},
+  {type: 'Beta', name: 'Beta'},
+  {type: 'Alpha', name: 'Alpha'},
+  {type: 'Draft', name: 'Draft'},
+  {type: 'Deprecated', name: 'Deprecated'},
 ]
 
 export default function StatusPage() {
@@ -98,23 +103,6 @@ export default function StatusPage() {
       .then((components) => setComponents(components))
       .catch((error) => console.error(error))
   }, [])
-
-  const statusesList = components.reduce((statusesList, {implementations}) => {
-    if (implementations.viewComponent) {
-      statusesList.add(implementations.viewComponent.status)
-    }
-
-    if (implementations.react) {
-      statusesList.add(implementations.react.status)
-    }
-
-    return new Set([...statusesList].sort())
-  }, new Set())
-
-  const statusFieldTypes = [...statusesList].map((status) => ({
-    type: status,
-    name: status,
-  }))
 
   return (
     <Layout
@@ -145,6 +133,9 @@ export default function StatusPage() {
                         selected={field.type === selectedField.type}
                         onSelect={() => setSelectedField(field)}
                       >
+                        <ActionList.LeadingVisual>
+                          <StyledOcticon icon={field.icon} />
+                        </ActionList.LeadingVisual>
                         {field.name}
                       </ActionList.Item>
                     ))}
@@ -158,15 +149,7 @@ export default function StatusPage() {
                         onSelect={() => setSelectedField(field)}
                       >
                         <ActionList.LeadingVisual>
-                          <Box
-                            aria-hidden="true"
-                            sx={{
-                              height: '12px',
-                              width: '12px',
-                              backgroundColor: getStatusColor(field.type),
-                              borderRadius: 99,
-                            }}
-                          />
+                          <StyledOcticon icon={DotFillIcon} color={getStatusColor(field.type)} />
                         </ActionList.LeadingVisual>
                         {field.name}
                       </ActionList.Item>
