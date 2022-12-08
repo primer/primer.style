@@ -21,7 +21,7 @@ export default function Hero() {
           </Text>
           <Text>
             Primer was created for GitHub by GitHub. We love it so much, we chose to{' '}
-            <Link href="https://github.com/primer/">open-source</Link> it to allow the community to design and build
+            <Link href="https://github.com/primer/" target="_blank">open-source</Link> it to allow the community to design and build
             their own projects with Primer.
           </Text>
         </Box>
