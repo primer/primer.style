@@ -1,5 +1,19 @@
 const teamContent = [
   {
+    name: 'Rayta van Rijswijk',
+    title: 'Senior Engineering Manager',
+    handle: 'raytalks',
+    questionOne: `Having worked in and with several different software development teams before, I've learned it takes more than a process to deliver fast, reliable, high performant, quality products.
+
+Combining design and engineering on a stable system, while creating the most astonishing, accessible experience for our end users and developers is pure joy.`,
+    questionTwo: `I was fortunate to have had great mentors and colleagues who supported me througout my career and taught me the nitty gritty of programming. I'm a big fan of Katrina Owen, co-founder and director of [Exercism](https://exercism.org/). I adore the work of management leaders like [Camille Fournier](https://twitter.com/skamille),
+    and I devour books where I can learn about people like [Erin Meyer's](https://erinmeyer.com/books/the-culture-map/) The Culture Map.`,
+    favoriteTools: `Obsidian, Slack, Raycast, iTerm, hand lotion`,
+    avatar: 'https://avatars.githubusercontent.com/u/13314317?s=400&u=98f8f63ae206c512f30f8363c2b5473201eda16d&v=4',
+    gif: 'https://user-images.githubusercontent.com/13314317/209345245-5ef0b194-ea9f-476a-88e2-0b6400cac9bf.gif',
+    alumni: false,
+  },
+  {
     name: 'Josh Bowden',
     handle: 'JoshBowdenConcepts',
     title: 'Software Engineer',
@@ -264,21 +278,6 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     favoriteTools: `Sublime Text, React, Pencil and Paper, Figma, GitHub, coffee`,
     avatar: 'https://user-images.githubusercontent.com/6720549/119029291-7418e480-b976-11eb-9641-7c47e8134414.jpg',
     gif: 'https://user-images.githubusercontent.com/6720549/118991044-63a24300-b951-11eb-81d4-d5a63f71db06.gif',
-    alumni: false,
-  },
-  {
-    name: 'Rayta van Rijswijk',
-    title: 'Senior Engineering Manager',
-    handle: 'raytalks',
-    questionOne: `Having worked in and with several different software development teams before, I've learned it takes more than a process to deliver fast, reliable, high performant, quality products. 
-
-Combining design and engineering on a stable system, while creating the most asthonishing, accessible experience for our end users and developers is pure joy.`,
-    questionTwo: `I was fortunate to have had great mentors and colleagues who supported me througout my career and taught me the nitty gritty of programming. I'm a big fan of Katrina Owen, co-founder and director of [Exercism](https://exercism.org/). I adore the work of management leaders like [Camille Fournier](https://twitter.com/skamille), 
-    and I devour books where I can learn about people like [Erin Meyer's](https://erinmeyer.com/books/the-culture-map/) The Culture Map.`,
-
-    favoriteTools: `Obsidian, Slack, Raycast, iTerm, hand lotion`,
-    avatar: 'https://avatars.githubusercontent.com/u/13314317?s=400&u=98f8f63ae206c512f30f8363c2b5473201eda16d&v=4',
-    gif: 'https://user-images.githubusercontent.com/13314317/209345245-5ef0b194-ea9f-476a-88e2-0b6400cac9bf.gif',
     alumni: false,
   },
   {
