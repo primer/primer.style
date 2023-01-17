@@ -381,7 +381,8 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     favoriteTools: 'Pen and paper, Figma, photography camera',
     avatar: 'https://user-images.githubusercontent.com/293280/64046286-6d9e6580-cb20-11e9-97da-47fb76a4ee36.JPG',
     gif: 'https://user-images.githubusercontent.com/293280/64045892-501ccc00-cb1f-11e9-99fb-ee1b8f7ce6ce.gif',
-    alumni: false,
+    alumni: true,
+    color: 'orange',
   },
   {
     name: 'Cole Bemis',
@@ -453,7 +454,8 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     favoriteTools: 'Figma, Atom, Keynote, Bear Notes, Spark Mail, Spotify',
     avatar: 'https://user-images.githubusercontent.com/10384315/48450021-61941380-e759-11e8-90e0-7b41f6cbb6e8.jpg',
     gif: 'https://camo.githubusercontent.com/c325b2b42ec71db51a92d7cdb2a6684824bc0464/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f7854687557686f614e794e426a54474552612f67697068792e676966',
-    alumni: false,
+    alumni: true,
+    color: 'orange',
   },
   {
     name: 'Emily Brick',
