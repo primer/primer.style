@@ -3,6 +3,7 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "now-dev": "gatsby develop -p $PORT",
     "now-build": "npm run build",
     "lint": "eslint *.js src"
@@ -12,10 +13,9 @@
     "@mdx-js/react": "^1.0.27",
     "@primer/component-metadata": "^0.5.1",
     "@primer/css": "^20.4.2",
-    "@primer/gatsby-theme-doctocat": "^4.2.3",
+    "@primer/gatsby-theme-doctocat": "^4.4.0",
     "@primer/octicons-react": "^17.7.0",
     "@primer/react": "^35.2.2",
-    "@primer/releases": "0.0.0-634eadc",
     "@svgr/webpack": "^4.3.2",
     "gatsby": "^2.13.39",
     "gatsby-plugin-manifest": "^2.2.4",

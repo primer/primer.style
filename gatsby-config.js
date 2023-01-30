@@ -3,6 +3,11 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: 'Primer Design System',
+    header: {
+      title: 'Primer',
+      url: 'https://primer.style',
+      logoUrl: 'https://primer.style',
+    },
     shortName: '',
     description: 'The design system that powers GitHub',
     imageUrl: 'https://user-images.githubusercontent.com/10384315/53922681-2f6d3100-402a-11e9-9719-5d1811c8110a.png',
