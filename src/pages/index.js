@@ -54,7 +54,7 @@ export default function Index() {
 const Promo = ({title, href, image: Image = 'div', children, ...rest}) => (
   <Box pr={[0, 0, gutter]} mb={[6, 6, 8]} width={[1, 1, 1 / 2, 1 / 3]} {...rest}>
     <Link sx={{display: 'block', mb: 1}} href={href}>
-      <Box as={Image} bg="black" border={0} borderRadius={2} width="100%" height={null} minHeight={220} />
+      <Box as={Image} bg="black" border={0} borderRadius={2} width="100%" height={null} />
     </Link>
     <Heading fontSize={4}>
       <Link sx={{color: 'inherit', underline: false}} href={href}>
