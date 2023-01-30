@@ -1738,7 +1738,7 @@
   dependencies:
     "@primer/primitives" "^7.9.0"
 
-"@primer/gatsby-theme-doctocat@^4.4.3":
+"@primer/gatsby-theme-doctocat@^4.4.0":
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/@primer/gatsby-theme-doctocat/-/gatsby-theme-doctocat-4.4.0.tgz#d46835087b7db4f49768b82395b6ecfc5f7bdbab"
   integrity sha512-Tc+XSXGFLA+S0IsXaZYEsXorZN9jygV7gwEIC2pwma7151ylSQTV+XDm0c2hvsSnTW1sBU/uk0pqsFm6gep4DA==
