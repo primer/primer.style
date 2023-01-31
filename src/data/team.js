@@ -1,4 +1,15 @@
 const teamContent = [
+    {
+    name: 'Tyler Jones',
+    title: 'Accessibility Software Engineer',
+    handle: 'tylerjdev',
+    questionOne: `Being able to utilize the same components throughout different applications is what I love about design systems. I believe it can be a powerful tool to keep consistency, especially in regards to accessibility. I also love the challenges that a design system brings, along with the rewards for the developers that utilize it.`,
+    questionTwo: `I've learned a ton from my colleagues in the past. Stephen, Kyle, Michael, John, Trevor, and so many others. I'm also a big fan of [Adrian Roselli](https://adrianroselli.com/), [Sara Soueidan](https://www.sarasoueidan.com/), [Marcy Sutton](https://marcysutton.com/), and all the others who helped me gain more insights into accessibility as a whole.`,
+    favoriteTools: `VS Code, NVDA, GitHub, CodePen, my notebook`,
+    avatar: 'https://avatars.githubusercontent.com/u/26746305?v=4',
+    gif: 'https://camo.githubusercontent.com/8a2ec9a1d7620b431b3ae56cc487bb1d78fe0ed71e9bc8275258c6db84223e57/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f7161765844566a7561475075772f67697068792e676966',
+    alumni: false,
+  },
   {
     name: 'Rayta van Rijswijk',
     title: 'Senior Engineering Manager',
@@ -137,17 +148,6 @@ The playful, innovative work of my friend [Charlie Gerard](https://charliegerard
     favoriteTools: `VS Code, React, CSS, axe Accessibility Linter, Netlify, and a big mug`,
     avatar: 'https://user-images.githubusercontent.com/3902488/153995479-15e25bf5-3f81-4f05-8569-213f668590d4.jpeg',
     gif: 'https://user-images.githubusercontent.com/3902488/153995859-eb0b6072-523e-46f5-9850-375a52876716.gif',
-    alumni: false,
-  },
-  {
-    name: 'Tyler Jones',
-    title: 'Accessibility Software Engineer',
-    handle: 'tylerjdev',
-    questionOne: `Being able to utilize the same components throughout different applications is what I love about design systems. I believe it can be a powerful tool to keep consistency, especially in regards to accessibility. I also love the challenges that a design system brings, along with the rewards for the developers that utilize it.`,
-    questionTwo: `I've learned a ton from my colleagues in the past. Stephen, Kyle, Michael, John, Trevor, and so many others. I'm also a big fan of [Adrian Roselli](https://adrianroselli.com/), [Sara Soueidan](https://www.sarasoueidan.com/), [Marcy Sutton](https://marcysutton.com/), and all the others who helped me gain more insights into accessibility as a whole.`,
-    favoriteTools: `VS Code, NVDA, GitHub, CodePen, my notebook`,
-    avatar: 'https://avatars.githubusercontent.com/u/26746305?v=4',
-    gif: 'https://camo.githubusercontent.com/8a2ec9a1d7620b431b3ae56cc487bb1d78fe0ed71e9bc8275258c6db84223e57/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f7161765844566a7561475075772f67697068792e676966',
     alumni: false,
   },
   {
