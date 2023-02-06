@@ -48,6 +48,7 @@ export default function Member(props) {
             src={avatarImage}
             bg={color}
             hover={hover}
+            name={member.name}
             href={`https://github.com/${member.handle}`}
             onFocus={() => setHover(true)}
             onBlur={() => setHover(false)}
