@@ -1,0 +1,136 @@
+{
+  "redirects": [
+    {
+      "name": "Redirect /design/accessibility",
+      "match": "(design)/(accessibility)(.*)",
+      "destination": "/design/guides/accessibility{R:3}"
+    },
+    {
+      "name": "Redirect /octicons/packages/ruby",
+      "match": "octicons/packages/ruby",
+      "destination": "https://github.com/primer/octicons/tree/main/lib/octicons_gem#readme"
+    },
+    {
+      "name": "Redirect /octicons/packages/jekyll",
+      "match": "octicons/packages/jekyll",
+      "destination": "https://github.com/primer/octicons/tree/main/lib/octicons_jekyll#readme"
+    },
+    {
+      "name": "Redirect /octicons/packages/javascript",
+      "match": "octicons/packages/javascript",
+      "destination": "https://github.com/primer/octicons/tree/main/lib/octicons_node#readme"
+    },
+    {
+      "name": "Redirect /octicons/packages/react",
+      "match": "octicons/packages/react",
+      "destination": "https://github.com/primer/octicons/tree/main/lib/octicons_react#readme"
+    },
+    {
+      "name": "Redirect /octicons/packages/styled-system",
+      "match": "octicons/packages/styled-system",
+      "destination": "https://github.com/primer/octicons/tree/main/lib/octicons_styled#readme"
+    },
+    {
+      "name": "Redirect /octicons/guidelines/design",
+      "match": "octicons/guidelines/design",
+      "destination": "/design/foundations/icons/design-guidelines"
+    },
+    {
+      "name": "Redirect /octicons/*",
+      "match": "(octicons)(.*)",
+      "destination": "/design/foundations/icons{R:2}"
+    },
+    {
+      "name": "Redirect /components/*",
+      "match": "(components)(.*)",
+      "destination": "/react"
+    }
+  ],
+  "rewrites": [
+    {
+      "name": "React reverse-proxy",
+      "match": "^react/(.*)",
+      "destination": "https://primer.github.io/react/{R:1}"
+    },
+    {
+      "name": "CSS reverse-proxy",
+      "match": "^css/(.*)",
+      "destination": "https://primer.github.io/css/{R:1}"
+    },
+    {
+      "name": "ViewComponents Preview assets proxy",
+      "match": "^assets/(.*)",
+      "destination": "https://view-components-storybook.eastus.cloudapp.azure.com/assets/{R:1}"
+    },
+    {
+      "name": "ViewComponents Lookbook assets proxy",
+      "match": "^lookbook-assets/(.*)",
+      "destination": "https://view-components-storybook.eastus.cloudapp.azure.com/lookbook-assets/{R:1}"
+    },
+    {
+      "name": "ViewComponents Lookbook proxy",
+      "match": "^view-components/lookbook/(.*)",
+      "destination": "https://view-components-storybook.eastus.cloudapp.azure.com/view-components/lookbook/{R:1}"
+    },
+    {
+      "name": "ViewComponents Rails App proxy",
+      "match": "^view-components/rails-app/(.*)",
+      "destination": "https://view-components-storybook.eastus.cloudapp.azure.com/view-components/rails-app/{R:1}"
+    },
+    {
+      "name": "ViewComponents proxy",
+      "match": "^view-components/(.*)",
+      "destination": "https://primer.github.io/view_components/{R:1}"
+    },
+    {
+      "name": "Design proxy",
+      "match": "^design/(.*)",
+      "destination": "https://primer.github.io/design/{R:1}"
+    },
+    {
+      "name": "Presentations proxy",
+      "match": "^presentations/(.*)",
+      "destination": "https://primer.github.io/presentations/{R:1}"
+    },
+    {
+      "name": "Doctocat",
+      "match": "^doctocat/(.*)",
+      "destination": "https://primer.github.io/doctocat/{R:1}"
+    },
+    {
+      "name": "CLI proxy",
+      "match": "^cli/(.*)",
+      "destination": "https://primer.github.io/cli/{R:1}"
+    },
+    {
+      "name": "Primitives proxy",
+      "match": "^primitives/(.*)",
+      "destination": "https://primer.github.io/primitives/{R:1}"
+    },
+    {
+      "name": "Mobile proxy",
+      "match": "^mobile/(.*)",
+      "destination": "https://primer.github.io/mobile/{R:1}"
+    },
+    {
+      "name": "Brand proxy",
+      "match": "^brand/(.*)",
+      "destination": "https://primer.github.io/brand/{R:1}"
+    },
+    {
+      "name": "Desktop proxy",
+      "match": "^desktop/(.*)",
+      "destination": "https://primer.github.io/desktop/{R:1}"
+    },
+    {
+      "name": "Contribute proxy",
+      "match": "^contribute/(.*)",
+      "destination": "https://primer.github.io/contribute/{R:1}"
+    },
+    {
+      "name": "Prism proxy",
+      "match": "^prism/(.*)",
+      "destination": "https://primer.github.io/prism/{R:1}"
+    }
+  ]
+}

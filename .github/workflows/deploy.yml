@@ -24,7 +24,11 @@ jobs:
           yarn
           yarn build
 
-      - name: Copy rewrites to server root
+      - name: build redirects
+        run: |
+          node ./script/redirects.js
+
+      - name: Copy redirects to server root
         run: |
           cp web.config public/
 
