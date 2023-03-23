@@ -19,12 +19,12 @@ jobs:
         with:
           node-version: '14.x'
 
-      - name: install and build
+      - name: Install and build
         run: |
           yarn
           yarn build
 
-      - name: build redirects
+      - name: Build redirects
         run: |
           node ./script/redirects.js
 
