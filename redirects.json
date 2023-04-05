@@ -42,7 +42,7 @@
     },
     {
       "name": "Redirect /components/*",
-      "match": "(components)(.*)",
+      "match": "^components(/.*)?$",
       "destination": "/react"
     }
   ],
