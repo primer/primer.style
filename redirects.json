@@ -39,11 +39,6 @@
       "name": "Redirect /octicons/*",
       "match": "(octicons)(.*)",
       "destination": "/design/foundations/icons{R:2}"
-    },
-    {
-      "name": "Redirect /components/*",
-      "match": "^\/components\/(?!view-components\/).*$",
-      "destination": "/react"
     }
   ],
   "rewrites": [
