@@ -143,10 +143,6 @@ function buildRedirects() {
         ${redirects}
         <!--END 301 redirects -->
         ${rewrites}
-        <rule name="Redirect /components" stopProcessing="true">
-          <match url="^components/(.*)" />
-          <action type="Redirect" redirectType="Permanent" url="/react" />
-        </rule>
       </rules>
       <outboundRules>
         <preConditions>
