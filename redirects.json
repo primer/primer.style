@@ -43,16 +43,6 @@
   ],
   "rewrites": [
     {
-      "name": "React reverse-proxy",
-      "match": "^react/(.*)",
-      "destination": "https://primer.github.io/react/{R:1}"
-    },
-    {
-      "name": "CSS reverse-proxy",
-      "match": "^css/(.*)",
-      "destination": "https://primer.github.io/css/{R:1}"
-    },
-    {
       "name": "ViewComponents Preview assets proxy",
       "match": "^assets/(.*)",
       "destination": "https://view-components-storybook.eastus.cloudapp.azure.com/assets/{R:1}"
@@ -126,6 +116,16 @@
       "name": "Prism proxy",
       "match": "^prism/(.*)",
       "destination": "https://primer.github.io/prism/{R:1}"
+    },
+    {
+      "name": "React reverse-proxy",
+      "match": "^react/(.*)",
+      "destination": "https://primer.github.io/react/{R:1}"
+    },
+    {
+      "name": "CSS reverse-proxy",
+      "match": "^css/(.*)",
+      "destination": "https://primer.github.io/css/{R:1}"
     }
   ]
 }
