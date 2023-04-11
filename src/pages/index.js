@@ -27,7 +27,7 @@ export default function Index() {
               <Promo title="CSS framework" image={CSSImage} href="/css">
                 Utility-centric and BEM-style components to give you the building blocks for any web project.
               </Promo>
-              <Promo title="React components" image={ComponentsImage} href="/components">
+              <Promo title="React components" image={ComponentsImage} href="/react">
                 Presentational UI components with encapsulated styles and constraint-based theme props.
               </Promo>
               <Promo title="ViewComponents" image={ViewComponentsImage} href="/view-components">
