@@ -126,6 +126,26 @@
       "name": "CSS reverse-proxy",
       "match": "^css/(.*)",
       "destination": "https://primer.github.io/css/{R:1}"
+    },
+    {
+      "name": "Redirect /primitives/colors",
+      "match": "/primitives/colors",
+      "destination": "https://primer.style/design/foundations/color"
+    },
+    {
+      "name": "Redirect /primitives/spacing",
+      "match": "/primitives/spacing",
+      "destination": "https://primer.style/primitives/storybook/?path=/story/size-base--base"
+    },
+    {
+      "name": "Redirect /primitives/typography",
+      "match": "/primitives/typography",
+      "destination": "https://primer.style/primitives/storybook/?path=/story/typography-base--base"
+    },
+    {
+      "name": "Redirect /primitives",
+      "match": "/primitives",
+      "destination": "https://primer.style/primitives/storybook/"
     }
   ]
 }
