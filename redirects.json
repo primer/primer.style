@@ -39,6 +39,26 @@
       "name": "Redirect /octicons/*",
       "match": "(octicons)(.*)",
       "destination": "/design/foundations/icons{R:2}"
+    },
+    {
+      "name": "Redirect /primitives/colors",
+      "match": "primitives/colors",
+      "destination": "/design/foundations/color"
+    },
+    {
+      "name": "Redirect /primitives/spacing",
+      "match": "primitives/spacing",
+      "destination": "/primitives/storybook/?path=/story/size-base--base"
+    },
+    {
+      "name": "Redirect /primitives/typography",
+      "match": "primitives/typography",
+      "destination": "/primitives/storybook/?path=/story/typography-base--base"
+    },
+    {
+      "name": "Redirect /primitives",
+      "match": "^primitives/?$",
+      "destination": "/primitives/storybook/"
     }
   ],
   "rewrites": [
@@ -89,8 +109,8 @@
     },
     {
       "name": "Primitives proxy",
-      "match": "^primitives/(.*)",
-      "destination": "https://primer.github.io/primitives/{R:1}"
+      "match": "^primitives/storybook/(.*)",
+      "destination": "https://primer.github.io/primitives/storybook/{R:1}"
     },
     {
       "name": "Mobile proxy",
