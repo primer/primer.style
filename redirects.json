@@ -144,8 +144,8 @@
     },
     {
       "name": "Redirect /primitives",
-      "match": "/primitives",
-      "destination": "https://primer.style/primitives/storybook/"
+      "match": "^primitives/?$",
+      "destination": "/primitives/storybook/"
     }
   ]
 }
