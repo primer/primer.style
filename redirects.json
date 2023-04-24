@@ -139,8 +139,8 @@
     },
     {
       "name": "Redirect /primitives/typography",
-      "match": "/primitives/typography",
-      "destination": "https://primer.style/primitives/storybook/?path=/story/typography-base--base"
+      "match": "primitives/typography",
+      "destination": "/primitives/storybook/?path=/story/typography-base--base"
     },
     {
       "name": "Redirect /primitives",
