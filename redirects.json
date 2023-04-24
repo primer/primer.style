@@ -129,8 +129,8 @@
     },
     {
       "name": "Redirect /primitives/colors",
-      "match": "/primitives/colors",
-      "destination": "https://primer.style/design/foundations/color"
+      "match": "primitives/colors",
+      "destination": "/design/foundations/color"
     },
     {
       "name": "Redirect /primitives/spacing",
