@@ -134,8 +134,8 @@
     },
     {
       "name": "Redirect /primitives/spacing",
-      "match": "/primitives/spacing",
-      "destination": "https://primer.style/primitives/storybook/?path=/story/size-base--base"
+      "match": "primitives/spacing",
+      "destination": "/primitives/storybook/?path=/story/size-base--base"
     },
     {
       "name": "Redirect /primitives/typography",
