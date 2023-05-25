@@ -59,6 +59,201 @@
       "name": "Redirect /primitives",
       "match": "^primitives/?$",
       "destination": "/primitives/storybook/"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::ActionList",
+      "match": "^view-components/components/alpha/actionlist",
+      "destination": "/design/components/action-list"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::ActionMenu",
+      "match": "^view-components/components/alpha/actionmenu",
+      "destination": "/design/components/action-menu"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::AutoComplete",
+      "match": "^view-components/components/beta/autocomplete",
+      "destination": "/design/components/autocomplete"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::AvatarStack",
+      "match": "^view-components/components/beta/avatarstack",
+      "destination": "/design/components/avatar-stack"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Avatar",
+      "match": "^view-components/components/beta/avatar",
+      "destination": "/design/components/avatar"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Box",
+      "match": "^view-components/components/box",
+      "destination": "/design/components/box"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Breadcrumbs",
+      "match": "^view-components/components/beta/breadcrumbs",
+      "destination": "/design/components/breadcrumbs"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::ButtonGroup",
+      "match": "^view-components/components/beta/buttongroup",
+      "destination": "/design/components/button-group"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Button",
+      "match": "^view-components/components/beta/button",
+      "destination": "/design/components/button"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::CheckBoxGroup",
+      "match": "^view-components/components/alpha/checkboxgroup",
+      "destination": "/design/components/checkbox-group"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::CheckBox",
+      "match": "^view-components/components/alpha/checkbox",
+      "destination": "/design/components/checkbox"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::ClipboardCopy",
+      "match": "^view-components/components/beta/clipboardcopy",
+      "destination": "/design/components/clipboard-copy"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Counter",
+      "match": "^view-components/components/beta/counter",
+      "destination": "/design/components/counter-label"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Details",
+      "match": "^view-components/components/beta/details",
+      "destination": "/design/components/details"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::Dialog",
+      "match": "^view-components/components/alpha/dialog",
+      "destination": "/design/components/dialog"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Flash",
+      "match": "^view-components/components/beta/flash",
+      "destination": "/design/components/flash"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Heading",
+      "match": "^view-components/components/beta/heading",
+      "destination": "/design/components/heading"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Octicon",
+      "match": "^view-components/components/beta/octicon",
+      "destination": "/design/components/icon"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::ImageCrop",
+      "match": "^view-components/components/alpha/imagecrop",
+      "destination": "/design/components/image-crop"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::Image",
+      "match": "^view-components/components/alpha/image",
+      "destination": "/design/components/image"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Label",
+      "match": "^view-components/components/beta/label",
+      "destination": "/design/components/label"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Link",
+      "match": "^view-components/components/beta/link",
+      "destination": "/design/components/link"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Markdown",
+      "match": "^view-components/components/beta/markdown",
+      "destination": "/design/components/markdown"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::NavList",
+      "match": "^view-components/components/alpha/navlist",
+      "destination": "/design/components/nav-list"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Popover",
+      "match": "^view-components/components/beta/popover",
+      "destination": "/design/components/popover"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::ProgressBar",
+      "match": "^view-components/components/beta/progressbar",
+      "destination": "/design/components/progress-bar"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::RadioButtonGroup",
+      "match": "^view-components/components/alpha/radiobuttongroup",
+      "destination": "/design/components/radio-group"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::RadioButton",
+      "match": "^view-components/components/alpha/radiobutton",
+      "destination": "/design/components/radio"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::RelativeTime",
+      "match": "^view-components/components/beta/relativetime",
+      "destination": "/design/components/relative-time"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::SegmentedControl",
+      "match": "^view-components/components/alpha/segmentedcontrol",
+      "destination": "/design/components/segmented-control"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::Select",
+      "match": "^view-components/components/alpha/select",
+      "destination": "/design/components/select"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::State",
+      "match": "^view-components/components/beta/state",
+      "destination": "/design/components/state-label"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Subhead",
+      "match": "^view-components/components/beta/subhead",
+      "destination": "/design/components/subhead"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::TabContainer",
+      "match": "^view-components/components/alpha/tabcontainer",
+      "destination": "/design/components/tab-container"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::TabNav",
+      "match": "^view-components/components/alpha/tabnav",
+      "destination": "/design/components/tab-nav"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::TabPanels",
+      "match": "^view-components/components/alpha/tabpanels",
+      "destination": "/design/components/tab-panels"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::TextField",
+      "match": "^view-components/components/alpha/textfield",
+      "destination": "/design/components/text-input"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::TextArea",
+      "match": "^view-components/components/alpha/textarea",
+      "destination": "/design/components/textarea"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::ToggleSwitch",
+      "match": "^view-components/components/alpha/toggleswitch",
+      "destination": "/design/components/toggle-switch"
     }
   ],
   "rewrites": [
