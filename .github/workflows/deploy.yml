@@ -7,6 +7,10 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -46,6 +50,13 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
+      - name: Az CLI login
+        uses: azure/login@v1
+        with:
+          client-id: d1121761-5bcf-486b-aff0-e6451b4f4e05
+          tenant-id: 398a6654-997b-47e9-b12b-9515b896b4de
+          subscription-id: 550eb99d-d0c7-4651-a337-f53fa6520c4f
+
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
@@ -57,5 +68,4 @@ jobs:
         with:
           app-name: 'primerstyle'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
           package: .
