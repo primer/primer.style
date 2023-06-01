@@ -12,7 +12,7 @@ const teamContent = [
   },
   {
     name: 'Rayta van Rijswijk',
-    title: 'Senior Engineering Manager',
+    title: 'Primer Brand Engineering Manager',
     handle: 'raytalks',
     questionOne: `Having worked in and with several different software development teams before, I've learned it takes more than a process to deliver fast, reliable, high performant, quality products.
 
