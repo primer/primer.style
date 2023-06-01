@@ -137,7 +137,7 @@ Finally, when it comes to building and supporting teams I've loved going through
   },
   {
     name: 'Leslie Cohn-Wein',
-    title: 'Design Engineering Director',
+    title: 'Primer Engineering Manager',
     handle: 'lesliecdubs',
     questionOne: `As an agency developer early in my career, it seemed we were always building the same UI with different styles. So why not build once, with enough flexibility to customize for many clients?
 
@@ -512,7 +512,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
   {
     name: 'Diana Mounter',
     handle: 'broccolini',
-    title: 'Design Infrastructure Director',
+    title: 'Head of Design',
     cssFeature: 'text-decoration: underline wavy',
     questionOne:
       'I was drawn to design systems for many reasons—the opportunity to improve design and development workflow efficiency; the potential benefits well-design systems can bring to the user experience; I like to bring order to chaos and enjoy working at the intersection of design and code. I also love that there is still so much to learn in the field and really enjoy the passion of the community behind design systems.',
