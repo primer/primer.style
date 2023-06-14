@@ -256,9 +256,9 @@
       "destination": "/design/components/toggle-switch"
     },
     {
-      "name": "Redirect /* → /design/*",
-      "match": "(.*)",
-      "destination": "/design{R:1}"
+      "name": "Redirect / → /design",
+      "match": "/",
+      "destination": "/design"
     }
   ],
   "rewrites": [
