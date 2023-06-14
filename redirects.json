@@ -257,7 +257,7 @@
     },
     {
       "name": "Redirect / → /design",
-      "match": "/",
+      "match": "^/",
       "destination": "/design"
     }
   ],
