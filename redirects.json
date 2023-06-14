@@ -254,11 +254,6 @@
       "name": "ViewComponents docs for Primer::Alpha::ToggleSwitch",
       "match": "^view-components/components/alpha/toggleswitch",
       "destination": "/design/components/toggle-switch"
-    },
-    {
-      "name": "Redirect / → /design",
-      "match": "^/",
-      "destination": "/design"
     }
   ],
   "rewrites": [
