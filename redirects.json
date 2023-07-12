@@ -259,6 +259,71 @@
       "name": "Redirect /",
       "match": "^$",
       "destination": "/design"
+    },
+    {
+      "name": "Redirect /css to Storybook",
+      "match": "^css/?$",
+      "destination": "/css/storybook/"
+    },
+    {
+      "name": "CSS Utilities",
+      "match": "^css/utilities",
+      "destination": "/design/foundations/css-utilities/getting-started"
+    },
+    {
+      "name": "CSS Utilities: animations",
+      "match": "^css/utilities/animations",
+      "destination": "/design/foundations/css-utilities/animations"
+    },
+    {
+      "name": "CSS Utilities: borders",
+      "match": "^css/utilities/borders",
+      "destination": "/design/foundations/css-utilities/borders"
+    },
+    {
+      "name": "CSS Utilities: box-shadow",
+      "match": "^css/utilities/box-shadow",
+      "destination": "/design/foundations/css-utilities/box-shadow"
+    },
+    {
+      "name": "CSS Utilities: colors",
+      "match": "^css/utilities/colors",
+      "destination": "/design/foundations/css-utilities/colors"
+    },
+    {
+      "name": "CSS Utilities: details",
+      "match": "^css/utilities/details",
+      "destination": "/design/foundations/css-utilities/details"
+    },
+    {
+      "name": "CSS Utilities: flexbox",
+      "match": "^css/utilities/flexbox",
+      "destination": "/design/foundations/css-utilities/flexbox"
+    },
+    {
+      "name": "CSS Utilities: grid",
+      "match": "^css/utilities/grid",
+      "destination": "/design/foundations/css-utilities/grid"
+    },
+    {
+      "name": "CSS Utilities: layout",
+      "match": "^css/utilities/layout",
+      "destination": "/design/foundations/css-utilities/layout"
+    },
+    {
+      "name": "CSS Utilities: margin",
+      "match": "^css/utilities/margin",
+      "destination": "/design/foundations/css-utilities/margin"
+    },
+    {
+      "name": "CSS Utilities: padding",
+      "match": "^css/utilities/padding",
+      "destination": "/design/foundations/css-utilities/padding"
+    },
+    {
+      "name": "CSS Utilities: typography",
+      "match": "^css/utilities/typography",
+      "destination": "/design/foundations/css-utilities/typography"
     }
   ],
   "rewrites": [
