@@ -259,6 +259,16 @@
       "name": "Redirect /",
       "match": "^$",
       "destination": "/design"
+    },
+    {
+      "name": "Redirect /css to Storybook",
+      "match": "^css/?$",
+      "destination": "/css/storybook/"
+    },
+    {
+      "name": "CSS Utilities",
+      "match": "^css/utilities",
+      "destination": "/design/foundations/css-utilities/getting-started"
     }
   ],
   "rewrites": [
@@ -344,8 +354,8 @@
     },
     {
       "name": "CSS reverse-proxy",
-      "match": "^css/(.*)",
-      "destination": "https://primer.github.io/css/{R:1}"
+      "match": "^css/storybook/(.*)",
+      "destination": "https://primer.github.io/css/storybook/{R:1}"
     }
   ]
 }
