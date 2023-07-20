@@ -1738,10 +1738,10 @@
   dependencies:
     "@primer/primitives" "^7.9.0"
 
-"@primer/gatsby-theme-doctocat@^4.4.0":
-  version "4.4.1"
-  resolved "https://registry.npmjs.org/@primer/gatsby-theme-doctocat/-/gatsby-theme-doctocat-4.4.1.tgz"
-  integrity sha512-wiPGsSLDv6J+svY8N7o7QHSsIT2YsV5YpaLAT8XtOa9yNPfqzfjR/OHM3M+siH2E2vI9Sv4I322nUpxYIcPBIw==
+"@primer/gatsby-theme-doctocat@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@primer/gatsby-theme-doctocat/-/gatsby-theme-doctocat-4.5.1.tgz#f053733ca0c58981dafb74ae7aeb7f6c0ad9c9cb"
+  integrity sha512-C01078zcfBhwVLKI9URXP1YX+FA1I6TyVEPpwIwXQMAyXJUxsPbvZwKBp01dtkkMwQI4tZ2NthM4zSysTXtc5A==
   dependencies:
     "@babel/preset-env" "^7.5.5"
     "@babel/preset-react" "^7.0.0"
