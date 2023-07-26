@@ -63,27 +63,37 @@
     {
       "name": "ViewComponents docs for Primer::Alpha::ActionList",
       "match": "^view-components/components/alpha/actionlist",
-      "destination": "/design/components/action-list"
+      "destination": "/design/components/action-list/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::ActionMenu",
       "match": "^view-components/components/alpha/actionmenu",
-      "destination": "/design/components/action-menu"
+      "destination": "/design/components/action-menu/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::AutoComplete",
       "match": "^view-components/components/beta/autocomplete",
-      "destination": "/design/components/autocomplete"
+      "destination": "/design/components/autocomplete/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::AvatarStack",
       "match": "^view-components/components/beta/avatarstack",
-      "destination": "/design/components/avatar-stack"
+      "destination": "/design/components/avatar-stack/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Avatar",
       "match": "^view-components/components/beta/avatar",
-      "destination": "/design/components/avatar"
+      "destination": "/design/components/avatar/rails/beta"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::Banner",
+      "match": "^view-components/components/alpha/banner",
+      "destination": "/design/components/banner/rails/alpha"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::BorderBox",
+      "match": "^view-components/components/beta/borderbox",
+      "destination": "/design/components/border-box/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Box",
@@ -93,167 +103,242 @@
     {
       "name": "ViewComponents docs for Primer::Beta::Breadcrumbs",
       "match": "^view-components/components/beta/breadcrumbs",
-      "destination": "/design/components/breadcrumbs"
+      "destination": "/design/components/breadcrumbs/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::ButtonGroup",
       "match": "^view-components/components/beta/buttongroup",
-      "destination": "/design/components/button-group"
+      "destination": "/design/components/button-group/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Button",
       "match": "^view-components/components/beta/button",
-      "destination": "/design/components/button"
+      "destination": "/design/components/button/rails/beta"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::ButtonMarketing",
+      "match": "^view-components/components/alpha/buttonmarketing",
+      "destination": "/design/components/button-marketing/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::CheckBoxGroup",
       "match": "^view-components/components/alpha/checkboxgroup",
-      "destination": "/design/components/checkbox-group"
+      "destination": "/design/components/checkbox-group/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::CheckBox",
       "match": "^view-components/components/alpha/checkbox",
-      "destination": "/design/components/checkbox"
+      "destination": "/design/components/checkbox/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::ClipboardCopy",
       "match": "^view-components/components/beta/clipboardcopy",
-      "destination": "/design/components/clipboard-copy"
+      "destination": "/design/components/clipboard-copy/rails/beta"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::CloseButton",
+      "match": "^view-components/components/beta/closebutton",
+      "destination": "/design/components/close-button/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Counter",
       "match": "^view-components/components/beta/counter",
-      "destination": "/design/components/counter-label"
+      "destination": "/design/components/counter-label/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Details",
       "match": "^view-components/components/beta/details",
-      "destination": "/design/components/details"
+      "destination": "/design/components/details/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::Dialog",
       "match": "^view-components/components/alpha/dialog",
-      "destination": "/design/components/dialog"
+      "destination": "/design/components/dialog/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Flash",
       "match": "^view-components/components/beta/flash",
-      "destination": "/design/components/flash"
+      "destination": "/design/components/flash/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Heading",
       "match": "^view-components/components/beta/heading",
-      "destination": "/design/components/heading"
+      "destination": "/design/components/heading/rails/beta"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::HiddenTextExpander",
+      "match": "^view-components/components/alpha/hiddentextexpander",
+      "destination": "/design/components/hidden-text-expander/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Octicon",
       "match": "^view-components/components/beta/octicon",
-      "destination": "/design/components/icon"
+      "destination": "/design/components/icon/rails/beta"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::IconButton",
+      "match": "^view-components/components/beta/iconbutton",
+      "destination": "/design/components/icon-button/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::ImageCrop",
       "match": "^view-components/components/alpha/imagecrop",
-      "destination": "/design/components/image-crop"
+      "destination": "/design/components/image-crop/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::Image",
       "match": "^view-components/components/alpha/image",
-      "destination": "/design/components/image"
+      "destination": "/design/components/image/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Label",
       "match": "^view-components/components/beta/label",
-      "destination": "/design/components/label"
+      "destination": "/design/components/label/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Link",
       "match": "^view-components/components/beta/link",
-      "destination": "/design/components/link"
+      "destination": "/design/components/link/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Markdown",
       "match": "^view-components/components/beta/markdown",
-      "destination": "/design/components/markdown"
+      "destination": "/design/components/markdown/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::NavList",
       "match": "^view-components/components/alpha/navlist",
-      "destination": "/design/components/nav-list"
+      "destination": "/design/components/nav-list/rails/alpha"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::OcticonSymbols",
+      "match": "^view-components/components/alpha/octiconsymbols",
+      "destination": "/design/components/octicon-symbols/rails/alpha"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::Overlay",
+      "match": "^view-components/components/alpha/overlay",
+      "destination": "/design/components/overlay/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Popover",
       "match": "^view-components/components/beta/popover",
-      "destination": "/design/components/popover"
+      "destination": "/design/components/popover/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::ProgressBar",
       "match": "^view-components/components/beta/progressbar",
-      "destination": "/design/components/progress-bar"
+      "destination": "/design/components/progress-bar/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::RadioButtonGroup",
       "match": "^view-components/components/alpha/radiobuttongroup",
-      "destination": "/design/components/radio-group"
+      "destination": "/design/components/radio-group/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::RadioButton",
       "match": "^view-components/components/alpha/radiobutton",
-      "destination": "/design/components/radio"
+      "destination": "/design/components/radio/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::RelativeTime",
       "match": "^view-components/components/beta/relativetime",
-      "destination": "/design/components/relative-time"
+      "destination": "/design/components/relative-time/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::SegmentedControl",
       "match": "^view-components/components/alpha/segmentedcontrol",
-      "destination": "/design/components/segmented-control"
+      "destination": "/design/components/segmented-control/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::Select",
       "match": "^view-components/components/alpha/select",
-      "destination": "/design/components/select"
+      "destination": "/design/components/select/rails/alpha"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Spinner",
+      "match": "^view-components/components/beta/spinner",
+      "destination": "/design/components/spinner/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::State",
       "match": "^view-components/components/beta/state",
-      "destination": "/design/components/state-label"
+      "destination": "/design/components/state-label/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Subhead",
       "match": "^view-components/components/beta/subhead",
-      "destination": "/design/components/subhead"
+      "destination": "/design/components/subhead/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::TabContainer",
       "match": "^view-components/components/alpha/tabcontainer",
-      "destination": "/design/components/tab-container"
+      "destination": "/design/components/tab-container/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::TabNav",
       "match": "^view-components/components/alpha/tabnav",
-      "destination": "/design/components/tab-nav"
+      "destination": "/design/components/tab-nav/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::TabPanels",
       "match": "^view-components/components/alpha/tabpanels",
-      "destination": "/design/components/tab-panels"
+      "destination": "/design/components/tab-panels/rails/alpha"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Beta::Text",
+      "match": "^view-components/components/beta/text",
+      "destination": "/design/components/text/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::TextField",
       "match": "^view-components/components/alpha/textfield",
-      "destination": "/design/components/text-input"
+      "destination": "/design/components/text-input/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::TextArea",
       "match": "^view-components/components/alpha/textarea",
-      "destination": "/design/components/textarea"
+      "destination": "/design/components/textarea/rails/alpha"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::Timeline",
+      "match": "^view-components/components/beta/timelineitem",
+      "destination": "/design/components/timeline/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::ToggleSwitch",
       "match": "^view-components/components/alpha/toggleswitch",
-      "destination": "/design/components/toggle-switch"
+      "destination": "/design/components/toggle-switch/rails/alpha"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::Tooltip",
+      "match": "^view-components/components/alpha/tooltip",
+      "destination": "/design/components/tooltip/rails/alpha"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::UnderlineNav",
+      "match": "^view-components/components/alpha/underlinenav",
+      "destination": "/design/components/underline-nav/rails/alpha"
+    },
+    {
+      "name": "ViewComponents docs for Primer::Alpha::UnderlinePanels",
+      "match": "^view-components/components/alpha/underlinepanels",
+      "destination": "/design/components/underline-panels/rails/alpha"
+    },
+    {
+      "name": "ViewComponents docs for system arguments",
+      "match": "^view-components/system-arguments",
+      "destination": "/view-components/lookbook/pages/system_arguments"
+    },
+    {
+      "name": "ViewComponents docs for component statuses",
+      "match": "^view-components/status",
+      "destination": "/design/guides/status"
+    },
+    {
+      "name": "ViewComponents docs for Rails migration guide",
+      "match": "^view-components/migration",
+      "destination": "/design/guides/development/rails#migration-and-upgrade-guides"
     },
     {
       "name": "Redirect /",
