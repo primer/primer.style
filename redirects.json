@@ -37,7 +37,7 @@
     },
     {
       "name": "Redirect /octicons/*",
-      "match": "octicons/(.*)",
+      "match": "^/octicons(?:/.*)?$",
       "destination": "/design/foundations/icons/{R:2}"
     },
     {
