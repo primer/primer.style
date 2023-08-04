@@ -37,8 +37,8 @@
     },
     {
       "name": "Redirect /octicons/*",
-      "match": "^\/octicons(.*)?",
-      "destination": "/design/foundations/icons/{R:1}"
+      "match": "(octicons)(.*)",
+      "destination": "/design/foundations/icons{R:2}"
     },
     {
       "name": "Redirect /primitives/colors",
@@ -209,11 +209,6 @@
       "name": "ViewComponents docs for Primer::Alpha::NavList",
       "match": "^view-components/components/alpha/navlist",
       "destination": "/design/components/nav-list/rails/alpha"
-    },
-    {
-      "name": "ViewComponents docs for Primer::Alpha::OcticonSymbols",
-      "match": "^view-components/components/alpha/octiconsymbols",
-      "destination": "/design/components/octicon-symbols/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::Overlay",
