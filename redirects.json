@@ -61,6 +61,11 @@
       "destination": "/primitives/storybook/"
     },
     {
+      "name": "Redirect /view-components root",
+      "match": "^view-components/$",
+      "destination": "/design"
+    },
+    {
       "name": "ViewComponents docs for Primer::Alpha::ActionList",
       "match": "^view-components/components/alpha/actionlist",
       "destination": "/design/components/action-list/rails/alpha"
@@ -386,11 +391,6 @@
       "name": "ViewComponents Rails App proxy",
       "match": "^view-components/rails-app/(.*)",
       "destination": "https://view-components-storybook.eastus.cloudapp.azure.com/view-components/rails-app/{R:1}"
-    },
-    {
-      "name": "ViewComponents proxy",
-      "match": "^view-components/(.*)",
-      "destination": "https://primer.github.io/view_components/{R:1}"
     },
     {
       "name": "Design proxy",
