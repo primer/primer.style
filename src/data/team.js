@@ -12,7 +12,7 @@ const teamContent = [
   },
   {
     name: 'Rayta van Rijswijk',
-    title: 'Senior Engineering Manager',
+    title: 'Design Engineering Manager',
     handle: 'raytalks',
     questionOne: `Having worked in and with several different software development teams before, I've learned it takes more than a process to deliver fast, reliable, high performant, quality products.
 
@@ -137,7 +137,7 @@ Finally, when it comes to building and supporting teams I've loved going through
   },
   {
     name: 'Leslie Cohn-Wein',
-    title: 'Design Engineering Director',
+    title: 'Primer Engineering Manager',
     handle: 'lesliecdubs',
     questionOne: `As an agency developer early in my career, it seemed we were always building the same UI with different styles. So why not build once, with enough flexibility to customize for many clients?
 
@@ -394,7 +394,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     favoriteTools: 'CodeSandbox, Figma, GitHub, React, Slack, VS Code',
     avatar: 'https://user-images.githubusercontent.com/4608155/59656806-959e3f80-9153-11e9-99cc-25b33e575ad8.jpg',
     gif: 'https://user-images.githubusercontent.com/4608155/59657078-73f18800-9154-11e9-8b36-81eed35e1266.gif',
-    alumni: false,
+    alumni: true,
   },
   {
     name: 'Zain Khoja',
@@ -499,7 +499,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
   },
   {
     name: 'Jon Rohan',
-    title: 'Systems Designer',
+    title: 'Systems Engineer',
     handle: 'jonrohan',
     cssFeature: `grid-template-areas: "header header header" "footer footer footer"`,
     questionOne: `I have had a fascination with front end engineering and UI for all of my career. Early on at GitHub I recognized the need to organize our code into reusable components. When the team formalized I had to be involved.`,
@@ -512,7 +512,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
   {
     name: 'Diana Mounter',
     handle: 'broccolini',
-    title: 'Design Infrastructure Director',
+    title: 'Head of Design',
     cssFeature: 'text-decoration: underline wavy',
     questionOne:
       'I was drawn to design systems for many reasons—the opportunity to improve design and development workflow efficiency; the potential benefits well-design systems can bring to the user experience; I like to bring order to chaos and enjoy working at the intersection of design and code. I also love that there is still so much to learn in the field and really enjoy the passion of the community behind design systems.',
