@@ -7,7 +7,7 @@ const teamContent = [
     questionTwo: `I'm immensely grateful for the online design community, a nurturing space where designers from all walks of life share their knowledge with the next generation— [Steve Jobs](https://www.apple.com/stevejobs/), [Julie Zhuo](https://www.juliezhuo.com/), [Ethan Eismann](https://twitter.com/eeismann) and many others. This collective effort continuously inspires my own creative journey to create accessible, beautiful, and seamless experiences. I want to express my sincerest gratitude to the design team at GitHub, who have mentored and supported me in discoverying my passion for design systems: [Natalya Shelburne](http://www.artist-developer.com/), [Katie Langerman](https://www.langermank.com/), and [Cole Bemis](https://colebemis.com/). Ultimately, it is the collective wisdom, creativity, and collaborations that fuel my joy in designing.`,
     favoriteTools: `Copilot, Figma, Rewatch, GitHub, CodePen, Youtube, Twitter, Primer.style`,
     avatar: 'https://avatars.githubusercontent.com/u/131988618?v=4',
-    gif: '',
+    gif: 'https://github.com/primer/primer.style/assets/131988618/58718b0b-bc31-4f51-8428-aecce94ac1e0',
     alumni: true,
 },
     {
