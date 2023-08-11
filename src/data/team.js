@@ -9,7 +9,7 @@ const teamContent = [
     avatar: 'https://avatars.githubusercontent.com/u/131988618?v=4',
     gif: 'https://github.com/primer/primer.style/assets/131988618/58718b0b-bc31-4f51-8428-aecce94ac1e0',
     alumni: true,
-},
+    },
     {
     name: 'Tyler Jones',
     title: 'Accessibility Software Engineer',
