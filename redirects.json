@@ -428,6 +428,11 @@
       "destination": "https://primer.github.io/mobile/{R:1}"
     },
     {
+      "name": "Brand Storybook proxy",
+      "match": "^brand/storybook/(.*)",
+      "destination": "https://stunning-chainsaw-j82glqz.pages.github.io/{R:1}"
+    },
+    {
       "name": "Brand proxy",
       "match": "^brand/(.*)",
       "destination": "https://primer.github.io/brand/{R:1}"
