@@ -372,7 +372,7 @@
     },
     {
       "name": "Native Desktop - Getting started",
-      "match": "^desktop$",
+      "match": "^desktop/?$",
       "destination": "/design/native/desktop/getting-started"
     },
     {
@@ -417,7 +417,7 @@
     },
     {
       "name": "Native CLI - Getting Started",
-      "match": "^cli$",
+      "match": "^cli/?$",
       "destination": "/design/native/cli/getting-started"
     },
     {
@@ -517,7 +517,7 @@
     },
     {
       "name": "Native Mobile",
-      "match": "^mobile$",
+      "match": "^mobile/?$",
       "destination": "/design/native/mobile"
     },
     {
@@ -593,19 +593,9 @@
       "destination": "https://primer.github.io/doctocat/{R:1}"
     },
     {
-      "name": "CLI proxy",
-      "match": "^cli/(.*)",
-      "destination": "https://primer.github.io/cli/{R:1}"
-    },
-    {
       "name": "Primitives proxy",
       "match": "^primitives/storybook/(.*)",
       "destination": "https://primer.github.io/primitives/storybook/{R:1}"
-    },
-    {
-      "name": "Mobile proxy",
-      "match": "^mobile/(.*)",
-      "destination": "https://primer.github.io/mobile/{R:1}"
     },
     {
       "name": "Brand Storybook proxy",
@@ -616,11 +606,6 @@
       "name": "Brand proxy",
       "match": "^brand/(.*)",
       "destination": "https://primer.github.io/brand/{R:1}"
-    },
-    {
-      "name": "Desktop proxy",
-      "match": "^desktop/(.*)",
-      "destination": "https://primer.github.io/desktop/{R:1}"
     },
     {
       "name": "Contribute proxy",
