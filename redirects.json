@@ -554,6 +554,10 @@
       "name": "Native Mobile - Foundations - Typography",
       "match": "^mobile/foundations/typography",
       "destination": "/design/native/mobile/foundations#typography"
+    }, {
+      "name": "Redirect tooltip alternatives",
+      "match": "/design/accessibility/tooltip-alternatives",
+      "destination": "/design/components/tooltip#alternatives-to-tooltips"
     }
   ],
   "rewrites": [
