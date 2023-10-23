@@ -3,7 +3,12 @@
     {
       "name": "Redirect /design/accessibility",
       "match": "(design)/(accessibility)(.*)",
-      "destination": "/design/guides/accessibility{R:3}"
+      "destination": "/guides/accessibility{R:3}"
+    },
+    {
+      "name": "Redirect /design",
+      "match": "design/?$",
+      "destination": "/"
     },
     {
       "name": "Redirect /octicons/packages/ruby",
@@ -33,17 +38,17 @@
     {
       "name": "Redirect /octicons/guidelines/design",
       "match": "octicons/guidelines/design",
-      "destination": "/design/foundations/icons/design-guidelines"
+      "destination": "/foundations/icons/design-guidelines"
     },
     {
       "name": "Redirect /octicons/*",
       "match": "(octicons)(.*)",
-      "destination": "/design/foundations/icons{R:2}"
+      "destination": "/foundations/icons{R:2}"
     },
     {
       "name": "Redirect /primitives/colors",
       "match": "primitives/colors",
-      "destination": "/design/foundations/color"
+      "destination": "/foundations/color"
     },
     {
       "name": "Redirect /primitives/spacing",
@@ -63,267 +68,267 @@
     {
       "name": "Redirect /view-components root",
       "match": "^view-components/$",
-      "destination": "/design"
+      "destination": "/"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::ActionList",
       "match": "^view-components/components/alpha/actionlist",
-      "destination": "/design/components/action-list/rails/alpha"
+      "destination": "/components/action-list/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::ActionMenu",
       "match": "^view-components/components/alpha/actionmenu",
-      "destination": "/design/components/action-menu/rails/alpha"
+      "destination": "/components/action-menu/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::AutoComplete",
       "match": "^view-components/components/beta/autocomplete",
-      "destination": "/design/components/autocomplete/rails/beta"
+      "destination": "/components/autocomplete/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::AvatarStack",
       "match": "^view-components/components/beta/avatarstack",
-      "destination": "/design/components/avatar-stack/rails/beta"
+      "destination": "/components/avatar-stack/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Avatar",
       "match": "^view-components/components/beta/avatar",
-      "destination": "/design/components/avatar/rails/beta"
+      "destination": "/components/avatar/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::Banner",
       "match": "^view-components/components/alpha/banner",
-      "destination": "/design/components/banner/rails/alpha"
+      "destination": "/components/banner/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::BorderBox",
       "match": "^view-components/components/beta/borderbox",
-      "destination": "/design/components/border-box/rails/beta"
+      "destination": "/components/border-box/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Box",
       "match": "^view-components/components/box",
-      "destination": "/design/components/box"
+      "destination": "/components/box"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Breadcrumbs",
       "match": "^view-components/components/beta/breadcrumbs",
-      "destination": "/design/components/breadcrumbs/rails/beta"
+      "destination": "/components/breadcrumbs/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::ButtonGroup",
       "match": "^view-components/components/beta/buttongroup",
-      "destination": "/design/components/button-group/rails/beta"
+      "destination": "/components/button-group/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Button",
       "match": "^view-components/components/beta/button",
-      "destination": "/design/components/button/rails/beta"
+      "destination": "/components/button/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::ButtonMarketing",
       "match": "^view-components/components/alpha/buttonmarketing",
-      "destination": "/design/components/button-marketing/rails/alpha"
+      "destination": "/components/button-marketing/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::CheckBoxGroup",
       "match": "^view-components/components/alpha/checkboxgroup",
-      "destination": "/design/components/checkbox-group/rails/alpha"
+      "destination": "/components/checkbox-group/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::CheckBox",
       "match": "^view-components/components/alpha/checkbox",
-      "destination": "/design/components/checkbox/rails/alpha"
+      "destination": "/components/checkbox/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::ClipboardCopy",
       "match": "^view-components/components/beta/clipboardcopy",
-      "destination": "/design/components/clipboard-copy/rails/beta"
+      "destination": "/components/clipboard-copy/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::CloseButton",
       "match": "^view-components/components/beta/closebutton",
-      "destination": "/design/components/close-button/rails/beta"
+      "destination": "/components/close-button/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Counter",
       "match": "^view-components/components/beta/counter",
-      "destination": "/design/components/counter-label/rails/beta"
+      "destination": "/components/counter-label/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Details",
       "match": "^view-components/components/beta/details",
-      "destination": "/design/components/details/rails/beta"
+      "destination": "/components/details/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::Dialog",
       "match": "^view-components/components/alpha/dialog",
-      "destination": "/design/components/dialog/rails/alpha"
+      "destination": "/components/dialog/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Flash",
       "match": "^view-components/components/beta/flash",
-      "destination": "/design/components/flash/rails/beta"
+      "destination": "/components/flash/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Heading",
       "match": "^view-components/components/beta/heading",
-      "destination": "/design/components/heading/rails/beta"
+      "destination": "/components/heading/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::HiddenTextExpander",
       "match": "^view-components/components/alpha/hiddentextexpander",
-      "destination": "/design/components/hidden-text-expander/rails/alpha"
+      "destination": "/components/hidden-text-expander/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Octicon",
       "match": "^view-components/components/beta/octicon",
-      "destination": "/design/components/icon/rails/beta"
+      "destination": "/components/icon/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::IconButton",
       "match": "^view-components/components/beta/iconbutton",
-      "destination": "/design/components/icon-button/rails/beta"
+      "destination": "/components/icon-button/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::ImageCrop",
       "match": "^view-components/components/alpha/imagecrop",
-      "destination": "/design/components/image-crop/rails/alpha"
+      "destination": "/components/image-crop/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::Image",
       "match": "^view-components/components/alpha/image",
-      "destination": "/design/components/image/rails/alpha"
+      "destination": "/components/image/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Label",
       "match": "^view-components/components/beta/label",
-      "destination": "/design/components/label/rails/beta"
+      "destination": "/components/label/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Link",
       "match": "^view-components/components/beta/link",
-      "destination": "/design/components/link/rails/beta"
+      "destination": "/components/link/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Markdown",
       "match": "^view-components/components/beta/markdown",
-      "destination": "/design/components/markdown/rails/beta"
+      "destination": "/components/markdown/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::NavList",
       "match": "^view-components/components/alpha/navlist",
-      "destination": "/design/components/nav-list/rails/alpha"
+      "destination": "/components/nav-list/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::Overlay",
       "match": "^view-components/components/alpha/overlay",
-      "destination": "/design/components/overlay/rails/alpha"
+      "destination": "/components/overlay/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Popover",
       "match": "^view-components/components/beta/popover",
-      "destination": "/design/components/popover/rails/beta"
+      "destination": "/components/popover/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::ProgressBar",
       "match": "^view-components/components/beta/progressbar",
-      "destination": "/design/components/progress-bar/rails/beta"
+      "destination": "/components/progress-bar/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::RadioButtonGroup",
       "match": "^view-components/components/alpha/radiobuttongroup",
-      "destination": "/design/components/radio-group/rails/alpha"
+      "destination": "/components/radio-group/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::RadioButton",
       "match": "^view-components/components/alpha/radiobutton",
-      "destination": "/design/components/radio/rails/alpha"
+      "destination": "/components/radio/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::RelativeTime",
       "match": "^view-components/components/beta/relativetime",
-      "destination": "/design/components/relative-time/rails/beta"
+      "destination": "/components/relative-time/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::SegmentedControl",
       "match": "^view-components/components/alpha/segmentedcontrol",
-      "destination": "/design/components/segmented-control/rails/alpha"
+      "destination": "/components/segmented-control/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::Select",
       "match": "^view-components/components/alpha/select",
-      "destination": "/design/components/select/rails/alpha"
+      "destination": "/components/select/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Spinner",
       "match": "^view-components/components/beta/spinner",
-      "destination": "/design/components/spinner/rails/beta"
+      "destination": "/components/spinner/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::State",
       "match": "^view-components/components/beta/state",
-      "destination": "/design/components/state-label/rails/beta"
+      "destination": "/components/state-label/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Subhead",
       "match": "^view-components/components/beta/subhead",
-      "destination": "/design/components/subhead/rails/beta"
+      "destination": "/components/subhead/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::TabContainer",
       "match": "^view-components/components/alpha/tabcontainer",
-      "destination": "/design/components/tab-container/rails/alpha"
+      "destination": "/components/tab-container/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::TabNav",
       "match": "^view-components/components/alpha/tabnav",
-      "destination": "/design/components/tab-nav/rails/alpha"
+      "destination": "/components/tab-nav/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::TabPanels",
       "match": "^view-components/components/alpha/tabpanels",
-      "destination": "/design/components/tab-panels/rails/alpha"
+      "destination": "/components/tab-panels/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Beta::Text",
       "match": "^view-components/components/beta/text",
-      "destination": "/design/components/text/rails/beta"
+      "destination": "/components/text/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::TextField",
       "match": "^view-components/components/alpha/textfield",
-      "destination": "/design/components/text-input/rails/alpha"
+      "destination": "/components/text-input/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::TextArea",
       "match": "^view-components/components/alpha/textarea",
-      "destination": "/design/components/textarea/rails/alpha"
+      "destination": "/components/textarea/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::Timeline",
       "match": "^view-components/components/beta/timelineitem",
-      "destination": "/design/components/timeline/rails/beta"
+      "destination": "/components/timeline/rails/beta"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::ToggleSwitch",
       "match": "^view-components/components/alpha/toggleswitch",
-      "destination": "/design/components/toggle-switch/rails/alpha"
+      "destination": "/components/toggle-switch/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::Tooltip",
       "match": "^view-components/components/alpha/tooltip",
-      "destination": "/design/components/tooltip/rails/alpha"
+      "destination": "/components/tooltip/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::UnderlineNav",
       "match": "^view-components/components/alpha/underlinenav",
-      "destination": "/design/components/underline-nav/rails/alpha"
+      "destination": "/components/underline-nav/rails/alpha"
     },
     {
       "name": "ViewComponents docs for Primer::Alpha::UnderlinePanels",
       "match": "^view-components/components/alpha/underlinepanels",
-      "destination": "/design/components/underline-panels/rails/alpha"
+      "destination": "/components/underline-panels/rails/alpha"
     },
     {
       "name": "ViewComponents docs for system arguments",
@@ -333,17 +338,17 @@
     {
       "name": "ViewComponents docs for component statuses",
       "match": "^view-components/status",
-      "destination": "/design/guides/status"
+      "destination": "/guides/status"
     },
     {
       "name": "Component statuses",
       "match": "^status",
-      "destination": "/design/guides/status"
+      "destination": "/guides/status"
     },
     {
       "name": "ViewComponents docs for Rails migration guide",
       "match": "^view-components/migration",
-      "destination": "/design/guides/development/rails#migration-and-upgrade-guides"
+      "destination": "/guides/development/rails#migration-and-upgrade-guides"
     },
     {
       "name": "ViewComponents docs for contributing",
@@ -356,11 +361,6 @@
       "destination": "https://github.com/primer/view_components/blob/main/docs/contributors/linting.md"
     },
     {
-      "name": "Redirect /",
-      "match": "^$",
-      "destination": "/design"
-    },
-    {
       "name": "Redirect /css to Storybook",
       "match": "^css/?$",
       "destination": "/css/storybook/"
@@ -368,196 +368,197 @@
     {
       "name": "CSS Utilities",
       "match": "^css/utilities",
-      "destination": "/design/foundations/css-utilities/getting-started"
+      "destination": "/foundations/css-utilities/getting-started"
     },
     {
       "name": "Native Desktop - Getting started",
       "match": "^desktop/?$",
-      "destination": "/design/native/desktop/getting-started"
+      "destination": "/native/desktop/getting-started"
     },
     {
       "name": "Native Desktop - Foundations - Relationship to Primer Web",
       "match": "^desktop/foundations/relationshiptoprimerweb",
-      "destination": "/design/native/desktop/foundations/?anchor=relationship-to-primer-web"
+      "destination": "/native/desktop/foundations/?anchor=relationship-to-primer-web"
     },
     {
       "name": "Native Desktop - Foundations - Color",
       "match": "^desktop/foundations/color",
-      "destination": "/design/native/desktop/foundations/?anchor=color"
+      "destination": "/native/desktop/foundations/?anchor=color"
     },
     {
       "name": "Native Desktop - Foundations - Typography",
       "match": "^desktop/foundations/typography",
-      "destination": "/design/native/desktop/foundations/?anchor=typography"
+      "destination": "/native/desktop/foundations/?anchor=typography"
     },
     {
       "name": "Native Desktop - Foundations - Iconography",
       "match": "^desktop/foundations/iconography",
-      "destination": "/design/native/desktop/foundations/?anchor=iconography"
+      "destination": "/native/desktop/foundations/?anchor=iconography"
     },
     {
       "name": "Native Desktop - Foundations - Illustrations",
       "match": "^desktop/foundations/illustrations",
-      "destination": "/design/native/desktop/foundations/?anchor=illustrations"
+      "destination": "/native/desktop/foundations/?anchor=illustrations"
     },
     {
       "name": "Native Desktop - Foundations - Platforms",
       "match": "^desktop/foundations/platforms",
-      "destination": "/design/native/desktop/foundations/?anchor=platforms"
+      "destination": "/native/desktop/foundations/?anchor=platforms"
     },
     {
       "name": "Native Desktop - Foundations - Spacing",
       "match": "^desktop/foundations/spacing",
-      "destination": "/design/native/desktop/foundations/?anchor=spacing"
+      "destination": "/native/desktop/foundations/?anchor=spacing"
     },
     {
       "name": "Native Desktop - Foundations - System Elements",
       "match": "^desktop/foundations/systemelements",
-      "destination": "/design/native/desktop/foundations"
+      "destination": "/native/desktop/foundations"
     },
     {
       "name": "Native CLI - Getting Started",
       "match": "^cli/?$",
-      "destination": "/design/native/cli/getting-started"
+      "destination": "/native/cli/getting-started"
     },
     {
       "name": "Native CLI - Principles",
       "match": "^cli/getting-started/principles",
-      "destination": "/design/native/cli/getting-started/?anchor=principles"
+      "destination": "/native/cli/getting-started/?anchor=principles"
     },
     {
       "name": "Native CLI - Process",
       "match": "^cli/getting-started/process",
-      "destination": "/design/native/cli/getting-started/?anchor=process"
+      "destination": "/native/cli/getting-started/?anchor=process"
     },
     {
       "name": "Native CLI - Prototyping",
       "match": "^cli/getting-started/prototyping",
-      "destination": "/design/native/cli/getting-started/?anchor=prototyping"
+      "destination": "/native/cli/getting-started/?anchor=prototyping"
     },
     {
       "name": "Native CLI - Foundations - Language",
       "match": "^cli/foundations/language",
-      "destination": "/design/native/cli/foundations/?anchor=language"
+      "destination": "/native/cli/foundations/?anchor=language"
     },
     {
       "name": "Native CLI - Foundations - Typography",
       "match": "^cli/foundations/typography",
-      "destination": "/design/native/cli/foundations/?anchor=typography"
+      "destination": "/native/cli/foundations/?anchor=typography"
     },
     {
       "name": "Native CLI - Foundations - Spacing",
       "match": "^cli/foundations/spacing",
-      "destination": "/design/native/cli/foundations/?anchor=spacing"
+      "destination": "/native/cli/foundations/?anchor=spacing"
     },
     {
       "name": "Native CLI - Foundations - Color",
       "match": "^cli/foundations/color",
-      "destination": "/design/native/cli/foundations/?anchor=color"
+      "destination": "/native/cli/foundations/?anchor=color"
     },
     {
       "name": "Native CLI - Foundations - Iconography",
       "match": "^cli/foundations/iconography",
-      "destination": "/design/native/cli/foundations/?anchor=iconography"
+      "destination": "/native/cli/foundations/?anchor=iconography"
     },
     {
       "name": "Native CLI - Foundations - Scriptability",
       "match": "^cli/foundations/scriptability",
-      "destination": "/design/native/cli/foundations/?anchor=scriptability"
+      "destination": "/native/cli/foundations/?anchor=scriptability"
     },
     {
       "name": "Native CLI - Foundations - Customizability",
       "match": "^cli/foundations/customizability",
-      "destination": "/design/native/cli/foundations/?anchor=customizability"
+      "destination": "/native/cli/foundations/?anchor=customizability"
     },
     {
       "name": "Native CLI - Components - Syntax",
       "match": "^cli/components/syntax",
-      "destination": "/design/native/cli/components/?anchor=syntax"
+      "destination": "/native/cli/components/?anchor=syntax"
     },
     {
       "name": "Native CLI - Components - Prompts",
       "match": "^cli/components/prompts",
-      "destination": "/design/native/cli/components/?anchor=prompts"
+      "destination": "/native/cli/components/?anchor=prompts"
     },
     {
       "name": "Native CLI - Components - State",
       "match": "^cli/components/state",
-      "destination": "/design/native/cli/components/?anchor=state"
+      "destination": "/native/cli/components/?anchor=state"
     },
     {
       "name": "Native CLI - Components - Progress indicators",
       "match": "^cli/components/progress",
-      "destination": "/design/native/cli/components/?anchor=progress-indicators"
+      "destination": "/native/cli/components/?anchor=progress-indicators"
     },
     {
       "name": "Native CLI - Components - Headers",
       "match": "^cli/components/headers",
-      "destination": "/design/native/cli/components/?anchor=headers"
+      "destination": "/native/cli/components/?anchor=headers"
     },
     {
       "name": "Native CLI - Components - Lists",
       "match": "^cli/components/lists",
-      "destination": "/design/native/cli/components/?anchor=lists"
+      "destination": "/native/cli/components/?anchor=lists"
     },
     {
       "name": "Native CLI - Components - Detail views",
       "match": "^cli/components/detail",
-      "destination": "/design/native/cli/components/?anchor=detail-views"
+      "destination": "/native/cli/components/?anchor=detail-views"
     },
     {
       "name": "Native CLI - Components - Empty states",
       "match": "^cli/components/empty",
-      "destination": "/design/native/cli/components/?anchor=empty-states"
+      "destination": "/native/cli/components/?anchor=empty-states"
     },
     {
       "name": "Native CLI - Components - Help pages",
       "match": "^cli/components/help",
-      "destination": "/design/native/cli/components/?anchor=help-pages"
+      "destination": "/native/cli/components/?anchor=help-pages"
     },
     {
       "name": "Native Mobile",
       "match": "^mobile/?$",
-      "destination": "/design/native/mobile"
+      "destination": "/native/mobile"
     },
     {
       "name": "Native Mobile - Platforms",
       "match": "^mobile/platforms",
-      "destination": "/design/native/mobile/platforms"
+      "destination": "/native/mobile/platforms"
     },
     {
       "name": "Native Mobile - Platforms - iOS and iPadOS",
       "match": "^mobile/platforms/ios",
-      "destination": "/design/native/mobile/platforms#ios-and-ipados"
+      "destination": "/native/mobile/platforms#ios-and-ipados"
     },
     {
       "name": "Native Mobile - Platforms - Android",
       "match": "^mobile/platforms/android",
-      "destination": "/design/native/mobile/platforms#android"
+      "destination": "/native/mobile/platforms#android"
     },
     {
       "name": "Native Mobile - Foundations",
       "match": "^mobile/foundations",
-      "destination": "/design/native/mobile/foundations"
+      "destination": "/native/mobile/foundations"
     },
     {
       "name": "Native Mobile - Foundations - Spacing and layout",
       "match": "^mobile/foundations/spacing-layout",
-      "destination": "/design/native/mobile/foundations#spacing-and-layout"
+      "destination": "/native/mobile/foundations#spacing-and-layout"
     },
     {
       "name": "Native Mobile - Foundations - Color",
       "match": "^mobile/foundations/iconography",
-      "destination": "/design/native/mobile/foundations#iconography"
+      "destination": "/native/mobile/foundations#iconography"
     },
     {
       "name": "Native Mobile - Foundations - Typography",
       "match": "^mobile/foundations/typography",
-      "destination": "/design/native/mobile/foundations#typography"
-    }, {
+      "destination": "/native/mobile/foundations#typography"
+    },
+    {
       "name": "Redirect tooltip alternatives",
       "match": "/design/accessibility/tooltip-alternatives",
-      "destination": "/design/components/tooltip#alternatives-to-tooltips"
+      "destination": "/components/tooltip#alternatives-to-tooltips"
     }
   ],
   "rewrites": [
@@ -580,11 +581,6 @@
       "name": "ViewComponents Rails App proxy",
       "match": "^view-components/rails-app/(.*)",
       "destination": "https://view-components-storybook.eastus.cloudapp.azure.com/view-components/rails-app/{R:1}"
-    },
-    {
-      "name": "Design proxy",
-      "match": "^design/(.*)",
-      "destination": "https://primer.github.io/design/{R:1}"
     },
     {
       "name": "Presentations proxy",
@@ -630,6 +626,11 @@
       "name": "CSS reverse-proxy",
       "match": "^css/storybook/(.*)",
       "destination": "https://primer.github.io/css/storybook/{R:1}"
+    },
+    {
+      "name": "Design proxy",
+      "match": "^/?(.*)",
+      "destination": "https://primer.github.io/design/{R:1}"
     }
   ]
 }
