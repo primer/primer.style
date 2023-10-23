@@ -583,11 +583,6 @@
       "destination": "https://view-components-storybook.eastus.cloudapp.azure.com/view-components/rails-app/{R:1}"
     },
     {
-      "name": "Design proxy",
-      "match": "^/?(.*)",
-      "destination": "https://primer.github.io/design/{R:1}"
-    },
-    {
       "name": "Presentations proxy",
       "match": "^presentations/(.*)",
       "destination": "https://primer.github.io/presentations/{R:1}"
@@ -631,6 +626,11 @@
       "name": "CSS reverse-proxy",
       "match": "^css/storybook/(.*)",
       "destination": "https://primer.github.io/css/storybook/{R:1}"
+    },
+    {
+      "name": "Design proxy",
+      "match": "^/?(.*)",
+      "destination": "https://primer.github.io/design/{R:1}"
     }
   ]
 }
