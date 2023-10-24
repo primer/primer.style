@@ -7,8 +7,8 @@
     },
     {
       "name": "Redirect /design",
-      "match": "design/?$",
-      "destination": "/"
+      "match": "design(.*)",
+      "destination": "{R:1}"
     },
     {
       "name": "Redirect /octicons/packages/ruby",
