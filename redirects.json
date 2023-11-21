@@ -7,7 +7,7 @@
     },
     {
       "name": "Redirect /design",
-      "match": "design(.*)",
+      "match": "^design(.*)",
       "destination": "{R:1}"
     },
     {
