@@ -13,14 +13,14 @@ export default function OpenSource() {
           <Text as="p" sx={{fontSize: 4, mb: 5}}>
             Primer is open-sourced on GitHub. Contributions and feedback are welcome!
           </Text>
-          <Link href="https://github.com/primer">
+          <Link href="https://github.com/primer" target="_blank">
             <StyledOcticon icon={MarkGithubIcon} size={20} sx={{mr: 2}} />
             Contribute on GitHub
           </Link>
         </IndexGrid.Item>
         <IndexGrid.Item>
           <Heading sx={{fontSize: 7, mb: 3, color: 'accent.fg'}}>Keep in touch</Heading>
-          <Link sx={{pt: 1, mb: 3, display: 'flex', alignItems: 'center'}} href="https://twitter.com/githubprimer">
+          <Link sx={{pt: 1, mb: 3, display: 'flex', alignItems: 'center'}} href="https://twitter.com/githubprimer" target="_blank">
             <Box sx={{mr: 2, display: 'inline-flex'}}>
               <TwitterIcon />
             </Box>
@@ -29,6 +29,7 @@ export default function OpenSource() {
           <Link
             sx={{pt: 1, mb: 3, display: 'flex', alignItems: 'center'}}
             href="https://github.com/primer/css/issues/new/choose"
+            target="_blank"
           >
             <StyledOcticon icon={MarkGithubIcon} size={20} sx={{mr: 2}} />
             Share feedback on GitHub
