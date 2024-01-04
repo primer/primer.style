@@ -340,6 +340,298 @@
       "match": "^view-components/status",
       "destination": "/guides/status"
     },
+
+    {
+      "name": "React docs for ActionList",
+      "match": "^react/ActionList",
+      "destination": "/components/action-list/react"
+    },
+    {
+      "name": "React docs for ActionMenu",
+      "match": "^react/ActionMenu",
+      "destination": "/components/action-menu/react"
+    },
+    {
+      "name": "React docs for AnchoredOverlay",
+      "match": "^react/AnchoredOverlay",
+      "destination": "/components/anchored-overlay/react"
+    },
+    {
+      "name": "React docs for Autocomplete",
+      "match": "^react/Autocomplete",
+      "destination": "/components/autocomplete/react"
+    },
+    {
+      "name": "React docs for Avatar",
+      "match": "^react/Avatar",
+      "destination": "/components/avatar/react"
+    },
+    {
+      "name": "React docs for AvatarPair",
+      "match": "^react/AvatarPair",
+      "destination": "/components/avatar-pair/react"
+    },
+    {
+      "name": "React docs for AvatarStack",
+      "match": "^react/AvatarStack",
+      "destination": "/components/avatar-stack/react"
+    },
+    {
+      "name": "React docs for Box",
+      "match": "^react/Box",
+      "destination": "/components/box/react"
+    },
+    {
+      "name": "React docs for BranchName",
+      "match": "^react/BranchName",
+      "destination": "/components/branch-name/react"
+    },
+    {
+      "name": "React docs for Breadcrumbs",
+      "match": "^react/Breadcrumbs",
+      "destination": "/components/breadcrumbs/react"
+    },
+    {
+      "name": "React docs for Button",
+      "match": "^react/Button",
+      "destination": "/components/button/react"
+    },
+    {
+      "name": "React docs for ButtonGroup",
+      "match": "^react/ButtonGroup",
+      "destination": "/components/button-group/react"
+    },
+    {
+      "name": "React docs for Checkbox",
+      "match": "^react/Checkbox",
+      "destination": "/components/checkbox/react"
+    },
+    {
+      "name": "React docs for CheckboxGroup",
+      "match": "^react/CheckboxGroup",
+      "destination": "/components/checkbox-group/react"
+    },
+    {
+      "name": "React docs for CircleBadge",
+      "match": "^react/CircleBadge",
+      "destination": "/components/circle-badge/react"
+    },
+    {
+      "name": "React docs for CircleOcticon",
+      "match": "^react/CircleOcticon",
+      "destination": "/components/circle-octicon/react"
+    },
+    {
+      "name": "React docs for CounterLabel",
+      "match": "^react/CounterLabel",
+      "destination": "/components/counter-label/react"
+    },
+    {
+      "name": "React docs for Details",
+      "match": "^react/Details",
+      "destination": "/components/details/react"
+    },
+    {
+      "name": "React docs for Dialog",
+      "match": "^react/Dialog",
+      "destination": "/components/dialog/react"
+    },
+    {
+      "name": "React docs for Flash",
+      "match": "^react/Flash",
+      "destination": "/components/flash/react"
+    },
+    {
+      "name": "React docs for FormControl",
+      "match": "^react/FormControl",
+      "destination": "/components/form-control/react"
+    },
+    {
+      "name": "React docs for Header",
+      "match": "^react/Header",
+      "destination": "/components/header/react"
+    },
+    {
+      "name": "React docs for Heading",
+      "match": "^react/Heading",
+      "destination": "/components/heading/react"
+    },
+    {
+      "name": "React docs for IconButton",
+      "match": "^react/IconButton",
+      "destination": "/components/icon-button/react"
+    },
+    {
+      "name": "React docs for Label",
+      "match": "^react/Label",
+      "destination": "/components/label/react"
+    },
+    {
+      "name": "React docs for LabelGroup",
+      "match": "^react/LabelGroup",
+      "destination": "/components/label-group/react"
+    },
+    {
+      "name": "React docs for Link",
+      "match": "^react/Link",
+      "destination": "/components/link/react"
+    },
+    {
+      "name": "React docs for NavList",
+      "match": "^react/NavList",
+      "destination": "/components/nav-list/react"
+    },
+    {
+      "name": "React docs for Overlay",
+      "match": "^react/Overlay",
+      "destination": "/components/overlay/react"
+    },
+    {
+      "name": "React docs for Pagehead",
+      "match": "^react/Pagehead",
+      "destination": "/components/pagehead/react"
+    },
+    {
+      "name": "React docs for PageLayout",
+      "match": "^react/PageLayout",
+      "destination": "/components/page-layout/react"
+    },
+    {
+      "name": "React docs for Pagination",
+      "match": "^react/Pagination",
+      "destination": "/components/pagination/react"
+    },
+    {
+      "name": "React docs for PointerBox",
+      "match": "^react/PointerBox",
+      "destination": "/components/pointer-box/react"
+    },
+    {
+      "name": "React docs for Popover",
+      "match": "^react/Popover",
+      "destination": "/components/popover/react"
+    },
+    {
+      "name": "React docs for ProgressBar",
+      "match": "^react/ProgressBar",
+      "destination": "/components/progress-bar/react"
+    },
+    {
+      "name": "React docs for RelativeTime",
+      "match": "^react/RelativeTime",
+      "destination": "/components/relative-time/react"
+    },
+    {
+      "name": "React docs for Radio",
+      "match": "^react/Radio",
+      "destination": "/components/radio/react"
+    },
+    {
+      "name": "React docs for RadioGroup",
+      "match": "^react/RadioGroup",
+      "destination": "/components/radio-group/react"
+    },
+    {
+      "name": "React docs for SegmentedControl",
+      "match": "^react/SegmentedControl",
+      "destination": "/components/segmented-control/react"
+    },
+    {
+      "name": "React docs for Select",
+      "match": "^react/Select",
+      "destination": "/components/select/react"
+    },
+    {
+      "name": "React docs for SelectPanel",
+      "match": "^react/SelectPanel",
+      "destination": "/components/selectpanel/react"
+    },
+    {
+      "name": "React docs for Spinner",
+      "match": "^react/Spinner",
+      "destination": "/components/spinner/react"
+    },
+    {
+      "name": "React docs for SplitPageLayout",
+      "match": "^react/SplitPageLayout",
+      "destination": "/components/split-page-layout/react"
+    },
+    {
+      "name": "React docs for StateLabel",
+      "match": "^react/StateLabel",
+      "destination": "/components/state-label/react"
+    },
+    {
+      "name": "React docs for Octicon",
+      "match": "^react/Octicon",
+      "destination": "/components/icon/react"
+    },
+    {
+      "name": "React docs for SubNav",
+      "match": "^react/SubNav",
+      "destination": "/components/subnav/react"
+    },
+    {
+      "name": "React docs for ToggleSwitch",
+      "match": "^react/ToggleSwitch",
+      "destination": "/components/toggle-switch/react"
+    },
+    {
+      "name": "React docs for TabNav",
+      "match": "^react/TabNav",
+      "destination": "/components/tab-nav/react"
+    },
+    {
+      "name": "React docs for Textarea",
+      "match": "^react/Textarea",
+      "destination": "/components/textarea/react"
+    },
+    {
+      "name": "React docs for Text",
+      "match": "^react/Text",
+      "destination": "/components/text/react"
+    },
+    {
+      "name": "React docs for TextInput",
+      "match": "^react/TextInput",
+      "destination": "/components/text-input/react"
+    },
+    {
+      "name": "React docs for TextInputWithTokens",
+      "match": "^react/TextInputWithTokens",
+      "destination": "/components/text-input-with-tokens/react"
+    },
+    {
+      "name": "React docs for Timeline",
+      "match": "^react/Timeline",
+      "destination": "/components/timeline/react"
+    },
+    {
+      "name": "React docs for Token",
+      "match": "^react/Token",
+      "destination": "/components/token/react"
+    },
+    {
+      "name": "React docs for Tooltip",
+      "match": "^react/Tooltip",
+      "destination": "/components/tooltip/react"
+    },
+    {
+      "name": "React docs for TreeView",
+      "match": "^react/TreeView",
+      "destination": "/components/tree-view/react"
+    },
+    {
+      "name": "React docs for Truncate",
+      "match": "^react/Truncate",
+      "destination": "/components/truncate/react"
+    },
+    {
+      "name": "React docs for UnderlineNav",
+      "match": "^react/UnderlineNav",
+      "destination": "/components/underline-nav/react"
+    },
+
     {
       "name": "Component statuses",
       "match": "^status",
