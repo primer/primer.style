@@ -504,7 +504,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     cssFeature: `grid-template-areas: "header header header" "footer footer footer"`,
     questionOne: `I have had a fascination with front end engineering and UI for all of my career. Early on at GitHub I recognized the need to organize our code into reusable components. When the team formalized I had to be involved.`,
     questionTwo: `Both past and present I have to acknowledge that Nicole Sullivan has been profoundly influential in the way I front-end and write CSS. When she introduced concepts of OOCSS it brought me from thinking very linearly about CSS to a whole new range of systems thinking.`,
-    favoriteTools: `Atom, Bash/Shell, Figma, GitHub, iTerm, Javascript, MacBook Pro, Things`,
+    favoriteTools: `Atom, Bash/Shell, Figma, GitHub, iTerm, JavaScript, MacBook Pro, Things`,
     avatar: 'https://user-images.githubusercontent.com/586552/46690199-b4fdc980-cbcf-11e8-9f8d-59a694281b70.jpg',
     gif: 'https://user-images.githubusercontent.com/54012/50536666-fced1680-0b56-11e9-89e6-995cdb01a599.gif',
     alumni: false,
