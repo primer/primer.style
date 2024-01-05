@@ -17,7 +17,7 @@ const teamContent = [
     questionOne: `Having worked in and with several different software development teams before, I've learned it takes more than a process to deliver fast, reliable, high performant, quality products.
 
 Combining design and engineering on a stable system, while creating the most astonishing, accessible experience for our end users and developers is pure joy.`,
-    questionTwo: `I was fortunate to have had great mentors and colleagues who supported me througout my career and taught me the nitty gritty of programming. I'm a big fan of Katrina Owen, co-founder and director of [Exercism](https://exercism.org/). I adore the work of management leaders like [Camille Fournier](https://twitter.com/skamille),
+    questionTwo: `I was fortunate to have had great mentors and colleagues who supported me throughout my career and taught me the nitty gritty of programming. I'm a big fan of Katrina Owen, co-founder and director of [Exercism](https://exercism.org/). I adore the work of management leaders like [Camille Fournier](https://twitter.com/skamille),
     and I devour books where I can learn about people like [Erin Meyer's](https://erinmeyer.com/books/the-culture-map/) The Culture Map.`,
     favoriteTools: `Obsidian, Slack, Raycast, iTerm, hand lotion`,
     avatar: 'https://avatars.githubusercontent.com/u/13314317?s=400&u=98f8f63ae206c512f30f8363c2b5473201eda16d&v=4',
