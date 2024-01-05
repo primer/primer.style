@@ -32,7 +32,7 @@ jobs:
         run: |
           node ./script/redirects.js
 
-      - name: Copy rewrites to server root
+      - name: Copy redirects to server root
         run: |
           cp web.config public/
 
