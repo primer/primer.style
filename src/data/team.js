@@ -17,7 +17,7 @@ const teamContent = [
     questionOne: `Having worked in and with several different software development teams before, I've learned it takes more than a process to deliver fast, reliable, high performant, quality products.
 
 Combining design and engineering on a stable system, while creating the most astonishing, accessible experience for our end users and developers is pure joy.`,
-    questionTwo: `I was fortunate to have had great mentors and colleagues who supported me througout my career and taught me the nitty gritty of programming. I'm a big fan of Katrina Owen, co-founder and director of [Exercism](https://exercism.org/). I adore the work of management leaders like [Camille Fournier](https://twitter.com/skamille),
+    questionTwo: `I was fortunate to have had great mentors and colleagues who supported me throughout my career and taught me the nitty gritty of programming. I'm a big fan of Katrina Owen, co-founder and director of [Exercism](https://exercism.org/). I adore the work of management leaders like [Camille Fournier](https://twitter.com/skamille),
     and I devour books where I can learn about people like [Erin Meyer's](https://erinmeyer.com/books/the-culture-map/) The Culture Map.`,
     favoriteTools: `Obsidian, Slack, Raycast, iTerm, hand lotion`,
     avatar: 'https://avatars.githubusercontent.com/u/13314317?s=400&u=98f8f63ae206c512f30f8363c2b5473201eda16d&v=4',
@@ -248,7 +248,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     handle: 'alliethu',
     questionOne:
       "Early on in my career, I felt a natural pull towards design systems as I've always been a person who finds great joy in consolidating, organizing, and making sense of messy things. As soon as I began to specialize in accessibility, the power and importance of design systems became even more clear, ultimately turning into the core of my work.",
-    questionTwo: `I believe I inherited my curiousity and love for learning from my dad. My husband, who has helped teach me that I can be both a #bossatwork and a #bossmom. The Accessibility community who is small, but mighty, working hard to empower and educate people like me to grow the community even further. Lastly, all the open source design systems out there!`,
+    questionTwo: `I believe I inherited my curiosity and love for learning from my dad. My husband, who has helped teach me that I can be both a #bossatwork and a #bossmom. The Accessibility community who is small, but mighty, working hard to empower and educate people like me to grow the community even further. Lastly, all the open source design systems out there!`,
     favoriteTools: 'Notion, Slack, Figma, Microsoft Accessibility Insights, Spotify',
     avatar: 'https://user-images.githubusercontent.com/7228610/130680358-cd3a8b01-4fae-4e2c-ba05-e9ad6dd5cb14.jpg',
     gif: 'https://user-images.githubusercontent.com/7228610/183948245-6004efcf-1d90-40c0-8aba-22c4cdb6f7c1.gif',
@@ -311,7 +311,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     questionOne:
       "Over the decades, my primary expertise has slowly migrated from back-end development to front-end. I've always had an interest in design, and working on design systems allows me to explore that interest while continuing to leverage my expertise in front-end engineering.",
     questionTwo:
-      "The constant shifts in front-end programming over the years and an intrinsic desire to learn have always been a driving factor in my own exploration of computer programming. I'm fortuante to work with a huge number of talented engineers and designers at GitHub, which is very inspiring and very rewarding.",
+      "The constant shifts in front-end programming over the years and an intrinsic desire to learn have always been a driving factor in my own exploration of computer programming. I'm fortunate to work with a huge number of talented engineers and designers at GitHub, which is very inspiring and very rewarding.",
     favoriteTools: 'Vim, Photoshop, Blender, and a good, old-fashioned shell prompt.',
     avatar: 'https://user-images.githubusercontent.com/189606/75723431-29d41680-5c91-11ea-99ba-40e24813c1c0.jpg',
     gif: 'https://user-images.githubusercontent.com/189606/75723924-1ffee300-5c92-11ea-873c-8335de7eece6.gif',
@@ -323,7 +323,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     handle: 'edokoa',
     title: 'Systems Designer',
     questionOne:
-      'I think it happened naturally while working on bigger projects and having to define a source of truth. Producing and mantaining complex products is really difficult if you have to reinvent the wheel going through all the decision-making process again and again, alone or with your teammates.',
+      'I think it happened naturally while working on bigger projects and having to define a source of truth. Producing and maintaining complex products is really difficult if you have to reinvent the wheel going through all the decision-making process again and again, alone or with your teammates.',
     questionTwo:
       'My biggest source of inspiration have always been video games, I really like how good games craft a small reality and then put a lot of care into making interaction feel satisfactory and self-explanatory. Apart from that, I think there are lots of places inspiration can be drawn from: Music, furniture and interior design, photography, movies... ',
     favoriteTools: 'Photoshop, Figma, Maya, Unity, VS Code, PocketCasts, CityMapper.',
@@ -377,7 +377,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     title: 'Systems Designer',
     questionOne:
       'Throughout the various roles I’ve had in product design, creating good and cohesive experiences for people was always what truly motivated me to be in this area. As I started working in larger projects, style guides, design patterns and design systems became essential to scale cohesion, and ultimately part of my life.',
-    questionTwo: `I’ve been lucky to encounter and collaborate with immensely talented people where I’ve been — that has shaped me more than I can imagine. Over the years, stumbling upon [Bruno Bergher](https://brunobergher.com/), [Lulu LaMer](https://twitter.com/Lulu), [Andrew Branch](https://blog.andrewbran.ch/), among many many others, have shown me people who are eager to learn, and above all open to being wrong (even if they’re right most of the time). \n \n I like how [Yuval Noah Harari](https://en.wikipedia.org/wiki/Yuval_Noah_Harari) has helped me (and an entire generation) to see the big picture, and I have always been inspired by designers who spread beyond their areas like [Frank Chimero](https://frankchimero.com/) and [Rasmus Andersson](https://rsms.me) do.`,
+    questionTwo: `I’ve been lucky to encounter and collaborate with immensely talented people where I’ve been — that has shaped me more than I can imagine. Over the years, stumbling upon [Bruno Bergher](https://brunobergher.com/), [Lulu LaMer](https://twitter.com/Lulu), [Andrew Branch](https://blog.andrewbran.ch/), among many, many others, have shown me people who are eager to learn, and above all open to being wrong (even if they’re right most of the time). \n \n I like how [Yuval Noah Harari](https://en.wikipedia.org/wiki/Yuval_Noah_Harari) has helped me (and an entire generation) to see the big picture, and I have always been inspired by designers who spread beyond their areas like [Frank Chimero](https://frankchimero.com/) and [Rasmus Andersson](https://rsms.me) do.`,
     favoriteTools: 'Pen and paper, Figma, photography camera',
     avatar: 'https://user-images.githubusercontent.com/293280/64046286-6d9e6580-cb20-11e9-97da-47fb76a4ee36.JPG',
     gif: 'https://user-images.githubusercontent.com/293280/64045892-501ccc00-cb1f-11e9-99fb-ee1b8f7ce6ce.gif',
@@ -404,7 +404,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     questionOne: `I love organization and lists. I have a lists for things from movies to boba tea orders. I like to bring this into my design work as well, creating components and cohesiveness across platforms to make it easier for people to create great products.`,
     questionTwo: `When I first began learning about design, I was inspired by the people who contributed back to the community by teaching and opening up to students. Resources like [Students Who Design](https://studentswho.design/) and [Design Details](https://designdetails.fm) helped me figure out how I wanted to make a positive impact in tech.
 
-  More recently, I've been inspired by design agencies and companies that are testing the boundaries of design outside of what is accepted as 'common pratice'. I enjoy seeing unique animation and motion used to convey information, emotion, and storytelling.`,
+  More recently, I've been inspired by design agencies and companies that are testing the boundaries of design outside of what is accepted as 'common practice'. I enjoy seeing unique animation and motion used to convey information, emotion, and storytelling.`,
     favoriteTools: 'Sketch, Figma, Atom, Dropbox Paper, Twitter, Ping Pong, Ukulele',
     avatar: 'https://user-images.githubusercontent.com/6846673/59784198-bb703500-9276-11e9-8ec6-a02fc3eb2fc5.jpg',
     gif: 'https://user-images.githubusercontent.com/6846673/59376179-7a22d700-8d04-11e9-91da-09e45112e162.gif',
@@ -476,7 +476,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     cssFeature: 'word-break: break-word',
     questionOne: `Up until now, I've been mostly working Front End Engineering roles, but I've always been interested in finding something that was a good mix between Front End and Design. Design Systems feels like the perfect hybrid between the two! \n \n I'm also really into accessibility, and I found that having a design system that enforces accessible standards is one of the easiest ways to make progress on getting a team on-boarded with accessibility best practices and getting those practices implemented in production \n \n I'm super excited about our React component library that we've been working on over the past few months!`,
     questionTwo: `Some people & projects that have been inspiring to me are: are Nicole Sullivan, Vaidehi Joshi's [BaseCS blog](https://medium.com/basecs) &
-     , Mina Markham's [slay.sh](https://slay.sh/), Una Kravets, Suz Hinton's
+     , Mina Markham's [slay.sh](https://slay.sh/), Una Kravetz, Suz Hinton's
      [talk about accessibility at Dinosaur.js](https://www.youtube.com/watch?v=hKIQkgPVXH4), Marcy Sutton, and Anil Dash.`,
     favoriteTools: 'Figma, Notion (for taking notes & planning), React',
     avatar: 'https://user-images.githubusercontent.com/586552/46690198-b4fdc980-cbcf-11e8-95e3-c3e28b69a29c.jpg',
@@ -504,7 +504,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     cssFeature: `grid-template-areas: "header header header" "footer footer footer"`,
     questionOne: `I have had a fascination with front end engineering and UI for all of my career. Early on at GitHub I recognized the need to organize our code into reusable components. When the team formalized I had to be involved.`,
     questionTwo: `Both past and present I have to acknowledge that Nicole Sullivan has been profoundly influential in the way I front-end and write CSS. When she introduced concepts of OOCSS it brought me from thinking very linearly about CSS to a whole new range of systems thinking.`,
-    favoriteTools: `Atom, Bash/Shell, Figma, GitHub, iTerm, Javascript, MacBook Pro, Things`,
+    favoriteTools: `Atom, Bash/Shell, Figma, GitHub, iTerm, JavaScript, MacBook Pro, Things`,
     avatar: 'https://user-images.githubusercontent.com/586552/46690199-b4fdc980-cbcf-11e8-9f8d-59a694281b70.jpg',
     gif: 'https://user-images.githubusercontent.com/54012/50536666-fced1680-0b56-11e9-89e6-995cdb01a599.gif',
     alumni: false,
@@ -516,7 +516,7 @@ Various design podcasts including [SimpleBits](https://show.simplebits.com/), [H
     cssFeature: 'text-decoration: underline wavy',
     questionOne:
       'I was drawn to design systems for many reasons—the opportunity to improve design and development workflow efficiency; the potential benefits well-design systems can bring to the user experience; I like to bring order to chaos and enjoy working at the intersection of design and code. I also love that there is still so much to learn in the field and really enjoy the passion of the community behind design systems.',
-    questionTwo: `I don't have room on this webpage to list everyone! [SMACSS](https://smacss.com/), [The Art and Science of CSS](https://www.amazon.com/Science-Jonathan-Bolton-Cameron-Paperback/dp/B00ZVORUW6), and [Veerle Pieters](http://veerle.duoh.com/) were some early influences. [OOCSS](https://github.com/stubbornella/oocss/wiki) by Nicole Sullivan, [CSS Wizardary](https://csswizardry.com/), [Basscss](http://basscss.com/), [Tachyons](https://tachyons.io/), and [BEM](http://getbem.com/naming/) influenced my approach to CSS architecture. More recently I've been inspired by Rune Madsen's [Programming Design Systems](https://programmingdesignsystems.com), [Compositor](https://github.com/c8r), [Dan Abramov](https://twitter.com/dan_abramov), [Sebastian Markbage](https://youtu.be/4anAwXYqLG8), and so many design and code wonder women like [Mandy Kerr](https://twitter.com/mandy_kerr), [Marcy Sutton](https://twitter.com/marcysutton), [Lea Verou](https://twitter.com/LeaVerou), [Mina Markham](https://twitter.com/MinaMarkham), [Sarah Drasner](https://twitter.com/sarah_edo) and [Jina Anne](https://twitter.com/jina).`,
+    questionTwo: `I don't have room on this webpage to list everyone! [SMACSS](https://smacss.com/), [The Art and Science of CSS](https://www.amazon.com/Science-Jonathan-Bolton-Cameron-Paperback/dp/B00ZVORUW6), and [Veerle Pieters](http://veerle.duoh.com/) were some early influences. [OOCSS](https://github.com/stubbornella/oocss/wiki) by Nicole Sullivan, [CSS Wizardry](https://csswizardry.com/), [Basscss](http://basscss.com/), [Tachyons](https://tachyons.io/), and [BEM](http://getbem.com/naming/) influenced my approach to CSS architecture. More recently I've been inspired by Rune Madsen's [Programming Design Systems](https://programmingdesignsystems.com), [Compositor](https://github.com/c8r), [Dan Abramov](https://twitter.com/dan_abramov), [Sebastian Markbage](https://youtu.be/4anAwXYqLG8), and so many design and code wonder women like [Mandy Kerr](https://twitter.com/mandy_kerr), [Marcy Sutton](https://twitter.com/marcysutton), [Lea Verou](https://twitter.com/LeaVerou), [Mina Markham](https://twitter.com/MinaMarkham), [Sarah Drasner](https://twitter.com/sarah_edo) and [Jina Anne](https://twitter.com/jina).`,
     favoriteTools: 'Hyper, Atom, Figma, MDN, and Quip',
     avatar: 'https://user-images.githubusercontent.com/586552/46751001-5c8a0300-cc87-11e8-84bb-9024b03df74f.jpg',
     gif: 'https://user-images.githubusercontent.com/334891/50363219-bab14d00-0538-11e9-9595-48b3c45358ab.gif',
