@@ -56,11 +56,6 @@
       "destination": "/primitives/storybook/?path=/story/size-base--base"
     },
     {
-      "name": "Redirect /primitives/typography",
-      "match": "primitives/typography",
-      "destination": "/primitives/storybook/?path=/story/typography-base--base"
-    },
-    {
       "name": "Redirect /primitives",
       "match": "^primitives/?$",
       "destination": "/primitives/storybook/"
