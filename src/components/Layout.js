@@ -1,6 +1,6 @@
 import {Box, ThemeProvider} from '@primer/react'
-import {Header} from '@primer/gatsby-theme-doctocat'
-import {Head} from './Head'
+import {Head, Header} from '@primer/gatsby-theme-doctocat'
+//import {Head} from './Head'
 import '@primer/css/layout/index.scss'
 import React from 'react'
 
