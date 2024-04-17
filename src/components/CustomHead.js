@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-export default function CustomHydro() {
+export default function CustomHead() {
   return (
     <Helmet>
       <meta name="ha-url" content="https://collector.githubapp.com/primer/collect" />
