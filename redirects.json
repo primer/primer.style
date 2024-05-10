@@ -852,22 +852,22 @@
     {
       "name": "ViewComponents Preview assets proxy",
       "match": "^assets/(.*)",
-      "destination": "https://view-components-storybook.eastus.cloudapp.azure.com/assets/{R:1}"
+      "destination": "https://primer-lookbook.github.com/assets/{R:1}"
     },
     {
       "name": "ViewComponents Lookbook assets proxy",
       "match": "^lookbook-assets/(.*)",
-      "destination": "https://view-components-storybook.eastus.cloudapp.azure.com/lookbook-assets/{R:1}"
+      "destination": "https://primer-lookbook.github.com/lookbook-assets/{R:1}"
     },
     {
       "name": "ViewComponents Lookbook proxy",
       "match": "^view-components/lookbook/(.*)",
-      "destination": "https://view-components-storybook.eastus.cloudapp.azure.com/view-components/lookbook/{R:1}"
+      "destination": "https://primer-lookbook.github.com/view-components/lookbook/{R:1}"
     },
     {
       "name": "ViewComponents Rails App proxy",
       "match": "^view-components/rails-app/(.*)",
-      "destination": "https://view-components-storybook.eastus.cloudapp.azure.com/view-components/rails-app/{R:1}"
+      "destination": "https://primer-lookbook.github.com/view-components/rails-app/{R:1}"
     },
     {
       "name": "Presentations proxy",
