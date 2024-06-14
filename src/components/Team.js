@@ -36,7 +36,7 @@ export default function Team(props) {
             openings on our team.
           </Text>
         </Box>
-        <Box posistion="relative" as={Box} width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx="auto" mb={[4, 4, 4, 0]}>
+        <Box position="relative" as={Box} width={[11 / 12, 8 / 12, 8 / 12, 5 / 12]} mx="auto" mb={[4, 4, 4, 0]}>
           <Box px={5} pt={[6, 0, 0, 6]}>
             <TeamImage width="100%" height={null} />
           </Box>
