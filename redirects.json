@@ -347,49 +347,49 @@
       "destination": "/guides/react"
     },
     {
-      "name": "React redirect TODO",
+      "name": "React redirect theming",
       "match": "^react/theming",
-      "destination": "TODO"
+      "destination": "/guides/react/theming"
     },
     {
-      "name": "React redirect TODO",
+      "name": "React redirect theme reference",
       "match": "^react/theme-reference",
-      "destination": "TODO"
+      "destination": "/guides/react/theme-reference"
     },
     {
-      "name": "React redirect TODO",
+      "name": "React redirect linting",
       "match": "^react/linting",
-      "destination": "TODO"
+      "destination": "/guides/react/linting"
     },
     {
-      "name": "React redirect TODO",
+      "name": "React redirect system props",
       "match": "^react/system-props",
-      "destination": "TODO"
+      "destination": "/guides/react/system-props"
     },
     {
-      "name": "React redirect TODO",
+      "name": "React redirect core concepts",
       "match": "^react/core-concepts",
-      "destination": "TODO"
+      "destination": "/guides/react/core-concepts"
     },
     {
-      "name": "React redirect TODO",
+      "name": "React redirect philosophy",
       "match": "^react/philosophy",
-      "destination": "TODO"
+      "destination": "/guides/react/philosophy"
     },
     {
-      "name": "React redirect TODO",
+      "name": "React redirect overriding styles",
       "match": "^react/overriding-styles",
-      "destination": "TODO"
+      "destination": "/guides/react/overriding-styles"
     },
     {
-      "name": "React redirect TODO",
+      "name": "React redirect status",
       "match": "^react/status",
-      "destination": "TODO"
+      "destination": "/guides/status"
     },
     {
-      "name": "React redirect TODO",
+      "name": "React redirect useSafeTimeout hook",
       "match": "^react/hooks/useSafeTimeout",
-      "destination": "TODO"
+      "destination": "/guides/react/hooks/use-safe-timeout"
     },
 
     {
@@ -959,11 +959,6 @@
       "name": "Prism proxy",
       "match": "^prism/(.*)",
       "destination": "https://primer.github.io/prism/{R:1}"
-    },
-    {
-      "name": "React reverse-proxy",
-      "match": "^react/(.*)",
-      "destination": "https://primer.github.io/react/{R:1}"
     },
     {
       "name": "CSS reverse-proxy",
