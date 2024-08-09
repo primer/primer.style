@@ -337,6 +337,62 @@
     },
 
     {
+      "name": "React index redirect to guides",
+      "match": "^react/",
+      "destination": "/guides/react"
+    },
+    {
+      "name": "React redirect getting started",
+      "match": "^react/getting-started",
+      "destination": "/guides/react"
+    },
+    {
+      "name": "React redirect TODO",
+      "match": "^react/theming",
+      "destination": "TODO"
+    },
+    {
+      "name": "React redirect TODO",
+      "match": "^react/theme-reference",
+      "destination": "TODO"
+    },
+    {
+      "name": "React redirect TODO",
+      "match": "^react/linting",
+      "destination": "TODO"
+    },
+    {
+      "name": "React redirect TODO",
+      "match": "^react/system-props",
+      "destination": "TODO"
+    },
+    {
+      "name": "React redirect TODO",
+      "match": "^react/core-concepts",
+      "destination": "TODO"
+    },
+    {
+      "name": "React redirect TODO",
+      "match": "^react/philosophy",
+      "destination": "TODO"
+    },
+    {
+      "name": "React redirect TODO",
+      "match": "^react/overriding-styles",
+      "destination": "TODO"
+    },
+    {
+      "name": "React redirect TODO",
+      "match": "^react/status",
+      "destination": "TODO"
+    },
+    {
+      "name": "React redirect TODO",
+      "match": "^react/hooks/useSafeTimeout",
+      "destination": "TODO"
+    },
+
+    {
       "name": "React docs for ActionList",
       "match": "^react/ActionList",
       "destination": "/components/action-list/react"
