@@ -337,8 +337,8 @@
     },
 
     {
-      "name": "React index redirect to site index",
-      "match": "^react/",
+      "name": "Redirect react root",
+      "match": "^react/$",
       "destination": "/"
     },
     {
