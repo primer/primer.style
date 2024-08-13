@@ -337,6 +337,62 @@
     },
 
     {
+      "name": "Redirect react root",
+      "match": "^react/$",
+      "destination": "/"
+    },
+    {
+      "name": "React redirect getting started",
+      "match": "^react/getting-started",
+      "destination": "/guides/react"
+    },
+    {
+      "name": "React redirect theming",
+      "match": "^react/theming",
+      "destination": "/guides/react/theming"
+    },
+    {
+      "name": "React redirect theme reference",
+      "match": "^react/theme-reference",
+      "destination": "/guides/react/theme-reference"
+    },
+    {
+      "name": "React redirect linting",
+      "match": "^react/linting",
+      "destination": "/guides/react/linting"
+    },
+    {
+      "name": "React redirect system props",
+      "match": "^react/system-props",
+      "destination": "/guides/react/system-props"
+    },
+    {
+      "name": "React redirect core concepts",
+      "match": "^react/core-concepts",
+      "destination": "/guides/react/core-concepts"
+    },
+    {
+      "name": "React redirect philosophy",
+      "match": "^react/philosophy",
+      "destination": "/guides/react/philosophy"
+    },
+    {
+      "name": "React redirect overriding styles",
+      "match": "^react/overriding-styles",
+      "destination": "/guides/react/overriding-styles"
+    },
+    {
+      "name": "React redirect status",
+      "match": "^react/status",
+      "destination": "/guides/status"
+    },
+    {
+      "name": "React redirect useSafeTimeout hook",
+      "match": "^react/hooks/useSafeTimeout",
+      "destination": "/guides/react/hooks/use-safe-timeout"
+    },
+
+    {
       "name": "React docs for ActionList",
       "match": "^react/ActionList",
       "destination": "/components/action-list/react"
@@ -903,11 +959,6 @@
       "name": "Prism proxy",
       "match": "^prism/(.*)",
       "destination": "https://primer.github.io/prism/{R:1}"
-    },
-    {
-      "name": "React reverse-proxy",
-      "match": "^react/(.*)",
-      "destination": "https://primer.github.io/react/{R:1}"
     },
     {
       "name": "CSS reverse-proxy",
