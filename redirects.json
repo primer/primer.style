@@ -966,6 +966,11 @@
       "destination": "https://primer.github.io/css/storybook/{R:1}"
     },
     {
+      "name": "React Storybook reverse-proxy",
+      "match": "^react/storybook/(.*)",
+      "destination": "https://primer.github.io/react/storybook/{R:1}"
+    },
+    {
       "name": "Design proxy",
       "match": "^/?(.*)",
       "destination": "https://primer.github.io/design/{R:1}"
