@@ -911,6 +911,11 @@
       "destination": "https://primer-lookbook.github.com/assets/{R:1}"
     },
     {
+      "name": "ViewComponents Preview assets proxy (Vite)",
+      "match": "^vite/assets/(.*)",
+      "destination": "https://primer-lookbook.github.com/vite/assets/{R:1}"
+    },
+    {
       "name": "ViewComponents Lookbook assets proxy",
       "match": "^lookbook-assets/(.*)",
       "destination": "https://primer-lookbook.github.com/lookbook-assets/{R:1}"
