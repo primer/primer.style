@@ -978,7 +978,7 @@
     {
       "name": "Design proxy",
       "match": "^/?(.*)",
-      "destination": "https://primer.github.io/design/{R:1}"
+      "destination": "https://glb-db52c2cf8be544.github.com/{R:1}"
     }
   ]
 }
