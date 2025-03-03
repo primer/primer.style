@@ -132,6 +132,20 @@ function buildRedirects() {
             <add input="{REQUEST_FILENAME}" pattern="(.*?)\\.[a-zA-Z]{1,4}$" negate="true" />
             <add input="{URL}" negate="true" pattern="\\.woff2$" />
             <add input="{URL}" negate="true" pattern="\\.webmanifest$" />
+
+            <add input="{REQUEST_URI}" pattern="^assets" />
+            <add input="{REQUEST_URI}" pattern="^vite/assets" />
+            <add input="{REQUEST_URI}" pattern="^lookbook-assets" />
+            <add input="{REQUEST_URI}" pattern="^view-components/lookbook" />
+            <add input="{REQUEST_URI}" pattern="^view-components/rails-app" />
+            <add input="{REQUEST_URI}" pattern="^presentations" />
+            <add input="{REQUEST_URI}" pattern="^doctocat" />
+            <add input="{REQUEST_URI}" pattern="^primitives" />
+            <add input="{REQUEST_URI}" pattern="^brand" />
+            <add input="{REQUEST_URI}" pattern="^contribution" />
+            <add input="{REQUEST_URI}" pattern="^prism" />
+            <add input="{REQUEST_URI}" pattern="^css" />
+            <add input="{REQUEST_URI}" pattern="^react" />
           </conditions>
           <action type="Redirect" redirectType="Temporary" url="{R:1}/" />
         </rule>
