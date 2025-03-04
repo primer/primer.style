@@ -36,14 +36,14 @@
       "destination": "https://github.com/primer/octicons/tree/main/lib/octicons_styled#readme"
     },
     {
-      "name": "Redirect /octicons/guidelines/design",
-      "match": "octicons/guidelines/design",
-      "destination": "/foundations/icons/design-guidelines"
+      "name": "Redirect /foundations/icons/design-guidelines",
+      "match": "/foundations/icons/design-guidelines"
+      "destination": "/octicons/design-guidelines",
     },
     {
-      "name": "Redirect /octicons/*",
-      "match": "(octicons)(.*)",
-      "destination": "/foundations/icons{R:2}"
+      "name": "Redirect /foundations/icons/*",
+      "match": "/foundations/icons(.*)"
+      "destination": "/octicons{R:2}",
     },
     {
       "name": "Redirect /primitives/colors",
