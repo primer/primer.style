@@ -124,15 +124,6 @@ function buildRedirects() {
         </rule>
         <!-- END SSL -->
 
-        <rule name="Add Trailing Slash to Storybook" stopProcessing="false">
-          <match url="(.*)storybook$" />
-          <conditions logicalGrouping="MatchAll">
-            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-          </conditions>
-          <action type="Redirect" url="{R:1}storybook/" redirectType="Permanent" />
-        </rule>
-
         <!--BEGIN 301 redirects. Goes before URL rewrites -->
         ${redirects}
         <!--END 301 redirects -->
