@@ -162,34 +162,6 @@ function buildRedirects() {
         </rule>
         <!-- END SSL -->
 
-        <!-- BEGIN HTTP HEADER FORWARDING -->
-        <rule name="Forward All Headers" stopProcessing="false">
-          <match url=".*" />
-          <conditions logicalGrouping="MatchAll">
-            <add input="{HTTP_HOST}" pattern=".*" />
-          </conditions>
-          <action type="Rewrite" url="{R:0}" />
-          <serverVariables>
-            <!-- Forward all standard HTTP headers -->
-            <set name="HTTP_HOST" value="{HTTP_HOST}" />
-            <set name="HTTP_ACCEPT" value="{HTTP_ACCEPT}" />
-            <set name="HTTP_ACCEPT_ENCODING" value="{HTTP_ACCEPT_ENCODING}" />
-            <set name="HTTP_ACCEPT_LANGUAGE" value="{HTTP_ACCEPT_LANGUAGE}" />
-            <set name="HTTP_CONNECTION" value="{HTTP_CONNECTION}" />
-            <set name="HTTP_COOKIE" value="{HTTP_COOKIE}" />
-            <set name="HTTP_USER_AGENT" value="{HTTP_USER_AGENT}" />
-            <set name="HTTP_REFERER" value="{HTTP_REFERER}" />
-            <set name="HTTP_X_FORWARDED_FOR" value="{HTTP_X_FORWARDED_FOR}" />
-            <set name="HTTP_X_FORWARDED_HOST" value="{HTTP_X_FORWARDED_HOST}" />
-            <set name="HTTP_X_FORWARDED_PROTO" value="{HTTP_X_FORWARDED_PROTO}" />
-
-            <!-- Capture and forward any custom headers -->
-            <set name="HTTP_X_CUSTOM_HEADER" value="{HTTP_X_CUSTOM_HEADER}" />
-            <set name="HTTP_X_CORRELATION_ID" value="{HTTP_X_CORRELATION_ID}" />
-          </serverVariables>
-        </rule>
-        <!-- END HTTP HEADER FORWARDING -->
-
         <rule name="Add Trailing Slash to Storybook" stopProcessing="false">
           <match url="(.*)storybook$" />
           <conditions logicalGrouping="MatchAll">
@@ -206,7 +178,6 @@ function buildRedirects() {
           </conditions>
           <action type="Rewrite" url="https://primer-docs-preview.github.com{REQUEST_URI}" />
         </rule>
-
       </rules>
 
       <outboundRules>
