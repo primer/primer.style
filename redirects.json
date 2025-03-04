@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "name": "Presentations proxy",
-      "match": "^presentations?(.*)",
+      "match": "presentations(.*)",
       "destination": "https://primer.github.io/presentations{R:1}"
     },
     {
