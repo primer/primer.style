@@ -162,25 +162,8 @@ function buildRedirects() {
         </rule>
         <!-- END SSL -->
 
-        <rule name="Add Trailing Slash to Storybook" stopProcessing="false">
-          <match url="(.*)storybook$" />
-          <conditions logicalGrouping="MatchAll">
-            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-          </conditions>
-          <action type="Redirect" url="{R:1}storybook/" redirectType="Permanent" />
-        </rule>
-
-        <rule name="Rewrite to primer-docs-preview" stopProcessing="true">
-          <match url=".*" />
-          <conditions logicalGrouping="MatchAll">
-            <add input="{HTTP_HOST}" pattern=".*" />
-          </conditions>
-          <action type="Rewrite" url="https://primer-docs-preview.github.com{REQUEST_URI}" />
-        </rule>
-
         <!-- BEGIN HTTP HEADER FORWARDING -->
-        <rule name="Forward All Headers" stopProcessing="true">
+        <rule name="Forward All Headers" stopProcessing="false">
           <match url=".*" />
           <conditions logicalGrouping="MatchAll">
             <add input="{HTTP_HOST}" pattern=".*" />
@@ -206,6 +189,24 @@ function buildRedirects() {
           </serverVariables>
         </rule>
         <!-- END HTTP HEADER FORWARDING -->
+
+        <rule name="Add Trailing Slash to Storybook" stopProcessing="false">
+          <match url="(.*)storybook$" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Redirect" url="{R:1}storybook/" redirectType="Permanent" />
+        </rule>
+
+        <rule name="Rewrite to primer-docs-preview" stopProcessing="true">
+          <match url=".*" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{HTTP_HOST}" pattern=".*" />
+          </conditions>
+          <action type="Rewrite" url="https://primer-docs-preview.github.com{REQUEST_URI}" />
+        </rule>
+
       </rules>
 
       <outboundRules>
