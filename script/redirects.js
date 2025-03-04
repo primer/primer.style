@@ -102,27 +102,8 @@ function buildRedirects() {
   // const config = `<?xml version="1.0" encoding="UTF-8"?>
   // <configuration>
   // <system.webServer>
-  // <staticContent>
-  // <mimeMap fileExtension=".json" mimeType="application/json" />
-  // <mimeMap fileExtension=".webmanifest" mimeType="application/manifest+json" />
-  // <remove fileExtension=".woff2" />
-  // <mimeMap fileExtension=".woff2" mimeType="font/woff2" />
-  // </staticContent>
-  // <httpErrors errorMode="Custom" existingResponse="Auto" defaultResponseMode="ExecuteURL" >
-  // <remove statusCode="404"/>
-  // <error statusCode="404" responseMode="ExecuteURL" path="/404/index.html" />
-  // </httpErrors>
   // <rewrite>
   // <rules>
-  // <!--BEGIN SSL-->
-  // <rule name="ForceSSL" stopProcessing="true">
-  // <match url="(.*)" />
-  // <conditions>
-  // <add input="{HTTPS}" pattern="^OFF$" ignoreCase="true" />
-  // </conditions>
-  // <action type="Redirect" url="https://{C:2}/{R:1}" redirectType="Permanent" />
-  // </rule>
-  // <!--END SSL-->
   // <!--BEGIN Trailing slash enforcement-->
   // <rule name="Add trailing slash" stopProcessing="true">
   // <match url="(.*[^/])$" />
@@ -157,16 +138,31 @@ function buildRedirects() {
   const config = `<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
   <system.webServer>
+    <staticContent>
+      <mimeMap fileExtension=".json" mimeType="application/json" />
+      <mimeMap fileExtension=".webmanifest" mimeType="application/manifest+json" />
+      <remove fileExtension=".woff2" />
+      <mimeMap fileExtension=".woff2" mimeType="font/woff2" />
+    </staticContent>
+
+    <httpErrors errorMode="Custom" existingResponse="Auto" defaultResponseMode="ExecuteURL" >
+      <remove statusCode="404" />
+      <error statusCode="404" responseMode="ExecuteURL" path="/404/index.html" />
+    </httpErrors>
+
     <rewrite>
       <rules>
-        <rule name="Rewrite to primer-docs-preview" stopProcessing="true">
-          <match url=".*" />
-          <conditions logicalGrouping="MatchAll">
-            <add input="{HTTP_HOST}" pattern=".*" />
+        <!-- BEGIN SSL -->
+        <rule name="ForceSSL" stopProcessing="true">
+          <match url="(.*)" />
+          <conditions>
+            <add input="{HTTPS}" pattern="^OFF$" ignoreCase="true" />
           </conditions>
-          <action type="Rewrite" url="https://glb-db52c2cf8be544.github.com{REQUEST_URI}" />
+          <action type="Redirect" url="https://{C:2}/{R:1}" redirectType="Permanent" />
         </rule>
+        <!-- END SSL -->
 
+        <!-- BEGIN HTTP HEADER FORWARDING -->
         <rule name="Forward All Headers" stopProcessing="true">
           <match url=".*" />
           <conditions logicalGrouping="MatchAll">
@@ -186,14 +182,34 @@ function buildRedirects() {
             <set name="HTTP_X_FORWARDED_FOR" value="{HTTP_X_FORWARDED_FOR}" />
             <set name="HTTP_X_FORWARDED_HOST" value="{HTTP_X_FORWARDED_HOST}" />
             <set name="HTTP_X_FORWARDED_PROTO" value="{HTTP_X_FORWARDED_PROTO}" />
-            
+
             <!-- Capture and forward any custom headers -->
             <set name="HTTP_X_CUSTOM_HEADER" value="{HTTP_X_CUSTOM_HEADER}" />
             <set name="HTTP_X_CORRELATION_ID" value="{HTTP_X_CORRELATION_ID}" />
           </serverVariables>
         </rule>
+        <!-- END HTTP HEADER FORWARDING -->
+
+        <!-- BEGIN TRAILING SLASH -->
+        <rule name="Add Trailing Slash to Storybook" stopProcessing="false">
+          <match url="(.*)storybook$" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Redirect" url="{R:1}storybook/" redirectType="Permanent" />
+        </rule>
+        <!-- END TRAILING SLASH -->
+
+        <rule name="Rewrite to primer-docs-preview" stopProcessing="true">
+          <match url=".*" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{HTTP_HOST}" pattern=".*" />
+          </conditions>
+          <action type="Rewrite" url="https://primer-docs-preview.github.com{REQUEST_URI}" />
+        </rule>
       </rules>
-      
+
       <outboundRules>
         <!-- Ensure Vary header is added for caching purposes -->
         <rule name="Add Vary Header">
