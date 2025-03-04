@@ -162,6 +162,14 @@ function buildRedirects() {
         </rule>
         <!-- END SSL -->
 
+        <rule name="Rewrite to primer-docs-preview" stopProcessing="true">
+          <match url=".*" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{HTTP_HOST}" pattern=".*" />
+          </conditions>
+          <action type="Rewrite" url="https://primer-docs-preview.github.com{REQUEST_URI}" />
+        </rule>
+
         <!-- BEGIN HTTP HEADER FORWARDING -->
         <rule name="Forward All Headers" stopProcessing="true">
           <match url=".*" />
@@ -189,25 +197,6 @@ function buildRedirects() {
           </serverVariables>
         </rule>
         <!-- END HTTP HEADER FORWARDING -->
-
-        <!-- BEGIN TRAILING SLASH -->
-        <rule name="Add Trailing Slash to Storybook" stopProcessing="false">
-          <match url="(.*)storybook$" />
-          <conditions logicalGrouping="MatchAll">
-            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-          </conditions>
-          <action type="Redirect" url="{R:1}storybook/" redirectType="Permanent" />
-        </rule>
-        <!-- END TRAILING SLASH -->
-
-        <rule name="Rewrite to primer-docs-preview" stopProcessing="true">
-          <match url=".*" />
-          <conditions logicalGrouping="MatchAll">
-            <add input="{HTTP_HOST}" pattern=".*" />
-          </conditions>
-          <action type="Rewrite" url="https://primer-docs-preview.github.com{REQUEST_URI}" />
-        </rule>
       </rules>
 
       <outboundRules>
@@ -216,6 +205,12 @@ function buildRedirects() {
           <match serverVariable="RESPONSE_Vary" pattern=".*" />
           <action type="Rewrite" value="Accept-Encoding, User-Agent" />
         </rule>
+
+        <preConditions>
+          <preCondition name="CheckContentType">
+            <add input="{RESPONSE_CONTENT_TYPE}" pattern="^(text/html|text/plain|text/xml|application/rss\\+xml)" />
+          </preCondition>
+        </preConditions>
       </outboundRules>
     </rewrite>
   </system.webServer>
