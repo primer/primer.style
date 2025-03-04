@@ -2,6 +2,41 @@
   "redirects": [],
   "rewrites": [
     {
+      "name": "Presentations proxy",
+      "match": "^presentations?(.*)",
+      "destination": "https://primer.github.io/presentations{R:1}"
+    },
+    {
+      "name": "Doctocat",
+      "match": "^doctocat(.*)",
+      "destination": "https://primer.github.io/doctocat{R:1}"
+    },
+    {
+      "name": "Primitives proxy",
+      "match": "^primitives/storybook/(.*)",
+      "destination": "https://primer.github.io/primitives/storybook/{R:1}"
+    },
+    {
+      "name": "Brand Storybook proxy",
+      "match": "^brand/storybook/(.*)",
+      "destination": "https://stunning-chainsaw-j82glqz.pages.github.io/{R:1}"
+    },
+    {
+      "name": "Brand proxy",
+      "match": "^brand(.*)",
+      "destination": "https://primer.github.io/brand{R:1}"
+    },
+    {
+      "name": "Contribute proxy",
+      "match": "^contribute(.*)",
+      "destination": "https://primer.github.io/contribute{R:1}"
+    },
+    {
+      "name": "Prism proxy",
+      "match": "^prism(.*)",
+      "destination": "https://primer.github.io/prism{R:1}"
+    },
+    {
       "name": "CSS reverse-proxy",
       "match": "^css/storybook/(.*)",
       "destination": "https://primer.github.io/css/storybook/{R:1}"
