@@ -164,7 +164,7 @@ function buildRedirects() {
           <conditions logicalGrouping="MatchAll">
             <add input="{HTTP_HOST}" pattern=".*" />
           </conditions>
-          <action type="Rewrite" url="https://primer-docs-preview.github.com{REQUEST_URI}" />
+          <action type="Rewrite" url="https://glb-db52c2cf8be544.github.com{REQUEST_URI}" />
         </rule>
 
         <rule name="Forward All Headers" stopProcessing="true">
