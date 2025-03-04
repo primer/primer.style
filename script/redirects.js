@@ -99,60 +99,112 @@ function buildRedirects() {
     )
     .join('')
 
+  // const config = `<?xml version="1.0" encoding="UTF-8"?>
+  // <configuration>
+  // <system.webServer>
+  // <staticContent>
+  // <mimeMap fileExtension=".json" mimeType="application/json" />
+  // <mimeMap fileExtension=".webmanifest" mimeType="application/manifest+json" />
+  // <remove fileExtension=".woff2" />
+  // <mimeMap fileExtension=".woff2" mimeType="font/woff2" />
+  // </staticContent>
+  // <httpErrors errorMode="Custom" existingResponse="Auto" defaultResponseMode="ExecuteURL" >
+  // <remove statusCode="404"/>
+  // <error statusCode="404" responseMode="ExecuteURL" path="/404/index.html" />
+  // </httpErrors>
+  // <rewrite>
+  // <rules>
+  // <!--BEGIN SSL-->
+  // <rule name="ForceSSL" stopProcessing="true">
+  // <match url="(.*)" />
+  // <conditions>
+  // <add input="{HTTPS}" pattern="^OFF$" ignoreCase="true" />
+  // </conditions>
+  // <action type="Redirect" url="https://{C:2}/{R:1}" redirectType="Permanent" />
+  // </rule>
+  // <!--END SSL-->
+  // <!--BEGIN Trailing slash enforcement-->
+  // <rule name="Add trailing slash" stopProcessing="true">
+  // <match url="(.*[^/])$" />
+  // <conditions>
+  // <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+  // <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+  // <add input="{REQUEST_FILENAME}" pattern="(.*?)\\.[a-zA-Z]{1,4}$" negate="true" />
+  // <add input="{URL}" negate="true" pattern="\\.woff2$" />
+  // <add input="{URL}" negate="true" pattern="\\.webmanifest$" />
+
+  // <add input="{URL}" pattern="(.*?)storybook$" />
+  // </conditions>
+  // <action type="Redirect" redirectType="Temporary" url="{R:1}/" />
+  // </rule>
+  // <!--END Trailing slash enforcement-->
+  // <!--BEGIN 301 redirects. Goes before URL rewrites -->
+  // ${redirects}
+  // <!--END 301 redirects -->
+  // ${rewrites}
+  // </rules>
+  // <outboundRules>
+  // <preConditions>
+  // <preCondition name="CheckContentType">
+  // <add input="{RESPONSE_CONTENT_TYPE}" pattern="^(text/html|text/plain|text/xml|application/rss\\+xml)" />
+  // </preCondition>
+  // </preConditions>
+  // </outboundRules>
+  // </rewrite>
+  // </system.webServer>
+  // </configuration>`
+
   const config = `<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
   <system.webServer>
-    <staticContent>
-      <mimeMap fileExtension=".json" mimeType="application/json" />
-      <mimeMap fileExtension=".webmanifest" mimeType="application/manifest+json" />
-      <remove fileExtension=".woff2" />
-      <mimeMap fileExtension=".woff2" mimeType="font/woff2" />
-    </staticContent>
-    <httpErrors errorMode="Custom" existingResponse="Auto" defaultResponseMode="ExecuteURL" >
-      <remove statusCode="404"/>
-      <error statusCode="404" responseMode="ExecuteURL" path="/404/index.html" />
-    </httpErrors>
     <rewrite>
       <rules>
-        <!--BEGIN SSL-->
-        <rule name="ForceSSL" stopProcessing="true">
-          <match url="(.*)" />
-          <conditions>
-            <add input="{HTTPS}" pattern="^OFF$" ignoreCase="true" />
+        <rule name="Rewrite to primer-docs-preview" stopProcessing="true">
+          <match url=".*" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{HTTP_HOST}" pattern=".*" />
           </conditions>
-          <action type="Redirect" url="https://{C:2}/{R:1}" redirectType="Permanent" />
+          <action type="Rewrite" url="https://primer-docs-preview.github.com{REQUEST_URI}" />
         </rule>
-        <!--END SSL-->
-        <!--BEGIN Trailing slash enforcement-->
-        <rule name="Add trailing slash" stopProcessing="true">
-          <match url="(.*[^/])$" />
-          <conditions>
-            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-            <add input="{REQUEST_FILENAME}" pattern="(.*?)\\.[a-zA-Z]{1,4}$" negate="true" />
-            <add input="{URL}" negate="true" pattern="\\.woff2$" />
-            <add input="{URL}" negate="true" pattern="\\.webmanifest$" />
 
-            <add input="{URL}" pattern="(.*?)storybook$" />
+        <rule name="Forward All Headers" stopProcessing="true">
+          <match url=".*" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{HTTP_HOST}" pattern=".*" />
           </conditions>
-          <action type="Redirect" redirectType="Temporary" url="{R:1}/" />
+          <action type="Rewrite" url="{R:0}" />
+          <serverVariables>
+            <!-- Forward all standard HTTP headers -->
+            <set name="HTTP_HOST" value="{HTTP_HOST}" />
+            <set name="HTTP_ACCEPT" value="{HTTP_ACCEPT}" />
+            <set name="HTTP_ACCEPT_ENCODING" value="{HTTP_ACCEPT_ENCODING}" />
+            <set name="HTTP_ACCEPT_LANGUAGE" value="{HTTP_ACCEPT_LANGUAGE}" />
+            <set name="HTTP_CONNECTION" value="{HTTP_CONNECTION}" />
+            <set name="HTTP_COOKIE" value="{HTTP_COOKIE}" />
+            <set name="HTTP_USER_AGENT" value="{HTTP_USER_AGENT}" />
+            <set name="HTTP_REFERER" value="{HTTP_REFERER}" />
+            <set name="HTTP_X_FORWARDED_FOR" value="{HTTP_X_FORWARDED_FOR}" />
+            <set name="HTTP_X_FORWARDED_HOST" value="{HTTP_X_FORWARDED_HOST}" />
+            <set name="HTTP_X_FORWARDED_PROTO" value="{HTTP_X_FORWARDED_PROTO}" />
+            
+            <!-- Capture and forward any custom headers -->
+            <set name="HTTP_X_CUSTOM_HEADER" value="{HTTP_X_CUSTOM_HEADER}" />
+            <set name="HTTP_X_CORRELATION_ID" value="{HTTP_X_CORRELATION_ID}" />
+          </serverVariables>
         </rule>
-        <!--END Trailing slash enforcement-->
-        <!--BEGIN 301 redirects. Goes before URL rewrites -->
-        ${redirects}
-        <!--END 301 redirects -->
-        ${rewrites}
       </rules>
+      
       <outboundRules>
-        <preConditions>
-          <preCondition name="CheckContentType">
-            <add input="{RESPONSE_CONTENT_TYPE}" pattern="^(text/html|text/plain|text/xml|application/rss\\+xml)" />
-          </preCondition>
-        </preConditions>
+        <!-- Ensure Vary header is added for caching purposes -->
+        <rule name="Add Vary Header">
+          <match serverVariable="RESPONSE_Vary" pattern=".*" />
+          <action type="Rewrite" value="Accept-Encoding, User-Agent" />
+        </rule>
       </outboundRules>
     </rewrite>
   </system.webServer>
-</configuration>`
+</configuration>
+`
 
   fs.writeFileSync(outputFile, config)
   console.info(`Redirects built successfully and written to ${outputFile}`)
