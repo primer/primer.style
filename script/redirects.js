@@ -162,6 +162,15 @@ function buildRedirects() {
         </rule>
         <!-- END SSL -->
 
+        <rule name="Add Trailing Slash to Storybook" stopProcessing="false">
+          <match url="(.*)storybook$" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Redirect" url="{R:1}storybook/" redirectType="Permanent" />
+        </rule>
+
         <rule name="Rewrite to primer-docs-preview" stopProcessing="true">
           <match url=".*" />
           <conditions logicalGrouping="MatchAll">
