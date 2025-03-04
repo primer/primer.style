@@ -37,13 +37,13 @@
     },
     {
       "name": "Redirect /foundations/icons/design-guidelines",
-      "match": "/foundations/icons/design-guidelines"
-      "destination": "/octicons/design-guidelines",
+      "match": "/foundations/icons/design-guidelines",
+      "destination": "/octicons/design-guidelines"
     },
     {
       "name": "Redirect /foundations/icons/*",
-      "match": "/foundations/icons(.*)"
-      "destination": "/octicons{R:2}",
+      "match": "/foundations/icons(.*)",
+      "destination": "/octicons{R:2}"
     },
     {
       "name": "Redirect /primitives/colors",
