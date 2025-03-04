@@ -99,42 +99,6 @@ function buildRedirects() {
     )
     .join('')
 
-  // const config = `<?xml version="1.0" encoding="UTF-8"?>
-  // <configuration>
-  // <system.webServer>
-  // <rewrite>
-  // <rules>
-  // <!--BEGIN Trailing slash enforcement-->
-  // <rule name="Add trailing slash" stopProcessing="true">
-  // <match url="(.*[^/])$" />
-  // <conditions>
-  // <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-  // <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-  // <add input="{REQUEST_FILENAME}" pattern="(.*?)\\.[a-zA-Z]{1,4}$" negate="true" />
-  // <add input="{URL}" negate="true" pattern="\\.woff2$" />
-  // <add input="{URL}" negate="true" pattern="\\.webmanifest$" />
-
-  // <add input="{URL}" pattern="(.*?)storybook$" />
-  // </conditions>
-  // <action type="Redirect" redirectType="Temporary" url="{R:1}/" />
-  // </rule>
-  // <!--END Trailing slash enforcement-->
-  // <!--BEGIN 301 redirects. Goes before URL rewrites -->
-  // ${redirects}
-  // <!--END 301 redirects -->
-  // ${rewrites}
-  // </rules>
-  // <outboundRules>
-  // <preConditions>
-  // <preCondition name="CheckContentType">
-  // <add input="{RESPONSE_CONTENT_TYPE}" pattern="^(text/html|text/plain|text/xml|application/rss\\+xml)" />
-  // </preCondition>
-  // </preConditions>
-  // </outboundRules>
-  // </rewrite>
-  // </system.webServer>
-  // </configuration>`
-
   const config = `<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
   <system.webServer>
@@ -171,13 +135,11 @@ function buildRedirects() {
           <action type="Redirect" url="{R:1}storybook/" redirectType="Permanent" />
         </rule>
 
-        <rule name="Rewrite to primer-docs-preview" stopProcessing="true">
-          <match url=".*" />
-          <conditions logicalGrouping="MatchAll">
-            <add input="{HTTP_HOST}" pattern=".*" />
-          </conditions>
-          <action type="Rewrite" url="https://primer-docs-preview.github.com{REQUEST_URI}" />
-        </rule>
+        <!--BEGIN 301 redirects. Goes before URL rewrites -->
+        ${redirects}
+        <!--END 301 redirects -->
+
+        ${rewrites}
       </rules>
 
       <outboundRules>
@@ -185,6 +147,12 @@ function buildRedirects() {
         <rule name="Add Vary Header">
           <match serverVariable="RESPONSE_Vary" pattern=".*" />
           <action type="Rewrite" value="Accept-Encoding, User-Agent" />
+        </rule>
+
+        <!-- Remove X-Powered-By header from outbound response -->
+        <rule name="Remove X-Powered-By Header">
+          <match serverVariable="RESPONSE_X-Powered-By" pattern=".*" />
+          <action type="Rewrite" value="" />
         </rule>
 
         <preConditions>
