@@ -2,6 +2,16 @@
   "redirects": [],
   "rewrites": [
     {
+      "name": "CSS reverse-proxy",
+      "match": "^css/storybook/(.*)",
+      "destination": "https://primer.github.io/css/storybook/{R:1}"
+    },
+    {
+      "name": "React Storybook reverse-proxy",
+      "match": "^react/storybook/(.*)",
+      "destination": "https://primer.github.io/react/storybook/{R:1}"
+    },
+    {
       "name": "Redirect to primer-docs",
       "match": ".*",
       "destination": "https://primer-docs-preview.github.com{REQUEST_URI}"

@@ -90,9 +90,7 @@ function buildRedirects() {
           <action type="Rewrite" url="${destination}" />
           <serverVariables>
             <set name="HTTP_X_UNPROXIED_URL" value="${destination}" />
-            <set name="HTTP_X_ORIGINAL_ACCEPT_ENCODING" value="{HTTP_ACCEPT_ENCODING}" />
             <set name="HTTP_X_ORIGINAL_HOST" value="{HTTP_HOST}" />
-            <set name="HTTP_ACCEPT_ENCODING" value="" />
           </serverVariables>
         </rule>
         `
