@@ -903,509 +903,441 @@
       "match": "/design/accessibility/tooltip-alternatives",
       "destination": "/components/tooltip#alternatives-to-tooltips"
     },
+
     {
       "name": "Redirect /guides/introduction to /product/getting-started",
-      "source": "guides/introduction",
       "match": "^guides/introduction/?$",
       "destination": "/product/getting-started/"
     },
     {
       "name": "Redirect /guides/figma to /product/getting-started/figma",
-      "source": "guides/figma",
       "match": "^guides/figma/?$",
       "destination": "/product/getting-started/figma/"
     },
     {
       "name": "Redirect /guides/figma/getting-started to /product/getting-started/figma",
-      "source": "guides/figma/getting-started",
       "match": "^guides/figma/getting-started/?$",
       "destination": "/product/getting-started/figma/"
     },
     {
       "name": "Redirect /guides/figma/contribute to /product/contribute/contributing-to-figma",
-      "source": "guides/figma/contribute",
       "match": "^guides/figma/contribute/?$",
       "destination": "/product/contribute/contributing-to-figma/"
     },
     {
       "name": "Redirect /guides/rails to /product/getting-started/rails",
-      "source": "guides/rails",
       "match": "^guides/rails/?$",
       "destination": "/product/getting-started/rails/"
     },
     {
       "name": "Redirect /guides/rails/migration-guides to /product/getting-started/rails/migration-guides",
-      "source": "guides/rails/migration-guides",
       "match": "^guides/rails/migration-guides/?$",
       "destination": "/product/getting-started/rails/migration-guides/"
     },
     {
       "name": "Redirect /guides/react to /product/getting-started/react",
-      "source": "guides/react",
       "match": "^guides/react/?$",
       "destination": "/product/getting-started/react/"
     },
     {
       "name": "Redirect /guides/react/theming to /product/getting-started/react/theming",
-      "source": "guides/react/theming",
       "match": "^guides/react/theming/?$",
       "destination": "/product/getting-started/react/theming/"
     },
     {
       "name": "Redirect /guides/react/theme-reference to /product/getting-started/react/theme-reference",
-      "source": "guides/react/theme-reference",
       "match": "^guides/react/theme-reference/?$",
       "destination": "/product/getting-started/react/theme-reference/"
     },
     {
       "name": "Redirect /guides/react/linting to /product/getting-started/react/linting",
-      "source": "guides/react/linting",
       "match": "^guides/react/linting/?$",
       "destination": "/product/getting-started/react/linting/"
     },
     {
       "name": "Redirect /guides/react/core-concepts to /product/getting-started/react/core-concepts",
-      "source": "guides/react/core-concepts",
       "match": "^guides/react/core-concepts/?$",
       "destination": "/product/getting-started/react/core-concepts/"
     },
     {
       "name": "Redirect /guides/react/philosophy to /product/getting-started/react/philosophy",
-      "source": "guides/react/philosophy",
       "match": "^guides/react/philosophy/?$",
       "destination": "/product/getting-started/react/philosophy/"
     },
     {
       "name": "Redirect /guides/react/hooks to /product/hooks",
-      "source": "guides/react/hooks",
       "match": "^guides/react/hooks/?$",
       "destination": "/product/hooks/"
     },
     {
       "name": "Redirect /guides/react/hooks/use-focus-trap to /product/hooks/useFocusTrap",
-      "source": "guides/react/hooks/use-focus-trap",
       "match": "^guides/react/hooks/use-focus-trap/?$",
       "destination": "/product/hooks/useFocusTrap/"
     },
     {
       "name": "Redirect /guides/react/hooks/use-focus-zone to /product/hooks/useFocusZone",
-      "source": "guides/react/hooks/use-focus-zone",
       "match": "^guides/react/hooks/use-focus-zone/?$",
       "destination": "/product/hooks/useFocusZone/"
     },
     {
       "name": "Redirect /guides/react/hooks/use-on-escape-press to /product/hooks/useOnEscapePress",
-      "source": "guides/react/hooks/use-on-escape-press",
       "match": "^guides/react/hooks/use-on-escape-press/?$",
       "destination": "/product/hooks/useOnEscapePress/"
     },
     {
       "name": "Redirect /guides/react/hooks/use-on-outside-click to /product/hooks/useOnOutsideClick",
-      "source": "guides/react/hooks/use-on-outside-click",
       "match": "^guides/react/hooks/use-on-outside-click/?$",
       "destination": "/product/hooks/useOnOutsideClick/"
     },
     {
       "name": "Redirect /guides/react/hooks/use-open-and-close-focus to /product/hooks/useOpenAndCloseFocus",
-      "source": "guides/react/hooks/use-open-and-close-focus",
       "match": "^guides/react/hooks/use-open-and-close-focus/?$",
       "destination": "/product/hooks/useOpenAndCloseFocus/"
     },
     {
       "name": "Redirect /guides/react/hooks/use-overlay to /product/hooks/useOverlay",
-      "source": "guides/react/hooks/use-overlay",
       "match": "^guides/react/hooks/use-overlay/?$",
       "destination": "/product/hooks/useOverlay/"
     },
     {
       "name": "Redirect /guides/react/hooks/use-safe-timeout to /product/hooks/useSafeTimeout",
-      "source": "guides/react/hooks/use-safe-timeout",
       "match": "^guides/react/hooks/use-safe-timeout/?$",
       "destination": "/product/hooks/useSafeTimeout/"
     },
     {
       "name": "Redirect /guides/component-lifecycle to /product/getting-started/Component-status",
-      "source": "guides/component-lifecycle",
       "match": "^guides/component-lifecycle/?$",
       "destination": "/product/getting-started/Component-status/"
     },
     {
       "name": "Redirect /guides/status to /product/getting-started/component-status",
-      "source": "guides/status",
       "match": "^guides/status/?$",
       "destination": "/product/getting-started/component-status/"
     },
     {
       "name": "Redirect /guides/accessibility/accessibility-at-github to /accessibility/accessibility-at-github",
-      "source": "guides/accessibility/accessibility-at-github",
       "match": "^guides/accessibility/accessibility-at-github/?$",
       "destination": "/accessibility/accessibility-at-github/"
     },
     {
       "name": "Redirect /guides/accessibility/guidelines to /accessibility",
-      "source": "guides/accessibility/guidelines",
       "match": "^guides/accessibility/guidelines/?$",
       "destination": "/accessibility/"
     },
     {
       "name": "Redirect /guides/accessibility/tools to /accessibility/tools",
-      "source": "guides/accessibility/tools",
       "match": "^guides/accessibility/tools/?$",
       "destination": "/accessibility/tools/"
     },
     {
       "name": "Redirect /guides/accessibility/alternative-text-for-images to /accessibility/alternative-text-for-images",
-      "source": "guides/accessibility/alternative-text-for-images",
       "match": "^guides/accessibility/alternative-text-for-images/?$",
       "destination": "/accessibility/alternative-text-for-images/"
     },
     {
       "name": "Redirect /guides/accessibility/announcements to /accessibility/announcements",
-      "source": "guides/accessibility/announcements",
       "match": "^guides/accessibility/announcements/?$",
       "destination": "/accessibility/announcements/"
     },
     {
       "name": "Redirect /guides/accessibility/descriptive-buttons to /accessibility/descriptive-buttons",
-      "source": "guides/accessibility/descriptive-buttons",
       "match": "^guides/accessibility/descriptive-buttons/?$",
       "destination": "/accessibility/descriptive-buttons/"
     },
     {
       "name": "Redirect /guides/accessibility/focus-management to /accessibility/focus-management",
-      "source": "guides/accessibility/focus-management",
       "match": "^guides/accessibility/focus-management/?$",
       "destination": "/accessibility/focus-management/"
     },
     {
       "name": "Redirect /guides/accessibility/headings to /accessibility/headings",
-      "source": "guides/accessibility/headings",
       "match": "^guides/accessibility/headings/?$",
       "destination": "/accessibility/headings/"
     },
     {
       "name": "Redirect /guides/accessibility/links to /accessibility/links",
-      "source": "guides/accessibility/links",
       "match": "^guides/accessibility/links/?$",
       "destination": "/accessibility/links/"
     },
     {
       "name": "Redirect /guides/accessibility/semantic-html to /accessibility/semantic-html",
-      "source": "guides/accessibility/semantic-html",
       "match": "^guides/accessibility/semantic-html/?$",
       "destination": "/accessibility/semantic-html/"
     },
     {
       "name": "Redirect /guides/accessibility/text-resize-and-respacing to /accessibility/text-resize-and-spacing",
-      "source": "guides/accessibility/text-resize-and-respacing",
       "match": "^guides/accessibility/text-resize-and-respacing/?$",
       "destination": "/accessibility/text-resize-and-spacing/"
     },
     {
       "name": "Redirect /guides/accessibility/tooltip-alternatives to /accessibility/tooltips",
-      "source": "guides/accessibility/tooltip-alternatives",
       "match": "^guides/accessibility/tooltip-alternatives/?$",
       "destination": "/accessibility/tooltips/"
     },
     {
       "name": "Redirect /guides/contribute/how-to-contribute to /product/contribute/how-to-contribute",
-      "source": "guides/contribute/how-to-contribute",
       "match": "^guides/contribute/how-to-contribute/?$",
       "destination": "/product/contribute/how-to-contribute/"
     },
     {
       "name": "Redirect /guides/contribute/design to /product/contribute/design",
-      "source": "guides/contribute/design",
       "match": "^guides/contribute/design/?$",
       "destination": "/product/contribute/design/"
     },
     {
       "name": "Redirect /guides/contribute/documentation to /product/contribute/documentation",
-      "source": "guides/contribute/documentation",
       "match": "^guides/contribute/documentation/?$",
       "destination": "/product/contribute/documentation/"
     },
     {
       "name": "Redirect /guides/contribute/handling-new-patterns to /product/contribute/handling-new-patterns",
-      "source": "guides/contribute/handling-new-patterns",
       "match": "^guides/contribute/handling-new-patterns/?$",
       "destination": "/product/contribute/handling-new-patterns/"
     },
     {
       "name": "Redirect /guides/contribute/adding-new-components to /product/contribute/adding-new-components",
-      "source": "guides/contribute/adding-new-components",
       "match": "^guides/contribute/adding-new-components/?$",
       "destination": "/product/contribute/adding-new-components/"
     },
     {
       "name": "Redirect /foundations/color/overview to /product/getting-started/foundations/color-usage",
-      "source": "foundations/color/overview",
       "match": "^foundations/color/overview/?$",
       "destination": "/product/getting-started/foundations/color-usage/"
     },
     {
       "name": "Redirect /foundations/color/base-scales to /product/getting-started/foundations/color-usage#base-colors",
-      "source": "foundations/color/base-scales",
       "match": "^foundations/color/base-scales/?$",
       "destination": "/product/getting-started/foundations/color-usage#base-colors/"
     },
     {
       "name": "Redirect /foundations/color/accessibility to /accessibility/color-considerations",
-      "source": "foundations/color/accessibility",
       "match": "^foundations/color/accessibility/?$",
       "destination": "/accessibility/color-considerations/"
     },
     {
       "name": "Redirect /foundations/primitives/getting-started to /product/primitives",
-      "source": "foundations/primitives/getting-started",
       "match": "^foundations/primitives/getting-started/?$",
       "destination": "/product/primitives/"
     },
     {
       "name": "Redirect /foundations/primitives/token-names to /product/primitives/token-names",
-      "source": "foundations/primitives/token-names",
       "match": "^foundations/primitives/token-names/?$",
       "destination": "/product/primitives/token-names/"
     },
     {
       "name": "Redirect /foundations/primitives/color to /product/primitives/color",
-      "source": "foundations/primitives/color",
       "match": "^foundations/primitives/color/?$",
       "destination": "/product/primitives/color/"
     },
     {
       "name": "Redirect /foundations/primitives/size to /product/primitives/size",
-      "source": "foundations/primitives/size",
       "match": "^foundations/primitives/size/?$",
       "destination": "/product/primitives/size/"
     },
     {
       "name": "Redirect /foundations/primitives/typography to /product/primitives/typography",
-      "source": "foundations/primitives/typography",
       "match": "^foundations/primitives/typography/?$",
       "destination": "/product/primitives/typography/"
     },
     {
       "name": "Redirect /foundations/primitives/migrating to /product/primitives/migrating",
-      "source": "foundations/primitives/migrating",
       "match": "^foundations/primitives/migrating/?$",
       "destination": "/product/primitives/migrating/"
     },
     {
       "name": "Redirect /foundations/responsive to /product/getting-started/foundations/responsive",
-      "source": "foundations/responsive",
       "match": "^foundations/responsive/?$",
       "destination": "/product/getting-started/foundations/responsive/"
     },
     {
       "name": "Redirect /foundations/css-utilities/getting-started to /product/css-utilities",
-      "source": "foundations/css-utilities/getting-started",
       "match": "^foundations/css-utilities/getting-started/?$",
       "destination": "/product/css-utilities/"
     },
     {
       "name": "Redirect /foundations/css-utilities/animations to /product/css-utilities/animations",
-      "source": "foundations/css-utilities/animations",
       "match": "^foundations/css-utilities/animations/?$",
       "destination": "/product/css-utilities/animations/"
     },
     {
       "name": "Redirect /foundations/css-utilities/borders to /product/css-utilities/borders",
-      "source": "foundations/css-utilities/borders",
       "match": "^foundations/css-utilities/borders/?$",
       "destination": "/product/css-utilities/borders/"
     },
     {
       "name": "Redirect /foundations/css-utilities/box-shadow to /product/css-utilities/box-shadow",
-      "source": "foundations/css-utilities/box-shadow",
       "match": "^foundations/css-utilities/box-shadow/?$",
       "destination": "/product/css-utilities/box-shadow/"
     },
     {
       "name": "Redirect /foundations/css-utilities/colors to /product/css-utilities/colors",
-      "source": "foundations/css-utilities/colors",
       "match": "^foundations/css-utilities/colors/?$",
       "destination": "/product/css-utilities/colors/"
     },
     {
       "name": "Redirect /foundations/css-utilities/details to /product/css-utilities/details",
-      "source": "foundations/css-utilities/details",
       "match": "^foundations/css-utilities/details/?$",
       "destination": "/product/css-utilities/details/"
     },
     {
       "name": "Redirect /foundations/css-utilities/flexbox to /product/css-utilities/flexbox",
-      "source": "foundations/css-utilities/flexbox",
       "match": "^foundations/css-utilities/flexbox/?$",
       "destination": "/product/css-utilities/flexbox/"
     },
     {
       "name": "Redirect /foundations/css-utilities/grid to /product/css-utilities/grid",
-      "source": "foundations/css-utilities/grid",
       "match": "^foundations/css-utilities/grid/?$",
       "destination": "/product/css-utilities/grid/"
     },
     {
       "name": "Redirect /foundations/css-utilities/layout to /product/css-utilities/layout",
-      "source": "foundations/css-utilities/layout",
       "match": "^foundations/css-utilities/layout/?$",
       "destination": "/product/css-utilities/layout/"
     },
     {
       "name": "Redirect /foundations/css-utilities/margin to /product/css-utilities/margin",
-      "source": "foundations/css-utilities/margin",
       "match": "^foundations/css-utilities/margin/?$",
       "destination": "/product/css-utilities/margin/"
     },
     {
       "name": "Redirect /foundations/css-utilities/padding to /product/css-utilities/padding",
-      "source": "foundations/css-utilities/padding",
       "match": "^foundations/css-utilities/padding/?$",
       "destination": "/product/css-utilities/padding/"
     },
     {
       "name": "Redirect /foundations/css-utilities/typography to /product/css-utilities/typography",
-      "source": "foundations/css-utilities/typography",
       "match": "^foundations/css-utilities/typography/?$",
       "destination": "/product/css-utilities/typography/"
     },
     {
       "name": "Redirect /foundations/layout to /product/getting-started/foundations/layout",
-      "source": "foundations/layout",
       "match": "^foundations/layout/?$",
       "destination": "/product/getting-started/foundations/layout/"
     },
     {
       "name": "Redirect /foundations/typography to /product/getting-started/foundations/typography",
-      "source": "foundations/typography",
       "match": "^foundations/typography/?$",
       "destination": "/product/getting-started/foundations/typography/"
     },
     {
       "name": "Redirect /foundations/icons to /octicons",
-      "source": "foundations/icons",
       "match": "^foundations/icons/?$",
       "destination": "/octicons/"
     },
     {
       "name": "Redirect /foundations/icons/design-guidelines to /octicons/design-guidelines",
-      "source": "foundations/icons/design-guidelines",
       "match": "^foundations/icons/design-guidelines/?$",
       "destination": "/octicons/design-guidelines/"
     },
     {
       "name": "Redirect /foundations/content to /product/getting-started/foundations/content",
-      "source": "foundations/content",
       "match": "^foundations/content/?$",
       "destination": "/product/getting-started/foundations/content/"
     },
     {
       "name": "Redirect /ui-patterns/data-visualization to /product/ui-patterns/data-visualization",
-      "source": "ui-patterns/data-visualization",
       "match": "^ui-patterns/data-visualization/?$",
       "destination": "/product/ui-patterns/data-visualization/"
     },
     {
       "name": "Redirect /ui-patterns/degraded-experiences to /product/ui-patterns/degraded-experiences",
-      "source": "ui-patterns/degraded-experiences",
       "match": "^ui-patterns/degraded-experiences/?$",
       "destination": "/product/ui-patterns/degraded-experiences/"
     },
     {
       "name": "Redirect /ui-patterns/empty-states to /product/ui-patterns/empty-states",
-      "source": "ui-patterns/empty-states",
       "match": "^ui-patterns/empty-states/?$",
       "destination": "/product/ui-patterns/empty-states/"
     },
     {
       "name": "Redirect /ui-patterns/feature-onboarding to /product/ui-patterns/feature-onboarding",
-      "source": "ui-patterns/feature-onboarding",
       "match": "^ui-patterns/feature-onboarding/?$",
       "destination": "/product/ui-patterns/feature-onboarding/"
     },
     {
       "name": "Redirect /ui-patterns/forms/overview to /product/ui-patterns/forms",
-      "source": "ui-patterns/forms/overview",
       "match": "^ui-patterns/forms/overview/?$",
       "destination": "/product/ui-patterns/forms/"
     },
     {
       "name": "Redirect /ui-patterns/loading to /product/ui-patterns/loading",
-      "source": "ui-patterns/loading",
       "match": "^ui-patterns/loading/?$",
       "destination": "/product/ui-patterns/loading/"
     },
     {
       "name": "Redirect /ui-patterns/navigation to /product/ui-patterns/navigation",
-      "source": "ui-patterns/navigation",
       "match": "^ui-patterns/navigation/?$",
       "destination": "/product/ui-patterns/navigation/"
     },
     {
       "name": "Redirect /ui-patterns/notification-messaging to /product/ui-patterns/notification-messaging",
-      "source": "ui-patterns/notification-messaging",
       "match": "^ui-patterns/notification-messaging/?$",
       "destination": "/product/ui-patterns/notification-messaging/"
     },
     {
       "name": "Redirect /ui-patterns/progressive-disclosure to /product/ui-patterns/progressive-disclosure",
-      "source": "ui-patterns/progressive-disclosure",
       "match": "^ui-patterns/progressive-disclosure/?$",
       "destination": "/product/ui-patterns/progressive-disclosure/"
     },
     {
       "name": "Redirect /ui-patterns/saving to /product/ui-patterns/saving",
-      "source": "ui-patterns/saving",
       "match": "^ui-patterns/saving/?$",
       "destination": "/product/ui-patterns/saving/"
     },
     {
       "name": "Redirect /github-staff/github-shared-components to https://ui.githubapp.com/storybook/?path=/docs/introduction--docs",
-      "source": "github-staff/github-shared-components",
       "match": "^github-staff/github-shared-components/?$",
       "destination": "https://ui.githubapp.com/storybook/?path=/docs/introduction--docs"
     },
     {
       "name": "Redirect /native/cli/getting-started to https://github.com/primer/cli",
-      "source": "native/cli/getting-started",
       "match": "^native/cli/getting-started/?$",
       "destination": "https://github.com/primer/cli/"
     },
     {
       "name": "Redirect /native/cli/foundations to https://github.com/primer/cli",
-      "source": "native/cli/foundations",
       "match": "^native/cli/foundations/?$",
       "destination": "https://github.com/primer/cli/"
     },
     {
       "name": "Redirect /native/cli/components to https://github.com/primer/cli",
-      "source": "native/cli/components",
       "match": "^native/cli/components/?$",
       "destination": "https://github.com/primer/cli/"
     },
     {
       "name": "Redirect /native/desktop/getting-started to https://github.com/primer/desktop",
-      "source": "native/desktop/getting-started",
       "match": "^native/desktop/getting-started/?$",
       "destination": "https://github.com/primer/desktop/"
     },
     {
       "name": "Redirect /native/desktop/foundations to https://github.com/primer/desktop",
-      "source": "native/desktop/foundations",
       "match": "^native/desktop/foundations/?$",
       "destination": "https://github.com/primer/desktop/"
     },
     {
       "name": "Redirect /native/mobile/platforms to https://github.com/primer/mobile",
-      "source": "native/mobile/platforms",
       "match": "^native/mobile/platforms/?$",
       "destination": "https://github.com/primer/mobile/"
     },
     {
       "name": "Redirect /native/mobile/foundations to https://github.com/primer/mobile",
-      "source": "native/mobile/foundations",
       "match": "^native/mobile/foundations/?$",
       "destination": "https://github.com/primer/mobile/"
+    },
+    {
+      "name": "Redirect /components to /product/components",
+      "match": "^components/?$",
+      "destination": "/products/components/"
+    },
+    {
+      "name": "Redirect /components/* to /product/components/*",
+      "match": "^components/(.*)/?$",
+      "destination": "/products/components/{R:1}"
+    },
+    {
+      "name": "Redirect /components/*/react/* to /product/components/*",
+      "match": "^components/(.*)/react",
+      "destination": "/products/components/{R:1}"
     }
   ],
   "rewrites": [
