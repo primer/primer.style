@@ -335,7 +335,6 @@
       "match": "^view-components/status",
       "destination": "/guides/status"
     },
-
     {
       "name": "Redirect react root",
       "match": "^react/$",
@@ -391,7 +390,6 @@
       "match": "^react/hooks/useSafeTimeout",
       "destination": "/guides/react/hooks/use-safe-timeout"
     },
-
     {
       "name": "React docs for ActionList",
       "match": "^react/ActionList",
@@ -682,7 +680,6 @@
       "match": "^react/UnderlineNav",
       "destination": "/components/underline-nav/react"
     },
-
     {
       "name": "Component statuses",
       "match": "^status",
@@ -903,7 +900,6 @@
       "match": "/design/accessibility/tooltip-alternatives",
       "destination": "/components/tooltip#alternatives-to-tooltips"
     },
-
     {
       "name": "Redirect /guides/introduction to /product/getting-started",
       "match": "^guides/introduction/?$",
@@ -1330,13 +1326,13 @@
       "destination": "/product/components/"
     },
     {
-      "name": "Redirect /components/* to /product/components/*",
-      "match": "^components/(.*)/?$",
+      "name": "Redirect /components/*/react/* to /product/components/*",
+      "match": "^components/(.*)/react",
       "destination": "/product/components/{R:1}"
     },
     {
-      "name": "Redirect /components/*/react/* to /product/components/*",
-      "match": "^components/(.*)/react",
+      "name": "Redirect /components/* to /product/components/*",
+      "match": "^components/(.*)/?$",
       "destination": "/product/components/{R:1}"
     }
   ],
