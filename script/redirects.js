@@ -90,7 +90,9 @@ function buildRedirects() {
           <action type="Rewrite" url="${destination}" />
           <serverVariables>
             <set name="HTTP_X_UNPROXIED_URL" value="${destination}" />
+            <set name="HTTP_X_ORIGINAL_ACCEPT_ENCODING" value="{HTTP_ACCEPT_ENCODING}" />
             <set name="HTTP_X_ORIGINAL_HOST" value="{HTTP_HOST}" />
+            <set name="HTTP_ACCEPT_ENCODING" value="" />
           </serverVariables>
         </rule>
         `
@@ -106,15 +108,13 @@ function buildRedirects() {
       <remove fileExtension=".woff2" />
       <mimeMap fileExtension=".woff2" mimeType="font/woff2" />
     </staticContent>
-
     <httpErrors errorMode="Custom" existingResponse="Auto" defaultResponseMode="ExecuteURL" >
-      <remove statusCode="404" />
+      <remove statusCode="404"/>
       <error statusCode="404" responseMode="ExecuteURL" path="/404/index.html" />
     </httpErrors>
-
     <rewrite>
       <rules>
-        <!-- BEGIN SSL -->
+        <!--BEGIN SSL-->
         <rule name="ForceSSL" stopProcessing="true">
           <match url="(.*)" />
           <conditions>
@@ -122,28 +122,26 @@ function buildRedirects() {
           </conditions>
           <action type="Redirect" url="https://{C:2}/{R:1}" redirectType="Permanent" />
         </rule>
-        <!-- END SSL -->
-
+        <!--END SSL-->
+        <!--BEGIN Trailing slash enforcement-->
+        <rule name="Add trailing slash" stopProcessing="true">
+          <match url="(.*[^/])$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+            <add input="{REQUEST_FILENAME}" pattern="(.*?)\\.[a-zA-Z]{1,4}$" negate="true" />
+            <add input="{URL}" negate="true" pattern="\\.woff2$" />
+            <add input="{URL}" negate="true" pattern="\\.webmanifest$" />
+          </conditions>
+          <action type="Redirect" redirectType="Temporary" url="{R:1}/" />
+        </rule>
+        <!--END Trailing slash enforcement-->
         <!--BEGIN 301 redirects. Goes before URL rewrites -->
         ${redirects}
         <!--END 301 redirects -->
-
         ${rewrites}
       </rules>
-
       <outboundRules>
-        <!-- Ensure Vary header is added for caching purposes -->
-        <rule name="Add Vary Header">
-          <match serverVariable="RESPONSE_Vary" pattern=".*" />
-          <action type="Rewrite" value="Accept-Encoding, User-Agent" />
-        </rule>
-
-        <!-- Remove X-Powered-By header from outbound response -->
-        <rule name="Remove X-Powered-By Header">
-          <match serverVariable="RESPONSE_X-Powered-By" pattern=".*" />
-          <action type="Rewrite" value="" />
-        </rule>
-
         <preConditions>
           <preCondition name="CheckContentType">
             <add input="{RESPONSE_CONTENT_TYPE}" pattern="^(text/html|text/plain|text/xml|application/rss\\+xml)" />
@@ -152,8 +150,7 @@ function buildRedirects() {
       </outboundRules>
     </rewrite>
   </system.webServer>
-</configuration>
-`
+</configuration>`
 
   fs.writeFileSync(outputFile, config)
   console.info(`Redirects built successfully and written to ${outputFile}`)
