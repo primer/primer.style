@@ -36,14 +36,14 @@
       "destination": "https://github.com/primer/octicons/tree/main/lib/octicons_styled#readme"
     },
     {
-      "name": "Redirect /foundations/icons/design-guidelines",
-      "match": "/foundations/icons/design-guidelines",
-      "destination": "/octicons/design-guidelines"
+      "name": "Redirect /octicons/guidelines/design",
+      "match": "octicons/guidelines/design",
+      "destination": "/foundations/icons/design-guidelines"
     },
     {
-      "name": "Redirect /foundations/icons/*",
-      "match": "/foundations/icons(.*)",
-      "destination": "/octicons{R:2}"
+      "name": "Redirect /octicons/*",
+      "match": "(octicons)(.*)",
+      "destination": "/foundations/icons{R:2}"
     },
     {
       "name": "Redirect /primitives/colors",
@@ -907,72 +907,72 @@
   "rewrites": [
     {
       "name": "ViewComponents Preview assets proxy",
-      "match": "^assets/?(.*)",
+      "match": "^assets/(.*)",
       "destination": "https://primer-lookbook.github.com/assets/{R:1}"
     },
     {
       "name": "ViewComponents Preview assets proxy (Vite)",
-      "match": "^vite/assets/?(.*)",
+      "match": "^vite/assets/(.*)",
       "destination": "https://primer-lookbook.github.com/vite/assets/{R:1}"
     },
     {
       "name": "ViewComponents Lookbook assets proxy",
-      "match": "^lookbook-assets/?(.*)",
+      "match": "^lookbook-assets/(.*)",
       "destination": "https://primer-lookbook.github.com/lookbook-assets/{R:1}"
     },
     {
       "name": "ViewComponents Lookbook proxy",
-      "match": "^view-components/lookbook/?(.*)",
+      "match": "^view-components/lookbook/(.*)",
       "destination": "https://primer-lookbook.github.com/view-components/lookbook/{R:1}"
     },
     {
       "name": "ViewComponents Rails App proxy",
-      "match": "^view-components/rails-app/?(.*)",
+      "match": "^view-components/rails-app/(.*)",
       "destination": "https://primer-lookbook.github.com/view-components/rails-app/{R:1}"
     },
     {
       "name": "Presentations proxy",
-      "match": "^presentations/?(.*)",
+      "match": "^presentations/(.*)",
       "destination": "https://primer.github.io/presentations/{R:1}"
     },
     {
       "name": "Doctocat",
-      "match": "^doctocat/?(.*)",
+      "match": "^doctocat/(.*)",
       "destination": "https://primer.github.io/doctocat/{R:1}"
     },
     {
       "name": "Primitives proxy",
-      "match": "^primitives/storybook/?(.*)",
+      "match": "^primitives/storybook/(.*)",
       "destination": "https://primer.github.io/primitives/storybook/{R:1}"
     },
     {
       "name": "Brand Storybook proxy",
-      "match": "^brand/storybook/?(.*)",
+      "match": "^brand/storybook/(.*)",
       "destination": "https://stunning-chainsaw-j82glqz.pages.github.io/{R:1}"
     },
     {
       "name": "Brand proxy",
-      "match": "^brand/?(.*)",
+      "match": "^brand/(.*)",
       "destination": "https://primer.github.io/brand/{R:1}"
     },
     {
       "name": "Contribute proxy",
-      "match": "^contribute/?(.*)",
+      "match": "^contribute/(.*)",
       "destination": "https://primer.github.io/contribute/{R:1}"
     },
     {
       "name": "Prism proxy",
-      "match": "^prism/?(.*)",
+      "match": "^prism/(.*)",
       "destination": "https://primer.github.io/prism/{R:1}"
     },
     {
       "name": "CSS reverse-proxy",
-      "match": "^css/storybook/?(.*)",
+      "match": "^css/storybook/(.*)",
       "destination": "https://primer.github.io/css/storybook/{R:1}"
     },
     {
       "name": "React Storybook reverse-proxy",
-      "match": "^react/storybook/?(.*)",
+      "match": "^react/storybook/(.*)",
       "destination": "https://primer.github.io/react/storybook/{R:1}"
     },
     {
