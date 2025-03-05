@@ -1331,6 +1331,11 @@
       "destination": "/product/components/{R:1}"
     },
     {
+      "name": "Redirect /components/*/rails/* to /product/getting-started/rails/components/*",
+      "match": "^components/(.*)/rails",
+      "destination": "/product/getting-started/rails/components/{R:1}"
+    },
+    {
       "name": "Redirect /components/* to /product/components/*",
       "match": "^components/(.*)/?$",
       "destination": "/product/components/{R:1}"
