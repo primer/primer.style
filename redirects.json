@@ -1339,6 +1339,11 @@
       "name": "Redirect /components/* to /product/components/*",
       "match": "^components/(.*)/?$",
       "destination": "/product/components/{R:1}"
+    },
+    {
+      "name": "Redirect /foundations/icons/:icon to /octicons/:icon",
+      "match": "^foundations/icons/(.*)/?$",
+      "destination": "/octicons/{R:1}"
     }
   ],
   "rewrites": [
