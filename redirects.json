@@ -1327,17 +1327,17 @@
     {
       "name": "Redirect /components to /product/components",
       "match": "^components/?$",
-      "destination": "/products/components/"
+      "destination": "/product/components/"
     },
     {
       "name": "Redirect /components/* to /product/components/*",
       "match": "^components/(.*)/?$",
-      "destination": "/products/components/{R:1}"
+      "destination": "/product/components/{R:1}"
     },
     {
       "name": "Redirect /components/*/react/* to /product/components/*",
       "match": "^components/(.*)/react",
-      "destination": "/products/components/{R:1}"
+      "destination": "/product/components/{R:1}"
     }
   ],
   "rewrites": [
