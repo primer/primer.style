@@ -138,17 +138,6 @@ function buildRedirects() {
         ${redirects}
         <!--END 301 redirects -->
         ${rewrites}
-
-        <rule name="Primer Docs Proxy" stopProcessing="true">
-          <match url="^/?(.*)" ignoreCase="true" />
-          <conditions>
-            <add input="{HTTP_HOST}" pattern="^(?:www.)?(.*)$" />
-          </conditions>
-          <action type="Rewrite" url="https://primer-docs-preview.github.com/{SERVER_VARIABLES:HTTP_X_ORIGINAL_URI}" />
-          <serverVariables>
-            <set name="HTTP_X_ORIGINAL_URI" value="{REQUEST_URI}" />
-          </serverVariables>
-        </rule>
       </rules>
       <outboundRules>
         <preConditions>
