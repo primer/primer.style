@@ -155,12 +155,16 @@ function buildRedirects() {
   <system.webServer>
     <rewrite>
       <rules>
-        <rule name="Rewrite to primer-docs-preview" stopProcessing="true">
-          <match url=".*" />
+        <rule name="Rewrite to primer-docs" stopProcessing="true">
+          <match url="^/?(.*)" ignoreCase="true" />
           <conditions>
-            <add input="{HTTP_HOST}" pattern="^(.*)$" />
+            <add input="{HTTP_HOST}" pattern="^(?:www.)?(.*)$" />
           </conditions>
-          <action type="Rewrite" url="https://primer-docs-preview.github.com{R:0}" appendQueryString="true" />
+          <action type="Rewrite" url="https://primer-docs-preview.github.com/{R:1}" />
+          <serverVariables>
+            <set name="HTTP_X_UNPROXIED_URL" value="https://primer-docs-preview.github.com/{R:1}" />
+            <set name="HTTP_X_ORIGINAL_HOST" value="{HTTP_HOST}" />
+          </serverVariables>
         </rule>
       </rules>
     </rewrite>
