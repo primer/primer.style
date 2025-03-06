@@ -167,6 +167,12 @@ function buildRedirects() {
           </serverVariables>
         </rule>
       </rules>
+      <outboundRules>
+        <rule name="Preserve URL encoding" preCondition="IsHTML">
+          <match filterByTags="None" pattern="([^&quot;'>\s]*?)%40([^&quot;'>\s]*?)" />
+          <action type="Rewrite" value="{R:1}%40{R:2}" />
+        </rule>
+      </outboundRules>
     </rewrite>
   </system.webServer>
 </configuration>
