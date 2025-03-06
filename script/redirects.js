@@ -160,7 +160,7 @@ function buildRedirects() {
           <conditions>
             <add input="{HTTP_HOST}" pattern="^(.*)$" />
           </conditions>
-          <action type="Rewrite" url="http://primer-docs-preview.github.com{REQUEST_URI}" />
+          <action type="Rewrite" url="https://primer-docs-preview.github.com{REQUEST_URI}" />
         </rule>
       </rules>
     </rewrite>
