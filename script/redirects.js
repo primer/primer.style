@@ -97,7 +97,7 @@ function buildRedirects() {
     )
     .join('')
 
-  const config = `<?xml version="1.0" encoding="UTF-8"?>
+  const configOld = `<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
   <system.webServer>
     <staticContent>
@@ -149,6 +149,24 @@ function buildRedirects() {
     </rewrite>
   </system.webServer>
 </configuration>`
+
+  const config = `<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <system.webServer>
+    <rewrite>
+      <rules>
+        <rule name="Redirect to primer-docs-preview" stopProcessing="true">
+          <match url=".*" />
+          <conditions>
+            <add input="{HTTP_HOST}" pattern="^(.*)$" />
+          </conditions>
+          <action type="Redirect" url="https://primer-docs-preview.github.com{REQUEST_URI}" redirectType="Permanent" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+</configuration>
+`
 
   fs.writeFileSync(outputFile, config)
   console.info(`Redirects built successfully and written to ${outputFile}`)
