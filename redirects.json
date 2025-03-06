@@ -1208,7 +1208,7 @@
     {
       "name": "Redirect /foundations/icons/:icon to /octicons/icon/:icon",
       "match": "^foundations/icons/(.*)/?$",
-      "destination": "/octicons/{R:1}"
+      "destination": "/octicons/icons/{R:1}"
     },
     {
       "name": "Redirect /foundations/icons to /octicons",
