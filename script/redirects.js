@@ -111,7 +111,7 @@ function buildRedirects() {
       <error statusCode="404" responseMode="ExecuteURL" path="/404/index.html" />
     </httpErrors>
     <rewrite>
-      <rules>
+      <rules useOriginalURLEncoding="false">
         <!--BEGIN SSL-->
         <rule name="ForceSSL" stopProcessing="true">
           <match url="(.*)" />
