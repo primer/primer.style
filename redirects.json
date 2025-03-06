@@ -1206,14 +1206,14 @@
       "destination": "/product/getting-started/foundations/typography/"
     },
     {
-      "name": "Redirect /foundations/icons/:icon to /octicons/icon/:icon",
-      "match": "^foundations/icons/(.*)/?$",
-      "destination": "/octicons/icon/{R:1}"
-    },
-    {
       "name": "Redirect /foundations/icons to /octicons",
       "match": "^foundations/icons/?$",
       "destination": "/octicons/"
+    },
+    {
+      "name": "Redirect /foundations/icons/:icon to /octicons/icon/:icon",
+      "match": "^foundations/icons/(.*)/?$",
+      "destination": "/octicons/icon/{R:1}"
     },
     {
       "name": "Redirect /foundations/icons/design-guidelines to /octicons/design-guidelines",
