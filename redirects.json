@@ -1211,14 +1211,14 @@
       "destination": "/octicons/"
     },
     {
-      "name": "Redirect /foundations/icons/:icon to /octicons/icon/:icon",
-      "match": "^foundations/icons/(.*)/?$",
-      "destination": "/octicons/icon/{R:1}"
-    },
-    {
       "name": "Redirect /foundations/icons/design-guidelines to /octicons/design-guidelines",
       "match": "^foundations/icons/design-guidelines/?$",
       "destination": "/octicons/design-guidelines"
+    },
+    {
+      "name": "Redirect /foundations/icons/:icon to /octicons/icon/:icon",
+      "match": "^foundations/icons/(.*)/?$",
+      "destination": "/octicons/icon/{R:1}"
     },
     {
       "name": "Redirect /foundations/content to /product/getting-started/foundations/content",
