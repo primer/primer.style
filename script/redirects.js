@@ -97,7 +97,7 @@ function buildRedirects() {
     )
     .join('')
 
-  const configOld = `<?xml version="1.0" encoding="UTF-8"?>
+  const config = `<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
   <system.webServer>
     <staticContent>
@@ -149,34 +149,6 @@ function buildRedirects() {
     </rewrite>
   </system.webServer>
 </configuration>`
-
-  const config = `<?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <system.webServer>
-    <rewrite>
-      <rules>
-        <rule name="Rewrite to primer-docs" stopProcessing="true">
-          <match url="^/?(.*)" ignoreCase="true" />
-          <conditions>
-            <add input="{HTTP_HOST}" pattern="^(?:www.)?(.*)$" />
-          </conditions>
-          <action type="Rewrite" url="https://primer-docs-preview.github.com/{R:1}" />
-          <serverVariables>
-            <set name="HTTP_X_UNPROXIED_URL" value="https://primer-docs-preview.github.com/{R:1}" />
-            <set name="HTTP_X_ORIGINAL_HOST" value="{HTTP_HOST}" />
-          </serverVariables>
-        </rule>
-      </rules>
-      <outboundRules>
-        <rule name="Preserve URL encoding" preCondition="IsHTML">
-          <match filterByTags="None" pattern="([^&quot;'>\s]*?)%40([^&quot;'>\s]*?)" />
-          <action type="Rewrite" value="{R:1}%40{R:2}" />
-        </rule>
-      </outboundRules>
-    </rewrite>
-  </system.webServer>
-</configuration>
-`
 
   fs.writeFileSync(outputFile, config)
   console.info(`Redirects built successfully and written to ${outputFile}`)
