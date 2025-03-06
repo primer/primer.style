@@ -991,9 +991,9 @@
       "destination": "/product/hooks/useSafeTimeout/"
     },
     {
-      "name": "Redirect /guides/component-lifecycle to /product/getting-started/Component-status",
+      "name": "Redirect /guides/component-lifecycle to /product/getting-started/component-status",
       "match": "^guides/component-lifecycle/?$",
-      "destination": "/product/getting-started/Component-status/"
+      "destination": "/product/getting-started/component-status/"
     },
     {
       "name": "Redirect /guides/status to /product/getting-started/component-status",
