@@ -1321,9 +1321,9 @@
       "destination": "/product/components/"
     },
     {
-      "name": "Redirect /components/skeleton-*/figma to /products/components/skeleton-loaders",
-      "match": "^components/skeleton-(.+)/figma/?$",
-      "destination": "/product/components/skeleton-loaders"
+      "name": "Redirect /components/skeleton-*/figma to /products/components/skeleton-loaders/",
+      "match": "^components/skeleton-(.*)/figma/?",
+      "destination": "/product/components/skeleton-loaders/"
     },
     {
       "name": "Redirect /components/skeleton-* to /products/components/skeleton-loaders",
