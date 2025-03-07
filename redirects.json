@@ -1366,11 +1366,6 @@
       "destination": "/product/components/page-layout/"
     },
     {
-      "name": "Redirect /components/*/react/* to /product/components/*",
-      "match": "^components/(.*)/react",
-      "destination": "/product/components/{R:1}"
-    },
-    {
       "name": "Redirect /components/*/figma to /product/components/*",
       "match": "^components/(.*)/figma",
       "destination": "/product/components/{R:1}"
@@ -1378,6 +1373,11 @@
     {
       "name": "Redirect /components/*/css to /product/components/*",
       "match": "^components/(.*)/css",
+      "destination": "/product/components/{R:1}"
+    },
+    {
+      "name": "Redirect /components/*/react/* to /product/components/*",
+      "match": "^components/(.*)/react",
       "destination": "/product/components/{R:1}"
     },
     {
@@ -1429,16 +1429,6 @@
       "name": "Redirect /components/clipboard-copy to /product/getting-started/rails/components/clipboard-copy",
       "match": "^components/clipboard-copy",
       "destination": "/product/getting-started/rails/components/clipboard-copy/"
-    },
-    {
-      "name": "Redirect /components/*/figma to /product/components/*",
-      "match": "^components/(.*)/figma",
-      "destination": "/product/components/{R:1}"
-    },
-    {
-      "name": "Redirect /components/*/css to /product/components/*",
-      "match": "^components/(.*)/css",
-      "destination": "/product/components/{R:1}"
     },
     {
       "name": "Redirect /components/*/rails/* to /product/getting-started/rails/components/*",
