@@ -1321,6 +1321,16 @@
       "destination": "/product/components/"
     },
     {
+      "name": "Redirect /components/skeleton-*/figma to /products/components/skeleton-loaders",
+      "match": "^components/skeleton-(.+)/figma/?$",
+      "destination": "/products/components/skeleton-loaders"
+    },
+    {
+      "name": "Redirect /components/skeleton-* to /products/components/skeleton-loaders",
+      "match": "^components/skeleton-(.+)",
+      "destination": "/products/components/skeleton-loaders"
+    },
+    {
       "name": "Redirect /components/selectpanel/react/* to /product/components/select-panel/",
       "match": "^components/selectpanel/react",
       "destination": "/product/components/select-panel/"
@@ -1329,6 +1339,16 @@
       "name": "Redirect /components/selectpanel to /product/components/select-panel",
       "match": "^components/selectpanel/?$",
       "destination": "/product/components/select-panel/"
+    },
+    {
+      "name": "Redirect /components/*/figma to /product/components/*",
+      "match": "^components/(.*)/figma",
+      "destination": "/product/components/{R:1}"
+    },
+    {
+      "name": "Redirect /components/*/css to /product/components/*",
+      "match": "^components/(.*)/css",
+      "destination": "/product/components/{R:1}"
     },
     {
       "name": "Redirect /components/*/react/* to /product/components/*",
