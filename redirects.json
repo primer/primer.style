@@ -1321,6 +1321,11 @@
       "destination": "/product/components/"
     },
     {
+      "name": "Redirect /components/selectpanel to /product/components/select-panel",
+      "match": "^components/selectpanel/?$",
+      "destination": "/product/components/select-panel/"
+    },
+    {
       "name": "Redirect /components/*/react/* to /product/components/*",
       "match": "^components/(.*)/react",
       "destination": "/product/components/{R:1}"
