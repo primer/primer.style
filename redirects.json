@@ -1338,7 +1338,7 @@
     {
       "name": "Redirect /components/selectpanel/rails/* to /product/getting-started/rails/components/selectpanel/",
       "match": "^components/selectpanel/rails",
-      "destination": "/product/components/selectpanel/"
+      "destination": "/product/getting-started/rails/components/selectpanel/"
     },
     {
       "name": "Redirect /components/selectpanel to /product/components/select-panel",
@@ -1429,11 +1429,6 @@
       "name": "Redirect /components/clipboard-copy to /product/getting-started/rails/components/clipboard-copy",
       "match": "^components/clipboard-copy",
       "destination": "/product/getting-started/rails/components/clipboard-copy/"
-    },
-    {
-      "name": "Redirect /components/selectpanel/rails/* to /product/getting-started/rails/components/select-panel/",
-      "match": "^components/selectpanel/rails",
-      "destination": "/product/getting-started/rails/components/select-panel/"
     },
     {
       "name": "Redirect /components/*/rails/* to /product/getting-started/rails/components/*",
