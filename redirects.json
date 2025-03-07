@@ -1356,6 +1356,16 @@
       "destination": "/octicons/"
     },
     {
+      "name": "Redirect /components/split-page-layout/react to /product/components/split-page-layout",
+      "match": "^components/split-page-layout/react",
+      "destination": "/product/components/page-layout/"
+    },
+    {
+      "name": "Redirect /components/split-page-layout to /product/components/split-page-layout/",
+      "match": "^components/split-page-layout/?$",
+      "destination": "/product/components/page-layout/"
+    },
+    {
       "name": "Redirect /components/*/figma to /product/components/*",
       "match": "^components/(.*)/figma",
       "destination": "/product/components/{R:1}"
