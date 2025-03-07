@@ -1336,6 +1336,11 @@
       "destination": "/product/components/{R:1}"
     },
     {
+      "name": "Redirect /components/selectpanel/rails/* to /product/getting-started/rails/components/select-panel/",
+      "match": "^components/selectpanel/rails",
+      "destination": "/product/getting-started/rails/components/select-panel/"
+    },
+    {
       "name": "Redirect /components/*/rails/* to /product/getting-started/rails/components/*",
       "match": "^components/(.*)/rails",
       "destination": "/product/getting-started/rails/components/{R:1}"
