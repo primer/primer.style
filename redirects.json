@@ -1376,6 +1376,36 @@
       "destination": "/product/getting-started/rails/components/tab-container/"
     },
     {
+      "name": "Redirect /components/hidden-text-expander to /product/getting-started/rails/components/hidden-text-expander",
+      "match": "^components/hidden-text-expander(.*)",
+      "destination": "/product/getting-started/rails/components/hidden-text-expander/"
+    },
+    {
+      "name": "Redirect /components/image to /product/getting-started/rails/components/image",
+      "match": "^components/image(.*)",
+      "destination": "/product/getting-started/rails/components/image/"
+    },
+    {
+      "name": "Redirect /components/layout to /product/getting-started/rails/components/layout",
+      "match": "^components/layout(.*)",
+      "destination": "/product/getting-started/rails/components/layout/"
+    },
+    {
+      "name": "Redirect /components/markdown to /product/getting-started/rails/components/markdown",
+      "match": "^components/markdown(.*)",
+      "destination": "/product/getting-started/rails/components/markdown/"
+    },
+    {
+      "name": "Redirect /components/octicon-symbols to /product/getting-started/rails/components/octicon-symbols",
+      "match": "^components/octicon-symbols(.*)",
+      "destination": "/product/getting-started/rails/components/octicon-symbols/"
+    },
+    {
+      "name": "Redirect /components/tab-panels to /product/getting-started/rails/components/tab-panels",
+      "match": "^components/tab-panels(.*)",
+      "destination": "/product/getting-started/rails/components/tab-panels/"
+    },
+    {
       "name": "Redirect /components/selectpanel/rails/* to /product/getting-started/rails/components/select-panel/",
       "match": "^components/selectpanel/rails",
       "destination": "/product/getting-started/rails/components/select-panel/"
