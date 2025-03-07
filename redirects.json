@@ -1341,6 +1341,16 @@
       "destination": "/product/components/select-panel/"
     },
     {
+      "name": "Redirect /components/icon to /octicons/",
+      "match": "^components/icon/?$",
+      "destination": "/octicons/"
+    },
+    {
+      "name": "Redirect /components/icon/react/* to /octicons/",
+      "match": "^components/icon/react",
+      "destination": "/octicons/"
+    },
+    {
       "name": "Redirect /components/*/figma to /product/components/*",
       "match": "^components/(.*)/figma",
       "destination": "/product/components/{R:1}"
@@ -1354,6 +1364,16 @@
       "name": "Redirect /components/*/react/* to /product/components/*",
       "match": "^components/(.*)/react",
       "destination": "/product/components/{R:1}"
+    },
+    {
+      "name": "Redirect /components/border-box to /product/getting-started/rails/components/border-box",
+      "match": "^components/border-box(.*)",
+      "destination": "/product/getting-started/rails/components/border-box/"
+    },
+    {
+      "name": "Redirect /components/tab-container to /product/getting-started/rails/components/tab-container",
+      "match": "^components/tab-container(.*)",
+      "destination": "/product/getting-started/rails/components/tab-container/"
     },
     {
       "name": "Redirect /components/selectpanel/rails/* to /product/getting-started/rails/components/select-panel/",
