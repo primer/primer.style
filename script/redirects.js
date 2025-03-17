@@ -2,59 +2,57 @@ const fs = require('fs')
 const path = require('path')
 
 function validator(input) {
-  if (!input || typeof input !== "object") {
-    return { valid: false, error: "Input must be an object" };
+  if (!input || typeof input !== 'object') {
+    return {valid: false, error: 'Input must be an object'}
   }
 
   if (!Array.isArray(input.redirects) || !Array.isArray(input.rewrites)) {
-    return { valid: false, error: "Input must have 'redirects' and 'rewrites' arrays" };
+    return {valid: false, error: "Input must have 'redirects' and 'rewrites' arrays"}
   }
 
   for (const redirect of input.redirects) {
     if (
-      typeof redirect !== "object" ||
-      typeof redirect.name !== "string" ||
-      typeof redirect.match !== "string" ||
-      typeof redirect.destination !== "string"
+      typeof redirect !== 'object' ||
+      typeof redirect.name !== 'string' ||
+      typeof redirect.match !== 'string' ||
+      typeof redirect.destination !== 'string'
     ) {
-      const invalidKey = Object.keys(redirect).find(
-        (key) =>
-          typeof redirect[key] !== "string" ||
-          (key !== "name" && key !== "match" && key !== "destination")
-      ) || "";
-      return { valid: false, error: `'${invalidKey}' redirect has invalid value ` };
+      const invalidKey =
+        Object.keys(redirect).find(
+          (key) => typeof redirect[key] !== 'string' || (key !== 'name' && key !== 'match' && key !== 'destination')
+        ) || ''
+      return {valid: false, error: `'${invalidKey}' redirect has invalid value `}
     }
 
     try {
-      new RegExp(redirect.match);
+      new RegExp(redirect.match)
     } catch (error) {
-      return { valid: false, error: `Redirect has invalid regex in 'match' property` };
+      return {valid: false, error: `Redirect has invalid regex in 'match' property`}
     }
   }
 
   for (const rewrite of input.rewrites) {
     if (
-      typeof rewrite !== "object" ||
-      typeof rewrite.name !== "string" ||
-      typeof rewrite.match !== "string" ||
-      typeof rewrite.destination !== "string"
+      typeof rewrite !== 'object' ||
+      typeof rewrite.name !== 'string' ||
+      typeof rewrite.match !== 'string' ||
+      typeof rewrite.destination !== 'string'
     ) {
-      const invalidKey = Object.keys(rewrite).find(
-        (key) =>
-          typeof rewrite[key] !== "string" ||
-          (key !== "name" && key !== "match" && key !== "destination")
-      ) || "";
-      return { valid: false, error: `'${invalidKey}' rewrite has an invalid value ` };
+      const invalidKey =
+        Object.keys(rewrite).find(
+          (key) => typeof rewrite[key] !== 'string' || (key !== 'name' && key !== 'match' && key !== 'destination')
+        ) || ''
+      return {valid: false, error: `'${invalidKey}' rewrite has an invalid value `}
     }
 
     try {
-      new RegExp(rewrite.match);
+      new RegExp(rewrite.match)
     } catch (error) {
-      return { valid: false, error: `Rewrite has invalid regex in 'match' property` };
+      return {valid: false, error: `Rewrite has invalid regex in 'match' property`}
     }
   }
 
-  return { valid: true };
+  return {valid: true}
 }
 
 function buildRedirects() {
@@ -65,12 +63,11 @@ function buildRedirects() {
 
   const {valid, error} = validator(input)
 
-
   if (!valid) {
     throw new Error(`Invalid redirects.json file. ${error}`)
   }
 
-  console.info(`redirects.json was validated successfully` )
+  console.info(`redirects.json was validated successfully`)
   console.info('...')
 
   const redirects = input.redirects
@@ -93,9 +90,7 @@ function buildRedirects() {
           <action type="Rewrite" url="${destination}" />
           <serverVariables>
             <set name="HTTP_X_UNPROXIED_URL" value="${destination}" />
-            <set name="HTTP_X_ORIGINAL_ACCEPT_ENCODING" value="{HTTP_ACCEPT_ENCODING}" />
             <set name="HTTP_X_ORIGINAL_HOST" value="{HTTP_HOST}" />
-            <set name="HTTP_ACCEPT_ENCODING" value="" />
           </serverVariables>
         </rule>
         `
@@ -154,7 +149,6 @@ function buildRedirects() {
     </rewrite>
   </system.webServer>
 </configuration>`
-
 
   fs.writeFileSync(outputFile, config)
   console.info(`Redirects built successfully and written to ${outputFile}`)
