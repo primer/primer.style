@@ -36,6 +36,11 @@
       "destination": "https://github.com/primer/octicons/tree/main/lib/octicons_styled#readme"
     },
     {
+      "name": "Redirect /octicons/person-fill-24/",
+      "match": "^octicons/person-fill-24/?$",
+      "destination": "/octicons/icon/person-fill-24/"
+    },
+    {
       "name": "Redirect /primitives/colors",
       "match": "primitives/colors",
       "destination": "/foundations/color"
@@ -1001,6 +1006,11 @@
       "destination": "/product/getting-started/component-status/"
     },
     {
+      "name": "Redirect /guides/accessibility to /accessibility",
+      "match": "^guides/accessibility/?$",
+      "destination": "/accessibility/"
+    },
+    {
       "name": "Redirect /guides/accessibility/accessibility-at-github to /accessibility/accessibility-at-github",
       "match": "^guides/accessibility/accessibility-at-github/?$",
       "destination": "/accessibility/accessibility-at-github/"
@@ -1061,6 +1071,11 @@
       "destination": "/accessibility/tooltips/"
     },
     {
+      "name": "Redirect /guides/content to /product/getting-started/foundations/content",
+      "match": "^guides/content/?$",
+      "destination": "/product/getting-started/foundations/content/"
+    },
+    {
       "name": "Redirect /guides/contribute/how-to-contribute to /product/contribute/how-to-contribute",
       "match": "^guides/contribute/how-to-contribute/?$",
       "destination": "/product/contribute/how-to-contribute/"
@@ -1084,6 +1099,11 @@
       "name": "Redirect /guides/contribute/adding-new-components to /product/contribute/adding-new-components",
       "match": "^guides/contribute/adding-new-components/?$",
       "destination": "/product/contribute/adding-new-components/"
+    },
+    {
+      "name": "Redirect /foundations/color to /product/primitives/color",
+      "match": "^foundations/color/?$",
+      "destination": "/product/primitives/color/"
     },
     {
       "name": "Redirect /foundations/color/overview to /product/getting-started/foundations/color-usage",
