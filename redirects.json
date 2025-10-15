@@ -406,11 +406,6 @@
       "destination": "/components/avatar/react"
     },
     {
-      "name": "React docs for AvatarPair",
-      "match": "^react/AvatarPair",
-      "destination": "/components/avatar-pair/react"
-    },
-    {
       "name": "React docs for AvatarStack",
       "match": "^react/AvatarStack",
       "destination": "/components/avatar-stack/react"
@@ -454,11 +449,6 @@
       "name": "React docs for CircleBadge",
       "match": "^react/CircleBadge",
       "destination": "/components/circle-badge/react"
-    },
-    {
-      "name": "React docs for CircleOcticon",
-      "match": "^react/CircleOcticon",
-      "destination": "/components/circle-octicon/react"
     },
     {
       "name": "React docs for CounterLabel",
@@ -539,11 +529,6 @@
       "name": "React docs for Pagination",
       "match": "^react/Pagination",
       "destination": "/components/pagination/react"
-    },
-    {
-      "name": "React docs for PointerBox",
-      "match": "^react/PointerBox",
-      "destination": "/components/pointer-box/react"
     },
     {
       "name": "React docs for Popover",
@@ -1001,6 +986,11 @@
       "destination": "/product/getting-started/component-status/"
     },
     {
+      "name": "Redirect /guides/accessibility to /accessibility",
+      "match": "^guides/accessibility/?$",
+      "destination": "/accessibility/"
+    },
+    {
       "name": "Redirect /guides/accessibility/accessibility-at-github to /accessibility/accessibility-at-github",
       "match": "^guides/accessibility/accessibility-at-github/?$",
       "destination": "/accessibility/accessibility-at-github/"
@@ -1099,6 +1089,11 @@
       "name": "Redirect /foundations/color/accessibility to /accessibility/color-considerations",
       "match": "^foundations/color/accessibility/?$",
       "destination": "/accessibility/color-considerations/"
+    },
+    {
+      "name": "Redirect /foundations/color to /product/primitives/color",
+      "match": "^foundations/color/?$",
+      "destination": "/product/primitives/color/"
     },
     {
       "name": "Redirect /foundations/primitives/getting-started to /product/primitives",
@@ -1223,6 +1218,11 @@
     {
       "name": "Redirect /foundations/content to /product/getting-started/foundations/content",
       "match": "^foundations/content/?$",
+      "destination": "/product/getting-started/foundations/content/"
+    },
+    {
+      "name": "Redirect /guides/content to /product/getting-started/foundations/content",
+      "match": "^guides/content/?$",
       "destination": "/product/getting-started/foundations/content/"
     },
     {
