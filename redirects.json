@@ -356,11 +356,6 @@
       "destination": "/guides/react/system-props"
     },
     {
-      "name": "React redirect core concepts",
-      "match": "^react/core-concepts",
-      "destination": "/guides/react/core-concepts"
-    },
-    {
       "name": "React redirect philosophy",
       "match": "^react/philosophy",
       "destination": "/guides/react/philosophy"
@@ -411,11 +406,6 @@
       "destination": "/components/avatar-stack/react"
     },
     {
-      "name": "React docs for Box",
-      "match": "^react/Box",
-      "destination": "/components/box/react"
-    },
-    {
       "name": "React docs for BranchName",
       "match": "^react/BranchName",
       "destination": "/components/branch-name/react"
@@ -449,6 +439,11 @@
       "name": "React docs for CircleBadge",
       "match": "^react/CircleBadge",
       "destination": "/components/circle-badge/react"
+    },
+    {
+      "name": "React docs for ConfirmationDialog",
+      "match": "^react/ConfirmationDialog",
+      "destination": "/components/confirmation-dialog/react"
     },
     {
       "name": "React docs for CounterLabel",
@@ -926,11 +921,6 @@
       "destination": "/product/getting-started/react/linting/"
     },
     {
-      "name": "Redirect /guides/react/core-concepts to /product/getting-started/react/core-concepts",
-      "match": "^guides/react/core-concepts/?$",
-      "destination": "/product/getting-started/react/core-concepts/"
-    },
-    {
       "name": "Redirect /guides/react/philosophy to /product/getting-started/react/philosophy",
       "match": "^guides/react/philosophy/?$",
       "destination": "/product/getting-started/react/philosophy/"
@@ -991,9 +981,14 @@
       "destination": "/accessibility/"
     },
     {
-      "name": "Redirect /guides/accessibility/accessibility-at-github to /accessibility/accessibility-at-github",
+      "name": "Redirect /guides/accessibility/accessibility-at-github to /accessibility/foundations/accessibility-at-github",
       "match": "^guides/accessibility/accessibility-at-github/?$",
-      "destination": "/accessibility/accessibility-at-github/"
+      "destination": "/accessibility/foundations/accessibility-at-github/"
+    },
+    {
+      "name": "Redirect /accessibility/accessibility-at-github to /accessibility/foundations/accessibility-at-github",
+      "match": "^accessibility/accessibility-at-github/?$",
+      "destination": "/accessibility/foundations/accessibility-at-github/"
     },
     {
       "name": "Redirect /guides/accessibility/guidelines to /accessibility",
@@ -1001,14 +996,24 @@
       "destination": "/accessibility/"
     },
     {
-      "name": "Redirect /guides/accessibility/tools to /accessibility/tools",
+      "name": "Redirect /guides/accessibility/tools to /accessibility/tools-and-resources",
       "match": "^guides/accessibility/tools/?$",
-      "destination": "/accessibility/tools/"
+      "destination": "/accessibility/tools-and-resources/"
     },
     {
-      "name": "Redirect /guides/accessibility/alternative-text-for-images to /accessibility/alternative-text-for-images",
+      "name": "Redirect /accessibility/tools to /accessibility/tools-and-resources",
+      "match": "^accessibility/tools/?$",
+      "destination": "/accessibility/tools-and-resources/"
+    },
+    {
+      "name": "Redirect /guides/accessibility/alternative-text-for-images to /accessibility/design-guidance/alternative-text-for-images",
       "match": "^guides/accessibility/alternative-text-for-images/?$",
-      "destination": "/accessibility/alternative-text-for-images/"
+      "destination": "/accessibility/design-guidance/alternative-text-for-images/"
+    },
+    {
+      "name": "Redirect /accessibility/alternative-text-for-images to /accessibility/design-guidance/alternative-text-for-images",
+      "match": "^accessibility/alternative-text-for-images/?$",
+      "destination": "/accessibility/design-guidance/alternative-text-for-images/"
     },
     {
       "name": "Redirect /guides/accessibility/announcements to /accessibility/announcements",
@@ -1016,39 +1021,104 @@
       "destination": "/accessibility/announcements/"
     },
     {
-      "name": "Redirect /guides/accessibility/descriptive-buttons to /accessibility/descriptive-buttons",
+      "name": "Redirect /guides/accessibility/descriptive-buttons to /accessibility/patterns/primer-components/descriptive-buttons",
       "match": "^guides/accessibility/descriptive-buttons/?$",
-      "destination": "/accessibility/descriptive-buttons/"
+      "destination": "/accessibility/patterns/primer-components/descriptive-buttons/"
     },
     {
-      "name": "Redirect /guides/accessibility/focus-management to /accessibility/focus-management",
+      "name": "Redirect /accessibility/descriptive-buttons to /accessibility/patterns/primer-components/descriptive-buttons",
+      "match": "^accessibility/descriptive-buttons/?$",
+      "destination": "/accessibility/patterns/primer-components/descriptive-buttons/"
+    },
+    {
+      "name": "Redirect /guides/accessibility/focus-management to /accessibility/design-guidance/focus-management",
       "match": "^guides/accessibility/focus-management/?$",
-      "destination": "/accessibility/focus-management/"
+      "destination": "/accessibility/design-guidance/focus-management/"
     },
     {
-      "name": "Redirect /guides/accessibility/headings to /accessibility/headings",
+      "name": "Redirect /accessibility/focus-management to /accessibility/design-guidance/focus-management",
+      "match": "^accessibility/focus-management/?$",
+      "destination": "/accessibility/design-guidance/focus-management/"
+    },
+    {
+      "name": "Redirect /guides/accessibility/headings to /accessibility/patterns/primer-components/headings",
       "match": "^guides/accessibility/headings/?$",
-      "destination": "/accessibility/headings/"
+      "destination": "/accessibility/patterns/primer-components/headings/"
     },
     {
-      "name": "Redirect /guides/accessibility/links to /accessibility/links",
+      "name": "Redirect /accessibility/headings to /accessibility/patterns/primer-components/headings",
+      "match": "^accessibility/headings/?$",
+      "destination": "/accessibility/patterns/primer-components/headings/"
+    },
+    {
+      "name": "Redirect /guides/accessibility/links to /accessibility/patterns/primer-components/links",
       "match": "^guides/accessibility/links/?$",
-      "destination": "/accessibility/links/"
+      "destination": "/accessibility/patterns/primer-components/links/"
     },
     {
-      "name": "Redirect /guides/accessibility/semantic-html to /accessibility/semantic-html",
+      "name": "Redirect /accessibility/links to /accessibility/patterns/primer-components/links",
+      "match": "^accessibility/links/?$",
+      "destination": "/accessibility/patterns/primer-components/links/"
+    },
+    {
+      "name": "Redirect /guides/accessibility/semantic-html to /accessibility/design-guidance/semantic-html",
       "match": "^guides/accessibility/semantic-html/?$",
-      "destination": "/accessibility/semantic-html/"
+      "destination": "/accessibility/design-guidance/semantic-html/"
     },
     {
-      "name": "Redirect /guides/accessibility/text-resize-and-respacing to /accessibility/text-resize-and-spacing",
+      "name": "Redirect /accessibility/semantic-html to /accessibility/design-guidance/semantic-html",
+      "match": "^accessibility/semantic-html/?$",
+      "destination": "/accessibility/design-guidance/semantic-html/"
+    },
+    {
+      "name": "Redirect /guides/accessibility/text-resize-and-respacing to /accessibility/design-guidance/text-resize-and-spacing",
       "match": "^guides/accessibility/text-resize-and-respacing/?$",
-      "destination": "/accessibility/text-resize-and-spacing/"
+      "destination": "/accessibility/design-guidance/text-resize-and-spacing/"
     },
     {
-      "name": "Redirect /guides/accessibility/tooltip-alternatives to /accessibility/tooltips",
+      "name": "Redirect /accessibility/text-resize-and-spacing to /accessibility/design-guidance/text-resize-and-spacing",
+      "match": "^accessibility/text-resize-and-spacing/?$",
+      "destination": "/accessibility/design-guidance/text-resize-and-spacing/"
+    },
+    {
+      "name": "Redirect /guides/accessibility/tooltip-alternatives to /accessibility/patterns/primer-components/tooltips",
       "match": "^guides/accessibility/tooltip-alternatives/?$",
-      "destination": "/accessibility/tooltips/"
+      "destination": "/accessibility/patterns/primer-components/tooltips/"
+    },
+    {
+      "name": "Redirect /accessibility/tooltip-alternatives to /accessibility/patterns/primer-components/tooltips",
+      "match": "^accessibility/tooltip-alternatives/?$",
+      "destination": "/accessibility/patterns/primer-components/tooltips/"
+    },
+    {
+      "name": "Redirect /accessibility/tooltips to /accessibility/patterns/primer-components/tooltips",
+      "match": "^accessibility/tooltips/?$",
+      "destination": "/accessibility/patterns/primer-components/tooltips/"
+    },
+    {
+      "name": "Redirect /accessibility/toasts to /accessibility/accessible-notifications-and-messages",
+      "match": "^accessibility/toasts/?$",
+      "destination": "/accessibility/patterns/accessible-notifications-and-messages/"
+    },
+    {
+      "name": "Redirect /accessibility/announcements to /accessibility/accessible-notifications-and-messages",
+      "match": "^accessibility/announcements/?$",
+      "destination": "/accessibility/patterns/accessible-notifications-and-messages/"
+    },
+    {
+      "name": "Redirect /accessibility/color-considerations to /accessibility/design-guidance/color-considerations",
+      "match": "^accessibility/color-considerations/?$",
+      "destination": "/accessibility/design-guidance/color-considerations/"
+    },
+    {
+      "name": "Redirect /accessibility/icons to /accessibility/patterns/primer-components/icons",
+      "match": "^accessibility/icons/?$",
+      "destination": "/accessibility/patterns/primer-components/icons/"
+    },
+    {
+      "name": "Redirect /accessibility/placeholders to /accessibility/patterns/placeholders",
+      "match": "^accessibility/placeholders/?$",
+      "destination": "/accessibility/patterns/placeholders/"
     },
     {
       "name": "Redirect /guides/contribute/how-to-contribute to /product/contribute/how-to-contribute",
