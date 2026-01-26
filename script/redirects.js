@@ -121,20 +121,7 @@ function buildRedirects() {
           <action type="Redirect" url="https://{C:2}/{R:1}" redirectType="Permanent" />
         </rule>
         <!--END SSL-->
-        <!--BEGIN Trailing slash enforcement-->
-        <rule name="Add trailing slash" stopProcessing="true">
-          <match url="(.*[^/])$" />
-          <conditions>
-            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-            <add input="{REQUEST_FILENAME}" pattern="(.*?)\\.[a-zA-Z]{1,4}$" negate="true" />
-            <add input="{URL}" negate="true" pattern="\\.woff2$" />
-            <add input="{URL}" negate="true" pattern="\\.webmanifest$" />
-          </conditions>
-          <action type="Redirect" redirectType="Temporary" url="{R:1}/" />
-        </rule>
-        <!--END Trailing slash enforcement-->
-        <!--BEGIN Bracket-in-URL proxy-->
+        <!--BEGIN Bracket-in-URL proxy - must come before trailing slash rule -->
         <!-- The domain should match the catch-all route defined in redirects.json -->
         <rule name="Bracket-in-URL proxy" stopProcessing="true">
           <match url="^(.*)\\[([^\\]]+)\\](.*)$" ignoreCase="true" />
@@ -148,6 +135,19 @@ function buildRedirects() {
           </serverVariables>
         </rule>
         <!--END Bracket-in-URL proxy -->
+        <!--BEGIN Trailing slash enforcement-->
+        <rule name="Add trailing slash" stopProcessing="true">
+          <match url="(.*[^/])$" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+            <add input="{REQUEST_FILENAME}" pattern="(.*?)\\.[a-zA-Z]{1,4}$" negate="true" />
+            <add input="{URL}" negate="true" pattern="\\.woff2$" />
+            <add input="{URL}" negate="true" pattern="\\.webmanifest$" />
+          </conditions>
+          <action type="Redirect" redirectType="Temporary" url="{R:1}/" />
+        </rule>
+        <!--END Trailing slash enforcement-->
         <!--BEGIN 301 redirects. Goes before URL rewrites -->
         ${redirects}
         <!--END 301 redirects -->
