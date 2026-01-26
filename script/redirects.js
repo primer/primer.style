@@ -130,6 +130,8 @@ function buildRedirects() {
             <add input="{REQUEST_FILENAME}" pattern="(.*?)\\.[a-zA-Z]{1,4}$" negate="true" />
             <add input="{URL}" negate="true" pattern="\\.woff2$" />
             <add input="{URL}" negate="true" pattern="\\.webmanifest$" />
+            <add input="{URL}" negate="true" pattern="\\[.*\\].*\\.woff2$" />
+            <add input="{URL}" negate="true" pattern="%5B.*%5D.*\\.woff2$" />
           </conditions>
           <action type="Redirect" redirectType="Temporary" url="{R:1}/" />
         </rule>
