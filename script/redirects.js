@@ -130,12 +130,24 @@ function buildRedirects() {
             <add input="{REQUEST_FILENAME}" pattern="(.*?)\\.[a-zA-Z]{1,4}$" negate="true" />
             <add input="{URL}" negate="true" pattern="\\.woff2$" />
             <add input="{URL}" negate="true" pattern="\\.webmanifest$" />
-            <add input="{URL}" negate="true" pattern="\\[.*\\].*\\.woff2$" />
-            <add input="{URL}" negate="true" pattern="%5B.*%5D.*\\.woff2$" />
           </conditions>
           <action type="Redirect" redirectType="Temporary" url="{R:1}/" />
         </rule>
         <!--END Trailing slash enforcement-->
+        <!--BEGIN Bracket-in-URL proxy-->
+        <!-- The domain should match the catch-all route defined in redirects.json -->
+        <rule name="Bracket-in-URL proxy" stopProcessing="true">
+          <match url="^(.*)\\[([^\\]]+)\\](.*)$" ignoreCase="true" />
+          <conditions>
+            <add input="{HTTP_HOST}" pattern="^(?:www.)?(.*)$" />
+          </conditions>
+          <action type="Rewrite" url="https://primer-docs-preview.github.com/{R:1}%5B{R:2}%5D{R:3}" />
+          <serverVariables>
+            <set name="HTTP_X_UNPROXIED_URL" value="https://primer-docs-preview.github.com/{R:1}%5B{R:2}%5D{R:3}" />
+            <set name="HTTP_X_ORIGINAL_HOST" value="{HTTP_HOST}" />
+          </serverVariables>
+        </rule>
+        <!--END Bracket-in-URL proxy -->
         <!--BEGIN 301 redirects. Goes before URL rewrites -->
         ${redirects}
         <!--END 301 redirects -->
