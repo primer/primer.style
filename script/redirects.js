@@ -124,13 +124,13 @@ function buildRedirects() {
         <!--BEGIN Bracket-in-URL proxy - must come before trailing slash rule -->
         <!-- The domain should match the catch-all route defined in redirects.json -->
         <rule name="Bracket-in-URL proxy" stopProcessing="true">
-          <match url="^(.*)%5B([^%]+)%5D(.*)$" ignoreCase="true" />
+          <match url="^(.*)\\[([^\\]]+)\\](.*)$" ignoreCase="true" />
           <conditions>
             <add input="{HTTP_HOST}" pattern="^(?:www.)?(.*)$" />
           </conditions>
-          <action type="Rewrite" url="https://primer-docs-preview.github.com/{R:1}[{R:2}]{R:3}" appendQueryString="true" />
+          <action type="Rewrite" url="https://primer-docs-preview.github.com{UNENCODED_URL}" appendQueryString="false" />
           <serverVariables>
-            <set name="HTTP_X_UNPROXIED_URL" value="https://primer-docs-preview.github.com/{R:1}[{R:2}]{R:3}" />
+            <set name="HTTP_X_UNPROXIED_URL" value="https://primer-docs-preview.github.com{UNENCODED_URL}" />
             <set name="HTTP_X_ORIGINAL_HOST" value="{HTTP_HOST}" />
           </serverVariables>
         </rule>
