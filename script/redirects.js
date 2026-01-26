@@ -128,9 +128,9 @@ function buildRedirects() {
           <conditions>
             <add input="{HTTP_HOST}" pattern="^(?:www.)?(.*)$" />
           </conditions>
-          <action type="Rewrite" url="https://primer-docs-preview.github.com/{R:1}%5B{R:2}%5D{R:3}" />
+          <action type="Rewrite" url="https://primer-docs-preview.github.com/{R:1}[{R:2}]{R:3}" appendQueryString="true" />
           <serverVariables>
-            <set name="HTTP_X_UNPROXIED_URL" value="https://primer-docs-preview.github.com/{R:1}%5B{R:2}%5D{R:3}" />
+            <set name="HTTP_X_UNPROXIED_URL" value="https://primer-docs-preview.github.com/{R:1}[{R:2}]{R:3}" />
             <set name="HTTP_X_ORIGINAL_HOST" value="{HTTP_HOST}" />
           </serverVariables>
         </rule>
