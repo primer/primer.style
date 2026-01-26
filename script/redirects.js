@@ -124,7 +124,7 @@ function buildRedirects() {
         <!--BEGIN Bracket-in-URL proxy - must come before trailing slash rule -->
         <!-- The domain should match the catch-all route defined in redirects.json -->
         <rule name="Bracket-in-URL proxy" stopProcessing="true">
-          <match url="^(.*)\\[([^\\]]+)\\](.*)$" ignoreCase="true" />
+          <match url="^(.*)%5B([^%]+)%5D(.*)$" ignoreCase="true" />
           <conditions>
             <add input="{HTTP_HOST}" pattern="^(?:www.)?(.*)$" />
           </conditions>
