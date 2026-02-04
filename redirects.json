@@ -1558,11 +1558,6 @@
       "destination": "https://stunning-chainsaw-j82glqz.pages.github.io/{R:1}"
     },
     {
-      "name": "Brand fonts proxy",
-      "match": "^brand/fonts/([^/]+)$",
-      "destination": "https://primer.github.io/brand/fonts/{R:1}"
-    },
-    {
       "name": "Brand proxy",
       "match": "^brand/(.*)",
       "destination": "https://primer.github.io/brand/{R:1}"

@@ -138,17 +138,6 @@ function buildRedirects() {
             <set name="HTTP_X_ORIGINAL_HOST" value="{HTTP_HOST}" />
           </serverVariables>
         </rule>
-        <rule name="Catch-all bracket-in-URL proxy" stopProcessing="true">
-          <match url="^(.*)\\[(.*)\\](.*)$" ignoreCase="true" />
-          <conditions>
-            <add input="{HTTP_HOST}" pattern="^(?:www.)?(.*)$" />
-          </conditions>
-          <action type="Rewrite" url="https://primer-docs-preview.github.com{UNENCODED_URL}" appendQueryString="false" />
-          <serverVariables>
-            <set name="HTTP_X_UNPROXIED_URL" value="https://primer-docs-preview.github.com{UNENCODED_URL}" />
-            <set name="HTTP_X_ORIGINAL_HOST" value="{HTTP_HOST}" />
-          </serverVariables>
-        </rule>
         <!--END Bracket-in-URL proxy -->
         <!--BEGIN Trailing slash enforcement-->
         <rule name="Add trailing slash" stopProcessing="true">
