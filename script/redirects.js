@@ -100,11 +100,6 @@ function buildRedirects() {
   const config = `<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
   <system.webServer>
-    <security>
-      <requestFiltering allowDoubleEscaping="true">
-        <requestLimits maxAllowedContentLength="30000000" />
-      </requestFiltering>
-    </security>
     <staticContent>
       <mimeMap fileExtension=".json" mimeType="application/json" />
       <mimeMap fileExtension=".webmanifest" mimeType="application/manifest+json" />
@@ -127,14 +122,14 @@ function buildRedirects() {
         </rule>
         <!--END SSL-->
         <!--BEGIN Bracket-in-URL proxy - must come before trailing slash rule -->
-        <rule name="Brand bracket-in-URL proxy" stopProcessing="true">
-          <match url="^brand/(.*)\\[(.*)\\](.*)$" ignoreCase="true" />
+        <rule name="Next.js static assets bracket-in-URL proxy" stopProcessing="true">
+          <match url="^_next/static/(.*)\\[(.*)\\](.*)$" ignoreCase="true" />
           <conditions>
             <add input="{HTTP_HOST}" pattern="^(?:www.)?(.*)$" />
           </conditions>
-          <action type="Rewrite" url="https://primer.github.io{UNENCODED_URL}" appendQueryString="false" />
+          <action type="Rewrite" url="https://primer-docs-preview.github.com{UNENCODED_URL}" appendQueryString="false" />
           <serverVariables>
-            <set name="HTTP_X_UNPROXIED_URL" value="https://primer.github.io{UNENCODED_URL}" />
+            <set name="HTTP_X_UNPROXIED_URL" value="https://primer-docs-preview.github.com{UNENCODED_URL}" />
             <set name="HTTP_X_ORIGINAL_HOST" value="{HTTP_HOST}" />
           </serverVariables>
         </rule>
