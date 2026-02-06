@@ -121,6 +121,19 @@ function buildRedirects() {
           <action type="Redirect" url="https://{C:2}/{R:1}" redirectType="Permanent" />
         </rule>
         <!--END SSL-->
+        <!--BEGIN Bracket-in-URL proxy - must come before trailing slash rule -->
+        <rule name="Next.js static assets bracket-in-URL proxy" stopProcessing="true">
+          <match url="^_next/static/(.*)\\[(.*)\\](.*)$" ignoreCase="true" />
+          <conditions>
+            <add input="{HTTP_HOST}" pattern="^(?:www.)?(.*)$" />
+          </conditions>
+          <action type="Rewrite" url="https://primer-docs-preview.github.com{UNENCODED_URL}" appendQueryString="false" />
+          <serverVariables>
+            <set name="HTTP_X_UNPROXIED_URL" value="https://primer-docs-preview.github.com{UNENCODED_URL}" />
+            <set name="HTTP_X_ORIGINAL_HOST" value="{HTTP_HOST}" />
+          </serverVariables>
+        </rule>
+        <!--END Bracket-in-URL proxy -->
         <!--BEGIN Trailing slash enforcement-->
         <rule name="Add trailing slash" stopProcessing="true">
           <match url="(.*[^/])$" />
