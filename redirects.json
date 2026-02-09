@@ -1061,9 +1061,14 @@
       "destination": "/accessibility/patterns/primer-components/links/"
     },
     {
-      "name": "Redirect /accessibility/semantic-html to /accessibility/design-guidance/semantic-html-and-aria",
+      "name": "Redirect /guides/accessibility/semantic-html to /accessibility/design-guidance/semantic-html",
+      "match": "^guides/accessibility/semantic-html/?$",
+      "destination": "/accessibility/design-guidance/semantic-html/"
+    },
+    {
+      "name": "Redirect /accessibility/semantic-html to /accessibility/design-guidance/semantic-html",
       "match": "^accessibility/semantic-html/?$",
-      "destination": "/accessibility/design-guidance/semantic-html-and-aria/"
+      "destination": "/accessibility/design-guidance/semantic-html/"
     },
     {
       "name": "Redirect /guides/accessibility/text-resize-and-respacing to /accessibility/design-guidance/text-resize-and-spacing",
