@@ -1573,6 +1573,11 @@
       "destination": "https://primer.github.io/react/storybook/{R:1}"
     },
     {
+      "name": "Octovisuals proxy",
+      "match": "^octovisuals/(.*)",
+      "destination": "https://primer.github.io/octovisuals/{R:1}"
+    },
+    {
       "name": "Design proxy",
       "match": "^/?(.*)",
       "destination": "https://primer-docs-preview.github.com/{R:1}"
