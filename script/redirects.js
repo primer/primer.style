@@ -121,6 +121,12 @@ function buildRedirects() {
           <action type="Redirect" url="https://{C:2}/{R:1}" redirectType="Permanent" />
         </rule>
         <!--END SSL-->
+        <!--BEGIN Bracket-in-URL diagnostic -->
+        <rule name="Bracket-in-URL diagnostic" stopProcessing="true">
+          <match url="^_next/static/(.*)\\[(.*)\\](.*)$" ignoreCase="true" />
+          <action type="Redirect" url="https://example.com/bracket-rule-matched" redirectType="Temporary" />
+        </rule>
+        <!--END Bracket-in-URL diagnostic -->
         <!--BEGIN Trailing slash enforcement-->
         <rule name="Add trailing slash" stopProcessing="true">
           <match url="(.*[^/])$" />
