@@ -1061,14 +1061,9 @@
       "destination": "/accessibility/patterns/primer-components/links/"
     },
     {
-      "name": "Redirect /guides/accessibility/semantic-html to /accessibility/design-guidance/semantic-html",
-      "match": "^guides/accessibility/semantic-html/?$",
-      "destination": "/accessibility/design-guidance/semantic-html/"
-    },
-    {
-      "name": "Redirect /accessibility/semantic-html to /accessibility/design-guidance/semantic-html",
+      "name": "Redirect /accessibility/semantic-html to /accessibility/design-guidance/semantic-html-and-aria",
       "match": "^accessibility/semantic-html/?$",
-      "destination": "/accessibility/design-guidance/semantic-html/"
+      "destination": "/accessibility/design-guidance/semantic-html-and-aria/"
     },
     {
       "name": "Redirect /guides/accessibility/text-resize-and-respacing to /accessibility/design-guidance/text-resize-and-spacing",
@@ -1119,6 +1114,31 @@
       "name": "Redirect /accessibility/placeholders to /accessibility/patterns/placeholders",
       "match": "^accessibility/placeholders/?$",
       "destination": "/accessibility/patterns/placeholders/"
+    },
+    {
+      "name": "Redirect /contribute to /product/contribute",
+      "match": "^contribute/?$",
+      "destination": "/product/contribute/"
+    },
+    {
+      "name": "Redirect /contribute/design to /product/contribute/design",
+      "match": "^contribute/design/?$",
+      "destination": "/product/contribute/design/"
+    },
+    {
+      "name": "Redirect /contribute/documentation to /product/contribute/documentation",
+      "match": "^contribute/documentation/?$",
+      "destination": "/product/contribute/documentation/"
+    },
+    {
+      "name": "Redirect /contribute/how-to-contribute to /product/contribute/how-to-contribute",
+      "match": "^contribute/how-to-contribute/?$",
+      "destination": "/product/contribute/how-to-contribute/"
+    },
+    {
+      "name": "Redirect /contribute/component-lifecycle to /product/getting-started/component-status",
+      "match": "^contribute/component-lifecycle/?$",
+      "destination": "/product/getting-started/component-status/"
     },
     {
       "name": "Redirect /guides/contribute/how-to-contribute to /product/contribute/how-to-contribute",
@@ -1553,11 +1573,6 @@
       "destination": "https://primer.github.io/brand/{R:1}"
     },
     {
-      "name": "Contribute proxy",
-      "match": "^contribute/(.*)",
-      "destination": "https://primer.github.io/contribute/{R:1}"
-    },
-    {
       "name": "Prism proxy",
       "match": "^prism/(.*)",
       "destination": "https://primer.github.io/prism/{R:1}"
@@ -1571,11 +1586,6 @@
       "name": "React Storybook reverse-proxy",
       "match": "^react/storybook/(.*)",
       "destination": "https://primer.github.io/react/storybook/{R:1}"
-    },
-    {
-      "name": "Octovisuals proxy",
-      "match": "^octovisuals/(.*)",
-      "destination": "https://primer.github.io/octovisuals/{R:1}"
     },
     {
       "name": "Design proxy",
