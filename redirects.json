@@ -1121,31 +1121,6 @@
       "destination": "/accessibility/patterns/placeholders/"
     },
     {
-      "name": "Redirect /contribute to /product/contribute",
-      "match": "^contribute/?$",
-      "destination": "/product/contribute/"
-    },
-    {
-      "name": "Redirect /contribute/design to /product/contribute/design",
-      "match": "^contribute/design/?$",
-      "destination": "/product/contribute/design/"
-    },
-    {
-      "name": "Redirect /contribute/documentation to /product/contribute/documentation",
-      "match": "^contribute/documentation/?$",
-      "destination": "/product/contribute/documentation/"
-    },
-    {
-      "name": "Redirect /contribute/how-to-contribute to /product/contribute/how-to-contribute",
-      "match": "^contribute/how-to-contribute/?$",
-      "destination": "/product/contribute/how-to-contribute/"
-    },
-    {
-      "name": "Redirect /contribute/component-lifecycle to /product/getting-started/component-status",
-      "match": "^contribute/component-lifecycle/?$",
-      "destination": "/product/getting-started/component-status/"
-    },
-    {
       "name": "Redirect /guides/contribute/how-to-contribute to /product/contribute/how-to-contribute",
       "match": "^guides/contribute/how-to-contribute/?$",
       "destination": "/product/contribute/how-to-contribute/"
@@ -1576,6 +1551,11 @@
       "name": "Brand proxy",
       "match": "^brand/(.*)",
       "destination": "https://primer.github.io/brand/{R:1}"
+    },
+    {
+      "name": "Contribute proxy",
+      "match": "^contribute/(.*)",
+      "destination": "https://primer.github.io/contribute/{R:1}"
     },
     {
       "name": "Prism proxy",
