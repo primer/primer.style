@@ -1553,11 +1553,6 @@
       "destination": "https://primer.github.io/brand/{R:1}"
     },
     {
-      "name": "Contribute proxy",
-      "match": "^contribute/(.*)",
-      "destination": "https://primer.github.io/contribute/{R:1}"
-    },
-    {
       "name": "Prism proxy",
       "match": "^prism/(.*)",
       "destination": "https://primer.github.io/prism/{R:1}"
