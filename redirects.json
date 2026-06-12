@@ -1061,14 +1061,14 @@
       "destination": "/accessibility/patterns/primer-components/links/"
     },
     {
-      "name": "Redirect /guides/accessibility/semantic-html to /accessibility/design-guidance/semantic-html",
+      "name": "Redirect /guides/accessibility/semantic-html to /accessibility/design-guidance/semantic-html-and-aria",
       "match": "^guides/accessibility/semantic-html/?$",
-      "destination": "/accessibility/design-guidance/semantic-html/"
+      "destination": "/accessibility/design-guidance/semantic-html-and-aria/"
     },
     {
-      "name": "Redirect /accessibility/semantic-html to /accessibility/design-guidance/semantic-html",
+      "name": "Redirect /accessibility/semantic-html to /accessibility/design-guidance/semantic-html-and-aria",
       "match": "^accessibility/semantic-html/?$",
-      "destination": "/accessibility/design-guidance/semantic-html/"
+      "destination": "/accessibility/design-guidance/semantic-html-and-aria/"
     },
     {
       "name": "Redirect /guides/accessibility/text-resize-and-respacing to /accessibility/design-guidance/text-resize-and-spacing",
@@ -1551,11 +1551,6 @@
       "name": "Brand proxy",
       "match": "^brand/(.*)",
       "destination": "https://primer.github.io/brand/{R:1}"
-    },
-    {
-      "name": "Contribute proxy",
-      "match": "^contribute/(.*)",
-      "destination": "https://primer.github.io/contribute/{R:1}"
     },
     {
       "name": "Prism proxy",
