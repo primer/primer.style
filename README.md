@@ -17,7 +17,7 @@
 
 ---
 
-#### Upcoming work & contributing
+#### Contributing
 We welcome feedback and contributions at any time. Please check existing issues and pull requests before contributing, and please communicate via an issue first if you intend to make large-scale changes. See [contributing](.github/CONTRIBUTING.md) for more info.
 
 #### Team
